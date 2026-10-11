@@ -1,0 +1,8402 @@
+[
+  {
+    "Product_ID": 1,
+    "Product": "Laptop Standard",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 2,
+    "Product": "Laptop Basic",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 3,
+    "Product": "Laptop Premium",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 4,
+    "Product": "Laptop Pro",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 5,
+    "Product": "Laptop Advanced",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 6,
+    "Product": "Laptop Lite",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 7,
+    "Product": "Laptop Plus",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 8,
+    "Product": "Laptop Max",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 9,
+    "Product": "Laptop Mini",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 10,
+    "Product": "Laptop Ultra",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 11,
+    "Product": "Laptop Gen 1",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 12,
+    "Product": "Laptop Gen 2",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 13,
+    "Product": "Laptop Gen 3",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 14,
+    "Product": "Laptop Series A",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 15,
+    "Product": "Laptop Series B",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 16,
+    "Product": "Laptop Series C",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 17,
+    "Product": "Laptop Model X",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 18,
+    "Product": "Laptop Model Y",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 19,
+    "Product": "Laptop Model Z",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 20,
+    "Product": "Laptop 2026",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 21,
+    "Product": "Desktop Computer Standard",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 22,
+    "Product": "Desktop Computer Basic",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 23,
+    "Product": "Desktop Computer Premium",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 24,
+    "Product": "Desktop Computer Pro",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 25,
+    "Product": "Desktop Computer Advanced",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 26,
+    "Product": "Desktop Computer Lite",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 27,
+    "Product": "Desktop Computer Plus",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 28,
+    "Product": "Desktop Computer Max",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 29,
+    "Product": "Desktop Computer Mini",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 30,
+    "Product": "Desktop Computer Ultra",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 31,
+    "Product": "Desktop Computer Gen 1",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 32,
+    "Product": "Desktop Computer Gen 2",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 33,
+    "Product": "Desktop Computer Gen 3",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 34,
+    "Product": "Desktop Computer Series A",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 35,
+    "Product": "Desktop Computer Series B",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 36,
+    "Product": "Desktop Computer Series C",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 37,
+    "Product": "Desktop Computer Model X",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 38,
+    "Product": "Desktop Computer Model Y",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 39,
+    "Product": "Desktop Computer Model Z",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 40,
+    "Product": "Desktop Computer 2026",
+    "HS_Code": "847141",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 41,
+    "Product": "Tablet Standard",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 42,
+    "Product": "Tablet Basic",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 43,
+    "Product": "Tablet Premium",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 44,
+    "Product": "Tablet Pro",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 45,
+    "Product": "Tablet Advanced",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 46,
+    "Product": "Tablet Lite",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 47,
+    "Product": "Tablet Plus",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 48,
+    "Product": "Tablet Max",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 49,
+    "Product": "Tablet Mini",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 50,
+    "Product": "Tablet Ultra",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 51,
+    "Product": "Tablet Gen 1",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 52,
+    "Product": "Tablet Gen 2",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 53,
+    "Product": "Tablet Gen 3",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 54,
+    "Product": "Tablet Series A",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 55,
+    "Product": "Tablet Series B",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 56,
+    "Product": "Tablet Series C",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 57,
+    "Product": "Tablet Model X",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 58,
+    "Product": "Tablet Model Y",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 59,
+    "Product": "Tablet Model Z",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 60,
+    "Product": "Tablet 2026",
+    "HS_Code": "847130",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 61,
+    "Product": "Mobile Phone Standard",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 62,
+    "Product": "Mobile Phone Basic",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 63,
+    "Product": "Mobile Phone Premium",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 64,
+    "Product": "Mobile Phone Pro",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 65,
+    "Product": "Mobile Phone Advanced",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 66,
+    "Product": "Mobile Phone Lite",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 67,
+    "Product": "Mobile Phone Plus",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 68,
+    "Product": "Mobile Phone Max",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 69,
+    "Product": "Mobile Phone Mini",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 70,
+    "Product": "Mobile Phone Ultra",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 71,
+    "Product": "Mobile Phone Gen 1",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 72,
+    "Product": "Mobile Phone Gen 2",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 73,
+    "Product": "Mobile Phone Gen 3",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 74,
+    "Product": "Mobile Phone Series A",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 75,
+    "Product": "Mobile Phone Series B",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 76,
+    "Product": "Mobile Phone Series C",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 77,
+    "Product": "Mobile Phone Model X",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 78,
+    "Product": "Mobile Phone Model Y",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 79,
+    "Product": "Mobile Phone Model Z",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 80,
+    "Product": "Mobile Phone 2026",
+    "HS_Code": "851713",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 81,
+    "Product": "Smartwatch Standard",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 82,
+    "Product": "Smartwatch Basic",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 83,
+    "Product": "Smartwatch Premium",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 84,
+    "Product": "Smartwatch Pro",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 85,
+    "Product": "Smartwatch Advanced",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 86,
+    "Product": "Smartwatch Lite",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 87,
+    "Product": "Smartwatch Plus",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 88,
+    "Product": "Smartwatch Max",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 89,
+    "Product": "Smartwatch Mini",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 90,
+    "Product": "Smartwatch Ultra",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 91,
+    "Product": "Smartwatch Gen 1",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 92,
+    "Product": "Smartwatch Gen 2",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 93,
+    "Product": "Smartwatch Gen 3",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 94,
+    "Product": "Smartwatch Series A",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 95,
+    "Product": "Smartwatch Series B",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 96,
+    "Product": "Smartwatch Series C",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 97,
+    "Product": "Smartwatch Model X",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 98,
+    "Product": "Smartwatch Model Y",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 99,
+    "Product": "Smartwatch Model Z",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 100,
+    "Product": "Smartwatch 2026",
+    "HS_Code": "851762",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 101,
+    "Product": "Wireless Headphones Standard",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 102,
+    "Product": "Wireless Headphones Basic",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 103,
+    "Product": "Wireless Headphones Premium",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 104,
+    "Product": "Wireless Headphones Pro",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 105,
+    "Product": "Wireless Headphones Advanced",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 106,
+    "Product": "Wireless Headphones Lite",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 107,
+    "Product": "Wireless Headphones Plus",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 108,
+    "Product": "Wireless Headphones Max",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 109,
+    "Product": "Wireless Headphones Mini",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 110,
+    "Product": "Wireless Headphones Ultra",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 111,
+    "Product": "Wireless Headphones Gen 1",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 112,
+    "Product": "Wireless Headphones Gen 2",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 113,
+    "Product": "Wireless Headphones Gen 3",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 114,
+    "Product": "Wireless Headphones Series A",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 115,
+    "Product": "Wireless Headphones Series B",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 116,
+    "Product": "Wireless Headphones Series C",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 117,
+    "Product": "Wireless Headphones Model X",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 118,
+    "Product": "Wireless Headphones Model Y",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 119,
+    "Product": "Wireless Headphones Model Z",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 120,
+    "Product": "Wireless Headphones 2026",
+    "HS_Code": "851830",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 121,
+    "Product": "Bluetooth Speaker Standard",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 122,
+    "Product": "Bluetooth Speaker Basic",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 123,
+    "Product": "Bluetooth Speaker Premium",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 124,
+    "Product": "Bluetooth Speaker Pro",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 125,
+    "Product": "Bluetooth Speaker Advanced",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 126,
+    "Product": "Bluetooth Speaker Lite",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 127,
+    "Product": "Bluetooth Speaker Plus",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 128,
+    "Product": "Bluetooth Speaker Max",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 129,
+    "Product": "Bluetooth Speaker Mini",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 130,
+    "Product": "Bluetooth Speaker Ultra",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 131,
+    "Product": "Bluetooth Speaker Gen 1",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 132,
+    "Product": "Bluetooth Speaker Gen 2",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 133,
+    "Product": "Bluetooth Speaker Gen 3",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 134,
+    "Product": "Bluetooth Speaker Series A",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 135,
+    "Product": "Bluetooth Speaker Series B",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 136,
+    "Product": "Bluetooth Speaker Series C",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 137,
+    "Product": "Bluetooth Speaker Model X",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 138,
+    "Product": "Bluetooth Speaker Model Y",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 139,
+    "Product": "Bluetooth Speaker Model Z",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 140,
+    "Product": "Bluetooth Speaker 2026",
+    "HS_Code": "851821",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 141,
+    "Product": "Keyboard Standard",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 142,
+    "Product": "Keyboard Basic",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 143,
+    "Product": "Keyboard Premium",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 144,
+    "Product": "Keyboard Pro",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 145,
+    "Product": "Keyboard Advanced",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 146,
+    "Product": "Keyboard Lite",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 147,
+    "Product": "Keyboard Plus",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 148,
+    "Product": "Keyboard Max",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 149,
+    "Product": "Keyboard Mini",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 150,
+    "Product": "Keyboard Ultra",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 151,
+    "Product": "Keyboard Gen 1",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 152,
+    "Product": "Keyboard Gen 2",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 153,
+    "Product": "Keyboard Gen 3",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 154,
+    "Product": "Keyboard Series A",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 155,
+    "Product": "Keyboard Series B",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 156,
+    "Product": "Keyboard Series C",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 157,
+    "Product": "Keyboard Model X",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 158,
+    "Product": "Keyboard Model Y",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 159,
+    "Product": "Keyboard Model Z",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 160,
+    "Product": "Keyboard 2026",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 161,
+    "Product": "Computer Mouse Standard",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 162,
+    "Product": "Computer Mouse Basic",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 163,
+    "Product": "Computer Mouse Premium",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 164,
+    "Product": "Computer Mouse Pro",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 165,
+    "Product": "Computer Mouse Advanced",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 166,
+    "Product": "Computer Mouse Lite",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 167,
+    "Product": "Computer Mouse Plus",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 168,
+    "Product": "Computer Mouse Max",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 169,
+    "Product": "Computer Mouse Mini",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 170,
+    "Product": "Computer Mouse Ultra",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 171,
+    "Product": "Computer Mouse Gen 1",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 172,
+    "Product": "Computer Mouse Gen 2",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 173,
+    "Product": "Computer Mouse Gen 3",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 174,
+    "Product": "Computer Mouse Series A",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 175,
+    "Product": "Computer Mouse Series B",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 176,
+    "Product": "Computer Mouse Series C",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 177,
+    "Product": "Computer Mouse Model X",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 178,
+    "Product": "Computer Mouse Model Y",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 179,
+    "Product": "Computer Mouse Model Z",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 180,
+    "Product": "Computer Mouse 2026",
+    "HS_Code": "847160",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 181,
+    "Product": "Printer Standard",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 182,
+    "Product": "Printer Basic",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 183,
+    "Product": "Printer Premium",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 184,
+    "Product": "Printer Pro",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 185,
+    "Product": "Printer Advanced",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 186,
+    "Product": "Printer Lite",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 187,
+    "Product": "Printer Plus",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 188,
+    "Product": "Printer Max",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 189,
+    "Product": "Printer Mini",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 190,
+    "Product": "Printer Ultra",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 191,
+    "Product": "Printer Gen 1",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 192,
+    "Product": "Printer Gen 2",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 193,
+    "Product": "Printer Gen 3",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 194,
+    "Product": "Printer Series A",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 195,
+    "Product": "Printer Series B",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 196,
+    "Product": "Printer Series C",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 197,
+    "Product": "Printer Model X",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 198,
+    "Product": "Printer Model Y",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 199,
+    "Product": "Printer Model Z",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 200,
+    "Product": "Printer 2026",
+    "HS_Code": "844332",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 201,
+    "Product": "Scanner Standard",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 202,
+    "Product": "Scanner Basic",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 203,
+    "Product": "Scanner Premium",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 204,
+    "Product": "Scanner Pro",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 205,
+    "Product": "Scanner Advanced",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 206,
+    "Product": "Scanner Lite",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 207,
+    "Product": "Scanner Plus",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 208,
+    "Product": "Scanner Max",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 209,
+    "Product": "Scanner Mini",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 210,
+    "Product": "Scanner Ultra",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 211,
+    "Product": "Scanner Gen 1",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 212,
+    "Product": "Scanner Gen 2",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 213,
+    "Product": "Scanner Gen 3",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 214,
+    "Product": "Scanner Series A",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 215,
+    "Product": "Scanner Series B",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 216,
+    "Product": "Scanner Series C",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 217,
+    "Product": "Scanner Model X",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 218,
+    "Product": "Scanner Model Y",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 219,
+    "Product": "Scanner Model Z",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 220,
+    "Product": "Scanner 2026",
+    "HS_Code": "847160",
+    "Category": "Office Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 221,
+    "Product": "Projector Standard",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 222,
+    "Product": "Projector Basic",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 223,
+    "Product": "Projector Premium",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 224,
+    "Product": "Projector Pro",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 225,
+    "Product": "Projector Advanced",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 226,
+    "Product": "Projector Lite",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 227,
+    "Product": "Projector Plus",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 228,
+    "Product": "Projector Max",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 229,
+    "Product": "Projector Mini",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 230,
+    "Product": "Projector Ultra",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 231,
+    "Product": "Projector Gen 1",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 232,
+    "Product": "Projector Gen 2",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 233,
+    "Product": "Projector Gen 3",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 234,
+    "Product": "Projector Series A",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 235,
+    "Product": "Projector Series B",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 236,
+    "Product": "Projector Series C",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 237,
+    "Product": "Projector Model X",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 238,
+    "Product": "Projector Model Y",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 239,
+    "Product": "Projector Model Z",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 240,
+    "Product": "Projector 2026",
+    "HS_Code": "852862",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 241,
+    "Product": "Television Standard",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 242,
+    "Product": "Television Basic",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 243,
+    "Product": "Television Premium",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 244,
+    "Product": "Television Pro",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 245,
+    "Product": "Television Advanced",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 246,
+    "Product": "Television Lite",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 247,
+    "Product": "Television Plus",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 248,
+    "Product": "Television Max",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 249,
+    "Product": "Television Mini",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 250,
+    "Product": "Television Ultra",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 251,
+    "Product": "Television Gen 1",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 252,
+    "Product": "Television Gen 2",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 253,
+    "Product": "Television Gen 3",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 254,
+    "Product": "Television Series A",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 255,
+    "Product": "Television Series B",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 256,
+    "Product": "Television Series C",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 257,
+    "Product": "Television Model X",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 258,
+    "Product": "Television Model Y",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 259,
+    "Product": "Television Model Z",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 260,
+    "Product": "Television 2026",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 261,
+    "Product": "Digital Camera Standard",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 262,
+    "Product": "Digital Camera Basic",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 263,
+    "Product": "Digital Camera Premium",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 264,
+    "Product": "Digital Camera Pro",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 265,
+    "Product": "Digital Camera Advanced",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 266,
+    "Product": "Digital Camera Lite",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 267,
+    "Product": "Digital Camera Plus",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 268,
+    "Product": "Digital Camera Max",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 269,
+    "Product": "Digital Camera Mini",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 270,
+    "Product": "Digital Camera Ultra",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 271,
+    "Product": "Digital Camera Gen 1",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 272,
+    "Product": "Digital Camera Gen 2",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 273,
+    "Product": "Digital Camera Gen 3",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 274,
+    "Product": "Digital Camera Series A",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 275,
+    "Product": "Digital Camera Series B",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 276,
+    "Product": "Digital Camera Series C",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 277,
+    "Product": "Digital Camera Model X",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 278,
+    "Product": "Digital Camera Model Y",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 279,
+    "Product": "Digital Camera Model Z",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 280,
+    "Product": "Digital Camera 2026",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 281,
+    "Product": "Video Camera Standard",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 282,
+    "Product": "Video Camera Basic",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 283,
+    "Product": "Video Camera Premium",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 284,
+    "Product": "Video Camera Pro",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 285,
+    "Product": "Video Camera Advanced",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 286,
+    "Product": "Video Camera Lite",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 287,
+    "Product": "Video Camera Plus",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 288,
+    "Product": "Video Camera Max",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 289,
+    "Product": "Video Camera Mini",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 290,
+    "Product": "Video Camera Ultra",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 291,
+    "Product": "Video Camera Gen 1",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 292,
+    "Product": "Video Camera Gen 2",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 293,
+    "Product": "Video Camera Gen 3",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 294,
+    "Product": "Video Camera Series A",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 295,
+    "Product": "Video Camera Series B",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 296,
+    "Product": "Video Camera Series C",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 297,
+    "Product": "Video Camera Model X",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 298,
+    "Product": "Video Camera Model Y",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 299,
+    "Product": "Video Camera Model Z",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 300,
+    "Product": "Video Camera 2026",
+    "HS_Code": "852589",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 301,
+    "Product": "Computer Monitor Standard",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 302,
+    "Product": "Computer Monitor Basic",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 303,
+    "Product": "Computer Monitor Premium",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 304,
+    "Product": "Computer Monitor Pro",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 305,
+    "Product": "Computer Monitor Advanced",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 306,
+    "Product": "Computer Monitor Lite",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 307,
+    "Product": "Computer Monitor Plus",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 308,
+    "Product": "Computer Monitor Max",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 309,
+    "Product": "Computer Monitor Mini",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 310,
+    "Product": "Computer Monitor Ultra",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 311,
+    "Product": "Computer Monitor Gen 1",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 312,
+    "Product": "Computer Monitor Gen 2",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 313,
+    "Product": "Computer Monitor Gen 3",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 314,
+    "Product": "Computer Monitor Series A",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 315,
+    "Product": "Computer Monitor Series B",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 316,
+    "Product": "Computer Monitor Series C",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 317,
+    "Product": "Computer Monitor Model X",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 318,
+    "Product": "Computer Monitor Model Y",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 319,
+    "Product": "Computer Monitor Model Z",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 320,
+    "Product": "Computer Monitor 2026",
+    "HS_Code": "852852",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 321,
+    "Product": "Hard Disk Drive Standard",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 322,
+    "Product": "Hard Disk Drive Basic",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 323,
+    "Product": "Hard Disk Drive Premium",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 324,
+    "Product": "Hard Disk Drive Pro",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 325,
+    "Product": "Hard Disk Drive Advanced",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 326,
+    "Product": "Hard Disk Drive Lite",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 327,
+    "Product": "Hard Disk Drive Plus",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 328,
+    "Product": "Hard Disk Drive Max",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 329,
+    "Product": "Hard Disk Drive Mini",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 330,
+    "Product": "Hard Disk Drive Ultra",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 331,
+    "Product": "Hard Disk Drive Gen 1",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 332,
+    "Product": "Hard Disk Drive Gen 2",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 333,
+    "Product": "Hard Disk Drive Gen 3",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 334,
+    "Product": "Hard Disk Drive Series A",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 335,
+    "Product": "Hard Disk Drive Series B",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 336,
+    "Product": "Hard Disk Drive Series C",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 337,
+    "Product": "Hard Disk Drive Model X",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 338,
+    "Product": "Hard Disk Drive Model Y",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 339,
+    "Product": "Hard Disk Drive Model Z",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 340,
+    "Product": "Hard Disk Drive 2026",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 341,
+    "Product": "SSD Drive Standard",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 342,
+    "Product": "SSD Drive Basic",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 343,
+    "Product": "SSD Drive Premium",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 344,
+    "Product": "SSD Drive Pro",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 345,
+    "Product": "SSD Drive Advanced",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 346,
+    "Product": "SSD Drive Lite",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 347,
+    "Product": "SSD Drive Plus",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 348,
+    "Product": "SSD Drive Max",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 349,
+    "Product": "SSD Drive Mini",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 350,
+    "Product": "SSD Drive Ultra",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 351,
+    "Product": "SSD Drive Gen 1",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 352,
+    "Product": "SSD Drive Gen 2",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 353,
+    "Product": "SSD Drive Gen 3",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 354,
+    "Product": "SSD Drive Series A",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 355,
+    "Product": "SSD Drive Series B",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 356,
+    "Product": "SSD Drive Series C",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 357,
+    "Product": "SSD Drive Model X",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 358,
+    "Product": "SSD Drive Model Y",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 359,
+    "Product": "SSD Drive Model Z",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 360,
+    "Product": "SSD Drive 2026",
+    "HS_Code": "847170",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 361,
+    "Product": "USB Flash Drive Standard",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 362,
+    "Product": "USB Flash Drive Basic",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 363,
+    "Product": "USB Flash Drive Premium",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 364,
+    "Product": "USB Flash Drive Pro",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 365,
+    "Product": "USB Flash Drive Advanced",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 366,
+    "Product": "USB Flash Drive Lite",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 367,
+    "Product": "USB Flash Drive Plus",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 368,
+    "Product": "USB Flash Drive Max",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 369,
+    "Product": "USB Flash Drive Mini",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 370,
+    "Product": "USB Flash Drive Ultra",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 371,
+    "Product": "USB Flash Drive Gen 1",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 372,
+    "Product": "USB Flash Drive Gen 2",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 373,
+    "Product": "USB Flash Drive Gen 3",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 374,
+    "Product": "USB Flash Drive Series A",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 375,
+    "Product": "USB Flash Drive Series B",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 376,
+    "Product": "USB Flash Drive Series C",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 377,
+    "Product": "USB Flash Drive Model X",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 378,
+    "Product": "USB Flash Drive Model Y",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 379,
+    "Product": "USB Flash Drive Model Z",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 380,
+    "Product": "USB Flash Drive 2026",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 381,
+    "Product": "Memory Card Standard",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 382,
+    "Product": "Memory Card Basic",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 383,
+    "Product": "Memory Card Premium",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 384,
+    "Product": "Memory Card Pro",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 385,
+    "Product": "Memory Card Advanced",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 386,
+    "Product": "Memory Card Lite",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 387,
+    "Product": "Memory Card Plus",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 388,
+    "Product": "Memory Card Max",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 389,
+    "Product": "Memory Card Mini",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 390,
+    "Product": "Memory Card Ultra",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 391,
+    "Product": "Memory Card Gen 1",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 392,
+    "Product": "Memory Card Gen 2",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 393,
+    "Product": "Memory Card Gen 3",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 394,
+    "Product": "Memory Card Series A",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 395,
+    "Product": "Memory Card Series B",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 396,
+    "Product": "Memory Card Series C",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 397,
+    "Product": "Memory Card Model X",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 398,
+    "Product": "Memory Card Model Y",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 399,
+    "Product": "Memory Card Model Z",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 400,
+    "Product": "Memory Card 2026",
+    "HS_Code": "852351",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 401,
+    "Product": "Router Standard",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 402,
+    "Product": "Router Basic",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 403,
+    "Product": "Router Premium",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 404,
+    "Product": "Router Pro",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 405,
+    "Product": "Router Advanced",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 406,
+    "Product": "Router Lite",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 407,
+    "Product": "Router Plus",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 408,
+    "Product": "Router Max",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 409,
+    "Product": "Router Mini",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 410,
+    "Product": "Router Ultra",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 411,
+    "Product": "Router Gen 1",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 412,
+    "Product": "Router Gen 2",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 413,
+    "Product": "Router Gen 3",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 414,
+    "Product": "Router Series A",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 415,
+    "Product": "Router Series B",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 416,
+    "Product": "Router Series C",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 417,
+    "Product": "Router Model X",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 418,
+    "Product": "Router Model Y",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 419,
+    "Product": "Router Model Z",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 420,
+    "Product": "Router 2026",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 421,
+    "Product": "Network Switch Standard",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 422,
+    "Product": "Network Switch Basic",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 423,
+    "Product": "Network Switch Premium",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 424,
+    "Product": "Network Switch Pro",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 425,
+    "Product": "Network Switch Advanced",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 426,
+    "Product": "Network Switch Lite",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 427,
+    "Product": "Network Switch Plus",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 428,
+    "Product": "Network Switch Max",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 429,
+    "Product": "Network Switch Mini",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 430,
+    "Product": "Network Switch Ultra",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 431,
+    "Product": "Network Switch Gen 1",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 432,
+    "Product": "Network Switch Gen 2",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 433,
+    "Product": "Network Switch Gen 3",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 434,
+    "Product": "Network Switch Series A",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 435,
+    "Product": "Network Switch Series B",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 436,
+    "Product": "Network Switch Series C",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 437,
+    "Product": "Network Switch Model X",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 438,
+    "Product": "Network Switch Model Y",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 439,
+    "Product": "Network Switch Model Z",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 440,
+    "Product": "Network Switch 2026",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 441,
+    "Product": "Modem Standard",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 442,
+    "Product": "Modem Basic",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 443,
+    "Product": "Modem Premium",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 444,
+    "Product": "Modem Pro",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 445,
+    "Product": "Modem Advanced",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 446,
+    "Product": "Modem Lite",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 447,
+    "Product": "Modem Plus",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 448,
+    "Product": "Modem Max",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 449,
+    "Product": "Modem Mini",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 450,
+    "Product": "Modem Ultra",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 451,
+    "Product": "Modem Gen 1",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 452,
+    "Product": "Modem Gen 2",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 453,
+    "Product": "Modem Gen 3",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 454,
+    "Product": "Modem Series A",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 455,
+    "Product": "Modem Series B",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 456,
+    "Product": "Modem Series C",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 457,
+    "Product": "Modem Model X",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 458,
+    "Product": "Modem Model Y",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 459,
+    "Product": "Modem Model Z",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 460,
+    "Product": "Modem 2026",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 461,
+    "Product": "WiFi Adapter Standard",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 462,
+    "Product": "WiFi Adapter Basic",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 463,
+    "Product": "WiFi Adapter Premium",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 464,
+    "Product": "WiFi Adapter Pro",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 465,
+    "Product": "WiFi Adapter Advanced",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 466,
+    "Product": "WiFi Adapter Lite",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 467,
+    "Product": "WiFi Adapter Plus",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 468,
+    "Product": "WiFi Adapter Max",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 469,
+    "Product": "WiFi Adapter Mini",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 470,
+    "Product": "WiFi Adapter Ultra",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 471,
+    "Product": "WiFi Adapter Gen 1",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 472,
+    "Product": "WiFi Adapter Gen 2",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 473,
+    "Product": "WiFi Adapter Gen 3",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 474,
+    "Product": "WiFi Adapter Series A",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 475,
+    "Product": "WiFi Adapter Series B",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 476,
+    "Product": "WiFi Adapter Series C",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 477,
+    "Product": "WiFi Adapter Model X",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 478,
+    "Product": "WiFi Adapter Model Y",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 479,
+    "Product": "WiFi Adapter Model Z",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 480,
+    "Product": "WiFi Adapter 2026",
+    "HS_Code": "851762",
+    "Category": "Networking",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 481,
+    "Product": "Graphics Card Standard",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 482,
+    "Product": "Graphics Card Basic",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 483,
+    "Product": "Graphics Card Premium",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 484,
+    "Product": "Graphics Card Pro",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 485,
+    "Product": "Graphics Card Advanced",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 486,
+    "Product": "Graphics Card Lite",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 487,
+    "Product": "Graphics Card Plus",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 488,
+    "Product": "Graphics Card Max",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 489,
+    "Product": "Graphics Card Mini",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 490,
+    "Product": "Graphics Card Ultra",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 491,
+    "Product": "Graphics Card Gen 1",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 492,
+    "Product": "Graphics Card Gen 2",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 493,
+    "Product": "Graphics Card Gen 3",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 494,
+    "Product": "Graphics Card Series A",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 495,
+    "Product": "Graphics Card Series B",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 496,
+    "Product": "Graphics Card Series C",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 497,
+    "Product": "Graphics Card Model X",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 498,
+    "Product": "Graphics Card Model Y",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 499,
+    "Product": "Graphics Card Model Z",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 500,
+    "Product": "Graphics Card 2026",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 501,
+    "Product": "Motherboard Standard",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 502,
+    "Product": "Motherboard Basic",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 503,
+    "Product": "Motherboard Premium",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 504,
+    "Product": "Motherboard Pro",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 505,
+    "Product": "Motherboard Advanced",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 506,
+    "Product": "Motherboard Lite",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 507,
+    "Product": "Motherboard Plus",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 508,
+    "Product": "Motherboard Max",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 509,
+    "Product": "Motherboard Mini",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 510,
+    "Product": "Motherboard Ultra",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 511,
+    "Product": "Motherboard Gen 1",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 512,
+    "Product": "Motherboard Gen 2",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 513,
+    "Product": "Motherboard Gen 3",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 514,
+    "Product": "Motherboard Series A",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 515,
+    "Product": "Motherboard Series B",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 516,
+    "Product": "Motherboard Series C",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 517,
+    "Product": "Motherboard Model X",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 518,
+    "Product": "Motherboard Model Y",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 519,
+    "Product": "Motherboard Model Z",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 520,
+    "Product": "Motherboard 2026",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 521,
+    "Product": "Computer Processor Standard",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 522,
+    "Product": "Computer Processor Basic",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 523,
+    "Product": "Computer Processor Premium",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 524,
+    "Product": "Computer Processor Pro",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 525,
+    "Product": "Computer Processor Advanced",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 526,
+    "Product": "Computer Processor Lite",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 527,
+    "Product": "Computer Processor Plus",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 528,
+    "Product": "Computer Processor Max",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 529,
+    "Product": "Computer Processor Mini",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 530,
+    "Product": "Computer Processor Ultra",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 531,
+    "Product": "Computer Processor Gen 1",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 532,
+    "Product": "Computer Processor Gen 2",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 533,
+    "Product": "Computer Processor Gen 3",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 534,
+    "Product": "Computer Processor Series A",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 535,
+    "Product": "Computer Processor Series B",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 536,
+    "Product": "Computer Processor Series C",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 537,
+    "Product": "Computer Processor Model X",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 538,
+    "Product": "Computer Processor Model Y",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 539,
+    "Product": "Computer Processor Model Z",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 540,
+    "Product": "Computer Processor 2026",
+    "HS_Code": "854231",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 541,
+    "Product": "RAM Module Standard",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 542,
+    "Product": "RAM Module Basic",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 543,
+    "Product": "RAM Module Premium",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 544,
+    "Product": "RAM Module Pro",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 545,
+    "Product": "RAM Module Advanced",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 546,
+    "Product": "RAM Module Lite",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 547,
+    "Product": "RAM Module Plus",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 548,
+    "Product": "RAM Module Max",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 549,
+    "Product": "RAM Module Mini",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 550,
+    "Product": "RAM Module Ultra",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 551,
+    "Product": "RAM Module Gen 1",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 552,
+    "Product": "RAM Module Gen 2",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 553,
+    "Product": "RAM Module Gen 3",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 554,
+    "Product": "RAM Module Series A",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 555,
+    "Product": "RAM Module Series B",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 556,
+    "Product": "RAM Module Series C",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 557,
+    "Product": "RAM Module Model X",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 558,
+    "Product": "RAM Module Model Y",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 559,
+    "Product": "RAM Module Model Z",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 560,
+    "Product": "RAM Module 2026",
+    "HS_Code": "847330",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 561,
+    "Product": "Power Supply Unit Standard",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 562,
+    "Product": "Power Supply Unit Basic",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 563,
+    "Product": "Power Supply Unit Premium",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 564,
+    "Product": "Power Supply Unit Pro",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 565,
+    "Product": "Power Supply Unit Advanced",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 566,
+    "Product": "Power Supply Unit Lite",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 567,
+    "Product": "Power Supply Unit Plus",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 568,
+    "Product": "Power Supply Unit Max",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 569,
+    "Product": "Power Supply Unit Mini",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 570,
+    "Product": "Power Supply Unit Ultra",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 571,
+    "Product": "Power Supply Unit Gen 1",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 572,
+    "Product": "Power Supply Unit Gen 2",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 573,
+    "Product": "Power Supply Unit Gen 3",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 574,
+    "Product": "Power Supply Unit Series A",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 575,
+    "Product": "Power Supply Unit Series B",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 576,
+    "Product": "Power Supply Unit Series C",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 577,
+    "Product": "Power Supply Unit Model X",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 578,
+    "Product": "Power Supply Unit Model Y",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 579,
+    "Product": "Power Supply Unit Model Z",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 580,
+    "Product": "Power Supply Unit 2026",
+    "HS_Code": "850440",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 581,
+    "Product": "Webcam Standard",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 582,
+    "Product": "Webcam Basic",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 583,
+    "Product": "Webcam Premium",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 584,
+    "Product": "Webcam Pro",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 585,
+    "Product": "Webcam Advanced",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 586,
+    "Product": "Webcam Lite",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 587,
+    "Product": "Webcam Plus",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 588,
+    "Product": "Webcam Max",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 589,
+    "Product": "Webcam Mini",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 590,
+    "Product": "Webcam Ultra",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 591,
+    "Product": "Webcam Gen 1",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 592,
+    "Product": "Webcam Gen 2",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 593,
+    "Product": "Webcam Gen 3",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 594,
+    "Product": "Webcam Series A",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 595,
+    "Product": "Webcam Series B",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 596,
+    "Product": "Webcam Series C",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 597,
+    "Product": "Webcam Model X",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 598,
+    "Product": "Webcam Model Y",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 599,
+    "Product": "Webcam Model Z",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 600,
+    "Product": "Webcam 2026",
+    "HS_Code": "852589",
+    "Category": "Computer Accessories",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 601,
+    "Product": "Microphone Standard",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 602,
+    "Product": "Microphone Basic",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 603,
+    "Product": "Microphone Premium",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 604,
+    "Product": "Microphone Pro",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 605,
+    "Product": "Microphone Advanced",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 606,
+    "Product": "Microphone Lite",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 607,
+    "Product": "Microphone Plus",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 608,
+    "Product": "Microphone Max",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 609,
+    "Product": "Microphone Mini",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 610,
+    "Product": "Microphone Ultra",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 611,
+    "Product": "Microphone Gen 1",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 612,
+    "Product": "Microphone Gen 2",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 613,
+    "Product": "Microphone Gen 3",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 614,
+    "Product": "Microphone Series A",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 615,
+    "Product": "Microphone Series B",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 616,
+    "Product": "Microphone Series C",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 617,
+    "Product": "Microphone Model X",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 618,
+    "Product": "Microphone Model Y",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 619,
+    "Product": "Microphone Model Z",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 620,
+    "Product": "Microphone 2026",
+    "HS_Code": "851810",
+    "Category": "Audio Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 621,
+    "Product": "Sound Card Standard",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 622,
+    "Product": "Sound Card Basic",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 623,
+    "Product": "Sound Card Premium",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 624,
+    "Product": "Sound Card Pro",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 625,
+    "Product": "Sound Card Advanced",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 626,
+    "Product": "Sound Card Lite",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 627,
+    "Product": "Sound Card Plus",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 628,
+    "Product": "Sound Card Max",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 629,
+    "Product": "Sound Card Mini",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 630,
+    "Product": "Sound Card Ultra",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 631,
+    "Product": "Sound Card Gen 1",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 632,
+    "Product": "Sound Card Gen 2",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 633,
+    "Product": "Sound Card Gen 3",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 634,
+    "Product": "Sound Card Series A",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 635,
+    "Product": "Sound Card Series B",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 636,
+    "Product": "Sound Card Series C",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 637,
+    "Product": "Sound Card Model X",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 638,
+    "Product": "Sound Card Model Y",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 639,
+    "Product": "Sound Card Model Z",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 640,
+    "Product": "Sound Card 2026",
+    "HS_Code": "847180",
+    "Category": "Computer Components",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 641,
+    "Product": "Gaming Console Standard",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 642,
+    "Product": "Gaming Console Basic",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 643,
+    "Product": "Gaming Console Premium",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 644,
+    "Product": "Gaming Console Pro",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 645,
+    "Product": "Gaming Console Advanced",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 646,
+    "Product": "Gaming Console Lite",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 647,
+    "Product": "Gaming Console Plus",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 648,
+    "Product": "Gaming Console Max",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 649,
+    "Product": "Gaming Console Mini",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 650,
+    "Product": "Gaming Console Ultra",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 651,
+    "Product": "Gaming Console Gen 1",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 652,
+    "Product": "Gaming Console Gen 2",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 653,
+    "Product": "Gaming Console Gen 3",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 654,
+    "Product": "Gaming Console Series A",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 655,
+    "Product": "Gaming Console Series B",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 656,
+    "Product": "Gaming Console Series C",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 657,
+    "Product": "Gaming Console Model X",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 658,
+    "Product": "Gaming Console Model Y",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 659,
+    "Product": "Gaming Console Model Z",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 660,
+    "Product": "Gaming Console 2026",
+    "HS_Code": "950450",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 661,
+    "Product": "Game Controller Standard",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 662,
+    "Product": "Game Controller Basic",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 663,
+    "Product": "Game Controller Premium",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 664,
+    "Product": "Game Controller Pro",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 665,
+    "Product": "Game Controller Advanced",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 666,
+    "Product": "Game Controller Lite",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 667,
+    "Product": "Game Controller Plus",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 668,
+    "Product": "Game Controller Max",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 669,
+    "Product": "Game Controller Mini",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 670,
+    "Product": "Game Controller Ultra",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 671,
+    "Product": "Game Controller Gen 1",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 672,
+    "Product": "Game Controller Gen 2",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 673,
+    "Product": "Game Controller Gen 3",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 674,
+    "Product": "Game Controller Series A",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 675,
+    "Product": "Game Controller Series B",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 676,
+    "Product": "Game Controller Series C",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 677,
+    "Product": "Game Controller Model X",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 678,
+    "Product": "Game Controller Model Y",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 679,
+    "Product": "Game Controller Model Z",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 680,
+    "Product": "Game Controller 2026",
+    "HS_Code": "950490",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 681,
+    "Product": "VR Headset Standard",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 682,
+    "Product": "VR Headset Basic",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 683,
+    "Product": "VR Headset Premium",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 684,
+    "Product": "VR Headset Pro",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 685,
+    "Product": "VR Headset Advanced",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 686,
+    "Product": "VR Headset Lite",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 687,
+    "Product": "VR Headset Plus",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 688,
+    "Product": "VR Headset Max",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 689,
+    "Product": "VR Headset Mini",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 690,
+    "Product": "VR Headset Ultra",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 691,
+    "Product": "VR Headset Gen 1",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 692,
+    "Product": "VR Headset Gen 2",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 693,
+    "Product": "VR Headset Gen 3",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 694,
+    "Product": "VR Headset Series A",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 695,
+    "Product": "VR Headset Series B",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 696,
+    "Product": "VR Headset Series C",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 697,
+    "Product": "VR Headset Model X",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 698,
+    "Product": "VR Headset Model Y",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 699,
+    "Product": "VR Headset Model Z",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 700,
+    "Product": "VR Headset 2026",
+    "HS_Code": "852852",
+    "Category": "Gaming",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 701,
+    "Product": "Smart TV Standard",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 702,
+    "Product": "Smart TV Basic",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 703,
+    "Product": "Smart TV Premium",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 704,
+    "Product": "Smart TV Pro",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 705,
+    "Product": "Smart TV Advanced",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 706,
+    "Product": "Smart TV Lite",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 707,
+    "Product": "Smart TV Plus",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 708,
+    "Product": "Smart TV Max",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 709,
+    "Product": "Smart TV Mini",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 710,
+    "Product": "Smart TV Ultra",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 711,
+    "Product": "Smart TV Gen 1",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 712,
+    "Product": "Smart TV Gen 2",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 713,
+    "Product": "Smart TV Gen 3",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 714,
+    "Product": "Smart TV Series A",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 715,
+    "Product": "Smart TV Series B",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 716,
+    "Product": "Smart TV Series C",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 717,
+    "Product": "Smart TV Model X",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 718,
+    "Product": "Smart TV Model Y",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 719,
+    "Product": "Smart TV Model Z",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 720,
+    "Product": "Smart TV 2026",
+    "HS_Code": "852872",
+    "Category": "Electronics",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 721,
+    "Product": "Air Conditioner Standard",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 722,
+    "Product": "Air Conditioner Basic",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 723,
+    "Product": "Air Conditioner Premium",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 724,
+    "Product": "Air Conditioner Pro",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 725,
+    "Product": "Air Conditioner Advanced",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 726,
+    "Product": "Air Conditioner Lite",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 727,
+    "Product": "Air Conditioner Plus",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 728,
+    "Product": "Air Conditioner Max",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 729,
+    "Product": "Air Conditioner Mini",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 730,
+    "Product": "Air Conditioner Ultra",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 731,
+    "Product": "Air Conditioner Gen 1",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 732,
+    "Product": "Air Conditioner Gen 2",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 733,
+    "Product": "Air Conditioner Gen 3",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 734,
+    "Product": "Air Conditioner Series A",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 735,
+    "Product": "Air Conditioner Series B",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 736,
+    "Product": "Air Conditioner Series C",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 737,
+    "Product": "Air Conditioner Model X",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 738,
+    "Product": "Air Conditioner Model Y",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 739,
+    "Product": "Air Conditioner Model Z",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 740,
+    "Product": "Air Conditioner 2026",
+    "HS_Code": "841510",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 741,
+    "Product": "Refrigerator Standard",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 742,
+    "Product": "Refrigerator Basic",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 743,
+    "Product": "Refrigerator Premium",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 744,
+    "Product": "Refrigerator Pro",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 745,
+    "Product": "Refrigerator Advanced",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 746,
+    "Product": "Refrigerator Lite",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 747,
+    "Product": "Refrigerator Plus",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 748,
+    "Product": "Refrigerator Max",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 749,
+    "Product": "Refrigerator Mini",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 750,
+    "Product": "Refrigerator Ultra",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 751,
+    "Product": "Refrigerator Gen 1",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 752,
+    "Product": "Refrigerator Gen 2",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 753,
+    "Product": "Refrigerator Gen 3",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 754,
+    "Product": "Refrigerator Series A",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 755,
+    "Product": "Refrigerator Series B",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 756,
+    "Product": "Refrigerator Series C",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 757,
+    "Product": "Refrigerator Model X",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 758,
+    "Product": "Refrigerator Model Y",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 759,
+    "Product": "Refrigerator Model Z",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 760,
+    "Product": "Refrigerator 2026",
+    "HS_Code": "841810",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 761,
+    "Product": "Freezer Standard",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 762,
+    "Product": "Freezer Basic",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 763,
+    "Product": "Freezer Premium",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 764,
+    "Product": "Freezer Pro",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 765,
+    "Product": "Freezer Advanced",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 766,
+    "Product": "Freezer Lite",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 767,
+    "Product": "Freezer Plus",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 768,
+    "Product": "Freezer Max",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 769,
+    "Product": "Freezer Mini",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 770,
+    "Product": "Freezer Ultra",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 771,
+    "Product": "Freezer Gen 1",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 772,
+    "Product": "Freezer Gen 2",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 773,
+    "Product": "Freezer Gen 3",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 774,
+    "Product": "Freezer Series A",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 775,
+    "Product": "Freezer Series B",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 776,
+    "Product": "Freezer Series C",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 777,
+    "Product": "Freezer Model X",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 778,
+    "Product": "Freezer Model Y",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 779,
+    "Product": "Freezer Model Z",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 780,
+    "Product": "Freezer 2026",
+    "HS_Code": "841830",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 781,
+    "Product": "Washing Machine Standard",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 782,
+    "Product": "Washing Machine Basic",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 783,
+    "Product": "Washing Machine Premium",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 784,
+    "Product": "Washing Machine Pro",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 785,
+    "Product": "Washing Machine Advanced",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 786,
+    "Product": "Washing Machine Lite",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 787,
+    "Product": "Washing Machine Plus",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 788,
+    "Product": "Washing Machine Max",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 789,
+    "Product": "Washing Machine Mini",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 790,
+    "Product": "Washing Machine Ultra",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 791,
+    "Product": "Washing Machine Gen 1",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 792,
+    "Product": "Washing Machine Gen 2",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 793,
+    "Product": "Washing Machine Gen 3",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 794,
+    "Product": "Washing Machine Series A",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 795,
+    "Product": "Washing Machine Series B",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 796,
+    "Product": "Washing Machine Series C",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 797,
+    "Product": "Washing Machine Model X",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 798,
+    "Product": "Washing Machine Model Y",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 799,
+    "Product": "Washing Machine Model Z",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 800,
+    "Product": "Washing Machine 2026",
+    "HS_Code": "845011",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 801,
+    "Product": "Dishwasher Standard",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 802,
+    "Product": "Dishwasher Basic",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 803,
+    "Product": "Dishwasher Premium",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 804,
+    "Product": "Dishwasher Pro",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 805,
+    "Product": "Dishwasher Advanced",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 806,
+    "Product": "Dishwasher Lite",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 807,
+    "Product": "Dishwasher Plus",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 808,
+    "Product": "Dishwasher Max",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 809,
+    "Product": "Dishwasher Mini",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 810,
+    "Product": "Dishwasher Ultra",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 811,
+    "Product": "Dishwasher Gen 1",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 812,
+    "Product": "Dishwasher Gen 2",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 813,
+    "Product": "Dishwasher Gen 3",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 814,
+    "Product": "Dishwasher Series A",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 815,
+    "Product": "Dishwasher Series B",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 816,
+    "Product": "Dishwasher Series C",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 817,
+    "Product": "Dishwasher Model X",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 818,
+    "Product": "Dishwasher Model Y",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 819,
+    "Product": "Dishwasher Model Z",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 820,
+    "Product": "Dishwasher 2026",
+    "HS_Code": "842211",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 821,
+    "Product": "Microwave Oven Standard",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 822,
+    "Product": "Microwave Oven Basic",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 823,
+    "Product": "Microwave Oven Premium",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 824,
+    "Product": "Microwave Oven Pro",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 825,
+    "Product": "Microwave Oven Advanced",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 826,
+    "Product": "Microwave Oven Lite",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 827,
+    "Product": "Microwave Oven Plus",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 828,
+    "Product": "Microwave Oven Max",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 829,
+    "Product": "Microwave Oven Mini",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 830,
+    "Product": "Microwave Oven Ultra",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 831,
+    "Product": "Microwave Oven Gen 1",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 832,
+    "Product": "Microwave Oven Gen 2",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 833,
+    "Product": "Microwave Oven Gen 3",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 834,
+    "Product": "Microwave Oven Series A",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 835,
+    "Product": "Microwave Oven Series B",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 836,
+    "Product": "Microwave Oven Series C",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 837,
+    "Product": "Microwave Oven Model X",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 838,
+    "Product": "Microwave Oven Model Y",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 839,
+    "Product": "Microwave Oven Model Z",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 840,
+    "Product": "Microwave Oven 2026",
+    "HS_Code": "851650",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 841,
+    "Product": "Electric Oven Standard",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 842,
+    "Product": "Electric Oven Basic",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 843,
+    "Product": "Electric Oven Premium",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 844,
+    "Product": "Electric Oven Pro",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 845,
+    "Product": "Electric Oven Advanced",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 846,
+    "Product": "Electric Oven Lite",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 847,
+    "Product": "Electric Oven Plus",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 848,
+    "Product": "Electric Oven Max",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 849,
+    "Product": "Electric Oven Mini",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 850,
+    "Product": "Electric Oven Ultra",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 851,
+    "Product": "Electric Oven Gen 1",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 852,
+    "Product": "Electric Oven Gen 2",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 853,
+    "Product": "Electric Oven Gen 3",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 854,
+    "Product": "Electric Oven Series A",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 855,
+    "Product": "Electric Oven Series B",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 856,
+    "Product": "Electric Oven Series C",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 857,
+    "Product": "Electric Oven Model X",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 858,
+    "Product": "Electric Oven Model Y",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 859,
+    "Product": "Electric Oven Model Z",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 860,
+    "Product": "Electric Oven 2026",
+    "HS_Code": "851660",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 861,
+    "Product": "Electric Kettle Standard",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 862,
+    "Product": "Electric Kettle Basic",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 863,
+    "Product": "Electric Kettle Premium",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 864,
+    "Product": "Electric Kettle Pro",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 865,
+    "Product": "Electric Kettle Advanced",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 866,
+    "Product": "Electric Kettle Lite",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 867,
+    "Product": "Electric Kettle Plus",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 868,
+    "Product": "Electric Kettle Max",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 869,
+    "Product": "Electric Kettle Mini",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 870,
+    "Product": "Electric Kettle Ultra",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 871,
+    "Product": "Electric Kettle Gen 1",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 872,
+    "Product": "Electric Kettle Gen 2",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 873,
+    "Product": "Electric Kettle Gen 3",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 874,
+    "Product": "Electric Kettle Series A",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 875,
+    "Product": "Electric Kettle Series B",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 876,
+    "Product": "Electric Kettle Series C",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 877,
+    "Product": "Electric Kettle Model X",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 878,
+    "Product": "Electric Kettle Model Y",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 879,
+    "Product": "Electric Kettle Model Z",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 880,
+    "Product": "Electric Kettle 2026",
+    "HS_Code": "851679",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 881,
+    "Product": "Coffee Maker Standard",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 882,
+    "Product": "Coffee Maker Basic",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 883,
+    "Product": "Coffee Maker Premium",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 884,
+    "Product": "Coffee Maker Pro",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 885,
+    "Product": "Coffee Maker Advanced",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 886,
+    "Product": "Coffee Maker Lite",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 887,
+    "Product": "Coffee Maker Plus",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 888,
+    "Product": "Coffee Maker Max",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 889,
+    "Product": "Coffee Maker Mini",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 890,
+    "Product": "Coffee Maker Ultra",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 891,
+    "Product": "Coffee Maker Gen 1",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 892,
+    "Product": "Coffee Maker Gen 2",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 893,
+    "Product": "Coffee Maker Gen 3",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 894,
+    "Product": "Coffee Maker Series A",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 895,
+    "Product": "Coffee Maker Series B",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 896,
+    "Product": "Coffee Maker Series C",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 897,
+    "Product": "Coffee Maker Model X",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 898,
+    "Product": "Coffee Maker Model Y",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 899,
+    "Product": "Coffee Maker Model Z",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 900,
+    "Product": "Coffee Maker 2026",
+    "HS_Code": "851671",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 901,
+    "Product": "Vacuum Cleaner Standard",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 902,
+    "Product": "Vacuum Cleaner Basic",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 903,
+    "Product": "Vacuum Cleaner Premium",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 904,
+    "Product": "Vacuum Cleaner Pro",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 905,
+    "Product": "Vacuum Cleaner Advanced",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 906,
+    "Product": "Vacuum Cleaner Lite",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 907,
+    "Product": "Vacuum Cleaner Plus",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 908,
+    "Product": "Vacuum Cleaner Max",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 909,
+    "Product": "Vacuum Cleaner Mini",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 910,
+    "Product": "Vacuum Cleaner Ultra",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 911,
+    "Product": "Vacuum Cleaner Gen 1",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 912,
+    "Product": "Vacuum Cleaner Gen 2",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 913,
+    "Product": "Vacuum Cleaner Gen 3",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 914,
+    "Product": "Vacuum Cleaner Series A",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 915,
+    "Product": "Vacuum Cleaner Series B",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 916,
+    "Product": "Vacuum Cleaner Series C",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 917,
+    "Product": "Vacuum Cleaner Model X",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 918,
+    "Product": "Vacuum Cleaner Model Y",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 919,
+    "Product": "Vacuum Cleaner Model Z",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 920,
+    "Product": "Vacuum Cleaner 2026",
+    "HS_Code": "850811",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 921,
+    "Product": "Electric Fan Standard",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 922,
+    "Product": "Electric Fan Basic",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 923,
+    "Product": "Electric Fan Premium",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 924,
+    "Product": "Electric Fan Pro",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 925,
+    "Product": "Electric Fan Advanced",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 926,
+    "Product": "Electric Fan Lite",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 927,
+    "Product": "Electric Fan Plus",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 928,
+    "Product": "Electric Fan Max",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 929,
+    "Product": "Electric Fan Mini",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 930,
+    "Product": "Electric Fan Ultra",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 931,
+    "Product": "Electric Fan Gen 1",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 932,
+    "Product": "Electric Fan Gen 2",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 933,
+    "Product": "Electric Fan Gen 3",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 934,
+    "Product": "Electric Fan Series A",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 935,
+    "Product": "Electric Fan Series B",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 936,
+    "Product": "Electric Fan Series C",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 937,
+    "Product": "Electric Fan Model X",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 938,
+    "Product": "Electric Fan Model Y",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 939,
+    "Product": "Electric Fan Model Z",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 940,
+    "Product": "Electric Fan 2026",
+    "HS_Code": "841451",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 941,
+    "Product": "Water Heater Standard",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 942,
+    "Product": "Water Heater Basic",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 943,
+    "Product": "Water Heater Premium",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 944,
+    "Product": "Water Heater Pro",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 945,
+    "Product": "Water Heater Advanced",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 946,
+    "Product": "Water Heater Lite",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 947,
+    "Product": "Water Heater Plus",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 948,
+    "Product": "Water Heater Max",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 949,
+    "Product": "Water Heater Mini",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 950,
+    "Product": "Water Heater Ultra",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 951,
+    "Product": "Water Heater Gen 1",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 952,
+    "Product": "Water Heater Gen 2",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 953,
+    "Product": "Water Heater Gen 3",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 954,
+    "Product": "Water Heater Series A",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 955,
+    "Product": "Water Heater Series B",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 956,
+    "Product": "Water Heater Series C",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 957,
+    "Product": "Water Heater Model X",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 958,
+    "Product": "Water Heater Model Y",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 959,
+    "Product": "Water Heater Model Z",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 960,
+    "Product": "Water Heater 2026",
+    "HS_Code": "851610",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 961,
+    "Product": "Toaster Standard",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 962,
+    "Product": "Toaster Basic",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 963,
+    "Product": "Toaster Premium",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 964,
+    "Product": "Toaster Pro",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 965,
+    "Product": "Toaster Advanced",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 966,
+    "Product": "Toaster Lite",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 967,
+    "Product": "Toaster Plus",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 968,
+    "Product": "Toaster Max",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 969,
+    "Product": "Toaster Mini",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 970,
+    "Product": "Toaster Ultra",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 971,
+    "Product": "Toaster Gen 1",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 972,
+    "Product": "Toaster Gen 2",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 973,
+    "Product": "Toaster Gen 3",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 974,
+    "Product": "Toaster Series A",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 975,
+    "Product": "Toaster Series B",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 976,
+    "Product": "Toaster Series C",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 977,
+    "Product": "Toaster Model X",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 978,
+    "Product": "Toaster Model Y",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 979,
+    "Product": "Toaster Model Z",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 980,
+    "Product": "Toaster 2026",
+    "HS_Code": "851672",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 981,
+    "Product": "Electric Iron Standard",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 982,
+    "Product": "Electric Iron Basic",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 983,
+    "Product": "Electric Iron Premium",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 984,
+    "Product": "Electric Iron Pro",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 985,
+    "Product": "Electric Iron Advanced",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 986,
+    "Product": "Electric Iron Lite",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 987,
+    "Product": "Electric Iron Plus",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 988,
+    "Product": "Electric Iron Max",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 989,
+    "Product": "Electric Iron Mini",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 990,
+    "Product": "Electric Iron Ultra",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 991,
+    "Product": "Electric Iron Gen 1",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 992,
+    "Product": "Electric Iron Gen 2",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 993,
+    "Product": "Electric Iron Gen 3",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 994,
+    "Product": "Electric Iron Series A",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 995,
+    "Product": "Electric Iron Series B",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 996,
+    "Product": "Electric Iron Series C",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 997,
+    "Product": "Electric Iron Model X",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 998,
+    "Product": "Electric Iron Model Y",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 999,
+    "Product": "Electric Iron Model Z",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1000,
+    "Product": "Electric Iron 2026",
+    "HS_Code": "851640",
+    "Category": "Home Appliances",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1001,
+    "Product": "Hair Dryer Standard",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1002,
+    "Product": "Hair Dryer Basic",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1003,
+    "Product": "Hair Dryer Premium",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1004,
+    "Product": "Hair Dryer Pro",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1005,
+    "Product": "Hair Dryer Advanced",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1006,
+    "Product": "Hair Dryer Lite",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1007,
+    "Product": "Hair Dryer Plus",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1008,
+    "Product": "Hair Dryer Max",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1009,
+    "Product": "Hair Dryer Mini",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1010,
+    "Product": "Hair Dryer Ultra",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1011,
+    "Product": "Hair Dryer Gen 1",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1012,
+    "Product": "Hair Dryer Gen 2",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1013,
+    "Product": "Hair Dryer Gen 3",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1014,
+    "Product": "Hair Dryer Series A",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1015,
+    "Product": "Hair Dryer Series B",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1016,
+    "Product": "Hair Dryer Series C",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1017,
+    "Product": "Hair Dryer Model X",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1018,
+    "Product": "Hair Dryer Model Y",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1019,
+    "Product": "Hair Dryer Model Z",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1020,
+    "Product": "Hair Dryer 2026",
+    "HS_Code": "851631",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1021,
+    "Product": "Electric Shaver Standard",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1022,
+    "Product": "Electric Shaver Basic",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1023,
+    "Product": "Electric Shaver Premium",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1024,
+    "Product": "Electric Shaver Pro",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1025,
+    "Product": "Electric Shaver Advanced",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1026,
+    "Product": "Electric Shaver Lite",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1027,
+    "Product": "Electric Shaver Plus",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1028,
+    "Product": "Electric Shaver Max",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1029,
+    "Product": "Electric Shaver Mini",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1030,
+    "Product": "Electric Shaver Ultra",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1031,
+    "Product": "Electric Shaver Gen 1",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1032,
+    "Product": "Electric Shaver Gen 2",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1033,
+    "Product": "Electric Shaver Gen 3",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1034,
+    "Product": "Electric Shaver Series A",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1035,
+    "Product": "Electric Shaver Series B",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1036,
+    "Product": "Electric Shaver Series C",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1037,
+    "Product": "Electric Shaver Model X",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1038,
+    "Product": "Electric Shaver Model Y",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1039,
+    "Product": "Electric Shaver Model Z",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1040,
+    "Product": "Electric Shaver 2026",
+    "HS_Code": "851010",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1041,
+    "Product": "Hair Clipper Standard",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1042,
+    "Product": "Hair Clipper Basic",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1043,
+    "Product": "Hair Clipper Premium",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1044,
+    "Product": "Hair Clipper Pro",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1045,
+    "Product": "Hair Clipper Advanced",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1046,
+    "Product": "Hair Clipper Lite",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1047,
+    "Product": "Hair Clipper Plus",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1048,
+    "Product": "Hair Clipper Max",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1049,
+    "Product": "Hair Clipper Mini",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1050,
+    "Product": "Hair Clipper Ultra",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1051,
+    "Product": "Hair Clipper Gen 1",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1052,
+    "Product": "Hair Clipper Gen 2",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1053,
+    "Product": "Hair Clipper Gen 3",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1054,
+    "Product": "Hair Clipper Series A",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1055,
+    "Product": "Hair Clipper Series B",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1056,
+    "Product": "Hair Clipper Series C",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1057,
+    "Product": "Hair Clipper Model X",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1058,
+    "Product": "Hair Clipper Model Y",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1059,
+    "Product": "Hair Clipper Model Z",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1060,
+    "Product": "Hair Clipper 2026",
+    "HS_Code": "851020",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1061,
+    "Product": "Electric Toothbrush Standard",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1062,
+    "Product": "Electric Toothbrush Basic",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1063,
+    "Product": "Electric Toothbrush Premium",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1064,
+    "Product": "Electric Toothbrush Pro",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1065,
+    "Product": "Electric Toothbrush Advanced",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1066,
+    "Product": "Electric Toothbrush Lite",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1067,
+    "Product": "Electric Toothbrush Plus",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1068,
+    "Product": "Electric Toothbrush Max",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1069,
+    "Product": "Electric Toothbrush Mini",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1070,
+    "Product": "Electric Toothbrush Ultra",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1071,
+    "Product": "Electric Toothbrush Gen 1",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1072,
+    "Product": "Electric Toothbrush Gen 2",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1073,
+    "Product": "Electric Toothbrush Gen 3",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1074,
+    "Product": "Electric Toothbrush Series A",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1075,
+    "Product": "Electric Toothbrush Series B",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1076,
+    "Product": "Electric Toothbrush Series C",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1077,
+    "Product": "Electric Toothbrush Model X",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1078,
+    "Product": "Electric Toothbrush Model Y",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1079,
+    "Product": "Electric Toothbrush Model Z",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1080,
+    "Product": "Electric Toothbrush 2026",
+    "HS_Code": "850980",
+    "Category": "Personal Care",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1081,
+    "Product": "LED Bulb Standard",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1082,
+    "Product": "LED Bulb Basic",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1083,
+    "Product": "LED Bulb Premium",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1084,
+    "Product": "LED Bulb Pro",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1085,
+    "Product": "LED Bulb Advanced",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1086,
+    "Product": "LED Bulb Lite",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1087,
+    "Product": "LED Bulb Plus",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1088,
+    "Product": "LED Bulb Max",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1089,
+    "Product": "LED Bulb Mini",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1090,
+    "Product": "LED Bulb Ultra",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1091,
+    "Product": "LED Bulb Gen 1",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1092,
+    "Product": "LED Bulb Gen 2",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1093,
+    "Product": "LED Bulb Gen 3",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1094,
+    "Product": "LED Bulb Series A",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1095,
+    "Product": "LED Bulb Series B",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1096,
+    "Product": "LED Bulb Series C",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1097,
+    "Product": "LED Bulb Model X",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1098,
+    "Product": "LED Bulb Model Y",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1099,
+    "Product": "LED Bulb Model Z",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1100,
+    "Product": "LED Bulb 2026",
+    "HS_Code": "853952",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1101,
+    "Product": "LED Lamp Standard",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1102,
+    "Product": "LED Lamp Basic",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1103,
+    "Product": "LED Lamp Premium",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1104,
+    "Product": "LED Lamp Pro",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1105,
+    "Product": "LED Lamp Advanced",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1106,
+    "Product": "LED Lamp Lite",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1107,
+    "Product": "LED Lamp Plus",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1108,
+    "Product": "LED Lamp Max",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1109,
+    "Product": "LED Lamp Mini",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1110,
+    "Product": "LED Lamp Ultra",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1111,
+    "Product": "LED Lamp Gen 1",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1112,
+    "Product": "LED Lamp Gen 2",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1113,
+    "Product": "LED Lamp Gen 3",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1114,
+    "Product": "LED Lamp Series A",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1115,
+    "Product": "LED Lamp Series B",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1116,
+    "Product": "LED Lamp Series C",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1117,
+    "Product": "LED Lamp Model X",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1118,
+    "Product": "LED Lamp Model Y",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1119,
+    "Product": "LED Lamp Model Z",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1120,
+    "Product": "LED Lamp 2026",
+    "HS_Code": "940521",
+    "Category": "Lighting",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1121,
+    "Product": "Solar Panel Standard",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1122,
+    "Product": "Solar Panel Basic",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1123,
+    "Product": "Solar Panel Premium",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1124,
+    "Product": "Solar Panel Pro",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1125,
+    "Product": "Solar Panel Advanced",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1126,
+    "Product": "Solar Panel Lite",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1127,
+    "Product": "Solar Panel Plus",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1128,
+    "Product": "Solar Panel Max",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1129,
+    "Product": "Solar Panel Mini",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1130,
+    "Product": "Solar Panel Ultra",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1131,
+    "Product": "Solar Panel Gen 1",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1132,
+    "Product": "Solar Panel Gen 2",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1133,
+    "Product": "Solar Panel Gen 3",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1134,
+    "Product": "Solar Panel Series A",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1135,
+    "Product": "Solar Panel Series B",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1136,
+    "Product": "Solar Panel Series C",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1137,
+    "Product": "Solar Panel Model X",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1138,
+    "Product": "Solar Panel Model Y",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1139,
+    "Product": "Solar Panel Model Z",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1140,
+    "Product": "Solar Panel 2026",
+    "HS_Code": "854143",
+    "Category": "Renewable Energy",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1141,
+    "Product": "Inverter Standard",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1142,
+    "Product": "Inverter Basic",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1143,
+    "Product": "Inverter Premium",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1144,
+    "Product": "Inverter Pro",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1145,
+    "Product": "Inverter Advanced",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1146,
+    "Product": "Inverter Lite",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1147,
+    "Product": "Inverter Plus",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1148,
+    "Product": "Inverter Max",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1149,
+    "Product": "Inverter Mini",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1150,
+    "Product": "Inverter Ultra",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1151,
+    "Product": "Inverter Gen 1",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1152,
+    "Product": "Inverter Gen 2",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1153,
+    "Product": "Inverter Gen 3",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1154,
+    "Product": "Inverter Series A",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1155,
+    "Product": "Inverter Series B",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1156,
+    "Product": "Inverter Series C",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1157,
+    "Product": "Inverter Model X",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1158,
+    "Product": "Inverter Model Y",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1159,
+    "Product": "Inverter Model Z",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1160,
+    "Product": "Inverter 2026",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1161,
+    "Product": "Battery Charger Standard",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1162,
+    "Product": "Battery Charger Basic",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1163,
+    "Product": "Battery Charger Premium",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1164,
+    "Product": "Battery Charger Pro",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1165,
+    "Product": "Battery Charger Advanced",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1166,
+    "Product": "Battery Charger Lite",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1167,
+    "Product": "Battery Charger Plus",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1168,
+    "Product": "Battery Charger Max",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1169,
+    "Product": "Battery Charger Mini",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1170,
+    "Product": "Battery Charger Ultra",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1171,
+    "Product": "Battery Charger Gen 1",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1172,
+    "Product": "Battery Charger Gen 2",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1173,
+    "Product": "Battery Charger Gen 3",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1174,
+    "Product": "Battery Charger Series A",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1175,
+    "Product": "Battery Charger Series B",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1176,
+    "Product": "Battery Charger Series C",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1177,
+    "Product": "Battery Charger Model X",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1178,
+    "Product": "Battery Charger Model Y",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1179,
+    "Product": "Battery Charger Model Z",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1180,
+    "Product": "Battery Charger 2026",
+    "HS_Code": "850440",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1181,
+    "Product": "Lithium Battery Standard",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1182,
+    "Product": "Lithium Battery Basic",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1183,
+    "Product": "Lithium Battery Premium",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1184,
+    "Product": "Lithium Battery Pro",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1185,
+    "Product": "Lithium Battery Advanced",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1186,
+    "Product": "Lithium Battery Lite",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1187,
+    "Product": "Lithium Battery Plus",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1188,
+    "Product": "Lithium Battery Max",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1189,
+    "Product": "Lithium Battery Mini",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1190,
+    "Product": "Lithium Battery Ultra",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1191,
+    "Product": "Lithium Battery Gen 1",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1192,
+    "Product": "Lithium Battery Gen 2",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1193,
+    "Product": "Lithium Battery Gen 3",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1194,
+    "Product": "Lithium Battery Series A",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1195,
+    "Product": "Lithium Battery Series B",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1196,
+    "Product": "Lithium Battery Series C",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1197,
+    "Product": "Lithium Battery Model X",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1198,
+    "Product": "Lithium Battery Model Y",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1199,
+    "Product": "Lithium Battery Model Z",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  },
+  {
+    "Product_ID": 1200,
+    "Product": "Lithium Battery 2026",
+    "HS_Code": "850760",
+    "Category": "Electrical Equipment",
+    "Unit": "Piece"
+  }
+]

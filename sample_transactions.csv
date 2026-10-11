@@ -1,0 +1,401 @@
+Transaction_ID,Product,HS_Code,Origin_Country,Destination_Country,Unit_Price_USD,Quantity,Shipping_USD
+1,Laptop Standard,847130,India,France,87.25,2,38.5
+2,Laptop Basic,847130,United States,Italy,124.5,3,57.0
+3,Laptop Premium,847130,Germany,Spain,161.75,4,75.5
+4,Laptop Pro,847130,United Arab Emirates,Singapore,199.0,5,94.0
+5,Laptop Advanced,847130,Japan,Malaysia,236.25,6,112.5
+6,Laptop Lite,847130,United Kingdom,Thailand,273.5,7,131.0
+7,Laptop Plus,847130,Australia,South Korea,310.75,8,149.5
+8,Laptop Max,847130,Canada,China,348.0,9,168.0
+9,Laptop Mini,847130,France,Saudi Arabia,385.25,10,186.5
+10,Laptop Ultra,847130,Italy,Brazil,422.5,11,205.0
+11,Laptop Gen 1,847130,Spain,South Africa,459.75,12,223.5
+12,Laptop Gen 2,847130,Singapore,New Zealand,497.0,1,242.0
+13,Laptop Gen 3,847130,Malaysia,Mexico,534.25,2,260.5
+14,Laptop Series A,847130,Thailand,Indonesia,571.5,3,279.0
+15,Laptop Series B,847130,South Korea,Vietnam,608.75,4,20.0
+16,Laptop Series C,847130,China,Philippines,646.0,5,38.5
+17,Laptop Model X,847130,Saudi Arabia,Turkey,683.25,6,57.0
+18,Laptop Model Y,847130,Brazil,Netherlands,720.5,7,75.5
+19,Laptop Model Z,847130,South Africa,Belgium,757.75,8,94.0
+20,Laptop 2026,847130,New Zealand,Sweden,795.0,9,112.5
+21,Desktop Computer Standard,847141,Mexico,Norway,832.25,10,131.0
+22,Desktop Computer Basic,847141,Indonesia,Denmark,869.5,11,149.5
+23,Desktop Computer Premium,847141,Vietnam,Switzerland,906.75,12,168.0
+24,Desktop Computer Pro,847141,Philippines,Ireland,944.0,1,186.5
+25,Desktop Computer Advanced,847141,Turkey,Portugal,981.25,2,205.0
+26,Desktop Computer Lite,847141,Netherlands,Poland,1018.5,3,223.5
+27,Desktop Computer Plus,847141,Belgium,Austria,1055.75,4,242.0
+28,Desktop Computer Max,847141,Sweden,Argentina,1093.0,5,260.5
+29,Desktop Computer Mini,847141,Norway,Chile,1130.25,6,279.0
+30,Desktop Computer Ultra,847141,Denmark,Egypt,1167.5,7,20.0
+31,Desktop Computer Gen 1,847141,Switzerland,Nigeria,1204.75,8,38.5
+32,Desktop Computer Gen 2,847141,Ireland,Greece,1242.0,9,57.0
+33,Desktop Computer Gen 3,847141,Portugal,India,1279.25,10,75.5
+34,Desktop Computer Series A,847141,Poland,United States,1316.5,11,94.0
+35,Desktop Computer Series B,847141,Austria,Germany,1353.75,12,112.5
+36,Desktop Computer Series C,847141,Argentina,United Arab Emirates,1391.0,1,131.0
+37,Desktop Computer Model X,847141,Chile,Japan,1428.25,2,149.5
+38,Desktop Computer Model Y,847141,Egypt,United Kingdom,1465.5,3,168.0
+39,Desktop Computer Model Z,847141,Nigeria,Australia,1502.75,4,186.5
+40,Desktop Computer 2026,847141,Greece,Canada,50.0,5,205.0
+41,Tablet Standard,847130,India,France,87.25,6,223.5
+42,Tablet Basic,847130,United States,Italy,124.5,7,242.0
+43,Tablet Premium,847130,Germany,Spain,161.75,8,260.5
+44,Tablet Pro,847130,United Arab Emirates,Singapore,199.0,9,279.0
+45,Tablet Advanced,847130,Japan,Malaysia,236.25,10,20.0
+46,Tablet Lite,847130,United Kingdom,Thailand,273.5,11,38.5
+47,Tablet Plus,847130,Australia,South Korea,310.75,12,57.0
+48,Tablet Max,847130,Canada,China,348.0,1,75.5
+49,Tablet Mini,847130,France,Saudi Arabia,385.25,2,94.0
+50,Tablet Ultra,847130,Italy,Brazil,422.5,3,112.5
+51,Tablet Gen 1,847130,Spain,South Africa,459.75,4,131.0
+52,Tablet Gen 2,847130,Singapore,New Zealand,497.0,5,149.5
+53,Tablet Gen 3,847130,Malaysia,Mexico,534.25,6,168.0
+54,Tablet Series A,847130,Thailand,Indonesia,571.5,7,186.5
+55,Tablet Series B,847130,South Korea,Vietnam,608.75,8,205.0
+56,Tablet Series C,847130,China,Philippines,646.0,9,223.5
+57,Tablet Model X,847130,Saudi Arabia,Turkey,683.25,10,242.0
+58,Tablet Model Y,847130,Brazil,Netherlands,720.5,11,260.5
+59,Tablet Model Z,847130,South Africa,Belgium,757.75,12,279.0
+60,Tablet 2026,847130,New Zealand,Sweden,795.0,1,20.0
+61,Mobile Phone Standard,851713,Mexico,Norway,832.25,2,38.5
+62,Mobile Phone Basic,851713,Indonesia,Denmark,869.5,3,57.0
+63,Mobile Phone Premium,851713,Vietnam,Switzerland,906.75,4,75.5
+64,Mobile Phone Pro,851713,Philippines,Ireland,944.0,5,94.0
+65,Mobile Phone Advanced,851713,Turkey,Portugal,981.25,6,112.5
+66,Mobile Phone Lite,851713,Netherlands,Poland,1018.5,7,131.0
+67,Mobile Phone Plus,851713,Belgium,Austria,1055.75,8,149.5
+68,Mobile Phone Max,851713,Sweden,Argentina,1093.0,9,168.0
+69,Mobile Phone Mini,851713,Norway,Chile,1130.25,10,186.5
+70,Mobile Phone Ultra,851713,Denmark,Egypt,1167.5,11,205.0
+71,Mobile Phone Gen 1,851713,Switzerland,Nigeria,1204.75,12,223.5
+72,Mobile Phone Gen 2,851713,Ireland,Greece,1242.0,1,242.0
+73,Mobile Phone Gen 3,851713,Portugal,India,1279.25,2,260.5
+74,Mobile Phone Series A,851713,Poland,United States,1316.5,3,279.0
+75,Mobile Phone Series B,851713,Austria,Germany,1353.75,4,20.0
+76,Mobile Phone Series C,851713,Argentina,United Arab Emirates,1391.0,5,38.5
+77,Mobile Phone Model X,851713,Chile,Japan,1428.25,6,57.0
+78,Mobile Phone Model Y,851713,Egypt,United Kingdom,1465.5,7,75.5
+79,Mobile Phone Model Z,851713,Nigeria,Australia,1502.75,8,94.0
+80,Mobile Phone 2026,851713,Greece,Canada,50.0,9,112.5
+81,Smartwatch Standard,851762,India,France,87.25,10,131.0
+82,Smartwatch Basic,851762,United States,Italy,124.5,11,149.5
+83,Smartwatch Premium,851762,Germany,Spain,161.75,12,168.0
+84,Smartwatch Pro,851762,United Arab Emirates,Singapore,199.0,1,186.5
+85,Smartwatch Advanced,851762,Japan,Malaysia,236.25,2,205.0
+86,Smartwatch Lite,851762,United Kingdom,Thailand,273.5,3,223.5
+87,Smartwatch Plus,851762,Australia,South Korea,310.75,4,242.0
+88,Smartwatch Max,851762,Canada,China,348.0,5,260.5
+89,Smartwatch Mini,851762,France,Saudi Arabia,385.25,6,279.0
+90,Smartwatch Ultra,851762,Italy,Brazil,422.5,7,20.0
+91,Smartwatch Gen 1,851762,Spain,South Africa,459.75,8,38.5
+92,Smartwatch Gen 2,851762,Singapore,New Zealand,497.0,9,57.0
+93,Smartwatch Gen 3,851762,Malaysia,Mexico,534.25,10,75.5
+94,Smartwatch Series A,851762,Thailand,Indonesia,571.5,11,94.0
+95,Smartwatch Series B,851762,South Korea,Vietnam,608.75,12,112.5
+96,Smartwatch Series C,851762,China,Philippines,646.0,1,131.0
+97,Smartwatch Model X,851762,Saudi Arabia,Turkey,683.25,2,149.5
+98,Smartwatch Model Y,851762,Brazil,Netherlands,720.5,3,168.0
+99,Smartwatch Model Z,851762,South Africa,Belgium,757.75,4,186.5
+100,Smartwatch 2026,851762,New Zealand,Sweden,795.0,5,205.0
+101,Wireless Headphones Standard,851830,Mexico,Norway,832.25,6,223.5
+102,Wireless Headphones Basic,851830,Indonesia,Denmark,869.5,7,242.0
+103,Wireless Headphones Premium,851830,Vietnam,Switzerland,906.75,8,260.5
+104,Wireless Headphones Pro,851830,Philippines,Ireland,944.0,9,279.0
+105,Wireless Headphones Advanced,851830,Turkey,Portugal,981.25,10,20.0
+106,Wireless Headphones Lite,851830,Netherlands,Poland,1018.5,11,38.5
+107,Wireless Headphones Plus,851830,Belgium,Austria,1055.75,12,57.0
+108,Wireless Headphones Max,851830,Sweden,Argentina,1093.0,1,75.5
+109,Wireless Headphones Mini,851830,Norway,Chile,1130.25,2,94.0
+110,Wireless Headphones Ultra,851830,Denmark,Egypt,1167.5,3,112.5
+111,Wireless Headphones Gen 1,851830,Switzerland,Nigeria,1204.75,4,131.0
+112,Wireless Headphones Gen 2,851830,Ireland,Greece,1242.0,5,149.5
+113,Wireless Headphones Gen 3,851830,Portugal,India,1279.25,6,168.0
+114,Wireless Headphones Series A,851830,Poland,United States,1316.5,7,186.5
+115,Wireless Headphones Series B,851830,Austria,Germany,1353.75,8,205.0
+116,Wireless Headphones Series C,851830,Argentina,United Arab Emirates,1391.0,9,223.5
+117,Wireless Headphones Model X,851830,Chile,Japan,1428.25,10,242.0
+118,Wireless Headphones Model Y,851830,Egypt,United Kingdom,1465.5,11,260.5
+119,Wireless Headphones Model Z,851830,Nigeria,Australia,1502.75,12,279.0
+120,Wireless Headphones 2026,851830,Greece,Canada,50.0,1,20.0
+121,Bluetooth Speaker Standard,851821,India,France,87.25,2,38.5
+122,Bluetooth Speaker Basic,851821,United States,Italy,124.5,3,57.0
+123,Bluetooth Speaker Premium,851821,Germany,Spain,161.75,4,75.5
+124,Bluetooth Speaker Pro,851821,United Arab Emirates,Singapore,199.0,5,94.0
+125,Bluetooth Speaker Advanced,851821,Japan,Malaysia,236.25,6,112.5
+126,Bluetooth Speaker Lite,851821,United Kingdom,Thailand,273.5,7,131.0
+127,Bluetooth Speaker Plus,851821,Australia,South Korea,310.75,8,149.5
+128,Bluetooth Speaker Max,851821,Canada,China,348.0,9,168.0
+129,Bluetooth Speaker Mini,851821,France,Saudi Arabia,385.25,10,186.5
+130,Bluetooth Speaker Ultra,851821,Italy,Brazil,422.5,11,205.0
+131,Bluetooth Speaker Gen 1,851821,Spain,South Africa,459.75,12,223.5
+132,Bluetooth Speaker Gen 2,851821,Singapore,New Zealand,497.0,1,242.0
+133,Bluetooth Speaker Gen 3,851821,Malaysia,Mexico,534.25,2,260.5
+134,Bluetooth Speaker Series A,851821,Thailand,Indonesia,571.5,3,279.0
+135,Bluetooth Speaker Series B,851821,South Korea,Vietnam,608.75,4,20.0
+136,Bluetooth Speaker Series C,851821,China,Philippines,646.0,5,38.5
+137,Bluetooth Speaker Model X,851821,Saudi Arabia,Turkey,683.25,6,57.0
+138,Bluetooth Speaker Model Y,851821,Brazil,Netherlands,720.5,7,75.5
+139,Bluetooth Speaker Model Z,851821,South Africa,Belgium,757.75,8,94.0
+140,Bluetooth Speaker 2026,851821,New Zealand,Sweden,795.0,9,112.5
+141,Keyboard Standard,847160,Mexico,Norway,832.25,10,131.0
+142,Keyboard Basic,847160,Indonesia,Denmark,869.5,11,149.5
+143,Keyboard Premium,847160,Vietnam,Switzerland,906.75,12,168.0
+144,Keyboard Pro,847160,Philippines,Ireland,944.0,1,186.5
+145,Keyboard Advanced,847160,Turkey,Portugal,981.25,2,205.0
+146,Keyboard Lite,847160,Netherlands,Poland,1018.5,3,223.5
+147,Keyboard Plus,847160,Belgium,Austria,1055.75,4,242.0
+148,Keyboard Max,847160,Sweden,Argentina,1093.0,5,260.5
+149,Keyboard Mini,847160,Norway,Chile,1130.25,6,279.0
+150,Keyboard Ultra,847160,Denmark,Egypt,1167.5,7,20.0
+151,Keyboard Gen 1,847160,Switzerland,Nigeria,1204.75,8,38.5
+152,Keyboard Gen 2,847160,Ireland,Greece,1242.0,9,57.0
+153,Keyboard Gen 3,847160,Portugal,India,1279.25,10,75.5
+154,Keyboard Series A,847160,Poland,United States,1316.5,11,94.0
+155,Keyboard Series B,847160,Austria,Germany,1353.75,12,112.5
+156,Keyboard Series C,847160,Argentina,United Arab Emirates,1391.0,1,131.0
+157,Keyboard Model X,847160,Chile,Japan,1428.25,2,149.5
+158,Keyboard Model Y,847160,Egypt,United Kingdom,1465.5,3,168.0
+159,Keyboard Model Z,847160,Nigeria,Australia,1502.75,4,186.5
+160,Keyboard 2026,847160,Greece,Canada,50.0,5,205.0
+161,Computer Mouse Standard,847160,India,France,87.25,6,223.5
+162,Computer Mouse Basic,847160,United States,Italy,124.5,7,242.0
+163,Computer Mouse Premium,847160,Germany,Spain,161.75,8,260.5
+164,Computer Mouse Pro,847160,United Arab Emirates,Singapore,199.0,9,279.0
+165,Computer Mouse Advanced,847160,Japan,Malaysia,236.25,10,20.0
+166,Computer Mouse Lite,847160,United Kingdom,Thailand,273.5,11,38.5
+167,Computer Mouse Plus,847160,Australia,South Korea,310.75,12,57.0
+168,Computer Mouse Max,847160,Canada,China,348.0,1,75.5
+169,Computer Mouse Mini,847160,France,Saudi Arabia,385.25,2,94.0
+170,Computer Mouse Ultra,847160,Italy,Brazil,422.5,3,112.5
+171,Computer Mouse Gen 1,847160,Spain,South Africa,459.75,4,131.0
+172,Computer Mouse Gen 2,847160,Singapore,New Zealand,497.0,5,149.5
+173,Computer Mouse Gen 3,847160,Malaysia,Mexico,534.25,6,168.0
+174,Computer Mouse Series A,847160,Thailand,Indonesia,571.5,7,186.5
+175,Computer Mouse Series B,847160,South Korea,Vietnam,608.75,8,205.0
+176,Computer Mouse Series C,847160,China,Philippines,646.0,9,223.5
+177,Computer Mouse Model X,847160,Saudi Arabia,Turkey,683.25,10,242.0
+178,Computer Mouse Model Y,847160,Brazil,Netherlands,720.5,11,260.5
+179,Computer Mouse Model Z,847160,South Africa,Belgium,757.75,12,279.0
+180,Computer Mouse 2026,847160,New Zealand,Sweden,795.0,1,20.0
+181,Printer Standard,844332,Mexico,Norway,832.25,2,38.5
+182,Printer Basic,844332,Indonesia,Denmark,869.5,3,57.0
+183,Printer Premium,844332,Vietnam,Switzerland,906.75,4,75.5
+184,Printer Pro,844332,Philippines,Ireland,944.0,5,94.0
+185,Printer Advanced,844332,Turkey,Portugal,981.25,6,112.5
+186,Printer Lite,844332,Netherlands,Poland,1018.5,7,131.0
+187,Printer Plus,844332,Belgium,Austria,1055.75,8,149.5
+188,Printer Max,844332,Sweden,Argentina,1093.0,9,168.0
+189,Printer Mini,844332,Norway,Chile,1130.25,10,186.5
+190,Printer Ultra,844332,Denmark,Egypt,1167.5,11,205.0
+191,Printer Gen 1,844332,Switzerland,Nigeria,1204.75,12,223.5
+192,Printer Gen 2,844332,Ireland,Greece,1242.0,1,242.0
+193,Printer Gen 3,844332,Portugal,India,1279.25,2,260.5
+194,Printer Series A,844332,Poland,United States,1316.5,3,279.0
+195,Printer Series B,844332,Austria,Germany,1353.75,4,20.0
+196,Printer Series C,844332,Argentina,United Arab Emirates,1391.0,5,38.5
+197,Printer Model X,844332,Chile,Japan,1428.25,6,57.0
+198,Printer Model Y,844332,Egypt,United Kingdom,1465.5,7,75.5
+199,Printer Model Z,844332,Nigeria,Australia,1502.75,8,94.0
+200,Printer 2026,844332,Greece,Canada,50.0,9,112.5
+201,Scanner Standard,847160,India,France,87.25,10,131.0
+202,Scanner Basic,847160,United States,Italy,124.5,11,149.5
+203,Scanner Premium,847160,Germany,Spain,161.75,12,168.0
+204,Scanner Pro,847160,United Arab Emirates,Singapore,199.0,1,186.5
+205,Scanner Advanced,847160,Japan,Malaysia,236.25,2,205.0
+206,Scanner Lite,847160,United Kingdom,Thailand,273.5,3,223.5
+207,Scanner Plus,847160,Australia,South Korea,310.75,4,242.0
+208,Scanner Max,847160,Canada,China,348.0,5,260.5
+209,Scanner Mini,847160,France,Saudi Arabia,385.25,6,279.0
+210,Scanner Ultra,847160,Italy,Brazil,422.5,7,20.0
+211,Scanner Gen 1,847160,Spain,South Africa,459.75,8,38.5
+212,Scanner Gen 2,847160,Singapore,New Zealand,497.0,9,57.0
+213,Scanner Gen 3,847160,Malaysia,Mexico,534.25,10,75.5
+214,Scanner Series A,847160,Thailand,Indonesia,571.5,11,94.0
+215,Scanner Series B,847160,South Korea,Vietnam,608.75,12,112.5
+216,Scanner Series C,847160,China,Philippines,646.0,1,131.0
+217,Scanner Model X,847160,Saudi Arabia,Turkey,683.25,2,149.5
+218,Scanner Model Y,847160,Brazil,Netherlands,720.5,3,168.0
+219,Scanner Model Z,847160,South Africa,Belgium,757.75,4,186.5
+220,Scanner 2026,847160,New Zealand,Sweden,795.0,5,205.0
+221,Projector Standard,852862,Mexico,Norway,832.25,6,223.5
+222,Projector Basic,852862,Indonesia,Denmark,869.5,7,242.0
+223,Projector Premium,852862,Vietnam,Switzerland,906.75,8,260.5
+224,Projector Pro,852862,Philippines,Ireland,944.0,9,279.0
+225,Projector Advanced,852862,Turkey,Portugal,981.25,10,20.0
+226,Projector Lite,852862,Netherlands,Poland,1018.5,11,38.5
+227,Projector Plus,852862,Belgium,Austria,1055.75,12,57.0
+228,Projector Max,852862,Sweden,Argentina,1093.0,1,75.5
+229,Projector Mini,852862,Norway,Chile,1130.25,2,94.0
+230,Projector Ultra,852862,Denmark,Egypt,1167.5,3,112.5
+231,Projector Gen 1,852862,Switzerland,Nigeria,1204.75,4,131.0
+232,Projector Gen 2,852862,Ireland,Greece,1242.0,5,149.5
+233,Projector Gen 3,852862,Portugal,India,1279.25,6,168.0
+234,Projector Series A,852862,Poland,United States,1316.5,7,186.5
+235,Projector Series B,852862,Austria,Germany,1353.75,8,205.0
+236,Projector Series C,852862,Argentina,United Arab Emirates,1391.0,9,223.5
+237,Projector Model X,852862,Chile,Japan,1428.25,10,242.0
+238,Projector Model Y,852862,Egypt,United Kingdom,1465.5,11,260.5
+239,Projector Model Z,852862,Nigeria,Australia,1502.75,12,279.0
+240,Projector 2026,852862,Greece,Canada,50.0,1,20.0
+241,Television Standard,852872,India,France,87.25,2,38.5
+242,Television Basic,852872,United States,Italy,124.5,3,57.0
+243,Television Premium,852872,Germany,Spain,161.75,4,75.5
+244,Television Pro,852872,United Arab Emirates,Singapore,199.0,5,94.0
+245,Television Advanced,852872,Japan,Malaysia,236.25,6,112.5
+246,Television Lite,852872,United Kingdom,Thailand,273.5,7,131.0
+247,Television Plus,852872,Australia,South Korea,310.75,8,149.5
+248,Television Max,852872,Canada,China,348.0,9,168.0
+249,Television Mini,852872,France,Saudi Arabia,385.25,10,186.5
+250,Television Ultra,852872,Italy,Brazil,422.5,11,205.0
+251,Television Gen 1,852872,Spain,South Africa,459.75,12,223.5
+252,Television Gen 2,852872,Singapore,New Zealand,497.0,1,242.0
+253,Television Gen 3,852872,Malaysia,Mexico,534.25,2,260.5
+254,Television Series A,852872,Thailand,Indonesia,571.5,3,279.0
+255,Television Series B,852872,South Korea,Vietnam,608.75,4,20.0
+256,Television Series C,852872,China,Philippines,646.0,5,38.5
+257,Television Model X,852872,Saudi Arabia,Turkey,683.25,6,57.0
+258,Television Model Y,852872,Brazil,Netherlands,720.5,7,75.5
+259,Television Model Z,852872,South Africa,Belgium,757.75,8,94.0
+260,Television 2026,852872,New Zealand,Sweden,795.0,9,112.5
+261,Digital Camera Standard,852589,Mexico,Norway,832.25,10,131.0
+262,Digital Camera Basic,852589,Indonesia,Denmark,869.5,11,149.5
+263,Digital Camera Premium,852589,Vietnam,Switzerland,906.75,12,168.0
+264,Digital Camera Pro,852589,Philippines,Ireland,944.0,1,186.5
+265,Digital Camera Advanced,852589,Turkey,Portugal,981.25,2,205.0
+266,Digital Camera Lite,852589,Netherlands,Poland,1018.5,3,223.5
+267,Digital Camera Plus,852589,Belgium,Austria,1055.75,4,242.0
+268,Digital Camera Max,852589,Sweden,Argentina,1093.0,5,260.5
+269,Digital Camera Mini,852589,Norway,Chile,1130.25,6,279.0
+270,Digital Camera Ultra,852589,Denmark,Egypt,1167.5,7,20.0
+271,Digital Camera Gen 1,852589,Switzerland,Nigeria,1204.75,8,38.5
+272,Digital Camera Gen 2,852589,Ireland,Greece,1242.0,9,57.0
+273,Digital Camera Gen 3,852589,Portugal,India,1279.25,10,75.5
+274,Digital Camera Series A,852589,Poland,United States,1316.5,11,94.0
+275,Digital Camera Series B,852589,Austria,Germany,1353.75,12,112.5
+276,Digital Camera Series C,852589,Argentina,United Arab Emirates,1391.0,1,131.0
+277,Digital Camera Model X,852589,Chile,Japan,1428.25,2,149.5
+278,Digital Camera Model Y,852589,Egypt,United Kingdom,1465.5,3,168.0
+279,Digital Camera Model Z,852589,Nigeria,Australia,1502.75,4,186.5
+280,Digital Camera 2026,852589,Greece,Canada,50.0,5,205.0
+281,Video Camera Standard,852589,India,France,87.25,6,223.5
+282,Video Camera Basic,852589,United States,Italy,124.5,7,242.0
+283,Video Camera Premium,852589,Germany,Spain,161.75,8,260.5
+284,Video Camera Pro,852589,United Arab Emirates,Singapore,199.0,9,279.0
+285,Video Camera Advanced,852589,Japan,Malaysia,236.25,10,20.0
+286,Video Camera Lite,852589,United Kingdom,Thailand,273.5,11,38.5
+287,Video Camera Plus,852589,Australia,South Korea,310.75,12,57.0
+288,Video Camera Max,852589,Canada,China,348.0,1,75.5
+289,Video Camera Mini,852589,France,Saudi Arabia,385.25,2,94.0
+290,Video Camera Ultra,852589,Italy,Brazil,422.5,3,112.5
+291,Video Camera Gen 1,852589,Spain,South Africa,459.75,4,131.0
+292,Video Camera Gen 2,852589,Singapore,New Zealand,497.0,5,149.5
+293,Video Camera Gen 3,852589,Malaysia,Mexico,534.25,6,168.0
+294,Video Camera Series A,852589,Thailand,Indonesia,571.5,7,186.5
+295,Video Camera Series B,852589,South Korea,Vietnam,608.75,8,205.0
+296,Video Camera Series C,852589,China,Philippines,646.0,9,223.5
+297,Video Camera Model X,852589,Saudi Arabia,Turkey,683.25,10,242.0
+298,Video Camera Model Y,852589,Brazil,Netherlands,720.5,11,260.5
+299,Video Camera Model Z,852589,South Africa,Belgium,757.75,12,279.0
+300,Video Camera 2026,852589,New Zealand,Sweden,795.0,1,20.0
+301,Computer Monitor Standard,852852,Mexico,Norway,832.25,2,38.5
+302,Computer Monitor Basic,852852,Indonesia,Denmark,869.5,3,57.0
+303,Computer Monitor Premium,852852,Vietnam,Switzerland,906.75,4,75.5
+304,Computer Monitor Pro,852852,Philippines,Ireland,944.0,5,94.0
+305,Computer Monitor Advanced,852852,Turkey,Portugal,981.25,6,112.5
+306,Computer Monitor Lite,852852,Netherlands,Poland,1018.5,7,131.0
+307,Computer Monitor Plus,852852,Belgium,Austria,1055.75,8,149.5
+308,Computer Monitor Max,852852,Sweden,Argentina,1093.0,9,168.0
+309,Computer Monitor Mini,852852,Norway,Chile,1130.25,10,186.5
+310,Computer Monitor Ultra,852852,Denmark,Egypt,1167.5,11,205.0
+311,Computer Monitor Gen 1,852852,Switzerland,Nigeria,1204.75,12,223.5
+312,Computer Monitor Gen 2,852852,Ireland,Greece,1242.0,1,242.0
+313,Computer Monitor Gen 3,852852,Portugal,India,1279.25,2,260.5
+314,Computer Monitor Series A,852852,Poland,United States,1316.5,3,279.0
+315,Computer Monitor Series B,852852,Austria,Germany,1353.75,4,20.0
+316,Computer Monitor Series C,852852,Argentina,United Arab Emirates,1391.0,5,38.5
+317,Computer Monitor Model X,852852,Chile,Japan,1428.25,6,57.0
+318,Computer Monitor Model Y,852852,Egypt,United Kingdom,1465.5,7,75.5
+319,Computer Monitor Model Z,852852,Nigeria,Australia,1502.75,8,94.0
+320,Computer Monitor 2026,852852,Greece,Canada,50.0,9,112.5
+321,Hard Disk Drive Standard,847170,India,France,87.25,10,131.0
+322,Hard Disk Drive Basic,847170,United States,Italy,124.5,11,149.5
+323,Hard Disk Drive Premium,847170,Germany,Spain,161.75,12,168.0
+324,Hard Disk Drive Pro,847170,United Arab Emirates,Singapore,199.0,1,186.5
+325,Hard Disk Drive Advanced,847170,Japan,Malaysia,236.25,2,205.0
+326,Hard Disk Drive Lite,847170,United Kingdom,Thailand,273.5,3,223.5
+327,Hard Disk Drive Plus,847170,Australia,South Korea,310.75,4,242.0
+328,Hard Disk Drive Max,847170,Canada,China,348.0,5,260.5
+329,Hard Disk Drive Mini,847170,France,Saudi Arabia,385.25,6,279.0
+330,Hard Disk Drive Ultra,847170,Italy,Brazil,422.5,7,20.0
+331,Hard Disk Drive Gen 1,847170,Spain,South Africa,459.75,8,38.5
+332,Hard Disk Drive Gen 2,847170,Singapore,New Zealand,497.0,9,57.0
+333,Hard Disk Drive Gen 3,847170,Malaysia,Mexico,534.25,10,75.5
+334,Hard Disk Drive Series A,847170,Thailand,Indonesia,571.5,11,94.0
+335,Hard Disk Drive Series B,847170,South Korea,Vietnam,608.75,12,112.5
+336,Hard Disk Drive Series C,847170,China,Philippines,646.0,1,131.0
+337,Hard Disk Drive Model X,847170,Saudi Arabia,Turkey,683.25,2,149.5
+338,Hard Disk Drive Model Y,847170,Brazil,Netherlands,720.5,3,168.0
+339,Hard Disk Drive Model Z,847170,South Africa,Belgium,757.75,4,186.5
+340,Hard Disk Drive 2026,847170,New Zealand,Sweden,795.0,5,205.0
+341,SSD Drive Standard,847170,Mexico,Norway,832.25,6,223.5
+342,SSD Drive Basic,847170,Indonesia,Denmark,869.5,7,242.0
+343,SSD Drive Premium,847170,Vietnam,Switzerland,906.75,8,260.5
+344,SSD Drive Pro,847170,Philippines,Ireland,944.0,9,279.0
+345,SSD Drive Advanced,847170,Turkey,Portugal,981.25,10,20.0
+346,SSD Drive Lite,847170,Netherlands,Poland,1018.5,11,38.5
+347,SSD Drive Plus,847170,Belgium,Austria,1055.75,12,57.0
+348,SSD Drive Max,847170,Sweden,Argentina,1093.0,1,75.5
+349,SSD Drive Mini,847170,Norway,Chile,1130.25,2,94.0
+350,SSD Drive Ultra,847170,Denmark,Egypt,1167.5,3,112.5
+351,SSD Drive Gen 1,847170,Switzerland,Nigeria,1204.75,4,131.0
+352,SSD Drive Gen 2,847170,Ireland,Greece,1242.0,5,149.5
+353,SSD Drive Gen 3,847170,Portugal,India,1279.25,6,168.0
+354,SSD Drive Series A,847170,Poland,United States,1316.5,7,186.5
+355,SSD Drive Series B,847170,Austria,Germany,1353.75,8,205.0
+356,SSD Drive Series C,847170,Argentina,United Arab Emirates,1391.0,9,223.5
+357,SSD Drive Model X,847170,Chile,Japan,1428.25,10,242.0
+358,SSD Drive Model Y,847170,Egypt,United Kingdom,1465.5,11,260.5
+359,SSD Drive Model Z,847170,Nigeria,Australia,1502.75,12,279.0
+360,SSD Drive 2026,847170,Greece,Canada,50.0,1,20.0
+361,USB Flash Drive Standard,852351,India,France,87.25,2,38.5
+362,USB Flash Drive Basic,852351,United States,Italy,124.5,3,57.0
+363,USB Flash Drive Premium,852351,Germany,Spain,161.75,4,75.5
+364,USB Flash Drive Pro,852351,United Arab Emirates,Singapore,199.0,5,94.0
+365,USB Flash Drive Advanced,852351,Japan,Malaysia,236.25,6,112.5
+366,USB Flash Drive Lite,852351,United Kingdom,Thailand,273.5,7,131.0
+367,USB Flash Drive Plus,852351,Australia,South Korea,310.75,8,149.5
+368,USB Flash Drive Max,852351,Canada,China,348.0,9,168.0
+369,USB Flash Drive Mini,852351,France,Saudi Arabia,385.25,10,186.5
+370,USB Flash Drive Ultra,852351,Italy,Brazil,422.5,11,205.0
+371,USB Flash Drive Gen 1,852351,Spain,South Africa,459.75,12,223.5
+372,USB Flash Drive Gen 2,852351,Singapore,New Zealand,497.0,1,242.0
+373,USB Flash Drive Gen 3,852351,Malaysia,Mexico,534.25,2,260.5
+374,USB Flash Drive Series A,852351,Thailand,Indonesia,571.5,3,279.0
+375,USB Flash Drive Series B,852351,South Korea,Vietnam,608.75,4,20.0
+376,USB Flash Drive Series C,852351,China,Philippines,646.0,5,38.5
+377,USB Flash Drive Model X,852351,Saudi Arabia,Turkey,683.25,6,57.0
+378,USB Flash Drive Model Y,852351,Brazil,Netherlands,720.5,7,75.5
+379,USB Flash Drive Model Z,852351,South Africa,Belgium,757.75,8,94.0
+380,USB Flash Drive 2026,852351,New Zealand,Sweden,795.0,9,112.5
+381,Memory Card Standard,852351,Mexico,Norway,832.25,10,131.0
+382,Memory Card Basic,852351,Indonesia,Denmark,869.5,11,149.5
+383,Memory Card Premium,852351,Vietnam,Switzerland,906.75,12,168.0
+384,Memory Card Pro,852351,Philippines,Ireland,944.0,1,186.5
+385,Memory Card Advanced,852351,Turkey,Portugal,981.25,2,205.0
+386,Memory Card Lite,852351,Netherlands,Poland,1018.5,3,223.5
+387,Memory Card Plus,852351,Belgium,Austria,1055.75,4,242.0
+388,Memory Card Max,852351,Sweden,Argentina,1093.0,5,260.5
+389,Memory Card Mini,852351,Norway,Chile,1130.25,6,279.0
+390,Memory Card Ultra,852351,Denmark,Egypt,1167.5,7,20.0
+391,Memory Card Gen 1,852351,Switzerland,Nigeria,1204.75,8,38.5
+392,Memory Card Gen 2,852351,Ireland,Greece,1242.0,9,57.0
+393,Memory Card Gen 3,852351,Portugal,India,1279.25,10,75.5
+394,Memory Card Series A,852351,Poland,United States,1316.5,11,94.0
+395,Memory Card Series B,852351,Austria,Germany,1353.75,12,112.5
+396,Memory Card Series C,852351,Argentina,United Arab Emirates,1391.0,1,131.0
+397,Memory Card Model X,852351,Chile,Japan,1428.25,2,149.5
+398,Memory Card Model Y,852351,Egypt,United Kingdom,1465.5,3,168.0
+399,Memory Card Model Z,852351,Nigeria,Australia,1502.75,4,186.5
+400,Memory Card 2026,852351,Greece,Canada,50.0,5,205.0

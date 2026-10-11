@@ -1,0 +1,1922 @@
+[
+  {
+    "Policy_ID": "POL0001",
+    "Country": "India",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0002",
+    "Country": "India",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0003",
+    "Country": "India",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0004",
+    "Country": "India",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0005",
+    "Country": "India",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0006",
+    "Country": "India",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0007",
+    "Country": "United States",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0008",
+    "Country": "United States",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0009",
+    "Country": "United States",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0010",
+    "Country": "United States",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0011",
+    "Country": "United States",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0012",
+    "Country": "United States",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0013",
+    "Country": "Germany",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0014",
+    "Country": "Germany",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0015",
+    "Country": "Germany",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0016",
+    "Country": "Germany",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0017",
+    "Country": "Germany",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0018",
+    "Country": "Germany",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0019",
+    "Country": "United Arab Emirates",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0020",
+    "Country": "United Arab Emirates",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0021",
+    "Country": "United Arab Emirates",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0022",
+    "Country": "United Arab Emirates",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0023",
+    "Country": "United Arab Emirates",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0024",
+    "Country": "United Arab Emirates",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0025",
+    "Country": "Japan",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0026",
+    "Country": "Japan",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0027",
+    "Country": "Japan",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0028",
+    "Country": "Japan",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0029",
+    "Country": "Japan",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0030",
+    "Country": "Japan",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0031",
+    "Country": "United Kingdom",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0032",
+    "Country": "United Kingdom",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0033",
+    "Country": "United Kingdom",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0034",
+    "Country": "United Kingdom",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0035",
+    "Country": "United Kingdom",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0036",
+    "Country": "United Kingdom",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0037",
+    "Country": "Australia",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0038",
+    "Country": "Australia",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0039",
+    "Country": "Australia",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0040",
+    "Country": "Australia",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0041",
+    "Country": "Australia",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0042",
+    "Country": "Australia",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0043",
+    "Country": "Canada",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0044",
+    "Country": "Canada",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0045",
+    "Country": "Canada",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0046",
+    "Country": "Canada",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0047",
+    "Country": "Canada",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0048",
+    "Country": "Canada",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0049",
+    "Country": "France",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0050",
+    "Country": "France",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0051",
+    "Country": "France",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0052",
+    "Country": "France",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0053",
+    "Country": "France",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0054",
+    "Country": "France",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0055",
+    "Country": "Italy",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0056",
+    "Country": "Italy",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0057",
+    "Country": "Italy",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0058",
+    "Country": "Italy",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0059",
+    "Country": "Italy",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0060",
+    "Country": "Italy",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0061",
+    "Country": "Spain",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0062",
+    "Country": "Spain",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0063",
+    "Country": "Spain",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0064",
+    "Country": "Spain",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0065",
+    "Country": "Spain",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0066",
+    "Country": "Spain",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0067",
+    "Country": "Singapore",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0068",
+    "Country": "Singapore",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0069",
+    "Country": "Singapore",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0070",
+    "Country": "Singapore",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0071",
+    "Country": "Singapore",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0072",
+    "Country": "Singapore",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0073",
+    "Country": "Malaysia",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0074",
+    "Country": "Malaysia",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0075",
+    "Country": "Malaysia",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0076",
+    "Country": "Malaysia",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0077",
+    "Country": "Malaysia",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0078",
+    "Country": "Malaysia",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0079",
+    "Country": "Thailand",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0080",
+    "Country": "Thailand",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0081",
+    "Country": "Thailand",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0082",
+    "Country": "Thailand",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0083",
+    "Country": "Thailand",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0084",
+    "Country": "Thailand",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0085",
+    "Country": "South Korea",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0086",
+    "Country": "South Korea",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0087",
+    "Country": "South Korea",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0088",
+    "Country": "South Korea",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0089",
+    "Country": "South Korea",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0090",
+    "Country": "South Korea",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0091",
+    "Country": "China",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0092",
+    "Country": "China",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0093",
+    "Country": "China",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0094",
+    "Country": "China",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0095",
+    "Country": "China",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0096",
+    "Country": "China",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0097",
+    "Country": "Saudi Arabia",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0098",
+    "Country": "Saudi Arabia",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0099",
+    "Country": "Saudi Arabia",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0100",
+    "Country": "Saudi Arabia",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0101",
+    "Country": "Saudi Arabia",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0102",
+    "Country": "Saudi Arabia",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0103",
+    "Country": "Brazil",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0104",
+    "Country": "Brazil",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0105",
+    "Country": "Brazil",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0106",
+    "Country": "Brazil",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0107",
+    "Country": "Brazil",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0108",
+    "Country": "Brazil",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0109",
+    "Country": "South Africa",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0110",
+    "Country": "South Africa",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0111",
+    "Country": "South Africa",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0112",
+    "Country": "South Africa",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0113",
+    "Country": "South Africa",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0114",
+    "Country": "South Africa",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0115",
+    "Country": "New Zealand",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0116",
+    "Country": "New Zealand",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0117",
+    "Country": "New Zealand",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0118",
+    "Country": "New Zealand",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0119",
+    "Country": "New Zealand",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0120",
+    "Country": "New Zealand",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0121",
+    "Country": "Mexico",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0122",
+    "Country": "Mexico",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0123",
+    "Country": "Mexico",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0124",
+    "Country": "Mexico",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0125",
+    "Country": "Mexico",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0126",
+    "Country": "Mexico",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0127",
+    "Country": "Indonesia",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0128",
+    "Country": "Indonesia",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0129",
+    "Country": "Indonesia",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0130",
+    "Country": "Indonesia",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0131",
+    "Country": "Indonesia",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0132",
+    "Country": "Indonesia",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0133",
+    "Country": "Vietnam",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0134",
+    "Country": "Vietnam",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0135",
+    "Country": "Vietnam",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0136",
+    "Country": "Vietnam",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0137",
+    "Country": "Vietnam",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0138",
+    "Country": "Vietnam",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0139",
+    "Country": "Philippines",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0140",
+    "Country": "Philippines",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0141",
+    "Country": "Philippines",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0142",
+    "Country": "Philippines",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0143",
+    "Country": "Philippines",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0144",
+    "Country": "Philippines",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0145",
+    "Country": "Turkey",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0146",
+    "Country": "Turkey",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0147",
+    "Country": "Turkey",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0148",
+    "Country": "Turkey",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0149",
+    "Country": "Turkey",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0150",
+    "Country": "Turkey",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0151",
+    "Country": "Netherlands",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0152",
+    "Country": "Netherlands",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0153",
+    "Country": "Netherlands",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0154",
+    "Country": "Netherlands",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0155",
+    "Country": "Netherlands",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0156",
+    "Country": "Netherlands",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0157",
+    "Country": "Belgium",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0158",
+    "Country": "Belgium",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0159",
+    "Country": "Belgium",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0160",
+    "Country": "Belgium",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0161",
+    "Country": "Belgium",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0162",
+    "Country": "Belgium",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0163",
+    "Country": "Sweden",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0164",
+    "Country": "Sweden",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0165",
+    "Country": "Sweden",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0166",
+    "Country": "Sweden",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0167",
+    "Country": "Sweden",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0168",
+    "Country": "Sweden",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0169",
+    "Country": "Norway",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0170",
+    "Country": "Norway",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0171",
+    "Country": "Norway",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0172",
+    "Country": "Norway",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0173",
+    "Country": "Norway",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0174",
+    "Country": "Norway",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0175",
+    "Country": "Denmark",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0176",
+    "Country": "Denmark",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0177",
+    "Country": "Denmark",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0178",
+    "Country": "Denmark",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0179",
+    "Country": "Denmark",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0180",
+    "Country": "Denmark",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0181",
+    "Country": "Switzerland",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0182",
+    "Country": "Switzerland",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0183",
+    "Country": "Switzerland",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0184",
+    "Country": "Switzerland",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0185",
+    "Country": "Switzerland",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0186",
+    "Country": "Switzerland",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0187",
+    "Country": "Ireland",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0188",
+    "Country": "Ireland",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0189",
+    "Country": "Ireland",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0190",
+    "Country": "Ireland",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0191",
+    "Country": "Ireland",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0192",
+    "Country": "Ireland",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0193",
+    "Country": "Portugal",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0194",
+    "Country": "Portugal",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0195",
+    "Country": "Portugal",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0196",
+    "Country": "Portugal",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0197",
+    "Country": "Portugal",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0198",
+    "Country": "Portugal",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0199",
+    "Country": "Poland",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0200",
+    "Country": "Poland",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0201",
+    "Country": "Poland",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0202",
+    "Country": "Poland",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0203",
+    "Country": "Poland",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0204",
+    "Country": "Poland",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0205",
+    "Country": "Austria",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0206",
+    "Country": "Austria",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0207",
+    "Country": "Austria",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0208",
+    "Country": "Austria",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0209",
+    "Country": "Austria",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0210",
+    "Country": "Austria",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0211",
+    "Country": "Argentina",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0212",
+    "Country": "Argentina",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0213",
+    "Country": "Argentina",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0214",
+    "Country": "Argentina",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0215",
+    "Country": "Argentina",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0216",
+    "Country": "Argentina",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0217",
+    "Country": "Chile",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0218",
+    "Country": "Chile",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0219",
+    "Country": "Chile",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0220",
+    "Country": "Chile",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0221",
+    "Country": "Chile",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0222",
+    "Country": "Chile",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0223",
+    "Country": "Egypt",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0224",
+    "Country": "Egypt",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0225",
+    "Country": "Egypt",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0226",
+    "Country": "Egypt",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0227",
+    "Country": "Egypt",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0228",
+    "Country": "Egypt",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0229",
+    "Country": "Nigeria",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0230",
+    "Country": "Nigeria",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0231",
+    "Country": "Nigeria",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0232",
+    "Country": "Nigeria",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0233",
+    "Country": "Nigeria",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0234",
+    "Country": "Nigeria",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0235",
+    "Country": "Greece",
+    "Category": "Electronics",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0236",
+    "Country": "Greece",
+    "Category": "Computer Accessories",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0237",
+    "Country": "Greece",
+    "Category": "Home Appliances",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0238",
+    "Country": "Greece",
+    "Category": "Automotive",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0239",
+    "Country": "Greece",
+    "Category": "Medical Supplies",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  },
+  {
+    "Policy_ID": "POL0240",
+    "Country": "Greece",
+    "Category": "Textiles",
+    "Policy_Summary": "Customs documentation and applicable import requirements apply.",
+    "Compliance_Note": "Verify HS classification, origin, tariff treatment, exemptions and current requirements.",
+    "Source_Type": "Prototype policy record for academic system testing."
+  }
+]

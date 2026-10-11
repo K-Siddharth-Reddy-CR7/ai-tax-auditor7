@@ -1,0 +1,1201 @@
+Product_ID,Product,HS_Code,Category,Unit
+1,Laptop Standard,847130,Electronics,Piece
+2,Laptop Basic,847130,Electronics,Piece
+3,Laptop Premium,847130,Electronics,Piece
+4,Laptop Pro,847130,Electronics,Piece
+5,Laptop Advanced,847130,Electronics,Piece
+6,Laptop Lite,847130,Electronics,Piece
+7,Laptop Plus,847130,Electronics,Piece
+8,Laptop Max,847130,Electronics,Piece
+9,Laptop Mini,847130,Electronics,Piece
+10,Laptop Ultra,847130,Electronics,Piece
+11,Laptop Gen 1,847130,Electronics,Piece
+12,Laptop Gen 2,847130,Electronics,Piece
+13,Laptop Gen 3,847130,Electronics,Piece
+14,Laptop Series A,847130,Electronics,Piece
+15,Laptop Series B,847130,Electronics,Piece
+16,Laptop Series C,847130,Electronics,Piece
+17,Laptop Model X,847130,Electronics,Piece
+18,Laptop Model Y,847130,Electronics,Piece
+19,Laptop Model Z,847130,Electronics,Piece
+20,Laptop 2026,847130,Electronics,Piece
+21,Desktop Computer Standard,847141,Electronics,Piece
+22,Desktop Computer Basic,847141,Electronics,Piece
+23,Desktop Computer Premium,847141,Electronics,Piece
+24,Desktop Computer Pro,847141,Electronics,Piece
+25,Desktop Computer Advanced,847141,Electronics,Piece
+26,Desktop Computer Lite,847141,Electronics,Piece
+27,Desktop Computer Plus,847141,Electronics,Piece
+28,Desktop Computer Max,847141,Electronics,Piece
+29,Desktop Computer Mini,847141,Electronics,Piece
+30,Desktop Computer Ultra,847141,Electronics,Piece
+31,Desktop Computer Gen 1,847141,Electronics,Piece
+32,Desktop Computer Gen 2,847141,Electronics,Piece
+33,Desktop Computer Gen 3,847141,Electronics,Piece
+34,Desktop Computer Series A,847141,Electronics,Piece
+35,Desktop Computer Series B,847141,Electronics,Piece
+36,Desktop Computer Series C,847141,Electronics,Piece
+37,Desktop Computer Model X,847141,Electronics,Piece
+38,Desktop Computer Model Y,847141,Electronics,Piece
+39,Desktop Computer Model Z,847141,Electronics,Piece
+40,Desktop Computer 2026,847141,Electronics,Piece
+41,Tablet Standard,847130,Electronics,Piece
+42,Tablet Basic,847130,Electronics,Piece
+43,Tablet Premium,847130,Electronics,Piece
+44,Tablet Pro,847130,Electronics,Piece
+45,Tablet Advanced,847130,Electronics,Piece
+46,Tablet Lite,847130,Electronics,Piece
+47,Tablet Plus,847130,Electronics,Piece
+48,Tablet Max,847130,Electronics,Piece
+49,Tablet Mini,847130,Electronics,Piece
+50,Tablet Ultra,847130,Electronics,Piece
+51,Tablet Gen 1,847130,Electronics,Piece
+52,Tablet Gen 2,847130,Electronics,Piece
+53,Tablet Gen 3,847130,Electronics,Piece
+54,Tablet Series A,847130,Electronics,Piece
+55,Tablet Series B,847130,Electronics,Piece
+56,Tablet Series C,847130,Electronics,Piece
+57,Tablet Model X,847130,Electronics,Piece
+58,Tablet Model Y,847130,Electronics,Piece
+59,Tablet Model Z,847130,Electronics,Piece
+60,Tablet 2026,847130,Electronics,Piece
+61,Mobile Phone Standard,851713,Electronics,Piece
+62,Mobile Phone Basic,851713,Electronics,Piece
+63,Mobile Phone Premium,851713,Electronics,Piece
+64,Mobile Phone Pro,851713,Electronics,Piece
+65,Mobile Phone Advanced,851713,Electronics,Piece
+66,Mobile Phone Lite,851713,Electronics,Piece
+67,Mobile Phone Plus,851713,Electronics,Piece
+68,Mobile Phone Max,851713,Electronics,Piece
+69,Mobile Phone Mini,851713,Electronics,Piece
+70,Mobile Phone Ultra,851713,Electronics,Piece
+71,Mobile Phone Gen 1,851713,Electronics,Piece
+72,Mobile Phone Gen 2,851713,Electronics,Piece
+73,Mobile Phone Gen 3,851713,Electronics,Piece
+74,Mobile Phone Series A,851713,Electronics,Piece
+75,Mobile Phone Series B,851713,Electronics,Piece
+76,Mobile Phone Series C,851713,Electronics,Piece
+77,Mobile Phone Model X,851713,Electronics,Piece
+78,Mobile Phone Model Y,851713,Electronics,Piece
+79,Mobile Phone Model Z,851713,Electronics,Piece
+80,Mobile Phone 2026,851713,Electronics,Piece
+81,Smartwatch Standard,851762,Electronics,Piece
+82,Smartwatch Basic,851762,Electronics,Piece
+83,Smartwatch Premium,851762,Electronics,Piece
+84,Smartwatch Pro,851762,Electronics,Piece
+85,Smartwatch Advanced,851762,Electronics,Piece
+86,Smartwatch Lite,851762,Electronics,Piece
+87,Smartwatch Plus,851762,Electronics,Piece
+88,Smartwatch Max,851762,Electronics,Piece
+89,Smartwatch Mini,851762,Electronics,Piece
+90,Smartwatch Ultra,851762,Electronics,Piece
+91,Smartwatch Gen 1,851762,Electronics,Piece
+92,Smartwatch Gen 2,851762,Electronics,Piece
+93,Smartwatch Gen 3,851762,Electronics,Piece
+94,Smartwatch Series A,851762,Electronics,Piece
+95,Smartwatch Series B,851762,Electronics,Piece
+96,Smartwatch Series C,851762,Electronics,Piece
+97,Smartwatch Model X,851762,Electronics,Piece
+98,Smartwatch Model Y,851762,Electronics,Piece
+99,Smartwatch Model Z,851762,Electronics,Piece
+100,Smartwatch 2026,851762,Electronics,Piece
+101,Wireless Headphones Standard,851830,Electronics,Piece
+102,Wireless Headphones Basic,851830,Electronics,Piece
+103,Wireless Headphones Premium,851830,Electronics,Piece
+104,Wireless Headphones Pro,851830,Electronics,Piece
+105,Wireless Headphones Advanced,851830,Electronics,Piece
+106,Wireless Headphones Lite,851830,Electronics,Piece
+107,Wireless Headphones Plus,851830,Electronics,Piece
+108,Wireless Headphones Max,851830,Electronics,Piece
+109,Wireless Headphones Mini,851830,Electronics,Piece
+110,Wireless Headphones Ultra,851830,Electronics,Piece
+111,Wireless Headphones Gen 1,851830,Electronics,Piece
+112,Wireless Headphones Gen 2,851830,Electronics,Piece
+113,Wireless Headphones Gen 3,851830,Electronics,Piece
+114,Wireless Headphones Series A,851830,Electronics,Piece
+115,Wireless Headphones Series B,851830,Electronics,Piece
+116,Wireless Headphones Series C,851830,Electronics,Piece
+117,Wireless Headphones Model X,851830,Electronics,Piece
+118,Wireless Headphones Model Y,851830,Electronics,Piece
+119,Wireless Headphones Model Z,851830,Electronics,Piece
+120,Wireless Headphones 2026,851830,Electronics,Piece
+121,Bluetooth Speaker Standard,851821,Electronics,Piece
+122,Bluetooth Speaker Basic,851821,Electronics,Piece
+123,Bluetooth Speaker Premium,851821,Electronics,Piece
+124,Bluetooth Speaker Pro,851821,Electronics,Piece
+125,Bluetooth Speaker Advanced,851821,Electronics,Piece
+126,Bluetooth Speaker Lite,851821,Electronics,Piece
+127,Bluetooth Speaker Plus,851821,Electronics,Piece
+128,Bluetooth Speaker Max,851821,Electronics,Piece
+129,Bluetooth Speaker Mini,851821,Electronics,Piece
+130,Bluetooth Speaker Ultra,851821,Electronics,Piece
+131,Bluetooth Speaker Gen 1,851821,Electronics,Piece
+132,Bluetooth Speaker Gen 2,851821,Electronics,Piece
+133,Bluetooth Speaker Gen 3,851821,Electronics,Piece
+134,Bluetooth Speaker Series A,851821,Electronics,Piece
+135,Bluetooth Speaker Series B,851821,Electronics,Piece
+136,Bluetooth Speaker Series C,851821,Electronics,Piece
+137,Bluetooth Speaker Model X,851821,Electronics,Piece
+138,Bluetooth Speaker Model Y,851821,Electronics,Piece
+139,Bluetooth Speaker Model Z,851821,Electronics,Piece
+140,Bluetooth Speaker 2026,851821,Electronics,Piece
+141,Keyboard Standard,847160,Computer Accessories,Piece
+142,Keyboard Basic,847160,Computer Accessories,Piece
+143,Keyboard Premium,847160,Computer Accessories,Piece
+144,Keyboard Pro,847160,Computer Accessories,Piece
+145,Keyboard Advanced,847160,Computer Accessories,Piece
+146,Keyboard Lite,847160,Computer Accessories,Piece
+147,Keyboard Plus,847160,Computer Accessories,Piece
+148,Keyboard Max,847160,Computer Accessories,Piece
+149,Keyboard Mini,847160,Computer Accessories,Piece
+150,Keyboard Ultra,847160,Computer Accessories,Piece
+151,Keyboard Gen 1,847160,Computer Accessories,Piece
+152,Keyboard Gen 2,847160,Computer Accessories,Piece
+153,Keyboard Gen 3,847160,Computer Accessories,Piece
+154,Keyboard Series A,847160,Computer Accessories,Piece
+155,Keyboard Series B,847160,Computer Accessories,Piece
+156,Keyboard Series C,847160,Computer Accessories,Piece
+157,Keyboard Model X,847160,Computer Accessories,Piece
+158,Keyboard Model Y,847160,Computer Accessories,Piece
+159,Keyboard Model Z,847160,Computer Accessories,Piece
+160,Keyboard 2026,847160,Computer Accessories,Piece
+161,Computer Mouse Standard,847160,Computer Accessories,Piece
+162,Computer Mouse Basic,847160,Computer Accessories,Piece
+163,Computer Mouse Premium,847160,Computer Accessories,Piece
+164,Computer Mouse Pro,847160,Computer Accessories,Piece
+165,Computer Mouse Advanced,847160,Computer Accessories,Piece
+166,Computer Mouse Lite,847160,Computer Accessories,Piece
+167,Computer Mouse Plus,847160,Computer Accessories,Piece
+168,Computer Mouse Max,847160,Computer Accessories,Piece
+169,Computer Mouse Mini,847160,Computer Accessories,Piece
+170,Computer Mouse Ultra,847160,Computer Accessories,Piece
+171,Computer Mouse Gen 1,847160,Computer Accessories,Piece
+172,Computer Mouse Gen 2,847160,Computer Accessories,Piece
+173,Computer Mouse Gen 3,847160,Computer Accessories,Piece
+174,Computer Mouse Series A,847160,Computer Accessories,Piece
+175,Computer Mouse Series B,847160,Computer Accessories,Piece
+176,Computer Mouse Series C,847160,Computer Accessories,Piece
+177,Computer Mouse Model X,847160,Computer Accessories,Piece
+178,Computer Mouse Model Y,847160,Computer Accessories,Piece
+179,Computer Mouse Model Z,847160,Computer Accessories,Piece
+180,Computer Mouse 2026,847160,Computer Accessories,Piece
+181,Printer Standard,844332,Office Equipment,Piece
+182,Printer Basic,844332,Office Equipment,Piece
+183,Printer Premium,844332,Office Equipment,Piece
+184,Printer Pro,844332,Office Equipment,Piece
+185,Printer Advanced,844332,Office Equipment,Piece
+186,Printer Lite,844332,Office Equipment,Piece
+187,Printer Plus,844332,Office Equipment,Piece
+188,Printer Max,844332,Office Equipment,Piece
+189,Printer Mini,844332,Office Equipment,Piece
+190,Printer Ultra,844332,Office Equipment,Piece
+191,Printer Gen 1,844332,Office Equipment,Piece
+192,Printer Gen 2,844332,Office Equipment,Piece
+193,Printer Gen 3,844332,Office Equipment,Piece
+194,Printer Series A,844332,Office Equipment,Piece
+195,Printer Series B,844332,Office Equipment,Piece
+196,Printer Series C,844332,Office Equipment,Piece
+197,Printer Model X,844332,Office Equipment,Piece
+198,Printer Model Y,844332,Office Equipment,Piece
+199,Printer Model Z,844332,Office Equipment,Piece
+200,Printer 2026,844332,Office Equipment,Piece
+201,Scanner Standard,847160,Office Equipment,Piece
+202,Scanner Basic,847160,Office Equipment,Piece
+203,Scanner Premium,847160,Office Equipment,Piece
+204,Scanner Pro,847160,Office Equipment,Piece
+205,Scanner Advanced,847160,Office Equipment,Piece
+206,Scanner Lite,847160,Office Equipment,Piece
+207,Scanner Plus,847160,Office Equipment,Piece
+208,Scanner Max,847160,Office Equipment,Piece
+209,Scanner Mini,847160,Office Equipment,Piece
+210,Scanner Ultra,847160,Office Equipment,Piece
+211,Scanner Gen 1,847160,Office Equipment,Piece
+212,Scanner Gen 2,847160,Office Equipment,Piece
+213,Scanner Gen 3,847160,Office Equipment,Piece
+214,Scanner Series A,847160,Office Equipment,Piece
+215,Scanner Series B,847160,Office Equipment,Piece
+216,Scanner Series C,847160,Office Equipment,Piece
+217,Scanner Model X,847160,Office Equipment,Piece
+218,Scanner Model Y,847160,Office Equipment,Piece
+219,Scanner Model Z,847160,Office Equipment,Piece
+220,Scanner 2026,847160,Office Equipment,Piece
+221,Projector Standard,852862,Electronics,Piece
+222,Projector Basic,852862,Electronics,Piece
+223,Projector Premium,852862,Electronics,Piece
+224,Projector Pro,852862,Electronics,Piece
+225,Projector Advanced,852862,Electronics,Piece
+226,Projector Lite,852862,Electronics,Piece
+227,Projector Plus,852862,Electronics,Piece
+228,Projector Max,852862,Electronics,Piece
+229,Projector Mini,852862,Electronics,Piece
+230,Projector Ultra,852862,Electronics,Piece
+231,Projector Gen 1,852862,Electronics,Piece
+232,Projector Gen 2,852862,Electronics,Piece
+233,Projector Gen 3,852862,Electronics,Piece
+234,Projector Series A,852862,Electronics,Piece
+235,Projector Series B,852862,Electronics,Piece
+236,Projector Series C,852862,Electronics,Piece
+237,Projector Model X,852862,Electronics,Piece
+238,Projector Model Y,852862,Electronics,Piece
+239,Projector Model Z,852862,Electronics,Piece
+240,Projector 2026,852862,Electronics,Piece
+241,Television Standard,852872,Electronics,Piece
+242,Television Basic,852872,Electronics,Piece
+243,Television Premium,852872,Electronics,Piece
+244,Television Pro,852872,Electronics,Piece
+245,Television Advanced,852872,Electronics,Piece
+246,Television Lite,852872,Electronics,Piece
+247,Television Plus,852872,Electronics,Piece
+248,Television Max,852872,Electronics,Piece
+249,Television Mini,852872,Electronics,Piece
+250,Television Ultra,852872,Electronics,Piece
+251,Television Gen 1,852872,Electronics,Piece
+252,Television Gen 2,852872,Electronics,Piece
+253,Television Gen 3,852872,Electronics,Piece
+254,Television Series A,852872,Electronics,Piece
+255,Television Series B,852872,Electronics,Piece
+256,Television Series C,852872,Electronics,Piece
+257,Television Model X,852872,Electronics,Piece
+258,Television Model Y,852872,Electronics,Piece
+259,Television Model Z,852872,Electronics,Piece
+260,Television 2026,852872,Electronics,Piece
+261,Digital Camera Standard,852589,Electronics,Piece
+262,Digital Camera Basic,852589,Electronics,Piece
+263,Digital Camera Premium,852589,Electronics,Piece
+264,Digital Camera Pro,852589,Electronics,Piece
+265,Digital Camera Advanced,852589,Electronics,Piece
+266,Digital Camera Lite,852589,Electronics,Piece
+267,Digital Camera Plus,852589,Electronics,Piece
+268,Digital Camera Max,852589,Electronics,Piece
+269,Digital Camera Mini,852589,Electronics,Piece
+270,Digital Camera Ultra,852589,Electronics,Piece
+271,Digital Camera Gen 1,852589,Electronics,Piece
+272,Digital Camera Gen 2,852589,Electronics,Piece
+273,Digital Camera Gen 3,852589,Electronics,Piece
+274,Digital Camera Series A,852589,Electronics,Piece
+275,Digital Camera Series B,852589,Electronics,Piece
+276,Digital Camera Series C,852589,Electronics,Piece
+277,Digital Camera Model X,852589,Electronics,Piece
+278,Digital Camera Model Y,852589,Electronics,Piece
+279,Digital Camera Model Z,852589,Electronics,Piece
+280,Digital Camera 2026,852589,Electronics,Piece
+281,Video Camera Standard,852589,Electronics,Piece
+282,Video Camera Basic,852589,Electronics,Piece
+283,Video Camera Premium,852589,Electronics,Piece
+284,Video Camera Pro,852589,Electronics,Piece
+285,Video Camera Advanced,852589,Electronics,Piece
+286,Video Camera Lite,852589,Electronics,Piece
+287,Video Camera Plus,852589,Electronics,Piece
+288,Video Camera Max,852589,Electronics,Piece
+289,Video Camera Mini,852589,Electronics,Piece
+290,Video Camera Ultra,852589,Electronics,Piece
+291,Video Camera Gen 1,852589,Electronics,Piece
+292,Video Camera Gen 2,852589,Electronics,Piece
+293,Video Camera Gen 3,852589,Electronics,Piece
+294,Video Camera Series A,852589,Electronics,Piece
+295,Video Camera Series B,852589,Electronics,Piece
+296,Video Camera Series C,852589,Electronics,Piece
+297,Video Camera Model X,852589,Electronics,Piece
+298,Video Camera Model Y,852589,Electronics,Piece
+299,Video Camera Model Z,852589,Electronics,Piece
+300,Video Camera 2026,852589,Electronics,Piece
+301,Computer Monitor Standard,852852,Electronics,Piece
+302,Computer Monitor Basic,852852,Electronics,Piece
+303,Computer Monitor Premium,852852,Electronics,Piece
+304,Computer Monitor Pro,852852,Electronics,Piece
+305,Computer Monitor Advanced,852852,Electronics,Piece
+306,Computer Monitor Lite,852852,Electronics,Piece
+307,Computer Monitor Plus,852852,Electronics,Piece
+308,Computer Monitor Max,852852,Electronics,Piece
+309,Computer Monitor Mini,852852,Electronics,Piece
+310,Computer Monitor Ultra,852852,Electronics,Piece
+311,Computer Monitor Gen 1,852852,Electronics,Piece
+312,Computer Monitor Gen 2,852852,Electronics,Piece
+313,Computer Monitor Gen 3,852852,Electronics,Piece
+314,Computer Monitor Series A,852852,Electronics,Piece
+315,Computer Monitor Series B,852852,Electronics,Piece
+316,Computer Monitor Series C,852852,Electronics,Piece
+317,Computer Monitor Model X,852852,Electronics,Piece
+318,Computer Monitor Model Y,852852,Electronics,Piece
+319,Computer Monitor Model Z,852852,Electronics,Piece
+320,Computer Monitor 2026,852852,Electronics,Piece
+321,Hard Disk Drive Standard,847170,Computer Accessories,Piece
+322,Hard Disk Drive Basic,847170,Computer Accessories,Piece
+323,Hard Disk Drive Premium,847170,Computer Accessories,Piece
+324,Hard Disk Drive Pro,847170,Computer Accessories,Piece
+325,Hard Disk Drive Advanced,847170,Computer Accessories,Piece
+326,Hard Disk Drive Lite,847170,Computer Accessories,Piece
+327,Hard Disk Drive Plus,847170,Computer Accessories,Piece
+328,Hard Disk Drive Max,847170,Computer Accessories,Piece
+329,Hard Disk Drive Mini,847170,Computer Accessories,Piece
+330,Hard Disk Drive Ultra,847170,Computer Accessories,Piece
+331,Hard Disk Drive Gen 1,847170,Computer Accessories,Piece
+332,Hard Disk Drive Gen 2,847170,Computer Accessories,Piece
+333,Hard Disk Drive Gen 3,847170,Computer Accessories,Piece
+334,Hard Disk Drive Series A,847170,Computer Accessories,Piece
+335,Hard Disk Drive Series B,847170,Computer Accessories,Piece
+336,Hard Disk Drive Series C,847170,Computer Accessories,Piece
+337,Hard Disk Drive Model X,847170,Computer Accessories,Piece
+338,Hard Disk Drive Model Y,847170,Computer Accessories,Piece
+339,Hard Disk Drive Model Z,847170,Computer Accessories,Piece
+340,Hard Disk Drive 2026,847170,Computer Accessories,Piece
+341,SSD Drive Standard,847170,Computer Accessories,Piece
+342,SSD Drive Basic,847170,Computer Accessories,Piece
+343,SSD Drive Premium,847170,Computer Accessories,Piece
+344,SSD Drive Pro,847170,Computer Accessories,Piece
+345,SSD Drive Advanced,847170,Computer Accessories,Piece
+346,SSD Drive Lite,847170,Computer Accessories,Piece
+347,SSD Drive Plus,847170,Computer Accessories,Piece
+348,SSD Drive Max,847170,Computer Accessories,Piece
+349,SSD Drive Mini,847170,Computer Accessories,Piece
+350,SSD Drive Ultra,847170,Computer Accessories,Piece
+351,SSD Drive Gen 1,847170,Computer Accessories,Piece
+352,SSD Drive Gen 2,847170,Computer Accessories,Piece
+353,SSD Drive Gen 3,847170,Computer Accessories,Piece
+354,SSD Drive Series A,847170,Computer Accessories,Piece
+355,SSD Drive Series B,847170,Computer Accessories,Piece
+356,SSD Drive Series C,847170,Computer Accessories,Piece
+357,SSD Drive Model X,847170,Computer Accessories,Piece
+358,SSD Drive Model Y,847170,Computer Accessories,Piece
+359,SSD Drive Model Z,847170,Computer Accessories,Piece
+360,SSD Drive 2026,847170,Computer Accessories,Piece
+361,USB Flash Drive Standard,852351,Computer Accessories,Piece
+362,USB Flash Drive Basic,852351,Computer Accessories,Piece
+363,USB Flash Drive Premium,852351,Computer Accessories,Piece
+364,USB Flash Drive Pro,852351,Computer Accessories,Piece
+365,USB Flash Drive Advanced,852351,Computer Accessories,Piece
+366,USB Flash Drive Lite,852351,Computer Accessories,Piece
+367,USB Flash Drive Plus,852351,Computer Accessories,Piece
+368,USB Flash Drive Max,852351,Computer Accessories,Piece
+369,USB Flash Drive Mini,852351,Computer Accessories,Piece
+370,USB Flash Drive Ultra,852351,Computer Accessories,Piece
+371,USB Flash Drive Gen 1,852351,Computer Accessories,Piece
+372,USB Flash Drive Gen 2,852351,Computer Accessories,Piece
+373,USB Flash Drive Gen 3,852351,Computer Accessories,Piece
+374,USB Flash Drive Series A,852351,Computer Accessories,Piece
+375,USB Flash Drive Series B,852351,Computer Accessories,Piece
+376,USB Flash Drive Series C,852351,Computer Accessories,Piece
+377,USB Flash Drive Model X,852351,Computer Accessories,Piece
+378,USB Flash Drive Model Y,852351,Computer Accessories,Piece
+379,USB Flash Drive Model Z,852351,Computer Accessories,Piece
+380,USB Flash Drive 2026,852351,Computer Accessories,Piece
+381,Memory Card Standard,852351,Computer Accessories,Piece
+382,Memory Card Basic,852351,Computer Accessories,Piece
+383,Memory Card Premium,852351,Computer Accessories,Piece
+384,Memory Card Pro,852351,Computer Accessories,Piece
+385,Memory Card Advanced,852351,Computer Accessories,Piece
+386,Memory Card Lite,852351,Computer Accessories,Piece
+387,Memory Card Plus,852351,Computer Accessories,Piece
+388,Memory Card Max,852351,Computer Accessories,Piece
+389,Memory Card Mini,852351,Computer Accessories,Piece
+390,Memory Card Ultra,852351,Computer Accessories,Piece
+391,Memory Card Gen 1,852351,Computer Accessories,Piece
+392,Memory Card Gen 2,852351,Computer Accessories,Piece
+393,Memory Card Gen 3,852351,Computer Accessories,Piece
+394,Memory Card Series A,852351,Computer Accessories,Piece
+395,Memory Card Series B,852351,Computer Accessories,Piece
+396,Memory Card Series C,852351,Computer Accessories,Piece
+397,Memory Card Model X,852351,Computer Accessories,Piece
+398,Memory Card Model Y,852351,Computer Accessories,Piece
+399,Memory Card Model Z,852351,Computer Accessories,Piece
+400,Memory Card 2026,852351,Computer Accessories,Piece
+401,Router Standard,851762,Networking,Piece
+402,Router Basic,851762,Networking,Piece
+403,Router Premium,851762,Networking,Piece
+404,Router Pro,851762,Networking,Piece
+405,Router Advanced,851762,Networking,Piece
+406,Router Lite,851762,Networking,Piece
+407,Router Plus,851762,Networking,Piece
+408,Router Max,851762,Networking,Piece
+409,Router Mini,851762,Networking,Piece
+410,Router Ultra,851762,Networking,Piece
+411,Router Gen 1,851762,Networking,Piece
+412,Router Gen 2,851762,Networking,Piece
+413,Router Gen 3,851762,Networking,Piece
+414,Router Series A,851762,Networking,Piece
+415,Router Series B,851762,Networking,Piece
+416,Router Series C,851762,Networking,Piece
+417,Router Model X,851762,Networking,Piece
+418,Router Model Y,851762,Networking,Piece
+419,Router Model Z,851762,Networking,Piece
+420,Router 2026,851762,Networking,Piece
+421,Network Switch Standard,851762,Networking,Piece
+422,Network Switch Basic,851762,Networking,Piece
+423,Network Switch Premium,851762,Networking,Piece
+424,Network Switch Pro,851762,Networking,Piece
+425,Network Switch Advanced,851762,Networking,Piece
+426,Network Switch Lite,851762,Networking,Piece
+427,Network Switch Plus,851762,Networking,Piece
+428,Network Switch Max,851762,Networking,Piece
+429,Network Switch Mini,851762,Networking,Piece
+430,Network Switch Ultra,851762,Networking,Piece
+431,Network Switch Gen 1,851762,Networking,Piece
+432,Network Switch Gen 2,851762,Networking,Piece
+433,Network Switch Gen 3,851762,Networking,Piece
+434,Network Switch Series A,851762,Networking,Piece
+435,Network Switch Series B,851762,Networking,Piece
+436,Network Switch Series C,851762,Networking,Piece
+437,Network Switch Model X,851762,Networking,Piece
+438,Network Switch Model Y,851762,Networking,Piece
+439,Network Switch Model Z,851762,Networking,Piece
+440,Network Switch 2026,851762,Networking,Piece
+441,Modem Standard,851762,Networking,Piece
+442,Modem Basic,851762,Networking,Piece
+443,Modem Premium,851762,Networking,Piece
+444,Modem Pro,851762,Networking,Piece
+445,Modem Advanced,851762,Networking,Piece
+446,Modem Lite,851762,Networking,Piece
+447,Modem Plus,851762,Networking,Piece
+448,Modem Max,851762,Networking,Piece
+449,Modem Mini,851762,Networking,Piece
+450,Modem Ultra,851762,Networking,Piece
+451,Modem Gen 1,851762,Networking,Piece
+452,Modem Gen 2,851762,Networking,Piece
+453,Modem Gen 3,851762,Networking,Piece
+454,Modem Series A,851762,Networking,Piece
+455,Modem Series B,851762,Networking,Piece
+456,Modem Series C,851762,Networking,Piece
+457,Modem Model X,851762,Networking,Piece
+458,Modem Model Y,851762,Networking,Piece
+459,Modem Model Z,851762,Networking,Piece
+460,Modem 2026,851762,Networking,Piece
+461,WiFi Adapter Standard,851762,Networking,Piece
+462,WiFi Adapter Basic,851762,Networking,Piece
+463,WiFi Adapter Premium,851762,Networking,Piece
+464,WiFi Adapter Pro,851762,Networking,Piece
+465,WiFi Adapter Advanced,851762,Networking,Piece
+466,WiFi Adapter Lite,851762,Networking,Piece
+467,WiFi Adapter Plus,851762,Networking,Piece
+468,WiFi Adapter Max,851762,Networking,Piece
+469,WiFi Adapter Mini,851762,Networking,Piece
+470,WiFi Adapter Ultra,851762,Networking,Piece
+471,WiFi Adapter Gen 1,851762,Networking,Piece
+472,WiFi Adapter Gen 2,851762,Networking,Piece
+473,WiFi Adapter Gen 3,851762,Networking,Piece
+474,WiFi Adapter Series A,851762,Networking,Piece
+475,WiFi Adapter Series B,851762,Networking,Piece
+476,WiFi Adapter Series C,851762,Networking,Piece
+477,WiFi Adapter Model X,851762,Networking,Piece
+478,WiFi Adapter Model Y,851762,Networking,Piece
+479,WiFi Adapter Model Z,851762,Networking,Piece
+480,WiFi Adapter 2026,851762,Networking,Piece
+481,Graphics Card Standard,847180,Computer Components,Piece
+482,Graphics Card Basic,847180,Computer Components,Piece
+483,Graphics Card Premium,847180,Computer Components,Piece
+484,Graphics Card Pro,847180,Computer Components,Piece
+485,Graphics Card Advanced,847180,Computer Components,Piece
+486,Graphics Card Lite,847180,Computer Components,Piece
+487,Graphics Card Plus,847180,Computer Components,Piece
+488,Graphics Card Max,847180,Computer Components,Piece
+489,Graphics Card Mini,847180,Computer Components,Piece
+490,Graphics Card Ultra,847180,Computer Components,Piece
+491,Graphics Card Gen 1,847180,Computer Components,Piece
+492,Graphics Card Gen 2,847180,Computer Components,Piece
+493,Graphics Card Gen 3,847180,Computer Components,Piece
+494,Graphics Card Series A,847180,Computer Components,Piece
+495,Graphics Card Series B,847180,Computer Components,Piece
+496,Graphics Card Series C,847180,Computer Components,Piece
+497,Graphics Card Model X,847180,Computer Components,Piece
+498,Graphics Card Model Y,847180,Computer Components,Piece
+499,Graphics Card Model Z,847180,Computer Components,Piece
+500,Graphics Card 2026,847180,Computer Components,Piece
+501,Motherboard Standard,847330,Computer Components,Piece
+502,Motherboard Basic,847330,Computer Components,Piece
+503,Motherboard Premium,847330,Computer Components,Piece
+504,Motherboard Pro,847330,Computer Components,Piece
+505,Motherboard Advanced,847330,Computer Components,Piece
+506,Motherboard Lite,847330,Computer Components,Piece
+507,Motherboard Plus,847330,Computer Components,Piece
+508,Motherboard Max,847330,Computer Components,Piece
+509,Motherboard Mini,847330,Computer Components,Piece
+510,Motherboard Ultra,847330,Computer Components,Piece
+511,Motherboard Gen 1,847330,Computer Components,Piece
+512,Motherboard Gen 2,847330,Computer Components,Piece
+513,Motherboard Gen 3,847330,Computer Components,Piece
+514,Motherboard Series A,847330,Computer Components,Piece
+515,Motherboard Series B,847330,Computer Components,Piece
+516,Motherboard Series C,847330,Computer Components,Piece
+517,Motherboard Model X,847330,Computer Components,Piece
+518,Motherboard Model Y,847330,Computer Components,Piece
+519,Motherboard Model Z,847330,Computer Components,Piece
+520,Motherboard 2026,847330,Computer Components,Piece
+521,Computer Processor Standard,854231,Computer Components,Piece
+522,Computer Processor Basic,854231,Computer Components,Piece
+523,Computer Processor Premium,854231,Computer Components,Piece
+524,Computer Processor Pro,854231,Computer Components,Piece
+525,Computer Processor Advanced,854231,Computer Components,Piece
+526,Computer Processor Lite,854231,Computer Components,Piece
+527,Computer Processor Plus,854231,Computer Components,Piece
+528,Computer Processor Max,854231,Computer Components,Piece
+529,Computer Processor Mini,854231,Computer Components,Piece
+530,Computer Processor Ultra,854231,Computer Components,Piece
+531,Computer Processor Gen 1,854231,Computer Components,Piece
+532,Computer Processor Gen 2,854231,Computer Components,Piece
+533,Computer Processor Gen 3,854231,Computer Components,Piece
+534,Computer Processor Series A,854231,Computer Components,Piece
+535,Computer Processor Series B,854231,Computer Components,Piece
+536,Computer Processor Series C,854231,Computer Components,Piece
+537,Computer Processor Model X,854231,Computer Components,Piece
+538,Computer Processor Model Y,854231,Computer Components,Piece
+539,Computer Processor Model Z,854231,Computer Components,Piece
+540,Computer Processor 2026,854231,Computer Components,Piece
+541,RAM Module Standard,847330,Computer Components,Piece
+542,RAM Module Basic,847330,Computer Components,Piece
+543,RAM Module Premium,847330,Computer Components,Piece
+544,RAM Module Pro,847330,Computer Components,Piece
+545,RAM Module Advanced,847330,Computer Components,Piece
+546,RAM Module Lite,847330,Computer Components,Piece
+547,RAM Module Plus,847330,Computer Components,Piece
+548,RAM Module Max,847330,Computer Components,Piece
+549,RAM Module Mini,847330,Computer Components,Piece
+550,RAM Module Ultra,847330,Computer Components,Piece
+551,RAM Module Gen 1,847330,Computer Components,Piece
+552,RAM Module Gen 2,847330,Computer Components,Piece
+553,RAM Module Gen 3,847330,Computer Components,Piece
+554,RAM Module Series A,847330,Computer Components,Piece
+555,RAM Module Series B,847330,Computer Components,Piece
+556,RAM Module Series C,847330,Computer Components,Piece
+557,RAM Module Model X,847330,Computer Components,Piece
+558,RAM Module Model Y,847330,Computer Components,Piece
+559,RAM Module Model Z,847330,Computer Components,Piece
+560,RAM Module 2026,847330,Computer Components,Piece
+561,Power Supply Unit Standard,850440,Computer Components,Piece
+562,Power Supply Unit Basic,850440,Computer Components,Piece
+563,Power Supply Unit Premium,850440,Computer Components,Piece
+564,Power Supply Unit Pro,850440,Computer Components,Piece
+565,Power Supply Unit Advanced,850440,Computer Components,Piece
+566,Power Supply Unit Lite,850440,Computer Components,Piece
+567,Power Supply Unit Plus,850440,Computer Components,Piece
+568,Power Supply Unit Max,850440,Computer Components,Piece
+569,Power Supply Unit Mini,850440,Computer Components,Piece
+570,Power Supply Unit Ultra,850440,Computer Components,Piece
+571,Power Supply Unit Gen 1,850440,Computer Components,Piece
+572,Power Supply Unit Gen 2,850440,Computer Components,Piece
+573,Power Supply Unit Gen 3,850440,Computer Components,Piece
+574,Power Supply Unit Series A,850440,Computer Components,Piece
+575,Power Supply Unit Series B,850440,Computer Components,Piece
+576,Power Supply Unit Series C,850440,Computer Components,Piece
+577,Power Supply Unit Model X,850440,Computer Components,Piece
+578,Power Supply Unit Model Y,850440,Computer Components,Piece
+579,Power Supply Unit Model Z,850440,Computer Components,Piece
+580,Power Supply Unit 2026,850440,Computer Components,Piece
+581,Webcam Standard,852589,Computer Accessories,Piece
+582,Webcam Basic,852589,Computer Accessories,Piece
+583,Webcam Premium,852589,Computer Accessories,Piece
+584,Webcam Pro,852589,Computer Accessories,Piece
+585,Webcam Advanced,852589,Computer Accessories,Piece
+586,Webcam Lite,852589,Computer Accessories,Piece
+587,Webcam Plus,852589,Computer Accessories,Piece
+588,Webcam Max,852589,Computer Accessories,Piece
+589,Webcam Mini,852589,Computer Accessories,Piece
+590,Webcam Ultra,852589,Computer Accessories,Piece
+591,Webcam Gen 1,852589,Computer Accessories,Piece
+592,Webcam Gen 2,852589,Computer Accessories,Piece
+593,Webcam Gen 3,852589,Computer Accessories,Piece
+594,Webcam Series A,852589,Computer Accessories,Piece
+595,Webcam Series B,852589,Computer Accessories,Piece
+596,Webcam Series C,852589,Computer Accessories,Piece
+597,Webcam Model X,852589,Computer Accessories,Piece
+598,Webcam Model Y,852589,Computer Accessories,Piece
+599,Webcam Model Z,852589,Computer Accessories,Piece
+600,Webcam 2026,852589,Computer Accessories,Piece
+601,Microphone Standard,851810,Audio Equipment,Piece
+602,Microphone Basic,851810,Audio Equipment,Piece
+603,Microphone Premium,851810,Audio Equipment,Piece
+604,Microphone Pro,851810,Audio Equipment,Piece
+605,Microphone Advanced,851810,Audio Equipment,Piece
+606,Microphone Lite,851810,Audio Equipment,Piece
+607,Microphone Plus,851810,Audio Equipment,Piece
+608,Microphone Max,851810,Audio Equipment,Piece
+609,Microphone Mini,851810,Audio Equipment,Piece
+610,Microphone Ultra,851810,Audio Equipment,Piece
+611,Microphone Gen 1,851810,Audio Equipment,Piece
+612,Microphone Gen 2,851810,Audio Equipment,Piece
+613,Microphone Gen 3,851810,Audio Equipment,Piece
+614,Microphone Series A,851810,Audio Equipment,Piece
+615,Microphone Series B,851810,Audio Equipment,Piece
+616,Microphone Series C,851810,Audio Equipment,Piece
+617,Microphone Model X,851810,Audio Equipment,Piece
+618,Microphone Model Y,851810,Audio Equipment,Piece
+619,Microphone Model Z,851810,Audio Equipment,Piece
+620,Microphone 2026,851810,Audio Equipment,Piece
+621,Sound Card Standard,847180,Computer Components,Piece
+622,Sound Card Basic,847180,Computer Components,Piece
+623,Sound Card Premium,847180,Computer Components,Piece
+624,Sound Card Pro,847180,Computer Components,Piece
+625,Sound Card Advanced,847180,Computer Components,Piece
+626,Sound Card Lite,847180,Computer Components,Piece
+627,Sound Card Plus,847180,Computer Components,Piece
+628,Sound Card Max,847180,Computer Components,Piece
+629,Sound Card Mini,847180,Computer Components,Piece
+630,Sound Card Ultra,847180,Computer Components,Piece
+631,Sound Card Gen 1,847180,Computer Components,Piece
+632,Sound Card Gen 2,847180,Computer Components,Piece
+633,Sound Card Gen 3,847180,Computer Components,Piece
+634,Sound Card Series A,847180,Computer Components,Piece
+635,Sound Card Series B,847180,Computer Components,Piece
+636,Sound Card Series C,847180,Computer Components,Piece
+637,Sound Card Model X,847180,Computer Components,Piece
+638,Sound Card Model Y,847180,Computer Components,Piece
+639,Sound Card Model Z,847180,Computer Components,Piece
+640,Sound Card 2026,847180,Computer Components,Piece
+641,Gaming Console Standard,950450,Gaming,Piece
+642,Gaming Console Basic,950450,Gaming,Piece
+643,Gaming Console Premium,950450,Gaming,Piece
+644,Gaming Console Pro,950450,Gaming,Piece
+645,Gaming Console Advanced,950450,Gaming,Piece
+646,Gaming Console Lite,950450,Gaming,Piece
+647,Gaming Console Plus,950450,Gaming,Piece
+648,Gaming Console Max,950450,Gaming,Piece
+649,Gaming Console Mini,950450,Gaming,Piece
+650,Gaming Console Ultra,950450,Gaming,Piece
+651,Gaming Console Gen 1,950450,Gaming,Piece
+652,Gaming Console Gen 2,950450,Gaming,Piece
+653,Gaming Console Gen 3,950450,Gaming,Piece
+654,Gaming Console Series A,950450,Gaming,Piece
+655,Gaming Console Series B,950450,Gaming,Piece
+656,Gaming Console Series C,950450,Gaming,Piece
+657,Gaming Console Model X,950450,Gaming,Piece
+658,Gaming Console Model Y,950450,Gaming,Piece
+659,Gaming Console Model Z,950450,Gaming,Piece
+660,Gaming Console 2026,950450,Gaming,Piece
+661,Game Controller Standard,950490,Gaming,Piece
+662,Game Controller Basic,950490,Gaming,Piece
+663,Game Controller Premium,950490,Gaming,Piece
+664,Game Controller Pro,950490,Gaming,Piece
+665,Game Controller Advanced,950490,Gaming,Piece
+666,Game Controller Lite,950490,Gaming,Piece
+667,Game Controller Plus,950490,Gaming,Piece
+668,Game Controller Max,950490,Gaming,Piece
+669,Game Controller Mini,950490,Gaming,Piece
+670,Game Controller Ultra,950490,Gaming,Piece
+671,Game Controller Gen 1,950490,Gaming,Piece
+672,Game Controller Gen 2,950490,Gaming,Piece
+673,Game Controller Gen 3,950490,Gaming,Piece
+674,Game Controller Series A,950490,Gaming,Piece
+675,Game Controller Series B,950490,Gaming,Piece
+676,Game Controller Series C,950490,Gaming,Piece
+677,Game Controller Model X,950490,Gaming,Piece
+678,Game Controller Model Y,950490,Gaming,Piece
+679,Game Controller Model Z,950490,Gaming,Piece
+680,Game Controller 2026,950490,Gaming,Piece
+681,VR Headset Standard,852852,Gaming,Piece
+682,VR Headset Basic,852852,Gaming,Piece
+683,VR Headset Premium,852852,Gaming,Piece
+684,VR Headset Pro,852852,Gaming,Piece
+685,VR Headset Advanced,852852,Gaming,Piece
+686,VR Headset Lite,852852,Gaming,Piece
+687,VR Headset Plus,852852,Gaming,Piece
+688,VR Headset Max,852852,Gaming,Piece
+689,VR Headset Mini,852852,Gaming,Piece
+690,VR Headset Ultra,852852,Gaming,Piece
+691,VR Headset Gen 1,852852,Gaming,Piece
+692,VR Headset Gen 2,852852,Gaming,Piece
+693,VR Headset Gen 3,852852,Gaming,Piece
+694,VR Headset Series A,852852,Gaming,Piece
+695,VR Headset Series B,852852,Gaming,Piece
+696,VR Headset Series C,852852,Gaming,Piece
+697,VR Headset Model X,852852,Gaming,Piece
+698,VR Headset Model Y,852852,Gaming,Piece
+699,VR Headset Model Z,852852,Gaming,Piece
+700,VR Headset 2026,852852,Gaming,Piece
+701,Smart TV Standard,852872,Electronics,Piece
+702,Smart TV Basic,852872,Electronics,Piece
+703,Smart TV Premium,852872,Electronics,Piece
+704,Smart TV Pro,852872,Electronics,Piece
+705,Smart TV Advanced,852872,Electronics,Piece
+706,Smart TV Lite,852872,Electronics,Piece
+707,Smart TV Plus,852872,Electronics,Piece
+708,Smart TV Max,852872,Electronics,Piece
+709,Smart TV Mini,852872,Electronics,Piece
+710,Smart TV Ultra,852872,Electronics,Piece
+711,Smart TV Gen 1,852872,Electronics,Piece
+712,Smart TV Gen 2,852872,Electronics,Piece
+713,Smart TV Gen 3,852872,Electronics,Piece
+714,Smart TV Series A,852872,Electronics,Piece
+715,Smart TV Series B,852872,Electronics,Piece
+716,Smart TV Series C,852872,Electronics,Piece
+717,Smart TV Model X,852872,Electronics,Piece
+718,Smart TV Model Y,852872,Electronics,Piece
+719,Smart TV Model Z,852872,Electronics,Piece
+720,Smart TV 2026,852872,Electronics,Piece
+721,Air Conditioner Standard,841510,Home Appliances,Piece
+722,Air Conditioner Basic,841510,Home Appliances,Piece
+723,Air Conditioner Premium,841510,Home Appliances,Piece
+724,Air Conditioner Pro,841510,Home Appliances,Piece
+725,Air Conditioner Advanced,841510,Home Appliances,Piece
+726,Air Conditioner Lite,841510,Home Appliances,Piece
+727,Air Conditioner Plus,841510,Home Appliances,Piece
+728,Air Conditioner Max,841510,Home Appliances,Piece
+729,Air Conditioner Mini,841510,Home Appliances,Piece
+730,Air Conditioner Ultra,841510,Home Appliances,Piece
+731,Air Conditioner Gen 1,841510,Home Appliances,Piece
+732,Air Conditioner Gen 2,841510,Home Appliances,Piece
+733,Air Conditioner Gen 3,841510,Home Appliances,Piece
+734,Air Conditioner Series A,841510,Home Appliances,Piece
+735,Air Conditioner Series B,841510,Home Appliances,Piece
+736,Air Conditioner Series C,841510,Home Appliances,Piece
+737,Air Conditioner Model X,841510,Home Appliances,Piece
+738,Air Conditioner Model Y,841510,Home Appliances,Piece
+739,Air Conditioner Model Z,841510,Home Appliances,Piece
+740,Air Conditioner 2026,841510,Home Appliances,Piece
+741,Refrigerator Standard,841810,Home Appliances,Piece
+742,Refrigerator Basic,841810,Home Appliances,Piece
+743,Refrigerator Premium,841810,Home Appliances,Piece
+744,Refrigerator Pro,841810,Home Appliances,Piece
+745,Refrigerator Advanced,841810,Home Appliances,Piece
+746,Refrigerator Lite,841810,Home Appliances,Piece
+747,Refrigerator Plus,841810,Home Appliances,Piece
+748,Refrigerator Max,841810,Home Appliances,Piece
+749,Refrigerator Mini,841810,Home Appliances,Piece
+750,Refrigerator Ultra,841810,Home Appliances,Piece
+751,Refrigerator Gen 1,841810,Home Appliances,Piece
+752,Refrigerator Gen 2,841810,Home Appliances,Piece
+753,Refrigerator Gen 3,841810,Home Appliances,Piece
+754,Refrigerator Series A,841810,Home Appliances,Piece
+755,Refrigerator Series B,841810,Home Appliances,Piece
+756,Refrigerator Series C,841810,Home Appliances,Piece
+757,Refrigerator Model X,841810,Home Appliances,Piece
+758,Refrigerator Model Y,841810,Home Appliances,Piece
+759,Refrigerator Model Z,841810,Home Appliances,Piece
+760,Refrigerator 2026,841810,Home Appliances,Piece
+761,Freezer Standard,841830,Home Appliances,Piece
+762,Freezer Basic,841830,Home Appliances,Piece
+763,Freezer Premium,841830,Home Appliances,Piece
+764,Freezer Pro,841830,Home Appliances,Piece
+765,Freezer Advanced,841830,Home Appliances,Piece
+766,Freezer Lite,841830,Home Appliances,Piece
+767,Freezer Plus,841830,Home Appliances,Piece
+768,Freezer Max,841830,Home Appliances,Piece
+769,Freezer Mini,841830,Home Appliances,Piece
+770,Freezer Ultra,841830,Home Appliances,Piece
+771,Freezer Gen 1,841830,Home Appliances,Piece
+772,Freezer Gen 2,841830,Home Appliances,Piece
+773,Freezer Gen 3,841830,Home Appliances,Piece
+774,Freezer Series A,841830,Home Appliances,Piece
+775,Freezer Series B,841830,Home Appliances,Piece
+776,Freezer Series C,841830,Home Appliances,Piece
+777,Freezer Model X,841830,Home Appliances,Piece
+778,Freezer Model Y,841830,Home Appliances,Piece
+779,Freezer Model Z,841830,Home Appliances,Piece
+780,Freezer 2026,841830,Home Appliances,Piece
+781,Washing Machine Standard,845011,Home Appliances,Piece
+782,Washing Machine Basic,845011,Home Appliances,Piece
+783,Washing Machine Premium,845011,Home Appliances,Piece
+784,Washing Machine Pro,845011,Home Appliances,Piece
+785,Washing Machine Advanced,845011,Home Appliances,Piece
+786,Washing Machine Lite,845011,Home Appliances,Piece
+787,Washing Machine Plus,845011,Home Appliances,Piece
+788,Washing Machine Max,845011,Home Appliances,Piece
+789,Washing Machine Mini,845011,Home Appliances,Piece
+790,Washing Machine Ultra,845011,Home Appliances,Piece
+791,Washing Machine Gen 1,845011,Home Appliances,Piece
+792,Washing Machine Gen 2,845011,Home Appliances,Piece
+793,Washing Machine Gen 3,845011,Home Appliances,Piece
+794,Washing Machine Series A,845011,Home Appliances,Piece
+795,Washing Machine Series B,845011,Home Appliances,Piece
+796,Washing Machine Series C,845011,Home Appliances,Piece
+797,Washing Machine Model X,845011,Home Appliances,Piece
+798,Washing Machine Model Y,845011,Home Appliances,Piece
+799,Washing Machine Model Z,845011,Home Appliances,Piece
+800,Washing Machine 2026,845011,Home Appliances,Piece
+801,Dishwasher Standard,842211,Home Appliances,Piece
+802,Dishwasher Basic,842211,Home Appliances,Piece
+803,Dishwasher Premium,842211,Home Appliances,Piece
+804,Dishwasher Pro,842211,Home Appliances,Piece
+805,Dishwasher Advanced,842211,Home Appliances,Piece
+806,Dishwasher Lite,842211,Home Appliances,Piece
+807,Dishwasher Plus,842211,Home Appliances,Piece
+808,Dishwasher Max,842211,Home Appliances,Piece
+809,Dishwasher Mini,842211,Home Appliances,Piece
+810,Dishwasher Ultra,842211,Home Appliances,Piece
+811,Dishwasher Gen 1,842211,Home Appliances,Piece
+812,Dishwasher Gen 2,842211,Home Appliances,Piece
+813,Dishwasher Gen 3,842211,Home Appliances,Piece
+814,Dishwasher Series A,842211,Home Appliances,Piece
+815,Dishwasher Series B,842211,Home Appliances,Piece
+816,Dishwasher Series C,842211,Home Appliances,Piece
+817,Dishwasher Model X,842211,Home Appliances,Piece
+818,Dishwasher Model Y,842211,Home Appliances,Piece
+819,Dishwasher Model Z,842211,Home Appliances,Piece
+820,Dishwasher 2026,842211,Home Appliances,Piece
+821,Microwave Oven Standard,851650,Home Appliances,Piece
+822,Microwave Oven Basic,851650,Home Appliances,Piece
+823,Microwave Oven Premium,851650,Home Appliances,Piece
+824,Microwave Oven Pro,851650,Home Appliances,Piece
+825,Microwave Oven Advanced,851650,Home Appliances,Piece
+826,Microwave Oven Lite,851650,Home Appliances,Piece
+827,Microwave Oven Plus,851650,Home Appliances,Piece
+828,Microwave Oven Max,851650,Home Appliances,Piece
+829,Microwave Oven Mini,851650,Home Appliances,Piece
+830,Microwave Oven Ultra,851650,Home Appliances,Piece
+831,Microwave Oven Gen 1,851650,Home Appliances,Piece
+832,Microwave Oven Gen 2,851650,Home Appliances,Piece
+833,Microwave Oven Gen 3,851650,Home Appliances,Piece
+834,Microwave Oven Series A,851650,Home Appliances,Piece
+835,Microwave Oven Series B,851650,Home Appliances,Piece
+836,Microwave Oven Series C,851650,Home Appliances,Piece
+837,Microwave Oven Model X,851650,Home Appliances,Piece
+838,Microwave Oven Model Y,851650,Home Appliances,Piece
+839,Microwave Oven Model Z,851650,Home Appliances,Piece
+840,Microwave Oven 2026,851650,Home Appliances,Piece
+841,Electric Oven Standard,851660,Home Appliances,Piece
+842,Electric Oven Basic,851660,Home Appliances,Piece
+843,Electric Oven Premium,851660,Home Appliances,Piece
+844,Electric Oven Pro,851660,Home Appliances,Piece
+845,Electric Oven Advanced,851660,Home Appliances,Piece
+846,Electric Oven Lite,851660,Home Appliances,Piece
+847,Electric Oven Plus,851660,Home Appliances,Piece
+848,Electric Oven Max,851660,Home Appliances,Piece
+849,Electric Oven Mini,851660,Home Appliances,Piece
+850,Electric Oven Ultra,851660,Home Appliances,Piece
+851,Electric Oven Gen 1,851660,Home Appliances,Piece
+852,Electric Oven Gen 2,851660,Home Appliances,Piece
+853,Electric Oven Gen 3,851660,Home Appliances,Piece
+854,Electric Oven Series A,851660,Home Appliances,Piece
+855,Electric Oven Series B,851660,Home Appliances,Piece
+856,Electric Oven Series C,851660,Home Appliances,Piece
+857,Electric Oven Model X,851660,Home Appliances,Piece
+858,Electric Oven Model Y,851660,Home Appliances,Piece
+859,Electric Oven Model Z,851660,Home Appliances,Piece
+860,Electric Oven 2026,851660,Home Appliances,Piece
+861,Electric Kettle Standard,851679,Home Appliances,Piece
+862,Electric Kettle Basic,851679,Home Appliances,Piece
+863,Electric Kettle Premium,851679,Home Appliances,Piece
+864,Electric Kettle Pro,851679,Home Appliances,Piece
+865,Electric Kettle Advanced,851679,Home Appliances,Piece
+866,Electric Kettle Lite,851679,Home Appliances,Piece
+867,Electric Kettle Plus,851679,Home Appliances,Piece
+868,Electric Kettle Max,851679,Home Appliances,Piece
+869,Electric Kettle Mini,851679,Home Appliances,Piece
+870,Electric Kettle Ultra,851679,Home Appliances,Piece
+871,Electric Kettle Gen 1,851679,Home Appliances,Piece
+872,Electric Kettle Gen 2,851679,Home Appliances,Piece
+873,Electric Kettle Gen 3,851679,Home Appliances,Piece
+874,Electric Kettle Series A,851679,Home Appliances,Piece
+875,Electric Kettle Series B,851679,Home Appliances,Piece
+876,Electric Kettle Series C,851679,Home Appliances,Piece
+877,Electric Kettle Model X,851679,Home Appliances,Piece
+878,Electric Kettle Model Y,851679,Home Appliances,Piece
+879,Electric Kettle Model Z,851679,Home Appliances,Piece
+880,Electric Kettle 2026,851679,Home Appliances,Piece
+881,Coffee Maker Standard,851671,Home Appliances,Piece
+882,Coffee Maker Basic,851671,Home Appliances,Piece
+883,Coffee Maker Premium,851671,Home Appliances,Piece
+884,Coffee Maker Pro,851671,Home Appliances,Piece
+885,Coffee Maker Advanced,851671,Home Appliances,Piece
+886,Coffee Maker Lite,851671,Home Appliances,Piece
+887,Coffee Maker Plus,851671,Home Appliances,Piece
+888,Coffee Maker Max,851671,Home Appliances,Piece
+889,Coffee Maker Mini,851671,Home Appliances,Piece
+890,Coffee Maker Ultra,851671,Home Appliances,Piece
+891,Coffee Maker Gen 1,851671,Home Appliances,Piece
+892,Coffee Maker Gen 2,851671,Home Appliances,Piece
+893,Coffee Maker Gen 3,851671,Home Appliances,Piece
+894,Coffee Maker Series A,851671,Home Appliances,Piece
+895,Coffee Maker Series B,851671,Home Appliances,Piece
+896,Coffee Maker Series C,851671,Home Appliances,Piece
+897,Coffee Maker Model X,851671,Home Appliances,Piece
+898,Coffee Maker Model Y,851671,Home Appliances,Piece
+899,Coffee Maker Model Z,851671,Home Appliances,Piece
+900,Coffee Maker 2026,851671,Home Appliances,Piece
+901,Vacuum Cleaner Standard,850811,Home Appliances,Piece
+902,Vacuum Cleaner Basic,850811,Home Appliances,Piece
+903,Vacuum Cleaner Premium,850811,Home Appliances,Piece
+904,Vacuum Cleaner Pro,850811,Home Appliances,Piece
+905,Vacuum Cleaner Advanced,850811,Home Appliances,Piece
+906,Vacuum Cleaner Lite,850811,Home Appliances,Piece
+907,Vacuum Cleaner Plus,850811,Home Appliances,Piece
+908,Vacuum Cleaner Max,850811,Home Appliances,Piece
+909,Vacuum Cleaner Mini,850811,Home Appliances,Piece
+910,Vacuum Cleaner Ultra,850811,Home Appliances,Piece
+911,Vacuum Cleaner Gen 1,850811,Home Appliances,Piece
+912,Vacuum Cleaner Gen 2,850811,Home Appliances,Piece
+913,Vacuum Cleaner Gen 3,850811,Home Appliances,Piece
+914,Vacuum Cleaner Series A,850811,Home Appliances,Piece
+915,Vacuum Cleaner Series B,850811,Home Appliances,Piece
+916,Vacuum Cleaner Series C,850811,Home Appliances,Piece
+917,Vacuum Cleaner Model X,850811,Home Appliances,Piece
+918,Vacuum Cleaner Model Y,850811,Home Appliances,Piece
+919,Vacuum Cleaner Model Z,850811,Home Appliances,Piece
+920,Vacuum Cleaner 2026,850811,Home Appliances,Piece
+921,Electric Fan Standard,841451,Home Appliances,Piece
+922,Electric Fan Basic,841451,Home Appliances,Piece
+923,Electric Fan Premium,841451,Home Appliances,Piece
+924,Electric Fan Pro,841451,Home Appliances,Piece
+925,Electric Fan Advanced,841451,Home Appliances,Piece
+926,Electric Fan Lite,841451,Home Appliances,Piece
+927,Electric Fan Plus,841451,Home Appliances,Piece
+928,Electric Fan Max,841451,Home Appliances,Piece
+929,Electric Fan Mini,841451,Home Appliances,Piece
+930,Electric Fan Ultra,841451,Home Appliances,Piece
+931,Electric Fan Gen 1,841451,Home Appliances,Piece
+932,Electric Fan Gen 2,841451,Home Appliances,Piece
+933,Electric Fan Gen 3,841451,Home Appliances,Piece
+934,Electric Fan Series A,841451,Home Appliances,Piece
+935,Electric Fan Series B,841451,Home Appliances,Piece
+936,Electric Fan Series C,841451,Home Appliances,Piece
+937,Electric Fan Model X,841451,Home Appliances,Piece
+938,Electric Fan Model Y,841451,Home Appliances,Piece
+939,Electric Fan Model Z,841451,Home Appliances,Piece
+940,Electric Fan 2026,841451,Home Appliances,Piece
+941,Water Heater Standard,851610,Home Appliances,Piece
+942,Water Heater Basic,851610,Home Appliances,Piece
+943,Water Heater Premium,851610,Home Appliances,Piece
+944,Water Heater Pro,851610,Home Appliances,Piece
+945,Water Heater Advanced,851610,Home Appliances,Piece
+946,Water Heater Lite,851610,Home Appliances,Piece
+947,Water Heater Plus,851610,Home Appliances,Piece
+948,Water Heater Max,851610,Home Appliances,Piece
+949,Water Heater Mini,851610,Home Appliances,Piece
+950,Water Heater Ultra,851610,Home Appliances,Piece
+951,Water Heater Gen 1,851610,Home Appliances,Piece
+952,Water Heater Gen 2,851610,Home Appliances,Piece
+953,Water Heater Gen 3,851610,Home Appliances,Piece
+954,Water Heater Series A,851610,Home Appliances,Piece
+955,Water Heater Series B,851610,Home Appliances,Piece
+956,Water Heater Series C,851610,Home Appliances,Piece
+957,Water Heater Model X,851610,Home Appliances,Piece
+958,Water Heater Model Y,851610,Home Appliances,Piece
+959,Water Heater Model Z,851610,Home Appliances,Piece
+960,Water Heater 2026,851610,Home Appliances,Piece
+961,Toaster Standard,851672,Home Appliances,Piece
+962,Toaster Basic,851672,Home Appliances,Piece
+963,Toaster Premium,851672,Home Appliances,Piece
+964,Toaster Pro,851672,Home Appliances,Piece
+965,Toaster Advanced,851672,Home Appliances,Piece
+966,Toaster Lite,851672,Home Appliances,Piece
+967,Toaster Plus,851672,Home Appliances,Piece
+968,Toaster Max,851672,Home Appliances,Piece
+969,Toaster Mini,851672,Home Appliances,Piece
+970,Toaster Ultra,851672,Home Appliances,Piece
+971,Toaster Gen 1,851672,Home Appliances,Piece
+972,Toaster Gen 2,851672,Home Appliances,Piece
+973,Toaster Gen 3,851672,Home Appliances,Piece
+974,Toaster Series A,851672,Home Appliances,Piece
+975,Toaster Series B,851672,Home Appliances,Piece
+976,Toaster Series C,851672,Home Appliances,Piece
+977,Toaster Model X,851672,Home Appliances,Piece
+978,Toaster Model Y,851672,Home Appliances,Piece
+979,Toaster Model Z,851672,Home Appliances,Piece
+980,Toaster 2026,851672,Home Appliances,Piece
+981,Electric Iron Standard,851640,Home Appliances,Piece
+982,Electric Iron Basic,851640,Home Appliances,Piece
+983,Electric Iron Premium,851640,Home Appliances,Piece
+984,Electric Iron Pro,851640,Home Appliances,Piece
+985,Electric Iron Advanced,851640,Home Appliances,Piece
+986,Electric Iron Lite,851640,Home Appliances,Piece
+987,Electric Iron Plus,851640,Home Appliances,Piece
+988,Electric Iron Max,851640,Home Appliances,Piece
+989,Electric Iron Mini,851640,Home Appliances,Piece
+990,Electric Iron Ultra,851640,Home Appliances,Piece
+991,Electric Iron Gen 1,851640,Home Appliances,Piece
+992,Electric Iron Gen 2,851640,Home Appliances,Piece
+993,Electric Iron Gen 3,851640,Home Appliances,Piece
+994,Electric Iron Series A,851640,Home Appliances,Piece
+995,Electric Iron Series B,851640,Home Appliances,Piece
+996,Electric Iron Series C,851640,Home Appliances,Piece
+997,Electric Iron Model X,851640,Home Appliances,Piece
+998,Electric Iron Model Y,851640,Home Appliances,Piece
+999,Electric Iron Model Z,851640,Home Appliances,Piece
+1000,Electric Iron 2026,851640,Home Appliances,Piece
+1001,Hair Dryer Standard,851631,Personal Care,Piece
+1002,Hair Dryer Basic,851631,Personal Care,Piece
+1003,Hair Dryer Premium,851631,Personal Care,Piece
+1004,Hair Dryer Pro,851631,Personal Care,Piece
+1005,Hair Dryer Advanced,851631,Personal Care,Piece
+1006,Hair Dryer Lite,851631,Personal Care,Piece
+1007,Hair Dryer Plus,851631,Personal Care,Piece
+1008,Hair Dryer Max,851631,Personal Care,Piece
+1009,Hair Dryer Mini,851631,Personal Care,Piece
+1010,Hair Dryer Ultra,851631,Personal Care,Piece
+1011,Hair Dryer Gen 1,851631,Personal Care,Piece
+1012,Hair Dryer Gen 2,851631,Personal Care,Piece
+1013,Hair Dryer Gen 3,851631,Personal Care,Piece
+1014,Hair Dryer Series A,851631,Personal Care,Piece
+1015,Hair Dryer Series B,851631,Personal Care,Piece
+1016,Hair Dryer Series C,851631,Personal Care,Piece
+1017,Hair Dryer Model X,851631,Personal Care,Piece
+1018,Hair Dryer Model Y,851631,Personal Care,Piece
+1019,Hair Dryer Model Z,851631,Personal Care,Piece
+1020,Hair Dryer 2026,851631,Personal Care,Piece
+1021,Electric Shaver Standard,851010,Personal Care,Piece
+1022,Electric Shaver Basic,851010,Personal Care,Piece
+1023,Electric Shaver Premium,851010,Personal Care,Piece
+1024,Electric Shaver Pro,851010,Personal Care,Piece
+1025,Electric Shaver Advanced,851010,Personal Care,Piece
+1026,Electric Shaver Lite,851010,Personal Care,Piece
+1027,Electric Shaver Plus,851010,Personal Care,Piece
+1028,Electric Shaver Max,851010,Personal Care,Piece
+1029,Electric Shaver Mini,851010,Personal Care,Piece
+1030,Electric Shaver Ultra,851010,Personal Care,Piece
+1031,Electric Shaver Gen 1,851010,Personal Care,Piece
+1032,Electric Shaver Gen 2,851010,Personal Care,Piece
+1033,Electric Shaver Gen 3,851010,Personal Care,Piece
+1034,Electric Shaver Series A,851010,Personal Care,Piece
+1035,Electric Shaver Series B,851010,Personal Care,Piece
+1036,Electric Shaver Series C,851010,Personal Care,Piece
+1037,Electric Shaver Model X,851010,Personal Care,Piece
+1038,Electric Shaver Model Y,851010,Personal Care,Piece
+1039,Electric Shaver Model Z,851010,Personal Care,Piece
+1040,Electric Shaver 2026,851010,Personal Care,Piece
+1041,Hair Clipper Standard,851020,Personal Care,Piece
+1042,Hair Clipper Basic,851020,Personal Care,Piece
+1043,Hair Clipper Premium,851020,Personal Care,Piece
+1044,Hair Clipper Pro,851020,Personal Care,Piece
+1045,Hair Clipper Advanced,851020,Personal Care,Piece
+1046,Hair Clipper Lite,851020,Personal Care,Piece
+1047,Hair Clipper Plus,851020,Personal Care,Piece
+1048,Hair Clipper Max,851020,Personal Care,Piece
+1049,Hair Clipper Mini,851020,Personal Care,Piece
+1050,Hair Clipper Ultra,851020,Personal Care,Piece
+1051,Hair Clipper Gen 1,851020,Personal Care,Piece
+1052,Hair Clipper Gen 2,851020,Personal Care,Piece
+1053,Hair Clipper Gen 3,851020,Personal Care,Piece
+1054,Hair Clipper Series A,851020,Personal Care,Piece
+1055,Hair Clipper Series B,851020,Personal Care,Piece
+1056,Hair Clipper Series C,851020,Personal Care,Piece
+1057,Hair Clipper Model X,851020,Personal Care,Piece
+1058,Hair Clipper Model Y,851020,Personal Care,Piece
+1059,Hair Clipper Model Z,851020,Personal Care,Piece
+1060,Hair Clipper 2026,851020,Personal Care,Piece
+1061,Electric Toothbrush Standard,850980,Personal Care,Piece
+1062,Electric Toothbrush Basic,850980,Personal Care,Piece
+1063,Electric Toothbrush Premium,850980,Personal Care,Piece
+1064,Electric Toothbrush Pro,850980,Personal Care,Piece
+1065,Electric Toothbrush Advanced,850980,Personal Care,Piece
+1066,Electric Toothbrush Lite,850980,Personal Care,Piece
+1067,Electric Toothbrush Plus,850980,Personal Care,Piece
+1068,Electric Toothbrush Max,850980,Personal Care,Piece
+1069,Electric Toothbrush Mini,850980,Personal Care,Piece
+1070,Electric Toothbrush Ultra,850980,Personal Care,Piece
+1071,Electric Toothbrush Gen 1,850980,Personal Care,Piece
+1072,Electric Toothbrush Gen 2,850980,Personal Care,Piece
+1073,Electric Toothbrush Gen 3,850980,Personal Care,Piece
+1074,Electric Toothbrush Series A,850980,Personal Care,Piece
+1075,Electric Toothbrush Series B,850980,Personal Care,Piece
+1076,Electric Toothbrush Series C,850980,Personal Care,Piece
+1077,Electric Toothbrush Model X,850980,Personal Care,Piece
+1078,Electric Toothbrush Model Y,850980,Personal Care,Piece
+1079,Electric Toothbrush Model Z,850980,Personal Care,Piece
+1080,Electric Toothbrush 2026,850980,Personal Care,Piece
+1081,LED Bulb Standard,853952,Lighting,Piece
+1082,LED Bulb Basic,853952,Lighting,Piece
+1083,LED Bulb Premium,853952,Lighting,Piece
+1084,LED Bulb Pro,853952,Lighting,Piece
+1085,LED Bulb Advanced,853952,Lighting,Piece
+1086,LED Bulb Lite,853952,Lighting,Piece
+1087,LED Bulb Plus,853952,Lighting,Piece
+1088,LED Bulb Max,853952,Lighting,Piece
+1089,LED Bulb Mini,853952,Lighting,Piece
+1090,LED Bulb Ultra,853952,Lighting,Piece
+1091,LED Bulb Gen 1,853952,Lighting,Piece
+1092,LED Bulb Gen 2,853952,Lighting,Piece
+1093,LED Bulb Gen 3,853952,Lighting,Piece
+1094,LED Bulb Series A,853952,Lighting,Piece
+1095,LED Bulb Series B,853952,Lighting,Piece
+1096,LED Bulb Series C,853952,Lighting,Piece
+1097,LED Bulb Model X,853952,Lighting,Piece
+1098,LED Bulb Model Y,853952,Lighting,Piece
+1099,LED Bulb Model Z,853952,Lighting,Piece
+1100,LED Bulb 2026,853952,Lighting,Piece
+1101,LED Lamp Standard,940521,Lighting,Piece
+1102,LED Lamp Basic,940521,Lighting,Piece
+1103,LED Lamp Premium,940521,Lighting,Piece
+1104,LED Lamp Pro,940521,Lighting,Piece
+1105,LED Lamp Advanced,940521,Lighting,Piece
+1106,LED Lamp Lite,940521,Lighting,Piece
+1107,LED Lamp Plus,940521,Lighting,Piece
+1108,LED Lamp Max,940521,Lighting,Piece
+1109,LED Lamp Mini,940521,Lighting,Piece
+1110,LED Lamp Ultra,940521,Lighting,Piece
+1111,LED Lamp Gen 1,940521,Lighting,Piece
+1112,LED Lamp Gen 2,940521,Lighting,Piece
+1113,LED Lamp Gen 3,940521,Lighting,Piece
+1114,LED Lamp Series A,940521,Lighting,Piece
+1115,LED Lamp Series B,940521,Lighting,Piece
+1116,LED Lamp Series C,940521,Lighting,Piece
+1117,LED Lamp Model X,940521,Lighting,Piece
+1118,LED Lamp Model Y,940521,Lighting,Piece
+1119,LED Lamp Model Z,940521,Lighting,Piece
+1120,LED Lamp 2026,940521,Lighting,Piece
+1121,Solar Panel Standard,854143,Renewable Energy,Piece
+1122,Solar Panel Basic,854143,Renewable Energy,Piece
+1123,Solar Panel Premium,854143,Renewable Energy,Piece
+1124,Solar Panel Pro,854143,Renewable Energy,Piece
+1125,Solar Panel Advanced,854143,Renewable Energy,Piece
+1126,Solar Panel Lite,854143,Renewable Energy,Piece
+1127,Solar Panel Plus,854143,Renewable Energy,Piece
+1128,Solar Panel Max,854143,Renewable Energy,Piece
+1129,Solar Panel Mini,854143,Renewable Energy,Piece
+1130,Solar Panel Ultra,854143,Renewable Energy,Piece
+1131,Solar Panel Gen 1,854143,Renewable Energy,Piece
+1132,Solar Panel Gen 2,854143,Renewable Energy,Piece
+1133,Solar Panel Gen 3,854143,Renewable Energy,Piece
+1134,Solar Panel Series A,854143,Renewable Energy,Piece
+1135,Solar Panel Series B,854143,Renewable Energy,Piece
+1136,Solar Panel Series C,854143,Renewable Energy,Piece
+1137,Solar Panel Model X,854143,Renewable Energy,Piece
+1138,Solar Panel Model Y,854143,Renewable Energy,Piece
+1139,Solar Panel Model Z,854143,Renewable Energy,Piece
+1140,Solar Panel 2026,854143,Renewable Energy,Piece
+1141,Inverter Standard,850440,Electrical Equipment,Piece
+1142,Inverter Basic,850440,Electrical Equipment,Piece
+1143,Inverter Premium,850440,Electrical Equipment,Piece
+1144,Inverter Pro,850440,Electrical Equipment,Piece
+1145,Inverter Advanced,850440,Electrical Equipment,Piece
+1146,Inverter Lite,850440,Electrical Equipment,Piece
+1147,Inverter Plus,850440,Electrical Equipment,Piece
+1148,Inverter Max,850440,Electrical Equipment,Piece
+1149,Inverter Mini,850440,Electrical Equipment,Piece
+1150,Inverter Ultra,850440,Electrical Equipment,Piece
+1151,Inverter Gen 1,850440,Electrical Equipment,Piece
+1152,Inverter Gen 2,850440,Electrical Equipment,Piece
+1153,Inverter Gen 3,850440,Electrical Equipment,Piece
+1154,Inverter Series A,850440,Electrical Equipment,Piece
+1155,Inverter Series B,850440,Electrical Equipment,Piece
+1156,Inverter Series C,850440,Electrical Equipment,Piece
+1157,Inverter Model X,850440,Electrical Equipment,Piece
+1158,Inverter Model Y,850440,Electrical Equipment,Piece
+1159,Inverter Model Z,850440,Electrical Equipment,Piece
+1160,Inverter 2026,850440,Electrical Equipment,Piece
+1161,Battery Charger Standard,850440,Electrical Equipment,Piece
+1162,Battery Charger Basic,850440,Electrical Equipment,Piece
+1163,Battery Charger Premium,850440,Electrical Equipment,Piece
+1164,Battery Charger Pro,850440,Electrical Equipment,Piece
+1165,Battery Charger Advanced,850440,Electrical Equipment,Piece
+1166,Battery Charger Lite,850440,Electrical Equipment,Piece
+1167,Battery Charger Plus,850440,Electrical Equipment,Piece
+1168,Battery Charger Max,850440,Electrical Equipment,Piece
+1169,Battery Charger Mini,850440,Electrical Equipment,Piece
+1170,Battery Charger Ultra,850440,Electrical Equipment,Piece
+1171,Battery Charger Gen 1,850440,Electrical Equipment,Piece
+1172,Battery Charger Gen 2,850440,Electrical Equipment,Piece
+1173,Battery Charger Gen 3,850440,Electrical Equipment,Piece
+1174,Battery Charger Series A,850440,Electrical Equipment,Piece
+1175,Battery Charger Series B,850440,Electrical Equipment,Piece
+1176,Battery Charger Series C,850440,Electrical Equipment,Piece
+1177,Battery Charger Model X,850440,Electrical Equipment,Piece
+1178,Battery Charger Model Y,850440,Electrical Equipment,Piece
+1179,Battery Charger Model Z,850440,Electrical Equipment,Piece
+1180,Battery Charger 2026,850440,Electrical Equipment,Piece
+1181,Lithium Battery Standard,850760,Electrical Equipment,Piece
+1182,Lithium Battery Basic,850760,Electrical Equipment,Piece
+1183,Lithium Battery Premium,850760,Electrical Equipment,Piece
+1184,Lithium Battery Pro,850760,Electrical Equipment,Piece
+1185,Lithium Battery Advanced,850760,Electrical Equipment,Piece
+1186,Lithium Battery Lite,850760,Electrical Equipment,Piece
+1187,Lithium Battery Plus,850760,Electrical Equipment,Piece
+1188,Lithium Battery Max,850760,Electrical Equipment,Piece
+1189,Lithium Battery Mini,850760,Electrical Equipment,Piece
+1190,Lithium Battery Ultra,850760,Electrical Equipment,Piece
+1191,Lithium Battery Gen 1,850760,Electrical Equipment,Piece
+1192,Lithium Battery Gen 2,850760,Electrical Equipment,Piece
+1193,Lithium Battery Gen 3,850760,Electrical Equipment,Piece
+1194,Lithium Battery Series A,850760,Electrical Equipment,Piece
+1195,Lithium Battery Series B,850760,Electrical Equipment,Piece
+1196,Lithium Battery Series C,850760,Electrical Equipment,Piece
+1197,Lithium Battery Model X,850760,Electrical Equipment,Piece
+1198,Lithium Battery Model Y,850760,Electrical Equipment,Piece
+1199,Lithium Battery Model Z,850760,Electrical Equipment,Piece
+1200,Lithium Battery 2026,850760,Electrical Equipment,Piece

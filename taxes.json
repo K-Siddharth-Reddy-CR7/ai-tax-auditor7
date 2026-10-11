@@ -1,0 +1,242 @@
+[
+  {
+    "Country": "India",
+    "Currency": "INR",
+    "GST_VAT_Percent": 18.0,
+    "Default_Import_Duty_Percent": 10
+  },
+  {
+    "Country": "United States",
+    "Currency": "USD",
+    "GST_VAT_Percent": 0.0,
+    "Default_Import_Duty_Percent": 5
+  },
+  {
+    "Country": "Germany",
+    "Currency": "EUR",
+    "GST_VAT_Percent": 19.0,
+    "Default_Import_Duty_Percent": 8
+  },
+  {
+    "Country": "United Arab Emirates",
+    "Currency": "AED",
+    "GST_VAT_Percent": 5.0,
+    "Default_Import_Duty_Percent": 5
+  },
+  {
+    "Country": "Japan",
+    "Currency": "JPY",
+    "GST_VAT_Percent": 10.0,
+    "Default_Import_Duty_Percent": 6
+  },
+  {
+    "Country": "United Kingdom",
+    "Currency": "GBP",
+    "GST_VAT_Percent": 20.0,
+    "Default_Import_Duty_Percent": 7
+  },
+  {
+    "Country": "Australia",
+    "Currency": "AUD",
+    "GST_VAT_Percent": 10.0,
+    "Default_Import_Duty_Percent": 5
+  },
+  {
+    "Country": "Canada",
+    "Currency": "CAD",
+    "GST_VAT_Percent": 5.0,
+    "Default_Import_Duty_Percent": 6
+  },
+  {
+    "Country": "France",
+    "Currency": "EUR",
+    "GST_VAT_Percent": 20.0,
+    "Default_Import_Duty_Percent": 8
+  },
+  {
+    "Country": "Italy",
+    "Currency": "EUR",
+    "GST_VAT_Percent": 22.0,
+    "Default_Import_Duty_Percent": 8
+  },
+  {
+    "Country": "Spain",
+    "Currency": "EUR",
+    "GST_VAT_Percent": 21.0,
+    "Default_Import_Duty_Percent": 7
+  },
+  {
+    "Country": "Singapore",
+    "Currency": "SGD",
+    "GST_VAT_Percent": 9.0,
+    "Default_Import_Duty_Percent": 5
+  },
+  {
+    "Country": "Malaysia",
+    "Currency": "MYR",
+    "GST_VAT_Percent": 8.0,
+    "Default_Import_Duty_Percent": 6
+  },
+  {
+    "Country": "Thailand",
+    "Currency": "THB",
+    "GST_VAT_Percent": 7.0,
+    "Default_Import_Duty_Percent": 5
+  },
+  {
+    "Country": "South Korea",
+    "Currency": "KRW",
+    "GST_VAT_Percent": 10.0,
+    "Default_Import_Duty_Percent": 7
+  },
+  {
+    "Country": "China",
+    "Currency": "CNY",
+    "GST_VAT_Percent": 13.0,
+    "Default_Import_Duty_Percent": 8
+  },
+  {
+    "Country": "Saudi Arabia",
+    "Currency": "SAR",
+    "GST_VAT_Percent": 15.0,
+    "Default_Import_Duty_Percent": 5
+  },
+  {
+    "Country": "Brazil",
+    "Currency": "BRL",
+    "GST_VAT_Percent": 17.0,
+    "Default_Import_Duty_Percent": 10
+  },
+  {
+    "Country": "South Africa",
+    "Currency": "ZAR",
+    "GST_VAT_Percent": 15.0,
+    "Default_Import_Duty_Percent": 8
+  },
+  {
+    "Country": "New Zealand",
+    "Currency": "NZD",
+    "GST_VAT_Percent": 15.0,
+    "Default_Import_Duty_Percent": 5
+  },
+  {
+    "Country": "Mexico",
+    "Currency": "MXN",
+    "GST_VAT_Percent": 16.0,
+    "Default_Import_Duty_Percent": 8
+  },
+  {
+    "Country": "Indonesia",
+    "Currency": "IDR",
+    "GST_VAT_Percent": 11.0,
+    "Default_Import_Duty_Percent": 7
+  },
+  {
+    "Country": "Vietnam",
+    "Currency": "VND",
+    "GST_VAT_Percent": 10.0,
+    "Default_Import_Duty_Percent": 7
+  },
+  {
+    "Country": "Philippines",
+    "Currency": "PHP",
+    "GST_VAT_Percent": 12.0,
+    "Default_Import_Duty_Percent": 6
+  },
+  {
+    "Country": "Turkey",
+    "Currency": "TRY",
+    "GST_VAT_Percent": 20.0,
+    "Default_Import_Duty_Percent": 8
+  },
+  {
+    "Country": "Netherlands",
+    "Currency": "EUR",
+    "GST_VAT_Percent": 21.0,
+    "Default_Import_Duty_Percent": 8
+  },
+  {
+    "Country": "Belgium",
+    "Currency": "EUR",
+    "GST_VAT_Percent": 21.0,
+    "Default_Import_Duty_Percent": 8
+  },
+  {
+    "Country": "Sweden",
+    "Currency": "SEK",
+    "GST_VAT_Percent": 25.0,
+    "Default_Import_Duty_Percent": 7
+  },
+  {
+    "Country": "Norway",
+    "Currency": "NOK",
+    "GST_VAT_Percent": 25.0,
+    "Default_Import_Duty_Percent": 7
+  },
+  {
+    "Country": "Denmark",
+    "Currency": "DKK",
+    "GST_VAT_Percent": 25.0,
+    "Default_Import_Duty_Percent": 7
+  },
+  {
+    "Country": "Switzerland",
+    "Currency": "CHF",
+    "GST_VAT_Percent": 8.0,
+    "Default_Import_Duty_Percent": 6
+  },
+  {
+    "Country": "Ireland",
+    "Currency": "EUR",
+    "GST_VAT_Percent": 23.0,
+    "Default_Import_Duty_Percent": 7
+  },
+  {
+    "Country": "Portugal",
+    "Currency": "EUR",
+    "GST_VAT_Percent": 23.0,
+    "Default_Import_Duty_Percent": 7
+  },
+  {
+    "Country": "Poland",
+    "Currency": "PLN",
+    "GST_VAT_Percent": 23.0,
+    "Default_Import_Duty_Percent": 8
+  },
+  {
+    "Country": "Austria",
+    "Currency": "EUR",
+    "GST_VAT_Percent": 20.0,
+    "Default_Import_Duty_Percent": 8
+  },
+  {
+    "Country": "Argentina",
+    "Currency": "ARS",
+    "GST_VAT_Percent": 21.0,
+    "Default_Import_Duty_Percent": 10
+  },
+  {
+    "Country": "Chile",
+    "Currency": "CLP",
+    "GST_VAT_Percent": 19.0,
+    "Default_Import_Duty_Percent": 6
+  },
+  {
+    "Country": "Egypt",
+    "Currency": "EGP",
+    "GST_VAT_Percent": 14.0,
+    "Default_Import_Duty_Percent": 8
+  },
+  {
+    "Country": "Nigeria",
+    "Currency": "NGN",
+    "GST_VAT_Percent": 7.5,
+    "Default_Import_Duty_Percent": 8
+  },
+  {
+    "Country": "Greece",
+    "Currency": "EUR",
+    "GST_VAT_Percent": 24.0,
+    "Default_Import_Duty_Percent": 8
+  }
+]

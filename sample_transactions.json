@@ -1,0 +1,4002 @@
+[
+  {
+    "Transaction_ID": 1,
+    "Product": "Laptop Standard",
+    "HS_Code": 847130,
+    "Origin_Country": "India",
+    "Destination_Country": "France",
+    "Unit_Price_USD": 87.25,
+    "Quantity": 2,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 2,
+    "Product": "Laptop Basic",
+    "HS_Code": 847130,
+    "Origin_Country": "United States",
+    "Destination_Country": "Italy",
+    "Unit_Price_USD": 124.5,
+    "Quantity": 3,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 3,
+    "Product": "Laptop Premium",
+    "HS_Code": 847130,
+    "Origin_Country": "Germany",
+    "Destination_Country": "Spain",
+    "Unit_Price_USD": 161.75,
+    "Quantity": 4,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 4,
+    "Product": "Laptop Pro",
+    "HS_Code": 847130,
+    "Origin_Country": "United Arab Emirates",
+    "Destination_Country": "Singapore",
+    "Unit_Price_USD": 199.0,
+    "Quantity": 5,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 5,
+    "Product": "Laptop Advanced",
+    "HS_Code": 847130,
+    "Origin_Country": "Japan",
+    "Destination_Country": "Malaysia",
+    "Unit_Price_USD": 236.25,
+    "Quantity": 6,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 6,
+    "Product": "Laptop Lite",
+    "HS_Code": 847130,
+    "Origin_Country": "United Kingdom",
+    "Destination_Country": "Thailand",
+    "Unit_Price_USD": 273.5,
+    "Quantity": 7,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 7,
+    "Product": "Laptop Plus",
+    "HS_Code": 847130,
+    "Origin_Country": "Australia",
+    "Destination_Country": "South Korea",
+    "Unit_Price_USD": 310.75,
+    "Quantity": 8,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 8,
+    "Product": "Laptop Max",
+    "HS_Code": 847130,
+    "Origin_Country": "Canada",
+    "Destination_Country": "China",
+    "Unit_Price_USD": 348.0,
+    "Quantity": 9,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 9,
+    "Product": "Laptop Mini",
+    "HS_Code": 847130,
+    "Origin_Country": "France",
+    "Destination_Country": "Saudi Arabia",
+    "Unit_Price_USD": 385.25,
+    "Quantity": 10,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 10,
+    "Product": "Laptop Ultra",
+    "HS_Code": 847130,
+    "Origin_Country": "Italy",
+    "Destination_Country": "Brazil",
+    "Unit_Price_USD": 422.5,
+    "Quantity": 11,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 11,
+    "Product": "Laptop Gen 1",
+    "HS_Code": 847130,
+    "Origin_Country": "Spain",
+    "Destination_Country": "South Africa",
+    "Unit_Price_USD": 459.75,
+    "Quantity": 12,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 12,
+    "Product": "Laptop Gen 2",
+    "HS_Code": 847130,
+    "Origin_Country": "Singapore",
+    "Destination_Country": "New Zealand",
+    "Unit_Price_USD": 497.0,
+    "Quantity": 1,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 13,
+    "Product": "Laptop Gen 3",
+    "HS_Code": 847130,
+    "Origin_Country": "Malaysia",
+    "Destination_Country": "Mexico",
+    "Unit_Price_USD": 534.25,
+    "Quantity": 2,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 14,
+    "Product": "Laptop Series A",
+    "HS_Code": 847130,
+    "Origin_Country": "Thailand",
+    "Destination_Country": "Indonesia",
+    "Unit_Price_USD": 571.5,
+    "Quantity": 3,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 15,
+    "Product": "Laptop Series B",
+    "HS_Code": 847130,
+    "Origin_Country": "South Korea",
+    "Destination_Country": "Vietnam",
+    "Unit_Price_USD": 608.75,
+    "Quantity": 4,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 16,
+    "Product": "Laptop Series C",
+    "HS_Code": 847130,
+    "Origin_Country": "China",
+    "Destination_Country": "Philippines",
+    "Unit_Price_USD": 646.0,
+    "Quantity": 5,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 17,
+    "Product": "Laptop Model X",
+    "HS_Code": 847130,
+    "Origin_Country": "Saudi Arabia",
+    "Destination_Country": "Turkey",
+    "Unit_Price_USD": 683.25,
+    "Quantity": 6,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 18,
+    "Product": "Laptop Model Y",
+    "HS_Code": 847130,
+    "Origin_Country": "Brazil",
+    "Destination_Country": "Netherlands",
+    "Unit_Price_USD": 720.5,
+    "Quantity": 7,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 19,
+    "Product": "Laptop Model Z",
+    "HS_Code": 847130,
+    "Origin_Country": "South Africa",
+    "Destination_Country": "Belgium",
+    "Unit_Price_USD": 757.75,
+    "Quantity": 8,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 20,
+    "Product": "Laptop 2026",
+    "HS_Code": 847130,
+    "Origin_Country": "New Zealand",
+    "Destination_Country": "Sweden",
+    "Unit_Price_USD": 795.0,
+    "Quantity": 9,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 21,
+    "Product": "Desktop Computer Standard",
+    "HS_Code": 847141,
+    "Origin_Country": "Mexico",
+    "Destination_Country": "Norway",
+    "Unit_Price_USD": 832.25,
+    "Quantity": 10,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 22,
+    "Product": "Desktop Computer Basic",
+    "HS_Code": 847141,
+    "Origin_Country": "Indonesia",
+    "Destination_Country": "Denmark",
+    "Unit_Price_USD": 869.5,
+    "Quantity": 11,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 23,
+    "Product": "Desktop Computer Premium",
+    "HS_Code": 847141,
+    "Origin_Country": "Vietnam",
+    "Destination_Country": "Switzerland",
+    "Unit_Price_USD": 906.75,
+    "Quantity": 12,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 24,
+    "Product": "Desktop Computer Pro",
+    "HS_Code": 847141,
+    "Origin_Country": "Philippines",
+    "Destination_Country": "Ireland",
+    "Unit_Price_USD": 944.0,
+    "Quantity": 1,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 25,
+    "Product": "Desktop Computer Advanced",
+    "HS_Code": 847141,
+    "Origin_Country": "Turkey",
+    "Destination_Country": "Portugal",
+    "Unit_Price_USD": 981.25,
+    "Quantity": 2,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 26,
+    "Product": "Desktop Computer Lite",
+    "HS_Code": 847141,
+    "Origin_Country": "Netherlands",
+    "Destination_Country": "Poland",
+    "Unit_Price_USD": 1018.5,
+    "Quantity": 3,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 27,
+    "Product": "Desktop Computer Plus",
+    "HS_Code": 847141,
+    "Origin_Country": "Belgium",
+    "Destination_Country": "Austria",
+    "Unit_Price_USD": 1055.75,
+    "Quantity": 4,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 28,
+    "Product": "Desktop Computer Max",
+    "HS_Code": 847141,
+    "Origin_Country": "Sweden",
+    "Destination_Country": "Argentina",
+    "Unit_Price_USD": 1093.0,
+    "Quantity": 5,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 29,
+    "Product": "Desktop Computer Mini",
+    "HS_Code": 847141,
+    "Origin_Country": "Norway",
+    "Destination_Country": "Chile",
+    "Unit_Price_USD": 1130.25,
+    "Quantity": 6,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 30,
+    "Product": "Desktop Computer Ultra",
+    "HS_Code": 847141,
+    "Origin_Country": "Denmark",
+    "Destination_Country": "Egypt",
+    "Unit_Price_USD": 1167.5,
+    "Quantity": 7,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 31,
+    "Product": "Desktop Computer Gen 1",
+    "HS_Code": 847141,
+    "Origin_Country": "Switzerland",
+    "Destination_Country": "Nigeria",
+    "Unit_Price_USD": 1204.75,
+    "Quantity": 8,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 32,
+    "Product": "Desktop Computer Gen 2",
+    "HS_Code": 847141,
+    "Origin_Country": "Ireland",
+    "Destination_Country": "Greece",
+    "Unit_Price_USD": 1242.0,
+    "Quantity": 9,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 33,
+    "Product": "Desktop Computer Gen 3",
+    "HS_Code": 847141,
+    "Origin_Country": "Portugal",
+    "Destination_Country": "India",
+    "Unit_Price_USD": 1279.25,
+    "Quantity": 10,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 34,
+    "Product": "Desktop Computer Series A",
+    "HS_Code": 847141,
+    "Origin_Country": "Poland",
+    "Destination_Country": "United States",
+    "Unit_Price_USD": 1316.5,
+    "Quantity": 11,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 35,
+    "Product": "Desktop Computer Series B",
+    "HS_Code": 847141,
+    "Origin_Country": "Austria",
+    "Destination_Country": "Germany",
+    "Unit_Price_USD": 1353.75,
+    "Quantity": 12,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 36,
+    "Product": "Desktop Computer Series C",
+    "HS_Code": 847141,
+    "Origin_Country": "Argentina",
+    "Destination_Country": "United Arab Emirates",
+    "Unit_Price_USD": 1391.0,
+    "Quantity": 1,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 37,
+    "Product": "Desktop Computer Model X",
+    "HS_Code": 847141,
+    "Origin_Country": "Chile",
+    "Destination_Country": "Japan",
+    "Unit_Price_USD": 1428.25,
+    "Quantity": 2,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 38,
+    "Product": "Desktop Computer Model Y",
+    "HS_Code": 847141,
+    "Origin_Country": "Egypt",
+    "Destination_Country": "United Kingdom",
+    "Unit_Price_USD": 1465.5,
+    "Quantity": 3,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 39,
+    "Product": "Desktop Computer Model Z",
+    "HS_Code": 847141,
+    "Origin_Country": "Nigeria",
+    "Destination_Country": "Australia",
+    "Unit_Price_USD": 1502.75,
+    "Quantity": 4,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 40,
+    "Product": "Desktop Computer 2026",
+    "HS_Code": 847141,
+    "Origin_Country": "Greece",
+    "Destination_Country": "Canada",
+    "Unit_Price_USD": 50.0,
+    "Quantity": 5,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 41,
+    "Product": "Tablet Standard",
+    "HS_Code": 847130,
+    "Origin_Country": "India",
+    "Destination_Country": "France",
+    "Unit_Price_USD": 87.25,
+    "Quantity": 6,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 42,
+    "Product": "Tablet Basic",
+    "HS_Code": 847130,
+    "Origin_Country": "United States",
+    "Destination_Country": "Italy",
+    "Unit_Price_USD": 124.5,
+    "Quantity": 7,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 43,
+    "Product": "Tablet Premium",
+    "HS_Code": 847130,
+    "Origin_Country": "Germany",
+    "Destination_Country": "Spain",
+    "Unit_Price_USD": 161.75,
+    "Quantity": 8,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 44,
+    "Product": "Tablet Pro",
+    "HS_Code": 847130,
+    "Origin_Country": "United Arab Emirates",
+    "Destination_Country": "Singapore",
+    "Unit_Price_USD": 199.0,
+    "Quantity": 9,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 45,
+    "Product": "Tablet Advanced",
+    "HS_Code": 847130,
+    "Origin_Country": "Japan",
+    "Destination_Country": "Malaysia",
+    "Unit_Price_USD": 236.25,
+    "Quantity": 10,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 46,
+    "Product": "Tablet Lite",
+    "HS_Code": 847130,
+    "Origin_Country": "United Kingdom",
+    "Destination_Country": "Thailand",
+    "Unit_Price_USD": 273.5,
+    "Quantity": 11,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 47,
+    "Product": "Tablet Plus",
+    "HS_Code": 847130,
+    "Origin_Country": "Australia",
+    "Destination_Country": "South Korea",
+    "Unit_Price_USD": 310.75,
+    "Quantity": 12,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 48,
+    "Product": "Tablet Max",
+    "HS_Code": 847130,
+    "Origin_Country": "Canada",
+    "Destination_Country": "China",
+    "Unit_Price_USD": 348.0,
+    "Quantity": 1,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 49,
+    "Product": "Tablet Mini",
+    "HS_Code": 847130,
+    "Origin_Country": "France",
+    "Destination_Country": "Saudi Arabia",
+    "Unit_Price_USD": 385.25,
+    "Quantity": 2,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 50,
+    "Product": "Tablet Ultra",
+    "HS_Code": 847130,
+    "Origin_Country": "Italy",
+    "Destination_Country": "Brazil",
+    "Unit_Price_USD": 422.5,
+    "Quantity": 3,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 51,
+    "Product": "Tablet Gen 1",
+    "HS_Code": 847130,
+    "Origin_Country": "Spain",
+    "Destination_Country": "South Africa",
+    "Unit_Price_USD": 459.75,
+    "Quantity": 4,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 52,
+    "Product": "Tablet Gen 2",
+    "HS_Code": 847130,
+    "Origin_Country": "Singapore",
+    "Destination_Country": "New Zealand",
+    "Unit_Price_USD": 497.0,
+    "Quantity": 5,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 53,
+    "Product": "Tablet Gen 3",
+    "HS_Code": 847130,
+    "Origin_Country": "Malaysia",
+    "Destination_Country": "Mexico",
+    "Unit_Price_USD": 534.25,
+    "Quantity": 6,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 54,
+    "Product": "Tablet Series A",
+    "HS_Code": 847130,
+    "Origin_Country": "Thailand",
+    "Destination_Country": "Indonesia",
+    "Unit_Price_USD": 571.5,
+    "Quantity": 7,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 55,
+    "Product": "Tablet Series B",
+    "HS_Code": 847130,
+    "Origin_Country": "South Korea",
+    "Destination_Country": "Vietnam",
+    "Unit_Price_USD": 608.75,
+    "Quantity": 8,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 56,
+    "Product": "Tablet Series C",
+    "HS_Code": 847130,
+    "Origin_Country": "China",
+    "Destination_Country": "Philippines",
+    "Unit_Price_USD": 646.0,
+    "Quantity": 9,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 57,
+    "Product": "Tablet Model X",
+    "HS_Code": 847130,
+    "Origin_Country": "Saudi Arabia",
+    "Destination_Country": "Turkey",
+    "Unit_Price_USD": 683.25,
+    "Quantity": 10,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 58,
+    "Product": "Tablet Model Y",
+    "HS_Code": 847130,
+    "Origin_Country": "Brazil",
+    "Destination_Country": "Netherlands",
+    "Unit_Price_USD": 720.5,
+    "Quantity": 11,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 59,
+    "Product": "Tablet Model Z",
+    "HS_Code": 847130,
+    "Origin_Country": "South Africa",
+    "Destination_Country": "Belgium",
+    "Unit_Price_USD": 757.75,
+    "Quantity": 12,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 60,
+    "Product": "Tablet 2026",
+    "HS_Code": 847130,
+    "Origin_Country": "New Zealand",
+    "Destination_Country": "Sweden",
+    "Unit_Price_USD": 795.0,
+    "Quantity": 1,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 61,
+    "Product": "Mobile Phone Standard",
+    "HS_Code": 851713,
+    "Origin_Country": "Mexico",
+    "Destination_Country": "Norway",
+    "Unit_Price_USD": 832.25,
+    "Quantity": 2,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 62,
+    "Product": "Mobile Phone Basic",
+    "HS_Code": 851713,
+    "Origin_Country": "Indonesia",
+    "Destination_Country": "Denmark",
+    "Unit_Price_USD": 869.5,
+    "Quantity": 3,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 63,
+    "Product": "Mobile Phone Premium",
+    "HS_Code": 851713,
+    "Origin_Country": "Vietnam",
+    "Destination_Country": "Switzerland",
+    "Unit_Price_USD": 906.75,
+    "Quantity": 4,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 64,
+    "Product": "Mobile Phone Pro",
+    "HS_Code": 851713,
+    "Origin_Country": "Philippines",
+    "Destination_Country": "Ireland",
+    "Unit_Price_USD": 944.0,
+    "Quantity": 5,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 65,
+    "Product": "Mobile Phone Advanced",
+    "HS_Code": 851713,
+    "Origin_Country": "Turkey",
+    "Destination_Country": "Portugal",
+    "Unit_Price_USD": 981.25,
+    "Quantity": 6,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 66,
+    "Product": "Mobile Phone Lite",
+    "HS_Code": 851713,
+    "Origin_Country": "Netherlands",
+    "Destination_Country": "Poland",
+    "Unit_Price_USD": 1018.5,
+    "Quantity": 7,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 67,
+    "Product": "Mobile Phone Plus",
+    "HS_Code": 851713,
+    "Origin_Country": "Belgium",
+    "Destination_Country": "Austria",
+    "Unit_Price_USD": 1055.75,
+    "Quantity": 8,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 68,
+    "Product": "Mobile Phone Max",
+    "HS_Code": 851713,
+    "Origin_Country": "Sweden",
+    "Destination_Country": "Argentina",
+    "Unit_Price_USD": 1093.0,
+    "Quantity": 9,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 69,
+    "Product": "Mobile Phone Mini",
+    "HS_Code": 851713,
+    "Origin_Country": "Norway",
+    "Destination_Country": "Chile",
+    "Unit_Price_USD": 1130.25,
+    "Quantity": 10,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 70,
+    "Product": "Mobile Phone Ultra",
+    "HS_Code": 851713,
+    "Origin_Country": "Denmark",
+    "Destination_Country": "Egypt",
+    "Unit_Price_USD": 1167.5,
+    "Quantity": 11,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 71,
+    "Product": "Mobile Phone Gen 1",
+    "HS_Code": 851713,
+    "Origin_Country": "Switzerland",
+    "Destination_Country": "Nigeria",
+    "Unit_Price_USD": 1204.75,
+    "Quantity": 12,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 72,
+    "Product": "Mobile Phone Gen 2",
+    "HS_Code": 851713,
+    "Origin_Country": "Ireland",
+    "Destination_Country": "Greece",
+    "Unit_Price_USD": 1242.0,
+    "Quantity": 1,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 73,
+    "Product": "Mobile Phone Gen 3",
+    "HS_Code": 851713,
+    "Origin_Country": "Portugal",
+    "Destination_Country": "India",
+    "Unit_Price_USD": 1279.25,
+    "Quantity": 2,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 74,
+    "Product": "Mobile Phone Series A",
+    "HS_Code": 851713,
+    "Origin_Country": "Poland",
+    "Destination_Country": "United States",
+    "Unit_Price_USD": 1316.5,
+    "Quantity": 3,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 75,
+    "Product": "Mobile Phone Series B",
+    "HS_Code": 851713,
+    "Origin_Country": "Austria",
+    "Destination_Country": "Germany",
+    "Unit_Price_USD": 1353.75,
+    "Quantity": 4,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 76,
+    "Product": "Mobile Phone Series C",
+    "HS_Code": 851713,
+    "Origin_Country": "Argentina",
+    "Destination_Country": "United Arab Emirates",
+    "Unit_Price_USD": 1391.0,
+    "Quantity": 5,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 77,
+    "Product": "Mobile Phone Model X",
+    "HS_Code": 851713,
+    "Origin_Country": "Chile",
+    "Destination_Country": "Japan",
+    "Unit_Price_USD": 1428.25,
+    "Quantity": 6,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 78,
+    "Product": "Mobile Phone Model Y",
+    "HS_Code": 851713,
+    "Origin_Country": "Egypt",
+    "Destination_Country": "United Kingdom",
+    "Unit_Price_USD": 1465.5,
+    "Quantity": 7,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 79,
+    "Product": "Mobile Phone Model Z",
+    "HS_Code": 851713,
+    "Origin_Country": "Nigeria",
+    "Destination_Country": "Australia",
+    "Unit_Price_USD": 1502.75,
+    "Quantity": 8,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 80,
+    "Product": "Mobile Phone 2026",
+    "HS_Code": 851713,
+    "Origin_Country": "Greece",
+    "Destination_Country": "Canada",
+    "Unit_Price_USD": 50.0,
+    "Quantity": 9,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 81,
+    "Product": "Smartwatch Standard",
+    "HS_Code": 851762,
+    "Origin_Country": "India",
+    "Destination_Country": "France",
+    "Unit_Price_USD": 87.25,
+    "Quantity": 10,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 82,
+    "Product": "Smartwatch Basic",
+    "HS_Code": 851762,
+    "Origin_Country": "United States",
+    "Destination_Country": "Italy",
+    "Unit_Price_USD": 124.5,
+    "Quantity": 11,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 83,
+    "Product": "Smartwatch Premium",
+    "HS_Code": 851762,
+    "Origin_Country": "Germany",
+    "Destination_Country": "Spain",
+    "Unit_Price_USD": 161.75,
+    "Quantity": 12,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 84,
+    "Product": "Smartwatch Pro",
+    "HS_Code": 851762,
+    "Origin_Country": "United Arab Emirates",
+    "Destination_Country": "Singapore",
+    "Unit_Price_USD": 199.0,
+    "Quantity": 1,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 85,
+    "Product": "Smartwatch Advanced",
+    "HS_Code": 851762,
+    "Origin_Country": "Japan",
+    "Destination_Country": "Malaysia",
+    "Unit_Price_USD": 236.25,
+    "Quantity": 2,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 86,
+    "Product": "Smartwatch Lite",
+    "HS_Code": 851762,
+    "Origin_Country": "United Kingdom",
+    "Destination_Country": "Thailand",
+    "Unit_Price_USD": 273.5,
+    "Quantity": 3,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 87,
+    "Product": "Smartwatch Plus",
+    "HS_Code": 851762,
+    "Origin_Country": "Australia",
+    "Destination_Country": "South Korea",
+    "Unit_Price_USD": 310.75,
+    "Quantity": 4,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 88,
+    "Product": "Smartwatch Max",
+    "HS_Code": 851762,
+    "Origin_Country": "Canada",
+    "Destination_Country": "China",
+    "Unit_Price_USD": 348.0,
+    "Quantity": 5,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 89,
+    "Product": "Smartwatch Mini",
+    "HS_Code": 851762,
+    "Origin_Country": "France",
+    "Destination_Country": "Saudi Arabia",
+    "Unit_Price_USD": 385.25,
+    "Quantity": 6,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 90,
+    "Product": "Smartwatch Ultra",
+    "HS_Code": 851762,
+    "Origin_Country": "Italy",
+    "Destination_Country": "Brazil",
+    "Unit_Price_USD": 422.5,
+    "Quantity": 7,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 91,
+    "Product": "Smartwatch Gen 1",
+    "HS_Code": 851762,
+    "Origin_Country": "Spain",
+    "Destination_Country": "South Africa",
+    "Unit_Price_USD": 459.75,
+    "Quantity": 8,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 92,
+    "Product": "Smartwatch Gen 2",
+    "HS_Code": 851762,
+    "Origin_Country": "Singapore",
+    "Destination_Country": "New Zealand",
+    "Unit_Price_USD": 497.0,
+    "Quantity": 9,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 93,
+    "Product": "Smartwatch Gen 3",
+    "HS_Code": 851762,
+    "Origin_Country": "Malaysia",
+    "Destination_Country": "Mexico",
+    "Unit_Price_USD": 534.25,
+    "Quantity": 10,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 94,
+    "Product": "Smartwatch Series A",
+    "HS_Code": 851762,
+    "Origin_Country": "Thailand",
+    "Destination_Country": "Indonesia",
+    "Unit_Price_USD": 571.5,
+    "Quantity": 11,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 95,
+    "Product": "Smartwatch Series B",
+    "HS_Code": 851762,
+    "Origin_Country": "South Korea",
+    "Destination_Country": "Vietnam",
+    "Unit_Price_USD": 608.75,
+    "Quantity": 12,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 96,
+    "Product": "Smartwatch Series C",
+    "HS_Code": 851762,
+    "Origin_Country": "China",
+    "Destination_Country": "Philippines",
+    "Unit_Price_USD": 646.0,
+    "Quantity": 1,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 97,
+    "Product": "Smartwatch Model X",
+    "HS_Code": 851762,
+    "Origin_Country": "Saudi Arabia",
+    "Destination_Country": "Turkey",
+    "Unit_Price_USD": 683.25,
+    "Quantity": 2,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 98,
+    "Product": "Smartwatch Model Y",
+    "HS_Code": 851762,
+    "Origin_Country": "Brazil",
+    "Destination_Country": "Netherlands",
+    "Unit_Price_USD": 720.5,
+    "Quantity": 3,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 99,
+    "Product": "Smartwatch Model Z",
+    "HS_Code": 851762,
+    "Origin_Country": "South Africa",
+    "Destination_Country": "Belgium",
+    "Unit_Price_USD": 757.75,
+    "Quantity": 4,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 100,
+    "Product": "Smartwatch 2026",
+    "HS_Code": 851762,
+    "Origin_Country": "New Zealand",
+    "Destination_Country": "Sweden",
+    "Unit_Price_USD": 795.0,
+    "Quantity": 5,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 101,
+    "Product": "Wireless Headphones Standard",
+    "HS_Code": 851830,
+    "Origin_Country": "Mexico",
+    "Destination_Country": "Norway",
+    "Unit_Price_USD": 832.25,
+    "Quantity": 6,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 102,
+    "Product": "Wireless Headphones Basic",
+    "HS_Code": 851830,
+    "Origin_Country": "Indonesia",
+    "Destination_Country": "Denmark",
+    "Unit_Price_USD": 869.5,
+    "Quantity": 7,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 103,
+    "Product": "Wireless Headphones Premium",
+    "HS_Code": 851830,
+    "Origin_Country": "Vietnam",
+    "Destination_Country": "Switzerland",
+    "Unit_Price_USD": 906.75,
+    "Quantity": 8,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 104,
+    "Product": "Wireless Headphones Pro",
+    "HS_Code": 851830,
+    "Origin_Country": "Philippines",
+    "Destination_Country": "Ireland",
+    "Unit_Price_USD": 944.0,
+    "Quantity": 9,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 105,
+    "Product": "Wireless Headphones Advanced",
+    "HS_Code": 851830,
+    "Origin_Country": "Turkey",
+    "Destination_Country": "Portugal",
+    "Unit_Price_USD": 981.25,
+    "Quantity": 10,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 106,
+    "Product": "Wireless Headphones Lite",
+    "HS_Code": 851830,
+    "Origin_Country": "Netherlands",
+    "Destination_Country": "Poland",
+    "Unit_Price_USD": 1018.5,
+    "Quantity": 11,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 107,
+    "Product": "Wireless Headphones Plus",
+    "HS_Code": 851830,
+    "Origin_Country": "Belgium",
+    "Destination_Country": "Austria",
+    "Unit_Price_USD": 1055.75,
+    "Quantity": 12,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 108,
+    "Product": "Wireless Headphones Max",
+    "HS_Code": 851830,
+    "Origin_Country": "Sweden",
+    "Destination_Country": "Argentina",
+    "Unit_Price_USD": 1093.0,
+    "Quantity": 1,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 109,
+    "Product": "Wireless Headphones Mini",
+    "HS_Code": 851830,
+    "Origin_Country": "Norway",
+    "Destination_Country": "Chile",
+    "Unit_Price_USD": 1130.25,
+    "Quantity": 2,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 110,
+    "Product": "Wireless Headphones Ultra",
+    "HS_Code": 851830,
+    "Origin_Country": "Denmark",
+    "Destination_Country": "Egypt",
+    "Unit_Price_USD": 1167.5,
+    "Quantity": 3,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 111,
+    "Product": "Wireless Headphones Gen 1",
+    "HS_Code": 851830,
+    "Origin_Country": "Switzerland",
+    "Destination_Country": "Nigeria",
+    "Unit_Price_USD": 1204.75,
+    "Quantity": 4,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 112,
+    "Product": "Wireless Headphones Gen 2",
+    "HS_Code": 851830,
+    "Origin_Country": "Ireland",
+    "Destination_Country": "Greece",
+    "Unit_Price_USD": 1242.0,
+    "Quantity": 5,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 113,
+    "Product": "Wireless Headphones Gen 3",
+    "HS_Code": 851830,
+    "Origin_Country": "Portugal",
+    "Destination_Country": "India",
+    "Unit_Price_USD": 1279.25,
+    "Quantity": 6,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 114,
+    "Product": "Wireless Headphones Series A",
+    "HS_Code": 851830,
+    "Origin_Country": "Poland",
+    "Destination_Country": "United States",
+    "Unit_Price_USD": 1316.5,
+    "Quantity": 7,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 115,
+    "Product": "Wireless Headphones Series B",
+    "HS_Code": 851830,
+    "Origin_Country": "Austria",
+    "Destination_Country": "Germany",
+    "Unit_Price_USD": 1353.75,
+    "Quantity": 8,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 116,
+    "Product": "Wireless Headphones Series C",
+    "HS_Code": 851830,
+    "Origin_Country": "Argentina",
+    "Destination_Country": "United Arab Emirates",
+    "Unit_Price_USD": 1391.0,
+    "Quantity": 9,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 117,
+    "Product": "Wireless Headphones Model X",
+    "HS_Code": 851830,
+    "Origin_Country": "Chile",
+    "Destination_Country": "Japan",
+    "Unit_Price_USD": 1428.25,
+    "Quantity": 10,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 118,
+    "Product": "Wireless Headphones Model Y",
+    "HS_Code": 851830,
+    "Origin_Country": "Egypt",
+    "Destination_Country": "United Kingdom",
+    "Unit_Price_USD": 1465.5,
+    "Quantity": 11,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 119,
+    "Product": "Wireless Headphones Model Z",
+    "HS_Code": 851830,
+    "Origin_Country": "Nigeria",
+    "Destination_Country": "Australia",
+    "Unit_Price_USD": 1502.75,
+    "Quantity": 12,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 120,
+    "Product": "Wireless Headphones 2026",
+    "HS_Code": 851830,
+    "Origin_Country": "Greece",
+    "Destination_Country": "Canada",
+    "Unit_Price_USD": 50.0,
+    "Quantity": 1,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 121,
+    "Product": "Bluetooth Speaker Standard",
+    "HS_Code": 851821,
+    "Origin_Country": "India",
+    "Destination_Country": "France",
+    "Unit_Price_USD": 87.25,
+    "Quantity": 2,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 122,
+    "Product": "Bluetooth Speaker Basic",
+    "HS_Code": 851821,
+    "Origin_Country": "United States",
+    "Destination_Country": "Italy",
+    "Unit_Price_USD": 124.5,
+    "Quantity": 3,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 123,
+    "Product": "Bluetooth Speaker Premium",
+    "HS_Code": 851821,
+    "Origin_Country": "Germany",
+    "Destination_Country": "Spain",
+    "Unit_Price_USD": 161.75,
+    "Quantity": 4,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 124,
+    "Product": "Bluetooth Speaker Pro",
+    "HS_Code": 851821,
+    "Origin_Country": "United Arab Emirates",
+    "Destination_Country": "Singapore",
+    "Unit_Price_USD": 199.0,
+    "Quantity": 5,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 125,
+    "Product": "Bluetooth Speaker Advanced",
+    "HS_Code": 851821,
+    "Origin_Country": "Japan",
+    "Destination_Country": "Malaysia",
+    "Unit_Price_USD": 236.25,
+    "Quantity": 6,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 126,
+    "Product": "Bluetooth Speaker Lite",
+    "HS_Code": 851821,
+    "Origin_Country": "United Kingdom",
+    "Destination_Country": "Thailand",
+    "Unit_Price_USD": 273.5,
+    "Quantity": 7,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 127,
+    "Product": "Bluetooth Speaker Plus",
+    "HS_Code": 851821,
+    "Origin_Country": "Australia",
+    "Destination_Country": "South Korea",
+    "Unit_Price_USD": 310.75,
+    "Quantity": 8,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 128,
+    "Product": "Bluetooth Speaker Max",
+    "HS_Code": 851821,
+    "Origin_Country": "Canada",
+    "Destination_Country": "China",
+    "Unit_Price_USD": 348.0,
+    "Quantity": 9,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 129,
+    "Product": "Bluetooth Speaker Mini",
+    "HS_Code": 851821,
+    "Origin_Country": "France",
+    "Destination_Country": "Saudi Arabia",
+    "Unit_Price_USD": 385.25,
+    "Quantity": 10,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 130,
+    "Product": "Bluetooth Speaker Ultra",
+    "HS_Code": 851821,
+    "Origin_Country": "Italy",
+    "Destination_Country": "Brazil",
+    "Unit_Price_USD": 422.5,
+    "Quantity": 11,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 131,
+    "Product": "Bluetooth Speaker Gen 1",
+    "HS_Code": 851821,
+    "Origin_Country": "Spain",
+    "Destination_Country": "South Africa",
+    "Unit_Price_USD": 459.75,
+    "Quantity": 12,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 132,
+    "Product": "Bluetooth Speaker Gen 2",
+    "HS_Code": 851821,
+    "Origin_Country": "Singapore",
+    "Destination_Country": "New Zealand",
+    "Unit_Price_USD": 497.0,
+    "Quantity": 1,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 133,
+    "Product": "Bluetooth Speaker Gen 3",
+    "HS_Code": 851821,
+    "Origin_Country": "Malaysia",
+    "Destination_Country": "Mexico",
+    "Unit_Price_USD": 534.25,
+    "Quantity": 2,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 134,
+    "Product": "Bluetooth Speaker Series A",
+    "HS_Code": 851821,
+    "Origin_Country": "Thailand",
+    "Destination_Country": "Indonesia",
+    "Unit_Price_USD": 571.5,
+    "Quantity": 3,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 135,
+    "Product": "Bluetooth Speaker Series B",
+    "HS_Code": 851821,
+    "Origin_Country": "South Korea",
+    "Destination_Country": "Vietnam",
+    "Unit_Price_USD": 608.75,
+    "Quantity": 4,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 136,
+    "Product": "Bluetooth Speaker Series C",
+    "HS_Code": 851821,
+    "Origin_Country": "China",
+    "Destination_Country": "Philippines",
+    "Unit_Price_USD": 646.0,
+    "Quantity": 5,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 137,
+    "Product": "Bluetooth Speaker Model X",
+    "HS_Code": 851821,
+    "Origin_Country": "Saudi Arabia",
+    "Destination_Country": "Turkey",
+    "Unit_Price_USD": 683.25,
+    "Quantity": 6,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 138,
+    "Product": "Bluetooth Speaker Model Y",
+    "HS_Code": 851821,
+    "Origin_Country": "Brazil",
+    "Destination_Country": "Netherlands",
+    "Unit_Price_USD": 720.5,
+    "Quantity": 7,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 139,
+    "Product": "Bluetooth Speaker Model Z",
+    "HS_Code": 851821,
+    "Origin_Country": "South Africa",
+    "Destination_Country": "Belgium",
+    "Unit_Price_USD": 757.75,
+    "Quantity": 8,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 140,
+    "Product": "Bluetooth Speaker 2026",
+    "HS_Code": 851821,
+    "Origin_Country": "New Zealand",
+    "Destination_Country": "Sweden",
+    "Unit_Price_USD": 795.0,
+    "Quantity": 9,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 141,
+    "Product": "Keyboard Standard",
+    "HS_Code": 847160,
+    "Origin_Country": "Mexico",
+    "Destination_Country": "Norway",
+    "Unit_Price_USD": 832.25,
+    "Quantity": 10,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 142,
+    "Product": "Keyboard Basic",
+    "HS_Code": 847160,
+    "Origin_Country": "Indonesia",
+    "Destination_Country": "Denmark",
+    "Unit_Price_USD": 869.5,
+    "Quantity": 11,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 143,
+    "Product": "Keyboard Premium",
+    "HS_Code": 847160,
+    "Origin_Country": "Vietnam",
+    "Destination_Country": "Switzerland",
+    "Unit_Price_USD": 906.75,
+    "Quantity": 12,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 144,
+    "Product": "Keyboard Pro",
+    "HS_Code": 847160,
+    "Origin_Country": "Philippines",
+    "Destination_Country": "Ireland",
+    "Unit_Price_USD": 944.0,
+    "Quantity": 1,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 145,
+    "Product": "Keyboard Advanced",
+    "HS_Code": 847160,
+    "Origin_Country": "Turkey",
+    "Destination_Country": "Portugal",
+    "Unit_Price_USD": 981.25,
+    "Quantity": 2,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 146,
+    "Product": "Keyboard Lite",
+    "HS_Code": 847160,
+    "Origin_Country": "Netherlands",
+    "Destination_Country": "Poland",
+    "Unit_Price_USD": 1018.5,
+    "Quantity": 3,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 147,
+    "Product": "Keyboard Plus",
+    "HS_Code": 847160,
+    "Origin_Country": "Belgium",
+    "Destination_Country": "Austria",
+    "Unit_Price_USD": 1055.75,
+    "Quantity": 4,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 148,
+    "Product": "Keyboard Max",
+    "HS_Code": 847160,
+    "Origin_Country": "Sweden",
+    "Destination_Country": "Argentina",
+    "Unit_Price_USD": 1093.0,
+    "Quantity": 5,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 149,
+    "Product": "Keyboard Mini",
+    "HS_Code": 847160,
+    "Origin_Country": "Norway",
+    "Destination_Country": "Chile",
+    "Unit_Price_USD": 1130.25,
+    "Quantity": 6,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 150,
+    "Product": "Keyboard Ultra",
+    "HS_Code": 847160,
+    "Origin_Country": "Denmark",
+    "Destination_Country": "Egypt",
+    "Unit_Price_USD": 1167.5,
+    "Quantity": 7,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 151,
+    "Product": "Keyboard Gen 1",
+    "HS_Code": 847160,
+    "Origin_Country": "Switzerland",
+    "Destination_Country": "Nigeria",
+    "Unit_Price_USD": 1204.75,
+    "Quantity": 8,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 152,
+    "Product": "Keyboard Gen 2",
+    "HS_Code": 847160,
+    "Origin_Country": "Ireland",
+    "Destination_Country": "Greece",
+    "Unit_Price_USD": 1242.0,
+    "Quantity": 9,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 153,
+    "Product": "Keyboard Gen 3",
+    "HS_Code": 847160,
+    "Origin_Country": "Portugal",
+    "Destination_Country": "India",
+    "Unit_Price_USD": 1279.25,
+    "Quantity": 10,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 154,
+    "Product": "Keyboard Series A",
+    "HS_Code": 847160,
+    "Origin_Country": "Poland",
+    "Destination_Country": "United States",
+    "Unit_Price_USD": 1316.5,
+    "Quantity": 11,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 155,
+    "Product": "Keyboard Series B",
+    "HS_Code": 847160,
+    "Origin_Country": "Austria",
+    "Destination_Country": "Germany",
+    "Unit_Price_USD": 1353.75,
+    "Quantity": 12,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 156,
+    "Product": "Keyboard Series C",
+    "HS_Code": 847160,
+    "Origin_Country": "Argentina",
+    "Destination_Country": "United Arab Emirates",
+    "Unit_Price_USD": 1391.0,
+    "Quantity": 1,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 157,
+    "Product": "Keyboard Model X",
+    "HS_Code": 847160,
+    "Origin_Country": "Chile",
+    "Destination_Country": "Japan",
+    "Unit_Price_USD": 1428.25,
+    "Quantity": 2,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 158,
+    "Product": "Keyboard Model Y",
+    "HS_Code": 847160,
+    "Origin_Country": "Egypt",
+    "Destination_Country": "United Kingdom",
+    "Unit_Price_USD": 1465.5,
+    "Quantity": 3,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 159,
+    "Product": "Keyboard Model Z",
+    "HS_Code": 847160,
+    "Origin_Country": "Nigeria",
+    "Destination_Country": "Australia",
+    "Unit_Price_USD": 1502.75,
+    "Quantity": 4,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 160,
+    "Product": "Keyboard 2026",
+    "HS_Code": 847160,
+    "Origin_Country": "Greece",
+    "Destination_Country": "Canada",
+    "Unit_Price_USD": 50.0,
+    "Quantity": 5,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 161,
+    "Product": "Computer Mouse Standard",
+    "HS_Code": 847160,
+    "Origin_Country": "India",
+    "Destination_Country": "France",
+    "Unit_Price_USD": 87.25,
+    "Quantity": 6,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 162,
+    "Product": "Computer Mouse Basic",
+    "HS_Code": 847160,
+    "Origin_Country": "United States",
+    "Destination_Country": "Italy",
+    "Unit_Price_USD": 124.5,
+    "Quantity": 7,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 163,
+    "Product": "Computer Mouse Premium",
+    "HS_Code": 847160,
+    "Origin_Country": "Germany",
+    "Destination_Country": "Spain",
+    "Unit_Price_USD": 161.75,
+    "Quantity": 8,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 164,
+    "Product": "Computer Mouse Pro",
+    "HS_Code": 847160,
+    "Origin_Country": "United Arab Emirates",
+    "Destination_Country": "Singapore",
+    "Unit_Price_USD": 199.0,
+    "Quantity": 9,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 165,
+    "Product": "Computer Mouse Advanced",
+    "HS_Code": 847160,
+    "Origin_Country": "Japan",
+    "Destination_Country": "Malaysia",
+    "Unit_Price_USD": 236.25,
+    "Quantity": 10,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 166,
+    "Product": "Computer Mouse Lite",
+    "HS_Code": 847160,
+    "Origin_Country": "United Kingdom",
+    "Destination_Country": "Thailand",
+    "Unit_Price_USD": 273.5,
+    "Quantity": 11,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 167,
+    "Product": "Computer Mouse Plus",
+    "HS_Code": 847160,
+    "Origin_Country": "Australia",
+    "Destination_Country": "South Korea",
+    "Unit_Price_USD": 310.75,
+    "Quantity": 12,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 168,
+    "Product": "Computer Mouse Max",
+    "HS_Code": 847160,
+    "Origin_Country": "Canada",
+    "Destination_Country": "China",
+    "Unit_Price_USD": 348.0,
+    "Quantity": 1,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 169,
+    "Product": "Computer Mouse Mini",
+    "HS_Code": 847160,
+    "Origin_Country": "France",
+    "Destination_Country": "Saudi Arabia",
+    "Unit_Price_USD": 385.25,
+    "Quantity": 2,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 170,
+    "Product": "Computer Mouse Ultra",
+    "HS_Code": 847160,
+    "Origin_Country": "Italy",
+    "Destination_Country": "Brazil",
+    "Unit_Price_USD": 422.5,
+    "Quantity": 3,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 171,
+    "Product": "Computer Mouse Gen 1",
+    "HS_Code": 847160,
+    "Origin_Country": "Spain",
+    "Destination_Country": "South Africa",
+    "Unit_Price_USD": 459.75,
+    "Quantity": 4,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 172,
+    "Product": "Computer Mouse Gen 2",
+    "HS_Code": 847160,
+    "Origin_Country": "Singapore",
+    "Destination_Country": "New Zealand",
+    "Unit_Price_USD": 497.0,
+    "Quantity": 5,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 173,
+    "Product": "Computer Mouse Gen 3",
+    "HS_Code": 847160,
+    "Origin_Country": "Malaysia",
+    "Destination_Country": "Mexico",
+    "Unit_Price_USD": 534.25,
+    "Quantity": 6,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 174,
+    "Product": "Computer Mouse Series A",
+    "HS_Code": 847160,
+    "Origin_Country": "Thailand",
+    "Destination_Country": "Indonesia",
+    "Unit_Price_USD": 571.5,
+    "Quantity": 7,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 175,
+    "Product": "Computer Mouse Series B",
+    "HS_Code": 847160,
+    "Origin_Country": "South Korea",
+    "Destination_Country": "Vietnam",
+    "Unit_Price_USD": 608.75,
+    "Quantity": 8,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 176,
+    "Product": "Computer Mouse Series C",
+    "HS_Code": 847160,
+    "Origin_Country": "China",
+    "Destination_Country": "Philippines",
+    "Unit_Price_USD": 646.0,
+    "Quantity": 9,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 177,
+    "Product": "Computer Mouse Model X",
+    "HS_Code": 847160,
+    "Origin_Country": "Saudi Arabia",
+    "Destination_Country": "Turkey",
+    "Unit_Price_USD": 683.25,
+    "Quantity": 10,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 178,
+    "Product": "Computer Mouse Model Y",
+    "HS_Code": 847160,
+    "Origin_Country": "Brazil",
+    "Destination_Country": "Netherlands",
+    "Unit_Price_USD": 720.5,
+    "Quantity": 11,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 179,
+    "Product": "Computer Mouse Model Z",
+    "HS_Code": 847160,
+    "Origin_Country": "South Africa",
+    "Destination_Country": "Belgium",
+    "Unit_Price_USD": 757.75,
+    "Quantity": 12,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 180,
+    "Product": "Computer Mouse 2026",
+    "HS_Code": 847160,
+    "Origin_Country": "New Zealand",
+    "Destination_Country": "Sweden",
+    "Unit_Price_USD": 795.0,
+    "Quantity": 1,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 181,
+    "Product": "Printer Standard",
+    "HS_Code": 844332,
+    "Origin_Country": "Mexico",
+    "Destination_Country": "Norway",
+    "Unit_Price_USD": 832.25,
+    "Quantity": 2,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 182,
+    "Product": "Printer Basic",
+    "HS_Code": 844332,
+    "Origin_Country": "Indonesia",
+    "Destination_Country": "Denmark",
+    "Unit_Price_USD": 869.5,
+    "Quantity": 3,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 183,
+    "Product": "Printer Premium",
+    "HS_Code": 844332,
+    "Origin_Country": "Vietnam",
+    "Destination_Country": "Switzerland",
+    "Unit_Price_USD": 906.75,
+    "Quantity": 4,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 184,
+    "Product": "Printer Pro",
+    "HS_Code": 844332,
+    "Origin_Country": "Philippines",
+    "Destination_Country": "Ireland",
+    "Unit_Price_USD": 944.0,
+    "Quantity": 5,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 185,
+    "Product": "Printer Advanced",
+    "HS_Code": 844332,
+    "Origin_Country": "Turkey",
+    "Destination_Country": "Portugal",
+    "Unit_Price_USD": 981.25,
+    "Quantity": 6,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 186,
+    "Product": "Printer Lite",
+    "HS_Code": 844332,
+    "Origin_Country": "Netherlands",
+    "Destination_Country": "Poland",
+    "Unit_Price_USD": 1018.5,
+    "Quantity": 7,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 187,
+    "Product": "Printer Plus",
+    "HS_Code": 844332,
+    "Origin_Country": "Belgium",
+    "Destination_Country": "Austria",
+    "Unit_Price_USD": 1055.75,
+    "Quantity": 8,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 188,
+    "Product": "Printer Max",
+    "HS_Code": 844332,
+    "Origin_Country": "Sweden",
+    "Destination_Country": "Argentina",
+    "Unit_Price_USD": 1093.0,
+    "Quantity": 9,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 189,
+    "Product": "Printer Mini",
+    "HS_Code": 844332,
+    "Origin_Country": "Norway",
+    "Destination_Country": "Chile",
+    "Unit_Price_USD": 1130.25,
+    "Quantity": 10,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 190,
+    "Product": "Printer Ultra",
+    "HS_Code": 844332,
+    "Origin_Country": "Denmark",
+    "Destination_Country": "Egypt",
+    "Unit_Price_USD": 1167.5,
+    "Quantity": 11,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 191,
+    "Product": "Printer Gen 1",
+    "HS_Code": 844332,
+    "Origin_Country": "Switzerland",
+    "Destination_Country": "Nigeria",
+    "Unit_Price_USD": 1204.75,
+    "Quantity": 12,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 192,
+    "Product": "Printer Gen 2",
+    "HS_Code": 844332,
+    "Origin_Country": "Ireland",
+    "Destination_Country": "Greece",
+    "Unit_Price_USD": 1242.0,
+    "Quantity": 1,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 193,
+    "Product": "Printer Gen 3",
+    "HS_Code": 844332,
+    "Origin_Country": "Portugal",
+    "Destination_Country": "India",
+    "Unit_Price_USD": 1279.25,
+    "Quantity": 2,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 194,
+    "Product": "Printer Series A",
+    "HS_Code": 844332,
+    "Origin_Country": "Poland",
+    "Destination_Country": "United States",
+    "Unit_Price_USD": 1316.5,
+    "Quantity": 3,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 195,
+    "Product": "Printer Series B",
+    "HS_Code": 844332,
+    "Origin_Country": "Austria",
+    "Destination_Country": "Germany",
+    "Unit_Price_USD": 1353.75,
+    "Quantity": 4,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 196,
+    "Product": "Printer Series C",
+    "HS_Code": 844332,
+    "Origin_Country": "Argentina",
+    "Destination_Country": "United Arab Emirates",
+    "Unit_Price_USD": 1391.0,
+    "Quantity": 5,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 197,
+    "Product": "Printer Model X",
+    "HS_Code": 844332,
+    "Origin_Country": "Chile",
+    "Destination_Country": "Japan",
+    "Unit_Price_USD": 1428.25,
+    "Quantity": 6,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 198,
+    "Product": "Printer Model Y",
+    "HS_Code": 844332,
+    "Origin_Country": "Egypt",
+    "Destination_Country": "United Kingdom",
+    "Unit_Price_USD": 1465.5,
+    "Quantity": 7,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 199,
+    "Product": "Printer Model Z",
+    "HS_Code": 844332,
+    "Origin_Country": "Nigeria",
+    "Destination_Country": "Australia",
+    "Unit_Price_USD": 1502.75,
+    "Quantity": 8,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 200,
+    "Product": "Printer 2026",
+    "HS_Code": 844332,
+    "Origin_Country": "Greece",
+    "Destination_Country": "Canada",
+    "Unit_Price_USD": 50.0,
+    "Quantity": 9,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 201,
+    "Product": "Scanner Standard",
+    "HS_Code": 847160,
+    "Origin_Country": "India",
+    "Destination_Country": "France",
+    "Unit_Price_USD": 87.25,
+    "Quantity": 10,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 202,
+    "Product": "Scanner Basic",
+    "HS_Code": 847160,
+    "Origin_Country": "United States",
+    "Destination_Country": "Italy",
+    "Unit_Price_USD": 124.5,
+    "Quantity": 11,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 203,
+    "Product": "Scanner Premium",
+    "HS_Code": 847160,
+    "Origin_Country": "Germany",
+    "Destination_Country": "Spain",
+    "Unit_Price_USD": 161.75,
+    "Quantity": 12,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 204,
+    "Product": "Scanner Pro",
+    "HS_Code": 847160,
+    "Origin_Country": "United Arab Emirates",
+    "Destination_Country": "Singapore",
+    "Unit_Price_USD": 199.0,
+    "Quantity": 1,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 205,
+    "Product": "Scanner Advanced",
+    "HS_Code": 847160,
+    "Origin_Country": "Japan",
+    "Destination_Country": "Malaysia",
+    "Unit_Price_USD": 236.25,
+    "Quantity": 2,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 206,
+    "Product": "Scanner Lite",
+    "HS_Code": 847160,
+    "Origin_Country": "United Kingdom",
+    "Destination_Country": "Thailand",
+    "Unit_Price_USD": 273.5,
+    "Quantity": 3,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 207,
+    "Product": "Scanner Plus",
+    "HS_Code": 847160,
+    "Origin_Country": "Australia",
+    "Destination_Country": "South Korea",
+    "Unit_Price_USD": 310.75,
+    "Quantity": 4,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 208,
+    "Product": "Scanner Max",
+    "HS_Code": 847160,
+    "Origin_Country": "Canada",
+    "Destination_Country": "China",
+    "Unit_Price_USD": 348.0,
+    "Quantity": 5,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 209,
+    "Product": "Scanner Mini",
+    "HS_Code": 847160,
+    "Origin_Country": "France",
+    "Destination_Country": "Saudi Arabia",
+    "Unit_Price_USD": 385.25,
+    "Quantity": 6,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 210,
+    "Product": "Scanner Ultra",
+    "HS_Code": 847160,
+    "Origin_Country": "Italy",
+    "Destination_Country": "Brazil",
+    "Unit_Price_USD": 422.5,
+    "Quantity": 7,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 211,
+    "Product": "Scanner Gen 1",
+    "HS_Code": 847160,
+    "Origin_Country": "Spain",
+    "Destination_Country": "South Africa",
+    "Unit_Price_USD": 459.75,
+    "Quantity": 8,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 212,
+    "Product": "Scanner Gen 2",
+    "HS_Code": 847160,
+    "Origin_Country": "Singapore",
+    "Destination_Country": "New Zealand",
+    "Unit_Price_USD": 497.0,
+    "Quantity": 9,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 213,
+    "Product": "Scanner Gen 3",
+    "HS_Code": 847160,
+    "Origin_Country": "Malaysia",
+    "Destination_Country": "Mexico",
+    "Unit_Price_USD": 534.25,
+    "Quantity": 10,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 214,
+    "Product": "Scanner Series A",
+    "HS_Code": 847160,
+    "Origin_Country": "Thailand",
+    "Destination_Country": "Indonesia",
+    "Unit_Price_USD": 571.5,
+    "Quantity": 11,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 215,
+    "Product": "Scanner Series B",
+    "HS_Code": 847160,
+    "Origin_Country": "South Korea",
+    "Destination_Country": "Vietnam",
+    "Unit_Price_USD": 608.75,
+    "Quantity": 12,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 216,
+    "Product": "Scanner Series C",
+    "HS_Code": 847160,
+    "Origin_Country": "China",
+    "Destination_Country": "Philippines",
+    "Unit_Price_USD": 646.0,
+    "Quantity": 1,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 217,
+    "Product": "Scanner Model X",
+    "HS_Code": 847160,
+    "Origin_Country": "Saudi Arabia",
+    "Destination_Country": "Turkey",
+    "Unit_Price_USD": 683.25,
+    "Quantity": 2,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 218,
+    "Product": "Scanner Model Y",
+    "HS_Code": 847160,
+    "Origin_Country": "Brazil",
+    "Destination_Country": "Netherlands",
+    "Unit_Price_USD": 720.5,
+    "Quantity": 3,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 219,
+    "Product": "Scanner Model Z",
+    "HS_Code": 847160,
+    "Origin_Country": "South Africa",
+    "Destination_Country": "Belgium",
+    "Unit_Price_USD": 757.75,
+    "Quantity": 4,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 220,
+    "Product": "Scanner 2026",
+    "HS_Code": 847160,
+    "Origin_Country": "New Zealand",
+    "Destination_Country": "Sweden",
+    "Unit_Price_USD": 795.0,
+    "Quantity": 5,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 221,
+    "Product": "Projector Standard",
+    "HS_Code": 852862,
+    "Origin_Country": "Mexico",
+    "Destination_Country": "Norway",
+    "Unit_Price_USD": 832.25,
+    "Quantity": 6,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 222,
+    "Product": "Projector Basic",
+    "HS_Code": 852862,
+    "Origin_Country": "Indonesia",
+    "Destination_Country": "Denmark",
+    "Unit_Price_USD": 869.5,
+    "Quantity": 7,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 223,
+    "Product": "Projector Premium",
+    "HS_Code": 852862,
+    "Origin_Country": "Vietnam",
+    "Destination_Country": "Switzerland",
+    "Unit_Price_USD": 906.75,
+    "Quantity": 8,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 224,
+    "Product": "Projector Pro",
+    "HS_Code": 852862,
+    "Origin_Country": "Philippines",
+    "Destination_Country": "Ireland",
+    "Unit_Price_USD": 944.0,
+    "Quantity": 9,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 225,
+    "Product": "Projector Advanced",
+    "HS_Code": 852862,
+    "Origin_Country": "Turkey",
+    "Destination_Country": "Portugal",
+    "Unit_Price_USD": 981.25,
+    "Quantity": 10,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 226,
+    "Product": "Projector Lite",
+    "HS_Code": 852862,
+    "Origin_Country": "Netherlands",
+    "Destination_Country": "Poland",
+    "Unit_Price_USD": 1018.5,
+    "Quantity": 11,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 227,
+    "Product": "Projector Plus",
+    "HS_Code": 852862,
+    "Origin_Country": "Belgium",
+    "Destination_Country": "Austria",
+    "Unit_Price_USD": 1055.75,
+    "Quantity": 12,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 228,
+    "Product": "Projector Max",
+    "HS_Code": 852862,
+    "Origin_Country": "Sweden",
+    "Destination_Country": "Argentina",
+    "Unit_Price_USD": 1093.0,
+    "Quantity": 1,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 229,
+    "Product": "Projector Mini",
+    "HS_Code": 852862,
+    "Origin_Country": "Norway",
+    "Destination_Country": "Chile",
+    "Unit_Price_USD": 1130.25,
+    "Quantity": 2,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 230,
+    "Product": "Projector Ultra",
+    "HS_Code": 852862,
+    "Origin_Country": "Denmark",
+    "Destination_Country": "Egypt",
+    "Unit_Price_USD": 1167.5,
+    "Quantity": 3,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 231,
+    "Product": "Projector Gen 1",
+    "HS_Code": 852862,
+    "Origin_Country": "Switzerland",
+    "Destination_Country": "Nigeria",
+    "Unit_Price_USD": 1204.75,
+    "Quantity": 4,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 232,
+    "Product": "Projector Gen 2",
+    "HS_Code": 852862,
+    "Origin_Country": "Ireland",
+    "Destination_Country": "Greece",
+    "Unit_Price_USD": 1242.0,
+    "Quantity": 5,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 233,
+    "Product": "Projector Gen 3",
+    "HS_Code": 852862,
+    "Origin_Country": "Portugal",
+    "Destination_Country": "India",
+    "Unit_Price_USD": 1279.25,
+    "Quantity": 6,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 234,
+    "Product": "Projector Series A",
+    "HS_Code": 852862,
+    "Origin_Country": "Poland",
+    "Destination_Country": "United States",
+    "Unit_Price_USD": 1316.5,
+    "Quantity": 7,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 235,
+    "Product": "Projector Series B",
+    "HS_Code": 852862,
+    "Origin_Country": "Austria",
+    "Destination_Country": "Germany",
+    "Unit_Price_USD": 1353.75,
+    "Quantity": 8,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 236,
+    "Product": "Projector Series C",
+    "HS_Code": 852862,
+    "Origin_Country": "Argentina",
+    "Destination_Country": "United Arab Emirates",
+    "Unit_Price_USD": 1391.0,
+    "Quantity": 9,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 237,
+    "Product": "Projector Model X",
+    "HS_Code": 852862,
+    "Origin_Country": "Chile",
+    "Destination_Country": "Japan",
+    "Unit_Price_USD": 1428.25,
+    "Quantity": 10,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 238,
+    "Product": "Projector Model Y",
+    "HS_Code": 852862,
+    "Origin_Country": "Egypt",
+    "Destination_Country": "United Kingdom",
+    "Unit_Price_USD": 1465.5,
+    "Quantity": 11,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 239,
+    "Product": "Projector Model Z",
+    "HS_Code": 852862,
+    "Origin_Country": "Nigeria",
+    "Destination_Country": "Australia",
+    "Unit_Price_USD": 1502.75,
+    "Quantity": 12,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 240,
+    "Product": "Projector 2026",
+    "HS_Code": 852862,
+    "Origin_Country": "Greece",
+    "Destination_Country": "Canada",
+    "Unit_Price_USD": 50.0,
+    "Quantity": 1,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 241,
+    "Product": "Television Standard",
+    "HS_Code": 852872,
+    "Origin_Country": "India",
+    "Destination_Country": "France",
+    "Unit_Price_USD": 87.25,
+    "Quantity": 2,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 242,
+    "Product": "Television Basic",
+    "HS_Code": 852872,
+    "Origin_Country": "United States",
+    "Destination_Country": "Italy",
+    "Unit_Price_USD": 124.5,
+    "Quantity": 3,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 243,
+    "Product": "Television Premium",
+    "HS_Code": 852872,
+    "Origin_Country": "Germany",
+    "Destination_Country": "Spain",
+    "Unit_Price_USD": 161.75,
+    "Quantity": 4,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 244,
+    "Product": "Television Pro",
+    "HS_Code": 852872,
+    "Origin_Country": "United Arab Emirates",
+    "Destination_Country": "Singapore",
+    "Unit_Price_USD": 199.0,
+    "Quantity": 5,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 245,
+    "Product": "Television Advanced",
+    "HS_Code": 852872,
+    "Origin_Country": "Japan",
+    "Destination_Country": "Malaysia",
+    "Unit_Price_USD": 236.25,
+    "Quantity": 6,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 246,
+    "Product": "Television Lite",
+    "HS_Code": 852872,
+    "Origin_Country": "United Kingdom",
+    "Destination_Country": "Thailand",
+    "Unit_Price_USD": 273.5,
+    "Quantity": 7,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 247,
+    "Product": "Television Plus",
+    "HS_Code": 852872,
+    "Origin_Country": "Australia",
+    "Destination_Country": "South Korea",
+    "Unit_Price_USD": 310.75,
+    "Quantity": 8,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 248,
+    "Product": "Television Max",
+    "HS_Code": 852872,
+    "Origin_Country": "Canada",
+    "Destination_Country": "China",
+    "Unit_Price_USD": 348.0,
+    "Quantity": 9,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 249,
+    "Product": "Television Mini",
+    "HS_Code": 852872,
+    "Origin_Country": "France",
+    "Destination_Country": "Saudi Arabia",
+    "Unit_Price_USD": 385.25,
+    "Quantity": 10,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 250,
+    "Product": "Television Ultra",
+    "HS_Code": 852872,
+    "Origin_Country": "Italy",
+    "Destination_Country": "Brazil",
+    "Unit_Price_USD": 422.5,
+    "Quantity": 11,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 251,
+    "Product": "Television Gen 1",
+    "HS_Code": 852872,
+    "Origin_Country": "Spain",
+    "Destination_Country": "South Africa",
+    "Unit_Price_USD": 459.75,
+    "Quantity": 12,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 252,
+    "Product": "Television Gen 2",
+    "HS_Code": 852872,
+    "Origin_Country": "Singapore",
+    "Destination_Country": "New Zealand",
+    "Unit_Price_USD": 497.0,
+    "Quantity": 1,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 253,
+    "Product": "Television Gen 3",
+    "HS_Code": 852872,
+    "Origin_Country": "Malaysia",
+    "Destination_Country": "Mexico",
+    "Unit_Price_USD": 534.25,
+    "Quantity": 2,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 254,
+    "Product": "Television Series A",
+    "HS_Code": 852872,
+    "Origin_Country": "Thailand",
+    "Destination_Country": "Indonesia",
+    "Unit_Price_USD": 571.5,
+    "Quantity": 3,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 255,
+    "Product": "Television Series B",
+    "HS_Code": 852872,
+    "Origin_Country": "South Korea",
+    "Destination_Country": "Vietnam",
+    "Unit_Price_USD": 608.75,
+    "Quantity": 4,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 256,
+    "Product": "Television Series C",
+    "HS_Code": 852872,
+    "Origin_Country": "China",
+    "Destination_Country": "Philippines",
+    "Unit_Price_USD": 646.0,
+    "Quantity": 5,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 257,
+    "Product": "Television Model X",
+    "HS_Code": 852872,
+    "Origin_Country": "Saudi Arabia",
+    "Destination_Country": "Turkey",
+    "Unit_Price_USD": 683.25,
+    "Quantity": 6,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 258,
+    "Product": "Television Model Y",
+    "HS_Code": 852872,
+    "Origin_Country": "Brazil",
+    "Destination_Country": "Netherlands",
+    "Unit_Price_USD": 720.5,
+    "Quantity": 7,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 259,
+    "Product": "Television Model Z",
+    "HS_Code": 852872,
+    "Origin_Country": "South Africa",
+    "Destination_Country": "Belgium",
+    "Unit_Price_USD": 757.75,
+    "Quantity": 8,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 260,
+    "Product": "Television 2026",
+    "HS_Code": 852872,
+    "Origin_Country": "New Zealand",
+    "Destination_Country": "Sweden",
+    "Unit_Price_USD": 795.0,
+    "Quantity": 9,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 261,
+    "Product": "Digital Camera Standard",
+    "HS_Code": 852589,
+    "Origin_Country": "Mexico",
+    "Destination_Country": "Norway",
+    "Unit_Price_USD": 832.25,
+    "Quantity": 10,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 262,
+    "Product": "Digital Camera Basic",
+    "HS_Code": 852589,
+    "Origin_Country": "Indonesia",
+    "Destination_Country": "Denmark",
+    "Unit_Price_USD": 869.5,
+    "Quantity": 11,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 263,
+    "Product": "Digital Camera Premium",
+    "HS_Code": 852589,
+    "Origin_Country": "Vietnam",
+    "Destination_Country": "Switzerland",
+    "Unit_Price_USD": 906.75,
+    "Quantity": 12,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 264,
+    "Product": "Digital Camera Pro",
+    "HS_Code": 852589,
+    "Origin_Country": "Philippines",
+    "Destination_Country": "Ireland",
+    "Unit_Price_USD": 944.0,
+    "Quantity": 1,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 265,
+    "Product": "Digital Camera Advanced",
+    "HS_Code": 852589,
+    "Origin_Country": "Turkey",
+    "Destination_Country": "Portugal",
+    "Unit_Price_USD": 981.25,
+    "Quantity": 2,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 266,
+    "Product": "Digital Camera Lite",
+    "HS_Code": 852589,
+    "Origin_Country": "Netherlands",
+    "Destination_Country": "Poland",
+    "Unit_Price_USD": 1018.5,
+    "Quantity": 3,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 267,
+    "Product": "Digital Camera Plus",
+    "HS_Code": 852589,
+    "Origin_Country": "Belgium",
+    "Destination_Country": "Austria",
+    "Unit_Price_USD": 1055.75,
+    "Quantity": 4,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 268,
+    "Product": "Digital Camera Max",
+    "HS_Code": 852589,
+    "Origin_Country": "Sweden",
+    "Destination_Country": "Argentina",
+    "Unit_Price_USD": 1093.0,
+    "Quantity": 5,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 269,
+    "Product": "Digital Camera Mini",
+    "HS_Code": 852589,
+    "Origin_Country": "Norway",
+    "Destination_Country": "Chile",
+    "Unit_Price_USD": 1130.25,
+    "Quantity": 6,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 270,
+    "Product": "Digital Camera Ultra",
+    "HS_Code": 852589,
+    "Origin_Country": "Denmark",
+    "Destination_Country": "Egypt",
+    "Unit_Price_USD": 1167.5,
+    "Quantity": 7,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 271,
+    "Product": "Digital Camera Gen 1",
+    "HS_Code": 852589,
+    "Origin_Country": "Switzerland",
+    "Destination_Country": "Nigeria",
+    "Unit_Price_USD": 1204.75,
+    "Quantity": 8,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 272,
+    "Product": "Digital Camera Gen 2",
+    "HS_Code": 852589,
+    "Origin_Country": "Ireland",
+    "Destination_Country": "Greece",
+    "Unit_Price_USD": 1242.0,
+    "Quantity": 9,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 273,
+    "Product": "Digital Camera Gen 3",
+    "HS_Code": 852589,
+    "Origin_Country": "Portugal",
+    "Destination_Country": "India",
+    "Unit_Price_USD": 1279.25,
+    "Quantity": 10,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 274,
+    "Product": "Digital Camera Series A",
+    "HS_Code": 852589,
+    "Origin_Country": "Poland",
+    "Destination_Country": "United States",
+    "Unit_Price_USD": 1316.5,
+    "Quantity": 11,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 275,
+    "Product": "Digital Camera Series B",
+    "HS_Code": 852589,
+    "Origin_Country": "Austria",
+    "Destination_Country": "Germany",
+    "Unit_Price_USD": 1353.75,
+    "Quantity": 12,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 276,
+    "Product": "Digital Camera Series C",
+    "HS_Code": 852589,
+    "Origin_Country": "Argentina",
+    "Destination_Country": "United Arab Emirates",
+    "Unit_Price_USD": 1391.0,
+    "Quantity": 1,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 277,
+    "Product": "Digital Camera Model X",
+    "HS_Code": 852589,
+    "Origin_Country": "Chile",
+    "Destination_Country": "Japan",
+    "Unit_Price_USD": 1428.25,
+    "Quantity": 2,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 278,
+    "Product": "Digital Camera Model Y",
+    "HS_Code": 852589,
+    "Origin_Country": "Egypt",
+    "Destination_Country": "United Kingdom",
+    "Unit_Price_USD": 1465.5,
+    "Quantity": 3,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 279,
+    "Product": "Digital Camera Model Z",
+    "HS_Code": 852589,
+    "Origin_Country": "Nigeria",
+    "Destination_Country": "Australia",
+    "Unit_Price_USD": 1502.75,
+    "Quantity": 4,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 280,
+    "Product": "Digital Camera 2026",
+    "HS_Code": 852589,
+    "Origin_Country": "Greece",
+    "Destination_Country": "Canada",
+    "Unit_Price_USD": 50.0,
+    "Quantity": 5,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 281,
+    "Product": "Video Camera Standard",
+    "HS_Code": 852589,
+    "Origin_Country": "India",
+    "Destination_Country": "France",
+    "Unit_Price_USD": 87.25,
+    "Quantity": 6,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 282,
+    "Product": "Video Camera Basic",
+    "HS_Code": 852589,
+    "Origin_Country": "United States",
+    "Destination_Country": "Italy",
+    "Unit_Price_USD": 124.5,
+    "Quantity": 7,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 283,
+    "Product": "Video Camera Premium",
+    "HS_Code": 852589,
+    "Origin_Country": "Germany",
+    "Destination_Country": "Spain",
+    "Unit_Price_USD": 161.75,
+    "Quantity": 8,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 284,
+    "Product": "Video Camera Pro",
+    "HS_Code": 852589,
+    "Origin_Country": "United Arab Emirates",
+    "Destination_Country": "Singapore",
+    "Unit_Price_USD": 199.0,
+    "Quantity": 9,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 285,
+    "Product": "Video Camera Advanced",
+    "HS_Code": 852589,
+    "Origin_Country": "Japan",
+    "Destination_Country": "Malaysia",
+    "Unit_Price_USD": 236.25,
+    "Quantity": 10,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 286,
+    "Product": "Video Camera Lite",
+    "HS_Code": 852589,
+    "Origin_Country": "United Kingdom",
+    "Destination_Country": "Thailand",
+    "Unit_Price_USD": 273.5,
+    "Quantity": 11,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 287,
+    "Product": "Video Camera Plus",
+    "HS_Code": 852589,
+    "Origin_Country": "Australia",
+    "Destination_Country": "South Korea",
+    "Unit_Price_USD": 310.75,
+    "Quantity": 12,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 288,
+    "Product": "Video Camera Max",
+    "HS_Code": 852589,
+    "Origin_Country": "Canada",
+    "Destination_Country": "China",
+    "Unit_Price_USD": 348.0,
+    "Quantity": 1,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 289,
+    "Product": "Video Camera Mini",
+    "HS_Code": 852589,
+    "Origin_Country": "France",
+    "Destination_Country": "Saudi Arabia",
+    "Unit_Price_USD": 385.25,
+    "Quantity": 2,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 290,
+    "Product": "Video Camera Ultra",
+    "HS_Code": 852589,
+    "Origin_Country": "Italy",
+    "Destination_Country": "Brazil",
+    "Unit_Price_USD": 422.5,
+    "Quantity": 3,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 291,
+    "Product": "Video Camera Gen 1",
+    "HS_Code": 852589,
+    "Origin_Country": "Spain",
+    "Destination_Country": "South Africa",
+    "Unit_Price_USD": 459.75,
+    "Quantity": 4,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 292,
+    "Product": "Video Camera Gen 2",
+    "HS_Code": 852589,
+    "Origin_Country": "Singapore",
+    "Destination_Country": "New Zealand",
+    "Unit_Price_USD": 497.0,
+    "Quantity": 5,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 293,
+    "Product": "Video Camera Gen 3",
+    "HS_Code": 852589,
+    "Origin_Country": "Malaysia",
+    "Destination_Country": "Mexico",
+    "Unit_Price_USD": 534.25,
+    "Quantity": 6,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 294,
+    "Product": "Video Camera Series A",
+    "HS_Code": 852589,
+    "Origin_Country": "Thailand",
+    "Destination_Country": "Indonesia",
+    "Unit_Price_USD": 571.5,
+    "Quantity": 7,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 295,
+    "Product": "Video Camera Series B",
+    "HS_Code": 852589,
+    "Origin_Country": "South Korea",
+    "Destination_Country": "Vietnam",
+    "Unit_Price_USD": 608.75,
+    "Quantity": 8,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 296,
+    "Product": "Video Camera Series C",
+    "HS_Code": 852589,
+    "Origin_Country": "China",
+    "Destination_Country": "Philippines",
+    "Unit_Price_USD": 646.0,
+    "Quantity": 9,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 297,
+    "Product": "Video Camera Model X",
+    "HS_Code": 852589,
+    "Origin_Country": "Saudi Arabia",
+    "Destination_Country": "Turkey",
+    "Unit_Price_USD": 683.25,
+    "Quantity": 10,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 298,
+    "Product": "Video Camera Model Y",
+    "HS_Code": 852589,
+    "Origin_Country": "Brazil",
+    "Destination_Country": "Netherlands",
+    "Unit_Price_USD": 720.5,
+    "Quantity": 11,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 299,
+    "Product": "Video Camera Model Z",
+    "HS_Code": 852589,
+    "Origin_Country": "South Africa",
+    "Destination_Country": "Belgium",
+    "Unit_Price_USD": 757.75,
+    "Quantity": 12,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 300,
+    "Product": "Video Camera 2026",
+    "HS_Code": 852589,
+    "Origin_Country": "New Zealand",
+    "Destination_Country": "Sweden",
+    "Unit_Price_USD": 795.0,
+    "Quantity": 1,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 301,
+    "Product": "Computer Monitor Standard",
+    "HS_Code": 852852,
+    "Origin_Country": "Mexico",
+    "Destination_Country": "Norway",
+    "Unit_Price_USD": 832.25,
+    "Quantity": 2,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 302,
+    "Product": "Computer Monitor Basic",
+    "HS_Code": 852852,
+    "Origin_Country": "Indonesia",
+    "Destination_Country": "Denmark",
+    "Unit_Price_USD": 869.5,
+    "Quantity": 3,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 303,
+    "Product": "Computer Monitor Premium",
+    "HS_Code": 852852,
+    "Origin_Country": "Vietnam",
+    "Destination_Country": "Switzerland",
+    "Unit_Price_USD": 906.75,
+    "Quantity": 4,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 304,
+    "Product": "Computer Monitor Pro",
+    "HS_Code": 852852,
+    "Origin_Country": "Philippines",
+    "Destination_Country": "Ireland",
+    "Unit_Price_USD": 944.0,
+    "Quantity": 5,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 305,
+    "Product": "Computer Monitor Advanced",
+    "HS_Code": 852852,
+    "Origin_Country": "Turkey",
+    "Destination_Country": "Portugal",
+    "Unit_Price_USD": 981.25,
+    "Quantity": 6,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 306,
+    "Product": "Computer Monitor Lite",
+    "HS_Code": 852852,
+    "Origin_Country": "Netherlands",
+    "Destination_Country": "Poland",
+    "Unit_Price_USD": 1018.5,
+    "Quantity": 7,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 307,
+    "Product": "Computer Monitor Plus",
+    "HS_Code": 852852,
+    "Origin_Country": "Belgium",
+    "Destination_Country": "Austria",
+    "Unit_Price_USD": 1055.75,
+    "Quantity": 8,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 308,
+    "Product": "Computer Monitor Max",
+    "HS_Code": 852852,
+    "Origin_Country": "Sweden",
+    "Destination_Country": "Argentina",
+    "Unit_Price_USD": 1093.0,
+    "Quantity": 9,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 309,
+    "Product": "Computer Monitor Mini",
+    "HS_Code": 852852,
+    "Origin_Country": "Norway",
+    "Destination_Country": "Chile",
+    "Unit_Price_USD": 1130.25,
+    "Quantity": 10,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 310,
+    "Product": "Computer Monitor Ultra",
+    "HS_Code": 852852,
+    "Origin_Country": "Denmark",
+    "Destination_Country": "Egypt",
+    "Unit_Price_USD": 1167.5,
+    "Quantity": 11,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 311,
+    "Product": "Computer Monitor Gen 1",
+    "HS_Code": 852852,
+    "Origin_Country": "Switzerland",
+    "Destination_Country": "Nigeria",
+    "Unit_Price_USD": 1204.75,
+    "Quantity": 12,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 312,
+    "Product": "Computer Monitor Gen 2",
+    "HS_Code": 852852,
+    "Origin_Country": "Ireland",
+    "Destination_Country": "Greece",
+    "Unit_Price_USD": 1242.0,
+    "Quantity": 1,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 313,
+    "Product": "Computer Monitor Gen 3",
+    "HS_Code": 852852,
+    "Origin_Country": "Portugal",
+    "Destination_Country": "India",
+    "Unit_Price_USD": 1279.25,
+    "Quantity": 2,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 314,
+    "Product": "Computer Monitor Series A",
+    "HS_Code": 852852,
+    "Origin_Country": "Poland",
+    "Destination_Country": "United States",
+    "Unit_Price_USD": 1316.5,
+    "Quantity": 3,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 315,
+    "Product": "Computer Monitor Series B",
+    "HS_Code": 852852,
+    "Origin_Country": "Austria",
+    "Destination_Country": "Germany",
+    "Unit_Price_USD": 1353.75,
+    "Quantity": 4,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 316,
+    "Product": "Computer Monitor Series C",
+    "HS_Code": 852852,
+    "Origin_Country": "Argentina",
+    "Destination_Country": "United Arab Emirates",
+    "Unit_Price_USD": 1391.0,
+    "Quantity": 5,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 317,
+    "Product": "Computer Monitor Model X",
+    "HS_Code": 852852,
+    "Origin_Country": "Chile",
+    "Destination_Country": "Japan",
+    "Unit_Price_USD": 1428.25,
+    "Quantity": 6,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 318,
+    "Product": "Computer Monitor Model Y",
+    "HS_Code": 852852,
+    "Origin_Country": "Egypt",
+    "Destination_Country": "United Kingdom",
+    "Unit_Price_USD": 1465.5,
+    "Quantity": 7,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 319,
+    "Product": "Computer Monitor Model Z",
+    "HS_Code": 852852,
+    "Origin_Country": "Nigeria",
+    "Destination_Country": "Australia",
+    "Unit_Price_USD": 1502.75,
+    "Quantity": 8,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 320,
+    "Product": "Computer Monitor 2026",
+    "HS_Code": 852852,
+    "Origin_Country": "Greece",
+    "Destination_Country": "Canada",
+    "Unit_Price_USD": 50.0,
+    "Quantity": 9,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 321,
+    "Product": "Hard Disk Drive Standard",
+    "HS_Code": 847170,
+    "Origin_Country": "India",
+    "Destination_Country": "France",
+    "Unit_Price_USD": 87.25,
+    "Quantity": 10,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 322,
+    "Product": "Hard Disk Drive Basic",
+    "HS_Code": 847170,
+    "Origin_Country": "United States",
+    "Destination_Country": "Italy",
+    "Unit_Price_USD": 124.5,
+    "Quantity": 11,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 323,
+    "Product": "Hard Disk Drive Premium",
+    "HS_Code": 847170,
+    "Origin_Country": "Germany",
+    "Destination_Country": "Spain",
+    "Unit_Price_USD": 161.75,
+    "Quantity": 12,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 324,
+    "Product": "Hard Disk Drive Pro",
+    "HS_Code": 847170,
+    "Origin_Country": "United Arab Emirates",
+    "Destination_Country": "Singapore",
+    "Unit_Price_USD": 199.0,
+    "Quantity": 1,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 325,
+    "Product": "Hard Disk Drive Advanced",
+    "HS_Code": 847170,
+    "Origin_Country": "Japan",
+    "Destination_Country": "Malaysia",
+    "Unit_Price_USD": 236.25,
+    "Quantity": 2,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 326,
+    "Product": "Hard Disk Drive Lite",
+    "HS_Code": 847170,
+    "Origin_Country": "United Kingdom",
+    "Destination_Country": "Thailand",
+    "Unit_Price_USD": 273.5,
+    "Quantity": 3,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 327,
+    "Product": "Hard Disk Drive Plus",
+    "HS_Code": 847170,
+    "Origin_Country": "Australia",
+    "Destination_Country": "South Korea",
+    "Unit_Price_USD": 310.75,
+    "Quantity": 4,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 328,
+    "Product": "Hard Disk Drive Max",
+    "HS_Code": 847170,
+    "Origin_Country": "Canada",
+    "Destination_Country": "China",
+    "Unit_Price_USD": 348.0,
+    "Quantity": 5,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 329,
+    "Product": "Hard Disk Drive Mini",
+    "HS_Code": 847170,
+    "Origin_Country": "France",
+    "Destination_Country": "Saudi Arabia",
+    "Unit_Price_USD": 385.25,
+    "Quantity": 6,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 330,
+    "Product": "Hard Disk Drive Ultra",
+    "HS_Code": 847170,
+    "Origin_Country": "Italy",
+    "Destination_Country": "Brazil",
+    "Unit_Price_USD": 422.5,
+    "Quantity": 7,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 331,
+    "Product": "Hard Disk Drive Gen 1",
+    "HS_Code": 847170,
+    "Origin_Country": "Spain",
+    "Destination_Country": "South Africa",
+    "Unit_Price_USD": 459.75,
+    "Quantity": 8,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 332,
+    "Product": "Hard Disk Drive Gen 2",
+    "HS_Code": 847170,
+    "Origin_Country": "Singapore",
+    "Destination_Country": "New Zealand",
+    "Unit_Price_USD": 497.0,
+    "Quantity": 9,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 333,
+    "Product": "Hard Disk Drive Gen 3",
+    "HS_Code": 847170,
+    "Origin_Country": "Malaysia",
+    "Destination_Country": "Mexico",
+    "Unit_Price_USD": 534.25,
+    "Quantity": 10,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 334,
+    "Product": "Hard Disk Drive Series A",
+    "HS_Code": 847170,
+    "Origin_Country": "Thailand",
+    "Destination_Country": "Indonesia",
+    "Unit_Price_USD": 571.5,
+    "Quantity": 11,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 335,
+    "Product": "Hard Disk Drive Series B",
+    "HS_Code": 847170,
+    "Origin_Country": "South Korea",
+    "Destination_Country": "Vietnam",
+    "Unit_Price_USD": 608.75,
+    "Quantity": 12,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 336,
+    "Product": "Hard Disk Drive Series C",
+    "HS_Code": 847170,
+    "Origin_Country": "China",
+    "Destination_Country": "Philippines",
+    "Unit_Price_USD": 646.0,
+    "Quantity": 1,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 337,
+    "Product": "Hard Disk Drive Model X",
+    "HS_Code": 847170,
+    "Origin_Country": "Saudi Arabia",
+    "Destination_Country": "Turkey",
+    "Unit_Price_USD": 683.25,
+    "Quantity": 2,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 338,
+    "Product": "Hard Disk Drive Model Y",
+    "HS_Code": 847170,
+    "Origin_Country": "Brazil",
+    "Destination_Country": "Netherlands",
+    "Unit_Price_USD": 720.5,
+    "Quantity": 3,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 339,
+    "Product": "Hard Disk Drive Model Z",
+    "HS_Code": 847170,
+    "Origin_Country": "South Africa",
+    "Destination_Country": "Belgium",
+    "Unit_Price_USD": 757.75,
+    "Quantity": 4,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 340,
+    "Product": "Hard Disk Drive 2026",
+    "HS_Code": 847170,
+    "Origin_Country": "New Zealand",
+    "Destination_Country": "Sweden",
+    "Unit_Price_USD": 795.0,
+    "Quantity": 5,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 341,
+    "Product": "SSD Drive Standard",
+    "HS_Code": 847170,
+    "Origin_Country": "Mexico",
+    "Destination_Country": "Norway",
+    "Unit_Price_USD": 832.25,
+    "Quantity": 6,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 342,
+    "Product": "SSD Drive Basic",
+    "HS_Code": 847170,
+    "Origin_Country": "Indonesia",
+    "Destination_Country": "Denmark",
+    "Unit_Price_USD": 869.5,
+    "Quantity": 7,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 343,
+    "Product": "SSD Drive Premium",
+    "HS_Code": 847170,
+    "Origin_Country": "Vietnam",
+    "Destination_Country": "Switzerland",
+    "Unit_Price_USD": 906.75,
+    "Quantity": 8,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 344,
+    "Product": "SSD Drive Pro",
+    "HS_Code": 847170,
+    "Origin_Country": "Philippines",
+    "Destination_Country": "Ireland",
+    "Unit_Price_USD": 944.0,
+    "Quantity": 9,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 345,
+    "Product": "SSD Drive Advanced",
+    "HS_Code": 847170,
+    "Origin_Country": "Turkey",
+    "Destination_Country": "Portugal",
+    "Unit_Price_USD": 981.25,
+    "Quantity": 10,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 346,
+    "Product": "SSD Drive Lite",
+    "HS_Code": 847170,
+    "Origin_Country": "Netherlands",
+    "Destination_Country": "Poland",
+    "Unit_Price_USD": 1018.5,
+    "Quantity": 11,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 347,
+    "Product": "SSD Drive Plus",
+    "HS_Code": 847170,
+    "Origin_Country": "Belgium",
+    "Destination_Country": "Austria",
+    "Unit_Price_USD": 1055.75,
+    "Quantity": 12,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 348,
+    "Product": "SSD Drive Max",
+    "HS_Code": 847170,
+    "Origin_Country": "Sweden",
+    "Destination_Country": "Argentina",
+    "Unit_Price_USD": 1093.0,
+    "Quantity": 1,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 349,
+    "Product": "SSD Drive Mini",
+    "HS_Code": 847170,
+    "Origin_Country": "Norway",
+    "Destination_Country": "Chile",
+    "Unit_Price_USD": 1130.25,
+    "Quantity": 2,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 350,
+    "Product": "SSD Drive Ultra",
+    "HS_Code": 847170,
+    "Origin_Country": "Denmark",
+    "Destination_Country": "Egypt",
+    "Unit_Price_USD": 1167.5,
+    "Quantity": 3,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 351,
+    "Product": "SSD Drive Gen 1",
+    "HS_Code": 847170,
+    "Origin_Country": "Switzerland",
+    "Destination_Country": "Nigeria",
+    "Unit_Price_USD": 1204.75,
+    "Quantity": 4,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 352,
+    "Product": "SSD Drive Gen 2",
+    "HS_Code": 847170,
+    "Origin_Country": "Ireland",
+    "Destination_Country": "Greece",
+    "Unit_Price_USD": 1242.0,
+    "Quantity": 5,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 353,
+    "Product": "SSD Drive Gen 3",
+    "HS_Code": 847170,
+    "Origin_Country": "Portugal",
+    "Destination_Country": "India",
+    "Unit_Price_USD": 1279.25,
+    "Quantity": 6,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 354,
+    "Product": "SSD Drive Series A",
+    "HS_Code": 847170,
+    "Origin_Country": "Poland",
+    "Destination_Country": "United States",
+    "Unit_Price_USD": 1316.5,
+    "Quantity": 7,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 355,
+    "Product": "SSD Drive Series B",
+    "HS_Code": 847170,
+    "Origin_Country": "Austria",
+    "Destination_Country": "Germany",
+    "Unit_Price_USD": 1353.75,
+    "Quantity": 8,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 356,
+    "Product": "SSD Drive Series C",
+    "HS_Code": 847170,
+    "Origin_Country": "Argentina",
+    "Destination_Country": "United Arab Emirates",
+    "Unit_Price_USD": 1391.0,
+    "Quantity": 9,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 357,
+    "Product": "SSD Drive Model X",
+    "HS_Code": 847170,
+    "Origin_Country": "Chile",
+    "Destination_Country": "Japan",
+    "Unit_Price_USD": 1428.25,
+    "Quantity": 10,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 358,
+    "Product": "SSD Drive Model Y",
+    "HS_Code": 847170,
+    "Origin_Country": "Egypt",
+    "Destination_Country": "United Kingdom",
+    "Unit_Price_USD": 1465.5,
+    "Quantity": 11,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 359,
+    "Product": "SSD Drive Model Z",
+    "HS_Code": 847170,
+    "Origin_Country": "Nigeria",
+    "Destination_Country": "Australia",
+    "Unit_Price_USD": 1502.75,
+    "Quantity": 12,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 360,
+    "Product": "SSD Drive 2026",
+    "HS_Code": 847170,
+    "Origin_Country": "Greece",
+    "Destination_Country": "Canada",
+    "Unit_Price_USD": 50.0,
+    "Quantity": 1,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 361,
+    "Product": "USB Flash Drive Standard",
+    "HS_Code": 852351,
+    "Origin_Country": "India",
+    "Destination_Country": "France",
+    "Unit_Price_USD": 87.25,
+    "Quantity": 2,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 362,
+    "Product": "USB Flash Drive Basic",
+    "HS_Code": 852351,
+    "Origin_Country": "United States",
+    "Destination_Country": "Italy",
+    "Unit_Price_USD": 124.5,
+    "Quantity": 3,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 363,
+    "Product": "USB Flash Drive Premium",
+    "HS_Code": 852351,
+    "Origin_Country": "Germany",
+    "Destination_Country": "Spain",
+    "Unit_Price_USD": 161.75,
+    "Quantity": 4,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 364,
+    "Product": "USB Flash Drive Pro",
+    "HS_Code": 852351,
+    "Origin_Country": "United Arab Emirates",
+    "Destination_Country": "Singapore",
+    "Unit_Price_USD": 199.0,
+    "Quantity": 5,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 365,
+    "Product": "USB Flash Drive Advanced",
+    "HS_Code": 852351,
+    "Origin_Country": "Japan",
+    "Destination_Country": "Malaysia",
+    "Unit_Price_USD": 236.25,
+    "Quantity": 6,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 366,
+    "Product": "USB Flash Drive Lite",
+    "HS_Code": 852351,
+    "Origin_Country": "United Kingdom",
+    "Destination_Country": "Thailand",
+    "Unit_Price_USD": 273.5,
+    "Quantity": 7,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 367,
+    "Product": "USB Flash Drive Plus",
+    "HS_Code": 852351,
+    "Origin_Country": "Australia",
+    "Destination_Country": "South Korea",
+    "Unit_Price_USD": 310.75,
+    "Quantity": 8,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 368,
+    "Product": "USB Flash Drive Max",
+    "HS_Code": 852351,
+    "Origin_Country": "Canada",
+    "Destination_Country": "China",
+    "Unit_Price_USD": 348.0,
+    "Quantity": 9,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 369,
+    "Product": "USB Flash Drive Mini",
+    "HS_Code": 852351,
+    "Origin_Country": "France",
+    "Destination_Country": "Saudi Arabia",
+    "Unit_Price_USD": 385.25,
+    "Quantity": 10,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 370,
+    "Product": "USB Flash Drive Ultra",
+    "HS_Code": 852351,
+    "Origin_Country": "Italy",
+    "Destination_Country": "Brazil",
+    "Unit_Price_USD": 422.5,
+    "Quantity": 11,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 371,
+    "Product": "USB Flash Drive Gen 1",
+    "HS_Code": 852351,
+    "Origin_Country": "Spain",
+    "Destination_Country": "South Africa",
+    "Unit_Price_USD": 459.75,
+    "Quantity": 12,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 372,
+    "Product": "USB Flash Drive Gen 2",
+    "HS_Code": 852351,
+    "Origin_Country": "Singapore",
+    "Destination_Country": "New Zealand",
+    "Unit_Price_USD": 497.0,
+    "Quantity": 1,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 373,
+    "Product": "USB Flash Drive Gen 3",
+    "HS_Code": 852351,
+    "Origin_Country": "Malaysia",
+    "Destination_Country": "Mexico",
+    "Unit_Price_USD": 534.25,
+    "Quantity": 2,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 374,
+    "Product": "USB Flash Drive Series A",
+    "HS_Code": 852351,
+    "Origin_Country": "Thailand",
+    "Destination_Country": "Indonesia",
+    "Unit_Price_USD": 571.5,
+    "Quantity": 3,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 375,
+    "Product": "USB Flash Drive Series B",
+    "HS_Code": 852351,
+    "Origin_Country": "South Korea",
+    "Destination_Country": "Vietnam",
+    "Unit_Price_USD": 608.75,
+    "Quantity": 4,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 376,
+    "Product": "USB Flash Drive Series C",
+    "HS_Code": 852351,
+    "Origin_Country": "China",
+    "Destination_Country": "Philippines",
+    "Unit_Price_USD": 646.0,
+    "Quantity": 5,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 377,
+    "Product": "USB Flash Drive Model X",
+    "HS_Code": 852351,
+    "Origin_Country": "Saudi Arabia",
+    "Destination_Country": "Turkey",
+    "Unit_Price_USD": 683.25,
+    "Quantity": 6,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 378,
+    "Product": "USB Flash Drive Model Y",
+    "HS_Code": 852351,
+    "Origin_Country": "Brazil",
+    "Destination_Country": "Netherlands",
+    "Unit_Price_USD": 720.5,
+    "Quantity": 7,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 379,
+    "Product": "USB Flash Drive Model Z",
+    "HS_Code": 852351,
+    "Origin_Country": "South Africa",
+    "Destination_Country": "Belgium",
+    "Unit_Price_USD": 757.75,
+    "Quantity": 8,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 380,
+    "Product": "USB Flash Drive 2026",
+    "HS_Code": 852351,
+    "Origin_Country": "New Zealand",
+    "Destination_Country": "Sweden",
+    "Unit_Price_USD": 795.0,
+    "Quantity": 9,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 381,
+    "Product": "Memory Card Standard",
+    "HS_Code": 852351,
+    "Origin_Country": "Mexico",
+    "Destination_Country": "Norway",
+    "Unit_Price_USD": 832.25,
+    "Quantity": 10,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 382,
+    "Product": "Memory Card Basic",
+    "HS_Code": 852351,
+    "Origin_Country": "Indonesia",
+    "Destination_Country": "Denmark",
+    "Unit_Price_USD": 869.5,
+    "Quantity": 11,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 383,
+    "Product": "Memory Card Premium",
+    "HS_Code": 852351,
+    "Origin_Country": "Vietnam",
+    "Destination_Country": "Switzerland",
+    "Unit_Price_USD": 906.75,
+    "Quantity": 12,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 384,
+    "Product": "Memory Card Pro",
+    "HS_Code": 852351,
+    "Origin_Country": "Philippines",
+    "Destination_Country": "Ireland",
+    "Unit_Price_USD": 944.0,
+    "Quantity": 1,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 385,
+    "Product": "Memory Card Advanced",
+    "HS_Code": 852351,
+    "Origin_Country": "Turkey",
+    "Destination_Country": "Portugal",
+    "Unit_Price_USD": 981.25,
+    "Quantity": 2,
+    "Shipping_USD": 205.0
+  },
+  {
+    "Transaction_ID": 386,
+    "Product": "Memory Card Lite",
+    "HS_Code": 852351,
+    "Origin_Country": "Netherlands",
+    "Destination_Country": "Poland",
+    "Unit_Price_USD": 1018.5,
+    "Quantity": 3,
+    "Shipping_USD": 223.5
+  },
+  {
+    "Transaction_ID": 387,
+    "Product": "Memory Card Plus",
+    "HS_Code": 852351,
+    "Origin_Country": "Belgium",
+    "Destination_Country": "Austria",
+    "Unit_Price_USD": 1055.75,
+    "Quantity": 4,
+    "Shipping_USD": 242.0
+  },
+  {
+    "Transaction_ID": 388,
+    "Product": "Memory Card Max",
+    "HS_Code": 852351,
+    "Origin_Country": "Sweden",
+    "Destination_Country": "Argentina",
+    "Unit_Price_USD": 1093.0,
+    "Quantity": 5,
+    "Shipping_USD": 260.5
+  },
+  {
+    "Transaction_ID": 389,
+    "Product": "Memory Card Mini",
+    "HS_Code": 852351,
+    "Origin_Country": "Norway",
+    "Destination_Country": "Chile",
+    "Unit_Price_USD": 1130.25,
+    "Quantity": 6,
+    "Shipping_USD": 279.0
+  },
+  {
+    "Transaction_ID": 390,
+    "Product": "Memory Card Ultra",
+    "HS_Code": 852351,
+    "Origin_Country": "Denmark",
+    "Destination_Country": "Egypt",
+    "Unit_Price_USD": 1167.5,
+    "Quantity": 7,
+    "Shipping_USD": 20.0
+  },
+  {
+    "Transaction_ID": 391,
+    "Product": "Memory Card Gen 1",
+    "HS_Code": 852351,
+    "Origin_Country": "Switzerland",
+    "Destination_Country": "Nigeria",
+    "Unit_Price_USD": 1204.75,
+    "Quantity": 8,
+    "Shipping_USD": 38.5
+  },
+  {
+    "Transaction_ID": 392,
+    "Product": "Memory Card Gen 2",
+    "HS_Code": 852351,
+    "Origin_Country": "Ireland",
+    "Destination_Country": "Greece",
+    "Unit_Price_USD": 1242.0,
+    "Quantity": 9,
+    "Shipping_USD": 57.0
+  },
+  {
+    "Transaction_ID": 393,
+    "Product": "Memory Card Gen 3",
+    "HS_Code": 852351,
+    "Origin_Country": "Portugal",
+    "Destination_Country": "India",
+    "Unit_Price_USD": 1279.25,
+    "Quantity": 10,
+    "Shipping_USD": 75.5
+  },
+  {
+    "Transaction_ID": 394,
+    "Product": "Memory Card Series A",
+    "HS_Code": 852351,
+    "Origin_Country": "Poland",
+    "Destination_Country": "United States",
+    "Unit_Price_USD": 1316.5,
+    "Quantity": 11,
+    "Shipping_USD": 94.0
+  },
+  {
+    "Transaction_ID": 395,
+    "Product": "Memory Card Series B",
+    "HS_Code": 852351,
+    "Origin_Country": "Austria",
+    "Destination_Country": "Germany",
+    "Unit_Price_USD": 1353.75,
+    "Quantity": 12,
+    "Shipping_USD": 112.5
+  },
+  {
+    "Transaction_ID": 396,
+    "Product": "Memory Card Series C",
+    "HS_Code": 852351,
+    "Origin_Country": "Argentina",
+    "Destination_Country": "United Arab Emirates",
+    "Unit_Price_USD": 1391.0,
+    "Quantity": 1,
+    "Shipping_USD": 131.0
+  },
+  {
+    "Transaction_ID": 397,
+    "Product": "Memory Card Model X",
+    "HS_Code": 852351,
+    "Origin_Country": "Chile",
+    "Destination_Country": "Japan",
+    "Unit_Price_USD": 1428.25,
+    "Quantity": 2,
+    "Shipping_USD": 149.5
+  },
+  {
+    "Transaction_ID": 398,
+    "Product": "Memory Card Model Y",
+    "HS_Code": 852351,
+    "Origin_Country": "Egypt",
+    "Destination_Country": "United Kingdom",
+    "Unit_Price_USD": 1465.5,
+    "Quantity": 3,
+    "Shipping_USD": 168.0
+  },
+  {
+    "Transaction_ID": 399,
+    "Product": "Memory Card Model Z",
+    "HS_Code": 852351,
+    "Origin_Country": "Nigeria",
+    "Destination_Country": "Australia",
+    "Unit_Price_USD": 1502.75,
+    "Quantity": 4,
+    "Shipping_USD": 186.5
+  },
+  {
+    "Transaction_ID": 400,
+    "Product": "Memory Card 2026",
+    "HS_Code": 852351,
+    "Origin_Country": "Greece",
+    "Destination_Country": "Canada",
+    "Unit_Price_USD": 50.0,
+    "Quantity": 5,
+    "Shipping_USD": 205.0
+  }
+]
