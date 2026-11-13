@@ -255,6 +255,12 @@ The repository includes [`Majorpro (1).ipynb`](Majorpro%20(1).ipynb), containing
 **K. Siddharth Reddy**
 - GitHub: [@K-Siddharth-Reddy-CR7](https://github.com/K-Siddharth-Reddy-CR7)
 
+**Syeda Sayeeda Farhath**
+- GitHub: [@Syeda Sayeeda Farhath](https://github.com/sayeedafarhath)
+
+**P. Naga Bhargav**
+- GitHub: [@NagaBhargav175](https://github.com/NagaBhargav175)
+
 ---
 
 ## 📄 License
