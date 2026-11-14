@@ -502,42 +502,42 @@ export default function HomePage() {
     {
       icon: <Scale size={24} style={{ color: '#10b981' }} />,
       color: 0x10b981,
-      title: 'Precise Customs Valuation',
-      desc: 'Statutory assessable value calculation per WTO customs valuation rules — CIF basis, import duty rates, GST/VAT stacking, with full breakdown to per-unit cost.'
+      title: 'Landed-Cost Calculation',
+      desc: 'Simplified assessable value (unit price x quantity + freight), import duty and GST/VAT stacking from a prototype rate table, with a per-unit breakdown.'
     },
     {
       icon: <BookOpen size={24} style={{ color: '#f59e0b' }} />,
       color: 0xf59e0b,
       title: 'RAG Policy Compliance Engine',
-      desc: 'TF-IDF dense vector retrieval over 240+ active trade compliance policies. Flags BIS, CE, FDA permits and bilateral FTA exemptions automatically.'
+      desc: 'Lexical TF-IDF retrieval over 240 prototype policy records, with a keyword flag for permit or prohibition terms.'
     },
     {
       icon: <Search size={24} style={{ color: '#a855f7' }} />,
       color: 0xa855f7,
       title: 'HS-6 Product Classification',
-      desc: 'Fuzzy-match commercial product descriptions against 1,200+ HS-6 classified commodities using the global harmonized tariff schedule catalog.'
+      desc: 'Matches product descriptions against a catalogue of 1,200 synthetic product records (60 product types) carrying HS-6 codes.'
     },
     {
       icon: <Layers size={24} style={{ color: '#f43f5e' }} />,
       color: 0xf43f5e,
       title: 'Batch Audit (400 Transactions)',
-      desc: 'Bulk-process entire manifests of 400 trade transactions simultaneously. Export compliance certificates per shipment or aggregate analytics.'
+      desc: 'Browse 400 synthetic sample transactions with recomputed duty, VAT and landed cost, filterable by product, corridor and threshold flag.'
     },
     {
       icon: <Lock size={24} style={{ color: '#06b6d4' }} />,
       color: 0x06b6d4,
-      title: 'Cryptographic Audit ID',
-      desc: 'Every audit result is stamped with a cryptographic SHA-based audit identifier ensuring full provenance traceability for regulatory submission.'
+      title: 'Audit Trace & ID',
+      desc: 'Every audit result carries a per-stage execution trace, a timestamp and a time-based audit identifier.'
     }
   ];
 
   const AGENTS = [
-    { num: '01', name: 'Input Agent', tag: 'Sanitization & Validation', color: '#60a5fa', desc: 'Normalizes product specifications, quantities, declared unit values, and CIF shipping freight terms into a clean structured payload.' },
-    { num: '02', name: 'Product Agent', tag: 'HS-6 Classification', color: '#38bdf8', desc: 'Fuzzy-matches commercial descriptions against 1,200 catalog commodities using token overlap and Levenshtein distance to assign HS Code.' },
-    { num: '03', name: 'RAG Policy Agent', tag: 'Vector Regulatory Search', color: '#f59e0b', desc: 'Executes dense TF-IDF cosine similarity retrieval over 240 compliance rules, surfacing the most relevant policy clause for the shipment.' },
+    { num: '01', name: 'Input Agent', tag: 'Sanitization & Validation', color: '#60a5fa', desc: 'Checks that price, quantity and freight are numeric and that product and destination are present, then builds a structured record.' },
+    { num: '02', name: 'Product Agent', tag: 'HS-6 Classification', color: '#38bdf8', desc: 'Matches the description against 1,200 catalogue records by exact/prefix, substring and word-overlap matching to assign an HS code.' },
+    { num: '03', name: 'RAG Policy Agent', tag: 'Vector Regulatory Search', color: '#f59e0b', desc: 'Ranks 240 prototype policy records by TF-IDF cosine similarity plus country/category bonuses and returns the top record.' },
     { num: '04', name: 'Tax Agent', tag: 'Tariff Schedule Match', color: '#a855f7', desc: 'Looks up statutory import duty percentage, national GST/VAT rate, and local currency from the jurisdictional customs tariff schedule database.' },
     { num: '05', name: 'Calculation Agent', tag: 'Customs Valuation Engine', color: '#10b981', desc: 'Computes assessable customs value (CIF), exact duty amount, taxable base, statutory VAT, and total landed cost with per-unit breakdowns.' },
-    { num: '06', name: 'Report Agent', tag: 'Provenance & Verdict', color: '#34d399', desc: 'Compiles full audit provenance trace, assigns cryptographic audit ID, timestamps the transaction, and outputs the final compliance verdict.' },
+    { num: '06', name: 'Report Agent', tag: 'Provenance & Verdict', color: '#34d399', desc: 'Compiles the per-stage execution trace with latencies, timestamps the run and assigns a time-based audit ID.' },
   ];
 
   return (
@@ -791,8 +791,8 @@ export default function HomePage() {
               How the 6-Agent Pipeline Works
             </h2>
             <p style={{ fontSize: 16, color: '#9ca3af', maxWidth: 560, margin: '0 auto' }}>
-              Each autonomous agent handles one specialized task in the trade audit flow —
-              ensuring precision, traceability, and full compliance at every step.
+              Each agent is one sequential processing stage in the trade audit flow, and every
+              stage is recorded in an execution trace.
             </p>
           </div>
 

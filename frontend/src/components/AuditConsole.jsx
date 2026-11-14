@@ -355,7 +355,7 @@ export default function AuditConsole({
                     <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                       <span className="badge badge-success">
                         <CheckCircle2 size={12} />
-                        AUDIT VERIFIED
+                        PIPELINE COMPLETED
                       </span>
                       <span className="mono" style={{ fontSize: 12, color: 'var(--text-muted)' }}>
                         ID: {auditResult.audit_id}
@@ -486,7 +486,7 @@ export default function AuditConsole({
 
                     <div style={{ marginTop: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 11, color: 'var(--text-dim)' }}>
                       <span>Source: {auditResult.source_type}</span>
-                      <span className="badge badge-success">Verified Active</span>
+                      <span className="badge">Prototype policy record</span>
                     </div>
                   </div>
                 </div>
