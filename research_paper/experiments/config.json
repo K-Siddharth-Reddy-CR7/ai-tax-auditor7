@@ -1,0 +1,18 @@
+{
+  "seed": 20261114,
+  "dev_fraction": 0.4,
+  "hs_file": "data/external/hs2022_datasets-harmonized-system.csv",
+  "hs_file_sha256": "e77ee9e1cfd15a42d1fadeb2c0618d10f6b9ed9aec0e5d66826dc7ef9d3126a5",
+  "catalogue_chapters": ["84", "85", "94", "95"],
+  "product_perturbations": ["case", "ws_punct", "typo", "plural", "reorder"],
+  "hs_in_catalogue_perturbations": ["case", "typo"],
+  "cldr_locales": ["de", "fr", "es", "it", "nl", "pt"],
+  "tuning_grid": {
+    "product_min_coverage": [0.0, 0.25, 0.34, 0.5, 0.67, 0.75, 1.0],
+    "product_typo_max_edits": [0, 1, 2],
+    "product_typo_min_len": [4, 5, 6]
+  },
+  "tuning_rule": "maximise dev macro decision-accuracy over product subsets subject to dev macro silent-error rate <= that of baseline B on dev; if infeasible minimise macro silent-error rate; ties -> larger coverage threshold, fewer typo edits, longer min length",
+  "latency": {"warmup_calls": 200, "repetitions": 30, "workload_items": 1000},
+  "bootstrap_resamples": 10000
+}

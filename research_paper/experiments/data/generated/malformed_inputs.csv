@@ -1,0 +1,19 @@
+item_id,product_name,destination,price,quantity,shipping,defect
+M|blank_product,   ,India,800,2,100,blank_product
+M|empty_product,,India,800,2,100,empty_product
+M|blank_destination,Laptop,  ,800,2,100,blank_destination
+M|empty_destination,Laptop,,800,2,100,empty_destination
+M|negative_price,Laptop,India,-100,2,100,negative_price
+M|zero_price,Laptop,India,0,2,100,zero_price
+M|nan_price,Laptop,India,nan,2,100,nan_price
+M|inf_price,Laptop,India,inf,2,100,inf_price
+M|text_price,Laptop,India,eight hundred,2,100,text_price
+M|missing_price,Laptop,India,,2,100,missing_price
+M|zero_quantity,Laptop,India,800,0,100,zero_quantity
+M|negative_quantity,Laptop,India,800,-3,100,negative_quantity
+M|fractional_quantity,Laptop,India,800,2.5,100,fractional_quantity
+M|fractional_quantity_text,Laptop,India,800,2.7,100,fractional_quantity_text
+M|text_quantity,Laptop,India,800,two,100,text_quantity
+M|negative_shipping,Laptop,India,800,2,-10,negative_shipping
+M|nan_shipping,Laptop,India,800,2,nan,nan_shipping
+M|text_shipping,Laptop,India,800,2,free,text_shipping

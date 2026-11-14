@@ -1,0 +1,2123 @@
+item_id,subset,text,expected_iso,label_kind,tax_data_available,expected_behaviour,label_source,transform,group,split
+CA|AE|case,CA,uNITED aRAB eMIRATES,AE,country,True,COMPUTE,taxes.json+ISO,case,AE,test
+CA|AE|table,CA,United Arab Emirates,AE,country,True,COMPUTE,taxes.json+ISO,none,AE,test
+CA|AE|ws_punct,CA,  United  Arab  Emirates.,AE,country,True,COMPUTE,taxes.json+ISO,ws_punct,AE,test
+CA|AR|case,CA,aRGENTINA,AR,country,True,COMPUTE,taxes.json+ISO,case,AR,dev
+CA|AR|table,CA,Argentina,AR,country,True,COMPUTE,taxes.json+ISO,none,AR,dev
+CA|AR|ws_punct,CA,Argentina;,AR,country,True,COMPUTE,taxes.json+ISO,ws_punct,AR,dev
+CA|AT|case,CA,AUSTRIA,AT,country,True,COMPUTE,taxes.json+ISO,case,AT,dev
+CA|AT|table,CA,Austria,AT,country,True,COMPUTE,taxes.json+ISO,none,AT,dev
+CA|AT|ws_punct,CA,Austria;,AT,country,True,COMPUTE,taxes.json+ISO,ws_punct,AT,dev
+CA|AU|case,CA,AUSTRALIA,AU,country,True,COMPUTE,taxes.json+ISO,case,AU,dev
+CA|AU|table,CA,Australia,AU,country,True,COMPUTE,taxes.json+ISO,none,AU,dev
+CA|AU|ws_punct,CA,  Australia.,AU,country,True,COMPUTE,taxes.json+ISO,ws_punct,AU,dev
+CA|BE|case,CA,belgium,BE,country,True,COMPUTE,taxes.json+ISO,case,BE,dev
+CA|BE|table,CA,Belgium,BE,country,True,COMPUTE,taxes.json+ISO,none,BE,dev
+CA|BE|ws_punct,CA,Belgium.,BE,country,True,COMPUTE,taxes.json+ISO,ws_punct,BE,dev
+CA|BR|case,CA,bRAZIL,BR,country,True,COMPUTE,taxes.json+ISO,case,BR,test
+CA|BR|table,CA,Brazil,BR,country,True,COMPUTE,taxes.json+ISO,none,BR,test
+CA|BR|ws_punct,CA,Brazil.,BR,country,True,COMPUTE,taxes.json+ISO,ws_punct,BR,test
+CA|CA|case,CA,canada,CA,country,True,COMPUTE,taxes.json+ISO,case,CA,dev
+CA|CA|table,CA,Canada,CA,country,True,COMPUTE,taxes.json+ISO,none,CA,dev
+CA|CA|ws_punct,CA,  Canada ,CA,country,True,COMPUTE,taxes.json+ISO,ws_punct,CA,dev
+CA|CH|case,CA,SWITZERLAND,CH,country,True,COMPUTE,taxes.json+ISO,case,CH,dev
+CA|CH|table,CA,Switzerland,CH,country,True,COMPUTE,taxes.json+ISO,none,CH,dev
+CA|CH|ws_punct,CA,  Switzerland ,CH,country,True,COMPUTE,taxes.json+ISO,ws_punct,CH,dev
+CA|CL|case,CA,CHILE,CL,country,True,COMPUTE,taxes.json+ISO,case,CL,test
+CA|CL|table,CA,Chile,CL,country,True,COMPUTE,taxes.json+ISO,none,CL,test
+CA|CL|ws_punct,CA,  Chile;,CL,country,True,COMPUTE,taxes.json+ISO,ws_punct,CL,test
+CA|CN|case,CA,CHINA,CN,country,True,COMPUTE,taxes.json+ISO,case,CN,test
+CA|CN|table,CA,China,CN,country,True,COMPUTE,taxes.json+ISO,none,CN,test
+CA|CN|ws_punct,CA,  China ,CN,country,True,COMPUTE,taxes.json+ISO,ws_punct,CN,test
+CA|DE|case,CA,GERMANY,DE,country,True,COMPUTE,taxes.json+ISO,case,DE,dev
+CA|DE|table,CA,Germany,DE,country,True,COMPUTE,taxes.json+ISO,none,DE,dev
+CA|DE|ws_punct,CA,  Germany.,DE,country,True,COMPUTE,taxes.json+ISO,ws_punct,DE,dev
+CA|DK|case,CA,dENMARK,DK,country,True,COMPUTE,taxes.json+ISO,case,DK,dev
+CA|DK|table,CA,Denmark,DK,country,True,COMPUTE,taxes.json+ISO,none,DK,dev
+CA|DK|ws_punct,CA,  Denmark;,DK,country,True,COMPUTE,taxes.json+ISO,ws_punct,DK,dev
+CA|EG|case,CA,eGYPT,EG,country,True,COMPUTE,taxes.json+ISO,case,EG,dev
+CA|EG|table,CA,Egypt,EG,country,True,COMPUTE,taxes.json+ISO,none,EG,dev
+CA|EG|ws_punct,CA,  Egypt.,EG,country,True,COMPUTE,taxes.json+ISO,ws_punct,EG,dev
+CA|ES|case,CA,spain,ES,country,True,COMPUTE,taxes.json+ISO,case,ES,test
+CA|ES|table,CA,Spain,ES,country,True,COMPUTE,taxes.json+ISO,none,ES,test
+CA|ES|ws_punct,CA,  Spain ,ES,country,True,COMPUTE,taxes.json+ISO,ws_punct,ES,test
+CA|FR|case,CA,france,FR,country,True,COMPUTE,taxes.json+ISO,case,FR,test
+CA|FR|table,CA,France,FR,country,True,COMPUTE,taxes.json+ISO,none,FR,test
+CA|FR|ws_punct,CA,  France.,FR,country,True,COMPUTE,taxes.json+ISO,ws_punct,FR,test
+CA|GB|case,CA,UNITED KINGDOM,GB,country,True,COMPUTE,taxes.json+ISO,case,GB,dev
+CA|GB|table,CA,United Kingdom,GB,country,True,COMPUTE,taxes.json+ISO,none,GB,dev
+CA|GB|ws_punct,CA,  United - Kingdom.,GB,country,True,COMPUTE,taxes.json+ISO,ws_punct,GB,dev
+CA|GR|case,CA,gREECE,GR,country,True,COMPUTE,taxes.json+ISO,case,GR,test
+CA|GR|table,CA,Greece,GR,country,True,COMPUTE,taxes.json+ISO,none,GR,test
+CA|GR|ws_punct,CA,  Greece.,GR,country,True,COMPUTE,taxes.json+ISO,ws_punct,GR,test
+CA|ID|case,CA,INDONESIA,ID,country,True,COMPUTE,taxes.json+ISO,case,ID,test
+CA|ID|table,CA,Indonesia,ID,country,True,COMPUTE,taxes.json+ISO,none,ID,test
+CA|ID|ws_punct,CA,Indonesia.,ID,country,True,COMPUTE,taxes.json+ISO,ws_punct,ID,test
+CA|IE|case,CA,IRELAND,IE,country,True,COMPUTE,taxes.json+ISO,case,IE,dev
+CA|IE|table,CA,Ireland,IE,country,True,COMPUTE,taxes.json+ISO,none,IE,dev
+CA|IE|ws_punct,CA,  Ireland;,IE,country,True,COMPUTE,taxes.json+ISO,ws_punct,IE,dev
+CA|IN|case,CA,iNDIA,IN,country,True,COMPUTE,taxes.json+ISO,case,IN,dev
+CA|IN|table,CA,India,IN,country,True,COMPUTE,taxes.json+ISO,none,IN,dev
+CA|IN|ws_punct,CA,  India.,IN,country,True,COMPUTE,taxes.json+ISO,ws_punct,IN,dev
+CA|IT|case,CA,ITALY,IT,country,True,COMPUTE,taxes.json+ISO,case,IT,test
+CA|IT|table,CA,Italy,IT,country,True,COMPUTE,taxes.json+ISO,none,IT,test
+CA|IT|ws_punct,CA,Italy;,IT,country,True,COMPUTE,taxes.json+ISO,ws_punct,IT,test
+CA|JP|case,CA,japan,JP,country,True,COMPUTE,taxes.json+ISO,case,JP,test
+CA|JP|table,CA,Japan,JP,country,True,COMPUTE,taxes.json+ISO,none,JP,test
+CA|JP|ws_punct,CA,Japan;,JP,country,True,COMPUTE,taxes.json+ISO,ws_punct,JP,test
+CA|KR|case,CA,SOUTH KOREA,KR,country,True,COMPUTE,taxes.json+ISO,case,KR,test
+CA|KR|table,CA,South Korea,KR,country,True,COMPUTE,taxes.json+ISO,none,KR,test
+CA|KR|ws_punct,CA,"  South, Korea;",KR,country,True,COMPUTE,taxes.json+ISO,ws_punct,KR,test
+CA|MX|case,CA,mexico,MX,country,True,COMPUTE,taxes.json+ISO,case,MX,test
+CA|MX|table,CA,Mexico,MX,country,True,COMPUTE,taxes.json+ISO,none,MX,test
+CA|MX|ws_punct,CA,Mexico.,MX,country,True,COMPUTE,taxes.json+ISO,ws_punct,MX,test
+CA|MY|case,CA,MALAYSIA,MY,country,True,COMPUTE,taxes.json+ISO,case,MY,test
+CA|MY|table,CA,Malaysia,MY,country,True,COMPUTE,taxes.json+ISO,none,MY,test
+CA|MY|ws_punct,CA,Malaysia;,MY,country,True,COMPUTE,taxes.json+ISO,ws_punct,MY,test
+CA|NG|case,CA,NIGERIA,NG,country,True,COMPUTE,taxes.json+ISO,case,NG,test
+CA|NG|table,CA,Nigeria,NG,country,True,COMPUTE,taxes.json+ISO,none,NG,test
+CA|NG|ws_punct,CA,Nigeria;,NG,country,True,COMPUTE,taxes.json+ISO,ws_punct,NG,test
+CA|NL|case,CA,nETHERLANDS,NL,country,True,COMPUTE,taxes.json+ISO,case,NL,dev
+CA|NL|table,CA,Netherlands,NL,country,True,COMPUTE,taxes.json+ISO,none,NL,dev
+CA|NL|ws_punct,CA,Netherlands.,NL,country,True,COMPUTE,taxes.json+ISO,ws_punct,NL,dev
+CA|NO|case,CA,NORWAY,NO,country,True,COMPUTE,taxes.json+ISO,case,NO,test
+CA|NO|table,CA,Norway,NO,country,True,COMPUTE,taxes.json+ISO,none,NO,test
+CA|NO|ws_punct,CA,  Norway ,NO,country,True,COMPUTE,taxes.json+ISO,ws_punct,NO,test
+CA|NZ|case,CA,new zealand,NZ,country,True,COMPUTE,taxes.json+ISO,case,NZ,dev
+CA|NZ|table,CA,New Zealand,NZ,country,True,COMPUTE,taxes.json+ISO,none,NZ,dev
+CA|NZ|ws_punct,CA,"  New, Zealand ",NZ,country,True,COMPUTE,taxes.json+ISO,ws_punct,NZ,dev
+CA|PH|case,CA,philippines,PH,country,True,COMPUTE,taxes.json+ISO,case,PH,dev
+CA|PH|table,CA,Philippines,PH,country,True,COMPUTE,taxes.json+ISO,none,PH,dev
+CA|PH|ws_punct,CA,Philippines.,PH,country,True,COMPUTE,taxes.json+ISO,ws_punct,PH,dev
+CA|PL|case,CA,POLAND,PL,country,True,COMPUTE,taxes.json+ISO,case,PL,test
+CA|PL|table,CA,Poland,PL,country,True,COMPUTE,taxes.json+ISO,none,PL,test
+CA|PL|ws_punct,CA,  Poland ,PL,country,True,COMPUTE,taxes.json+ISO,ws_punct,PL,test
+CA|PT|case,CA,portugal,PT,country,True,COMPUTE,taxes.json+ISO,case,PT,test
+CA|PT|table,CA,Portugal,PT,country,True,COMPUTE,taxes.json+ISO,none,PT,test
+CA|PT|ws_punct,CA,  Portugal;,PT,country,True,COMPUTE,taxes.json+ISO,ws_punct,PT,test
+CA|SA|case,CA,saudi arabia,SA,country,True,COMPUTE,taxes.json+ISO,case,SA,dev
+CA|SA|table,CA,Saudi Arabia,SA,country,True,COMPUTE,taxes.json+ISO,none,SA,dev
+CA|SA|ws_punct,CA,Saudi  Arabia;,SA,country,True,COMPUTE,taxes.json+ISO,ws_punct,SA,dev
+CA|SE|case,CA,sWEDEN,SE,country,True,COMPUTE,taxes.json+ISO,case,SE,test
+CA|SE|table,CA,Sweden,SE,country,True,COMPUTE,taxes.json+ISO,none,SE,test
+CA|SE|ws_punct,CA,  Sweden.,SE,country,True,COMPUTE,taxes.json+ISO,ws_punct,SE,test
+CA|SG|case,CA,SINGAPORE,SG,country,True,COMPUTE,taxes.json+ISO,case,SG,dev
+CA|SG|table,CA,Singapore,SG,country,True,COMPUTE,taxes.json+ISO,none,SG,dev
+CA|SG|ws_punct,CA,  Singapore ,SG,country,True,COMPUTE,taxes.json+ISO,ws_punct,SG,dev
+CA|TH|case,CA,thailand,TH,country,True,COMPUTE,taxes.json+ISO,case,TH,test
+CA|TH|table,CA,Thailand,TH,country,True,COMPUTE,taxes.json+ISO,none,TH,test
+CA|TH|ws_punct,CA,Thailand;,TH,country,True,COMPUTE,taxes.json+ISO,ws_punct,TH,test
+CA|TR|case,CA,tURKEY,TR,country,True,COMPUTE,taxes.json+ISO,case,TR,dev
+CA|TR|table,CA,Turkey,TR,country,True,COMPUTE,taxes.json+ISO,none,TR,dev
+CA|TR|ws_punct,CA,Turkey.,TR,country,True,COMPUTE,taxes.json+ISO,ws_punct,TR,dev
+CA|US|case,CA,united states,US,country,True,COMPUTE,taxes.json+ISO,case,US,test
+CA|US|table,CA,United States,US,country,True,COMPUTE,taxes.json+ISO,none,US,test
+CA|US|ws_punct,CA,  United - States.,US,country,True,COMPUTE,taxes.json+ISO,ws_punct,US,test
+CA|VN|case,CA,VIETNAM,VN,country,True,COMPUTE,taxes.json+ISO,case,VN,test
+CA|VN|table,CA,Vietnam,VN,country,True,COMPUTE,taxes.json+ISO,none,VN,test
+CA|VN|ws_punct,CA,  Vietnam;,VN,country,True,COMPUTE,taxes.json+ISO,ws_punct,VN,test
+CA|ZA|case,CA,south africa,ZA,country,True,COMPUTE,taxes.json+ISO,case,ZA,dev
+CA|ZA|table,CA,South Africa,ZA,country,True,COMPUTE,taxes.json+ISO,none,ZA,dev
+CA|ZA|ws_punct,CA,"  South, Africa ",ZA,country,True,COMPUTE,taxes.json+ISO,ws_punct,ZA,dev
+CB|AD|alpha_2,CB,AD,AD,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,AD,dev
+CB|AD|alpha_3,CB,AND,AD,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,AD,dev
+CB|AD|name,CB,Andorra,AD,country,False,REFUSE,ISO3166-1(pycountry):name,none,AD,dev
+CB|AD|official_name,CB,Principality of Andorra,AD,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,AD,dev
+CB|AE|alpha_2,CB,AE,AE,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,AE,test
+CB|AE|alpha_3,CB,ARE,AE,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,AE,test
+CB|AF|alpha_2,CB,AF,AF,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,AF,test
+CB|AF|alpha_3,CB,AFG,AF,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,AF,test
+CB|AF|name,CB,Afghanistan,AF,country,False,REFUSE,ISO3166-1(pycountry):name,none,AF,test
+CB|AF|official_name,CB,Islamic Republic of Afghanistan,AF,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,AF,test
+CB|AG|alpha_2,CB,AG,AG,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,AG,test
+CB|AG|alpha_3,CB,ATG,AG,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,AG,test
+CB|AG|name,CB,Antigua and Barbuda,AG,country,False,REFUSE,ISO3166-1(pycountry):name,none,AG,test
+CB|AI|alpha_2,CB,AI,AI,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,AI,dev
+CB|AI|alpha_3,CB,AIA,AI,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,AI,dev
+CB|AI|name,CB,Anguilla,AI,country,False,REFUSE,ISO3166-1(pycountry):name,none,AI,dev
+CB|AL|alpha_2,CB,AL,AL,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,AL,test
+CB|AL|alpha_3,CB,ALB,AL,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,AL,test
+CB|AL|name,CB,Albania,AL,country,False,REFUSE,ISO3166-1(pycountry):name,none,AL,test
+CB|AL|official_name,CB,Republic of Albania,AL,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,AL,test
+CB|AM|alpha_2,CB,AM,AM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,AM,test
+CB|AM|alpha_3,CB,ARM,AM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,AM,test
+CB|AM|name,CB,Armenia,AM,country,False,REFUSE,ISO3166-1(pycountry):name,none,AM,test
+CB|AM|official_name,CB,Republic of Armenia,AM,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,AM,test
+CB|AO|alpha_2,CB,AO,AO,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,AO,test
+CB|AO|alpha_3,CB,AGO,AO,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,AO,test
+CB|AO|name,CB,Angola,AO,country,False,REFUSE,ISO3166-1(pycountry):name,none,AO,test
+CB|AO|official_name,CB,Republic of Angola,AO,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,AO,test
+CB|AQ|alpha_2,CB,AQ,AQ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,AQ,dev
+CB|AQ|alpha_3,CB,ATA,AQ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,AQ,dev
+CB|AQ|name,CB,Antarctica,AQ,country,False,REFUSE,ISO3166-1(pycountry):name,none,AQ,dev
+CB|AR|alpha_2,CB,AR,AR,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,AR,dev
+CB|AR|alpha_3,CB,ARG,AR,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,AR,dev
+CB|AR|official_name,CB,Argentine Republic,AR,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,AR,dev
+CB|AS|alpha_2,CB,AS,AS,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,AS,test
+CB|AS|alpha_3,CB,ASM,AS,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,AS,test
+CB|AS|name,CB,American Samoa,AS,country,False,REFUSE,ISO3166-1(pycountry):name,none,AS,test
+CB|AT|alpha_2,CB,AT,AT,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,AT,dev
+CB|AT|alpha_3,CB,AUT,AT,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,AT,dev
+CB|AT|official_name,CB,Republic of Austria,AT,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,AT,dev
+CB|AU|alpha_2,CB,AU,AU,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,AU,dev
+CB|AU|alpha_3,CB,AUS,AU,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,AU,dev
+CB|AW|alpha_2,CB,AW,AW,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,AW,dev
+CB|AW|alpha_3,CB,ABW,AW,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,AW,dev
+CB|AW|name,CB,Aruba,AW,country,False,REFUSE,ISO3166-1(pycountry):name,none,AW,dev
+CB|AX|alpha_2,CB,AX,AX,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,AX,test
+CB|AX|alpha_3,CB,ALA,AX,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,AX,test
+CB|AX|name,CB,Åland Islands,AX,country,False,REFUSE,ISO3166-1(pycountry):name,none,AX,test
+CB|AZ|alpha_2,CB,AZ,AZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,AZ,dev
+CB|AZ|alpha_3,CB,AZE,AZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,AZ,dev
+CB|AZ|name,CB,Azerbaijan,AZ,country,False,REFUSE,ISO3166-1(pycountry):name,none,AZ,dev
+CB|AZ|official_name,CB,Republic of Azerbaijan,AZ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,AZ,dev
+CB|BA|alpha_2,CB,BA,BA,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BA,test
+CB|BA|alpha_3,CB,BIH,BA,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BA,test
+CB|BA|name,CB,Bosnia and Herzegovina,BA,country,False,REFUSE,ISO3166-1(pycountry):name,none,BA,test
+CB|BA|official_name,CB,Republic of Bosnia and Herzegovina,BA,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,BA,test
+CB|BB|alpha_2,CB,BB,BB,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BB,test
+CB|BB|alpha_3,CB,BRB,BB,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BB,test
+CB|BB|name,CB,Barbados,BB,country,False,REFUSE,ISO3166-1(pycountry):name,none,BB,test
+CB|BD|alpha_2,CB,BD,BD,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BD,dev
+CB|BD|alpha_3,CB,BGD,BD,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BD,dev
+CB|BD|name,CB,Bangladesh,BD,country,False,REFUSE,ISO3166-1(pycountry):name,none,BD,dev
+CB|BD|official_name,CB,People's Republic of Bangladesh,BD,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,BD,dev
+CB|BE|alpha_2,CB,BE,BE,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,BE,dev
+CB|BE|alpha_3,CB,BEL,BE,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,BE,dev
+CB|BE|official_name,CB,Kingdom of Belgium,BE,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,BE,dev
+CB|BF|alpha_2,CB,BF,BF,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BF,test
+CB|BF|alpha_3,CB,BFA,BF,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BF,test
+CB|BF|name,CB,Burkina Faso,BF,country,False,REFUSE,ISO3166-1(pycountry):name,none,BF,test
+CB|BG|alpha_2,CB,BG,BG,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BG,test
+CB|BG|alpha_3,CB,BGR,BG,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BG,test
+CB|BG|name,CB,Bulgaria,BG,country,False,REFUSE,ISO3166-1(pycountry):name,none,BG,test
+CB|BG|official_name,CB,Republic of Bulgaria,BG,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,BG,test
+CB|BH|alpha_2,CB,BH,BH,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BH,dev
+CB|BH|alpha_3,CB,BHR,BH,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BH,dev
+CB|BH|name,CB,Bahrain,BH,country,False,REFUSE,ISO3166-1(pycountry):name,none,BH,dev
+CB|BH|official_name,CB,Kingdom of Bahrain,BH,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,BH,dev
+CB|BI|alpha_2,CB,BI,BI,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BI,test
+CB|BI|alpha_3,CB,BDI,BI,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BI,test
+CB|BI|name,CB,Burundi,BI,country,False,REFUSE,ISO3166-1(pycountry):name,none,BI,test
+CB|BI|official_name,CB,Republic of Burundi,BI,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,BI,test
+CB|BJ|alpha_2,CB,BJ,BJ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BJ,test
+CB|BJ|alpha_3,CB,BEN,BJ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BJ,test
+CB|BJ|name,CB,Benin,BJ,country,False,REFUSE,ISO3166-1(pycountry):name,none,BJ,test
+CB|BJ|official_name,CB,Republic of Benin,BJ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,BJ,test
+CB|BL|alpha_2,CB,BL,BL,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BL,test
+CB|BL|alpha_3,CB,BLM,BL,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BL,test
+CB|BL|name,CB,Saint Barthélemy,BL,country,False,REFUSE,ISO3166-1(pycountry):name,none,BL,test
+CB|BM|alpha_2,CB,BM,BM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BM,test
+CB|BM|alpha_3,CB,BMU,BM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BM,test
+CB|BM|name,CB,Bermuda,BM,country,False,REFUSE,ISO3166-1(pycountry):name,none,BM,test
+CB|BN|alpha_2,CB,BN,BN,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BN,dev
+CB|BN|alpha_3,CB,BRN,BN,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BN,dev
+CB|BN|name,CB,Brunei Darussalam,BN,country,False,REFUSE,ISO3166-1(pycountry):name,none,BN,dev
+CB|BO|alpha_2,CB,BO,BO,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BO,test
+CB|BO|alpha_3,CB,BOL,BO,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BO,test
+CB|BO|common_name,CB,Bolivia,BO,country,False,REFUSE,ISO3166-1(pycountry):common_name,none,BO,test
+CB|BO|name,CB,"Bolivia, Plurinational State of",BO,country,False,REFUSE,ISO3166-1(pycountry):name,none,BO,test
+CB|BO|official_name,CB,Plurinational State of Bolivia,BO,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,BO,test
+CB|BQ|alpha_2,CB,BQ,BQ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BQ,dev
+CB|BQ|alpha_3,CB,BES,BQ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BQ,dev
+CB|BQ|name,CB,"Bonaire, Sint Eustatius and Saba",BQ,country,False,REFUSE,ISO3166-1(pycountry):name,none,BQ,dev
+CB|BR|alpha_2,CB,BR,BR,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,BR,test
+CB|BR|alpha_3,CB,BRA,BR,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,BR,test
+CB|BR|official_name,CB,Federative Republic of Brazil,BR,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,BR,test
+CB|BS|alpha_2,CB,BS,BS,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BS,test
+CB|BS|alpha_3,CB,BHS,BS,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BS,test
+CB|BS|name,CB,Bahamas,BS,country,False,REFUSE,ISO3166-1(pycountry):name,none,BS,test
+CB|BS|official_name,CB,Commonwealth of the Bahamas,BS,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,BS,test
+CB|BT|alpha_2,CB,BT,BT,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BT,test
+CB|BT|alpha_3,CB,BTN,BT,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BT,test
+CB|BT|name,CB,Bhutan,BT,country,False,REFUSE,ISO3166-1(pycountry):name,none,BT,test
+CB|BT|official_name,CB,Kingdom of Bhutan,BT,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,BT,test
+CB|BV|alpha_2,CB,BV,BV,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BV,test
+CB|BV|alpha_3,CB,BVT,BV,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BV,test
+CB|BV|name,CB,Bouvet Island,BV,country,False,REFUSE,ISO3166-1(pycountry):name,none,BV,test
+CB|BW|alpha_2,CB,BW,BW,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BW,test
+CB|BW|alpha_3,CB,BWA,BW,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BW,test
+CB|BW|name,CB,Botswana,BW,country,False,REFUSE,ISO3166-1(pycountry):name,none,BW,test
+CB|BW|official_name,CB,Republic of Botswana,BW,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,BW,test
+CB|BY|alpha_2,CB,BY,BY,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BY,test
+CB|BY|alpha_3,CB,BLR,BY,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BY,test
+CB|BY|name,CB,Belarus,BY,country,False,REFUSE,ISO3166-1(pycountry):name,none,BY,test
+CB|BY|official_name,CB,Republic of Belarus,BY,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,BY,test
+CB|BZ|alpha_2,CB,BZ,BZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,BZ,test
+CB|BZ|alpha_3,CB,BLZ,BZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,BZ,test
+CB|BZ|name,CB,Belize,BZ,country,False,REFUSE,ISO3166-1(pycountry):name,none,BZ,test
+CB|CA|alpha_2,CB,CA,CA,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,CA,dev
+CB|CA|alpha_3,CB,CAN,CA,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,CA,dev
+CB|CC|alpha_2,CB,CC,CC,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CC,test
+CB|CC|alpha_3,CB,CCK,CC,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CC,test
+CB|CC|name,CB,Cocos (Keeling) Islands,CC,country,False,REFUSE,ISO3166-1(pycountry):name,none,CC,test
+CB|CD|alpha_2,CB,CD,CD,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CD,test
+CB|CD|alpha_3,CB,COD,CD,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CD,test
+CB|CD|name,CB,"Congo, The Democratic Republic of the",CD,country,False,REFUSE,ISO3166-1(pycountry):name,none,CD,test
+CB|CF|alpha_2,CB,CF,CF,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CF,dev
+CB|CF|alpha_3,CB,CAF,CF,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CF,dev
+CB|CF|name,CB,Central African Republic,CF,country,False,REFUSE,ISO3166-1(pycountry):name,none,CF,dev
+CB|CG|alpha_2,CB,CG,CG,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CG,test
+CB|CG|alpha_3,CB,COG,CG,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CG,test
+CB|CG|name,CB,Congo,CG,country,False,REFUSE,ISO3166-1(pycountry):name,none,CG,test
+CB|CG|official_name,CB,Republic of the Congo,CG,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,CG,test
+CB|CH|alpha_2,CB,CH,CH,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,CH,dev
+CB|CH|alpha_3,CB,CHE,CH,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,CH,dev
+CB|CH|official_name,CB,Swiss Confederation,CH,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,CH,dev
+CB|CI|alpha_2,CB,CI,CI,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CI,test
+CB|CI|alpha_3,CB,CIV,CI,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CI,test
+CB|CI|name,CB,Côte d'Ivoire,CI,country,False,REFUSE,ISO3166-1(pycountry):name,none,CI,test
+CB|CI|official_name,CB,Republic of Côte d'Ivoire,CI,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,CI,test
+CB|CK|alpha_2,CB,CK,CK,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CK,dev
+CB|CK|alpha_3,CB,COK,CK,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CK,dev
+CB|CK|name,CB,Cook Islands,CK,country,False,REFUSE,ISO3166-1(pycountry):name,none,CK,dev
+CB|CL|alpha_2,CB,CL,CL,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,CL,test
+CB|CL|alpha_3,CB,CHL,CL,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,CL,test
+CB|CL|official_name,CB,Republic of Chile,CL,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,CL,test
+CB|CM|alpha_2,CB,CM,CM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CM,test
+CB|CM|alpha_3,CB,CMR,CM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CM,test
+CB|CM|name,CB,Cameroon,CM,country,False,REFUSE,ISO3166-1(pycountry):name,none,CM,test
+CB|CM|official_name,CB,Republic of Cameroon,CM,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,CM,test
+CB|CN|alpha_2,CB,CN,CN,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,CN,test
+CB|CN|alpha_3,CB,CHN,CN,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,CN,test
+CB|CN|official_name,CB,People's Republic of China,CN,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,CN,test
+CB|CO|alpha_2,CB,CO,CO,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CO,dev
+CB|CO|alpha_3,CB,COL,CO,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CO,dev
+CB|CO|name,CB,Colombia,CO,country,False,REFUSE,ISO3166-1(pycountry):name,none,CO,dev
+CB|CO|official_name,CB,Republic of Colombia,CO,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,CO,dev
+CB|CR|alpha_2,CB,CR,CR,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CR,dev
+CB|CR|alpha_3,CB,CRI,CR,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CR,dev
+CB|CR|name,CB,Costa Rica,CR,country,False,REFUSE,ISO3166-1(pycountry):name,none,CR,dev
+CB|CR|official_name,CB,Republic of Costa Rica,CR,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,CR,dev
+CB|CU|alpha_2,CB,CU,CU,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CU,dev
+CB|CU|alpha_3,CB,CUB,CU,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CU,dev
+CB|CU|name,CB,Cuba,CU,country,False,REFUSE,ISO3166-1(pycountry):name,none,CU,dev
+CB|CU|official_name,CB,Republic of Cuba,CU,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,CU,dev
+CB|CV|alpha_2,CB,CV,CV,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CV,test
+CB|CV|alpha_3,CB,CPV,CV,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CV,test
+CB|CV|name,CB,Cabo Verde,CV,country,False,REFUSE,ISO3166-1(pycountry):name,none,CV,test
+CB|CV|official_name,CB,Republic of Cabo Verde,CV,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,CV,test
+CB|CW|alpha_2,CB,CW,CW,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CW,dev
+CB|CW|alpha_3,CB,CUW,CW,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CW,dev
+CB|CW|name,CB,Curaçao,CW,country,False,REFUSE,ISO3166-1(pycountry):name,none,CW,dev
+CB|CX|alpha_2,CB,CX,CX,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CX,dev
+CB|CX|alpha_3,CB,CXR,CX,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CX,dev
+CB|CX|name,CB,Christmas Island,CX,country,False,REFUSE,ISO3166-1(pycountry):name,none,CX,dev
+CB|CY|alpha_2,CB,CY,CY,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CY,dev
+CB|CY|alpha_3,CB,CYP,CY,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CY,dev
+CB|CY|name,CB,Cyprus,CY,country,False,REFUSE,ISO3166-1(pycountry):name,none,CY,dev
+CB|CY|official_name,CB,Republic of Cyprus,CY,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,CY,dev
+CB|CZ|alpha_2,CB,CZ,CZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,CZ,test
+CB|CZ|alpha_3,CB,CZE,CZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,CZ,test
+CB|CZ|name,CB,Czechia,CZ,country,False,REFUSE,ISO3166-1(pycountry):name,none,CZ,test
+CB|CZ|official_name,CB,Czech Republic,CZ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,CZ,test
+CB|DE|alpha_2,CB,DE,DE,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,DE,dev
+CB|DE|alpha_3,CB,DEU,DE,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,DE,dev
+CB|DE|official_name,CB,Federal Republic of Germany,DE,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,DE,dev
+CB|DJ|alpha_2,CB,DJ,DJ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,DJ,test
+CB|DJ|alpha_3,CB,DJI,DJ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,DJ,test
+CB|DJ|name,CB,Djibouti,DJ,country,False,REFUSE,ISO3166-1(pycountry):name,none,DJ,test
+CB|DJ|official_name,CB,Republic of Djibouti,DJ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,DJ,test
+CB|DK|alpha_2,CB,DK,DK,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,DK,dev
+CB|DK|alpha_3,CB,DNK,DK,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,DK,dev
+CB|DK|official_name,CB,Kingdom of Denmark,DK,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,DK,dev
+CB|DM|alpha_2,CB,DM,DM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,DM,dev
+CB|DM|alpha_3,CB,DMA,DM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,DM,dev
+CB|DM|name,CB,Dominica,DM,country,False,REFUSE,ISO3166-1(pycountry):name,none,DM,dev
+CB|DM|official_name,CB,Commonwealth of Dominica,DM,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,DM,dev
+CB|DO|alpha_2,CB,DO,DO,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,DO,dev
+CB|DO|alpha_3,CB,DOM,DO,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,DO,dev
+CB|DO|name,CB,Dominican Republic,DO,country,False,REFUSE,ISO3166-1(pycountry):name,none,DO,dev
+CB|DZ|alpha_2,CB,DZ,DZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,DZ,dev
+CB|DZ|alpha_3,CB,DZA,DZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,DZ,dev
+CB|DZ|name,CB,Algeria,DZ,country,False,REFUSE,ISO3166-1(pycountry):name,none,DZ,dev
+CB|DZ|official_name,CB,People's Democratic Republic of Algeria,DZ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,DZ,dev
+CB|EC|alpha_2,CB,EC,EC,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,EC,test
+CB|EC|alpha_3,CB,ECU,EC,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,EC,test
+CB|EC|name,CB,Ecuador,EC,country,False,REFUSE,ISO3166-1(pycountry):name,none,EC,test
+CB|EC|official_name,CB,Republic of Ecuador,EC,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,EC,test
+CB|EE|alpha_2,CB,EE,EE,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,EE,dev
+CB|EE|alpha_3,CB,EST,EE,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,EE,dev
+CB|EE|name,CB,Estonia,EE,country,False,REFUSE,ISO3166-1(pycountry):name,none,EE,dev
+CB|EE|official_name,CB,Republic of Estonia,EE,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,EE,dev
+CB|EG|alpha_2,CB,EG,EG,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,EG,dev
+CB|EG|alpha_3,CB,EGY,EG,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,EG,dev
+CB|EG|official_name,CB,Arab Republic of Egypt,EG,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,EG,dev
+CB|EH|alpha_2,CB,EH,EH,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,EH,test
+CB|EH|alpha_3,CB,ESH,EH,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,EH,test
+CB|EH|name,CB,Western Sahara,EH,country,False,REFUSE,ISO3166-1(pycountry):name,none,EH,test
+CB|ER|alpha_2,CB,ER,ER,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,ER,test
+CB|ER|alpha_3,CB,ERI,ER,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,ER,test
+CB|ER|name,CB,Eritrea,ER,country,False,REFUSE,ISO3166-1(pycountry):name,none,ER,test
+CB|ER|official_name,CB,the State of Eritrea,ER,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,ER,test
+CB|ES|alpha_2,CB,ES,ES,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,ES,test
+CB|ES|alpha_3,CB,ESP,ES,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,ES,test
+CB|ES|official_name,CB,Kingdom of Spain,ES,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,ES,test
+CB|ET|alpha_2,CB,ET,ET,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,ET,dev
+CB|ET|alpha_3,CB,ETH,ET,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,ET,dev
+CB|ET|name,CB,Ethiopia,ET,country,False,REFUSE,ISO3166-1(pycountry):name,none,ET,dev
+CB|ET|official_name,CB,Federal Democratic Republic of Ethiopia,ET,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,ET,dev
+CB|FI|alpha_2,CB,FI,FI,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,FI,dev
+CB|FI|alpha_3,CB,FIN,FI,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,FI,dev
+CB|FI|name,CB,Finland,FI,country,False,REFUSE,ISO3166-1(pycountry):name,none,FI,dev
+CB|FI|official_name,CB,Republic of Finland,FI,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,FI,dev
+CB|FJ|alpha_2,CB,FJ,FJ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,FJ,test
+CB|FJ|alpha_3,CB,FJI,FJ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,FJ,test
+CB|FJ|name,CB,Fiji,FJ,country,False,REFUSE,ISO3166-1(pycountry):name,none,FJ,test
+CB|FJ|official_name,CB,Republic of Fiji,FJ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,FJ,test
+CB|FK|alpha_2,CB,FK,FK,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,FK,dev
+CB|FK|alpha_3,CB,FLK,FK,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,FK,dev
+CB|FK|name,CB,Falkland Islands (Malvinas),FK,country,False,REFUSE,ISO3166-1(pycountry):name,none,FK,dev
+CB|FM|alpha_2,CB,FM,FM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,FM,test
+CB|FM|alpha_3,CB,FSM,FM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,FM,test
+CB|FM|name,CB,"Micronesia, Federated States of",FM,country,False,REFUSE,ISO3166-1(pycountry):name,none,FM,test
+CB|FM|official_name,CB,Federated States of Micronesia,FM,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,FM,test
+CB|FO|alpha_2,CB,FO,FO,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,FO,dev
+CB|FO|alpha_3,CB,FRO,FO,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,FO,dev
+CB|FO|name,CB,Faroe Islands,FO,country,False,REFUSE,ISO3166-1(pycountry):name,none,FO,dev
+CB|FR|alpha_2,CB,FR,FR,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,FR,test
+CB|FR|alpha_3,CB,FRA,FR,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,FR,test
+CB|FR|official_name,CB,French Republic,FR,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,FR,test
+CB|GA|alpha_2,CB,GA,GA,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GA,dev
+CB|GA|alpha_3,CB,GAB,GA,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GA,dev
+CB|GA|name,CB,Gabon,GA,country,False,REFUSE,ISO3166-1(pycountry):name,none,GA,dev
+CB|GA|official_name,CB,Gabonese Republic,GA,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,GA,dev
+CB|GB|alpha_2,CB,GB,GB,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,GB,dev
+CB|GB|alpha_3,CB,GBR,GB,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,GB,dev
+CB|GB|official_name,CB,United Kingdom of Great Britain and Northern Ireland,GB,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,GB,dev
+CB|GD|alpha_2,CB,GD,GD,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GD,test
+CB|GD|alpha_3,CB,GRD,GD,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GD,test
+CB|GD|name,CB,Grenada,GD,country,False,REFUSE,ISO3166-1(pycountry):name,none,GD,test
+CB|GE|alpha_2,CB,GE,GE,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GE,dev
+CB|GE|alpha_3,CB,GEO,GE,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GE,dev
+CB|GE|name,CB,Georgia,GE,country,False,REFUSE,ISO3166-1(pycountry):name,none,GE,dev
+CB|GF|alpha_2,CB,GF,GF,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GF,dev
+CB|GF|alpha_3,CB,GUF,GF,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GF,dev
+CB|GF|name,CB,French Guiana,GF,country,False,REFUSE,ISO3166-1(pycountry):name,none,GF,dev
+CB|GG|alpha_2,CB,GG,GG,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GG,dev
+CB|GG|alpha_3,CB,GGY,GG,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GG,dev
+CB|GG|name,CB,Guernsey,GG,country,False,REFUSE,ISO3166-1(pycountry):name,none,GG,dev
+CB|GH|alpha_2,CB,GH,GH,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GH,test
+CB|GH|alpha_3,CB,GHA,GH,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GH,test
+CB|GH|name,CB,Ghana,GH,country,False,REFUSE,ISO3166-1(pycountry):name,none,GH,test
+CB|GH|official_name,CB,Republic of Ghana,GH,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,GH,test
+CB|GI|alpha_2,CB,GI,GI,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GI,test
+CB|GI|alpha_3,CB,GIB,GI,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GI,test
+CB|GI|name,CB,Gibraltar,GI,country,False,REFUSE,ISO3166-1(pycountry):name,none,GI,test
+CB|GL|alpha_2,CB,GL,GL,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GL,test
+CB|GL|alpha_3,CB,GRL,GL,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GL,test
+CB|GL|name,CB,Greenland,GL,country,False,REFUSE,ISO3166-1(pycountry):name,none,GL,test
+CB|GM|alpha_2,CB,GM,GM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GM,test
+CB|GM|alpha_3,CB,GMB,GM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GM,test
+CB|GM|name,CB,Gambia,GM,country,False,REFUSE,ISO3166-1(pycountry):name,none,GM,test
+CB|GM|official_name,CB,Republic of the Gambia,GM,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,GM,test
+CB|GN|alpha_2,CB,GN,GN,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GN,test
+CB|GN|alpha_3,CB,GIN,GN,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GN,test
+CB|GN|name,CB,Guinea,GN,country,False,REFUSE,ISO3166-1(pycountry):name,none,GN,test
+CB|GN|official_name,CB,Republic of Guinea,GN,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,GN,test
+CB|GP|alpha_2,CB,GP,GP,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GP,test
+CB|GP|alpha_3,CB,GLP,GP,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GP,test
+CB|GP|name,CB,Guadeloupe,GP,country,False,REFUSE,ISO3166-1(pycountry):name,none,GP,test
+CB|GQ|alpha_2,CB,GQ,GQ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GQ,dev
+CB|GQ|alpha_3,CB,GNQ,GQ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GQ,dev
+CB|GQ|name,CB,Equatorial Guinea,GQ,country,False,REFUSE,ISO3166-1(pycountry):name,none,GQ,dev
+CB|GQ|official_name,CB,Republic of Equatorial Guinea,GQ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,GQ,dev
+CB|GR|alpha_2,CB,GR,GR,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,GR,test
+CB|GR|alpha_3,CB,GRC,GR,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,GR,test
+CB|GR|official_name,CB,Hellenic Republic,GR,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,GR,test
+CB|GS|alpha_2,CB,GS,GS,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GS,dev
+CB|GS|alpha_3,CB,SGS,GS,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GS,dev
+CB|GS|name,CB,South Georgia and the South Sandwich Islands,GS,country,False,REFUSE,ISO3166-1(pycountry):name,none,GS,dev
+CB|GT|alpha_2,CB,GT,GT,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GT,test
+CB|GT|alpha_3,CB,GTM,GT,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GT,test
+CB|GT|name,CB,Guatemala,GT,country,False,REFUSE,ISO3166-1(pycountry):name,none,GT,test
+CB|GT|official_name,CB,Republic of Guatemala,GT,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,GT,test
+CB|GU|alpha_2,CB,GU,GU,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GU,dev
+CB|GU|alpha_3,CB,GUM,GU,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GU,dev
+CB|GU|name,CB,Guam,GU,country,False,REFUSE,ISO3166-1(pycountry):name,none,GU,dev
+CB|GW|alpha_2,CB,GW,GW,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GW,test
+CB|GW|alpha_3,CB,GNB,GW,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GW,test
+CB|GW|name,CB,Guinea-Bissau,GW,country,False,REFUSE,ISO3166-1(pycountry):name,none,GW,test
+CB|GW|official_name,CB,Republic of Guinea-Bissau,GW,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,GW,test
+CB|GY|alpha_2,CB,GY,GY,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,GY,dev
+CB|GY|alpha_3,CB,GUY,GY,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,GY,dev
+CB|GY|name,CB,Guyana,GY,country,False,REFUSE,ISO3166-1(pycountry):name,none,GY,dev
+CB|GY|official_name,CB,Republic of Guyana,GY,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,GY,dev
+CB|HK|alpha_2,CB,HK,HK,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,HK,test
+CB|HK|alpha_3,CB,HKG,HK,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,HK,test
+CB|HK|name,CB,Hong Kong,HK,country,False,REFUSE,ISO3166-1(pycountry):name,none,HK,test
+CB|HK|official_name,CB,Hong Kong Special Administrative Region of China,HK,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,HK,test
+CB|HM|alpha_2,CB,HM,HM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,HM,test
+CB|HM|alpha_3,CB,HMD,HM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,HM,test
+CB|HM|name,CB,Heard Island and McDonald Islands,HM,country,False,REFUSE,ISO3166-1(pycountry):name,none,HM,test
+CB|HN|alpha_2,CB,HN,HN,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,HN,dev
+CB|HN|alpha_3,CB,HND,HN,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,HN,dev
+CB|HN|name,CB,Honduras,HN,country,False,REFUSE,ISO3166-1(pycountry):name,none,HN,dev
+CB|HN|official_name,CB,Republic of Honduras,HN,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,HN,dev
+CB|HR|alpha_2,CB,HR,HR,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,HR,test
+CB|HR|alpha_3,CB,HRV,HR,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,HR,test
+CB|HR|name,CB,Croatia,HR,country,False,REFUSE,ISO3166-1(pycountry):name,none,HR,test
+CB|HR|official_name,CB,Republic of Croatia,HR,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,HR,test
+CB|HT|alpha_2,CB,HT,HT,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,HT,test
+CB|HT|alpha_3,CB,HTI,HT,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,HT,test
+CB|HT|name,CB,Haiti,HT,country,False,REFUSE,ISO3166-1(pycountry):name,none,HT,test
+CB|HT|official_name,CB,Republic of Haiti,HT,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,HT,test
+CB|HU|alpha_2,CB,HU,HU,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,HU,test
+CB|HU|alpha_3,CB,HUN,HU,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,HU,test
+CB|HU|name,CB,Hungary,HU,country,False,REFUSE,ISO3166-1(pycountry):name,none,HU,test
+CB|ID|alpha_2,CB,ID,ID,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,ID,test
+CB|ID|alpha_3,CB,IDN,ID,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,ID,test
+CB|ID|official_name,CB,Republic of Indonesia,ID,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,ID,test
+CB|IE|alpha_2,CB,IE,IE,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,IE,dev
+CB|IE|alpha_3,CB,IRL,IE,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,IE,dev
+CB|IL|alpha_2,CB,IL,IL,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,IL,test
+CB|IL|alpha_3,CB,ISR,IL,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,IL,test
+CB|IL|name,CB,Israel,IL,country,False,REFUSE,ISO3166-1(pycountry):name,none,IL,test
+CB|IL|official_name,CB,State of Israel,IL,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,IL,test
+CB|IM|alpha_2,CB,IM,IM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,IM,test
+CB|IM|alpha_3,CB,IMN,IM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,IM,test
+CB|IM|name,CB,Isle of Man,IM,country,False,REFUSE,ISO3166-1(pycountry):name,none,IM,test
+CB|IN|alpha_2,CB,IN,IN,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,IN,dev
+CB|IN|alpha_3,CB,IND,IN,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,IN,dev
+CB|IN|official_name,CB,Republic of India,IN,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,IN,dev
+CB|IO|alpha_2,CB,IO,IO,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,IO,dev
+CB|IO|alpha_3,CB,IOT,IO,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,IO,dev
+CB|IO|name,CB,British Indian Ocean Territory,IO,country,False,REFUSE,ISO3166-1(pycountry):name,none,IO,dev
+CB|IQ|alpha_2,CB,IQ,IQ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,IQ,test
+CB|IQ|alpha_3,CB,IRQ,IQ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,IQ,test
+CB|IQ|name,CB,Iraq,IQ,country,False,REFUSE,ISO3166-1(pycountry):name,none,IQ,test
+CB|IQ|official_name,CB,Republic of Iraq,IQ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,IQ,test
+CB|IR|alpha_2,CB,IR,IR,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,IR,dev
+CB|IR|alpha_3,CB,IRN,IR,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,IR,dev
+CB|IR|common_name,CB,Iran,IR,country,False,REFUSE,ISO3166-1(pycountry):common_name,none,IR,dev
+CB|IR|name,CB,"Iran, Islamic Republic of",IR,country,False,REFUSE,ISO3166-1(pycountry):name,none,IR,dev
+CB|IR|official_name,CB,Islamic Republic of Iran,IR,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,IR,dev
+CB|IS|alpha_2,CB,IS,IS,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,IS,dev
+CB|IS|alpha_3,CB,ISL,IS,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,IS,dev
+CB|IS|name,CB,Iceland,IS,country,False,REFUSE,ISO3166-1(pycountry):name,none,IS,dev
+CB|IS|official_name,CB,Republic of Iceland,IS,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,IS,dev
+CB|IT|alpha_2,CB,IT,IT,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,IT,test
+CB|IT|alpha_3,CB,ITA,IT,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,IT,test
+CB|IT|official_name,CB,Italian Republic,IT,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,IT,test
+CB|JE|alpha_2,CB,JE,JE,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,JE,test
+CB|JE|alpha_3,CB,JEY,JE,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,JE,test
+CB|JE|name,CB,Jersey,JE,country,False,REFUSE,ISO3166-1(pycountry):name,none,JE,test
+CB|JM|alpha_2,CB,JM,JM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,JM,test
+CB|JM|alpha_3,CB,JAM,JM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,JM,test
+CB|JM|name,CB,Jamaica,JM,country,False,REFUSE,ISO3166-1(pycountry):name,none,JM,test
+CB|JO|alpha_2,CB,JO,JO,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,JO,test
+CB|JO|alpha_3,CB,JOR,JO,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,JO,test
+CB|JO|name,CB,Jordan,JO,country,False,REFUSE,ISO3166-1(pycountry):name,none,JO,test
+CB|JO|official_name,CB,Hashemite Kingdom of Jordan,JO,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,JO,test
+CB|JP|alpha_2,CB,JP,JP,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,JP,test
+CB|JP|alpha_3,CB,JPN,JP,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,JP,test
+CB|KE|alpha_2,CB,KE,KE,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,KE,test
+CB|KE|alpha_3,CB,KEN,KE,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,KE,test
+CB|KE|name,CB,Kenya,KE,country,False,REFUSE,ISO3166-1(pycountry):name,none,KE,test
+CB|KE|official_name,CB,Republic of Kenya,KE,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,KE,test
+CB|KG|alpha_2,CB,KG,KG,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,KG,dev
+CB|KG|alpha_3,CB,KGZ,KG,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,KG,dev
+CB|KG|name,CB,Kyrgyzstan,KG,country,False,REFUSE,ISO3166-1(pycountry):name,none,KG,dev
+CB|KG|official_name,CB,Kyrgyz Republic,KG,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,KG,dev
+CB|KH|alpha_2,CB,KH,KH,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,KH,dev
+CB|KH|alpha_3,CB,KHM,KH,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,KH,dev
+CB|KH|name,CB,Cambodia,KH,country,False,REFUSE,ISO3166-1(pycountry):name,none,KH,dev
+CB|KH|official_name,CB,Kingdom of Cambodia,KH,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,KH,dev
+CB|KI|alpha_2,CB,KI,KI,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,KI,dev
+CB|KI|alpha_3,CB,KIR,KI,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,KI,dev
+CB|KI|name,CB,Kiribati,KI,country,False,REFUSE,ISO3166-1(pycountry):name,none,KI,dev
+CB|KI|official_name,CB,Republic of Kiribati,KI,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,KI,dev
+CB|KM|alpha_2,CB,KM,KM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,KM,dev
+CB|KM|alpha_3,CB,COM,KM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,KM,dev
+CB|KM|name,CB,Comoros,KM,country,False,REFUSE,ISO3166-1(pycountry):name,none,KM,dev
+CB|KM|official_name,CB,Union of the Comoros,KM,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,KM,dev
+CB|KN|alpha_2,CB,KN,KN,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,KN,test
+CB|KN|alpha_3,CB,KNA,KN,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,KN,test
+CB|KN|name,CB,Saint Kitts and Nevis,KN,country,False,REFUSE,ISO3166-1(pycountry):name,none,KN,test
+CB|KP|alpha_2,CB,KP,KP,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,KP,test
+CB|KP|alpha_3,CB,PRK,KP,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,KP,test
+CB|KP|common_name,CB,North Korea,KP,country,False,REFUSE,ISO3166-1(pycountry):common_name,none,KP,test
+CB|KP|name,CB,"Korea, Democratic People's Republic of",KP,country,False,REFUSE,ISO3166-1(pycountry):name,none,KP,test
+CB|KP|official_name,CB,Democratic People's Republic of Korea,KP,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,KP,test
+CB|KR|alpha_2,CB,KR,KR,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,KR,test
+CB|KR|alpha_3,CB,KOR,KR,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,KR,test
+CB|KR|name,CB,"Korea, Republic of",KR,country,True,COMPUTE,ISO3166-1(pycountry):name,none,KR,test
+CB|KW|alpha_2,CB,KW,KW,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,KW,test
+CB|KW|alpha_3,CB,KWT,KW,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,KW,test
+CB|KW|name,CB,Kuwait,KW,country,False,REFUSE,ISO3166-1(pycountry):name,none,KW,test
+CB|KW|official_name,CB,State of Kuwait,KW,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,KW,test
+CB|KY|alpha_2,CB,KY,KY,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,KY,test
+CB|KY|alpha_3,CB,CYM,KY,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,KY,test
+CB|KY|name,CB,Cayman Islands,KY,country,False,REFUSE,ISO3166-1(pycountry):name,none,KY,test
+CB|KZ|alpha_2,CB,KZ,KZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,KZ,dev
+CB|KZ|alpha_3,CB,KAZ,KZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,KZ,dev
+CB|KZ|name,CB,Kazakhstan,KZ,country,False,REFUSE,ISO3166-1(pycountry):name,none,KZ,dev
+CB|KZ|official_name,CB,Republic of Kazakhstan,KZ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,KZ,dev
+CB|LA|alpha_2,CB,LA,LA,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,LA,test
+CB|LA|alpha_3,CB,LAO,LA,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,LA,test
+CB|LA|common_name,CB,Laos,LA,country,False,REFUSE,ISO3166-1(pycountry):common_name,none,LA,test
+CB|LA|name,CB,Lao People's Democratic Republic,LA,country,False,REFUSE,ISO3166-1(pycountry):name,none,LA,test
+CB|LB|alpha_2,CB,LB,LB,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,LB,test
+CB|LB|alpha_3,CB,LBN,LB,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,LB,test
+CB|LB|name,CB,Lebanon,LB,country,False,REFUSE,ISO3166-1(pycountry):name,none,LB,test
+CB|LB|official_name,CB,Lebanese Republic,LB,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,LB,test
+CB|LC|alpha_2,CB,LC,LC,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,LC,test
+CB|LC|alpha_3,CB,LCA,LC,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,LC,test
+CB|LC|name,CB,Saint Lucia,LC,country,False,REFUSE,ISO3166-1(pycountry):name,none,LC,test
+CB|LI|alpha_2,CB,LI,LI,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,LI,test
+CB|LI|alpha_3,CB,LIE,LI,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,LI,test
+CB|LI|name,CB,Liechtenstein,LI,country,False,REFUSE,ISO3166-1(pycountry):name,none,LI,test
+CB|LI|official_name,CB,Principality of Liechtenstein,LI,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,LI,test
+CB|LK|alpha_2,CB,LK,LK,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,LK,dev
+CB|LK|alpha_3,CB,LKA,LK,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,LK,dev
+CB|LK|name,CB,Sri Lanka,LK,country,False,REFUSE,ISO3166-1(pycountry):name,none,LK,dev
+CB|LK|official_name,CB,Democratic Socialist Republic of Sri Lanka,LK,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,LK,dev
+CB|LR|alpha_2,CB,LR,LR,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,LR,dev
+CB|LR|alpha_3,CB,LBR,LR,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,LR,dev
+CB|LR|name,CB,Liberia,LR,country,False,REFUSE,ISO3166-1(pycountry):name,none,LR,dev
+CB|LR|official_name,CB,Republic of Liberia,LR,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,LR,dev
+CB|LS|alpha_2,CB,LS,LS,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,LS,dev
+CB|LS|alpha_3,CB,LSO,LS,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,LS,dev
+CB|LS|name,CB,Lesotho,LS,country,False,REFUSE,ISO3166-1(pycountry):name,none,LS,dev
+CB|LS|official_name,CB,Kingdom of Lesotho,LS,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,LS,dev
+CB|LT|alpha_2,CB,LT,LT,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,LT,test
+CB|LT|alpha_3,CB,LTU,LT,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,LT,test
+CB|LT|name,CB,Lithuania,LT,country,False,REFUSE,ISO3166-1(pycountry):name,none,LT,test
+CB|LT|official_name,CB,Republic of Lithuania,LT,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,LT,test
+CB|LU|alpha_2,CB,LU,LU,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,LU,dev
+CB|LU|alpha_3,CB,LUX,LU,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,LU,dev
+CB|LU|name,CB,Luxembourg,LU,country,False,REFUSE,ISO3166-1(pycountry):name,none,LU,dev
+CB|LU|official_name,CB,Grand Duchy of Luxembourg,LU,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,LU,dev
+CB|LV|alpha_2,CB,LV,LV,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,LV,test
+CB|LV|alpha_3,CB,LVA,LV,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,LV,test
+CB|LV|name,CB,Latvia,LV,country,False,REFUSE,ISO3166-1(pycountry):name,none,LV,test
+CB|LV|official_name,CB,Republic of Latvia,LV,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,LV,test
+CB|LY|alpha_2,CB,LY,LY,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,LY,dev
+CB|LY|alpha_3,CB,LBY,LY,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,LY,dev
+CB|LY|name,CB,Libya,LY,country,False,REFUSE,ISO3166-1(pycountry):name,none,LY,dev
+CB|MA|alpha_2,CB,MA,MA,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MA,test
+CB|MA|alpha_3,CB,MAR,MA,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MA,test
+CB|MA|name,CB,Morocco,MA,country,False,REFUSE,ISO3166-1(pycountry):name,none,MA,test
+CB|MA|official_name,CB,Kingdom of Morocco,MA,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MA,test
+CB|MC|alpha_2,CB,MC,MC,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MC,test
+CB|MC|alpha_3,CB,MCO,MC,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MC,test
+CB|MC|name,CB,Monaco,MC,country,False,REFUSE,ISO3166-1(pycountry):name,none,MC,test
+CB|MC|official_name,CB,Principality of Monaco,MC,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MC,test
+CB|MD|alpha_2,CB,MD,MD,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MD,test
+CB|MD|alpha_3,CB,MDA,MD,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MD,test
+CB|MD|common_name,CB,Moldova,MD,country,False,REFUSE,ISO3166-1(pycountry):common_name,none,MD,test
+CB|MD|name,CB,"Moldova, Republic of",MD,country,False,REFUSE,ISO3166-1(pycountry):name,none,MD,test
+CB|MD|official_name,CB,Republic of Moldova,MD,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MD,test
+CB|ME|alpha_2,CB,ME,ME,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,ME,test
+CB|ME|alpha_3,CB,MNE,ME,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,ME,test
+CB|ME|name,CB,Montenegro,ME,country,False,REFUSE,ISO3166-1(pycountry):name,none,ME,test
+CB|MF|alpha_2,CB,MF,MF,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MF,dev
+CB|MF|alpha_3,CB,MAF,MF,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MF,dev
+CB|MF|name,CB,Saint Martin (French part),MF,country,False,REFUSE,ISO3166-1(pycountry):name,none,MF,dev
+CB|MG|alpha_2,CB,MG,MG,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MG,dev
+CB|MG|alpha_3,CB,MDG,MG,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MG,dev
+CB|MG|name,CB,Madagascar,MG,country,False,REFUSE,ISO3166-1(pycountry):name,none,MG,dev
+CB|MG|official_name,CB,Republic of Madagascar,MG,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MG,dev
+CB|MH|alpha_2,CB,MH,MH,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MH,test
+CB|MH|alpha_3,CB,MHL,MH,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MH,test
+CB|MH|name,CB,Marshall Islands,MH,country,False,REFUSE,ISO3166-1(pycountry):name,none,MH,test
+CB|MH|official_name,CB,Republic of the Marshall Islands,MH,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MH,test
+CB|MK|alpha_2,CB,MK,MK,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MK,dev
+CB|MK|alpha_3,CB,MKD,MK,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MK,dev
+CB|MK|name,CB,North Macedonia,MK,country,False,REFUSE,ISO3166-1(pycountry):name,none,MK,dev
+CB|MK|official_name,CB,Republic of North Macedonia,MK,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MK,dev
+CB|ML|alpha_2,CB,ML,ML,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,ML,dev
+CB|ML|alpha_3,CB,MLI,ML,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,ML,dev
+CB|ML|name,CB,Mali,ML,country,False,REFUSE,ISO3166-1(pycountry):name,none,ML,dev
+CB|ML|official_name,CB,Republic of Mali,ML,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,ML,dev
+CB|MM|alpha_2,CB,MM,MM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MM,dev
+CB|MM|alpha_3,CB,MMR,MM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MM,dev
+CB|MM|name,CB,Myanmar,MM,country,False,REFUSE,ISO3166-1(pycountry):name,none,MM,dev
+CB|MM|official_name,CB,Republic of Myanmar,MM,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MM,dev
+CB|MN|alpha_2,CB,MN,MN,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MN,dev
+CB|MN|alpha_3,CB,MNG,MN,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MN,dev
+CB|MN|name,CB,Mongolia,MN,country,False,REFUSE,ISO3166-1(pycountry):name,none,MN,dev
+CB|MO|alpha_2,CB,MO,MO,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MO,dev
+CB|MO|alpha_3,CB,MAC,MO,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MO,dev
+CB|MO|name,CB,Macao,MO,country,False,REFUSE,ISO3166-1(pycountry):name,none,MO,dev
+CB|MO|official_name,CB,Macao Special Administrative Region of China,MO,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MO,dev
+CB|MP|alpha_2,CB,MP,MP,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MP,dev
+CB|MP|alpha_3,CB,MNP,MP,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MP,dev
+CB|MP|name,CB,Northern Mariana Islands,MP,country,False,REFUSE,ISO3166-1(pycountry):name,none,MP,dev
+CB|MP|official_name,CB,Commonwealth of the Northern Mariana Islands,MP,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MP,dev
+CB|MQ|alpha_2,CB,MQ,MQ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MQ,test
+CB|MQ|alpha_3,CB,MTQ,MQ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MQ,test
+CB|MQ|name,CB,Martinique,MQ,country,False,REFUSE,ISO3166-1(pycountry):name,none,MQ,test
+CB|MR|alpha_2,CB,MR,MR,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MR,test
+CB|MR|alpha_3,CB,MRT,MR,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MR,test
+CB|MR|name,CB,Mauritania,MR,country,False,REFUSE,ISO3166-1(pycountry):name,none,MR,test
+CB|MR|official_name,CB,Islamic Republic of Mauritania,MR,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MR,test
+CB|MS|alpha_2,CB,MS,MS,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MS,test
+CB|MS|alpha_3,CB,MSR,MS,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MS,test
+CB|MS|name,CB,Montserrat,MS,country,False,REFUSE,ISO3166-1(pycountry):name,none,MS,test
+CB|MT|alpha_2,CB,MT,MT,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MT,test
+CB|MT|alpha_3,CB,MLT,MT,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MT,test
+CB|MT|name,CB,Malta,MT,country,False,REFUSE,ISO3166-1(pycountry):name,none,MT,test
+CB|MT|official_name,CB,Republic of Malta,MT,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MT,test
+CB|MU|alpha_2,CB,MU,MU,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MU,dev
+CB|MU|alpha_3,CB,MUS,MU,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MU,dev
+CB|MU|name,CB,Mauritius,MU,country,False,REFUSE,ISO3166-1(pycountry):name,none,MU,dev
+CB|MU|official_name,CB,Republic of Mauritius,MU,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MU,dev
+CB|MV|alpha_2,CB,MV,MV,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MV,test
+CB|MV|alpha_3,CB,MDV,MV,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MV,test
+CB|MV|name,CB,Maldives,MV,country,False,REFUSE,ISO3166-1(pycountry):name,none,MV,test
+CB|MV|official_name,CB,Republic of Maldives,MV,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MV,test
+CB|MW|alpha_2,CB,MW,MW,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MW,test
+CB|MW|alpha_3,CB,MWI,MW,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MW,test
+CB|MW|name,CB,Malawi,MW,country,False,REFUSE,ISO3166-1(pycountry):name,none,MW,test
+CB|MW|official_name,CB,Republic of Malawi,MW,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MW,test
+CB|MX|alpha_2,CB,MX,MX,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,MX,test
+CB|MX|alpha_3,CB,MEX,MX,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,MX,test
+CB|MX|official_name,CB,United Mexican States,MX,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,MX,test
+CB|MY|alpha_2,CB,MY,MY,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,MY,test
+CB|MY|alpha_3,CB,MYS,MY,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,MY,test
+CB|MZ|alpha_2,CB,MZ,MZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,MZ,test
+CB|MZ|alpha_3,CB,MOZ,MZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,MZ,test
+CB|MZ|name,CB,Mozambique,MZ,country,False,REFUSE,ISO3166-1(pycountry):name,none,MZ,test
+CB|MZ|official_name,CB,Republic of Mozambique,MZ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,MZ,test
+CB|NA|alpha_2,CB,NA,NA,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,NA,test
+CB|NA|alpha_3,CB,NAM,NA,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,NA,test
+CB|NA|name,CB,Namibia,NA,country,False,REFUSE,ISO3166-1(pycountry):name,none,NA,test
+CB|NA|official_name,CB,Republic of Namibia,NA,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,NA,test
+CB|NC|alpha_2,CB,NC,NC,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,NC,test
+CB|NC|alpha_3,CB,NCL,NC,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,NC,test
+CB|NC|name,CB,New Caledonia,NC,country,False,REFUSE,ISO3166-1(pycountry):name,none,NC,test
+CB|NE|alpha_2,CB,NE,NE,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,NE,test
+CB|NE|alpha_3,CB,NER,NE,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,NE,test
+CB|NE|name,CB,Niger,NE,country,False,REFUSE,ISO3166-1(pycountry):name,none,NE,test
+CB|NE|official_name,CB,Republic of the Niger,NE,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,NE,test
+CB|NF|alpha_2,CB,NF,NF,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,NF,test
+CB|NF|alpha_3,CB,NFK,NF,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,NF,test
+CB|NF|name,CB,Norfolk Island,NF,country,False,REFUSE,ISO3166-1(pycountry):name,none,NF,test
+CB|NG|alpha_2,CB,NG,NG,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,NG,test
+CB|NG|alpha_3,CB,NGA,NG,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,NG,test
+CB|NG|official_name,CB,Federal Republic of Nigeria,NG,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,NG,test
+CB|NI|alpha_2,CB,NI,NI,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,NI,dev
+CB|NI|alpha_3,CB,NIC,NI,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,NI,dev
+CB|NI|name,CB,Nicaragua,NI,country,False,REFUSE,ISO3166-1(pycountry):name,none,NI,dev
+CB|NI|official_name,CB,Republic of Nicaragua,NI,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,NI,dev
+CB|NL|alpha_2,CB,NL,NL,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,NL,dev
+CB|NL|alpha_3,CB,NLD,NL,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,NL,dev
+CB|NL|official_name,CB,Kingdom of the Netherlands,NL,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,NL,dev
+CB|NO|alpha_2,CB,NO,NO,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,NO,test
+CB|NO|alpha_3,CB,NOR,NO,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,NO,test
+CB|NO|official_name,CB,Kingdom of Norway,NO,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,NO,test
+CB|NP|alpha_2,CB,NP,NP,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,NP,test
+CB|NP|alpha_3,CB,NPL,NP,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,NP,test
+CB|NP|name,CB,Nepal,NP,country,False,REFUSE,ISO3166-1(pycountry):name,none,NP,test
+CB|NP|official_name,CB,Federal Democratic Republic of Nepal,NP,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,NP,test
+CB|NR|alpha_2,CB,NR,NR,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,NR,dev
+CB|NR|alpha_3,CB,NRU,NR,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,NR,dev
+CB|NR|name,CB,Nauru,NR,country,False,REFUSE,ISO3166-1(pycountry):name,none,NR,dev
+CB|NR|official_name,CB,Republic of Nauru,NR,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,NR,dev
+CB|NU|alpha_2,CB,NU,NU,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,NU,test
+CB|NU|alpha_3,CB,NIU,NU,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,NU,test
+CB|NU|name,CB,Niue,NU,country,False,REFUSE,ISO3166-1(pycountry):name,none,NU,test
+CB|NZ|alpha_2,CB,NZ,NZ,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,NZ,dev
+CB|NZ|alpha_3,CB,NZL,NZ,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,NZ,dev
+CB|OM|alpha_2,CB,OM,OM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,OM,dev
+CB|OM|alpha_3,CB,OMN,OM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,OM,dev
+CB|OM|name,CB,Oman,OM,country,False,REFUSE,ISO3166-1(pycountry):name,none,OM,dev
+CB|OM|official_name,CB,Sultanate of Oman,OM,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,OM,dev
+CB|PA|alpha_2,CB,PA,PA,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,PA,dev
+CB|PA|alpha_3,CB,PAN,PA,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,PA,dev
+CB|PA|name,CB,Panama,PA,country,False,REFUSE,ISO3166-1(pycountry):name,none,PA,dev
+CB|PA|official_name,CB,Republic of Panama,PA,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,PA,dev
+CB|PE|alpha_2,CB,PE,PE,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,PE,dev
+CB|PE|alpha_3,CB,PER,PE,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,PE,dev
+CB|PE|name,CB,Peru,PE,country,False,REFUSE,ISO3166-1(pycountry):name,none,PE,dev
+CB|PE|official_name,CB,Republic of Peru,PE,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,PE,dev
+CB|PF|alpha_2,CB,PF,PF,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,PF,dev
+CB|PF|alpha_3,CB,PYF,PF,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,PF,dev
+CB|PF|name,CB,French Polynesia,PF,country,False,REFUSE,ISO3166-1(pycountry):name,none,PF,dev
+CB|PG|alpha_2,CB,PG,PG,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,PG,test
+CB|PG|alpha_3,CB,PNG,PG,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,PG,test
+CB|PG|name,CB,Papua New Guinea,PG,country,False,REFUSE,ISO3166-1(pycountry):name,none,PG,test
+CB|PG|official_name,CB,Independent State of Papua New Guinea,PG,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,PG,test
+CB|PH|alpha_2,CB,PH,PH,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,PH,dev
+CB|PH|alpha_3,CB,PHL,PH,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,PH,dev
+CB|PH|official_name,CB,Republic of the Philippines,PH,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,PH,dev
+CB|PK|alpha_2,CB,PK,PK,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,PK,test
+CB|PK|alpha_3,CB,PAK,PK,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,PK,test
+CB|PK|name,CB,Pakistan,PK,country,False,REFUSE,ISO3166-1(pycountry):name,none,PK,test
+CB|PK|official_name,CB,Islamic Republic of Pakistan,PK,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,PK,test
+CB|PL|alpha_2,CB,PL,PL,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,PL,test
+CB|PL|alpha_3,CB,POL,PL,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,PL,test
+CB|PL|official_name,CB,Republic of Poland,PL,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,PL,test
+CB|PM|alpha_2,CB,PM,PM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,PM,dev
+CB|PM|alpha_3,CB,SPM,PM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,PM,dev
+CB|PM|name,CB,Saint Pierre and Miquelon,PM,country,False,REFUSE,ISO3166-1(pycountry):name,none,PM,dev
+CB|PN|alpha_2,CB,PN,PN,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,PN,test
+CB|PN|alpha_3,CB,PCN,PN,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,PN,test
+CB|PN|name,CB,Pitcairn,PN,country,False,REFUSE,ISO3166-1(pycountry):name,none,PN,test
+CB|PR|alpha_2,CB,PR,PR,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,PR,dev
+CB|PR|alpha_3,CB,PRI,PR,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,PR,dev
+CB|PR|name,CB,Puerto Rico,PR,country,False,REFUSE,ISO3166-1(pycountry):name,none,PR,dev
+CB|PS|alpha_2,CB,PS,PS,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,PS,test
+CB|PS|alpha_3,CB,PSE,PS,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,PS,test
+CB|PS|name,CB,"Palestine, State of",PS,country,False,REFUSE,ISO3166-1(pycountry):name,none,PS,test
+CB|PS|official_name,CB,the State of Palestine,PS,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,PS,test
+CB|PT|alpha_2,CB,PT,PT,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,PT,test
+CB|PT|alpha_3,CB,PRT,PT,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,PT,test
+CB|PT|official_name,CB,Portuguese Republic,PT,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,PT,test
+CB|PW|alpha_2,CB,PW,PW,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,PW,test
+CB|PW|alpha_3,CB,PLW,PW,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,PW,test
+CB|PW|name,CB,Palau,PW,country,False,REFUSE,ISO3166-1(pycountry):name,none,PW,test
+CB|PW|official_name,CB,Republic of Palau,PW,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,PW,test
+CB|PY|alpha_2,CB,PY,PY,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,PY,test
+CB|PY|alpha_3,CB,PRY,PY,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,PY,test
+CB|PY|name,CB,Paraguay,PY,country,False,REFUSE,ISO3166-1(pycountry):name,none,PY,test
+CB|PY|official_name,CB,Republic of Paraguay,PY,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,PY,test
+CB|QA|alpha_2,CB,QA,QA,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,QA,test
+CB|QA|alpha_3,CB,QAT,QA,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,QA,test
+CB|QA|name,CB,Qatar,QA,country,False,REFUSE,ISO3166-1(pycountry):name,none,QA,test
+CB|QA|official_name,CB,State of Qatar,QA,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,QA,test
+CB|RE|alpha_2,CB,RE,RE,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,RE,dev
+CB|RE|alpha_3,CB,REU,RE,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,RE,dev
+CB|RE|name,CB,Réunion,RE,country,False,REFUSE,ISO3166-1(pycountry):name,none,RE,dev
+CB|RO|alpha_2,CB,RO,RO,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,RO,test
+CB|RO|alpha_3,CB,ROU,RO,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,RO,test
+CB|RO|name,CB,Romania,RO,country,False,REFUSE,ISO3166-1(pycountry):name,none,RO,test
+CB|RS|alpha_2,CB,RS,RS,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,RS,test
+CB|RS|alpha_3,CB,SRB,RS,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,RS,test
+CB|RS|name,CB,Serbia,RS,country,False,REFUSE,ISO3166-1(pycountry):name,none,RS,test
+CB|RS|official_name,CB,Republic of Serbia,RS,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,RS,test
+CB|RU|alpha_2,CB,RU,RU,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,RU,dev
+CB|RU|alpha_3,CB,RUS,RU,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,RU,dev
+CB|RU|name,CB,Russian Federation,RU,country,False,REFUSE,ISO3166-1(pycountry):name,none,RU,dev
+CB|RW|alpha_2,CB,RW,RW,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,RW,test
+CB|RW|alpha_3,CB,RWA,RW,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,RW,test
+CB|RW|name,CB,Rwanda,RW,country,False,REFUSE,ISO3166-1(pycountry):name,none,RW,test
+CB|RW|official_name,CB,Rwandese Republic,RW,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,RW,test
+CB|SA|alpha_2,CB,SA,SA,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,SA,dev
+CB|SA|alpha_3,CB,SAU,SA,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,SA,dev
+CB|SA|official_name,CB,Kingdom of Saudi Arabia,SA,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,SA,dev
+CB|SB|alpha_2,CB,SB,SB,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SB,test
+CB|SB|alpha_3,CB,SLB,SB,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SB,test
+CB|SB|name,CB,Solomon Islands,SB,country,False,REFUSE,ISO3166-1(pycountry):name,none,SB,test
+CB|SC|alpha_2,CB,SC,SC,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SC,test
+CB|SC|alpha_3,CB,SYC,SC,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SC,test
+CB|SC|name,CB,Seychelles,SC,country,False,REFUSE,ISO3166-1(pycountry):name,none,SC,test
+CB|SC|official_name,CB,Republic of Seychelles,SC,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,SC,test
+CB|SD|alpha_2,CB,SD,SD,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SD,test
+CB|SD|alpha_3,CB,SDN,SD,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SD,test
+CB|SD|name,CB,Sudan,SD,country,False,REFUSE,ISO3166-1(pycountry):name,none,SD,test
+CB|SD|official_name,CB,Republic of the Sudan,SD,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,SD,test
+CB|SE|alpha_2,CB,SE,SE,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,SE,test
+CB|SE|alpha_3,CB,SWE,SE,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,SE,test
+CB|SE|official_name,CB,Kingdom of Sweden,SE,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,SE,test
+CB|SG|alpha_2,CB,SG,SG,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,SG,dev
+CB|SG|alpha_3,CB,SGP,SG,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,SG,dev
+CB|SG|official_name,CB,Republic of Singapore,SG,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,SG,dev
+CB|SH|alpha_2,CB,SH,SH,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SH,test
+CB|SH|alpha_3,CB,SHN,SH,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SH,test
+CB|SH|name,CB,"Saint Helena, Ascension and Tristan da Cunha",SH,country,False,REFUSE,ISO3166-1(pycountry):name,none,SH,test
+CB|SI|alpha_2,CB,SI,SI,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SI,dev
+CB|SI|alpha_3,CB,SVN,SI,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SI,dev
+CB|SI|name,CB,Slovenia,SI,country,False,REFUSE,ISO3166-1(pycountry):name,none,SI,dev
+CB|SI|official_name,CB,Republic of Slovenia,SI,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,SI,dev
+CB|SJ|alpha_2,CB,SJ,SJ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SJ,test
+CB|SJ|alpha_3,CB,SJM,SJ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SJ,test
+CB|SJ|name,CB,Svalbard and Jan Mayen,SJ,country,False,REFUSE,ISO3166-1(pycountry):name,none,SJ,test
+CB|SK|alpha_2,CB,SK,SK,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SK,test
+CB|SK|alpha_3,CB,SVK,SK,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SK,test
+CB|SK|name,CB,Slovakia,SK,country,False,REFUSE,ISO3166-1(pycountry):name,none,SK,test
+CB|SK|official_name,CB,Slovak Republic,SK,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,SK,test
+CB|SL|alpha_2,CB,SL,SL,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SL,dev
+CB|SL|alpha_3,CB,SLE,SL,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SL,dev
+CB|SL|name,CB,Sierra Leone,SL,country,False,REFUSE,ISO3166-1(pycountry):name,none,SL,dev
+CB|SL|official_name,CB,Republic of Sierra Leone,SL,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,SL,dev
+CB|SM|alpha_2,CB,SM,SM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SM,dev
+CB|SM|alpha_3,CB,SMR,SM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SM,dev
+CB|SM|name,CB,San Marino,SM,country,False,REFUSE,ISO3166-1(pycountry):name,none,SM,dev
+CB|SM|official_name,CB,Republic of San Marino,SM,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,SM,dev
+CB|SN|alpha_2,CB,SN,SN,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SN,test
+CB|SN|alpha_3,CB,SEN,SN,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SN,test
+CB|SN|name,CB,Senegal,SN,country,False,REFUSE,ISO3166-1(pycountry):name,none,SN,test
+CB|SN|official_name,CB,Republic of Senegal,SN,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,SN,test
+CB|SO|alpha_2,CB,SO,SO,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SO,test
+CB|SO|alpha_3,CB,SOM,SO,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SO,test
+CB|SO|name,CB,Somalia,SO,country,False,REFUSE,ISO3166-1(pycountry):name,none,SO,test
+CB|SO|official_name,CB,Federal Republic of Somalia,SO,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,SO,test
+CB|SR|alpha_2,CB,SR,SR,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SR,test
+CB|SR|alpha_3,CB,SUR,SR,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SR,test
+CB|SR|name,CB,Suriname,SR,country,False,REFUSE,ISO3166-1(pycountry):name,none,SR,test
+CB|SR|official_name,CB,Republic of Suriname,SR,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,SR,test
+CB|SS|alpha_2,CB,SS,SS,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SS,test
+CB|SS|alpha_3,CB,SSD,SS,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SS,test
+CB|SS|name,CB,South Sudan,SS,country,False,REFUSE,ISO3166-1(pycountry):name,none,SS,test
+CB|SS|official_name,CB,Republic of South Sudan,SS,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,SS,test
+CB|ST|alpha_2,CB,ST,ST,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,ST,test
+CB|ST|alpha_3,CB,STP,ST,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,ST,test
+CB|ST|name,CB,Sao Tome and Principe,ST,country,False,REFUSE,ISO3166-1(pycountry):name,none,ST,test
+CB|ST|official_name,CB,Democratic Republic of Sao Tome and Principe,ST,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,ST,test
+CB|SV|alpha_2,CB,SV,SV,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SV,test
+CB|SV|alpha_3,CB,SLV,SV,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SV,test
+CB|SV|name,CB,El Salvador,SV,country,False,REFUSE,ISO3166-1(pycountry):name,none,SV,test
+CB|SV|official_name,CB,Republic of El Salvador,SV,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,SV,test
+CB|SX|alpha_2,CB,SX,SX,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SX,test
+CB|SX|alpha_3,CB,SXM,SX,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SX,test
+CB|SX|name,CB,Sint Maarten (Dutch part),SX,country,False,REFUSE,ISO3166-1(pycountry):name,none,SX,test
+CB|SY|alpha_2,CB,SY,SY,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SY,test
+CB|SY|alpha_3,CB,SYR,SY,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SY,test
+CB|SY|common_name,CB,Syria,SY,country,False,REFUSE,ISO3166-1(pycountry):common_name,none,SY,test
+CB|SY|name,CB,Syrian Arab Republic,SY,country,False,REFUSE,ISO3166-1(pycountry):name,none,SY,test
+CB|SZ|alpha_2,CB,SZ,SZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,SZ,dev
+CB|SZ|alpha_3,CB,SWZ,SZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,SZ,dev
+CB|SZ|name,CB,Eswatini,SZ,country,False,REFUSE,ISO3166-1(pycountry):name,none,SZ,dev
+CB|SZ|official_name,CB,Kingdom of Eswatini,SZ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,SZ,dev
+CB|TC|alpha_2,CB,TC,TC,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TC,test
+CB|TC|alpha_3,CB,TCA,TC,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TC,test
+CB|TC|name,CB,Turks and Caicos Islands,TC,country,False,REFUSE,ISO3166-1(pycountry):name,none,TC,test
+CB|TD|alpha_2,CB,TD,TD,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TD,test
+CB|TD|alpha_3,CB,TCD,TD,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TD,test
+CB|TD|name,CB,Chad,TD,country,False,REFUSE,ISO3166-1(pycountry):name,none,TD,test
+CB|TD|official_name,CB,Republic of Chad,TD,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,TD,test
+CB|TF|alpha_2,CB,TF,TF,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TF,dev
+CB|TF|alpha_3,CB,ATF,TF,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TF,dev
+CB|TF|name,CB,French Southern Territories,TF,country,False,REFUSE,ISO3166-1(pycountry):name,none,TF,dev
+CB|TG|alpha_2,CB,TG,TG,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TG,dev
+CB|TG|alpha_3,CB,TGO,TG,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TG,dev
+CB|TG|name,CB,Togo,TG,country,False,REFUSE,ISO3166-1(pycountry):name,none,TG,dev
+CB|TG|official_name,CB,Togolese Republic,TG,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,TG,dev
+CB|TH|alpha_2,CB,TH,TH,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,TH,test
+CB|TH|alpha_3,CB,THA,TH,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,TH,test
+CB|TH|official_name,CB,Kingdom of Thailand,TH,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,TH,test
+CB|TJ|alpha_2,CB,TJ,TJ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TJ,test
+CB|TJ|alpha_3,CB,TJK,TJ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TJ,test
+CB|TJ|name,CB,Tajikistan,TJ,country,False,REFUSE,ISO3166-1(pycountry):name,none,TJ,test
+CB|TJ|official_name,CB,Republic of Tajikistan,TJ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,TJ,test
+CB|TK|alpha_2,CB,TK,TK,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TK,dev
+CB|TK|alpha_3,CB,TKL,TK,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TK,dev
+CB|TK|name,CB,Tokelau,TK,country,False,REFUSE,ISO3166-1(pycountry):name,none,TK,dev
+CB|TL|alpha_2,CB,TL,TL,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TL,dev
+CB|TL|alpha_3,CB,TLS,TL,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TL,dev
+CB|TL|name,CB,Timor-Leste,TL,country,False,REFUSE,ISO3166-1(pycountry):name,none,TL,dev
+CB|TL|official_name,CB,Democratic Republic of Timor-Leste,TL,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,TL,dev
+CB|TM|alpha_2,CB,TM,TM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TM,test
+CB|TM|alpha_3,CB,TKM,TM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TM,test
+CB|TM|name,CB,Turkmenistan,TM,country,False,REFUSE,ISO3166-1(pycountry):name,none,TM,test
+CB|TN|alpha_2,CB,TN,TN,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TN,dev
+CB|TN|alpha_3,CB,TUN,TN,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TN,dev
+CB|TN|name,CB,Tunisia,TN,country,False,REFUSE,ISO3166-1(pycountry):name,none,TN,dev
+CB|TN|official_name,CB,Republic of Tunisia,TN,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,TN,dev
+CB|TO|alpha_2,CB,TO,TO,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TO,test
+CB|TO|alpha_3,CB,TON,TO,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TO,test
+CB|TO|name,CB,Tonga,TO,country,False,REFUSE,ISO3166-1(pycountry):name,none,TO,test
+CB|TO|official_name,CB,Kingdom of Tonga,TO,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,TO,test
+CB|TR|alpha_2,CB,TR,TR,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,TR,dev
+CB|TR|alpha_3,CB,TUR,TR,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,TR,dev
+CB|TR|name,CB,Türkiye,TR,country,True,COMPUTE,ISO3166-1(pycountry):name,none,TR,dev
+CB|TR|official_name,CB,Republic of Türkiye,TR,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,TR,dev
+CB|TT|alpha_2,CB,TT,TT,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TT,test
+CB|TT|alpha_3,CB,TTO,TT,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TT,test
+CB|TT|name,CB,Trinidad and Tobago,TT,country,False,REFUSE,ISO3166-1(pycountry):name,none,TT,test
+CB|TT|official_name,CB,Republic of Trinidad and Tobago,TT,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,TT,test
+CB|TV|alpha_2,CB,TV,TV,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TV,dev
+CB|TV|alpha_3,CB,TUV,TV,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TV,dev
+CB|TV|name,CB,Tuvalu,TV,country,False,REFUSE,ISO3166-1(pycountry):name,none,TV,dev
+CB|TW|alpha_2,CB,TW,TW,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TW,test
+CB|TW|alpha_3,CB,TWN,TW,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TW,test
+CB|TW|common_name,CB,Taiwan,TW,country,False,REFUSE,ISO3166-1(pycountry):common_name,none,TW,test
+CB|TW|name,CB,"Taiwan, Province of China",TW,country,False,REFUSE,ISO3166-1(pycountry):name,none,TW,test
+CB|TZ|alpha_2,CB,TZ,TZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,TZ,test
+CB|TZ|alpha_3,CB,TZA,TZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,TZ,test
+CB|TZ|common_name,CB,Tanzania,TZ,country,False,REFUSE,ISO3166-1(pycountry):common_name,none,TZ,test
+CB|TZ|name,CB,"Tanzania, United Republic of",TZ,country,False,REFUSE,ISO3166-1(pycountry):name,none,TZ,test
+CB|TZ|official_name,CB,United Republic of Tanzania,TZ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,TZ,test
+CB|UA|alpha_2,CB,UA,UA,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,UA,dev
+CB|UA|alpha_3,CB,UKR,UA,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,UA,dev
+CB|UA|name,CB,Ukraine,UA,country,False,REFUSE,ISO3166-1(pycountry):name,none,UA,dev
+CB|UG|alpha_2,CB,UG,UG,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,UG,test
+CB|UG|alpha_3,CB,UGA,UG,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,UG,test
+CB|UG|name,CB,Uganda,UG,country,False,REFUSE,ISO3166-1(pycountry):name,none,UG,test
+CB|UG|official_name,CB,Republic of Uganda,UG,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,UG,test
+CB|UM|alpha_2,CB,UM,UM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,UM,test
+CB|UM|alpha_3,CB,UMI,UM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,UM,test
+CB|UM|name,CB,United States Minor Outlying Islands,UM,country,False,REFUSE,ISO3166-1(pycountry):name,none,UM,test
+CB|US|alpha_2,CB,US,US,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,US,test
+CB|US|alpha_3,CB,USA,US,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,US,test
+CB|US|official_name,CB,United States of America,US,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,US,test
+CB|UY|alpha_2,CB,UY,UY,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,UY,test
+CB|UY|alpha_3,CB,URY,UY,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,UY,test
+CB|UY|name,CB,Uruguay,UY,country,False,REFUSE,ISO3166-1(pycountry):name,none,UY,test
+CB|UY|official_name,CB,Eastern Republic of Uruguay,UY,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,UY,test
+CB|UZ|alpha_2,CB,UZ,UZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,UZ,test
+CB|UZ|alpha_3,CB,UZB,UZ,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,UZ,test
+CB|UZ|name,CB,Uzbekistan,UZ,country,False,REFUSE,ISO3166-1(pycountry):name,none,UZ,test
+CB|UZ|official_name,CB,Republic of Uzbekistan,UZ,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,UZ,test
+CB|VA|alpha_2,CB,VA,VA,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,VA,test
+CB|VA|alpha_3,CB,VAT,VA,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,VA,test
+CB|VA|name,CB,Holy See (Vatican City State),VA,country,False,REFUSE,ISO3166-1(pycountry):name,none,VA,test
+CB|VC|alpha_2,CB,VC,VC,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,VC,test
+CB|VC|alpha_3,CB,VCT,VC,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,VC,test
+CB|VC|name,CB,Saint Vincent and the Grenadines,VC,country,False,REFUSE,ISO3166-1(pycountry):name,none,VC,test
+CB|VE|alpha_2,CB,VE,VE,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,VE,dev
+CB|VE|alpha_3,CB,VEN,VE,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,VE,dev
+CB|VE|common_name,CB,Venezuela,VE,country,False,REFUSE,ISO3166-1(pycountry):common_name,none,VE,dev
+CB|VE|name,CB,"Venezuela, Bolivarian Republic of",VE,country,False,REFUSE,ISO3166-1(pycountry):name,none,VE,dev
+CB|VE|official_name,CB,Bolivarian Republic of Venezuela,VE,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,VE,dev
+CB|VG|alpha_2,CB,VG,VG,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,VG,test
+CB|VG|alpha_3,CB,VGB,VG,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,VG,test
+CB|VG|name,CB,"Virgin Islands, British",VG,country,False,REFUSE,ISO3166-1(pycountry):name,none,VG,test
+CB|VG|official_name,CB,British Virgin Islands,VG,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,VG,test
+CB|VI|alpha_2,CB,VI,VI,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,VI,test
+CB|VI|alpha_3,CB,VIR,VI,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,VI,test
+CB|VI|name,CB,"Virgin Islands, U.S.",VI,country,False,REFUSE,ISO3166-1(pycountry):name,none,VI,test
+CB|VI|official_name,CB,Virgin Islands of the United States,VI,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,VI,test
+CB|VN|alpha_2,CB,VN,VN,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,VN,test
+CB|VN|alpha_3,CB,VNM,VN,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,VN,test
+CB|VN|name,CB,Viet Nam,VN,country,True,COMPUTE,ISO3166-1(pycountry):name,none,VN,test
+CB|VN|official_name,CB,Socialist Republic of Viet Nam,VN,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,VN,test
+CB|VU|alpha_2,CB,VU,VU,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,VU,test
+CB|VU|alpha_3,CB,VUT,VU,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,VU,test
+CB|VU|name,CB,Vanuatu,VU,country,False,REFUSE,ISO3166-1(pycountry):name,none,VU,test
+CB|VU|official_name,CB,Republic of Vanuatu,VU,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,VU,test
+CB|WF|alpha_2,CB,WF,WF,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,WF,test
+CB|WF|alpha_3,CB,WLF,WF,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,WF,test
+CB|WF|name,CB,Wallis and Futuna,WF,country,False,REFUSE,ISO3166-1(pycountry):name,none,WF,test
+CB|WS|alpha_2,CB,WS,WS,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,WS,test
+CB|WS|alpha_3,CB,WSM,WS,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,WS,test
+CB|WS|name,CB,Samoa,WS,country,False,REFUSE,ISO3166-1(pycountry):name,none,WS,test
+CB|WS|official_name,CB,Independent State of Samoa,WS,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,WS,test
+CB|YE|alpha_2,CB,YE,YE,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,YE,dev
+CB|YE|alpha_3,CB,YEM,YE,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,YE,dev
+CB|YE|name,CB,Yemen,YE,country,False,REFUSE,ISO3166-1(pycountry):name,none,YE,dev
+CB|YE|official_name,CB,Republic of Yemen,YE,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,YE,dev
+CB|YT|alpha_2,CB,YT,YT,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,YT,dev
+CB|YT|alpha_3,CB,MYT,YT,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,YT,dev
+CB|YT|name,CB,Mayotte,YT,country,False,REFUSE,ISO3166-1(pycountry):name,none,YT,dev
+CB|ZA|alpha_2,CB,ZA,ZA,country,True,COMPUTE,ISO3166-1(pycountry):alpha_2,none,ZA,dev
+CB|ZA|alpha_3,CB,ZAF,ZA,country,True,COMPUTE,ISO3166-1(pycountry):alpha_3,none,ZA,dev
+CB|ZA|official_name,CB,Republic of South Africa,ZA,country,True,COMPUTE,ISO3166-1(pycountry):official_name,none,ZA,dev
+CB|ZM|alpha_2,CB,ZM,ZM,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,ZM,test
+CB|ZM|alpha_3,CB,ZMB,ZM,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,ZM,test
+CB|ZM|name,CB,Zambia,ZM,country,False,REFUSE,ISO3166-1(pycountry):name,none,ZM,test
+CB|ZM|official_name,CB,Republic of Zambia,ZM,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,ZM,test
+CB|ZW|alpha_2,CB,ZW,ZW,country,False,REFUSE,ISO3166-1(pycountry):alpha_2,none,ZW,test
+CB|ZW|alpha_3,CB,ZWE,ZW,country,False,REFUSE,ISO3166-1(pycountry):alpha_3,none,ZW,test
+CB|ZW|name,CB,Zimbabwe,ZW,country,False,REFUSE,ISO3166-1(pycountry):name,none,ZW,test
+CB|ZW|official_name,CB,Republic of Zimbabwe,ZW,country,False,REFUSE,ISO3166-1(pycountry):official_name,none,ZW,test
+CC|AD|typo,CC,Andorar,AD,country,False,REFUSE,rule:one-edit typo of Andorra,typo,AD,dev
+CC|AE|typo,CC,Uinted Arab Emirates,AE,country,True,COMPUTE,rule:one-edit typo of United Arab Emirates,typo,AE,test
+CC|AF|typo,CC,Afghancstan,AF,country,False,REFUSE,rule:one-edit typo of Afghanistan,typo,AF,test
+CC|AG|typo,CC,Anitgua and Barbuda,AG,country,False,REFUSE,rule:one-edit typo of Antigua and Barbuda,typo,AG,test
+CC|AI|typo,CC,Angbuilla,AI,country,False,REFUSE,rule:one-edit typo of Anguilla,typo,AI,dev
+CC|AL|typo,CC,Albanxa,AL,country,False,REFUSE,rule:one-edit typo of Albania,typo,AL,test
+CC|AM|typo,CC,Armeina,AM,country,False,REFUSE,rule:one-edit typo of Armenia,typo,AM,test
+CC|AO|typo,CC,Angogla,AO,country,False,REFUSE,rule:one-edit typo of Angola,typo,AO,test
+CC|AQ|typo,CC,Antarctida,AQ,country,False,REFUSE,rule:one-edit typo of Antarctica,typo,AQ,dev
+CC|AR|typo,CC,Aregntina,AR,country,True,COMPUTE,rule:one-edit typo of Argentina,typo,AR,dev
+CC|AS|typo,CC,Amerian Samoa,AS,country,False,REFUSE,rule:one-edit typo of American Samoa,typo,AS,test
+CC|AT|typo,CC,Austrka,AT,country,True,COMPUTE,rule:one-edit typo of Austria,typo,AT,dev
+CC|AU|typo,CC,Austrlia,AU,country,True,COMPUTE,rule:one-edit typo of Australia,typo,AU,dev
+CC|AW|typo,CC,Auba,AW,country,False,REFUSE,rule:one-edit typo of Aruba,typo,AW,dev
+CC|AX|typo,CC,Åaland Islands,AX,country,False,REFUSE,rule:one-edit typo of Åland Islands,typo,AX,test
+CC|AZ|typo,CC,Azerbaiajn,AZ,country,False,REFUSE,rule:one-edit typo of Azerbaijan,typo,AZ,dev
+CC|BA|typo,CC,Bosnia and Heregovina,BA,country,False,REFUSE,rule:one-edit typo of Bosnia and Herzegovina,typo,BA,test
+CC|BB|typo,CC,Babrados,BB,country,False,REFUSE,rule:one-edit typo of Barbados,typo,BB,test
+CC|BD|typo,CC,Bangadesh,BD,country,False,REFUSE,rule:one-edit typo of Bangladesh,typo,BD,dev
+CC|BE|typo,CC,Belgum,BE,country,True,COMPUTE,rule:one-edit typo of Belgium,typo,BE,dev
+CC|BF|typo,CC,Burkina Fawso,BF,country,False,REFUSE,rule:one-edit typo of Burkina Faso,typo,BF,test
+CC|BG|typo,CC,Buwgaria,BG,country,False,REFUSE,rule:one-edit typo of Bulgaria,typo,BG,test
+CC|BH|typo,CC,Bmhrain,BH,country,False,REFUSE,rule:one-edit typo of Bahrain,typo,BH,dev
+CC|BI|typo,CC,Burudi,BI,country,False,REFUSE,rule:one-edit typo of Burundi,typo,BI,test
+CC|BJ|typo,CC,Beein,BJ,country,False,REFUSE,rule:one-edit typo of Benin,typo,BJ,test
+CC|BL|typo,CC,Saint Barthécemy,BL,country,False,REFUSE,rule:one-edit typo of Saint Barthélemy,typo,BL,test
+CC|BM|typo,CC,Bkrmuda,BM,country,False,REFUSE,rule:one-edit typo of Bermuda,typo,BM,test
+CC|BN|typo,CC,Brunei Daussalam,BN,country,False,REFUSE,rule:one-edit typo of Brunei Darussalam,typo,BN,dev
+CC|BO|typo,CC,"Bolivia, Plurinational Stabte of",BO,country,False,REFUSE,"rule:one-edit typo of Bolivia, Plurinational State of",typo,BO,test
+CC|BQ|typo,CC,"Bonaire, Sint Eustatius and Siba",BQ,country,False,REFUSE,"rule:one-edit typo of Bonaire, Sint Eustatius and Saba",typo,BQ,dev
+CC|BR|typo,CC,Brail,BR,country,True,COMPUTE,rule:one-edit typo of Brazil,typo,BR,test
+CC|BS|typo,CC,Bahyamas,BS,country,False,REFUSE,rule:one-edit typo of Bahamas,typo,BS,test
+CC|BT|typo,CC,Bhuatn,BT,country,False,REFUSE,rule:one-edit typo of Bhutan,typo,BT,test
+CC|BV|typo,CC,Bouvte Island,BV,country,False,REFUSE,rule:one-edit typo of Bouvet Island,typo,BV,test
+CC|BW|typo,CC,Botbswana,BW,country,False,REFUSE,rule:one-edit typo of Botswana,typo,BW,test
+CC|BY|typo,CC,Beljrus,BY,country,False,REFUSE,rule:one-edit typo of Belarus,typo,BY,test
+CC|BZ|typo,CC,Bleize,BZ,country,False,REFUSE,rule:one-edit typo of Belize,typo,BZ,test
+CC|CA|typo,CC,Cajnada,CA,country,True,COMPUTE,rule:one-edit typo of Canada,typo,CA,dev
+CC|CC|typo,CC,Coos (Keeling) Islands,CC,country,False,REFUSE,rule:one-edit typo of Cocos (Keeling) Islands,typo,CC,test
+CC|CD|typo,CC,"Congo, The Democratjc Republic of the",CD,country,False,REFUSE,"rule:one-edit typo of Congo, The Democratic Republic of the",typo,CD,test
+CC|CF|typo,CC,Central Afriacn Republic,CF,country,False,REFUSE,rule:one-edit typo of Central African Republic,typo,CF,dev
+CC|CG|typo,CC,Covgo,CG,country,False,REFUSE,rule:one-edit typo of Congo,typo,CG,test
+CC|CH|typo,CC,Switzxerland,CH,country,True,COMPUTE,rule:one-edit typo of Switzerland,typo,CH,dev
+CC|CI|typo,CC,Côhe d'Ivoire,CI,country,False,REFUSE,rule:one-edit typo of Côte d'Ivoire,typo,CI,test
+CC|CK|typo,CC,Cook Ilsands,CK,country,False,REFUSE,rule:one-edit typo of Cook Islands,typo,CK,dev
+CC|CL|typo,CC,Chle,CL,country,True,COMPUTE,rule:one-edit typo of Chile,typo,CL,test
+CC|CM|typo,CC,Cameqoon,CM,country,False,REFUSE,rule:one-edit typo of Cameroon,typo,CM,test
+CC|CN|typo,CC,Chiea,CN,country,True,COMPUTE,rule:one-edit typo of China,typo,CN,test
+CC|CO|typo,CC,Colombai,CO,country,False,REFUSE,rule:one-edit typo of Colombia,typo,CO,dev
+CC|CR|typo,CC,Costa Rca,CR,country,False,REFUSE,rule:one-edit typo of Costa Rica,typo,CR,dev
+CC|CU|typo,CC,Cuiba,CU,country,False,REFUSE,rule:one-edit typo of Cuba,typo,CU,dev
+CC|CV|typo,CC,Cabo Verke,CV,country,False,REFUSE,rule:one-edit typo of Cabo Verde,typo,CV,test
+CC|CW|typo,CC,Curaaço,CW,country,False,REFUSE,rule:one-edit typo of Curaçao,typo,CW,dev
+CC|CX|typo,CC,Christmas Iland,CX,country,False,REFUSE,rule:one-edit typo of Christmas Island,typo,CX,dev
+CC|CY|typo,CC,Cprus,CY,country,False,REFUSE,rule:one-edit typo of Cyprus,typo,CY,dev
+CC|CZ|typo,CC,Cmechia,CZ,country,False,REFUSE,rule:one-edit typo of Czechia,typo,CZ,test
+CC|DE|typo,CC,Gemrany,DE,country,True,COMPUTE,rule:one-edit typo of Germany,typo,DE,dev
+CC|DJ|typo,CC,Djibougi,DJ,country,False,REFUSE,rule:one-edit typo of Djibouti,typo,DJ,test
+CC|DK|typo,CC,Dnemark,DK,country,True,COMPUTE,rule:one-edit typo of Denmark,typo,DK,dev
+CC|DM|typo,CC,Doinica,DM,country,False,REFUSE,rule:one-edit typo of Dominica,typo,DM,dev
+CC|DO|typo,CC,Dominican Republci,DO,country,False,REFUSE,rule:one-edit typo of Dominican Republic,typo,DO,dev
+CC|DZ|typo,CC,Aleria,DZ,country,False,REFUSE,rule:one-edit typo of Algeria,typo,DZ,dev
+CC|EC|typo,CC,Ecusdor,EC,country,False,REFUSE,rule:one-edit typo of Ecuador,typo,EC,test
+CC|EE|typo,CC,Eustonia,EE,country,False,REFUSE,rule:one-edit typo of Estonia,typo,EE,dev
+CC|EG|typo,CC,Egyt,EG,country,True,COMPUTE,rule:one-edit typo of Egypt,typo,EG,dev
+CC|EH|typo,CC,Western Safhara,EH,country,False,REFUSE,rule:one-edit typo of Western Sahara,typo,EH,test
+CC|ER|typo,CC,Eritrsa,ER,country,False,REFUSE,rule:one-edit typo of Eritrea,typo,ER,test
+CC|ES|typo,CC,Span,ES,country,True,COMPUTE,rule:one-edit typo of Spain,typo,ES,test
+CC|ET|typo,CC,Ejthiopia,ET,country,False,REFUSE,rule:one-edit typo of Ethiopia,typo,ET,dev
+CC|FI|typo,CC,Filland,FI,country,False,REFUSE,rule:one-edit typo of Finland,typo,FI,dev
+CC|FJ|typo,CC,Fisji,FJ,country,False,REFUSE,rule:one-edit typo of Fiji,typo,FJ,test
+CC|FK|typo,CC,Falkland Ismands (Malvinas),FK,country,False,REFUSE,rule:one-edit typo of Falkland Islands (Malvinas),typo,FK,dev
+CC|FM|typo,CC,"Micronesia, Federted States of",FM,country,False,REFUSE,"rule:one-edit typo of Micronesia, Federated States of",typo,FM,test
+CC|FO|typo,CC,Faroe Isalnds,FO,country,False,REFUSE,rule:one-edit typo of Faroe Islands,typo,FO,dev
+CC|FR|typo,CC,Franec,FR,country,True,COMPUTE,rule:one-edit typo of France,typo,FR,test
+CC|GA|typo,CC,Gbaon,GA,country,False,REFUSE,rule:one-edit typo of Gabon,typo,GA,dev
+CC|GB|typo,CC,Unated Kingdom,GB,country,True,COMPUTE,rule:one-edit typo of United Kingdom,typo,GB,dev
+CC|GD|typo,CC,Grensda,GD,country,False,REFUSE,rule:one-edit typo of Grenada,typo,GD,test
+CC|GE|typo,CC,Georgta,GE,country,False,REFUSE,rule:one-edit typo of Georgia,typo,GE,dev
+CC|GF|typo,CC,French Gsiana,GF,country,False,REFUSE,rule:one-edit typo of French Guiana,typo,GF,dev
+CC|GG|typo,CC,Gueernsey,GG,country,False,REFUSE,rule:one-edit typo of Guernsey,typo,GG,dev
+CC|GH|typo,CC,Gheana,GH,country,False,REFUSE,rule:one-edit typo of Ghana,typo,GH,test
+CC|GI|typo,CC,Girbaltar,GI,country,False,REFUSE,rule:one-edit typo of Gibraltar,typo,GI,test
+CC|GL|typo,CC,Greenalnd,GL,country,False,REFUSE,rule:one-edit typo of Greenland,typo,GL,test
+CC|GM|typo,CC,Gambha,GM,country,False,REFUSE,rule:one-edit typo of Gambia,typo,GM,test
+CC|GN|typo,CC,Guiena,GN,country,False,REFUSE,rule:one-edit typo of Guinea,typo,GN,test
+CC|GP|typo,CC,Guxadeloupe,GP,country,False,REFUSE,rule:one-edit typo of Guadeloupe,typo,GP,test
+CC|GQ|typo,CC,Euqatorial Guinea,GQ,country,False,REFUSE,rule:one-edit typo of Equatorial Guinea,typo,GQ,dev
+CC|GR|typo,CC,Greeece,GR,country,True,COMPUTE,rule:one-edit typo of Greece,typo,GR,test
+CC|GS|typo,CC,South Georgia and the South Sankwich Islands,GS,country,False,REFUSE,rule:one-edit typo of South Georgia and the South Sandwich Islands,typo,GS,dev
+CC|GT|typo,CC,Guateamla,GT,country,False,REFUSE,rule:one-edit typo of Guatemala,typo,GT,test
+CC|GU|typo,CC,Gusam,GU,country,False,REFUSE,rule:one-edit typo of Guam,typo,GU,dev
+CC|GY|typo,CC,Goyana,GY,country,False,REFUSE,rule:one-edit typo of Guyana,typo,GY,dev
+CC|HK|typo,CC,Hong Ksng,HK,country,False,REFUSE,rule:one-edit typo of Hong Kong,typo,HK,test
+CC|HM|typo,CC,Hqard Island and McDonald Islands,HM,country,False,REFUSE,rule:one-edit typo of Heard Island and McDonald Islands,typo,HM,test
+CC|HN|typo,CC,Hondnuras,HN,country,False,REFUSE,rule:one-edit typo of Honduras,typo,HN,dev
+CC|HR|typo,CC,Coatia,HR,country,False,REFUSE,rule:one-edit typo of Croatia,typo,HR,test
+CC|HT|typo,CC,Hiati,HT,country,False,REFUSE,rule:one-edit typo of Haiti,typo,HT,test
+CC|HU|typo,CC,Huegary,HU,country,False,REFUSE,rule:one-edit typo of Hungary,typo,HU,test
+CC|ID|typo,CC,Indonessa,ID,country,True,COMPUTE,rule:one-edit typo of Indonesia,typo,ID,test
+CC|IE|typo,CC,Ioreland,IE,country,True,COMPUTE,rule:one-edit typo of Ireland,typo,IE,dev
+CC|IL|typo,CC,Isrel,IL,country,False,REFUSE,rule:one-edit typo of Israel,typo,IL,test
+CC|IM|typo,CC,Isde of Man,IM,country,False,REFUSE,rule:one-edit typo of Isle of Man,typo,IM,test
+CC|IN|typo,CC,Inida,IN,country,True,COMPUTE,rule:one-edit typo of India,typo,IN,dev
+CC|IO|typo,CC,British Indin Ocean Territory,IO,country,False,REFUSE,rule:one-edit typo of British Indian Ocean Territory,typo,IO,dev
+CC|IQ|typo,CC,Iaq,IQ,country,False,REFUSE,rule:one-edit typo of Iraq,typo,IQ,test
+CC|IR|typo,CC,"Iran, Isamic Republic of",IR,country,False,REFUSE,"rule:one-edit typo of Iran, Islamic Republic of",typo,IR,dev
+CC|IS|typo,CC,Icbland,IS,country,False,REFUSE,rule:one-edit typo of Iceland,typo,IS,dev
+CC|IT|typo,CC,Itay,IT,country,True,COMPUTE,rule:one-edit typo of Italy,typo,IT,test
+CC|JE|typo,CC,Jpersey,JE,country,False,REFUSE,rule:one-edit typo of Jersey,typo,JE,test
+CC|JM|typo,CC,Jamica,JM,country,False,REFUSE,rule:one-edit typo of Jamaica,typo,JM,test
+CC|JO|typo,CC,Jordwan,JO,country,False,REFUSE,rule:one-edit typo of Jordan,typo,JO,test
+CC|JP|typo,CC,Jaapn,JP,country,True,COMPUTE,rule:one-edit typo of Japan,typo,JP,test
+CC|KE|typo,CC,Keyna,KE,country,False,REFUSE,rule:one-edit typo of Kenya,typo,KE,test
+CC|KG|typo,CC,Kyrgyzstna,KG,country,False,REFUSE,rule:one-edit typo of Kyrgyzstan,typo,KG,dev
+CC|KH|typo,CC,Camboda,KH,country,False,REFUSE,rule:one-edit typo of Cambodia,typo,KH,dev
+CC|KI|typo,CC,Kibribati,KI,country,False,REFUSE,rule:one-edit typo of Kiribati,typo,KI,dev
+CC|KM|typo,CC,Comsoros,KM,country,False,REFUSE,rule:one-edit typo of Comoros,typo,KM,dev
+CC|KN|typo,CC,Saint Kitts and Neyvis,KN,country,False,REFUSE,rule:one-edit typo of Saint Kitts and Nevis,typo,KN,test
+CC|KP|typo,CC,"Korea, Democratci People's Republic of",KP,country,False,REFUSE,"rule:one-edit typo of Korea, Democratic People's Republic of",typo,KP,test
+CC|KR|typo,CC,South Korae,KR,country,True,COMPUTE,rule:one-edit typo of South Korea,typo,KR,test
+CC|KW|typo,CC,Kkuwait,KW,country,False,REFUSE,rule:one-edit typo of Kuwait,typo,KW,test
+CC|KY|typo,CC,Caymn Islands,KY,country,False,REFUSE,rule:one-edit typo of Cayman Islands,typo,KY,test
+CC|KZ|typo,CC,Kazakhstzn,KZ,country,False,REFUSE,rule:one-edit typo of Kazakhstan,typo,KZ,dev
+CC|LA|typo,CC,Lao People's Democratic Revublic,LA,country,False,REFUSE,rule:one-edit typo of Lao People's Democratic Republic,typo,LA,test
+CC|LB|typo,CC,Lebaneon,LB,country,False,REFUSE,rule:one-edit typo of Lebanon,typo,LB,test
+CC|LC|typo,CC,Sint Lucia,LC,country,False,REFUSE,rule:one-edit typo of Saint Lucia,typo,LC,test
+CC|LI|typo,CC,Liechtenbstein,LI,country,False,REFUSE,rule:one-edit typo of Liechtenstein,typo,LI,test
+CC|LK|typo,CC,Sri Lana,LK,country,False,REFUSE,rule:one-edit typo of Sri Lanka,typo,LK,dev
+CC|LR|typo,CC,Libria,LR,country,False,REFUSE,rule:one-edit typo of Liberia,typo,LR,dev
+CC|LS|typo,CC,Lesohto,LS,country,False,REFUSE,rule:one-edit typo of Lesotho,typo,LS,dev
+CC|LT|typo,CC,Ltihuania,LT,country,False,REFUSE,rule:one-edit typo of Lithuania,typo,LT,test
+CC|LU|typo,CC,Lyxembourg,LU,country,False,REFUSE,rule:one-edit typo of Luxembourg,typo,LU,dev
+CC|LV|typo,CC,Ltvia,LV,country,False,REFUSE,rule:one-edit typo of Latvia,typo,LV,test
+CC|LY|typo,CC,Liba,LY,country,False,REFUSE,rule:one-edit typo of Libya,typo,LY,dev
+CC|MA|typo,CC,Mmorocco,MA,country,False,REFUSE,rule:one-edit typo of Morocco,typo,MA,test
+CC|MC|typo,CC,Moanco,MC,country,False,REFUSE,rule:one-edit typo of Monaco,typo,MC,test
+CC|MD|typo,CC,"Moldova, Repblic of",MD,country,False,REFUSE,"rule:one-edit typo of Moldova, Republic of",typo,MD,test
+CC|ME|typo,CC,Mogtenegro,ME,country,False,REFUSE,rule:one-edit typo of Montenegro,typo,ME,test
+CC|MF|typo,CC,Saint Martni (French part),MF,country,False,REFUSE,rule:one-edit typo of Saint Martin (French part),typo,MF,dev
+CC|MG|typo,CC,Muadagascar,MG,country,False,REFUSE,rule:one-edit typo of Madagascar,typo,MG,dev
+CC|MH|typo,CC,Mxrshall Islands,MH,country,False,REFUSE,rule:one-edit typo of Marshall Islands,typo,MH,test
+CC|MK|typo,CC,North Macednia,MK,country,False,REFUSE,rule:one-edit typo of North Macedonia,typo,MK,dev
+CC|ML|typo,CC,Mawli,ML,country,False,REFUSE,rule:one-edit typo of Mali,typo,ML,dev
+CC|MM|typo,CC,Myajmar,MM,country,False,REFUSE,rule:one-edit typo of Myanmar,typo,MM,dev
+CC|MN|typo,CC,Mongolza,MN,country,False,REFUSE,rule:one-edit typo of Mongolia,typo,MN,dev
+CC|MO|typo,CC,Macoa,MO,country,False,REFUSE,rule:one-edit typo of Macao,typo,MO,dev
+CC|MP|typo,CC,Northern Mariaan Islands,MP,country,False,REFUSE,rule:one-edit typo of Northern Mariana Islands,typo,MP,dev
+CC|MQ|typo,CC,Mnrtinique,MQ,country,False,REFUSE,rule:one-edit typo of Martinique,typo,MQ,test
+CC|MR|typo,CC,Mauriltania,MR,country,False,REFUSE,rule:one-edit typo of Mauritania,typo,MR,test
+CC|MS|typo,CC,Montsrerat,MS,country,False,REFUSE,rule:one-edit typo of Montserrat,typo,MS,test
+CC|MT|typo,CC,Matla,MT,country,False,REFUSE,rule:one-edit typo of Malta,typo,MT,test
+CC|MU|typo,CC,Mauitius,MU,country,False,REFUSE,rule:one-edit typo of Mauritius,typo,MU,dev
+CC|MV|typo,CC,Malives,MV,country,False,REFUSE,rule:one-edit typo of Maldives,typo,MV,test
+CC|MW|typo,CC,Malauwi,MW,country,False,REFUSE,rule:one-edit typo of Malawi,typo,MW,test
+CC|MX|typo,CC,Mexxico,MX,country,True,COMPUTE,rule:one-edit typo of Mexico,typo,MX,test
+CC|MY|typo,CC,Malqysia,MY,country,True,COMPUTE,rule:one-edit typo of Malaysia,typo,MY,test
+CC|MZ|typo,CC,Mozambiqe,MZ,country,False,REFUSE,rule:one-edit typo of Mozambique,typo,MZ,test
+CC|NA|typo,CC,Nmaibia,NA,country,False,REFUSE,rule:one-edit typo of Namibia,typo,NA,test
+CC|NC|typo,CC,New Caldonia,NC,country,False,REFUSE,rule:one-edit typo of New Caledonia,typo,NC,test
+CC|NE|typo,CC,Nigr,NE,country,False,REFUSE,rule:one-edit typo of Niger,typo,NE,test
+CC|NF|typo,CC,Norfolk Ivsland,NF,country,False,REFUSE,rule:one-edit typo of Norfolk Island,typo,NF,test
+CC|NG|typo,CC,Njigeria,NG,country,True,COMPUTE,rule:one-edit typo of Nigeria,typo,NG,test
+CC|NI|typo,CC,Nicaargua,NI,country,False,REFUSE,rule:one-edit typo of Nicaragua,typo,NI,dev
+CC|NL|typo,CC,Neterlands,NL,country,True,COMPUTE,rule:one-edit typo of Netherlands,typo,NL,dev
+CC|NO|typo,CC,Noraway,NO,country,True,COMPUTE,rule:one-edit typo of Norway,typo,NO,test
+CC|NP|typo,CC,Nppal,NP,country,False,REFUSE,rule:one-edit typo of Nepal,typo,NP,test
+CC|NR|typo,CC,Nyauru,NR,country,False,REFUSE,rule:one-edit typo of Nauru,typo,NR,dev
+CC|NU|typo,CC,Nie,NU,country,False,REFUSE,rule:one-edit typo of Niue,typo,NU,test
+CC|NZ|typo,CC,New Zealatnd,NZ,country,True,COMPUTE,rule:one-edit typo of New Zealand,typo,NZ,dev
+CC|OM|typo,CC,Oan,OM,country,False,REFUSE,rule:one-edit typo of Oman,typo,OM,dev
+CC|PA|typo,CC,Paanma,PA,country,False,REFUSE,rule:one-edit typo of Panama,typo,PA,dev
+CC|PE|typo,CC,Peuru,PE,country,False,REFUSE,rule:one-edit typo of Peru,typo,PE,dev
+CC|PF|typo,CC,Frhnch Polynesia,PF,country,False,REFUSE,rule:one-edit typo of French Polynesia,typo,PF,dev
+CC|PG|typo,CC,Papua New Guniea,PG,country,False,REFUSE,rule:one-edit typo of Papua New Guinea,typo,PG,test
+CC|PH|typo,CC,Philippnes,PH,country,True,COMPUTE,rule:one-edit typo of Philippines,typo,PH,dev
+CC|PK|typo,CC,Pakistn,PK,country,False,REFUSE,rule:one-edit typo of Pakistan,typo,PK,test
+CC|PL|typo,CC,Poladn,PL,country,True,COMPUTE,rule:one-edit typo of Poland,typo,PL,test
+CC|PM|typo,CC,Saint Pierre and Mquelon,PM,country,False,REFUSE,rule:one-edit typo of Saint Pierre and Miquelon,typo,PM,dev
+CC|PN|typo,CC,Pitcain,PN,country,False,REFUSE,rule:one-edit typo of Pitcairn,typo,PN,test
+CC|PR|typo,CC,Puero Rico,PR,country,False,REFUSE,rule:one-edit typo of Puerto Rico,typo,PR,dev
+CC|PS|typo,CC,"Palestine, Skate of",PS,country,False,REFUSE,"rule:one-edit typo of Palestine, State of",typo,PS,test
+CC|PT|typo,CC,Pxortugal,PT,country,True,COMPUTE,rule:one-edit typo of Portugal,typo,PT,test
+CC|PW|typo,CC,Pwalau,PW,country,False,REFUSE,rule:one-edit typo of Palau,typo,PW,test
+CC|PY|typo,CC,Paarguay,PY,country,False,REFUSE,rule:one-edit typo of Paraguay,typo,PY,test
+CC|QA|typo,CC,Qaatar,QA,country,False,REFUSE,rule:one-edit typo of Qatar,typo,QA,test
+CC|RE|typo,CC,Rénion,RE,country,False,REFUSE,rule:one-edit typo of Réunion,typo,RE,dev
+CC|RO|typo,CC,Romadia,RO,country,False,REFUSE,rule:one-edit typo of Romania,typo,RO,test
+CC|RS|typo,CC,Seriba,RS,country,False,REFUSE,rule:one-edit typo of Serbia,typo,RS,test
+CC|RU|typo,CC,Russian Fedeation,RU,country,False,REFUSE,rule:one-edit typo of Russian Federation,typo,RU,dev
+CC|RW|typo,CC,Rwangda,RW,country,False,REFUSE,rule:one-edit typo of Rwanda,typo,RW,test
+CC|SA|typo,CC,Sudi Arabia,SA,country,True,COMPUTE,rule:one-edit typo of Saudi Arabia,typo,SA,dev
+CC|SB|typo,CC,Solomon Islanss,SB,country,False,REFUSE,rule:one-edit typo of Solomon Islands,typo,SB,test
+CC|SC|typo,CC,Seychtlles,SC,country,False,REFUSE,rule:one-edit typo of Seychelles,typo,SC,test
+CC|SD|typo,CC,Suan,SD,country,False,REFUSE,rule:one-edit typo of Sudan,typo,SD,test
+CC|SE|typo,CC,Seeden,SE,country,True,COMPUTE,rule:one-edit typo of Sweden,typo,SE,test
+CC|SG|typo,CC,Singapre,SG,country,True,COMPUTE,rule:one-edit typo of Singapore,typo,SG,dev
+CC|SH|typo,CC,"Sahint Helena, Ascension and Tristan da Cunha",SH,country,False,REFUSE,"rule:one-edit typo of Saint Helena, Ascension and Tristan da Cunha",typo,SH,test
+CC|SI|typo,CC,Slovneia,SI,country,False,REFUSE,rule:one-edit typo of Slovenia,typo,SI,dev
+CC|SJ|typo,CC,Svalbard and Jan Mawyen,SJ,country,False,REFUSE,rule:one-edit typo of Svalbard and Jan Mayen,typo,SJ,test
+CC|SK|typo,CC,Slovajkia,SK,country,False,REFUSE,rule:one-edit typo of Slovakia,typo,SK,test
+CC|SL|typo,CC,Sierra Leqone,SL,country,False,REFUSE,rule:one-edit typo of Sierra Leone,typo,SL,dev
+CC|SM|typo,CC,San Marnio,SM,country,False,REFUSE,rule:one-edit typo of San Marino,typo,SM,dev
+CC|SN|typo,CC,Senegla,SN,country,False,REFUSE,rule:one-edit typo of Senegal,typo,SN,test
+CC|SO|typo,CC,Smalia,SO,country,False,REFUSE,rule:one-edit typo of Somalia,typo,SO,test
+CC|SR|typo,CC,Sukiname,SR,country,False,REFUSE,rule:one-edit typo of Suriname,typo,SR,test
+CC|SS|typo,CC,Sonth Sudan,SS,country,False,REFUSE,rule:one-edit typo of South Sudan,typo,SS,test
+CC|ST|typo,CC,Sao Toame and Principe,ST,country,False,REFUSE,rule:one-edit typo of Sao Tome and Principe,typo,ST,test
+CC|SV|typo,CC,El Salvdor,SV,country,False,REFUSE,rule:one-edit typo of El Salvador,typo,SV,test
+CC|SX|typo,CC,Sint Mawrten (Dutch part),SX,country,False,REFUSE,rule:one-edit typo of Sint Maarten (Dutch part),typo,SX,test
+CC|SY|typo,CC,Syrina Arab Republic,SY,country,False,REFUSE,rule:one-edit typo of Syrian Arab Republic,typo,SY,test
+CC|SZ|typo,CC,Eswtaini,SZ,country,False,REFUSE,rule:one-edit typo of Eswatini,typo,SZ,dev
+CC|TC|typo,CC,Turls and Caicos Islands,TC,country,False,REFUSE,rule:one-edit typo of Turks and Caicos Islands,typo,TC,test
+CC|TD|typo,CC,Crad,TD,country,False,REFUSE,rule:one-edit typo of Chad,typo,TD,test
+CC|TF|typo,CC,French Southern Terrcitories,TF,country,False,REFUSE,rule:one-edit typo of French Southern Territories,typo,TF,dev
+CC|TG|typo,CC,Tego,TG,country,False,REFUSE,rule:one-edit typo of Togo,typo,TG,dev
+CC|TH|typo,CC,Thialand,TH,country,True,COMPUTE,rule:one-edit typo of Thailand,typo,TH,test
+CC|TJ|typo,CC,Tajikistn,TJ,country,False,REFUSE,rule:one-edit typo of Tajikistan,typo,TJ,test
+CC|TK|typo,CC,Tokuelau,TK,country,False,REFUSE,rule:one-edit typo of Tokelau,typo,TK,dev
+CC|TM|typo,CC,Turkmenitan,TM,country,False,REFUSE,rule:one-edit typo of Turkmenistan,typo,TM,test
+CC|TN|typo,CC,Tuniasia,TN,country,False,REFUSE,rule:one-edit typo of Tunisia,typo,TN,dev
+CC|TO|typo,CC,Toxga,TO,country,False,REFUSE,rule:one-edit typo of Tonga,typo,TO,test
+CC|TR|typo,CC,Turkye,TR,country,True,COMPUTE,rule:one-edit typo of Turkey,typo,TR,dev
+CC|TT|typo,CC,Tirnidad and Tobago,TT,country,False,REFUSE,rule:one-edit typo of Trinidad and Tobago,typo,TT,test
+CC|TV|typo,CC,Tuvialu,TV,country,False,REFUSE,rule:one-edit typo of Tuvalu,typo,TV,dev
+CC|TW|typo,CC,"Taiwan, Province of Chrna",TW,country,False,REFUSE,"rule:one-edit typo of Taiwan, Province of China",typo,TW,test
+CC|TZ|typo,CC,"Tanzania, United Rfepublic of",TZ,country,False,REFUSE,"rule:one-edit typo of Tanzania, United Republic of",typo,TZ,test
+CC|UA|typo,CC,Unkraine,UA,country,False,REFUSE,rule:one-edit typo of Ukraine,typo,UA,dev
+CC|UG|typo,CC,Ugada,UG,country,False,REFUSE,rule:one-edit typo of Uganda,typo,UG,test
+CC|UM|typo,CC,United States Minor Outlying Iplands,UM,country,False,REFUSE,rule:one-edit typo of United States Minor Outlying Islands,typo,UM,test
+CC|US|typo,CC,Unitd States,US,country,True,COMPUTE,rule:one-edit typo of United States,typo,US,test
+CC|UY|typo,CC,Urguay,UY,country,False,REFUSE,rule:one-edit typo of Uruguay,typo,UY,test
+CC|UZ|typo,CC,Uzbekisten,UZ,country,False,REFUSE,rule:one-edit typo of Uzbekistan,typo,UZ,test
+CC|VA|typo,CC,Holy See (Vatican Cidy State),VA,country,False,REFUSE,rule:one-edit typo of Holy See (Vatican City State),typo,VA,test
+CC|VC|typo,CC,Sanit Vincent and the Grenadines,VC,country,False,REFUSE,rule:one-edit typo of Saint Vincent and the Grenadines,typo,VC,test
+CC|VE|typo,CC,"Venezuela, Bolivarian Rzpublic of",VE,country,False,REFUSE,"rule:one-edit typo of Venezuela, Bolivarian Republic of",typo,VE,dev
+CC|VG|typo,CC,"Virgmn Islands, British",VG,country,False,REFUSE,"rule:one-edit typo of Virgin Islands, British",typo,VG,test
+CC|VI|typo,CC,"Vibrgin Islands, U.S.",VI,country,False,REFUSE,"rule:one-edit typo of Virgin Islands, U.S.",typo,VI,test
+CC|VN|typo,CC,Vitnam,VN,country,True,COMPUTE,rule:one-edit typo of Vietnam,typo,VN,test
+CC|VU|typo,CC,Vanutau,VU,country,False,REFUSE,rule:one-edit typo of Vanuatu,typo,VU,test
+CC|WF|typo,CC,Wallis and Futubna,WF,country,False,REFUSE,rule:one-edit typo of Wallis and Futuna,typo,WF,test
+CC|WS|typo,CC,Samya,WS,country,False,REFUSE,rule:one-edit typo of Samoa,typo,WS,test
+CC|YE|typo,CC,Yemeen,YE,country,False,REFUSE,rule:one-edit typo of Yemen,typo,YE,dev
+CC|YT|typo,CC,Myotte,YT,country,False,REFUSE,rule:one-edit typo of Mayotte,typo,YT,dev
+CC|ZA|typo,CC,Sotuh Africa,ZA,country,True,COMPUTE,rule:one-edit typo of South Africa,typo,ZA,dev
+CC|ZM|typo,CC,Zabmia,ZM,country,False,REFUSE,rule:one-edit typo of Zambia,typo,ZM,test
+CC|ZW|typo,CC,Zipbabwe,ZW,country,False,REFUSE,rule:one-edit typo of Zimbabwe,typo,ZW,test
+CD|AD|fr,CD,Andorre,AD,country,False,REFUSE,CLDR47:fr,localised,AD,dev
+CD|AE|de,CD,Vereinigte Arabische Emirate,AE,country,True,COMPUTE,CLDR47:de,localised,AE,test
+CD|AE|es,CD,Emiratos Árabes Unidos,AE,country,True,COMPUTE,CLDR47:es,localised,AE,test
+CD|AE|fr,CD,Émirats arabes unis,AE,country,True,COMPUTE,CLDR47:fr,localised,AE,test
+CD|AE|it,CD,Emirati Arabi Uniti,AE,country,True,COMPUTE,CLDR47:it,localised,AE,test
+CD|AE|nl,CD,Verenigde Arabische Emiraten,AE,country,True,COMPUTE,CLDR47:nl,localised,AE,test
+CD|AE|pt,CD,Emirados Árabes Unidos,AE,country,True,COMPUTE,CLDR47:pt,localised,AE,test
+CD|AF|es,CD,Afganistán,AF,country,False,REFUSE,CLDR47:es,localised,AF,test
+CD|AF|pt,CD,Afeganistão,AF,country,False,REFUSE,CLDR47:pt,localised,AF,test
+CD|AG|de,CD,Antigua und Barbuda,AG,country,False,REFUSE,CLDR47:de,localised,AG,test
+CD|AG|es,CD,Antigua y Barbuda,AG,country,False,REFUSE,CLDR47:es,localised,AG,test
+CD|AG|fr,CD,Antigua-et-Barbuda,AG,country,False,REFUSE,CLDR47:fr,localised,AG,test
+CD|AG|it,CD,Antigua e Barbuda,AG,country,False,REFUSE,CLDR47:it,localised,AG,test
+CD|AG|nl,CD,Antigua en Barbuda,AG,country,False,REFUSE,CLDR47:nl,localised,AG,test
+CD|AG|pt,CD,Antígua e Barbuda,AG,country,False,REFUSE,CLDR47:pt,localised,AG,test
+CD|AI|es,CD,Anguila,AI,country,False,REFUSE,CLDR47:es,localised,AI,dev
+CD|AL|de,CD,Albanien,AL,country,False,REFUSE,CLDR47:de,localised,AL,test
+CD|AL|fr,CD,Albanie,AL,country,False,REFUSE,CLDR47:fr,localised,AL,test
+CD|AL|nl,CD,Albanië,AL,country,False,REFUSE,CLDR47:nl,localised,AL,test
+CD|AM|de,CD,Armenien,AM,country,False,REFUSE,CLDR47:de,localised,AM,test
+CD|AM|fr,CD,Arménie,AM,country,False,REFUSE,CLDR47:fr,localised,AM,test
+CD|AM|nl,CD,Armenië,AM,country,False,REFUSE,CLDR47:nl,localised,AM,test
+CD|AQ|de,CD,Antarktis,AQ,country,False,REFUSE,CLDR47:de,localised,AQ,dev
+CD|AQ|es,CD,Antártida,AQ,country,False,REFUSE,CLDR47:es,localised,AQ,dev
+CD|AQ|fr,CD,Antarctique,AQ,country,False,REFUSE,CLDR47:fr,localised,AQ,dev
+CD|AQ|it,CD,Antartide,AQ,country,False,REFUSE,CLDR47:it,localised,AQ,dev
+CD|AR|de,CD,Argentinien,AR,country,True,COMPUTE,CLDR47:de,localised,AR,dev
+CD|AR|fr,CD,Argentine,AR,country,True,COMPUTE,CLDR47:fr,localised,AR,dev
+CD|AR|nl,CD,Argentinië,AR,country,True,COMPUTE,CLDR47:nl,localised,AR,dev
+CD|AS|de,CD,Amerikanisch-Samoa,AS,country,False,REFUSE,CLDR47:de,localised,AS,test
+CD|AS|es,CD,Samoa Americana,AS,country,False,REFUSE,CLDR47:es,localised,AS,test
+CD|AS|fr,CD,Samoa américaines,AS,country,False,REFUSE,CLDR47:fr,localised,AS,test
+CD|AS|it,CD,Samoa Americane,AS,country,False,REFUSE,CLDR47:it,localised,AS,test
+CD|AS|nl,CD,Amerikaans-Samoa,AS,country,False,REFUSE,CLDR47:nl,localised,AS,test
+CD|AT|de,CD,Österreich,AT,country,True,COMPUTE,CLDR47:de,localised,AT,dev
+CD|AT|fr,CD,Autriche,AT,country,True,COMPUTE,CLDR47:fr,localised,AT,dev
+CD|AT|nl,CD,Oostenrijk,AT,country,True,COMPUTE,CLDR47:nl,localised,AT,dev
+CD|AU|de,CD,Australien,AU,country,True,COMPUTE,CLDR47:de,localised,AU,dev
+CD|AU|fr,CD,Australie,AU,country,True,COMPUTE,CLDR47:fr,localised,AU,dev
+CD|AU|nl,CD,Australië,AU,country,True,COMPUTE,CLDR47:nl,localised,AU,dev
+CD|AX|de,CD,Ålandinseln,AX,country,False,REFUSE,CLDR47:de,localised,AX,test
+CD|AX|es,CD,Islas Aland,AX,country,False,REFUSE,CLDR47:es,localised,AX,test
+CD|AX|fr,CD,Îles Åland,AX,country,False,REFUSE,CLDR47:fr,localised,AX,test
+CD|AX|it,CD,Isole Åland,AX,country,False,REFUSE,CLDR47:it,localised,AX,test
+CD|AX|nl,CD,Åland,AX,country,False,REFUSE,CLDR47:nl,localised,AX,test
+CD|AX|pt,CD,Ilhas Aland,AX,country,False,REFUSE,CLDR47:pt,localised,AX,test
+CD|AZ|de,CD,Aserbaidschan,AZ,country,False,REFUSE,CLDR47:de,localised,AZ,dev
+CD|AZ|es,CD,Azerbaiyán,AZ,country,False,REFUSE,CLDR47:es,localised,AZ,dev
+CD|AZ|fr,CD,Azerbaïdjan,AZ,country,False,REFUSE,CLDR47:fr,localised,AZ,dev
+CD|AZ|it,CD,Azerbaigian,AZ,country,False,REFUSE,CLDR47:it,localised,AZ,dev
+CD|AZ|nl,CD,Azerbeidzjan,AZ,country,False,REFUSE,CLDR47:nl,localised,AZ,dev
+CD|AZ|pt,CD,Azerbaijão,AZ,country,False,REFUSE,CLDR47:pt,localised,AZ,dev
+CD|BA|de,CD,Bosnien und Herzegowina,BA,country,False,REFUSE,CLDR47:de,localised,BA,test
+CD|BA|es,CD,Bosnia y Herzegovina,BA,country,False,REFUSE,CLDR47:es,localised,BA,test
+CD|BA|fr,CD,Bosnie-Herzégovine,BA,country,False,REFUSE,CLDR47:fr,localised,BA,test
+CD|BA|it,CD,Bosnia ed Erzegovina,BA,country,False,REFUSE,CLDR47:it,localised,BA,test
+CD|BA|nl,CD,Bosnië en Herzegovina,BA,country,False,REFUSE,CLDR47:nl,localised,BA,test
+CD|BA|pt,CD,Bósnia e Herzegovina,BA,country,False,REFUSE,CLDR47:pt,localised,BA,test
+CD|BB|fr,CD,Barbade,BB,country,False,REFUSE,CLDR47:fr,localised,BB,test
+CD|BD|de,CD,Bangladesch,BD,country,False,REFUSE,CLDR47:de,localised,BD,dev
+CD|BD|es,CD,Bangladés,BD,country,False,REFUSE,CLDR47:es,localised,BD,dev
+CD|BE|de,CD,Belgien,BE,country,True,COMPUTE,CLDR47:de,localised,BE,dev
+CD|BE|es,CD,Bélgica,BE,country,True,COMPUTE,CLDR47:es,localised,BE,dev
+CD|BE|fr,CD,Belgique,BE,country,True,COMPUTE,CLDR47:fr,localised,BE,dev
+CD|BE|it,CD,Belgio,BE,country,True,COMPUTE,CLDR47:it,localised,BE,dev
+CD|BE|nl,CD,België,BE,country,True,COMPUTE,CLDR47:nl,localised,BE,dev
+CD|BF|pt,CD,Burquina Faso,BF,country,False,REFUSE,CLDR47:pt,localised,BF,test
+CD|BG|de,CD,Bulgarien,BG,country,False,REFUSE,CLDR47:de,localised,BG,test
+CD|BG|fr,CD,Bulgarie,BG,country,False,REFUSE,CLDR47:fr,localised,BG,test
+CD|BG|nl,CD,Bulgarije,BG,country,False,REFUSE,CLDR47:nl,localised,BG,test
+CD|BH|es,CD,Baréin,BH,country,False,REFUSE,CLDR47:es,localised,BH,dev
+CD|BH|fr,CD,Bahreïn,BH,country,False,REFUSE,CLDR47:fr,localised,BH,dev
+CD|BH|it,CD,Bahrein,BH,country,False,REFUSE,CLDR47:it,localised,BH,dev
+CD|BH|pt,CD,Barein,BH,country,False,REFUSE,CLDR47:pt,localised,BH,dev
+CD|BL|de,CD,St. Barthélemy,BL,country,False,REFUSE,CLDR47:de,localised,BL,test
+CD|BL|es,CD,San Bartolomé,BL,country,False,REFUSE,CLDR47:es,localised,BL,test
+CD|BL|pt,CD,São Bartolomeu,BL,country,False,REFUSE,CLDR47:pt,localised,BL,test
+CD|BM|es,CD,Bermudas,BM,country,False,REFUSE,CLDR47:es,localised,BM,test
+CD|BM|fr,CD,Bermudes,BM,country,False,REFUSE,CLDR47:fr,localised,BM,test
+CD|BN|es,CD,Brunéi,BN,country,False,REFUSE,CLDR47:es,localised,BN,dev
+CD|BN|fr,CD,Brunei,BN,country,False,REFUSE,CLDR47:fr,localised,BN,dev
+CD|BO|de,CD,Bolivien,BO,country,False,REFUSE,CLDR47:de,localised,BO,test
+CD|BO|fr,CD,Bolivie,BO,country,False,REFUSE,CLDR47:fr,localised,BO,test
+CD|BQ|de,CD,Karibische Niederlande,BQ,country,False,REFUSE,CLDR47:de,localised,BQ,dev
+CD|BQ|es,CD,Caribe neerlandés,BQ,country,False,REFUSE,CLDR47:es,localised,BQ,dev
+CD|BQ|fr,CD,Pays-Bas caribéens,BQ,country,False,REFUSE,CLDR47:fr,localised,BQ,dev
+CD|BQ|it,CD,Caraibi Olandesi,BQ,country,False,REFUSE,CLDR47:it,localised,BQ,dev
+CD|BQ|nl,CD,Caribisch Nederland,BQ,country,False,REFUSE,CLDR47:nl,localised,BQ,dev
+CD|BQ|pt,CD,Países Baixos Caribenhos,BQ,country,False,REFUSE,CLDR47:pt,localised,BQ,dev
+CD|BR|de,CD,Brasilien,BR,country,True,COMPUTE,CLDR47:de,localised,BR,test
+CD|BR|es,CD,Brasil,BR,country,True,COMPUTE,CLDR47:es,localised,BR,test
+CD|BR|fr,CD,Brésil,BR,country,True,COMPUTE,CLDR47:fr,localised,BR,test
+CD|BR|it,CD,Brasile,BR,country,True,COMPUTE,CLDR47:it,localised,BR,test
+CD|BR|nl,CD,Brazilië,BR,country,True,COMPUTE,CLDR47:nl,localised,BR,test
+CD|BS|nl,CD,Bahama’s,BS,country,False,REFUSE,CLDR47:nl,localised,BS,test
+CD|BT|es,CD,Bután,BT,country,False,REFUSE,CLDR47:es,localised,BT,test
+CD|BT|fr,CD,Bhoutan,BT,country,False,REFUSE,CLDR47:fr,localised,BT,test
+CD|BT|pt,CD,Butão,BT,country,False,REFUSE,CLDR47:pt,localised,BT,test
+CD|BV|de,CD,Bouvetinsel,BV,country,False,REFUSE,CLDR47:de,localised,BV,test
+CD|BV|es,CD,Isla Bouvet,BV,country,False,REFUSE,CLDR47:es,localised,BV,test
+CD|BV|fr,CD,Île Bouvet,BV,country,False,REFUSE,CLDR47:fr,localised,BV,test
+CD|BV|it,CD,Isola Bouvet,BV,country,False,REFUSE,CLDR47:it,localised,BV,test
+CD|BV|nl,CD,Bouveteiland,BV,country,False,REFUSE,CLDR47:nl,localised,BV,test
+CD|BV|pt,CD,Ilha Bouvet,BV,country,False,REFUSE,CLDR47:pt,localised,BV,test
+CD|BW|de,CD,Botsuana,BW,country,False,REFUSE,CLDR47:de,localised,BW,test
+CD|BY|es,CD,Bielorrusia,BY,country,False,REFUSE,CLDR47:es,localised,BY,test
+CD|BY|fr,CD,Biélorussie,BY,country,False,REFUSE,CLDR47:fr,localised,BY,test
+CD|BY|it,CD,Bielorussia,BY,country,False,REFUSE,CLDR47:it,localised,BY,test
+CD|BY|pt,CD,Bielorrússia,BY,country,False,REFUSE,CLDR47:pt,localised,BY,test
+CD|BZ|es,CD,Belice,BZ,country,False,REFUSE,CLDR47:es,localised,BZ,test
+CD|CA|de,CD,Kanada,CA,country,True,COMPUTE,CLDR47:de,localised,CA,dev
+CD|CC|de,CD,Kokosinseln,CC,country,False,REFUSE,CLDR47:de,localised,CC,test
+CD|CC|es,CD,Islas Cocos,CC,country,False,REFUSE,CLDR47:es,localised,CC,test
+CD|CC|fr,CD,Îles Cocos,CC,country,False,REFUSE,CLDR47:fr,localised,CC,test
+CD|CC|it,CD,Isole Cocos (Keeling),CC,country,False,REFUSE,CLDR47:it,localised,CC,test
+CD|CC|nl,CD,Cocoseilanden,CC,country,False,REFUSE,CLDR47:nl,localised,CC,test
+CD|CC|pt,CD,Ilhas Cocos (Keeling),CC,country,False,REFUSE,CLDR47:pt,localised,CC,test
+CD|CD|de,CD,Kongo-Kinshasa,CD,country,False,REFUSE,CLDR47:de,localised,CD,test
+CD|CD|es,CD,República Democrática del Congo,CD,country,False,REFUSE,CLDR47:es,localised,CD,test
+CD|CD|fr,CD,Congo-Kinshasa,CD,country,False,REFUSE,CLDR47:fr,localised,CD,test
+CD|CD|it,CD,Congo - Kinshasa,CD,country,False,REFUSE,CLDR47:it,localised,CD,test
+CD|CF|de,CD,Zentralafrikanische Republik,CF,country,False,REFUSE,CLDR47:de,localised,CF,dev
+CD|CF|es,CD,República Centroafricana,CF,country,False,REFUSE,CLDR47:es,localised,CF,dev
+CD|CF|fr,CD,République centrafricaine,CF,country,False,REFUSE,CLDR47:fr,localised,CF,dev
+CD|CF|it,CD,Repubblica Centrafricana,CF,country,False,REFUSE,CLDR47:it,localised,CF,dev
+CD|CF|nl,CD,Centraal-Afrikaanse Republiek,CF,country,False,REFUSE,CLDR47:nl,localised,CF,dev
+CD|CF|pt,CD,República Centro-Africana,CF,country,False,REFUSE,CLDR47:pt,localised,CF,dev
+CD|CG|de,CD,Kongo-Brazzaville,CG,country,False,REFUSE,CLDR47:de,localised,CG,test
+CD|CG|fr,CD,Congo-Brazzaville,CG,country,False,REFUSE,CLDR47:fr,localised,CG,test
+CD|CG|pt,CD,República do Congo,CG,country,False,REFUSE,CLDR47:pt,localised,CG,test
+CD|CH|de,CD,Schweiz,CH,country,True,COMPUTE,CLDR47:de,localised,CH,dev
+CD|CH|es,CD,Suiza,CH,country,True,COMPUTE,CLDR47:es,localised,CH,dev
+CD|CH|fr,CD,Suisse,CH,country,True,COMPUTE,CLDR47:fr,localised,CH,dev
+CD|CH|it,CD,Svizzera,CH,country,True,COMPUTE,CLDR47:it,localised,CH,dev
+CD|CH|nl,CD,Zwitserland,CH,country,True,COMPUTE,CLDR47:nl,localised,CH,dev
+CD|CH|pt,CD,Suíça,CH,country,True,COMPUTE,CLDR47:pt,localised,CH,dev
+CD|CI|it,CD,Costa d’Avorio,CI,country,False,REFUSE,CLDR47:it,localised,CI,test
+CD|CI|nl,CD,Ivoorkust,CI,country,False,REFUSE,CLDR47:nl,localised,CI,test
+CD|CI|pt,CD,Costa do Marfim,CI,country,False,REFUSE,CLDR47:pt,localised,CI,test
+CD|CK|de,CD,Cookinseln,CK,country,False,REFUSE,CLDR47:de,localised,CK,dev
+CD|CK|es,CD,Islas Cook,CK,country,False,REFUSE,CLDR47:es,localised,CK,dev
+CD|CK|fr,CD,Îles Cook,CK,country,False,REFUSE,CLDR47:fr,localised,CK,dev
+CD|CK|it,CD,Isole Cook,CK,country,False,REFUSE,CLDR47:it,localised,CK,dev
+CD|CK|nl,CD,Cookeilanden,CK,country,False,REFUSE,CLDR47:nl,localised,CK,dev
+CD|CK|pt,CD,Ilhas Cook,CK,country,False,REFUSE,CLDR47:pt,localised,CK,dev
+CD|CL|fr,CD,Chili,CL,country,True,COMPUTE,CLDR47:fr,localised,CL,test
+CD|CL|it,CD,Cile,CL,country,True,COMPUTE,CLDR47:it,localised,CL,test
+CD|CM|de,CD,Kamerun,CM,country,False,REFUSE,CLDR47:de,localised,CM,test
+CD|CM|es,CD,Camerún,CM,country,False,REFUSE,CLDR47:es,localised,CM,test
+CD|CM|fr,CD,Cameroun,CM,country,False,REFUSE,CLDR47:fr,localised,CM,test
+CD|CM|it,CD,Camerun,CM,country,False,REFUSE,CLDR47:it,localised,CM,test
+CD|CM|nl,CD,Kameroen,CM,country,False,REFUSE,CLDR47:nl,localised,CM,test
+CD|CM|pt,CD,Camarões,CM,country,False,REFUSE,CLDR47:pt,localised,CM,test
+CD|CN|fr,CD,Chine,CN,country,True,COMPUTE,CLDR47:fr,localised,CN,test
+CD|CN|it,CD,Cina,CN,country,True,COMPUTE,CLDR47:it,localised,CN,test
+CD|CO|de,CD,Kolumbien,CO,country,False,REFUSE,CLDR47:de,localised,CO,dev
+CD|CO|fr,CD,Colombie,CO,country,False,REFUSE,CLDR47:fr,localised,CO,dev
+CD|CU|de,CD,Kuba,CU,country,False,REFUSE,CLDR47:de,localised,CU,dev
+CD|CV|fr,CD,Cap-Vert,CV,country,False,REFUSE,CLDR47:fr,localised,CV,test
+CD|CV|it,CD,Capo Verde,CV,country,False,REFUSE,CLDR47:it,localised,CV,test
+CD|CV|nl,CD,Kaapverdië,CV,country,False,REFUSE,CLDR47:nl,localised,CV,test
+CD|CW|es,CD,Curazao,CW,country,False,REFUSE,CLDR47:es,localised,CW,dev
+CD|CX|de,CD,Weihnachtsinsel,CX,country,False,REFUSE,CLDR47:de,localised,CX,dev
+CD|CX|es,CD,Isla de Navidad,CX,country,False,REFUSE,CLDR47:es,localised,CX,dev
+CD|CX|fr,CD,Île Christmas,CX,country,False,REFUSE,CLDR47:fr,localised,CX,dev
+CD|CX|it,CD,Isola Christmas,CX,country,False,REFUSE,CLDR47:it,localised,CX,dev
+CD|CX|nl,CD,Christmaseiland,CX,country,False,REFUSE,CLDR47:nl,localised,CX,dev
+CD|CX|pt,CD,Ilha Christmas,CX,country,False,REFUSE,CLDR47:pt,localised,CX,dev
+CD|CY|de,CD,Zypern,CY,country,False,REFUSE,CLDR47:de,localised,CY,dev
+CD|CY|es,CD,Chipre,CY,country,False,REFUSE,CLDR47:es,localised,CY,dev
+CD|CY|fr,CD,Chypre,CY,country,False,REFUSE,CLDR47:fr,localised,CY,dev
+CD|CY|it,CD,Cipro,CY,country,False,REFUSE,CLDR47:it,localised,CY,dev
+CD|CZ|de,CD,Tschechien,CZ,country,False,REFUSE,CLDR47:de,localised,CZ,test
+CD|CZ|es,CD,Chequia,CZ,country,False,REFUSE,CLDR47:es,localised,CZ,test
+CD|CZ|fr,CD,Tchéquie,CZ,country,False,REFUSE,CLDR47:fr,localised,CZ,test
+CD|CZ|it,CD,Cechia,CZ,country,False,REFUSE,CLDR47:it,localised,CZ,test
+CD|CZ|nl,CD,Tsjechië,CZ,country,False,REFUSE,CLDR47:nl,localised,CZ,test
+CD|CZ|pt,CD,Tchéquia,CZ,country,False,REFUSE,CLDR47:pt,localised,CZ,test
+CD|DE|de,CD,Deutschland,DE,country,True,COMPUTE,CLDR47:de,localised,DE,dev
+CD|DE|es,CD,Alemania,DE,country,True,COMPUTE,CLDR47:es,localised,DE,dev
+CD|DE|fr,CD,Allemagne,DE,country,True,COMPUTE,CLDR47:fr,localised,DE,dev
+CD|DE|it,CD,Germania,DE,country,True,COMPUTE,CLDR47:it,localised,DE,dev
+CD|DE|nl,CD,Duitsland,DE,country,True,COMPUTE,CLDR47:nl,localised,DE,dev
+CD|DE|pt,CD,Alemanha,DE,country,True,COMPUTE,CLDR47:pt,localised,DE,dev
+CD|DJ|de,CD,Dschibuti,DJ,country,False,REFUSE,CLDR47:de,localised,DJ,test
+CD|DJ|es,CD,Yibuti,DJ,country,False,REFUSE,CLDR47:es,localised,DJ,test
+CD|DJ|it,CD,Gibuti,DJ,country,False,REFUSE,CLDR47:it,localised,DJ,test
+CD|DJ|pt,CD,Djibuti,DJ,country,False,REFUSE,CLDR47:pt,localised,DJ,test
+CD|DK|de,CD,Dänemark,DK,country,True,COMPUTE,CLDR47:de,localised,DK,dev
+CD|DK|es,CD,Dinamarca,DK,country,True,COMPUTE,CLDR47:es,localised,DK,dev
+CD|DK|fr,CD,Danemark,DK,country,True,COMPUTE,CLDR47:fr,localised,DK,dev
+CD|DK|it,CD,Danimarca,DK,country,True,COMPUTE,CLDR47:it,localised,DK,dev
+CD|DK|nl,CD,Denemarken,DK,country,True,COMPUTE,CLDR47:nl,localised,DK,dev
+CD|DM|fr,CD,Dominique,DM,country,False,REFUSE,CLDR47:fr,localised,DM,dev
+CD|DO|de,CD,Dominikanische Republik,DO,country,False,REFUSE,CLDR47:de,localised,DO,dev
+CD|DO|es,CD,República Dominicana,DO,country,False,REFUSE,CLDR47:es,localised,DO,dev
+CD|DO|fr,CD,République dominicaine,DO,country,False,REFUSE,CLDR47:fr,localised,DO,dev
+CD|DO|it,CD,Repubblica Dominicana,DO,country,False,REFUSE,CLDR47:it,localised,DO,dev
+CD|DO|nl,CD,Dominicaanse Republiek,DO,country,False,REFUSE,CLDR47:nl,localised,DO,dev
+CD|DZ|de,CD,Algerien,DZ,country,False,REFUSE,CLDR47:de,localised,DZ,dev
+CD|DZ|es,CD,Argelia,DZ,country,False,REFUSE,CLDR47:es,localised,DZ,dev
+CD|DZ|fr,CD,Algérie,DZ,country,False,REFUSE,CLDR47:fr,localised,DZ,dev
+CD|DZ|nl,CD,Algerije,DZ,country,False,REFUSE,CLDR47:nl,localised,DZ,dev
+CD|DZ|pt,CD,Argélia,DZ,country,False,REFUSE,CLDR47:pt,localised,DZ,dev
+CD|EC|fr,CD,Équateur,EC,country,False,REFUSE,CLDR47:fr,localised,EC,test
+CD|EC|pt,CD,Equador,EC,country,False,REFUSE,CLDR47:pt,localised,EC,test
+CD|EE|de,CD,Estland,EE,country,False,REFUSE,CLDR47:de,localised,EE,dev
+CD|EE|fr,CD,Estonie,EE,country,False,REFUSE,CLDR47:fr,localised,EE,dev
+CD|EG|de,CD,Ägypten,EG,country,True,COMPUTE,CLDR47:de,localised,EG,dev
+CD|EG|es,CD,Egipto,EG,country,True,COMPUTE,CLDR47:es,localised,EG,dev
+CD|EG|fr,CD,Égypte,EG,country,True,COMPUTE,CLDR47:fr,localised,EG,dev
+CD|EG|it,CD,Egitto,EG,country,True,COMPUTE,CLDR47:it,localised,EG,dev
+CD|EG|nl,CD,Egypte,EG,country,True,COMPUTE,CLDR47:nl,localised,EG,dev
+CD|EG|pt,CD,Egito,EG,country,True,COMPUTE,CLDR47:pt,localised,EG,dev
+CD|EH|de,CD,Westsahara,EH,country,False,REFUSE,CLDR47:de,localised,EH,test
+CD|EH|es,CD,Sáhara Occidental,EH,country,False,REFUSE,CLDR47:es,localised,EH,test
+CD|EH|fr,CD,Sahara occidental,EH,country,False,REFUSE,CLDR47:fr,localised,EH,test
+CD|EH|it,CD,Sahara Occidentale,EH,country,False,REFUSE,CLDR47:it,localised,EH,test
+CD|EH|nl,CD,Westelijke Sahara,EH,country,False,REFUSE,CLDR47:nl,localised,EH,test
+CD|EH|pt,CD,Saara Ocidental,EH,country,False,REFUSE,CLDR47:pt,localised,EH,test
+CD|ER|fr,CD,Érythrée,ER,country,False,REFUSE,CLDR47:fr,localised,ER,test
+CD|ER|pt,CD,Eritreia,ER,country,False,REFUSE,CLDR47:pt,localised,ER,test
+CD|ES|de,CD,Spanien,ES,country,True,COMPUTE,CLDR47:de,localised,ES,test
+CD|ES|es,CD,España,ES,country,True,COMPUTE,CLDR47:es,localised,ES,test
+CD|ES|fr,CD,Espagne,ES,country,True,COMPUTE,CLDR47:fr,localised,ES,test
+CD|ES|it,CD,Spagna,ES,country,True,COMPUTE,CLDR47:it,localised,ES,test
+CD|ES|nl,CD,Spanje,ES,country,True,COMPUTE,CLDR47:nl,localised,ES,test
+CD|ES|pt,CD,Espanha,ES,country,True,COMPUTE,CLDR47:pt,localised,ES,test
+CD|ET|de,CD,Äthiopien,ET,country,False,REFUSE,CLDR47:de,localised,ET,dev
+CD|ET|es,CD,Etiopía,ET,country,False,REFUSE,CLDR47:es,localised,ET,dev
+CD|ET|fr,CD,Éthiopie,ET,country,False,REFUSE,CLDR47:fr,localised,ET,dev
+CD|ET|it,CD,Etiopia,ET,country,False,REFUSE,CLDR47:it,localised,ET,dev
+CD|ET|nl,CD,Ethiopië,ET,country,False,REFUSE,CLDR47:nl,localised,ET,dev
+CD|ET|pt,CD,Etiópia,ET,country,False,REFUSE,CLDR47:pt,localised,ET,dev
+CD|FI|de,CD,Finnland,FI,country,False,REFUSE,CLDR47:de,localised,FI,dev
+CD|FI|es,CD,Finlandia,FI,country,False,REFUSE,CLDR47:es,localised,FI,dev
+CD|FI|fr,CD,Finlande,FI,country,False,REFUSE,CLDR47:fr,localised,FI,dev
+CD|FI|pt,CD,Finlândia,FI,country,False,REFUSE,CLDR47:pt,localised,FI,dev
+CD|FJ|de,CD,Fidschi,FJ,country,False,REFUSE,CLDR47:de,localised,FJ,test
+CD|FJ|es,CD,Fiyi,FJ,country,False,REFUSE,CLDR47:es,localised,FJ,test
+CD|FJ|fr,CD,Fidji,FJ,country,False,REFUSE,CLDR47:fr,localised,FJ,test
+CD|FJ|it,CD,Figi,FJ,country,False,REFUSE,CLDR47:it,localised,FJ,test
+CD|FK|de,CD,Falklandinseln,FK,country,False,REFUSE,CLDR47:de,localised,FK,dev
+CD|FK|es,CD,Islas Malvinas,FK,country,False,REFUSE,CLDR47:es,localised,FK,dev
+CD|FK|fr,CD,Îles Malouines,FK,country,False,REFUSE,CLDR47:fr,localised,FK,dev
+CD|FK|it,CD,Isole Falkland,FK,country,False,REFUSE,CLDR47:it,localised,FK,dev
+CD|FK|nl,CD,Falklandeilanden,FK,country,False,REFUSE,CLDR47:nl,localised,FK,dev
+CD|FK|pt,CD,Ilhas Malvinas,FK,country,False,REFUSE,CLDR47:pt,localised,FK,dev
+CD|FM|de,CD,Mikronesien,FM,country,False,REFUSE,CLDR47:de,localised,FM,test
+CD|FM|es,CD,Micronesia,FM,country,False,REFUSE,CLDR47:es,localised,FM,test
+CD|FM|fr,CD,Micronésie,FM,country,False,REFUSE,CLDR47:fr,localised,FM,test
+CD|FM|pt,CD,Micronésia,FM,country,False,REFUSE,CLDR47:pt,localised,FM,test
+CD|FO|de,CD,Färöer,FO,country,False,REFUSE,CLDR47:de,localised,FO,dev
+CD|FO|es,CD,Islas Feroe,FO,country,False,REFUSE,CLDR47:es,localised,FO,dev
+CD|FO|fr,CD,Îles Féroé,FO,country,False,REFUSE,CLDR47:fr,localised,FO,dev
+CD|FO|it,CD,Isole Fær Øer,FO,country,False,REFUSE,CLDR47:it,localised,FO,dev
+CD|FO|nl,CD,Faeröer,FO,country,False,REFUSE,CLDR47:nl,localised,FO,dev
+CD|FO|pt,CD,Ilhas Faroé,FO,country,False,REFUSE,CLDR47:pt,localised,FO,dev
+CD|FR|de,CD,Frankreich,FR,country,True,COMPUTE,CLDR47:de,localised,FR,test
+CD|FR|es,CD,Francia,FR,country,True,COMPUTE,CLDR47:es,localised,FR,test
+CD|FR|nl,CD,Frankrijk,FR,country,True,COMPUTE,CLDR47:nl,localised,FR,test
+CD|FR|pt,CD,França,FR,country,True,COMPUTE,CLDR47:pt,localised,FR,test
+CD|GA|de,CD,Gabun,GA,country,False,REFUSE,CLDR47:de,localised,GA,dev
+CD|GA|pt,CD,Gabão,GA,country,False,REFUSE,CLDR47:pt,localised,GA,dev
+CD|GB|de,CD,Vereinigtes Königreich,GB,country,True,COMPUTE,CLDR47:de,localised,GB,dev
+CD|GB|es,CD,Reino Unido,GB,country,True,COMPUTE,CLDR47:es,localised,GB,dev
+CD|GB|fr,CD,Royaume-Uni,GB,country,True,COMPUTE,CLDR47:fr,localised,GB,dev
+CD|GB|it,CD,Regno Unito,GB,country,True,COMPUTE,CLDR47:it,localised,GB,dev
+CD|GB|nl,CD,Verenigd Koninkrijk,GB,country,True,COMPUTE,CLDR47:nl,localised,GB,dev
+CD|GD|es,CD,Granada,GD,country,False,REFUSE,CLDR47:es,localised,GD,test
+CD|GD|fr,CD,Grenade,GD,country,False,REFUSE,CLDR47:fr,localised,GD,test
+CD|GE|de,CD,Georgien,GE,country,False,REFUSE,CLDR47:de,localised,GE,dev
+CD|GE|fr,CD,Géorgie,GE,country,False,REFUSE,CLDR47:fr,localised,GE,dev
+CD|GE|nl,CD,Georgië,GE,country,False,REFUSE,CLDR47:nl,localised,GE,dev
+CD|GF|de,CD,Französisch-Guayana,GF,country,False,REFUSE,CLDR47:de,localised,GF,dev
+CD|GF|es,CD,Guayana Francesa,GF,country,False,REFUSE,CLDR47:es,localised,GF,dev
+CD|GF|fr,CD,Guyane française,GF,country,False,REFUSE,CLDR47:fr,localised,GF,dev
+CD|GF|it,CD,Guyana Francese,GF,country,False,REFUSE,CLDR47:it,localised,GF,dev
+CD|GF|nl,CD,Frans-Guyana,GF,country,False,REFUSE,CLDR47:nl,localised,GF,dev
+CD|GF|pt,CD,Guiana Francesa,GF,country,False,REFUSE,CLDR47:pt,localised,GF,dev
+CD|GG|fr,CD,Guernesey,GG,country,False,REFUSE,CLDR47:fr,localised,GG,dev
+CD|GH|pt,CD,Gana,GH,country,False,REFUSE,CLDR47:pt,localised,GH,test
+CD|GI|it,CD,Gibilterra,GI,country,False,REFUSE,CLDR47:it,localised,GI,test
+CD|GL|de,CD,Grönland,GL,country,False,REFUSE,CLDR47:de,localised,GL,test
+CD|GL|es,CD,Groenlandia,GL,country,False,REFUSE,CLDR47:es,localised,GL,test
+CD|GL|fr,CD,Groenland,GL,country,False,REFUSE,CLDR47:fr,localised,GL,test
+CD|GL|pt,CD,Groenlândia,GL,country,False,REFUSE,CLDR47:pt,localised,GL,test
+CD|GM|fr,CD,Gambie,GM,country,False,REFUSE,CLDR47:fr,localised,GM,test
+CD|GN|fr,CD,Guinée,GN,country,False,REFUSE,CLDR47:fr,localised,GN,test
+CD|GN|nl,CD,Guinee,GN,country,False,REFUSE,CLDR47:nl,localised,GN,test
+CD|GN|pt,CD,Guiné,GN,country,False,REFUSE,CLDR47:pt,localised,GN,test
+CD|GP|es,CD,Guadalupe,GP,country,False,REFUSE,CLDR47:es,localised,GP,test
+CD|GP|it,CD,Guadalupa,GP,country,False,REFUSE,CLDR47:it,localised,GP,test
+CD|GQ|de,CD,Äquatorialguinea,GQ,country,False,REFUSE,CLDR47:de,localised,GQ,dev
+CD|GQ|es,CD,Guinea Ecuatorial,GQ,country,False,REFUSE,CLDR47:es,localised,GQ,dev
+CD|GQ|fr,CD,Guinée équatoriale,GQ,country,False,REFUSE,CLDR47:fr,localised,GQ,dev
+CD|GQ|it,CD,Guinea Equatoriale,GQ,country,False,REFUSE,CLDR47:it,localised,GQ,dev
+CD|GQ|nl,CD,Equatoriaal-Guinea,GQ,country,False,REFUSE,CLDR47:nl,localised,GQ,dev
+CD|GQ|pt,CD,Guiné Equatorial,GQ,country,False,REFUSE,CLDR47:pt,localised,GQ,dev
+CD|GR|de,CD,Griechenland,GR,country,True,COMPUTE,CLDR47:de,localised,GR,test
+CD|GR|es,CD,Grecia,GR,country,True,COMPUTE,CLDR47:es,localised,GR,test
+CD|GR|fr,CD,Grèce,GR,country,True,COMPUTE,CLDR47:fr,localised,GR,test
+CD|GR|nl,CD,Griekenland,GR,country,True,COMPUTE,CLDR47:nl,localised,GR,test
+CD|GR|pt,CD,Grécia,GR,country,True,COMPUTE,CLDR47:pt,localised,GR,test
+CD|GS|de,CD,Südgeorgien und die Südlichen Sandwichinseln,GS,country,False,REFUSE,CLDR47:de,localised,GS,dev
+CD|GS|es,CD,Islas Georgia del Sur y Sandwich del Sur,GS,country,False,REFUSE,CLDR47:es,localised,GS,dev
+CD|GS|fr,CD,Géorgie du Sud-et-les Îles Sandwich du Sud,GS,country,False,REFUSE,CLDR47:fr,localised,GS,dev
+CD|GS|it,CD,Georgia del Sud e Sandwich Australi,GS,country,False,REFUSE,CLDR47:it,localised,GS,dev
+CD|GS|nl,CD,Zuid-Georgia en Zuidelijke Sandwicheilanden,GS,country,False,REFUSE,CLDR47:nl,localised,GS,dev
+CD|GS|pt,CD,Ilhas Geórgia do Sul e Sandwich do Sul,GS,country,False,REFUSE,CLDR47:pt,localised,GS,dev
+CD|GW|es,CD,Guinea-Bisáu,GW,country,False,REFUSE,CLDR47:es,localised,GW,test
+CD|GW|fr,CD,Guinée-Bissau,GW,country,False,REFUSE,CLDR47:fr,localised,GW,test
+CD|GW|nl,CD,Guinee-Bissau,GW,country,False,REFUSE,CLDR47:nl,localised,GW,test
+CD|GW|pt,CD,Guiné-Bissau,GW,country,False,REFUSE,CLDR47:pt,localised,GW,test
+CD|GY|pt,CD,Guiana,GY,country,False,REFUSE,CLDR47:pt,localised,GY,dev
+CD|HK|de,CD,Sonderverwaltungsregion Hongkong,HK,country,False,REFUSE,CLDR47:de,localised,HK,test
+CD|HK|es,CD,RAE de Hong Kong (China),HK,country,False,REFUSE,CLDR47:es,localised,HK,test
+CD|HK|fr,CD,R.A.S. chinoise de Hong Kong,HK,country,False,REFUSE,CLDR47:fr,localised,HK,test
+CD|HK|it,CD,RAS di Hong Kong,HK,country,False,REFUSE,CLDR47:it,localised,HK,test
+CD|HK|nl,CD,Hongkong SAR van China,HK,country,False,REFUSE,CLDR47:nl,localised,HK,test
+CD|HK|pt,CD,"Hong Kong, RAE da China",HK,country,False,REFUSE,CLDR47:pt,localised,HK,test
+CD|HM|de,CD,Heard und McDonaldinseln,HM,country,False,REFUSE,CLDR47:de,localised,HM,test
+CD|HM|es,CD,Islas Heard y McDonald,HM,country,False,REFUSE,CLDR47:es,localised,HM,test
+CD|HM|fr,CD,Îles Heard-et-MacDonald,HM,country,False,REFUSE,CLDR47:fr,localised,HM,test
+CD|HM|it,CD,Isole Heard e McDonald,HM,country,False,REFUSE,CLDR47:it,localised,HM,test
+CD|HM|nl,CD,Heard en McDonaldeilanden,HM,country,False,REFUSE,CLDR47:nl,localised,HM,test
+CD|HM|pt,CD,Ilhas Heard e McDonald,HM,country,False,REFUSE,CLDR47:pt,localised,HM,test
+CD|HR|de,CD,Kroatien,HR,country,False,REFUSE,CLDR47:de,localised,HR,test
+CD|HR|es,CD,Croacia,HR,country,False,REFUSE,CLDR47:es,localised,HR,test
+CD|HR|fr,CD,Croatie,HR,country,False,REFUSE,CLDR47:fr,localised,HR,test
+CD|HR|it,CD,Croazia,HR,country,False,REFUSE,CLDR47:it,localised,HR,test
+CD|HR|nl,CD,Kroatië,HR,country,False,REFUSE,CLDR47:nl,localised,HR,test
+CD|HR|pt,CD,Croácia,HR,country,False,REFUSE,CLDR47:pt,localised,HR,test
+CD|HU|de,CD,Ungarn,HU,country,False,REFUSE,CLDR47:de,localised,HU,test
+CD|HU|es,CD,Hungría,HU,country,False,REFUSE,CLDR47:es,localised,HU,test
+CD|HU|fr,CD,Hongrie,HU,country,False,REFUSE,CLDR47:fr,localised,HU,test
+CD|HU|it,CD,Ungheria,HU,country,False,REFUSE,CLDR47:it,localised,HU,test
+CD|HU|nl,CD,Hongarije,HU,country,False,REFUSE,CLDR47:nl,localised,HU,test
+CD|HU|pt,CD,Hungria,HU,country,False,REFUSE,CLDR47:pt,localised,HU,test
+CD|ID|de,CD,Indonesien,ID,country,True,COMPUTE,CLDR47:de,localised,ID,test
+CD|ID|fr,CD,Indonésie,ID,country,True,COMPUTE,CLDR47:fr,localised,ID,test
+CD|ID|nl,CD,Indonesië,ID,country,True,COMPUTE,CLDR47:nl,localised,ID,test
+CD|IE|de,CD,Irland,IE,country,True,COMPUTE,CLDR47:de,localised,IE,dev
+CD|IE|es,CD,Irlanda,IE,country,True,COMPUTE,CLDR47:es,localised,IE,dev
+CD|IE|fr,CD,Irlande,IE,country,True,COMPUTE,CLDR47:fr,localised,IE,dev
+CD|IE|nl,CD,Ierland,IE,country,True,COMPUTE,CLDR47:nl,localised,IE,dev
+CD|IL|it,CD,Israele,IL,country,False,REFUSE,CLDR47:it,localised,IL,test
+CD|IM|es,CD,Isla de Man,IM,country,False,REFUSE,CLDR47:es,localised,IM,test
+CD|IM|fr,CD,Île de Man,IM,country,False,REFUSE,CLDR47:fr,localised,IM,test
+CD|IM|it,CD,Isola di Man,IM,country,False,REFUSE,CLDR47:it,localised,IM,test
+CD|IM|pt,CD,Ilha de Man,IM,country,False,REFUSE,CLDR47:pt,localised,IM,test
+CD|IN|de,CD,Indien,IN,country,True,COMPUTE,CLDR47:de,localised,IN,dev
+CD|IN|fr,CD,Inde,IN,country,True,COMPUTE,CLDR47:fr,localised,IN,dev
+CD|IO|de,CD,Britisches Territorium im Indischen Ozean,IO,country,False,REFUSE,CLDR47:de,localised,IO,dev
+CD|IO|es,CD,Territorio Británico del Océano Índico,IO,country,False,REFUSE,CLDR47:es,localised,IO,dev
+CD|IO|fr,CD,Territoire britannique de l’océan Indien,IO,country,False,REFUSE,CLDR47:fr,localised,IO,dev
+CD|IO|it,CD,Territorio Britannico dell’Oceano Indiano,IO,country,False,REFUSE,CLDR47:it,localised,IO,dev
+CD|IO|nl,CD,Brits Indische Oceaanterritorium,IO,country,False,REFUSE,CLDR47:nl,localised,IO,dev
+CD|IO|pt,CD,Território Britânico do Oceano Índico,IO,country,False,REFUSE,CLDR47:pt,localised,IO,dev
+CD|IQ|de,CD,Irak,IQ,country,False,REFUSE,CLDR47:de,localised,IQ,test
+CD|IQ|pt,CD,Iraque,IQ,country,False,REFUSE,CLDR47:pt,localised,IQ,test
+CD|IR|pt,CD,Irã,IR,country,False,REFUSE,CLDR47:pt,localised,IR,dev
+CD|IS|es,CD,Islandia,IS,country,False,REFUSE,CLDR47:es,localised,IS,dev
+CD|IS|fr,CD,Islande,IS,country,False,REFUSE,CLDR47:fr,localised,IS,dev
+CD|IS|it,CD,Islanda,IS,country,False,REFUSE,CLDR47:it,localised,IS,dev
+CD|IS|nl,CD,IJsland,IS,country,False,REFUSE,CLDR47:nl,localised,IS,dev
+CD|IS|pt,CD,Islândia,IS,country,False,REFUSE,CLDR47:pt,localised,IS,dev
+CD|IT|de,CD,Italien,IT,country,True,COMPUTE,CLDR47:de,localised,IT,test
+CD|IT|es,CD,Italia,IT,country,True,COMPUTE,CLDR47:es,localised,IT,test
+CD|IT|fr,CD,Italie,IT,country,True,COMPUTE,CLDR47:fr,localised,IT,test
+CD|IT|nl,CD,Italië,IT,country,True,COMPUTE,CLDR47:nl,localised,IT,test
+CD|IT|pt,CD,Itália,IT,country,True,COMPUTE,CLDR47:pt,localised,IT,test
+CD|JM|de,CD,Jamaika,JM,country,False,REFUSE,CLDR47:de,localised,JM,test
+CD|JM|fr,CD,Jamaïque,JM,country,False,REFUSE,CLDR47:fr,localised,JM,test
+CD|JM|it,CD,Giamaica,JM,country,False,REFUSE,CLDR47:it,localised,JM,test
+CD|JO|de,CD,Jordanien,JO,country,False,REFUSE,CLDR47:de,localised,JO,test
+CD|JO|es,CD,Jordania,JO,country,False,REFUSE,CLDR47:es,localised,JO,test
+CD|JO|fr,CD,Jordanie,JO,country,False,REFUSE,CLDR47:fr,localised,JO,test
+CD|JO|it,CD,Giordania,JO,country,False,REFUSE,CLDR47:it,localised,JO,test
+CD|JO|nl,CD,Jordanië,JO,country,False,REFUSE,CLDR47:nl,localised,JO,test
+CD|JO|pt,CD,Jordânia,JO,country,False,REFUSE,CLDR47:pt,localised,JO,test
+CD|JP|es,CD,Japón,JP,country,True,COMPUTE,CLDR47:es,localised,JP,test
+CD|JP|fr,CD,Japon,JP,country,True,COMPUTE,CLDR47:fr,localised,JP,test
+CD|JP|it,CD,Giappone,JP,country,True,COMPUTE,CLDR47:it,localised,JP,test
+CD|JP|pt,CD,Japão,JP,country,True,COMPUTE,CLDR47:pt,localised,JP,test
+CD|KE|de,CD,Kenia,KE,country,False,REFUSE,CLDR47:de,localised,KE,test
+CD|KE|pt,CD,Quênia,KE,country,False,REFUSE,CLDR47:pt,localised,KE,test
+CD|KG|de,CD,Kirgisistan,KG,country,False,REFUSE,CLDR47:de,localised,KG,dev
+CD|KG|es,CD,Kirguistán,KG,country,False,REFUSE,CLDR47:es,localised,KG,dev
+CD|KG|fr,CD,Kirghizstan,KG,country,False,REFUSE,CLDR47:fr,localised,KG,dev
+CD|KG|it,CD,Kirghizistan,KG,country,False,REFUSE,CLDR47:it,localised,KG,dev
+CD|KG|nl,CD,Kirgizië,KG,country,False,REFUSE,CLDR47:nl,localised,KG,dev
+CD|KG|pt,CD,Quirguistão,KG,country,False,REFUSE,CLDR47:pt,localised,KG,dev
+CD|KH|de,CD,Kambodscha,KH,country,False,REFUSE,CLDR47:de,localised,KH,dev
+CD|KH|es,CD,Camboya,KH,country,False,REFUSE,CLDR47:es,localised,KH,dev
+CD|KH|fr,CD,Cambodge,KH,country,False,REFUSE,CLDR47:fr,localised,KH,dev
+CD|KH|it,CD,Cambogia,KH,country,False,REFUSE,CLDR47:it,localised,KH,dev
+CD|KH|nl,CD,Cambodja,KH,country,False,REFUSE,CLDR47:nl,localised,KH,dev
+CD|KH|pt,CD,Camboja,KH,country,False,REFUSE,CLDR47:pt,localised,KH,dev
+CD|KI|pt,CD,Quiribati,KI,country,False,REFUSE,CLDR47:pt,localised,KI,dev
+CD|KM|de,CD,Komoren,KM,country,False,REFUSE,CLDR47:de,localised,KM,dev
+CD|KM|es,CD,Comoras,KM,country,False,REFUSE,CLDR47:es,localised,KM,dev
+CD|KM|fr,CD,Comores,KM,country,False,REFUSE,CLDR47:fr,localised,KM,dev
+CD|KM|it,CD,Comore,KM,country,False,REFUSE,CLDR47:it,localised,KM,dev
+CD|KM|nl,CD,Comoren,KM,country,False,REFUSE,CLDR47:nl,localised,KM,dev
+CD|KN|de,CD,St. Kitts und Nevis,KN,country,False,REFUSE,CLDR47:de,localised,KN,test
+CD|KN|es,CD,San Cristóbal y Nieves,KN,country,False,REFUSE,CLDR47:es,localised,KN,test
+CD|KN|fr,CD,Saint-Christophe-et-Niévès,KN,country,False,REFUSE,CLDR47:fr,localised,KN,test
+CD|KN|it,CD,Saint Kitts e Nevis,KN,country,False,REFUSE,CLDR47:it,localised,KN,test
+CD|KN|nl,CD,Saint Kitts en Nevis,KN,country,False,REFUSE,CLDR47:nl,localised,KN,test
+CD|KN|pt,CD,São Cristóvão e Névis,KN,country,False,REFUSE,CLDR47:pt,localised,KN,test
+CD|KP|de,CD,Nordkorea,KP,country,False,REFUSE,CLDR47:de,localised,KP,test
+CD|KP|es,CD,Corea del Norte,KP,country,False,REFUSE,CLDR47:es,localised,KP,test
+CD|KP|fr,CD,Corée du Nord,KP,country,False,REFUSE,CLDR47:fr,localised,KP,test
+CD|KP|it,CD,Corea del Nord,KP,country,False,REFUSE,CLDR47:it,localised,KP,test
+CD|KP|nl,CD,Noord-Korea,KP,country,False,REFUSE,CLDR47:nl,localised,KP,test
+CD|KP|pt,CD,Coreia do Norte,KP,country,False,REFUSE,CLDR47:pt,localised,KP,test
+CD|KR|de,CD,Südkorea,KR,country,True,COMPUTE,CLDR47:de,localised,KR,test
+CD|KR|es,CD,Corea del Sur,KR,country,True,COMPUTE,CLDR47:es,localised,KR,test
+CD|KR|fr,CD,Corée du Sud,KR,country,True,COMPUTE,CLDR47:fr,localised,KR,test
+CD|KR|it,CD,Corea del Sud,KR,country,True,COMPUTE,CLDR47:it,localised,KR,test
+CD|KR|nl,CD,Zuid-Korea,KR,country,True,COMPUTE,CLDR47:nl,localised,KR,test
+CD|KR|pt,CD,Coreia do Sul,KR,country,True,COMPUTE,CLDR47:pt,localised,KR,test
+CD|KW|fr,CD,Koweït,KW,country,False,REFUSE,CLDR47:fr,localised,KW,test
+CD|KW|nl,CD,Koeweit,KW,country,False,REFUSE,CLDR47:nl,localised,KW,test
+CD|KY|de,CD,Kaimaninseln,KY,country,False,REFUSE,CLDR47:de,localised,KY,test
+CD|KY|es,CD,Islas Caimán,KY,country,False,REFUSE,CLDR47:es,localised,KY,test
+CD|KY|fr,CD,Îles Caïmans,KY,country,False,REFUSE,CLDR47:fr,localised,KY,test
+CD|KY|it,CD,Isole Cayman,KY,country,False,REFUSE,CLDR47:it,localised,KY,test
+CD|KY|nl,CD,Kaaimaneilanden,KY,country,False,REFUSE,CLDR47:nl,localised,KY,test
+CD|KY|pt,CD,Ilhas Cayman,KY,country,False,REFUSE,CLDR47:pt,localised,KY,test
+CD|KZ|de,CD,Kasachstan,KZ,country,False,REFUSE,CLDR47:de,localised,KZ,dev
+CD|KZ|es,CD,Kazajistán,KZ,country,False,REFUSE,CLDR47:es,localised,KZ,dev
+CD|KZ|it,CD,Kazakistan,KZ,country,False,REFUSE,CLDR47:it,localised,KZ,dev
+CD|KZ|nl,CD,Kazachstan,KZ,country,False,REFUSE,CLDR47:nl,localised,KZ,dev
+CD|KZ|pt,CD,Cazaquistão,KZ,country,False,REFUSE,CLDR47:pt,localised,KZ,dev
+CD|LB|de,CD,Libanon,LB,country,False,REFUSE,CLDR47:de,localised,LB,test
+CD|LB|es,CD,Líbano,LB,country,False,REFUSE,CLDR47:es,localised,LB,test
+CD|LB|fr,CD,Liban,LB,country,False,REFUSE,CLDR47:fr,localised,LB,test
+CD|LB|it,CD,Libano,LB,country,False,REFUSE,CLDR47:it,localised,LB,test
+CD|LC|de,CD,St. Lucia,LC,country,False,REFUSE,CLDR47:de,localised,LC,test
+CD|LC|es,CD,Santa Lucía,LC,country,False,REFUSE,CLDR47:es,localised,LC,test
+CD|LC|fr,CD,Sainte-Lucie,LC,country,False,REFUSE,CLDR47:fr,localised,LC,test
+CD|LC|pt,CD,Santa Lúcia,LC,country,False,REFUSE,CLDR47:pt,localised,LC,test
+CD|LS|es,CD,Lesoto,LS,country,False,REFUSE,CLDR47:es,localised,LS,dev
+CD|LT|de,CD,Litauen,LT,country,False,REFUSE,CLDR47:de,localised,LT,test
+CD|LT|es,CD,Lituania,LT,country,False,REFUSE,CLDR47:es,localised,LT,test
+CD|LT|fr,CD,Lituanie,LT,country,False,REFUSE,CLDR47:fr,localised,LT,test
+CD|LT|nl,CD,Litouwen,LT,country,False,REFUSE,CLDR47:nl,localised,LT,test
+CD|LT|pt,CD,Lituânia,LT,country,False,REFUSE,CLDR47:pt,localised,LT,test
+CD|LU|de,CD,Luxemburg,LU,country,False,REFUSE,CLDR47:de,localised,LU,dev
+CD|LU|es,CD,Luxemburgo,LU,country,False,REFUSE,CLDR47:es,localised,LU,dev
+CD|LU|it,CD,Lussemburgo,LU,country,False,REFUSE,CLDR47:it,localised,LU,dev
+CD|LV|de,CD,Lettland,LV,country,False,REFUSE,CLDR47:de,localised,LV,test
+CD|LV|es,CD,Letonia,LV,country,False,REFUSE,CLDR47:es,localised,LV,test
+CD|LV|fr,CD,Lettonie,LV,country,False,REFUSE,CLDR47:fr,localised,LV,test
+CD|LV|it,CD,Lettonia,LV,country,False,REFUSE,CLDR47:it,localised,LV,test
+CD|LV|nl,CD,Letland,LV,country,False,REFUSE,CLDR47:nl,localised,LV,test
+CD|LV|pt,CD,Letônia,LV,country,False,REFUSE,CLDR47:pt,localised,LV,test
+CD|LY|de,CD,Libyen,LY,country,False,REFUSE,CLDR47:de,localised,LY,dev
+CD|LY|es,CD,Libia,LY,country,False,REFUSE,CLDR47:es,localised,LY,dev
+CD|LY|fr,CD,Libye,LY,country,False,REFUSE,CLDR47:fr,localised,LY,dev
+CD|LY|nl,CD,Libië,LY,country,False,REFUSE,CLDR47:nl,localised,LY,dev
+CD|LY|pt,CD,Líbia,LY,country,False,REFUSE,CLDR47:pt,localised,LY,dev
+CD|MA|de,CD,Marokko,MA,country,False,REFUSE,CLDR47:de,localised,MA,test
+CD|MA|es,CD,Marruecos,MA,country,False,REFUSE,CLDR47:es,localised,MA,test
+CD|MA|fr,CD,Maroc,MA,country,False,REFUSE,CLDR47:fr,localised,MA,test
+CD|MA|it,CD,Marocco,MA,country,False,REFUSE,CLDR47:it,localised,MA,test
+CD|MA|pt,CD,Marrocos,MA,country,False,REFUSE,CLDR47:pt,localised,MA,test
+CD|MD|de,CD,Republik Moldau,MD,country,False,REFUSE,CLDR47:de,localised,MD,test
+CD|MD|es,CD,Moldavia,MD,country,False,REFUSE,CLDR47:es,localised,MD,test
+CD|MD|fr,CD,Moldavie,MD,country,False,REFUSE,CLDR47:fr,localised,MD,test
+CD|MD|nl,CD,Moldavië,MD,country,False,REFUSE,CLDR47:nl,localised,MD,test
+CD|MD|pt,CD,Moldávia,MD,country,False,REFUSE,CLDR47:pt,localised,MD,test
+CD|MF|de,CD,St. Martin,MF,country,False,REFUSE,CLDR47:de,localised,MF,dev
+CD|MF|es,CD,San Martín,MF,country,False,REFUSE,CLDR47:es,localised,MF,dev
+CD|MF|fr,CD,Saint-Martin,MF,country,False,REFUSE,CLDR47:fr,localised,MF,dev
+CD|MF|it,CD,Saint Martin,MF,country,False,REFUSE,CLDR47:it,localised,MF,dev
+CD|MF|pt,CD,São Martinho,MF,country,False,REFUSE,CLDR47:pt,localised,MF,dev
+CD|MG|de,CD,Madagaskar,MG,country,False,REFUSE,CLDR47:de,localised,MG,dev
+CD|MH|de,CD,Marshallinseln,MH,country,False,REFUSE,CLDR47:de,localised,MH,test
+CD|MH|es,CD,Islas Marshall,MH,country,False,REFUSE,CLDR47:es,localised,MH,test
+CD|MH|fr,CD,Îles Marshall,MH,country,False,REFUSE,CLDR47:fr,localised,MH,test
+CD|MH|it,CD,Isole Marshall,MH,country,False,REFUSE,CLDR47:it,localised,MH,test
+CD|MH|nl,CD,Marshalleilanden,MH,country,False,REFUSE,CLDR47:nl,localised,MH,test
+CD|MH|pt,CD,Ilhas Marshall,MH,country,False,REFUSE,CLDR47:pt,localised,MH,test
+CD|MK|de,CD,Nordmazedonien,MK,country,False,REFUSE,CLDR47:de,localised,MK,dev
+CD|MK|es,CD,Macedonia del Norte,MK,country,False,REFUSE,CLDR47:es,localised,MK,dev
+CD|MK|fr,CD,Macédoine du Nord,MK,country,False,REFUSE,CLDR47:fr,localised,MK,dev
+CD|MK|it,CD,Macedonia del Nord,MK,country,False,REFUSE,CLDR47:it,localised,MK,dev
+CD|MK|nl,CD,Noord-Macedonië,MK,country,False,REFUSE,CLDR47:nl,localised,MK,dev
+CD|MK|pt,CD,Macedônia do Norte,MK,country,False,REFUSE,CLDR47:pt,localised,MK,dev
+CD|MM|es,CD,Myanmar (Birmania),MM,country,False,REFUSE,CLDR47:es,localised,MM,dev
+CD|MM|fr,CD,Myanmar (Birmanie),MM,country,False,REFUSE,CLDR47:fr,localised,MM,dev
+CD|MM|nl,CD,Myanmar (Birma),MM,country,False,REFUSE,CLDR47:nl,localised,MM,dev
+CD|MM|pt,CD,Mianmar (Birmânia),MM,country,False,REFUSE,CLDR47:pt,localised,MM,dev
+CD|MN|de,CD,Mongolei,MN,country,False,REFUSE,CLDR47:de,localised,MN,dev
+CD|MN|fr,CD,Mongolie,MN,country,False,REFUSE,CLDR47:fr,localised,MN,dev
+CD|MN|nl,CD,Mongolië,MN,country,False,REFUSE,CLDR47:nl,localised,MN,dev
+CD|MO|de,CD,Sonderverwaltungsregion Macau,MO,country,False,REFUSE,CLDR47:de,localised,MO,dev
+CD|MO|es,CD,RAE de Macao (China),MO,country,False,REFUSE,CLDR47:es,localised,MO,dev
+CD|MO|fr,CD,R.A.S. chinoise de Macao,MO,country,False,REFUSE,CLDR47:fr,localised,MO,dev
+CD|MO|it,CD,RAS di Macao,MO,country,False,REFUSE,CLDR47:it,localised,MO,dev
+CD|MO|nl,CD,Macau SAR van China,MO,country,False,REFUSE,CLDR47:nl,localised,MO,dev
+CD|MO|pt,CD,"Macau, RAE da China",MO,country,False,REFUSE,CLDR47:pt,localised,MO,dev
+CD|MP|de,CD,Nördliche Marianen,MP,country,False,REFUSE,CLDR47:de,localised,MP,dev
+CD|MP|es,CD,Islas Marianas del Norte,MP,country,False,REFUSE,CLDR47:es,localised,MP,dev
+CD|MP|fr,CD,Îles Mariannes du Nord,MP,country,False,REFUSE,CLDR47:fr,localised,MP,dev
+CD|MP|it,CD,Isole Marianne Settentrionali,MP,country,False,REFUSE,CLDR47:it,localised,MP,dev
+CD|MP|nl,CD,Noordelijke Marianen,MP,country,False,REFUSE,CLDR47:nl,localised,MP,dev
+CD|MP|pt,CD,Ilhas Marianas do Norte,MP,country,False,REFUSE,CLDR47:pt,localised,MP,dev
+CD|MQ|es,CD,Martinica,MQ,country,False,REFUSE,CLDR47:es,localised,MQ,test
+CD|MR|de,CD,Mauretanien,MR,country,False,REFUSE,CLDR47:de,localised,MR,test
+CD|MR|fr,CD,Mauritanie,MR,country,False,REFUSE,CLDR47:fr,localised,MR,test
+CD|MR|nl,CD,Mauritanië,MR,country,False,REFUSE,CLDR47:nl,localised,MR,test
+CD|MT|fr,CD,Malte,MT,country,False,REFUSE,CLDR47:fr,localised,MT,test
+CD|MU|es,CD,Mauricio,MU,country,False,REFUSE,CLDR47:es,localised,MU,dev
+CD|MU|fr,CD,Maurice,MU,country,False,REFUSE,CLDR47:fr,localised,MU,dev
+CD|MU|pt,CD,Maurício,MU,country,False,REFUSE,CLDR47:pt,localised,MU,dev
+CD|MV|de,CD,Malediven,MV,country,False,REFUSE,CLDR47:de,localised,MV,test
+CD|MV|es,CD,Maldivas,MV,country,False,REFUSE,CLDR47:es,localised,MV,test
+CD|MV|it,CD,Maldive,MV,country,False,REFUSE,CLDR47:it,localised,MV,test
+CD|MV|nl,CD,Maldiven,MV,country,False,REFUSE,CLDR47:nl,localised,MV,test
+CD|MW|es,CD,Malaui,MW,country,False,REFUSE,CLDR47:es,localised,MW,test
+CD|MX|de,CD,Mexiko,MX,country,True,COMPUTE,CLDR47:de,localised,MX,test
+CD|MX|fr,CD,Mexique,MX,country,True,COMPUTE,CLDR47:fr,localised,MX,test
+CD|MX|it,CD,Messico,MX,country,True,COMPUTE,CLDR47:it,localised,MX,test
+CD|MY|es,CD,Malasia,MY,country,True,COMPUTE,CLDR47:es,localised,MY,test
+CD|MY|fr,CD,Malaisie,MY,country,True,COMPUTE,CLDR47:fr,localised,MY,test
+CD|MY|nl,CD,Maleisië,MY,country,True,COMPUTE,CLDR47:nl,localised,MY,test
+CD|MY|pt,CD,Malásia,MY,country,True,COMPUTE,CLDR47:pt,localised,MY,test
+CD|MZ|de,CD,Mosambik,MZ,country,False,REFUSE,CLDR47:de,localised,MZ,test
+CD|MZ|it,CD,Mozambico,MZ,country,False,REFUSE,CLDR47:it,localised,MZ,test
+CD|MZ|pt,CD,Moçambique,MZ,country,False,REFUSE,CLDR47:pt,localised,MZ,test
+CD|NA|fr,CD,Namibie,NA,country,False,REFUSE,CLDR47:fr,localised,NA,test
+CD|NA|nl,CD,Namibië,NA,country,False,REFUSE,CLDR47:nl,localised,NA,test
+CD|NC|de,CD,Neukaledonien,NC,country,False,REFUSE,CLDR47:de,localised,NC,test
+CD|NC|es,CD,Nueva Caledonia,NC,country,False,REFUSE,CLDR47:es,localised,NC,test
+CD|NC|fr,CD,Nouvelle-Calédonie,NC,country,False,REFUSE,CLDR47:fr,localised,NC,test
+CD|NC|it,CD,Nuova Caledonia,NC,country,False,REFUSE,CLDR47:it,localised,NC,test
+CD|NC|nl,CD,Nieuw-Caledonië,NC,country,False,REFUSE,CLDR47:nl,localised,NC,test
+CD|NC|pt,CD,Nova Caledônia,NC,country,False,REFUSE,CLDR47:pt,localised,NC,test
+CD|NF|de,CD,Norfolkinsel,NF,country,False,REFUSE,CLDR47:de,localised,NF,test
+CD|NF|es,CD,Isla Norfolk,NF,country,False,REFUSE,CLDR47:es,localised,NF,test
+CD|NF|fr,CD,Île Norfolk,NF,country,False,REFUSE,CLDR47:fr,localised,NF,test
+CD|NF|it,CD,Isola Norfolk,NF,country,False,REFUSE,CLDR47:it,localised,NF,test
+CD|NF|nl,CD,Norfolk,NF,country,False,REFUSE,CLDR47:nl,localised,NF,test
+CD|NF|pt,CD,Ilha Norfolk,NF,country,False,REFUSE,CLDR47:pt,localised,NF,test
+CD|NL|de,CD,Niederlande,NL,country,True,COMPUTE,CLDR47:de,localised,NL,dev
+CD|NL|es,CD,Países Bajos,NL,country,True,COMPUTE,CLDR47:es,localised,NL,dev
+CD|NL|fr,CD,Pays-Bas,NL,country,True,COMPUTE,CLDR47:fr,localised,NL,dev
+CD|NL|it,CD,Paesi Bassi,NL,country,True,COMPUTE,CLDR47:it,localised,NL,dev
+CD|NL|nl,CD,Nederland,NL,country,True,COMPUTE,CLDR47:nl,localised,NL,dev
+CD|NL|pt,CD,Países Baixos,NL,country,True,COMPUTE,CLDR47:pt,localised,NL,dev
+CD|NO|de,CD,Norwegen,NO,country,True,COMPUTE,CLDR47:de,localised,NO,test
+CD|NO|es,CD,Noruega,NO,country,True,COMPUTE,CLDR47:es,localised,NO,test
+CD|NO|fr,CD,Norvège,NO,country,True,COMPUTE,CLDR47:fr,localised,NO,test
+CD|NO|it,CD,Norvegia,NO,country,True,COMPUTE,CLDR47:it,localised,NO,test
+CD|NO|nl,CD,Noorwegen,NO,country,True,COMPUTE,CLDR47:nl,localised,NO,test
+CD|NZ|de,CD,Neuseeland,NZ,country,True,COMPUTE,CLDR47:de,localised,NZ,dev
+CD|NZ|es,CD,Nueva Zelanda,NZ,country,True,COMPUTE,CLDR47:es,localised,NZ,dev
+CD|NZ|fr,CD,Nouvelle-Zélande,NZ,country,True,COMPUTE,CLDR47:fr,localised,NZ,dev
+CD|NZ|it,CD,Nuova Zelanda,NZ,country,True,COMPUTE,CLDR47:it,localised,NZ,dev
+CD|NZ|nl,CD,Nieuw-Zeeland,NZ,country,True,COMPUTE,CLDR47:nl,localised,NZ,dev
+CD|NZ|pt,CD,Nova Zelândia,NZ,country,True,COMPUTE,CLDR47:pt,localised,NZ,dev
+CD|OM|pt,CD,Omã,OM,country,False,REFUSE,CLDR47:pt,localised,OM,dev
+CD|PE|fr,CD,Pérou,PE,country,False,REFUSE,CLDR47:fr,localised,PE,dev
+CD|PF|de,CD,Französisch-Polynesien,PF,country,False,REFUSE,CLDR47:de,localised,PF,dev
+CD|PF|es,CD,Polinesia Francesa,PF,country,False,REFUSE,CLDR47:es,localised,PF,dev
+CD|PF|fr,CD,Polynésie française,PF,country,False,REFUSE,CLDR47:fr,localised,PF,dev
+CD|PF|it,CD,Polinesia Francese,PF,country,False,REFUSE,CLDR47:it,localised,PF,dev
+CD|PF|nl,CD,Frans-Polynesië,PF,country,False,REFUSE,CLDR47:nl,localised,PF,dev
+CD|PF|pt,CD,Polinésia Francesa,PF,country,False,REFUSE,CLDR47:pt,localised,PF,dev
+CD|PG|de,CD,Papua-Neuguinea,PG,country,False,REFUSE,CLDR47:de,localised,PG,test
+CD|PG|es,CD,Papúa Nueva Guinea,PG,country,False,REFUSE,CLDR47:es,localised,PG,test
+CD|PG|fr,CD,Papouasie-Nouvelle-Guinée,PG,country,False,REFUSE,CLDR47:fr,localised,PG,test
+CD|PG|it,CD,Papua Nuova Guinea,PG,country,False,REFUSE,CLDR47:it,localised,PG,test
+CD|PG|nl,CD,Papoea-Nieuw-Guinea,PG,country,False,REFUSE,CLDR47:nl,localised,PG,test
+CD|PG|pt,CD,Papua-Nova Guiné,PG,country,False,REFUSE,CLDR47:pt,localised,PG,test
+CD|PH|de,CD,Philippinen,PH,country,True,COMPUTE,CLDR47:de,localised,PH,dev
+CD|PH|es,CD,Filipinas,PH,country,True,COMPUTE,CLDR47:es,localised,PH,dev
+CD|PH|it,CD,Filippine,PH,country,True,COMPUTE,CLDR47:it,localised,PH,dev
+CD|PH|nl,CD,Filipijnen,PH,country,True,COMPUTE,CLDR47:nl,localised,PH,dev
+CD|PK|pt,CD,Paquistão,PK,country,False,REFUSE,CLDR47:pt,localised,PK,test
+CD|PL|de,CD,Polen,PL,country,True,COMPUTE,CLDR47:de,localised,PL,test
+CD|PL|es,CD,Polonia,PL,country,True,COMPUTE,CLDR47:es,localised,PL,test
+CD|PL|fr,CD,Pologne,PL,country,True,COMPUTE,CLDR47:fr,localised,PL,test
+CD|PL|pt,CD,Polônia,PL,country,True,COMPUTE,CLDR47:pt,localised,PL,test
+CD|PM|de,CD,St. Pierre und Miquelon,PM,country,False,REFUSE,CLDR47:de,localised,PM,dev
+CD|PM|es,CD,San Pedro y Miquelón,PM,country,False,REFUSE,CLDR47:es,localised,PM,dev
+CD|PM|fr,CD,Saint-Pierre-et-Miquelon,PM,country,False,REFUSE,CLDR47:fr,localised,PM,dev
+CD|PM|it,CD,Saint-Pierre e Miquelon,PM,country,False,REFUSE,CLDR47:it,localised,PM,dev
+CD|PM|nl,CD,Saint-Pierre en Miquelon,PM,country,False,REFUSE,CLDR47:nl,localised,PM,dev
+CD|PM|pt,CD,São Pedro e Miquelão,PM,country,False,REFUSE,CLDR47:pt,localised,PM,dev
+CD|PN|de,CD,Pitcairninseln,PN,country,False,REFUSE,CLDR47:de,localised,PN,test
+CD|PN|es,CD,Islas Pitcairn,PN,country,False,REFUSE,CLDR47:es,localised,PN,test
+CD|PN|fr,CD,Îles Pitcairn,PN,country,False,REFUSE,CLDR47:fr,localised,PN,test
+CD|PN|it,CD,Isole Pitcairn,PN,country,False,REFUSE,CLDR47:it,localised,PN,test
+CD|PN|nl,CD,Pitcairneilanden,PN,country,False,REFUSE,CLDR47:nl,localised,PN,test
+CD|PN|pt,CD,Ilhas Pitcairn,PN,country,False,REFUSE,CLDR47:pt,localised,PN,test
+CD|PR|fr,CD,Porto Rico,PR,country,False,REFUSE,CLDR47:fr,localised,PR,dev
+CD|PR|it,CD,Portorico,PR,country,False,REFUSE,CLDR47:it,localised,PR,dev
+CD|PS|de,CD,Palästinensische Autonomiegebiete,PS,country,False,REFUSE,CLDR47:de,localised,PS,test
+CD|PS|es,CD,Territorios Palestinos,PS,country,False,REFUSE,CLDR47:es,localised,PS,test
+CD|PS|fr,CD,Territoires palestiniens,PS,country,False,REFUSE,CLDR47:fr,localised,PS,test
+CD|PS|it,CD,Territori Palestinesi,PS,country,False,REFUSE,CLDR47:it,localised,PS,test
+CD|PS|nl,CD,Palestijnse gebieden,PS,country,False,REFUSE,CLDR47:nl,localised,PS,test
+CD|PS|pt,CD,Territórios palestinos,PS,country,False,REFUSE,CLDR47:pt,localised,PS,test
+CD|PT|it,CD,Portogallo,PT,country,True,COMPUTE,CLDR47:it,localised,PT,test
+CD|PW|fr,CD,Palaos,PW,country,False,REFUSE,CLDR47:fr,localised,PW,test
+CD|PY|pt,CD,Paraguai,PY,country,False,REFUSE,CLDR47:pt,localised,PY,test
+CD|QA|de,CD,Katar,QA,country,False,REFUSE,CLDR47:de,localised,QA,test
+CD|QA|es,CD,Catar,QA,country,False,REFUSE,CLDR47:es,localised,QA,test
+CD|RE|fr,CD,La Réunion,RE,country,False,REFUSE,CLDR47:fr,localised,RE,dev
+CD|RE|it,CD,Riunione,RE,country,False,REFUSE,CLDR47:it,localised,RE,dev
+CD|RE|pt,CD,Reunião,RE,country,False,REFUSE,CLDR47:pt,localised,RE,dev
+CD|RO|de,CD,Rumänien,RO,country,False,REFUSE,CLDR47:de,localised,RO,test
+CD|RO|es,CD,Rumanía,RO,country,False,REFUSE,CLDR47:es,localised,RO,test
+CD|RO|fr,CD,Roumanie,RO,country,False,REFUSE,CLDR47:fr,localised,RO,test
+CD|RO|nl,CD,Roemenië,RO,country,False,REFUSE,CLDR47:nl,localised,RO,test
+CD|RO|pt,CD,Romênia,RO,country,False,REFUSE,CLDR47:pt,localised,RO,test
+CD|RS|de,CD,Serbien,RS,country,False,REFUSE,CLDR47:de,localised,RS,test
+CD|RS|fr,CD,Serbie,RS,country,False,REFUSE,CLDR47:fr,localised,RS,test
+CD|RS|nl,CD,Servië,RS,country,False,REFUSE,CLDR47:nl,localised,RS,test
+CD|RS|pt,CD,Sérvia,RS,country,False,REFUSE,CLDR47:pt,localised,RS,test
+CD|RU|de,CD,Russland,RU,country,False,REFUSE,CLDR47:de,localised,RU,dev
+CD|RU|es,CD,Rusia,RU,country,False,REFUSE,CLDR47:es,localised,RU,dev
+CD|RU|fr,CD,Russie,RU,country,False,REFUSE,CLDR47:fr,localised,RU,dev
+CD|RU|it,CD,Russia,RU,country,False,REFUSE,CLDR47:it,localised,RU,dev
+CD|RU|nl,CD,Rusland,RU,country,False,REFUSE,CLDR47:nl,localised,RU,dev
+CD|RU|pt,CD,Rússia,RU,country,False,REFUSE,CLDR47:pt,localised,RU,dev
+CD|RW|de,CD,Ruanda,RW,country,False,REFUSE,CLDR47:de,localised,RW,test
+CD|SA|de,CD,Saudi-Arabien,SA,country,True,COMPUTE,CLDR47:de,localised,SA,dev
+CD|SA|es,CD,Arabia Saudí,SA,country,True,COMPUTE,CLDR47:es,localised,SA,dev
+CD|SA|fr,CD,Arabie saoudite,SA,country,True,COMPUTE,CLDR47:fr,localised,SA,dev
+CD|SA|it,CD,Arabia Saudita,SA,country,True,COMPUTE,CLDR47:it,localised,SA,dev
+CD|SA|nl,CD,Saoedi-Arabië,SA,country,True,COMPUTE,CLDR47:nl,localised,SA,dev
+CD|SA|pt,CD,Arábia Saudita,SA,country,True,COMPUTE,CLDR47:pt,localised,SA,dev
+CD|SB|de,CD,Salomonen,SB,country,False,REFUSE,CLDR47:de,localised,SB,test
+CD|SB|es,CD,Islas Salomón,SB,country,False,REFUSE,CLDR47:es,localised,SB,test
+CD|SB|fr,CD,Îles Salomon,SB,country,False,REFUSE,CLDR47:fr,localised,SB,test
+CD|SB|it,CD,Isole Salomone,SB,country,False,REFUSE,CLDR47:it,localised,SB,test
+CD|SB|nl,CD,Salomonseilanden,SB,country,False,REFUSE,CLDR47:nl,localised,SB,test
+CD|SB|pt,CD,Ilhas Salomão,SB,country,False,REFUSE,CLDR47:pt,localised,SB,test
+CD|SC|de,CD,Seychellen,SC,country,False,REFUSE,CLDR47:de,localised,SC,test
+CD|SC|pt,CD,Seicheles,SC,country,False,REFUSE,CLDR47:pt,localised,SC,test
+CD|SD|fr,CD,Soudan,SD,country,False,REFUSE,CLDR47:fr,localised,SD,test
+CD|SD|nl,CD,Soedan,SD,country,False,REFUSE,CLDR47:nl,localised,SD,test
+CD|SD|pt,CD,Sudão,SD,country,False,REFUSE,CLDR47:pt,localised,SD,test
+CD|SE|de,CD,Schweden,SE,country,True,COMPUTE,CLDR47:de,localised,SE,test
+CD|SE|es,CD,Suecia,SE,country,True,COMPUTE,CLDR47:es,localised,SE,test
+CD|SE|fr,CD,Suède,SE,country,True,COMPUTE,CLDR47:fr,localised,SE,test
+CD|SE|it,CD,Svezia,SE,country,True,COMPUTE,CLDR47:it,localised,SE,test
+CD|SE|nl,CD,Zweden,SE,country,True,COMPUTE,CLDR47:nl,localised,SE,test
+CD|SE|pt,CD,Suécia,SE,country,True,COMPUTE,CLDR47:pt,localised,SE,test
+CD|SG|de,CD,Singapur,SG,country,True,COMPUTE,CLDR47:de,localised,SG,dev
+CD|SG|fr,CD,Singapour,SG,country,True,COMPUTE,CLDR47:fr,localised,SG,dev
+CD|SG|pt,CD,Singapura,SG,country,True,COMPUTE,CLDR47:pt,localised,SG,dev
+CD|SH|de,CD,St. Helena,SH,country,False,REFUSE,CLDR47:de,localised,SH,test
+CD|SH|es,CD,Santa Elena,SH,country,False,REFUSE,CLDR47:es,localised,SH,test
+CD|SH|fr,CD,Sainte-Hélène,SH,country,False,REFUSE,CLDR47:fr,localised,SH,test
+CD|SH|it,CD,Sant’Elena,SH,country,False,REFUSE,CLDR47:it,localised,SH,test
+CD|SH|nl,CD,Sint-Helena,SH,country,False,REFUSE,CLDR47:nl,localised,SH,test
+CD|SH|pt,CD,Santa Helena,SH,country,False,REFUSE,CLDR47:pt,localised,SH,test
+CD|SI|de,CD,Slowenien,SI,country,False,REFUSE,CLDR47:de,localised,SI,dev
+CD|SI|es,CD,Eslovenia,SI,country,False,REFUSE,CLDR47:es,localised,SI,dev
+CD|SI|fr,CD,Slovénie,SI,country,False,REFUSE,CLDR47:fr,localised,SI,dev
+CD|SI|nl,CD,Slovenië,SI,country,False,REFUSE,CLDR47:nl,localised,SI,dev
+CD|SI|pt,CD,Eslovênia,SI,country,False,REFUSE,CLDR47:pt,localised,SI,dev
+CD|SJ|de,CD,Spitzbergen und Jan Mayen,SJ,country,False,REFUSE,CLDR47:de,localised,SJ,test
+CD|SJ|es,CD,Svalbard y Jan Mayen,SJ,country,False,REFUSE,CLDR47:es,localised,SJ,test
+CD|SJ|fr,CD,Svalbard et Jan Mayen,SJ,country,False,REFUSE,CLDR47:fr,localised,SJ,test
+CD|SJ|it,CD,Svalbard e Jan Mayen,SJ,country,False,REFUSE,CLDR47:it,localised,SJ,test
+CD|SJ|nl,CD,Spitsbergen en Jan Mayen,SJ,country,False,REFUSE,CLDR47:nl,localised,SJ,test
+CD|SK|de,CD,Slowakei,SK,country,False,REFUSE,CLDR47:de,localised,SK,test
+CD|SK|es,CD,Eslovaquia,SK,country,False,REFUSE,CLDR47:es,localised,SK,test
+CD|SK|fr,CD,Slovaquie,SK,country,False,REFUSE,CLDR47:fr,localised,SK,test
+CD|SK|it,CD,Slovacchia,SK,country,False,REFUSE,CLDR47:it,localised,SK,test
+CD|SK|nl,CD,Slowakije,SK,country,False,REFUSE,CLDR47:nl,localised,SK,test
+CD|SK|pt,CD,Eslováquia,SK,country,False,REFUSE,CLDR47:pt,localised,SK,test
+CD|SL|es,CD,Sierra Leona,SL,country,False,REFUSE,CLDR47:es,localised,SL,dev
+CD|SL|pt,CD,Serra Leoa,SL,country,False,REFUSE,CLDR47:pt,localised,SL,dev
+CD|SM|fr,CD,Saint-Marin,SM,country,False,REFUSE,CLDR47:fr,localised,SM,dev
+CD|SO|fr,CD,Somalie,SO,country,False,REFUSE,CLDR47:fr,localised,SO,test
+CD|SO|nl,CD,Somalië,SO,country,False,REFUSE,CLDR47:nl,localised,SO,test
+CD|SR|es,CD,Surinam,SR,country,False,REFUSE,CLDR47:es,localised,SR,test
+CD|SS|de,CD,Südsudan,SS,country,False,REFUSE,CLDR47:de,localised,SS,test
+CD|SS|es,CD,Sudán del Sur,SS,country,False,REFUSE,CLDR47:es,localised,SS,test
+CD|SS|fr,CD,Soudan du Sud,SS,country,False,REFUSE,CLDR47:fr,localised,SS,test
+CD|SS|it,CD,Sud Sudan,SS,country,False,REFUSE,CLDR47:it,localised,SS,test
+CD|SS|nl,CD,Zuid-Soedan,SS,country,False,REFUSE,CLDR47:nl,localised,SS,test
+CD|SS|pt,CD,Sudão do Sul,SS,country,False,REFUSE,CLDR47:pt,localised,SS,test
+CD|ST|de,CD,São Tomé und Príncipe,ST,country,False,REFUSE,CLDR47:de,localised,ST,test
+CD|ST|es,CD,Santo Tomé y Príncipe,ST,country,False,REFUSE,CLDR47:es,localised,ST,test
+CD|ST|fr,CD,Sao Tomé-et-Principe,ST,country,False,REFUSE,CLDR47:fr,localised,ST,test
+CD|ST|it,CD,São Tomé e Príncipe,ST,country,False,REFUSE,CLDR47:it,localised,ST,test
+CD|ST|nl,CD,Sao Tomé en Principe,ST,country,False,REFUSE,CLDR47:nl,localised,ST,test
+CD|SV|fr,CD,Salvador,SV,country,False,REFUSE,CLDR47:fr,localised,SV,test
+CD|SX|de,CD,Sint Maarten,SX,country,False,REFUSE,CLDR47:de,localised,SX,test
+CD|SX|fr,CD,Saint-Martin (partie néerlandaise),SX,country,False,REFUSE,CLDR47:fr,localised,SX,test
+CD|SX|nl,CD,Sint-Maarten,SX,country,False,REFUSE,CLDR47:nl,localised,SX,test
+CD|SY|de,CD,Syrien,SY,country,False,REFUSE,CLDR47:de,localised,SY,test
+CD|SY|es,CD,Siria,SY,country,False,REFUSE,CLDR47:es,localised,SY,test
+CD|SY|fr,CD,Syrie,SY,country,False,REFUSE,CLDR47:fr,localised,SY,test
+CD|SY|nl,CD,Syrië,SY,country,False,REFUSE,CLDR47:nl,localised,SY,test
+CD|SY|pt,CD,Síria,SY,country,False,REFUSE,CLDR47:pt,localised,SY,test
+CD|SZ|es,CD,Esuatini,SZ,country,False,REFUSE,CLDR47:es,localised,SZ,dev
+CD|SZ|pt,CD,Essuatíni,SZ,country,False,REFUSE,CLDR47:pt,localised,SZ,dev
+CD|TC|de,CD,Turks- und Caicosinseln,TC,country,False,REFUSE,CLDR47:de,localised,TC,test
+CD|TC|es,CD,Islas Turcas y Caicos,TC,country,False,REFUSE,CLDR47:es,localised,TC,test
+CD|TC|fr,CD,Îles Turques-et-Caïques,TC,country,False,REFUSE,CLDR47:fr,localised,TC,test
+CD|TC|it,CD,Isole Turks e Caicos,TC,country,False,REFUSE,CLDR47:it,localised,TC,test
+CD|TC|nl,CD,Turks- en Caicoseilanden,TC,country,False,REFUSE,CLDR47:nl,localised,TC,test
+CD|TC|pt,CD,Ilhas Turcas e Caicos,TC,country,False,REFUSE,CLDR47:pt,localised,TC,test
+CD|TD|de,CD,Tschad,TD,country,False,REFUSE,CLDR47:de,localised,TD,test
+CD|TD|fr,CD,Tchad,TD,country,False,REFUSE,CLDR47:fr,localised,TD,test
+CD|TD|it,CD,Ciad,TD,country,False,REFUSE,CLDR47:it,localised,TD,test
+CD|TD|nl,CD,Tsjaad,TD,country,False,REFUSE,CLDR47:nl,localised,TD,test
+CD|TD|pt,CD,Chade,TD,country,False,REFUSE,CLDR47:pt,localised,TD,test
+CD|TF|de,CD,Französische Süd- und Antarktisgebiete,TF,country,False,REFUSE,CLDR47:de,localised,TF,dev
+CD|TF|es,CD,Territorios Australes Franceses,TF,country,False,REFUSE,CLDR47:es,localised,TF,dev
+CD|TF|fr,CD,Terres australes françaises,TF,country,False,REFUSE,CLDR47:fr,localised,TF,dev
+CD|TF|it,CD,Terre Australi Francesi,TF,country,False,REFUSE,CLDR47:it,localised,TF,dev
+CD|TF|nl,CD,Franse Gebieden in de zuidelijke Indische Oceaan,TF,country,False,REFUSE,CLDR47:nl,localised,TF,dev
+CD|TF|pt,CD,Territórios Franceses do Sul,TF,country,False,REFUSE,CLDR47:pt,localised,TF,dev
+CD|TH|es,CD,Tailandia,TH,country,True,COMPUTE,CLDR47:es,localised,TH,test
+CD|TH|fr,CD,Thaïlande,TH,country,True,COMPUTE,CLDR47:fr,localised,TH,test
+CD|TH|it,CD,Thailandia,TH,country,True,COMPUTE,CLDR47:it,localised,TH,test
+CD|TH|pt,CD,Tailândia,TH,country,True,COMPUTE,CLDR47:pt,localised,TH,test
+CD|TJ|de,CD,Tadschikistan,TJ,country,False,REFUSE,CLDR47:de,localised,TJ,test
+CD|TJ|es,CD,Tayikistán,TJ,country,False,REFUSE,CLDR47:es,localised,TJ,test
+CD|TJ|fr,CD,Tadjikistan,TJ,country,False,REFUSE,CLDR47:fr,localised,TJ,test
+CD|TJ|it,CD,Tagikistan,TJ,country,False,REFUSE,CLDR47:it,localised,TJ,test
+CD|TJ|nl,CD,Tadzjikistan,TJ,country,False,REFUSE,CLDR47:nl,localised,TJ,test
+CD|TJ|pt,CD,Tadjiquistão,TJ,country,False,REFUSE,CLDR47:pt,localised,TJ,test
+CD|TL|fr,CD,Timor oriental,TL,country,False,REFUSE,CLDR47:fr,localised,TL,dev
+CD|TL|it,CD,Timor Est,TL,country,False,REFUSE,CLDR47:it,localised,TL,dev
+CD|TL|nl,CD,Oost-Timor,TL,country,False,REFUSE,CLDR47:nl,localised,TL,dev
+CD|TM|pt,CD,Turcomenistão,TM,country,False,REFUSE,CLDR47:pt,localised,TM,test
+CD|TN|de,CD,Tunesien,TN,country,False,REFUSE,CLDR47:de,localised,TN,dev
+CD|TN|es,CD,Túnez,TN,country,False,REFUSE,CLDR47:es,localised,TN,dev
+CD|TN|fr,CD,Tunisie,TN,country,False,REFUSE,CLDR47:fr,localised,TN,dev
+CD|TN|nl,CD,Tunesië,TN,country,False,REFUSE,CLDR47:nl,localised,TN,dev
+CD|TR|de,CD,Türkei,TR,country,True,COMPUTE,CLDR47:de,localised,TR,dev
+CD|TR|es,CD,Turquía,TR,country,True,COMPUTE,CLDR47:es,localised,TR,dev
+CD|TR|fr,CD,Turquie,TR,country,True,COMPUTE,CLDR47:fr,localised,TR,dev
+CD|TR|it,CD,Turchia,TR,country,True,COMPUTE,CLDR47:it,localised,TR,dev
+CD|TR|nl,CD,Turkije,TR,country,True,COMPUTE,CLDR47:nl,localised,TR,dev
+CD|TR|pt,CD,Turquia,TR,country,True,COMPUTE,CLDR47:pt,localised,TR,dev
+CD|TT|de,CD,Trinidad und Tobago,TT,country,False,REFUSE,CLDR47:de,localised,TT,test
+CD|TT|es,CD,Trinidad y Tobago,TT,country,False,REFUSE,CLDR47:es,localised,TT,test
+CD|TT|fr,CD,Trinité-et-Tobago,TT,country,False,REFUSE,CLDR47:fr,localised,TT,test
+CD|TT|it,CD,Trinidad e Tobago,TT,country,False,REFUSE,CLDR47:it,localised,TT,test
+CD|TT|nl,CD,Trinidad en Tobago,TT,country,False,REFUSE,CLDR47:nl,localised,TT,test
+CD|TZ|de,CD,Tansania,TZ,country,False,REFUSE,CLDR47:de,localised,TZ,test
+CD|TZ|fr,CD,Tanzanie,TZ,country,False,REFUSE,CLDR47:fr,localised,TZ,test
+CD|UA|es,CD,Ucrania,UA,country,False,REFUSE,CLDR47:es,localised,UA,dev
+CD|UA|it,CD,Ucraina,UA,country,False,REFUSE,CLDR47:it,localised,UA,dev
+CD|UA|nl,CD,Oekraïne,UA,country,False,REFUSE,CLDR47:nl,localised,UA,dev
+CD|UA|pt,CD,Ucrânia,UA,country,False,REFUSE,CLDR47:pt,localised,UA,dev
+CD|UG|fr,CD,Ouganda,UG,country,False,REFUSE,CLDR47:fr,localised,UG,test
+CD|UG|nl,CD,Oeganda,UG,country,False,REFUSE,CLDR47:nl,localised,UG,test
+CD|UM|de,CD,Amerikanische Überseeinseln,UM,country,False,REFUSE,CLDR47:de,localised,UM,test
+CD|UM|es,CD,Islas menores alejadas de EE. UU.,UM,country,False,REFUSE,CLDR47:es,localised,UM,test
+CD|UM|fr,CD,Îles mineures éloignées des États-Unis,UM,country,False,REFUSE,CLDR47:fr,localised,UM,test
+CD|UM|it,CD,Isole Minori Esterne degli Stati Uniti,UM,country,False,REFUSE,CLDR47:it,localised,UM,test
+CD|UM|nl,CD,Kleine afgelegen eilanden van de Verenigde Staten,UM,country,False,REFUSE,CLDR47:nl,localised,UM,test
+CD|UM|pt,CD,Ilhas Menores Distantes dos EUA,UM,country,False,REFUSE,CLDR47:pt,localised,UM,test
+CD|US|de,CD,Vereinigte Staaten,US,country,True,COMPUTE,CLDR47:de,localised,US,test
+CD|US|es,CD,Estados Unidos,US,country,True,COMPUTE,CLDR47:es,localised,US,test
+CD|US|fr,CD,États-Unis,US,country,True,COMPUTE,CLDR47:fr,localised,US,test
+CD|US|it,CD,Stati Uniti,US,country,True,COMPUTE,CLDR47:it,localised,US,test
+CD|US|nl,CD,Verenigde Staten,US,country,True,COMPUTE,CLDR47:nl,localised,US,test
+CD|UY|pt,CD,Uruguai,UY,country,False,REFUSE,CLDR47:pt,localised,UY,test
+CD|UZ|de,CD,Usbekistan,UZ,country,False,REFUSE,CLDR47:de,localised,UZ,test
+CD|UZ|fr,CD,Ouzbékistan,UZ,country,False,REFUSE,CLDR47:fr,localised,UZ,test
+CD|UZ|nl,CD,Oezbekistan,UZ,country,False,REFUSE,CLDR47:nl,localised,UZ,test
+CD|UZ|pt,CD,Uzbequistão,UZ,country,False,REFUSE,CLDR47:pt,localised,UZ,test
+CD|VA|de,CD,Vatikanstadt,VA,country,False,REFUSE,CLDR47:de,localised,VA,test
+CD|VA|es,CD,Ciudad del Vaticano,VA,country,False,REFUSE,CLDR47:es,localised,VA,test
+CD|VA|fr,CD,État de la Cité du Vatican,VA,country,False,REFUSE,CLDR47:fr,localised,VA,test
+CD|VA|it,CD,Città del Vaticano,VA,country,False,REFUSE,CLDR47:it,localised,VA,test
+CD|VA|nl,CD,Vaticaanstad,VA,country,False,REFUSE,CLDR47:nl,localised,VA,test
+CD|VA|pt,CD,Cidade do Vaticano,VA,country,False,REFUSE,CLDR47:pt,localised,VA,test
+CD|VC|de,CD,St. Vincent und die Grenadinen,VC,country,False,REFUSE,CLDR47:de,localised,VC,test
+CD|VC|es,CD,San Vicente y las Granadinas,VC,country,False,REFUSE,CLDR47:es,localised,VC,test
+CD|VC|fr,CD,Saint-Vincent-et-les Grenadines,VC,country,False,REFUSE,CLDR47:fr,localised,VC,test
+CD|VC|it,CD,Saint Vincent e Grenadine,VC,country,False,REFUSE,CLDR47:it,localised,VC,test
+CD|VC|nl,CD,Saint Vincent en de Grenadines,VC,country,False,REFUSE,CLDR47:nl,localised,VC,test
+CD|VC|pt,CD,São Vicente e Granadinas,VC,country,False,REFUSE,CLDR47:pt,localised,VC,test
+CD|VG|de,CD,Britische Jungferninseln,VG,country,False,REFUSE,CLDR47:de,localised,VG,test
+CD|VG|es,CD,Islas Vírgenes Británicas,VG,country,False,REFUSE,CLDR47:es,localised,VG,test
+CD|VG|fr,CD,Îles Vierges britanniques,VG,country,False,REFUSE,CLDR47:fr,localised,VG,test
+CD|VG|it,CD,Isole Vergini Britanniche,VG,country,False,REFUSE,CLDR47:it,localised,VG,test
+CD|VG|nl,CD,Britse Maagdeneilanden,VG,country,False,REFUSE,CLDR47:nl,localised,VG,test
+CD|VG|pt,CD,Ilhas Virgens Britânicas,VG,country,False,REFUSE,CLDR47:pt,localised,VG,test
+CD|VI|de,CD,Amerikanische Jungferninseln,VI,country,False,REFUSE,CLDR47:de,localised,VI,test
+CD|VI|es,CD,Islas Vírgenes de EE. UU.,VI,country,False,REFUSE,CLDR47:es,localised,VI,test
+CD|VI|fr,CD,Îles Vierges des États-Unis,VI,country,False,REFUSE,CLDR47:fr,localised,VI,test
+CD|VI|it,CD,Isole Vergini Americane,VI,country,False,REFUSE,CLDR47:it,localised,VI,test
+CD|VI|nl,CD,Amerikaanse Maagdeneilanden,VI,country,False,REFUSE,CLDR47:nl,localised,VI,test
+CD|VI|pt,CD,Ilhas Virgens Americanas,VI,country,False,REFUSE,CLDR47:pt,localised,VI,test
+CD|VN|pt,CD,Vietnã,VN,country,True,COMPUTE,CLDR47:pt,localised,VN,test
+CD|WF|de,CD,Wallis und Futuna,WF,country,False,REFUSE,CLDR47:de,localised,WF,test
+CD|WF|es,CD,Wallis y Futuna,WF,country,False,REFUSE,CLDR47:es,localised,WF,test
+CD|WF|fr,CD,Wallis-et-Futuna,WF,country,False,REFUSE,CLDR47:fr,localised,WF,test
+CD|WF|it,CD,Wallis e Futuna,WF,country,False,REFUSE,CLDR47:it,localised,WF,test
+CD|WF|nl,CD,Wallis en Futuna,WF,country,False,REFUSE,CLDR47:nl,localised,WF,test
+CD|YE|de,CD,Jemen,YE,country,False,REFUSE,CLDR47:de,localised,YE,dev
+CD|YE|pt,CD,Iêmen,YE,country,False,REFUSE,CLDR47:pt,localised,YE,dev
+CD|ZA|de,CD,Südafrika,ZA,country,True,COMPUTE,CLDR47:de,localised,ZA,dev
+CD|ZA|es,CD,Sudáfrica,ZA,country,True,COMPUTE,CLDR47:es,localised,ZA,dev
+CD|ZA|fr,CD,Afrique du Sud,ZA,country,True,COMPUTE,CLDR47:fr,localised,ZA,dev
+CD|ZA|it,CD,Sudafrica,ZA,country,True,COMPUTE,CLDR47:it,localised,ZA,dev
+CD|ZA|nl,CD,Zuid-Afrika,ZA,country,True,COMPUTE,CLDR47:nl,localised,ZA,dev
+CD|ZA|pt,CD,África do Sul,ZA,country,True,COMPUTE,CLDR47:pt,localised,ZA,dev
+CD|ZM|de,CD,Sambia,ZM,country,False,REFUSE,CLDR47:de,localised,ZM,test
+CD|ZM|fr,CD,Zambie,ZM,country,False,REFUSE,CLDR47:fr,localised,ZM,test
+CD|ZW|de,CD,Simbabwe,ZW,country,False,REFUSE,CLDR47:de,localised,ZW,test
+CD|ZW|es,CD,Zimbabue,ZW,country,False,REFUSE,CLDR47:es,localised,ZW,test
+CD|ZW|pt,CD,Zimbábue,ZW,country,False,REFUSE,CLDR47:pt,localised,ZW,test
+CE|arab,CE,Arab,,ambiguous,False,REFUSE,"rule:token in names of AE,SY",none,ambig:arab,test
+CE|british,CE,British,,ambiguous,False,REFUSE,"rule:token in names of IO,VG",none,ambig:british,test
+CE|democratic,CE,Democratic,,ambiguous,False,REFUSE,"rule:token in names of CD,KP,LA",none,ambig:democratic,dev
+CE|french,CE,French,,ambiguous,False,REFUSE,"rule:token in names of GF,MF,PF,TF",none,ambig:french,dev
+CE|korea,CE,Korea,,ambiguous,False,REFUSE,"rule:token in names of KP,KR",none,ambig:korea,dev
+CE|north,CE,North,,ambiguous,False,REFUSE,"rule:token in names of KP,MK",none,ambig:north,test
+CE|part,CE,Part,,ambiguous,False,REFUSE,"rule:token in names of MF,SX",none,ambig:part,test
+CE|people,CE,People,,ambiguous,False,REFUSE,"rule:token in names of KP,LA",none,ambig:people,dev
+CE|republic,CE,Republic,,ambiguous,False,REFUSE,"rule:token in names of CD,CF,DO,IR,KP,KR,LA,MD,SY,TZ,VE",none,ambig:republic,dev
+CE|saint,CE,Saint,,ambiguous,False,REFUSE,"rule:token in names of BL,KN,LC,MF,PM,SH,VC",none,ambig:saint,test
+CE|sint,CE,Sint,,ambiguous,False,REFUSE,"rule:token in names of BQ,SX",none,ambig:sint,test
+CE|south,CE,South,,ambiguous,False,REFUSE,"rule:token in names of GS,KR,SS,ZA",none,ambig:south,dev
+CE|state,CE,State,,ambiguous,False,REFUSE,"rule:token in names of BO,PS,VA",none,ambig:state,dev
+CE|states,CE,States,,ambiguous,False,REFUSE,"rule:token in names of FM,UM,US",none,ambig:state,dev
+CE|united,CE,United,,ambiguous,False,REFUSE,"rule:token in names of AE,GB,TZ,UM,US",none,ambig:united,test
+CE|virgin,CE,Virgin,,ambiguous,False,REFUSE,"rule:token in names of VG,VI",none,ambig:virgin,dev
+CF|001,CF,world,,non_country,False,REFUSE,CLDR47:en region 001,none,region:001,dev
+CF|002,CF,Africa,,non_country,False,REFUSE,CLDR47:en region 002,none,region:002,test
+CF|003,CF,North America,,non_country,False,REFUSE,CLDR47:en region 003,none,region:003,test
+CF|005,CF,South America,,non_country,False,REFUSE,CLDR47:en region 005,none,region:005,dev
+CF|009,CF,Oceania,,non_country,False,REFUSE,CLDR47:en region 009,none,region:009,test
+CF|011,CF,Western Africa,,non_country,False,REFUSE,CLDR47:en region 011,none,region:011,test
+CF|013,CF,Central America,,non_country,False,REFUSE,CLDR47:en region 013,none,region:013,dev
+CF|014,CF,Eastern Africa,,non_country,False,REFUSE,CLDR47:en region 014,none,region:014,dev
+CF|015,CF,Northern Africa,,non_country,False,REFUSE,CLDR47:en region 015,none,region:015,test
+CF|017,CF,Middle Africa,,non_country,False,REFUSE,CLDR47:en region 017,none,region:017,test
+CF|018,CF,Southern Africa,,non_country,False,REFUSE,CLDR47:en region 018,none,region:018,test
+CF|019,CF,Americas,,non_country,False,REFUSE,CLDR47:en region 019,none,region:019,dev
+CF|021,CF,Northern America,,non_country,False,REFUSE,CLDR47:en region 021,none,region:021,test
+CF|029,CF,Caribbean,,non_country,False,REFUSE,CLDR47:en region 029,none,region:029,dev
+CF|030,CF,Eastern Asia,,non_country,False,REFUSE,CLDR47:en region 030,none,region:030,test
+CF|034,CF,Southern Asia,,non_country,False,REFUSE,CLDR47:en region 034,none,region:034,dev
+CF|035,CF,Southeast Asia,,non_country,False,REFUSE,CLDR47:en region 035,none,region:035,test
+CF|039,CF,Southern Europe,,non_country,False,REFUSE,CLDR47:en region 039,none,region:039,dev
+CF|053,CF,Australasia,,non_country,False,REFUSE,CLDR47:en region 053,none,region:053,test
+CF|054,CF,Melanesia,,non_country,False,REFUSE,CLDR47:en region 054,none,region:054,test
+CF|057,CF,Micronesian Region,,non_country,False,REFUSE,CLDR47:en region 057,none,region:057,dev
+CF|061,CF,Polynesia,,non_country,False,REFUSE,CLDR47:en region 061,none,region:061,dev
+CF|142,CF,Asia,,non_country,False,REFUSE,CLDR47:en region 142,none,region:142,test
+CF|143,CF,Central Asia,,non_country,False,REFUSE,CLDR47:en region 143,none,region:143,test
+CF|145,CF,Western Asia,,non_country,False,REFUSE,CLDR47:en region 145,none,region:145,dev
+CF|150,CF,Europe,,non_country,False,REFUSE,CLDR47:en region 150,none,region:150,test
+CF|151,CF,Eastern Europe,,non_country,False,REFUSE,CLDR47:en region 151,none,region:151,test
+CF|154,CF,Northern Europe,,non_country,False,REFUSE,CLDR47:en region 154,none,region:154,test
+CF|155,CF,Western Europe,,non_country,False,REFUSE,CLDR47:en region 155,none,region:155,dev
+CF|202,CF,Sub-Saharan Africa,,non_country,False,REFUSE,CLDR47:en region 202,none,region:202,test
+CF|419,CF,Latin America,,non_country,False,REFUSE,CLDR47:en region 419,none,region:419,test
+CF|EU,CF,European Union,,non_country,False,REFUSE,CLDR47:en region EU,none,region:EU,dev
+CF|EZ,CF,Eurozone,,non_country,False,REFUSE,CLDR47:en region EZ,none,region:EZ,test
+CF|UN,CF,United Nations,,non_country,False,REFUSE,CLDR47:en region UN,none,region:UN,test
