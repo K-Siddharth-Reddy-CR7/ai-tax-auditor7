@@ -413,3 +413,10 @@ Option A can meet a late-November or early-December deadline only if the author 
 10. **Authorship:** The README lists K. Siddharth Reddy, Syeda Sayeeda Farhath and P. Naga Bhargav. The manuscript metadata lists Syeda Sayeeda Farhath, Siddharth Karanam, P. Naga Bhargav Reddy and Baalne Anjali. Please confirm that "K. Siddharth Reddy" = "Siddharth Karanam" and "P. Naga Bhargav" = "P. Naga Bhargav Reddy", and confirm Baalne Anjali's contribution (she does not appear in the README or the git history).
 11. **Contributions, corresponding author, funding:** CRediT roles, corresponding author, and any funding or acknowledgement.
 12. **AI-assistance disclosure:** IEEE requires AI-generated content (text, figures, code) to be disclosed in the acknowledgments. Do you agree to include such a statement? Exact policy wording to be verified at submission time.
+
+---
+
+## Addendum A (14 Nov 2026, Phase 2) — new evidence
+- **Findings re-verified** on branch `research/option-a-evaluation` by re-running scripts 02 and 03: 400/400 identical landed costs; 0/400 risk flags; 0/400 batch FLAGGED; "US" → Australia; 5 missing currencies; README request body ignored. All unchanged.
+- **HS-code existence check (supersedes §6.1 "not checked").** All 43 distinct catalogue HS-6 codes exist in HS 2022, per the UN Comtrade-derived `datasets/harmonized-system` v2022.0 (ODC-PDDL; SHA-256 `e77ee9e1…3126a5`; retrieved 14 Nov 2026). The catalogue spans HS chapters 84, 85, 94 and 95. *Plausibility* of each base-type → code mapping still needs a human check. Debatable cases include Tablet → 847130, VR Headset → 852852, Graphics/Sound Card → 847180, Freezer → 841830 (chest type) and Smartwatch → 851762 (see `annotation_guidelines.md`).
+- **Project facts confirmed by the authors:** no other implementation exists; the README six-agent design was an initial envisioned design.
