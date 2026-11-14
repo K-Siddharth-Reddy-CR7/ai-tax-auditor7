@@ -1,6 +1,6 @@
 # Research Question and Scope (Phase 2 — proposed, awaiting author approval)
 
-Status: **PROPOSED.** Nothing here is a result. Titles and gap statements are provisional until the literature review (Phase 6) is complete.
+Status: **APPROVED by the authors (Option A), updated 14 Nov 2026 with methodological corrections.** Nothing here is a result. Title and gap statement remain provisional until the literature review (Phase 6).
 
 ## 1. What the paper is about
 
@@ -24,21 +24,19 @@ The strategies are:
 | ID | Question | Hypothesis (to be tested, may be rejected) |
 |---|---|---|
 | SQ1 | How accurately do the three systems resolve product descriptions to HS-6 codes, and how often do they answer wrongly instead of abstaining on unsupported goods? | H1a: S0 has higher coverage than B on in-catalogue variants. H1b: S0 has a higher silent-error rate than B on unsupported goods. H1c: S1 lowers the silent-error rate relative to S0, at a measurable coverage cost. |
-| SQ2 | Same questions for jurisdiction strings (names, ISO codes, aliases, typos, unsupported and ambiguous countries). | H2: S0's substring rule produces real-country confusions (e.g. Niger→Nigeria), and S1's alias-plus-abstain design removes them without reducing coverage on ISO-form inputs. |
-| SQ3 | What share of end-to-end transactions return a wrong duty/VAT/landed cost without warning, how large is the error, and which stage causes it? | H3: Because duty depends only on the destination, product errors are *financially masked* (zero cost error, wrong HS), while jurisdiction errors cause cost deviations. This is a structural property, which we quantify rather than "discover". |
+| SQ2 | How accurately do the systems **identify** destination countries (names, ISO codes, held-out CLDR names, typos, ambiguous and non-country strings), and, *separately*, do they compute only when tax data exist and refuse otherwise? | H2: S0's substring rule causes wrong-country identifications, and all original systems apply default rates silently. S1 refuses explicitly, but abstains on typos and held-out aliases (coverage cost). |
+| SQ3 | Which resolution errors change downstream outputs (duty, VAT, landed cost, policy record), which are masked, which cause explicit refusal, and which remain undetected? | Measured, not assumed. The code reading suggests that product errors do not alter landed cost and that some wrong-country errors are also financially masked (countries with equal rates). Both are tested in controlled propagation runs. |
 | SQ4 | What latency and throughput overhead do staging and abstention add? | H4: All systems stay well under 1 ms per transaction in-process. The overhead is real but operationally negligible. |
 | SQ5 | Which components cause the observed differences? | Answered by single-variable ablation (see the evaluation plan). |
 
 ## 4. Systems under comparison
+- **B:** original single-step baseline (unchanged).
+- **S0:** original staged pipeline (unchanged).
+- **S1:** `backend/lexitax_v2` (new).
 
-- **B — original single-pass baseline:** `run_normal_auditor_pipeline`, unchanged.
-- **S0 — original staged pipeline:** `run_agentic_auditor_pipeline`, unchanged.
-- **S1 — refined staged pipeline (new research implementation):**
-  - validated inputs;
-  - product resolution by normalised exact match, then character-trigram TF-IDF similarity with a single abstention threshold tuned on a development split;
-  - jurisdiction resolution by exact match plus an ISO 3166-1 alias table, with explicit "unsupported"/"unresolved" outcomes and no fuzzy matching by default;
-  - no fabricated defaults;
-  - the **same** tax tables, arithmetic and policy retriever as S0, so that differences are attributable to resolution.
+Exact differences, the confidence/abstention design and the one-change-per-step attribution ladder L0→L5 are specified in `experimental_evaluation_plan.md` §1–2.
+
+The original code produces no classification confidence score. S1 therefore abstains on deterministic, measurable evidence (exact/normalised match, whole-token containment, HS-uniqueness, evidence coverage, bounded edit distance, jurisdiction support, tax-data availability), not on an invented score.
 
 ## 5. Proposed title (provisional)
 
@@ -61,7 +59,7 @@ The gap we expect to substantiate is that **evaluations of customs-assistance pi
 
 ## 7. Contributions (to be claimed only if results support them)
 
-1. A reproducible, open evaluation benchmark for product and jurisdiction resolution in customs pre-assessment. Labels come from authoritative references (HS 2022 subheading descriptions; ISO 3166-1), controlled perturbations, and independently double-annotated human-written descriptions. All labels are independent of the evaluated systems.
+1. A reproducible, open benchmark for product and jurisdiction resolution in customs pre-assessment. Labels are derived from reference data (HS 2022 texts via a documented UN Comtrade-derived mirror; ISO 3166-1; CLDR 47) and from pre-declared rules. Labels are independent of the evaluated systems and human-checked on a pilot (and an audit sample, if done).
 2. A comparative study of three resolution strategies, measuring coverage, accuracy, silent-error rate, risk–coverage behaviour and statistical significance with paired tests.
 3. An error-propagation analysis showing which resolution errors reach financial outputs and which are masked.
 4. A refined, traceable staged pipeline (S1) with explicit abstention, released alongside the original implementation, plus a corrected record of the original system's limitations.
@@ -76,6 +74,8 @@ The gap we expect to substantiate is that **evaluations of customs-assistance pi
 - Valuation-discrepancy detection, risk scoring and consensus. These were never implemented and are not added.
 - Fraud detection, generative AI, LLMs and multi-agent claims.
 - Real customs declarations. None are used, and the synthetic transactions supply only numeric fields.
+- Legal correctness of the catalogue's HS assignments. These are reported as catalogue-asserted; an optional human plausibility check is offered.
+- Sub-national destinations (e.g. ISO 3166-2 subdivisions) are out of scope.
 
 ## 9. Feasibility within six pages
 

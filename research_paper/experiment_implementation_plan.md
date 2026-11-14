@@ -1,79 +1,51 @@
-# Experiment Implementation Plan (Phase 4 — proposed, awaiting approval)
+# Experiment Implementation Plan — v2 (implemented, 14 Nov 2026)
 
-## 1. Branching and safety
-- Work branch: `research/option-a-evaluation`, created from `claude/lexitax-audit-ieee-paper-qgqqxm`, which contains the Phase 1 report on top of `main@01dde8b`.
-- `main` is untouched. No force-push. Original history preserved.
-- Original code stays **byte-identical**: `backend/server.py`, datasets, notebook, frontend. A CI-style check (`tests/test_original_untouched.py`) compares SHA-256 hashes of these files against `main@01dde8b`.
+## Status
+| Item | State |
+|---|---|
+| Branch `research/option-a-evaluation` (no force-push, `main` untouched) | ✅ in use |
+| C1: S1 package `backend/lexitax_v2/` + 63 tests | ✅ implemented, tests pass |
+| C2: `/api/v2/audit` | ⏸ deferred by authors |
+| C3: frontend claim corrections | ✅ done (text only; `vite build` OK) — see `IMPLEMENTATION_CHANGES.md` |
+| Evaluation infrastructure `research_paper/experiments/` + 13 tests | ✅ implemented |
+| Draft benchmarks (product 6,096; country 2,122; malformed 18) | ✅ built and validated (0 errors), **not frozen** |
+| 10-item pilot sheet | ✅ prepared; **awaiting two human reviewers** |
+| DEV tuning, TEST evaluation, latency, figures | ⛔ blocked by design until freeze |
 
-## 2. Three layers kept distinct
-| Layer | Location | Content |
-|---|---|---|
-| Original implementation | `backend/`, root datasets, `frontend/` | Unchanged. B and S0 are imported from `backend/server.py` as-is. |
-| Research implementation (S1) | `backend/lexitax_v2/` (new package, new files only) | `validation.py`, `jurisdiction.py`, `product.py`, `pipeline.py`. Reuses `PolicyRetriever` and the tax/calculation formula from the original module. |
-| Evaluation infrastructure | `research_paper/experiments/` | Benchmark builders, runners, metrics, statistics, figures, results, logs |
-
-**Optional app integration (needs approval, listed separately in §6):**
-- an `/api/v2/audit` endpoint;
-- relabelling the hard-coded claims in `SystemBenchmark.jsx`.
-
-## 3. S1 design (exact)
-1. **Validation:**
-   - `product_name` and `destination` are non-empty after strip;
-   - `price > 0` and finite;
-   - `quantity` is an integer ≥ 1 (accepting integral floats such as 2.0);
-   - `shipping ≥ 0` and finite.
-   - Otherwise return `INVALID_INPUT(reason)`.
-2. **Jurisdiction:**
-   - Normalise: casefold, strip, collapse whitespace, remove accents and punctuation except hyphens.
-   - Match against the 40 canonical names, then against the ISO alias table (alpha-2, alpha-3, `name`, `official_name`, `common_name` of the 40 supported countries).
-   - If the string instead matches an ISO entry of a *non-supported* country → `UNSUPPORTED_JURISDICTION`. Otherwise → `UNRESOLVED_JURISDICTION`.
-   - No substring or fuzzy matching by default.
-3. **Product:**
-   - Normalise as above. An exact match to a catalogue product name or base-type name gives a score of 1.0.
-   - Otherwise compute character-trigram TF-IDF cosine against all 1,200 product names and 60 base-type names (word-boundary padded), using the same IDF smoothing as the original retriever, so the method is consistent with the codebase.
-   - Take the best base type. If score < τ → `UNRESOLVED_PRODUCT` (abstain).
-   - τ is chosen on PRB-dev as the smallest threshold whose dev selective risk ≤ 5 % (rule fixed in advance). The full curve is reported.
-4. **Tax, calculation, policy:** identical functions and tables to S0. Missing FX rates return `null` with a flag instead of 1.0.
-5. **Output:** `status ∈ {RESOLVED, ABSTAINED, INVALID_INPUT}`, `reasons[]`, and a per-stage trace with method and score.
-
-Dependencies:
-- `pycountry==26.2.16` (LGPL-2.1; data from iso-codes) — S1 runtime.
-- `numpy`, `pandas`, `scipy`, `matplotlib` — evaluation only.
-- Pinned in `research_paper/experiments/requirements.txt`.
-
-`rapidfuzz` was considered and rejected: the in-house trigram TF-IDF keeps the method transparent and dependency-light.
-
-## 4. Evaluation code layout
-```
-research_paper/experiments/
-  requirements.txt  run_all.py  config.yaml  README.md
-  build/        build_prb.py  build_jrb.py  build_e2e.py  build_malformed.py
-  data/         external/hs2022.csv (+SHA)  prb_*.csv  jrb_*.csv  e2e.csv  MANIFEST.json
-  annotation/   P5_writer.csv  P5_blind.csv  P5_annot.csv  J5_*.csv  adjudication.csv
-  systems/      adapters.py   (B, S0, S1, ablation variants; uniform interface)
-  eval/         metrics.py  stats.py (Wilson, McNemar-exact, Holm, kappa, bootstrap)  latency.py
-  results/      raw/*.jsonl  processed/*.csv  REPORT.md  env.json
-  figures/      risk_coverage.pdf  architecture.pdf
-  tests/        test_metrics.py  test_original_untouched.py  test_s1_unit.py  test_determinism.py
-```
-
-## 5. Execution
+## Execution
 ```bash
-python3 -m venv .venv && . .venv/bin/activate
-pip install -r research_paper/experiments/requirements.txt
-python research_paper/experiments/run_all.py --stage build      # benchmarks (except human subsets)
-python research_paper/experiments/run_all.py --stage annotate   # creates blind files, computes kappa after labelling
-python research_paper/experiments/run_all.py --stage freeze     # hashes into MANIFEST.json
-python research_paper/experiments/run_all.py --stage evaluate   # systems, ablations, stats, figures, REPORT.md
-pytest research_paper/experiments/tests
+cd research_paper/experiments
+pip install -r requirements.txt
+export PYTHONDONTWRITEBYTECODE=1
+python run_all.py --stage build && python run_all.py --stage validate
+python run_all.py --stage smoke && python run_all.py --stage pilot
+python -m pytest -q tests ../../backend/tests
+# after pilot sign-off by the authors:
+python run_all.py --stage freeze --approved-by "<author>"
+python run_all.py --stage tune
+python run_all.py --stage evaluate
 ```
 
-## 6. Proposed application changes (each needs a yes/no)
-| # | Change | Why | Risk |
-|---|---|---|---|
-| C1 | Add `backend/lexitax_v2/` (S1) as new files | Research system under test; the improvements are real fixes of the defects found in Phase 1 | None to the original code |
-| C2 | Add `/api/v2/audit` route in `server.py` (additive, ~20 lines) | Lets the app use S1; keeps v1 routes intact | Small edit to an original file |
-| C3 | Relabel `SystemBenchmark.jsx`: remove "0 % False Negatives", "37.5 %/100 %" or label them as an illustrative capability checklist | These are hard-coded, not measured | UI text change |
-| C4 | Leave the README unchanged (the authors may revise it themselves) | Not in scope | — |
+## Environment used for development
+- Python 3.13.x; Linux cloud VM with 4 vCPU (Intel Xeon @ 2.10 GHz).
+- Pinned packages: `research_paper/experiments/requirements.txt`.
+- The evaluation run records the full environment in `results/latency.json`.
 
-If C2 and C3 are declined, S1 is evaluated as a library and the app stays exactly as it is.
+## Traceability
+| Output | Location |
+|---|---|
+| Raw per-item system outputs | `results/raw/*.jsonl` |
+| Per-item scored rows | `results/processed/*_items.csv` |
+| Summaries with Wilson CIs | `results/processed/*_summary.csv` |
+| Paired tests with Holm-adjusted p-values | `results/processed/*_paired_tests.csv` |
+| DEV tuning record | `results/tuning_dev.json` |
+
+The manuscript may only cite numbers present in these files.
+
+## Remaining engineering (after freeze)
+- Run the stages, then write `results/REPORT.md`, a generated summary of the processed CSVs.
+- Generate figures:
+  - risk–coverage figure (sensitivity grid evaluated on TEST);
+  - outcome-share bars;
+  - architecture diagram for the paper.
+- Optional H2 audit sheet generator (60 items, stratified).

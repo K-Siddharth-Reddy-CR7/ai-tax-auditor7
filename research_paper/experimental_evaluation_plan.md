@@ -1,112 +1,190 @@
-# Experimental Evaluation Plan (Phase 3 — proposed, awaiting author approval)
+# Experimental Evaluation Plan — v2 (finalised protocol, 14 Nov 2026)
 
-All experiments below are **planned, not executed**. No numbers in this file are results.
+Status: **protocol final pending pilot sign-off.**
+- Benchmarks are built as a **DRAFT** and validated (0 errors), but **not frozen**.
+- **No evaluation has been run. No numbers in this file are results.**
+- The code enforces the gating: `tune`/`evaluate` refuse to run without a frozen manifest carrying a named approver.
 
-## 0. Principles
-1. **Label independence.** Every label comes from an external reference, from the perturbation generator, or from human annotators who never see system output. No system's prediction is ever used as a label.
-2. **Freeze before run.** Benchmark files are generated, reviewed, frozen and SHA-256 hashed *before* any system is run on them. The hashes are recorded in `experiments/data/MANIFEST.json`.
-3. **Single tuned parameter, tuned on dev only.** S1 has exactly one tuned parameter, the product abstention threshold τ. All headline metrics are computed on the **test** split.
-4. **Same tables, same arithmetic.** B, S0 and S1 share `products`, `taxes`, `trade_policies` and the landed-cost formula. Any output difference is therefore caused by resolution or validation logic.
-5. **Determinism.** Global seed 20261114 is used for all sampling and perturbation. Systems are deterministic, so reruns must reproduce results bit-for-bit (checked automatically).
+This version replaces v1. It incorporates the authors' methodological corrections (1–6) and minimises human annotation.
 
-## 1. Benchmarks
+---
 
-### 1.1 Product resolution benchmark (PRB)
-The label is a catalogue **base type** (60 types) and its **HS-6** code, or **ABSTAIN** for goods the catalogue does not cover. Correctness is judged at the HS-6 level, because several base types share one code (e.g. Router, Modem, Network Switch, WiFi Adapter and Smartwatch → 851762).
-
-| Subset | Source | Size (planned) | Label provenance |
+## 1. Systems and exactly how they differ
+| | B — original single-step | S0 — original staged | S1 — corrected staged (`backend/lexitax_v2`) |
 |---|---|---|---|
-| P1 Catalogue variants | Base-type names under seeded perturbations: (a) variant suffix stripped, (b) case/whitespace/punctuation noise, (c) one random edit (insert/delete/substitute/transpose) on a token ≥4 chars, (d) token reorder (multi-token names), (e) simple plural | 60 types × 5 = 300 (minus duplicates) | By construction (generator knows the source type) |
-| P2 Official in-domain text | HS 2022 subheading descriptions of the **43** catalogue codes | 43 | HS nomenclature (external) |
-| P3 Near-domain unsupported | HS 2022 descriptions of subheadings in chapters 84/85/94/95 **not** in the catalogue | random sample 120 | HS nomenclature → ABSTAIN |
-| P4 Far out-of-domain | HS 2022 descriptions from all other chapters | random sample 120 | HS nomenclature → ABSTAIN |
-| P5 Human-written | Invoice-style descriptions written by authors: 2 per base type, plus 40 unsupported goods | 160 | Writer label + blind second annotator; adjudicated (see `annotation_guidelines.md`) |
+| Code | `run_normal_auditor_pipeline` (unchanged) | `run_agentic_auditor_pipeline` (unchanged) | new package; reuses original tables, `calculation_agent`, `PolicyRetriever` |
+| Input validation | numeric cast only | numeric cast; empty-string check before strip | explicit rejection: blank text, price ≤ 0, non-finite, non-integer quantity, negative freight |
+| Product resolution | first catalogue name containing the input (substring); else **"N/A"** | exact/prefix → substring → max word overlap; else **fabricated 8471.30 "Electronics"** | T1 exact name; T2 whole-token containment with maximality, HS-uniqueness and evidence-coverage rule; T3 bounded-typo containment; else **abstain** |
+| Confidence score | none | none (the overlap count is internal and never returned) | **none.** Abstention is decided by deterministic evidence rules, not by a score |
+| Country identification | exact table name | exact table name → **bidirectional substring** ("US"→Australia) | ISO 3166-1 aliases (alpha-2/3, name, official, common) + table names, exact after normalisation; no fuzzy match (ablation only) |
+| Tax-data availability | unknown → default 5 %/10 % silently | unknown → default 5 %/10 % USD silently | identified-but-unsupported → explicit refusal; unresolved → explicit refusal |
+| Missing FX rate | not computed | silently 1.0 | `null` plus flag |
+| Costs for unresolved product | computed (product does not enter the formula) | computed (with fabricated HS) | not computed (the product is required, because duty is HS-dependent in reality) |
+| Arithmetic, tax table, policy retriever | original | original | **identical original functions** |
 
-**HS source:** `datasets/harmonized-system` v2022.0 (UN Comtrade-derived, ODC-PDDL). File SHA-256 `e77ee9e1cfd15a42d1fadeb2c0618d10f6b9ed9aec0e5d66826dc7ef9d3126a5`, retrieved 2026-11-14. These descriptions are UN Comtrade's abridged texts, not the WCO legal text. All 43 catalogue codes were verified to exist in this edition.
+**Confidence (correction 3).** Inspection shows that the original implementation produces **no product-classification confidence score**. `relevance_score` exists only for policy retrieval, and it is a TF-IDF score plus fixed bonuses. Nothing can be calibrated. S1 therefore uses measurable properties only:
+- exact versus normalised match;
+- whether the matched name is fully contained in the input;
+- uniqueness of the implied HS-6 code;
+- evidence coverage = |tokens of the matched base-type names| / |input tokens|;
+- edit distance per token;
+- supported versus unsupported jurisdiction;
+- availability of tax data.
 
-**Splits.**
-- P1 and P5 are split by base type (group split, 40 % dev / 60 % test, seeded), so that perturbations of one type never straddle splits.
-- P2–P4 are split randomly (40/60), stratified by subset.
-- Dev is used **only** to choose τ.
+S1 has three tunable parameters: coverage threshold, maximum typo edits, and minimum token length for typo tolerance. They are selected **on DEV only** by a pre-declared rule (§6).
 
-### 1.2 Jurisdiction resolution benchmark (JRB)
-The label is one of the 40 supported jurisdictions, **UNSUPPORTED** (a real country not in the tax table), or **ABSTAIN** (ambiguous or non-country string).
+## 2. Attribution of differences (correction 6): one-change-per-step ladder
+Each step changes exactly one component. Equivalence is verified by test: L0 ≡ S0 and L5 ≡ S1, both on all 400 canonical transactions and on DEV benchmark inputs.
 
-| Subset | Source | Size | Label provenance |
-|---|---|---|---|
-| J1 Canonical | Table names + case/whitespace noise | 80 | Table |
-| J2 ISO forms | ISO 3166-1 alpha-2, alpha-3, `name`, `official_name`, `common_name` for the 40 countries (pycountry 26.2.16) | ~170 (deduplicated) | ISO 3166-1 |
-| J3 Typos | One seeded edit on canonical names | 40 | By construction |
-| J4 Unsupported real countries | **All** ISO 3166-1 countries not in the table (population, not a sample) | 209 | ISO 3166-1 → UNSUPPORTED |
-| J5 Colloquial / ambiguous (held out) | Author-written colloquial names (e.g. "Holland", "Britain") and ambiguous strings (e.g. "Korea", "Congo", "Guinea") | ~60 | Human, double-annotated |
+| Step | Component changed | What it isolates |
+|---|---|---|
+| L0 | — (= S0) | reference |
+| L1 | + input validation | validation |
+| L2 | + ISO country identification (unresolved/unsupported still receive S0's default rates) | country normalisation |
+| L3 | + refusal when tax data is unavailable; no FX substitution | tax-data availability |
+| L4 | + product abstention instead of the fabricated HS fallback; costs gated on product | abstention |
+| L5 | + S1 product evidence tiers (= S1) | product matching |
 
-**Leakage note.** S1's alias table is built from ISO 3166-1, so S1 is expected to solve J2 *by design*. J2 results are reported separately and are not presented as generalisation. J5 is excluded from the alias table and tests behaviour beyond it.
+Extra single-variable ablations:
+- S0 − word-overlap tier;
+- S0 − partial country match;
+- S1 − coverage guard;
+- S1 − typo tier;
+- S1 + country typo tolerance.
 
-### 1.3 End-to-end transaction benchmark (E2E)
-- Each of the 400 synthetic transactions keeps its numeric fields (unit price, quantity, freight).
-- Its product and destination strings are replaced by items drawn (seeded, with replacement) from the **test** splits of PRB and JRB.
-- Expected output = (HS-6, duty %, VAT %, landed cost) computed from the true labels and the project's own tables, or ABSTAIN if either label is ABSTAIN/UNSUPPORTED.
-- Three draws give 1,200 transactions.
+The tax tables, arithmetic and datasets are identical for every variant (correction 6).
 
-## 2. Outcome taxonomy (per item)
-| Outcome | Definition |
+## 3. Ground truth (corrections 1, 2, 5)
+All labels come from **external reference data or pre-declared deterministic rules**. None comes from any system's output, and none is a model-generated suggestion.
+
+### 3.1 Reference data and provenance
+Full details: `experiments/data/external/PROVENANCE.md`.
+- **HS 2022 subheading texts.**
+  - Source: GitHub `datasets/harmonized-system` @ `b1be3f2`, ODC-PDDL. Converted from the UN Comtrade API.
+  - This is an **unofficial mirror**: abridged UN texts, not WCO legal text.
+  - Edition confirmed programmatically: codes new in 2022 are present and codes deleted in 2022 are absent. 5,613 six-digit rows = 5,612 WCO subheadings + 1 Comtrade placeholder (WCO total to be checked on WCO's own page).
+  - 9 codes with duplicated descriptions and the placeholder are excluded by rule.
+- **ISO 3166-1:** `pycountry` 26.2.16, which bundles Debian iso-codes (249 countries). An open re-publication, not the ISO OBP.
+- **CLDR 47** localised names via `babel` 2.18.0, locales de/fr/es/it/nl/pt.
+
+### 3.2 Product benchmark (draft counts)
+Every item records whether the code exists, the mapping basis, whether the code is in the supported catalogue, and the expected behaviour.
+
+| Subset | Items (draft) | Text source | Expected | Label provenance | Does the description correspond to the code? |
+|---|---|---|---|---|---|
+| PA | 400 | 60 catalogue base-type names: plain, one full variant name, and 5 surface perturbations (case, whitespace/punctuation, one-edit typo, plural, reorder) | ANSWER catalogue HS-6 | `catalogue_asserted` | **Not verified.** Correctness means "resolved to the right catalogue record". All 43 codes exist in HS 2022, but *mapping plausibility* is unverified; human check optional (§7) |
+| PB | 128 | HS 2022 text of the 43 catalogue codes, plus case and one-edit typo | ANSWER that code | `nomenclature_definition` | Yes, by definition: the text is that code's own description |
+| PC | 884 | HS 2022 texts of every other subheading in chapters 84/85/94/95 | ABSTAIN (unsupported subheading) | nomenclature | Supported at 6 digits? **No**, so any answer is a wrong HS-6 |
+| PD | 4,676 | HS 2022 texts of all subheadings in other chapters (full population, no sampling) | ABSTAIN (outside catalogue) | nomenclature | — |
+| PE | 8 | Catalogue tokens shared by base types with ≥ 2 different HS codes (e.g. "Drive", "Card", "Oven") | ABSTAIN (ambiguous) | pre-declared rule | Ambiguity defined before evaluation |
+
+**Pre-declared rules:**
+- A perturbation is discarded if it collides with another catalogue name.
+- Texts whose normalised form carries conflicting labels are removed (3 removed).
+- Exact duplicates are removed (126).
+
+### 3.3 Country benchmark (draft counts)
+Identification label (`expected_iso`) and tax-data availability are **separate fields** (correction 2).
+
+| Subset | Items | Source | Identification label | Tax-data availability |
+|---|---|---|---|---|
+| CA | 120 | 40 table names + case and whitespace noise | ISO | available |
+| CB | 884 | ISO forms of all 249 countries | ISO | available for 40; otherwise unavailable → REFUSE |
+| CC | 247 | one-edit typo per country (discarded if it equals any alias) | ISO (by construction) | as above |
+| CD | 821 | CLDR names, **held out** from S1's alias table (cross-country collisions removed) | ISO | as above |
+| CE | 16 | tokens in ≥ 2 ISO names that are not themselves aliases (e.g. "Korea", "South", "Virgin") | none (ambiguous) | REFUSE |
+| CF | 34 | CLDR non-country regions (e.g. "Europe", "Caribbean") | none | REFUSE |
+
+**Leakage note.** S1's alias table *is* ISO 3166-1, so S1 is expected to solve CB by construction. CB is reported separately and never presented as generalisation. CC, CD, CE and CF are not derived from S1's table.
+
+### 3.4 Malformed-input set M
+18 items with fixed defects (blank text, negative/zero/NaN/∞/text price, zero/negative/fractional/text quantity, negative/NaN/text freight). Expected outcome: explicit rejection.
+
+## 4. Splits and leakage prevention (correction 5)
+- Group-level deterministic split, 40 % DEV / 60 % TEST, seed 20261114.
+  - Product groups = **HS-4 heading**: catalogue variants, HS texts of the same heading and unsupported siblings never straddle the split.
+  - Country groups = ISO code.
+  - Ambiguous tokens are grouped by their singular form.
+- Validation (draft): 0 identical normalised texts across splits; 0 groups straddling splits; 0 label conflicts.
+- Near-duplicates (token Jaccard ≥ 0.9, ≤ 12 tokens): 11 product and 1 country test items have a DEV neighbour. These are reported, not removed, as declared.
+- The 1,200 random transaction combinations of v1 are **dropped**, because random pairing would duplicate items and create artificial patterns. Instead there are two controlled propagation runs (§5.4), each varying only one input. The numeric fields cycle deterministically through the 400 synthetic transactions; they affect absolute amounts only, not which errors occur.
+
+## 5. Tasks, outcomes and metrics
+### 5.1 Outcome taxonomy (fixed in `lexeval/scoring.py`)
+| Outcome | Meaning |
 |---|---|
-| **Correct** | Answered, and the answer equals the label |
-| **Safe abstention** | Abstained, and the label is ABSTAIN/UNSUPPORTED |
-| **Over-abstention** | Abstained, but the label is a supported class |
-| **Silent error** | Answered with a wrong value *without* any warning. This includes fabricated defaults: S0's 8471.30 fallback and the 5 %/10 % default rates |
-| **Masked error** (E2E only) | Wrong HS-6 but correct landed cost |
+| CORRECT | answered with the labelled value |
+| SAFE_ABSTENTION | declined, and declining was expected |
+| OVER_ABSTENTION | declined, but an answer was expected |
+| EXPLICIT_FAILURE | error or rejection message |
+| **SILENT_ERROR** | a wrong value presented as an answer, including fabricated HS codes and default tax rates |
 
-## 3. Metrics
-- **Coverage** = answered / all.
-- **Accuracy** = correct / all. **Selective accuracy** = correct / answered.
-- **Silent-error rate (SER)** = silent errors / all. This is the primary safety metric.
-- **False-acceptance rate** on unsupported subsets (P3, P4, P5-unsupported, J4, J5-ambiguous).
-- **Risk–coverage curve and AURC** for S1 (sweeping τ). B and S0 appear as single operating points.
-- **E2E:**
-  - share Correct / Safe / Silent-wrong-cost / Masked;
-  - relative landed-cost error |L̂−L*|/L* on silent-wrong-cost items (median, max);
-  - stage attribution (product vs. jurisdiction vs. both).
-- **Per-subset breakdown** for every metric. **Error categories:** wrong HS same chapter, wrong chapter, fabricated fallback, wrong real country, default rates applied.
-- **Latency:** per transaction (mean ± SD, median, p95, p99) and throughput (tx/s).
+### 5.2 Exact definitions
+- **Coverage** = (CORRECT + SILENT_ERROR) / N, the share of items for which an answer is shown.
+- **Decision accuracy** = (CORRECT + SAFE_ABSTENTION) / N.
+- **Silent-error rate (SER)** = SILENT_ERROR / N (primary safety metric).
+- **Selective accuracy** = CORRECT / answered.
+- **Selective risk** = SILENT_ERROR / answered.
+- All metrics are reported per subset and pooled; the main tables use subset-level figures, because pooled figures are dominated by PD.
 
-Confusion matrices: a 43-class HS matrix is not readable in print. The paper will show an error-category table, and the full confusion matrices will be released as CSV.
+### 5.3 Three separate tasks
+1. **Product (HS-6)**, with the country fixed to a canonical supported table name.
+2. **Country identification.** Correct = right ISO code, regardless of tax data. For B and S0, "identified" means matched to a table country. They cannot identify the 209 unsupported countries by design, which is reported as over-abstention, not error, unless they map to a wrong country (e.g. Niger→Nigeria).
+3. **Tax-data behaviour.**
+   - Labelled jurisdiction has tax data → expected COMPUTE with its rates. Computing with other rates = SILENT_ERROR, subtyped `default_rates` or `other_country_rates`. Refusing = OVER_ABSTENTION.
+   - No tax data → expected REFUSE.
+   - Correct rates obtained via a wrong country are counted CORRECT for this task but flagged `correct_rates_wrong_or_no_country` (masked).
 
-## 4. Statistics
-- 95 % **Wilson score intervals** for all proportions.
-- **Paired exact McNemar tests** (B vs S0, S0 vs S1, B vs S1) on per-item Correct and Silent-error indicators, on the same test items. **Holm–Bonferroni** correction across the family of comparisons. Effect sizes are reported as differences in proportions with 95 % CIs.
-- Annotation reliability: **Cohen's κ** between the two annotators (P5, J5), with raw agreement.
-- Latency: medians with bootstrap 95 % CI (10,000 resamples, seeded).
-- No significance claim will be made beyond these tests.
+### 5.4 Error propagation (correction 4)
+The dependency graph was read from code, and will be *measured* rather than assumed:
+- Product → HS, category → policy query. The product does **not** enter `calculation_agent`.
+- Destination → duty, VAT, currency → landed cost and local cost. In S0 the policy query uses the **raw destination string**.
 
-## 5. Ablation (one variable at a time, all on the test split)
-| Variant | Change relative to parent |
-|---|---|
-| S0 − token-overlap tier | Remove tier 3 of `product_agent` |
-| S0 − HS fallback | Unknown product → abstain instead of 8471.30 |
-| S0 − partial country match | Remove bidirectional substring match in `tax_agent` |
-| S1 − abstention | τ = 0 (always return the best match) |
-| S1 − ISO alias table | Exact canonical names only |
-| S1 + fuzzy country | Add char-trigram fuzzy country match (threshold tuned on J-dev) |
-| S1 − input validation | Accept raw inputs as S0 does (on malformed-input set M) |
+Two runs:
+- **Product run:** product varies; country fixed to canonical. **Country run:** country varies; product fixed to canonical.
 
-Malformed-input set **M** (30 items): whitespace-only names, negative/zero price, quantity 0, non-integer quantity, NaN/inf, missing fields. Expected outcome: rejected with a reason.
+Per item and system, each run is classified as one of:
+- NO_ERROR;
+- MASKED (identification wrong, financial outputs equal to reference), flagged or silent;
+- FINANCIAL_ERROR (landed cost differs), flagged or silent, with relative error |L−L*|/L*;
+- COMPUTED_WHEN_SHOULD_REFUSE, flagged or silent;
+- OVER_REFUSAL;
+- EXPLICIT_REFUSAL.
 
-## 6. Computational performance
-- In-process timing with `time.perf_counter_ns`: warm-up of 200 calls, then 30 repetitions over the 1,200 E2E transactions per system.
-- Optional HTTP measurement through the Flask app on loopback.
-- CPU pinned with `taskset` where available.
-- Recorded environment: CPU model, cores, RAM, OS, Python and library versions.
-- Results are reported as indicative for a shared cloud VM, not as production benchmarks.
+Policy-record mismatches are counted separately. Reference values come from the original arithmetic applied to the labelled jurisdiction's table rates. They are correct **relative to the project's own tables**, not to law.
 
-## 7. Threats to validity (to be carried into the paper)
-- P1/J3 perturbations are synthetic and may not reflect real declaration noise. P5/J5 mitigate this, but they are small and author-written.
-- P2–P4 use abridged HS texts, whose formal style differs from invoice text.
-- The catalogue covers 60 base types in four HS chapters. Results do not generalise to full HS classification.
-- Tax rates are unsourced prototype values, so financial errors are relative to the project's tables, not to law.
-- Author-written items risk being unconsciously tailored. Mitigations: written before any S1 code is shown to annotators, frozen and hashed before evaluation, and quota-driven.
-- Choosing τ on dev from the same distribution may overstate S1's test performance on other distributions.
-- The authors developed both the systems and the benchmark.
+### 5.5 Statistics
+- **Wilson 95 % CIs** for every proportion.
+- **Primary family:** exact McNemar tests on paired per-item indicators (decision-correct, silent-error) for B–S0, S0–S1 and B–S1, across the three tasks. That is 18 tests, with **Holm–Bonferroni** correction.
+- **Secondary (exploratory, separate family):** adjacent ladder steps.
+- Effect size: difference in proportions.
+- Latency: median with bootstrap CI over repetition medians.
+- No significance claim outside these tests.
 
-## 8. Reproducibility
-One command, `python research_paper/experiments/run_all.py`, regenerates benchmarks (if absent), runs all systems, ablations and statistics, and writes `results/raw/*.jsonl`, `results/processed/*.csv`, figures and a `results/REPORT.md`. Every number in the manuscript must be traceable to a row in `results/processed/`.
+## 6. Parameter selection (DEV only)
+- Grid: coverage ∈ {0, .25, .34, .5, .67, .75, 1}; typo edits ∈ {0, 1, 2}; minimum length ∈ {4, 5, 6}.
+- **Rule (fixed in `config.json`):** maximise DEV macro decision-accuracy over product subsets, subject to DEV macro SER ≤ that of B on DEV.
+  - If no configuration satisfies this, minimise macro SER.
+  - Ties go to the more conservative configuration.
+- The test-set risk–coverage scatter over the grid is reported only as sensitivity analysis.
+
+## 7. Human verification (minimised; see `annotation_guidelines.md`)
+- **Mandatory:** a 10-item pilot reviewed independently by two authors, about 15–20 min each. Reviewers check the labelling rules, not system outputs.
+- **Recommended:** a 60-item stratified label audit (one reviewer, about 45–60 min) to estimate the label-error rate with a CI.
+- **Optional:** plausibility check of the 60 catalogue HS assignments (about 45–60 min).
+
+## 8. Computational performance
+- Workload: 1,000 TEST product items with canonical countries. 200 warm-up calls, then 30 repetitions per system, timed in-process with `perf_counter_ns`.
+- Recorded environment: CPU model, cores, memory, OS, Python and package versions.
+- Results are indicative for a shared cloud VM.
+
+## 9. Limitations to carry into the paper
+- **PA labels:** catalogue-asserted mappings, not verified HS classification.
+- **HS texts:** abridged, formal language unlike invoice text. There are no real declarations.
+- **Perturbations:** synthetic, and may not match real error distributions.
+- **Small subsets:** PE (8) and CE (16), so wide CIs.
+- **S1 alias table versus CB:** S1 uses the same ISO table as CB, so CB is solved by construction.
+- **Tax rates:** unsourced prototype values (EU rates internally inconsistent), so financial correctness is relative to the project tables.
+- **Policy corpus:** placeholder text, so retrieval relevance is not evaluated.
+- **Scope:** results do not generalise beyond 60 product types and 40 jurisdictions.
+- **Authorship of benchmark and systems:** the authors (with AI assistance) built both the systems and the benchmark generator.

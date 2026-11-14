@@ -1,6 +1,6 @@
 # Author Review Checklist (living document)
 
-Status: **Phase 2–3 plans proposed (14 Nov 2026). Awaiting author approval before implementation (Phase 4).**
+Status: **Phases 3–4 implemented (14 Nov 2026). Awaiting the 10-item pilot before freezing benchmarks and running the evaluation.**
 The manuscript has not been drafted. Nothing is submission-ready.
 
 ## A. Decisions resolved
@@ -9,16 +9,15 @@ The manuscript has not been drafted. Nothing is submission-ready.
 - [x] Author list, order, names and affiliations (see §C)
 - [x] No other implementation exists; README design was aspirational — authors
 
-## B. Decisions required now (see `research_question_and_scope.md`, `experiment_implementation_plan.md` §6)
-- [ ] Approve the primary research question, supporting questions and provisional title
-- [ ] Approve the exclusion of policy-retrieval *relevance* evaluation (placeholder corpus)
-- [ ] Approve S1 design (abstention threshold, ISO alias table, no fuzzy country match)
-- [ ] App change C1 (new `backend/lexitax_v2/` package) — yes/no
-- [ ] App change C2 (additive `/api/v2/audit` route in `server.py`) — yes/no
-- [ ] App change C3 (relabel hard-coded benchmark claims in `SystemBenchmark.jsx`) — yes/no
-- [ ] Annotation roles and availability (≈4–5 person-hours total; run the 10-item pilot first)
-- [ ] Use of the UN Comtrade-derived HS 2022 file (ODC-PDDL) and pycountry ISO data as reference sources
-- [ ] Confirm the canonical repository URL for the paper. The brief says `github.com/K-Siddharth-Reddy/ai-tax-auditor7`; this session's remote is `github.com/K-Siddharth-Reddy-CR7/ai-tax-auditor7`.
+## B. Decisions — resolved on 14 Nov 2026 and still open
+- [x] Research question and provisional title approved
+- [x] C1 approved and implemented; C2 deferred; C3 approved and implemented
+- [x] Canonical repository URL, per the actual git remote: `https://github.com/K-Siddharth-Reddy-CR7/ai-tax-auditor7`. The URL without "-CR7" in the brief does not resolve from this environment; please confirm which one to cite.
+- [ ] **Pilot (H1):** two reviewers (proposed: Authors 1 and 4) complete `experiments/pilot/pilot_review_sheet.csv` (≈ 15–20 min each)
+- [ ] Approve freezing: `run_all.py --stage freeze --approved-by NAME`
+- [ ] Decide on the H2 label audit (60 items, ≈ 45–60 min) and the H3 catalogue plausibility check (optional)
+- [ ] Accept the use of the unofficial HS mirror (UN Comtrade-derived, PDDL) with the stated caveats, or supply WCO/UN source files
+- [ ] Review the S1 code (`backend/lexitax_v2/`). It was written with AI assistance and must be understood and accepted by the authors, ideally Author 2
 
 ## C. Author metadata (authoritative; do not reorder)
 1. Syeda Sayeeda Farhath — syedasayeedafarhath@ieee.org
@@ -35,8 +34,8 @@ Each author must have made an intellectual contribution, taken part in drafting 
 - [ ] Author 2: implementation is recorded. Confirm review of S1 code and results, drafting/revision, and approval.
 - [ ] Author 3: literature survey is recorded. Confirm verification of references and related-work text, and approval.
 - [ ] **Author 4: "professional academic guidance" alone may not meet IEEE authorship criteria.** Confirm intellectual input (e.g. research direction or methodology review) and critical revision of the manuscript, and approval. Otherwise consider the acknowledgments instead.
-- [ ] Corresponding author: not assumed. Confirm (Author 1 is the coordination contact).
-- [ ] Funding: none assumed. Confirm.
+- [ ] Corresponding author: Author 1 proposed by the authors, **pending final confirmation**.
+- [ ] Funding: unconfirmed. No funding statement will be written until confirmed.
 
 ## E. AI-assistance disclosure (draft; verify against current IEEE and venue policy)
 IEEE requires disclosure, in the acknowledgments, of AI-generated content (text, figures, images, code), naming the AI system and the sections and extent. A truthful draft will cover:
@@ -52,8 +51,8 @@ The human authors verify all scientific content. No AI system is listed as an au
 Generative RAG; autonomous/multi-agent deliberation; valuation-discrepancy detection; risk scoring/percentiles; consensus verdicts; fraud detection; Levenshtein matching; cryptographic IDs; "0 % false negatives"; 200+ jurisdictions; real customs declarations; real trade policies; legal correctness of tax rates.
 
 ## G. Pending phases
-- [ ] Phase 4: implementation (after approval)
-- [ ] Phase 5: experiments
+- [x] Phase 4: implementation (S1, tests, evaluation infrastructure, C3)
+- [ ] Phase 5: experiments (blocked on pilot/freeze)
 - [ ] Phase 6: verified literature review; conference shortlist
 - [ ] Phase 7: manuscript (≤ 6 pages, compiled and page-checked)
 - [ ] Phase 8: three-reviewer QA; `final_submission_checklist.md`

@@ -1,80 +1,59 @@
-# Annotation Guidelines (draft v0.1 — for author review)
+# Labelling and Human-Verification Workflow — v2 (minimal human workload)
 
-Two small human-written subsets make the benchmark less synthetic:
-- **P5** — product descriptions;
-- **J5** — colloquial and ambiguous country strings.
+v1, which had student authors write and double-annotate about 230 items, is **withdrawn**. The student authors are unavailable, and automation can supply traceable labels for almost everything.
 
-Everything else is labelled automatically from external references (HS 2022, ISO 3166-1) or by construction.
-
-## Roles
-| Role | Person (proposed) | Task |
-|---|---|---|
-| Writer (W) | Author 2 (Siddharth Karanam) | Writes items and assigns an intended label |
-| Annotator (A) | Author 3 (P. Naga Bhargav Reddy) | Labels the same items **blind** to W's label |
-| Adjudicator (J) | Author 1 (Syeda Sayeeda Farhath); Author 4 (Baalne Anjali) for unresolved cases | Resolves disagreements and records the reason |
-
-The role assignment is a proposal; the authors may swap roles.
-
-**Rules for everyone:**
-- Do not run LEXITAX AUDIT (any version) on your items.
-- Do not look at S1 code before items are frozen.
-- Do not use AI tools to write or label items.
-
-## What counts as one item
-- **P5 item:** a single product description string of **3–15 words**, written the way it might appear on a commercial invoice or packing list. The intended label is either one of the 60 catalogue base types, or `UNSUPPORTED`.
-- **J5 item:** a single destination string of **1–5 words**. The intended label is one of the 40 table countries, `UNSUPPORTED` (a real country not in the table), or `AMBIGUOUS` (could reasonably mean more than one country, or is not a country).
-
-## Labels
-- **Base type** (P5): choose from `labels/base_types.csv` (60 rows: name, HS-6, short HS description). Label the *thing*, not the brand. If the description fits two base types that share one HS-6 code (e.g. "camera" → Digital/Video Camera, both 852589), label `MULTI:<hs6>`. It is scored at HS level.
-- **UNSUPPORTED** (P5): goods clearly outside all 60 types (e.g. "cotton t-shirts", "frozen shrimp", "car tyres").
-- **AMBIGUOUS** (P5): the text cannot be resolved even by a human (e.g. "electronic device", "spare parts"). Scored as should-abstain.
-- **J5 labels:** the country, `UNSUPPORTED` or `AMBIGUOUS`.
-
-## Writing quotas (W)
-| Subset | Quota |
-|---|---|
-| P5 in-catalogue | 2 per base type = 120. Item 1 is a plain synonym or paraphrase (e.g. "notebook computer 14 inch"). Item 2 adds invoice-style detail (model-like codes, quantities, materials), e.g. "Li-ion power bank 20000mAh black". Do not copy the catalogue name verbatim. |
-| P5 unsupported | 40, spread over at least 10 HS chapters, including 10 "look-alike" goods (e.g. "car battery charger cable", "toy laptop for kids", "laptop bag"). |
-| P5 ambiguous | 10 |
-| J5 | 1–2 colloquial or native-language names for countries where one exists (e.g. "Holland", "Deutschland", "Britain", "Emirates"), ~35 items; plus ~15 ambiguous/non-country strings (e.g. "Korea", "Congo", "Guinea", "EU", "Europe"); plus ~10 sub-national or territory names (e.g. "Northern Ireland", "Hong Kong", "Scotland"), labelled as their ISO-correct outcome. |
-
-## Positive and negative examples
-| Text | Correct label | Why |
-|---|---|---|
-| "notebook PC, 15.6in, 8GB RAM" | Laptop (847130) | Paraphrase of laptop |
-| "laptop sleeve neoprene" | UNSUPPORTED | Bag/case, not a laptop |
-| "USB-C wall charger 65W" | Battery Charger (850440) | Charger |
-| "wireless earbuds with charging case" | Wireless Headphones (851830) | |
-| "drone with 4K camera" | UNSUPPORTED | Not a catalogue type |
-| "spare parts" | AMBIGUOUS | Unresolvable |
-| "Holland" (J5) | Netherlands | Colloquial |
-| "Korea" (J5) | AMBIGUOUS | North or South |
-| "Hong Kong" (J5) | UNSUPPORTED | ISO territory not in table |
-
-## Procedure
-1. W writes all items in `annotation/P5_writer.csv` and `annotation/J5_writer.csv`, with columns: `item_id, text, writer_label, writer_note`.
-2. A script strips `writer_label` and shuffles the items into `annotation/P5_blind.csv`.
-3. A labels the blind file, with columns: `item_id, annotator_label, confidence(1-3), note`.
-4. The script computes Cohen's κ and lists disagreements.
-5. J adjudicates each disagreement, recording `final_label` and `reason`. Items that remain unresolvable are labelled AMBIGUOUS and kept.
-6. Files are frozen and hashed into `MANIFEST.json`. No edits are allowed after the first evaluation run; any later correction is logged as an erratum with re-run results.
-
-## Workload estimate (to be confirmed by the authors after a 10-item pilot)
-| Task | Items | Time per item | Total |
+## 1. Where each label comes from
+| Label type | Produced by | Human needed? | Why automation is (or isn't) enough |
 |---|---|---|---|
-| W: write P5 | 170 | ~30–40 s | ~1.5–2 h |
-| W: write J5 | 60 | ~15 s | ~15 min |
-| A: blind label P5 + J5 | 230 | ~15–20 s | ~1–1.3 h |
-| J: adjudicate (expect 10–20 % disagreement) | ~25–45 | ~1 min | ~0.5–0.75 h |
-| Catalogue sanity check (Section below) | 60 | ~1 min | ~1 h |
-| **Total** | | | **≈ 4–5 person-hours, spread over 3 people** |
+| HS-6 of an HS 2022 text (PB) | The text *is* the nomenclature description of that code | No | Correspondence holds by definition. The caveat is that texts are UN Comtrade abridgements |
+| ABSTAIN for unsupported subheadings and other chapters (PC, PD) | Code ∉ catalogue codes → no correct six-digit answer exists in the system | No | Set membership; no judgement involved |
+| Catalogue record for catalogue-name variants (PA) | Generator knows the source record; perturbations are label-preserving by construction and checked for collisions | Pilot spot-check | Rules could, in principle, produce an unreadable variant. The pilot and audit estimate how often |
+| Ambiguous product/country tokens (PE, CE) | Pre-declared rule (token shared by ≥ 2 entities with different labels and not itself a name) | Pilot spot-check | The rule's *reasonableness* is a human judgement |
+| Country ISO code (CA–CD) | ISO 3166-1 field or CLDR territory code | Pilot spot-check | Reference-defined; check that typos remain recognisable |
+| Non-country regions (CF) | CLDR region codes | No | Reference-defined |
+| Tax-data availability | ISO code ∈ 40-country table | No | Set membership |
+| **Whether the catalogue's HS assignment is plausible** for each of the 60 product types | — | **Yes (optional)** | Requires classification expertise. Neither code existence nor string matching can establish it |
 
-## Catalogue HS sanity check (separate, optional but recommended)
-All 43 catalogue codes exist in HS 2022. Whether each base type is *plausibly* classified under its code needs a human check, because some mappings are debatable:
-- Tablet → 847130 (description requires a keyboard);
-- VR Headset → 852852 (monitor);
-- Graphics/Sound Card → 847180 rather than 847330 (parts);
-- Freezer → 841830 (chest type only);
-- Smartwatch → 851762.
+Labels are **rule-derived**. The rules were written with AI assistance and are applied deterministically. They are not presented as independently verified ground truth until the human checks below are done, and the paper will state exactly which checks were performed.
 
-One author marks each of the 60 rows `plausible / questionable / wrong`, with a note. The outcome is reported as a dataset limitation. It does **not** change labels, because evaluation is relative to the catalogue, with P2 judged against the official code.
+## 2. Pre-declared ambiguity criteria
+Fixed before any evaluation.
+- **Product (PE):** a lower-case alphabetic token of ≥ 3 characters that occurs in the names of base types mapping to ≥ 2 different HS-6 codes, and is not itself a base-type name. Expected: abstain.
+- **Country (CE):** a token of ≥ 4 letters that occurs in the ISO `name`/`common_name` of ≥ 2 countries and is not itself an ISO alias or table name. Expected: no identification, refuse. Tokens are grouped by singular form for splitting.
+- **Conflicts:** if two generated texts normalise identically but carry different labels, all copies are removed (e.g. CLDR German "Island" = Iceland versus the English ambiguous token "island").
+
+## 3. Human tasks and minimum workload
+| # | Task | Who (proposed; not assumed) | Items | Estimated time | Status |
+|---|---|---|---|---|---|
+| H1 | **10-item pilot**: agree/disagree with each expected outcome, given the input and its reference evidence (`experiments/pilot/`) | 2 reviewers independently, e.g. Author 1 and Author 4 | 10 | 15–20 min each, **≈ 35 min total** | **Required before freezing** |
+| H2 | Stratified label audit (6 per stratum × 10 strata), excluding pilot items | 1 reviewer | 60 | 45–60 min | Recommended. Gives a label-error estimate with a Wilson CI |
+| H3 | Catalogue HS plausibility (`experiments/pilot/catalogue_base_types.csv`) | 1 reviewer, ideally with trade/classification familiarity | 60 | 45–60 min | Optional. Reported as a dataset limitation either way |
+
+**Minimum:** H1 only, about 35 minutes of human time. **Recommended:** H1 + H2, about 1.5 hours.
+
+The student authors are **not** required for any of these. If no one does H2, the paper says that labels were rule-derived and pilot-checked only.
+
+## 4. Pilot procedure
+1. Reviewers read `pilot/PILOT_INSTRUCTIONS.md` and `pilot/PILOT_SHEET_READABLE.md`.
+2. Each reviewer fills their rows in `pilot/pilot_review_sheet.csv` (R1 or R2) without conferring: agree/disagree/unsure, a corrected outcome if they disagree, comment, minutes.
+3. Agreement (raw and Cohen's κ against the expected labels) and time are summarised. With 10 items, κ is descriptive only.
+4. **Decision rule:**
+   - If both reviewers agree with ≥ 9/10 and no labelling *rule* is shown to be wrong, the authors approve freezing: `run_all.py --stage freeze --approved-by "<name>"`.
+   - If a rule is wrong, it is fixed in code, the draft is rebuilt, the change is logged in `IMPLEMENTATION_CHANGES.md`, and a new pilot item is drawn for that stratum.
+5. After freezing, labels are immutable. Later corrections are logged as errata, and affected results are re-run and reported.
+
+## 5. Pilot items (drawn by seeded stratified rule from DEV)
+| ID | Stratum | Input | Expected |
+|---|---|---|---|
+| P01 | catalogue name + typo | Wireless Headhones | ANSWER 851830 |
+| P02 | catalogue name, plural | Hair Dryers | ANSWER 851631 |
+| P03 | HS text of catalogue code | Hair-dressing apparatus; electro-thermic hair dryers | ANSWER 851631 |
+| P04 | unsupported subheading (ch. 94) | Seats; parts, of wood, (other than … automotive) | ABSTAIN |
+| P05 | other chapter | Nitrile-function compounds; n.e.c. heading no. 2926 | ABSTAIN |
+| P06 | ambiguous product token | Computer | ABSTAIN |
+| P07 | CLDR name (es) | Curazao | IDENTIFY CW; refuse (no tax data) |
+| P08 | ISO name, no tax data | Puerto Rico | IDENTIFY PR; refuse |
+| P09 | country typo | Cuiba | IDENTIFY CU; refuse |
+| P10 | ambiguous country token | South | do not identify; refuse |
+
+Note for reviewers: P04's UN Comtrade text contains the national-looking phrase "as determined by the minister". This illustrates the abridgement caveat, and reviewers should comment on it.
