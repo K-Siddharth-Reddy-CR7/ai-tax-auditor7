@@ -1,0 +1,46 @@
+import pandas as pd, json, sys
+R='/home/user/ai-tax-auditor7/'
+P=pd.read_csv(R+'products.csv',dtype={'HS_Code':str}); T=pd.read_csv(R+'taxes.csv'); Po=pd.read_csv(R+'trade_policies.csv'); X=pd.read_csv(R+'sample_transactions.csv',dtype={'HS_Code':str})
+for n,d in [('products',P),('taxes',T),('policies',Po),('tx',X)]:
+    print('=====',n,d.shape); print(d.dtypes.to_dict()); print('nulls',d.isna().sum().to_dict()); print('dup rows',d.duplicated().sum())
+# CSV vs JSON parity
+for f,d in [('products',P),('taxes',T),('trade_policies',Po),('sample_transactions',X)]:
+    j=pd.DataFrame(json.load(open(R+f+'.json'))); print(f,'json shape',j.shape, 'cols equal', list(j.columns)==list(d.columns))
+    dd=d.astype(str).reset_index(drop=True); jj=j.astype(str)[d.columns].reset_index(drop=True)
+    print('  cells differing:', (dd!=jj).sum().to_dict())
+print('\n--- PRODUCTS')
+print('unique products',P.Product.nunique(),'dup product names',P.Product.duplicated().sum())
+print('unique HS',P.HS_Code.nunique(), 'HS len', P.HS_Code.str.len().value_counts().to_dict(), 'nondigit', (~P.HS_Code.str.isdigit()).sum())
+print(P.Category.value_counts().to_dict()); print(P.Unit.value_counts().to_dict())
+P['base']=P.Product.str.rsplit(' ',n=1).str[0]; P['suffix']=P.Product.str.rsplit(' ',n=1).str[-1]
+print('base names',P.base.nunique(),'suffixes',P.suffix.value_counts().head(20).to_dict())
+print('HS per category', P.groupby('Category').HS_Code.nunique().to_dict())
+print('products per HS top', P.HS_Code.value_counts().head(5).to_dict())
+print('base->HS unique counts', P.groupby('base').HS_Code.nunique().value_counts().to_dict())
+print(P.base.unique()[:80])
+print('\n--- TAXES'); print(T.to_string())
+print(T.describe())
+print('\n--- POLICIES')
+print('countries',Po.Country.nunique(), Po.Country.value_counts().value_counts().to_dict())
+print('categories',Po.Category.nunique(), Po.Category.value_counts().to_dict())
+print('unique summaries',Po.Policy_Summary.nunique()); print(Po.Policy_Summary.value_counts().to_dict())
+print('unique notes',Po.Compliance_Note.nunique()); print(Po.Compliance_Note.value_counts().to_dict())
+print('source types',Po.Source_Type.value_counts().to_dict())
+print('policy countries not in taxes', set(Po.Country)-set(T.Country), 'tax countries without policy', set(T.Country)-set(Po.Country))
+print('product categories not in policy cats', set(P.Category)-set(Po.Category)); print('policy cats not in products', set(Po.Category)-set(P.Category))
+print('\n--- TX')
+print(X.describe().to_string())
+print('origins',X.Origin_Country.nunique(),X.Origin_Country.value_counts().to_dict())
+print('dests',X.Destination_Country.nunique(),X.Destination_Country.value_counts().to_dict())
+print('same orig=dest',(X.Origin_Country==X.Destination_Country).sum())
+print('dests not in taxes', set(X.Destination_Country)-set(T.Country))
+print('tx products not in catalog', (~X.Product.isin(P.Product)).sum())
+m=X.merge(P[['Product','HS_Code']],on='Product',how='left',suffixes=('','_cat'))
+print('tx HS != catalog HS', (m.HS_Code!=m.HS_Code_cat).sum())
+print('tx products unique', X.Product.nunique(), 'first 400 catalog?', (X.Product.values==P.Product.values[:400]).sum())
+print(X.head(25).to_string())
+# price pattern
+import numpy as np
+d=np.diff(X.Unit_Price_USD.values); print('price diffs', pd.Series(d).value_counts().head(8).to_dict())
+print('qty values',X.Quantity.value_counts().sort_index().to_dict())
+print('ship diffs', pd.Series(np.diff(X.Shipping_USD.values)).value_counts().head(5).to_dict())
