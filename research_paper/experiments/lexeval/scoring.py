@@ -9,6 +9,10 @@ def product_outcome(item, out):
     if out["status"] in ("ERROR", "INVALID"):
         return FAIL
     answered = out["prod_hs"] is not None
+    if item["expected"] == "EITHER":  # underspecified short form: correct answer or abstention both acceptable
+        if not answered:
+            return SAFE
+        return CORRECT if out["prod_hs"] == item["label_hs"] else SILENT
     if item["expected"] == "ANSWER":
         if not answered:
             return OVER

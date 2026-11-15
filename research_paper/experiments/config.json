@@ -1,18 +1,63 @@
 {
   "seed": 20261114,
-  "dev_fraction": 0.4,
+  "dev_fraction": 0.3,
   "hs_file": "data/external/hs2022_datasets-harmonized-system.csv",
   "hs_file_sha256": "e77ee9e1cfd15a42d1fadeb2c0618d10f6b9ed9aec0e5d66826dc7ef9d3126a5",
-  "catalogue_chapters": ["84", "85", "94", "95"],
-  "product_perturbations": ["case", "ws_punct", "typo", "plural", "reorder"],
-  "hs_in_catalogue_perturbations": ["case", "typo"],
-  "cldr_locales": ["de", "fr", "es", "it", "nl", "pt"],
+  "catalogue_chapters": [
+    "84",
+    "85",
+    "94",
+    "95"
+  ],
+  "cldr_locales": [
+    "de",
+    "fr",
+    "es",
+    "it",
+    "nl",
+    "pt"
+  ],
   "tuning_grid": {
-    "product_min_coverage": [0.0, 0.25, 0.34, 0.5, 0.67, 0.75, 1.0],
-    "product_typo_max_edits": [0, 1, 2],
-    "product_typo_min_len": [4, 5, 6]
+    "product_min_coverage": [
+      0.0,
+      0.25,
+      0.34,
+      0.5,
+      0.67,
+      0.75,
+      1.0
+    ],
+    "product_typo_max_edits": [
+      0,
+      1,
+      2
+    ],
+    "product_typo_min_len": [
+      4,
+      5,
+      6
+    ]
   },
-  "tuning_rule": "maximise dev macro decision-accuracy over product subsets subject to dev macro silent-error rate <= that of baseline B on dev; if infeasible minimise macro silent-error rate; ties -> larger coverage threshold, fewer typo edits, longer min length",
-  "latency": {"warmup_calls": 200, "repetitions": 30, "workload_items": 1000},
-  "bootstrap_resamples": 10000
+  "tuning_rule": "maximise dev macro decision-accuracy over product categories P2-P7 (P1 is trivial, P8 is reported separately) subject to dev macro silent-error rate <= that of baseline B on dev; if infeasible minimise macro silent-error rate; ties -> larger coverage threshold, fewer typo edits, longer min length",
+  "latency": {
+    "warmup_calls": 200,
+    "repetitions": 30,
+    "workload_items": 1000
+  },
+  "bootstrap_resamples": 10000,
+  "opf_file": "data/external/opf_product_categories.txt",
+  "opf_url": "https://raw.githubusercontent.com/openfoodfacts/openfoodfacts-server/0ad833f340efa7f1ff5ad2c9bdafa6fc835aeee3/taxonomies/product/categories.txt",
+  "opf_sha256": "b653e1a29427a3e0518265aa3de1805ae172aab25f810c20d74a8945e239a791",
+  "product_design": {
+    "typos_per_type": 2,
+    "outside_plain": 100,
+    "outside_lookalike": 60,
+    "hs_near": 100,
+    "hs_far": 100
+  },
+  "statistics": {
+    "ci": "cluster bootstrap (resample clusters) 95% percentile + item-level Wilson",
+    "paired_test": "cluster-level sign-flip permutation (two-sided) on per-cluster differences, Holm across the primary family; exact McNemar reported as item-level secondary",
+    "permutations": 10000
+  }
 }

@@ -34,6 +34,20 @@ def environment():
     return info
 
 
+def raw_systems(s1_config):
+    """Time the systems' own entry points, NOT the evaluation adapters (adapter overhead is not
+    part of any system; e.g. the B adapter's category lookup doubles B's apparent latency)."""
+    from lexitax_v2 import run_s1
+    from lexitax_v2.legacy import server
+    srv = server()
+    return {
+        "B": lambda p, d, pr, q, s: srv.run_normal_auditor_pipeline(p, d, pr, q, s),
+        "S0": lambda p, d, pr, q, s: srv.run_agentic_auditor_pipeline(p, d, pr, q, s),
+        "S1": lambda p, d, pr, q, s: run_s1({"product_name": p, "destination": d, "price": pr,
+                                             "quantity": q, "shipping": s}, s1_config),
+    }
+
+
 def measure(systems, cfg, split="test"):
     lat = cfg["latency"]
     items = [r for r in read_csv(os.path.join(GEN, "product_benchmark.csv")) if r["split"] == split]

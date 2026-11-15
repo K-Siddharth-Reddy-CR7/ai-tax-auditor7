@@ -29,3 +29,18 @@ Product names, agent names, layout, styling and behaviour are unchanged. The REA
 ## 4. Not done (deferred or declined)
 - **C2 `/api/v2/audit` endpoint:** deferred by the authors until S1 is validated.
 - No changes to the batch-auditor thresholds. They never fire on the shipped data; this is reported as a finding, not fixed.
+
+## 5. Phase 6 changes (15 Nov 2026): evaluation infrastructure only
+B, S0, S1 and the frontend are unchanged in this phase. Full rationale: `pre_evaluation_methodology_audit.md` §2.
+| File | Change | Reason |
+|---|---|---|
+| `experiments/lexeval/build_products.py` | Rewritten: categories P1–P8 (855 items, was 6,096) | Formal HS texts dominated v2 (77 %); new categories target the research question |
+| `experiments/lexeval/build_countries.py` | Subsets J1–J7; new fields `form`, `s1_builtin`, `cluster` | Separate codes and names; prevent overstating S1 on its own reference forms |
+| `experiments/lexeval/refdata.py` | Open Products Facts loader (pinned commit, hash-checked download) | Informal out-of-catalogue product names |
+| `experiments/lexeval/scoring.py` | EITHER outcome | Short forms: answer or abstain acceptable |
+| `experiments/lexeval/stats.py`, `evaluate.py` | Cluster bootstrap CIs; cluster permutation test (primary); pooled filters; Wilson/McNemar renamed as item-level | Items are clustered; pooled claims exclude P8 and S1-built-in forms |
+| `experiments/lexeval/latency.py`, `run_all.py` | Time the systems' own entry points | Adapter overhead biased latency |
+| `experiments/lexeval/tuning.py`, `config.json` | Tuning on P2–P7; 30/70 split; design sizes; OPF pin; statistics settings | See audit |
+| `experiments/lexeval/pilot.py` | v3 strata, one reviewer, look-alike confirmation sheet, overwrite protection | Minimal human workload |
+| `experiments/tests/*` | New tests for EITHER, clustering and the permutation test | — |
+| `experiments/data/generated/*` | Regenerated DRAFT (not frozen) | — |

@@ -1,5 +1,7 @@
 # External reference data — provenance
 
+> **Superseded (15 Nov 2026):** see `research_paper/experiments/data_provenance.md` for the current, complete provenance record.
+
 ## HS 2022 subheading descriptions
 - **File:** `hs2022_datasets-harmonized-system.csv` (copied unmodified)
 - **SHA-256:** `e77ee9e1cfd15a42d1fadeb2c0618d10f6b9ed9aec0e5d66826dc7ef9d3126a5`

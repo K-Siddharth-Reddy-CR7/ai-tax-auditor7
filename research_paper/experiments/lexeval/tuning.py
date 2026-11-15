@@ -23,7 +23,9 @@ def _macro(item_outcomes):
 
 
 def tune(cfg):
-    dev = [r for r in read_csv(os.path.join(GEN, "product_benchmark.csv")) if r["split"] == "dev"]
+    # P1 (trivial exact names) and P8 (formal HS texts, reported separately) do not drive selection
+    dev = [r for r in read_csv(os.path.join(GEN, "product_benchmark.csv"))
+           if r["split"] == "dev" and r["subset"] not in ("P1_exact", "P8_hs_formal")]
     b_out = [(it["subset"], scoring.product_outcome(it, run_B(it["text"], "India", 100, 1, 0))) for it in dev]
     b_acc, b_ser = _macro(b_out)
     grid = cfg["tuning_grid"]

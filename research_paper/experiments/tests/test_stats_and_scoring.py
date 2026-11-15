@@ -60,3 +60,28 @@ def test_masked_correct_rates_wrong_country():
     item = {"expected_iso": "NL", "expected_behaviour": "COMPUTE"}
     out = _o(country_iso="BE", landing_cost=1.0, duty_rate=8.0, gst_rate=21.0)
     assert scoring.tax_behaviour_outcome(item, out, (8.0, 21.0)) == (scoring.CORRECT, "correct_rates_wrong_or_no_country")
+
+
+def test_either_outcome_penalises_only_wrong_codes():
+    either = {"expected": "EITHER", "label_hs": "851640"}
+    assert scoring.product_outcome(either, _o(prod_hs="851640")) == scoring.CORRECT
+    assert scoring.product_outcome(either, _o()) == scoring.SAFE
+    assert scoring.product_outcome(either, _o(prod_hs="845011")) == scoring.SILENT
+
+
+def test_cluster_bootstrap_widens_with_correlation():
+    from lexeval.stats import cluster_bootstrap_ci
+    vals = [1] * 50 + [0] * 50
+    indep = cluster_bootstrap_ci(vals, list(range(100)), 2000, 1)
+    clustered = cluster_bootstrap_ci(vals, [i // 25 for i in range(100)], 2000, 1)  # 4 clusters of 25
+    assert (clustered[1] - clustered[0]) > (indep[1] - indep[0])
+
+
+def test_cluster_paired_test():
+    from lexeval.stats import cluster_paired_test
+    a = [False] * 40
+    b = [True] * 40
+    diff, lo, hi, p, k = cluster_paired_test(a, b, [i // 2 for i in range(40)], 2000, 1)
+    assert diff == 1.0 and k == 20 and p < 0.001
+    diff, lo, hi, p, k = cluster_paired_test(a, a, list(range(40)), 2000, 1)
+    assert diff == 0.0 and p == 1.0

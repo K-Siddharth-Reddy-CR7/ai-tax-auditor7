@@ -23,9 +23,9 @@ def test_evaluation_code_path(tmp_path, monkeypatch):
     assert len(prows) == len(p) * len(systems) and len(crows) == len(c) * len(systems)
     assert all(r["rejected"] for r in mrows if r["system"] == "S1")
     summ = evaluate.summarise_by(prows, "outcome")
-    assert {"coverage_ci_low", "silent_error_rate", "decision_accuracy"} <= set(summ[0])
+    assert {"coverage_wilson_ci_low", "silent_error_rate_cluster_ci_high", "decision_accuracy", "n_clusters"} <= set(summ[0])
     tests = evaluate.paired_tests(prows, "outcome", [("B", "S0"), ("S0", "S1")], "product")
-    assert len(tests) == 4 and all(0 <= t["p_value"] <= 1 for t in tests)
+    assert len(tests) == 4 and all(0 <= t["p_value"] <= 1 and "n_clusters" in t for t in tests)
     out = tmp_path / "summary.csv"
     evaluate.write_rows(str(out), summ)
     monkeypatch.setattr(figures, "FIGURES", str(tmp_path))

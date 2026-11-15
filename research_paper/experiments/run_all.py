@@ -73,7 +73,7 @@ def stage_smoke():
     n = 0
     for t in SRV.SAMPLE_TRANSACTIONS:
         a = (t["Product"], t["Destination_Country"], t["Unit_Price_USD"], t["Quantity"], t["Shipping_USD"])
-        s0, l0 = run_S0(*a), run_composite(*a)
+        s0, l0 = run_S0(*a), run_composite(*a)  # identical inputs to every system
         assert {k: s0[k] for k in keys} == {k: l0[k] for k in keys}, ("L0 != S0", a)
         s1 = run_S1(*a)
         l5 = run_composite(*a, validate=True, product_mode="s1", country_mode="iso_refuse")
@@ -112,7 +112,7 @@ def stage_evaluate(cfg):
     evaluate.evaluate(ladder, "test", "ladder",
                       pairs=[(a, b) for (a, _), (b, _) in zip(
                           [(k, None) for k in list(ladder)[:6]], [(k, None) for k in list(ladder)[1:6]])])
-    latency.measure(primary_systems(s1c), cfg)
+    latency.measure(latency.raw_systems(s1c), cfg)
     figures.ensure_dir()
     print("evaluation complete; see results/processed and results/latency.json")
 
@@ -130,9 +130,10 @@ def main():
     elif a.stage == "validate":
         stage_validate()
     elif a.stage == "pilot":
-        from lexeval.pilot import build_pilot
+        from lexeval.pilot import build_lookalike_sheet, build_pilot
         rows = build_pilot(cfg["seed"])
-        print(f"pilot sheet with {len(rows)} items written")
+        la = build_lookalike_sheet()
+        print(f"pilot sheet with {len(rows)} items written; look-alike confirmation sheet with {len(la)} items")
     elif a.stage == "smoke":
         stage_smoke()
     elif a.stage == "freeze":

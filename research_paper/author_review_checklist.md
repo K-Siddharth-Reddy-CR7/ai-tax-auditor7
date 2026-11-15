@@ -1,6 +1,6 @@
 # Author Review Checklist (living document)
 
-Status: **Phases 3–4 implemented (14 Nov 2026). Awaiting the 10-item pilot before freezing benchmarks and running the evaluation.**
+Status: **Phase 6 pre-evaluation audit complete (15 Nov 2026). Ready for pilot review; NOT ready for freeze.** See `pre_evaluation_methodology_audit.md` §6.
 The manuscript has not been drafted. Nothing is submission-ready.
 
 ## A. Decisions resolved
@@ -12,10 +12,14 @@ The manuscript has not been drafted. Nothing is submission-ready.
 ## B. Decisions — resolved on 14 Nov 2026 and still open
 - [x] Research question and provisional title approved
 - [x] C1 approved and implemented; C2 deferred; C3 approved and implemented
-- [x] Canonical repository URL, per the actual git remote: `https://github.com/K-Siddharth-Reddy-CR7/ai-tax-auditor7`. The URL without "-CR7" in the brief does not resolve from this environment; please confirm which one to cite.
-- [ ] **Pilot (H1):** two reviewers (proposed: Authors 1 and 4) complete `experiments/pilot/pilot_review_sheet.csv` (≈ 15–20 min each)
+- [x] Canonical repository URL confirmed by the authors: `https://github.com/K-Siddharth-Reddy-CR7/ai-tax-auditor7`
+- [ ] **Pilot:** one reviewer (proposed: Author 1) completes `experiments/pilot/pilot_review_sheet.csv` (≈ 15–20 min); see `experiments/pilot_review_sheet.md`
+- [ ] **Look-alike confirmation:** same reviewer completes `experiments/pilot/p7_lookalike_confirmation.csv` (≈ 15–20 min), or the authors decide to drop the 60 look-alikes
+- [ ] Tuning constraint: keep "SER ≤ SER(B) on DEV" or set an explicit tolerance
+- [ ] Optional external fuzzy-matching baseline B2: yes/no
+- [ ] Accept the Open Products Facts licence caveat (or request an alternative source)
 - [ ] Approve freezing: `run_all.py --stage freeze --approved-by NAME`
-- [ ] Decide on the H2 label audit (60 items, ≈ 45–60 min) and the H3 catalogue plausibility check (optional)
+- [ ] 60-item label audit: deferred unless the pilot finds a rule-level problem; catalogue HS plausibility check: optional
 - [ ] Accept the use of the unofficial HS mirror (UN Comtrade-derived, PDDL) with the stated caveats, or supply WCO/UN source files
 - [ ] Review the S1 code (`backend/lexitax_v2/`). It was written with AI assistance and must be understood and accepted by the authors, ideally Author 2
 

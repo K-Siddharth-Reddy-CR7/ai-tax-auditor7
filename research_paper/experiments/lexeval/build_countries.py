@@ -1,12 +1,19 @@
-"""Jurisdiction resolution benchmark (JRB).
+"""Jurisdiction resolution benchmark (JRB) — v3.
 
-Identification label (expected_iso) and tax-data availability are separate fields.
-  CA  table names + surface noise                       (source: taxes.json; ISO via fixed mapping)
-  CB  ISO 3166-1 forms of all 249 countries            (alpha-2/alpha-3/name/official/common)
-  CC  one-edit typos of ISO/table names                (label by construction)
-  CD  CLDR v47 localised names (de/fr/es/it/nl/pt)     (held out from S1's alias table)
-  CE  ambiguous tokens shared by >=2 ISO names          (expected: no identification)
-  CF  CLDR non-country region names                     (expected: no identification)
+Every item carries SEPARATE fields for:
+  expected_iso        identification label (ISO 3166-1 alpha-2, or empty = must not identify)
+  tax_data_available  whether the 40-country tax table has rates for that jurisdiction
+  form                how the string was produced
+  s1_builtin          True if the normalised string is literally in S1's alias table
+                      (such items are solved by construction and are never used as a generalisation test)
+Subsets:
+  J1_table      table names + case/whitespace noise           (taxes.json; ISO via fixed mapping)
+  J2_iso_code   ISO alpha-2 / alpha-3 of all 249 countries
+  J3_iso_name   ISO name / official_name / common_name of all 249 countries
+  J4_typo       one-edit typo per country (rejected if it equals any alias)
+  J5_cldr       CLDR v47 localised names (de/fr/es/it/nl/pt), held out from S1's alias table
+  J6_ambiguous  words occurring in >=2 ISO names that are not aliases themselves (must not identify)
+  J7_region     CLDR non-country region names (must not identify)
 """
 from lexitax_v2.jurisdiction import ALIAS_FIELDS, alias_index
 from lexitax_v2.normalize import normalize_text, singular
@@ -17,14 +24,20 @@ from .perturb import PERTURBATIONS, rng_for
 from .refdata import cldr_names, cldr_regions, iso_countries
 
 FIELDS = ["item_id", "subset", "text", "expected_iso", "label_kind", "tax_data_available",
-          "expected_behaviour", "label_source", "transform", "group", "split"]
+          "expected_behaviour", "form", "s1_builtin", "label_source", "transform", "group", "cluster", "split"]
+
+SUBSET_OF = {"CA": "J1_table", "CB_code": "J2_iso_code", "CB_name": "J3_iso_name", "CC": "J4_typo",
+             "CD": "J5_cldr", "CE": "J6_ambiguous", "CF": "J7_region"}
 
 
-def _item(iid, subset, text, iso, kind, source, transform, group):
+def _item(iid, subset, text, iso, kind, source, transform, group, form=None):
     avail = bool(iso) and iso in ISO_TO_TABLE
-    return dict(item_id=iid, subset=subset, text=text, expected_iso=iso or "", label_kind=kind,
+    if subset == "CB":
+        subset = "CB_code" if form in ("alpha_2", "alpha_3") else "CB_name"
+    return dict(item_id=iid, subset=SUBSET_OF[subset], text=text, expected_iso=iso or "", label_kind=kind,
                 tax_data_available=avail, expected_behaviour="COMPUTE" if avail else "REFUSE",
-                label_source=source, transform=transform, group=group)
+                form=form or transform, s1_builtin=normalize_text(text) in alias_index(),
+                label_source=source, transform=transform, group=group, cluster=iso or iid)
 
 
 def build(cfg, log):
@@ -32,7 +45,7 @@ def build(cfg, log):
     idx = alias_index()
     items = []
     for name, iso in sorted(TABLE_TO_ISO.items()):
-        items.append(_item(f"CA|{iso}|table", "CA", name, iso, "country", "taxes.json+ISO", "none", iso))
+        items.append(_item(f"CA|{iso}|table", "CA", name, iso, "country", "taxes.json+ISO", "none", iso, form="table_name"))
         for p in ("case", "ws_punct"):
             items.append(_item(f"CA|{iso}|{p}", "CA", PERTURBATIONS[p](name, rng_for(seed, "CA", iso, p)),
                                iso, "country", "taxes.json+ISO", p, iso))
@@ -41,7 +54,7 @@ def build(cfg, log):
             v = getattr(c, f, None)
             if v:
                 items.append(_item(f"CB|{c.alpha_2}|{f}", "CB", v, c.alpha_2, "country",
-                                   f"ISO3166-1(pycountry):{f}", "none", c.alpha_2))
+                                   f"ISO3166-1(pycountry):{f}", "none", c.alpha_2, form=f))
         base = ISO_TO_TABLE.get(c.alpha_2, c.name)
         r = rng_for(seed, "CC", c.alpha_2)
         for _ in range(20):
@@ -75,10 +88,10 @@ def build(cfg, log):
     for t, isos in sorted(tok_countries.items()):
         if len(isos) >= 2 and len(t) >= 4 and t.isalpha() and t not in idx:
             items.append(_item(f"CE|{t}", "CE", t.capitalize(), "", "ambiguous",
-                               "rule:token in names of " + ",".join(sorted(isos)), "none", f"ambig:{singular(t)}"))
+                               "rule:token in names of " + ",".join(sorted(isos)), "none", f"ambig:{singular(t)}", form="ambiguous_token"))
     for code, name in sorted(cldr_regions().items()):
         if normalize_text(name) in idx:
             continue
-        items.append(_item(f"CF|{code}", "CF", name, "", "non_country", f"CLDR47:en region {code}", "none", f"region:{code}"))
+        items.append(_item(f"CF|{code}", "CF", name, "", "non_country", f"CLDR47:en region {code}", "none", f"region:{code}", form="region_name"))
     return finalize([dict(it, label_key=it["expected_iso"] + ":" + it["label_kind"]) for it in items],
                     "label_key", seed, cfg["dev_fraction"], log)

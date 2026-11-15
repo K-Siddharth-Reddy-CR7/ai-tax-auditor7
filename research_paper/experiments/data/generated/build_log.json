@@ -1,83 +1,7 @@
 [
  [
-  "perturbation_not_applicable",
-  "PA|Coffee Maker|typo"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Dishwasher|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Freezer|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Inverter|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Keyboard|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Laptop|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Microphone|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Modem|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Motherboard|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Printer|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Projector|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Refrigerator|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Router|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Scanner|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Smartwatch|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Tablet|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Television|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Toaster|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Webcam|reorder"
- ],
- [
-  "perturbation_not_applicable",
-  "PA|Wireless Headphones|plural"
+  "opf_pool_sizes",
+  "plain=2256 lookalike=206"
  ],
  [
   "hs_code_excluded",
@@ -118,6 +42,14 @@
  [
   "hs_code_excluded",
   "999999: non-chapter placeholder code"
+ ],
+ [
+  "duplicate_removed",
+  "P4_short|Video Camera|head_noun"
+ ],
+ [
+  "duplicate_removed",
+  "P7_outside|Office Equipment"
  ],
  [
   "typo_not_generated",

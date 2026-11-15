@@ -1,4 +1,15 @@
-# Experimental Evaluation Plan — v2 (finalised protocol, 14 Nov 2026)
+# Experimental Evaluation Plan — v2, amended by v3 (15 Nov 2026)
+
+> **v3 amendments (Phase 6 audit). These take precedence over the v2 text below:**
+> - **Product benchmark** redesigned into eight categories P1–P8 (855 items). See `experiments/dataset_sampling_rationale.md`. §3.2's subsets PA–PE and its counts are superseded.
+> - **Country benchmark** subsets are renamed J1–J7. Each item carries `form` and `s1_builtin`. Pooled country claims use held-out forms (J4–J7) only. Supersedes §3.3 naming.
+> - **Split** is now 30 % DEV / 70 % TEST (supersedes 40/60).
+> - **Statistics:** primary inference uses cluster bootstrap CIs and a cluster-level sign-flip permutation test with Holm correction. Item-level Wilson and McNemar are reported as secondary. Supersedes §5.5.
+> - **New outcome rule:** EITHER, for short forms (P4). Answering correctly or abstaining are both acceptable; a wrong code is a silent error.
+> - **Pooled scope:** pooled product metrics exclude P8 (formal HS texts, reported separately). The tuning objective excludes P1 and P8.
+> - **Latency** times the systems' own entry points, not the evaluation adapters.
+> - **Human verification:** a one-reviewer pilot plus look-alike confirmation (`experiments/pilot_review_sheet.md`). The 60-item audit is deferred.
+> - Full audit: `pre_evaluation_methodology_audit.md`.
 
 Status: **protocol final pending pilot sign-off.**
 - Benchmarks are built as a **DRAFT** and validated (0 errors), but **not frozen**.

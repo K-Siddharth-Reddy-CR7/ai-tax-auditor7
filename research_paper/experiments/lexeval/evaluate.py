@@ -9,7 +9,8 @@ from lexitax_v2.reference import ISO_TO_TABLE, catalogue, tax_rows_by_iso
 from . import build_malformed, scoring
 from .build_common import read_csv
 from .paths import GEN, RESULTS
-from .stats import holm, mcnemar_exact, wilson
+from .stats import cluster_bootstrap_ci, cluster_paired_test, holm, mcnemar_exact, wilson
+from .paths import config
 from .systems import SRV
 
 TABLE_COUNTRIES = sorted(ISO_TO_TABLE.values())
@@ -82,7 +83,8 @@ def run_product_task(items, systems, raw_fh=None):
             prop, flagged, rel = _classify_propagation(ref, out, id_wrong)
             policy_wrong = (ref is not None and ref["policy_id"] is not None and out["policy_id"] is not None
                             and out["policy_id"] != ref["policy_id"])
-            row = dict(task="product", item_id=it["item_id"], subset=it["subset"], system=name,
+            row = dict(task="product", item_id=it["item_id"], subset=it["subset"], cluster=it["cluster"],
+                       look_alike=it.get("look_alike", ""), system=name,
                        outcome=outcome, fabricated=out["prod_fabricated"], prod_hs=out["prod_hs"],
                        label_hs=it["label_hs"], expected=it["expected"], propagation=prop,
                        flagged=flagged, rel_cost_error=rel, policy_wrong=policy_wrong)
@@ -111,7 +113,8 @@ def run_country_task(items, systems, raw_fh=None):
             ident = scoring.identification_outcome(it, out)
             beh, sub = scoring.tax_behaviour_outcome(it, out, rates)
             prop, flagged, rel = _classify_propagation(ref, out, out["country_iso"] != iso)
-            row = dict(task="country", item_id=it["item_id"], subset=it["subset"], system=name,
+            row = dict(task="country", item_id=it["item_id"], subset=it["subset"], cluster=it["cluster"],
+                       s1_builtin=it["s1_builtin"], system=name,
                        identification=ident, tax_behaviour=beh, tax_subtype=sub,
                        country_iso=out["country_iso"], expected_iso=it["expected_iso"],
                        tax_data_available=it["tax_data_available"], default_rates=out["default_rates"],
@@ -135,39 +138,59 @@ def run_malformed(items, systems):
     return rows
 
 
-def summarise_by(rows, key_outcome, group_keys=("system", "subset")):
+def summarise_by(rows, key_outcome, group_keys=("system", "subset"), pooled_filter=None):
+    """Per (system, subset) summaries. The pooled 'ALL' row includes only rows passing pooled_filter
+    (e.g. excludes S1-built-in country forms and the separate formal-HS category)."""
+    cfg = config()
     groups = defaultdict(list)
     for r in rows:
-        groups[tuple(r[k] for k in group_keys)].append(r[key_outcome])
-        groups[tuple(r[k] if k == "system" else "ALL" for k in group_keys)].append(r[key_outcome])
+        groups[tuple(r[k] for k in group_keys)].append(r)
+        if pooled_filter is None or pooled_filter(r):
+            groups[tuple(r[k] if k == "system" else "ALL" for k in group_keys)].append(r)
     out = []
-    for g, outcomes in sorted(groups.items()):
+    for g, grp in sorted(groups.items()):
+        outcomes = [r[key_outcome] for r in grp]
+        clusters = [r["cluster"] for r in grp]
         s = scoring.summarise(outcomes)
+        for metric, pred in (("silent_error_rate", lambda o: o == scoring.SILENT),
+                             ("decision_accuracy", lambda o: o in (scoring.CORRECT, scoring.SAFE)),
+                             ("coverage", lambda o: o in (scoring.CORRECT, scoring.SILENT))):
+            lo, hi = cluster_bootstrap_ci([pred(o) for o in outcomes], clusters, cfg["bootstrap_resamples"] // 5, cfg["seed"])
+            s[f"{metric}_cluster_ci_low"], s[f"{metric}_cluster_ci_high"] = lo, hi
+        s["n_clusters"] = len(set(clusters))
         for metric, k in (("coverage", "answered"), ("decision_accuracy", None), ("silent_error_rate", scoring.SILENT)):
             num = s["answered"] if metric == "coverage" else (
                 s[scoring.CORRECT] + s[scoring.SAFE] if metric == "decision_accuracy" else s[scoring.SILENT])
             lo, hi = wilson(num, s["n"])
-            s[f"{metric}_ci_low"], s[f"{metric}_ci_high"] = lo, hi
+            s[f"{metric}_wilson_ci_low"], s[f"{metric}_wilson_ci_high"] = lo, hi  # item-level (assumes independence)
         out.append(dict(zip(group_keys, g), **s))
     return out
 
 
-def paired_tests(rows, key_outcome, pairs, task):
+def paired_tests(rows, key_outcome, pairs, task, row_filter=None):
+    """Primary: cluster-level sign-flip permutation test + cluster bootstrap CI of the difference.
+    Secondary: item-level exact McNemar (assumes independent items; reported for reference only)."""
+    cfg = config()
     by_sys = defaultdict(dict)
+    cluster_of = {}
     for r in rows:
-        by_sys[r["system"]][r["item_id"]] = r[key_outcome]
+        if row_filter is None or row_filter(r):
+            by_sys[r["system"]][r["item_id"]] = r[key_outcome]
+            cluster_of[r["item_id"]] = r["cluster"]
     tests = []
     for a, b in pairs:
         ids = sorted(set(by_sys[a]) & set(by_sys[b]))
+        clusters = [cluster_of[i] for i in ids]
         for indicator, pred in (("decision_correct", lambda o: o in (scoring.CORRECT, scoring.SAFE)),
                                 ("silent_error", lambda o: o == scoring.SILENT)):
             xa = [pred(by_sys[a][i]) for i in ids]
             xb = [pred(by_sys[b][i]) for i in ids]
-            n01, n10, p = mcnemar_exact(xa, xb)
-            tests.append(dict(task=task, metric=indicator, system_a=a, system_b=b, n=len(ids),
-                              rate_a=sum(xa) / len(ids), rate_b=sum(xb) / len(ids),
-                              diff_b_minus_a=(sum(xb) - sum(xa)) / len(ids),
-                              a_false_b_true=n01, a_true_b_false=n10, p_value=p))
+            diff, lo, hi, p_cl, ncl = cluster_paired_test(xa, xb, clusters, cfg["statistics"]["permutations"], cfg["seed"])
+            n01, n10, p_mc = mcnemar_exact(xa, xb)
+            tests.append(dict(task=task, metric=indicator, system_a=a, system_b=b, n_items=len(ids),
+                              n_clusters=ncl, rate_a=sum(xa) / len(ids), rate_b=sum(xb) / len(ids),
+                              diff_b_minus_a=diff, diff_ci_low=lo, diff_ci_high=hi, p_value=p_cl,
+                              mcnemar_a_false_b_true=n01, mcnemar_a_true_b_false=n10, mcnemar_p_item_level=p_mc))
     return tests
 
 
@@ -194,14 +217,16 @@ def evaluate(systems, split="test", tag="primary", pairs=(("B", "S0"), ("S0", "S
     write_rows(os.path.join(proc, f"{tag}_{split}_product_items.csv"), prows)
     write_rows(os.path.join(proc, f"{tag}_{split}_country_items.csv"), crows)
     write_rows(os.path.join(proc, f"{tag}_{split}_malformed_items.csv"), mrows)
-    write_rows(os.path.join(proc, f"{tag}_{split}_product_summary.csv"), summarise_by(prows, "outcome"))
-    write_rows(os.path.join(proc, f"{tag}_{split}_identification_summary.csv"), summarise_by(crows, "identification"))
-    write_rows(os.path.join(proc, f"{tag}_{split}_tax_behaviour_summary.csv"), summarise_by(crows, "tax_behaviour"))
+    realistic = lambda r: r["subset"] != "P8_hs_formal"  # noqa: E731  (formal HS texts reported separately)
+    held_out = lambda r: str(r["s1_builtin"]) != "True"  # noqa: E731  (S1-built-in forms excluded from pooled claims)
+    write_rows(os.path.join(proc, f"{tag}_{split}_product_summary.csv"), summarise_by(prows, "outcome", pooled_filter=realistic))
+    write_rows(os.path.join(proc, f"{tag}_{split}_identification_summary.csv"), summarise_by(crows, "identification", pooled_filter=held_out))
+    write_rows(os.path.join(proc, f"{tag}_{split}_tax_behaviour_summary.csv"), summarise_by(crows, "tax_behaviour", pooled_filter=held_out))
     if pairs:
-        tests = (paired_tests(prows, "outcome", pairs, "product")
-                 + paired_tests(crows, "identification", pairs, "identification")
-                 + paired_tests(crows, "tax_behaviour", pairs, "tax_behaviour"))
+        tests = (paired_tests(prows, "outcome", pairs, "product", realistic)
+                 + paired_tests(crows, "identification", pairs, "identification", held_out)
+                 + paired_tests(crows, "tax_behaviour", pairs, "tax_behaviour", held_out))
         for t, adj in zip(tests, holm([t["p_value"] for t in tests])):
-            t["p_holm"] = adj
+            t["p_holm"] = adj  # Holm over the cluster-level permutation p-values
         write_rows(os.path.join(proc, f"{tag}_{split}_paired_tests.csv"), tests)
     return prows, crows, mrows
