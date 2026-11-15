@@ -9,10 +9,6 @@ def product_outcome(item, out):
     if out["status"] in ("ERROR", "INVALID"):
         return FAIL
     answered = out["prod_hs"] is not None
-    if item["expected"] == "EITHER":  # underspecified short form: correct answer or abstention both acceptable
-        if not answered:
-            return SAFE
-        return CORRECT if out["prod_hs"] == item["label_hs"] else SILENT
     if item["expected"] == "ANSWER":
         if not answered:
             return OVER
@@ -21,10 +17,14 @@ def product_outcome(item, out):
 
 
 def identification_outcome(item, out):
-    """Country identification task (independent of tax-data availability)."""
+    """Country identification task (independent of tax-data availability).
+
+    Gold standard (item['gold_iso']) is the country the text denotes, whatever the system supports.
+    A system that does not know a valid alias and abstains gets OVER_ABSTENTION (safe but incomplete),
+    never CORRECT; only naming the gold country is CORRECT; naming another country is SILENT_ERROR."""
     if out["status"] in ("ERROR", "INVALID"):
         return FAIL
-    got, exp = out["country_iso"], item["expected_iso"] or None
+    got, exp = out["country_iso"], item["gold_iso"] or None
     if exp:
         if got is None:
             return OVER
@@ -40,11 +40,11 @@ def tax_behaviour_outcome(item, out, true_rates):
     if out["status"] in ("ERROR", "INVALID"):
         return FAIL, "error"
     computed = out["landing_cost"] is not None
-    if item["expected_behaviour"] == "COMPUTE":
+    if item["gold_tax_action"] == "COMPUTE":
         if not computed:
             return OVER, "refused"
         if (out["duty_rate"], out["gst_rate"]) == true_rates:
-            masked = out["country_iso"] != item["expected_iso"]
+            masked = out["country_iso"] != item["gold_iso"]
             return CORRECT, "correct_rates_wrong_or_no_country" if masked else "correct"
         return SILENT, "default_rates" if out["default_rates"] else "other_country_rates"
     if not computed:
@@ -61,3 +61,8 @@ def summarise(outcomes):
                 decision_accuracy=(c[CORRECT] + c[SAFE]) / n if n else float("nan"),
                 silent_error_rate=c[SILENT] / n if n else float("nan"),
                 selective_accuracy=c[CORRECT] / answered if answered else float("nan"))
+
+
+def is_safe(outcome):
+    """Safe = no silent error (correct, appropriate abstention, over-abstention or explicit failure)."""
+    return outcome != SILENT

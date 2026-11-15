@@ -44,3 +44,13 @@ B, S0, S1 and the frontend are unchanged in this phase. Full rationale: `pre_eva
 | `experiments/lexeval/pilot.py` | v3 strata, one reviewer, look-alike confirmation sheet, overwrite protection | Minimal human workload |
 | `experiments/tests/*` | New tests for EITHER, clustering and the permutation test | — |
 | `experiments/data/generated/*` | Regenerated DRAFT (not frozen) | — |
+
+## 6. Phase 7 changes (15 Nov 2026): evaluation infrastructure and review materials only
+B, S0, S1 and the frontend are unchanged. Nothing is frozen, tuned or evaluated.
+| File | Change | Reason |
+|---|---|---|
+| `experiments/lexeval/refdata.py`, `config.json`, `.gitignore` | Open Products Facts loader removed; pinned Unicode `emoji-test.txt` loader added; licence notice stored | OPF licence not established (author decision) |
+| `experiments/lexeval/build_products.py` | P4 → single gold DECLINE, initialisms removed; P7 → Unicode names, whole-word look-alikes, non-goods filter, review-driven removals; P7 grouping by head word | Single gold labels; licensed data; leakage-safe split |
+| `experiments/lexeval/build_countries.py`, `scoring.py`, `evaluate.py`, `validate.py`, `pilot.py`, tests | `expected_iso` → `gold_iso`, `expected_behaviour` → `gold_tax_action`; `system_iso` and safety flags in result rows; EITHER removed; `is_safe` | Separate gold identity from system behaviour (P08) |
+| `experiments/lexeval/pilot.py`, `run_all.py` | Pinned v4 pilot (P06 redrawn); v4 look-alike sheet; plain-name scan; freeze refuses until the P7 review is complete; no overwrite of reviewed files | Human review workflow |
+| `experiments/pilot/superseded/` | Blank (never reviewed) v3 sheets moved here, not deleted | Preserve history |

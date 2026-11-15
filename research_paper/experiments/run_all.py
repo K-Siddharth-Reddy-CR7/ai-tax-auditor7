@@ -87,6 +87,10 @@ def stage_smoke():
 def stage_freeze(approved_by):
     if not approved_by:
         sys.exit("--approved-by is required (name of the author who signed off the pilot)")
+    from lexeval.pilot import lookalike_decisions, plain_exceptions
+    dec = lookalike_decisions()
+    if not dec or not all(dec.values()) or plain_exceptions() is None:
+        sys.exit("Freeze refused: the P7 look-alike review and plain-name scan must be completed first.")
     man = {"approved_by": approved_by, "files": {f: _sha(os.path.join(GEN, f)) for f in DATA_FILES},
            "config_sha256": _sha(os.path.join(EXP, "config.json"))}
     with open(MANIFEST, "w", encoding="utf-8") as fh:
@@ -130,10 +134,11 @@ def main():
     elif a.stage == "validate":
         stage_validate()
     elif a.stage == "pilot":
-        from lexeval.pilot import build_lookalike_sheet, build_pilot
+        from lexeval.pilot import build_lookalike_sheet, build_pilot, build_plain_scan_sheet
         rows = build_pilot(cfg["seed"])
         la = build_lookalike_sheet()
-        print(f"pilot sheet with {len(rows)} items written; look-alike confirmation sheet with {len(la)} items")
+        pl = build_plain_scan_sheet()
+        print(f"pilot: {len(rows)} items; look-alike review: {len(la)} items; plain-name scan: {len(pl)} names")
     elif a.stage == "smoke":
         stage_smoke()
     elif a.stage == "freeze":

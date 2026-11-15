@@ -4,35 +4,48 @@ Category                     expected   label provenance
 P1 exact catalogue names     ANSWER     catalogue record itself (identity)
 P2 formatting variants       ANSWER     catalogue record (label-preserving case/space/punctuation edits)
 P3 typos                     ANSWER     catalogue record (one seeded edit; collision-checked)
-P4 shortened/initialisms     EITHER     catalogue record (rule: head noun / initialism; correct answer
-                                        or abstention both acceptable; a wrong code is an error)
+P4 underspecified short form ABSTAIN    rule: the last word of a multi-word type name with its qualifying
+                                        word(s) removed (e.g. "Kettle" from "Electric Kettle"). The dropped
+                                        qualifier distinguishes the catalogue good from goods outside it
+                                        (stovetop vs electric kettle), so the text is underspecified
 P5 confusable neighbours     ANSWER     catalogue record (typo/reorder applied to a base type that shares
                                         a word with a base type of a different HS code)
 P6 ambiguous / underspecified ABSTAIN   pre-declared rules over the catalogue (shared words; category names)
-P7 outside catalogue          ABSTAIN   Open Products Facts category names from pre-declared disjoint
-   (informal names)                     top-level branches; look-alikes (sharing a catalogue word) flagged
+P7 outside catalogue          ABSTAIN   Unicode CLDR emoji short names (emoji-test.txt 16.0, Unicode License v3)
+   (informal names)                     from pre-declared sub-groups of tangible goods disjoint from the catalogue;
+                                        look-alikes (sharing a word with a catalogue type) need human confirmation
 P8 formal HS 2022 texts       ANSWER for the 43 catalogue codes (by definition), ABSTAIN otherwise;
                                         reported as a SEPARATE out-of-register category
 
 "Catalogue record" labels are catalogue-asserted: they say which catalogue entry is meant, not that the
 catalogue's HS assignment is legally correct.
 """
+import re
+
 from lexitax_v2.normalize import canonical, singular, tokens
 from lexitax_v2.reference import base_type, catalogue
 
 from .build_common import finalize
 from .perturb import PERTURBATIONS, rng_for
-from .refdata import load_hs6, load_opf_categories
+from .refdata import load_emoji_names, load_hs6
 
 FIELDS = ["item_id", "subset", "text", "expected", "label_hs", "label_base_types", "abstain_reason",
           "label_source", "mapping_basis", "hs_exists", "in_catalogue_support", "transform", "look_alike",
           "parent", "group", "cluster", "split"]
 
-OPF_DISJOINT_ROOTS = [  # pre-declared: top-level branches with no overlap with the 60 catalogue types
-    "Apparel & Accessories", "Arts & Entertainment", "Baby & Toddler", "Furniture", "Luggage & Bags",
-    "Media", "Musical Instruments", "Office Supplies", "Religious & Ceremonial", "Software",
-    "Sporting Goods", "Toys & Games", "Vehicles & Parts",
+# Pre-declared (15 Nov 2026): emoji sub-groups denoting tangible goods. Sub-groups that overlap the catalogue
+# domain (phone, computer, light & video, sound, music) and non-goods (places, weather, faces, symbols) are excluded.
+EMOJI_GOODS_SUBGROUPS = [
+    "food-fruit", "food-vegetable", "food-prepared", "food-asian", "food-sweet", "drink", "dishware",
+    "sport", "game", "arts & crafts", "award-medal", "clothing", "musical-instrument", "book-paper",
+    "money", "mail", "writing", "office", "lock", "tool", "science", "medical", "household",
+    "transport-ground", "transport-water", "transport-air",
 ]
+EMOJI_NAME_EXCLUDE = re.compile(r"(o’clock|thirty|face|chart|e-mail|arrow|flag|departure|arrival|station|"
+                                r"sign|button|symbol|light|\bpassing\b|oncoming|\bsuit\b|pouring|x-ray|"
+                                r"construction|cooking|joker|bullseye|drop of blood|dna|mahjong)", re.I)
+# The pattern above was fixed on 15 Nov 2026 by reading emoji NAMES only (no system outputs): it removes
+# names that denote scenes, activities, symbols or abstract things rather than tradeable goods.
 
 
 def _item(**kw):
@@ -106,18 +119,19 @@ def build(cfg, log):
     def hs_of(bset):
         return {bases[x]["hs"] for x in bset}
 
-    # P4 shortened head noun (multi-word names) and initialisms (>=3 words); EITHER answer-or-abstain
+    # P4 underspecified short forms: head noun of multi-word names, qualifier removed -> ABSTAIN
     for bname in sorted(bases):
         words = bname.split()
         if len(words) >= 2:
             head = words[-1]
             owners = word_bases.get(singular(head.lower()), set())
             if head.isalpha() and len(head) >= 3 and len(hs_of(owners)) == 1 and canonical(head) not in names_canon:
-                items.append(cat_item("P4_short", bname, head, "head_noun", expected="EITHER"))
-        if len(words) >= 3:
-            ini = "".join(w[0] for w in words).upper()
-            if canonical(ini) not in names_canon and canonical(ini) not in word_bases:
-                items.append(cat_item("P4_short", bname, ini, "initialism", expected="EITHER"))
+                items.append(_item(item_id=f"P4_short|{bname}|head_noun", subset="P4_short", text=head,
+                                   expected="ABSTAIN", abstain_reason="underspecified_qualifier_removed",
+                                   label_base_types=bname,
+                                   label_source=f"rule:head noun of catalogue type '{bname}' with qualifier removed",
+                                   mapping_basis="n/a", transform="head_noun", parent=bname,
+                                   group=f"hs4:{bases[bname]['hs'][:4]}", cluster=f"base:{bname}"))
 
     # P5 confusable neighbours: types sharing a word with a type of a different HS code
     for bname in sorted(bases):
@@ -159,36 +173,50 @@ def build(cfg, log):
                                label_source=f"rule:catalogue category spanning {len(hs_set)} HS codes",
                                mapping_basis="n/a", transform="none", group=f"ambig:cat:{canonical(cat)}"))
 
-    # P7 outside catalogue, informal names (Open Products Facts)
+    # P7 outside catalogue, informal names (Unicode CLDR emoji short names, licence: Unicode License v3)
     catalogue_words = set(word_bases)
-    pool_plain, pool_look = [], []
-    for name, info in sorted(load_opf_categories().items()):
-        if not info["roots"] or not set(info["roots"]) <= set(OPF_DISJOINT_ROOTS):
+
+    def confusable_types(toks):
+        """Catalogue types sharing a whole (singularised) word with the name."""
+        hits = set()
+        for t in toks:
+            hits |= word_bases.get(t, set())
+        return sorted(hits)
+
+    pool_plain, pool_look, seen = [], [], set()
+    for group, sub, name in load_emoji_names():
+        if sub not in EMOJI_GOODS_SUBGROUPS or EMOJI_NAME_EXCLUDE.search(name) or not name.isascii():
             continue
         toks = tokens(name)
-        if not (1 <= len(toks) <= 6) or not name.isascii() or canonical(name) in names_canon:
+        key = canonical(name)
+        if not toks or key in seen or key in names_canon:
             continue
-        if any(bases[b]["tokens"] <= set(toks) and len(toks) == len(bases[b]["tokens"]) for b in bases):
-            log.append(("opf_possible_catalogue_item_excluded", name))
-            continue
-        (pool_look if set(toks) & catalogue_words else pool_plain).append((name, info))
+        seen.add(key)
+        conf = confusable_types(toks)
+        (pool_look if conf else pool_plain).append((name, group, sub, conf))
     r = rng_for(seed, "P7")
     plain = r.sample(pool_plain, min(sizes["outside_plain"], len(pool_plain)))
-    look = r.sample(pool_look, min(sizes["outside_lookalike"], len(pool_look)))
-    from .pilot import lookalike_decisions  # human confirmation of look-alikes (pre-declared rule)
+    look = r.sample(pool_look, min(sizes["outside_lookalike_max"], len(pool_look)))
+    from .pilot import lookalike_decisions, plain_exceptions  # human review (pre-declared rules)
     decisions = lookalike_decisions()
     reviewed = any(decisions.values())
-    for name, info in sorted(plain + look):
-        la = (name, info) in look
-        if la and reviewed and decisions.get(f"P7_outside|{name}", "") != "outside":
-            log.append(("lookalike_removed_after_review", f"{name}: {decisions.get(f'P7_outside|{name}', 'missing')}"))
+    exceptions = plain_exceptions()
+    for name, group, sub, conf in sorted(plain + look):
+        la = bool(conf)
+        iid = f"P7_outside|{name}"
+        if la and reviewed and decisions.get(iid, "") != "outside":
+            log.append(("lookalike_removed_after_review", f"{name}: {decisions.get(iid, 'missing')}"))
             continue
-        items.append(_item(item_id=f"P7_outside|{name}", subset="P7_outside", text=name, expected="ABSTAIN",
+        if not la and exceptions is not None and canonical(name) in exceptions:
+            log.append(("plain_removed_after_review", name))
+            continue
+        items.append(_item(item_id=iid, subset="P7_outside", text=name, expected="ABSTAIN",
                            abstain_reason="outside_catalogue", look_alike=la,
-                           label_source=f"OpenProductsFacts:{' > '.join(info['path'])}",
-                           mapping_basis="branch_disjoint_from_catalogue", transform="none",
-                           in_catalogue_support=False, group=f"opf:{info['parent'] or name}"))
-    log.append(("opf_pool_sizes", f"plain={len(pool_plain)} lookalike={len(pool_look)}"))
+                           label_base_types=";".join(conf),
+                           label_source=f"UnicodeEmoji16.0:{group} > {sub}",
+                           mapping_basis="subgroup_disjoint_from_catalogue", transform="none",
+                           in_catalogue_support=False, group=f"emoji:{tokens(name)[-1]}"))
+    log.append(("emoji_pool_sizes", f"plain={len(pool_plain)} lookalike={len(pool_look)}"))
 
     # P8 formal HS 2022 texts (separate out-of-register category)
     for code in sorted(cat_codes):

@@ -47,7 +47,7 @@ def test_product_outcomes():
 
 
 def test_identification_separate_from_tax_availability():
-    unsupported = {"expected_iso": "NE", "expected_behaviour": "REFUSE"}
+    unsupported = {"gold_iso": "NE", "gold_tax_action": "REFUSE"}
     # correct identification of a country without tax data is CORRECT for identification...
     assert scoring.identification_outcome(unsupported, _o(country_iso="NE")) == scoring.CORRECT
     # ...and computing with default rates is a silent error for the tax-behaviour task
@@ -57,16 +57,18 @@ def test_identification_separate_from_tax_availability():
 
 
 def test_masked_correct_rates_wrong_country():
-    item = {"expected_iso": "NL", "expected_behaviour": "COMPUTE"}
+    item = {"gold_iso": "NL", "gold_tax_action": "COMPUTE"}
     out = _o(country_iso="BE", landing_cost=1.0, duty_rate=8.0, gst_rate=21.0)
     assert scoring.tax_behaviour_outcome(item, out, (8.0, 21.0)) == (scoring.CORRECT, "correct_rates_wrong_or_no_country")
 
 
-def test_either_outcome_penalises_only_wrong_codes():
-    either = {"expected": "EITHER", "label_hs": "851640"}
-    assert scoring.product_outcome(either, _o(prod_hs="851640")) == scoring.CORRECT
-    assert scoring.product_outcome(either, _o()) == scoring.SAFE
-    assert scoring.product_outcome(either, _o(prod_hs="845011")) == scoring.SILENT
+def test_gold_vs_system_behaviour_country():
+    # gold identity NZ; a system lacking the alias that abstains is safe but not correct
+    item = {"gold_iso": "NZ", "gold_tax_action": "COMPUTE"}
+    assert scoring.identification_outcome(item, _o(country_iso=None)) == scoring.OVER
+    assert scoring.is_safe(scoring.OVER) and not scoring.is_safe(scoring.SILENT)
+    assert scoring.identification_outcome(item, _o(country_iso="NZ")) == scoring.CORRECT
+    assert scoring.identification_outcome(item, _o(country_iso="AU")) == scoring.SILENT
 
 
 def test_cluster_bootstrap_widens_with_correlation():

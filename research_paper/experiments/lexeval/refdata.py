@@ -82,66 +82,31 @@ def versions():
             "cldr": babel.core.get_cldr_version()}
 
 
-# ----------------------------------------------------------------------------- Open Products Facts
-def _opf_path():
-    return os.path.join(EXP, config()["opf_file"])
-
-
-def ensure_opf():
-    """Download the pinned Open Products Facts category taxonomy if absent; verify its hash."""
+# ----------------------------------------------------------------------------- Unicode emoji names
+def ensure_unicode_emoji():
+    """Download the pinned Unicode emoji-test.txt (Unicode License v3) if absent; verify its hash."""
     import urllib.request
     cfg = config()
-    path = _opf_path()
+    path = os.path.join(EXP, cfg["unicode_emoji_file"])
     if not os.path.exists(path):
         os.makedirs(os.path.dirname(path), exist_ok=True)
-        with urllib.request.urlopen(cfg["opf_url"], timeout=60) as r, open(path, "wb") as fh:
+        with urllib.request.urlopen(cfg["unicode_emoji_url"], timeout=60) as r, open(path, "wb") as fh:
             fh.write(r.read())
-    if sha256(path) != cfg["opf_sha256"]:
-        raise RuntimeError("Open Products Facts taxonomy hash mismatch")
+    if sha256(path) != cfg["unicode_emoji_sha256"]:
+        raise RuntimeError("Unicode emoji-test.txt hash mismatch")
     return path
 
 
-def load_opf_categories():
-    """English category name -> {parents, roots, path, parent} from the OPF taxonomy file."""
+def load_emoji_names():
+    """List of (group, subgroup, name) for fully-qualified emoji in emoji-test.txt (CLDR short names)."""
     import re
-    text = open(ensure_opf(), encoding="utf-8").read()
-    split = re.compile(r"(?<!\\),")
-    cats = {}
-    for block in text.split("\n\n"):
-        lines = [ln for ln in block.split("\n") if ln.strip() and not ln.startswith("#")]
-        en = [ln for ln in lines if ln.startswith("en:")]
-        if not en:
-            continue
-        name = split.split(en[0][3:])[0].strip().replace("\\,", ",")
-        parents = []
-        for ln in lines:
-            if ln.startswith("<"):
-                p = ln[1:].strip()
-                p = p.split(":", 1)[1] if ":" in p[:4] else p
-                parents.append(split.split(p)[0].strip().replace("\\,", ","))
-        cats[name] = {"parents": parents}
-
-    def roots(n, seen):
-        ps = cats.get(n, {}).get("parents", [])
-        if not ps:
-            return {n}
-        out = set()
-        for p in ps:
-            if p not in seen:
-                out |= roots(p, seen | {n})
-        return out
-
-    def path(n, seen):
-        ps = cats.get(n, {}).get("parents", [])
-        if not ps or ps[0] in seen:
-            return [n]
-        return path(ps[0], seen | {n}) + [n]
-
-    out = {}
-    for n, v in cats.items():
-        r = roots(n, frozenset())
-        if r == {n}:
-            continue  # skip roots themselves
-        out[n] = {"roots": sorted(r), "path": path(n, frozenset()),
-                  "parent": v["parents"][0] if v["parents"] else ""}
+    out, group, sub = [], None, None
+    for line in open(ensure_unicode_emoji(), encoding="utf-8"):
+        if line.startswith("# group:"):
+            group = line.split(":", 1)[1].strip()
+        elif line.startswith("# subgroup:"):
+            sub = line.split(":", 1)[1].strip()
+        elif "; fully-qualified" in line:
+            name = re.sub(r"^.*# \S+ E\d+\.\d+ ", "", line.strip())
+            out.append((group, sub, name))
     return out

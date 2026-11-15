@@ -1,4 +1,4 @@
-item_id,subset,text,expected_iso,label_kind,tax_data_available,expected_behaviour,form,s1_builtin,label_source,transform,group,cluster,split
+item_id,subset,text,gold_iso,label_kind,tax_data_available,gold_tax_action,form,s1_builtin,label_source,transform,group,cluster,split
 CA|AE|case,J1_table,uNITED aRAB eMIRATES,AE,country,True,COMPUTE,case,True,taxes.json+ISO,case,AE,AE,test
 CA|AE|table,J1_table,United Arab Emirates,AE,country,True,COMPUTE,table_name,True,taxes.json+ISO,none,AE,AE,test
 CA|AE|ws_punct,J1_table,  United  Arab  Emirates.,AE,country,True,COMPUTE,ws_punct,True,taxes.json+ISO,ws_punct,AE,AE,test

@@ -101,7 +101,7 @@ def run_country_task(items, systems, raw_fh=None):
     for i, it in enumerate(items):
         bname = base_names[i % len(base_names)]
         price, qty, ship = _numerics(i)
-        iso = it["expected_iso"] or None
+        iso = it["gold_iso"] or None
         if iso and iso in ISO_TO_TABLE:
             rates, lc = _reference_cost(price, qty, ship, iso)
             ref = {"landing_cost": lc, "rates": rates,
@@ -116,7 +116,9 @@ def run_country_task(items, systems, raw_fh=None):
             row = dict(task="country", item_id=it["item_id"], subset=it["subset"], cluster=it["cluster"],
                        s1_builtin=it["s1_builtin"], system=name,
                        identification=ident, tax_behaviour=beh, tax_subtype=sub,
-                       country_iso=out["country_iso"], expected_iso=it["expected_iso"],
+                       gold_iso=it["gold_iso"], gold_tax_action=it["gold_tax_action"],
+                       system_iso=out["country_iso"], identification_safe=scoring.is_safe(ident),
+                       tax_behaviour_safe=scoring.is_safe(beh),
                        tax_data_available=it["tax_data_available"], default_rates=out["default_rates"],
                        fx_substituted=out["fx_substituted"], propagation=prop, flagged=flagged,
                        rel_cost_error=rel, product_answered=out["prod_hs"] is not None)

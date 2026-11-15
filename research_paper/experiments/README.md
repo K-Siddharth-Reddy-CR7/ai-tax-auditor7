@@ -3,8 +3,8 @@
 Compares **B** (original single-step baseline), **S0** (original staged pipeline) and **S1** (`backend/lexitax_v2`, corrected staged pipeline) on product (HS-6) resolution, country identification, tax-data availability and downstream error propagation.
 
 ## Status
-- Benchmarks under `data/generated/` are a **DRAFT v3** build (product 855, country 2,122, malformed 18). They are **not frozen** and **no evaluation has been run**.
-- Design: `dataset_sampling_rationale.md`. Provenance: `data_provenance.md`. Pilot: `pilot_review_sheet.md`.
+- Benchmarks under `data/generated/` are a **DRAFT v4** build (product 809, country 2,122, malformed 18). They are **not frozen** and **no evaluation has been run**.
+- Design: `dataset_sampling_rationale.md`. Provenance: `data_provenance.md`. Human review: `pilot_review_sheet.md` (10 items) and `p7_review_sheet.md` (P7). Decisions: `../phase7_methodology_decisions.md`.
 - `tune` and `evaluate` refuse to run until the benchmarks are frozen with `--approved-by`. Freezing happens after the authors sign off the 10-item pilot (`pilot/`).
 
 ## Reproduce

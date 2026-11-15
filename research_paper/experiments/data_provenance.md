@@ -1,4 +1,4 @@
-# Data Provenance and Permissible Claims (v3, 15 Nov 2026)
+# Data Provenance and Permissible Claims (v4, 15 Nov 2026)
 
 This document supersedes `data/external/PROVENANCE.md`, which is kept for history. Every source is listed with its exact version, licence, how it is used, and what may and may not be claimed from it.
 
@@ -54,18 +54,25 @@ If none of these is adopted, the limitation stays as stated above.
 | Use | J5 test inputs (**held out**: never in S1's table); J7 region names |
 | Exclusions | Names equal to an ISO/table alias (not held out); names whose normalised form maps to different countries across locales (e.g. German "Island" = Iceland vs English "island") |
 
-## 4. Open Products Facts category taxonomy (P7 out-of-catalogue names)
+## 4. Unicode emoji short names (P7 outside-catalogue names)
 | Field | Value |
 |---|---|
-| Repository | `https://github.com/openfoodfacts/openfoodfacts-server` |
-| Commit pinned | `0ad833f340efa7f1ff5ad2c9bdafa6fc835aeee3` (main on 15 Nov 2026) |
-| File | `taxonomies/product/categories.txt`, SHA-256 `b653e1a29427a3e0518265aa3de1805ae172aab25f810c20d74a8945e239a791` |
-| Content | File header: "Categories taxonomy for Open Products Facts — Generated from Wikidata and the Google Product Taxonomy (filtered version)"; 5,484 English categories with parent links |
-| Licence | **Not stated in the file.** The repository code is AGPL-3.0. Open Food Facts databases are generally ODbL. Wikidata is CC0. Google Product Taxonomy terms are unclear. **Status: licence uncertain. Author decision required.** |
-| Handling | Not committed. Downloaded at build time from the pinned commit and hash-verified (`refdata.ensure_opf`, git-ignored cache). Only 159 short category names appear in the benchmark CSV |
-| Use | P7 inputs. Labels come from a pre-declared list of 13 top-level branches judged disjoint from the 60 catalogue types; look-alikes need human confirmation |
-| May claim | "Out-of-catalogue product category names drawn from the Open Products Facts taxonomy (commit 0ad833f)" |
-| May not claim | That these are invoice lines or customs declarations |
+| Repository | `https://github.com/unicode-org/unicodetools` |
+| Commit pinned | `ccc86e576dcadf94ef9f86969e7b5cb51e432ddc` (main, 15 Nov 2026) |
+| File | `unicodetools/data/emoji/16.0/emoji-test.txt` (Emoji 16.0, dated 2024-08-14), SHA-256 `24f0c534e86cf142e2496953e8f0e46a3e702392911eddcd29c6cced85139697` |
+| Licence | **Unicode License v3**: permission to use, copy, modify, publish, distribute, provided the copyright and permission notice appear with copies. Notice saved in `data/external/UNICODE_LICENSE_V3.txt` |
+| Handling | Downloaded at build time from the pinned commit and hash-checked (`refdata.ensure_unicode_emoji`, git-ignored cache). 116 short names appear in the benchmark CSV, with the licence notice kept in the repository |
+| Use | P7 inputs from 26 pre-declared sub-groups of tangible goods; overlapping sub-groups and abstract names excluded |
+| May claim | "Out-of-catalogue product names taken from Unicode CLDR emoji short names (Emoji 16.0)" |
+| May not claim | That these are invoice lines, customs declarations or a representative sample of traded goods |
+
+### 4a. Withdrawn: Open Products Facts category taxonomy
+Considered in Phase 6 and **withdrawn on 15 Nov 2026**, because its licence could not be established:
+- no licence statement in the file or in `taxonomies/README.md`;
+- repository code is AGPL-3.0;
+- the file is partly generated from the Google Product Taxonomy, whose terms are unclear.
+
+No Open Products Facts text remains in the code path or the benchmark.
 
 ## 5. Project datasets (inputs to the systems, unchanged)
 | Dataset | Nature | Notes |

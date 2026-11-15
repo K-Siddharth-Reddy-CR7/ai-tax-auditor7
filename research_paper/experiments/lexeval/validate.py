@@ -17,7 +17,7 @@ def validate():
     hs6, _ = load_hs6()
     report = {"errors": [], "warnings": [], "stats": {}}
     for name, label_fields in (("product_benchmark.csv", ("expected", "label_hs")),
-                               ("country_benchmark.csv", ("expected_iso", "label_kind"))):
+                               ("country_benchmark.csv", ("gold_iso", "label_kind"))):
         rows = read_csv(os.path.join(GEN, name))
         st = report["stats"][name] = {}
         st["n"] = len(rows)

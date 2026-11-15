@@ -10,6 +10,13 @@
 > - **Latency** times the systems' own entry points, not the evaluation adapters.
 > - **Human verification:** a one-reviewer pilot plus look-alike confirmation (`experiments/pilot_review_sheet.md`). The 60-item audit is deferred.
 > - Full audit: `pre_evaluation_methodology_audit.md`.
+>
+> **v4 amendments (Phase 7):**
+> - EITHER outcome removed; P4 gold is DECLINE.
+> - P7 source is Unicode emoji names (Open Products Facts withdrawn).
+> - Country gold fields are `gold_iso` / `gold_tax_action`; evaluation rows record `system_iso` and safety flags.
+> - The strict tuning rule is confirmed by the authors and will not be relaxed after results.
+> - See `phase7_methodology_decisions.md`.
 
 Status: **protocol final pending pilot sign-off.**
 - Benchmarks are built as a **DRAFT** and validated (0 errors), but **not frozen**.

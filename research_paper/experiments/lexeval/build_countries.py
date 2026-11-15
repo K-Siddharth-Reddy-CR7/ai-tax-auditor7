@@ -1,7 +1,7 @@
 """Jurisdiction resolution benchmark (JRB) — v3.
 
 Every item carries SEPARATE fields for:
-  expected_iso        identification label (ISO 3166-1 alpha-2, or empty = must not identify)
+  gold_iso        identification label (ISO 3166-1 alpha-2, or empty = must not identify)
   tax_data_available  whether the 40-country tax table has rates for that jurisdiction
   form                how the string was produced
   s1_builtin          True if the normalised string is literally in S1's alias table
@@ -23,8 +23,8 @@ from .build_common import finalize
 from .perturb import PERTURBATIONS, rng_for
 from .refdata import cldr_names, cldr_regions, iso_countries
 
-FIELDS = ["item_id", "subset", "text", "expected_iso", "label_kind", "tax_data_available",
-          "expected_behaviour", "form", "s1_builtin", "label_source", "transform", "group", "cluster", "split"]
+FIELDS = ["item_id", "subset", "text", "gold_iso", "label_kind", "tax_data_available",
+          "gold_tax_action", "form", "s1_builtin", "label_source", "transform", "group", "cluster", "split"]
 
 SUBSET_OF = {"CA": "J1_table", "CB_code": "J2_iso_code", "CB_name": "J3_iso_name", "CC": "J4_typo",
              "CD": "J5_cldr", "CE": "J6_ambiguous", "CF": "J7_region"}
@@ -34,8 +34,8 @@ def _item(iid, subset, text, iso, kind, source, transform, group, form=None):
     avail = bool(iso) and iso in ISO_TO_TABLE
     if subset == "CB":
         subset = "CB_code" if form in ("alpha_2", "alpha_3") else "CB_name"
-    return dict(item_id=iid, subset=SUBSET_OF[subset], text=text, expected_iso=iso or "", label_kind=kind,
-                tax_data_available=avail, expected_behaviour="COMPUTE" if avail else "REFUSE",
+    return dict(item_id=iid, subset=SUBSET_OF[subset], text=text, gold_iso=iso or "", label_kind=kind,
+                tax_data_available=avail, gold_tax_action="COMPUTE" if avail else "REFUSE",
                 form=form or transform, s1_builtin=normalize_text(text) in alias_index(),
                 label_source=source, transform=transform, group=group, cluster=iso or iid)
 
@@ -93,5 +93,5 @@ def build(cfg, log):
         if normalize_text(name) in idx:
             continue
         items.append(_item(f"CF|{code}", "CF", name, "", "non_country", f"CLDR47:en region {code}", "none", f"region:{code}", form="region_name"))
-    return finalize([dict(it, label_key=it["expected_iso"] + ":" + it["label_kind"]) for it in items],
+    return finalize([dict(it, label_key=it["gold_iso"] + ":" + it["label_kind"]) for it in items],
                     "label_key", seed, cfg["dev_fraction"], log)

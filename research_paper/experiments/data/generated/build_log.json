@@ -1,7 +1,7 @@
 [
  [
-  "opf_pool_sizes",
-  "plain=2256 lookalike=206"
+  "emoji_pool_sizes",
+  "plain=408 lookalike=16"
  ],
  [
   "hs_code_excluded",
@@ -46,10 +46,6 @@
  [
   "duplicate_removed",
   "P4_short|Video Camera|head_noun"
- ],
- [
-  "duplicate_removed",
-  "P7_outside|Office Equipment"
  ],
  [
   "typo_not_generated",

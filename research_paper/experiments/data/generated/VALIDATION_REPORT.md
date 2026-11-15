@@ -3,11 +3,11 @@
 Errors: 0; warnings: 0
 
 ## product_benchmark.csv
-- n: 855
-- by_subset_split: {'P1_exact/dev': 44, 'P1_exact/test': 76, 'P2_format/dev': 44, 'P2_format/test': 76, 'P3_typo/dev': 44, 'P3_typo/test': 76, 'P4_short/dev': 16, 'P4_short/test': 17, 'P5_confusable/dev': 21, 'P5_confusable/test': 22, 'P6_ambiguous/test': 11, 'P6_ambiguous/dev': 6, 'P7_outside/test': 118, 'P7_outside/dev': 41, 'P8_hs_formal/test': 171, 'P8_hs_formal/dev': 72}
+- n: 809
+- by_subset_split: {'P1_exact/dev': 44, 'P1_exact/test': 76, 'P2_format/dev': 44, 'P2_format/test': 76, 'P3_typo/dev': 44, 'P3_typo/test': 76, 'P4_short/dev': 14, 'P4_short/test': 16, 'P5_confusable/dev': 21, 'P5_confusable/test': 22, 'P6_ambiguous/test': 11, 'P6_ambiguous/dev': 6, 'P7_outside/dev': 27, 'P7_outside/test': 89, 'P8_hs_formal/test': 171, 'P8_hs_formal/dev': 72}
 - texts_in_both_splits: 0
 - conflicting_label_texts: 0
-- groups: 307
+- groups: 304
 - groups_straddling_splits: 0
 - test_items_with_near_duplicate_in_dev(jaccard>=0.9,<=12 tokens): 0
 
@@ -25,8 +25,8 @@ Errors: 0; warnings: 0
 - versions: {'pycountry': '26.2.16', 'babel': '2.18.0', 'cldr': '47'}
 
 ## Build log (pre-declared exclusion rules applied)
-- duplicate_removed: 128
+- duplicate_removed: 127
+- emoji_pool_sizes: 1
 - hs_code_excluded: 10
 - label_conflict_removed: 3
-- opf_pool_sizes: 1
 - typo_not_generated: 2
