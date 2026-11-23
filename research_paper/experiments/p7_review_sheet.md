@@ -1,6 +1,9 @@
 # P7 "Outside the Catalogue": Human Review Sheet — v4 (15 Nov 2026)
 
-**Reviewer:** Author 1. **Status: NOT YET REVIEWED.**
+**Reviewer:** Author 1. **Status: IN PROGRESS.**
+- Part A items 1–4 decided (23 Nov 2026): 1–3 Outside, 4 Uncertain, no comments. Recorded in `pilot/p7_lookalike_review_v4.csv`; decisions not yet applied to the benchmark.
+- Items 5–16 and Part B pending.
+- **Do not run `--stage build` until Part A is complete.** The builder treats the sheet as reviewed as soon as any decision exists, and would drop the undecided items.
 **Time:** about 10–15 minutes in total (Part A ≈ 5 min, Part B ≈ 5–8 min).
 
 This is **not** the optional 60-item label-quality audit. That audit is a separate idea, assessed in `research_paper/phase7_methodology_decisions.md` §4 and currently deferred.

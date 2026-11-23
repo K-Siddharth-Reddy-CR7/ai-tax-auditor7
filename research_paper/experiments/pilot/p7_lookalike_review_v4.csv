@@ -1,8 +1,8 @@
 item_id,input_text,unicode_group_subgroup,possibly_confused_with_catalogue_type,question,reviewer_decision(Outside/Potentially in catalogue/Uncertain),reviewer_comments
-P7_outside|card file box,card file box,Objects > office,Graphics Card; Memory Card; Sound Card,Is this genuinely outside the supported 60-product catalogue?,,
-P7_outside|card index,card index,Objects > office,Graphics Card; Memory Card; Sound Card,Is this genuinely outside the supported 60-product catalogue?,,
-P7_outside|card index dividers,card index dividers,Objects > office,Graphics Card; Memory Card; Sound Card,Is this genuinely outside the supported 60-product catalogue?,,
-P7_outside|couch and lamp,couch and lamp,Objects > household,LED Lamp,Is this genuinely outside the supported 60-product catalogue?,,
+P7_outside|card file box,card file box,Objects > office,Graphics Card; Memory Card; Sound Card,Is this genuinely outside the supported 60-product catalogue?,Outside,
+P7_outside|card index,card index,Objects > office,Graphics Card; Memory Card; Sound Card,Is this genuinely outside the supported 60-product catalogue?,Outside,
+P7_outside|card index dividers,card index dividers,Objects > office,Graphics Card; Memory Card; Sound Card,Is this genuinely outside the supported 60-product catalogue?,Outside,
+P7_outside|couch and lamp,couch and lamp,Objects > household,LED Lamp,Is this genuinely outside the supported 60-product catalogue?,Uncertain,
 P7_outside|credit card,credit card,Objects > money,Graphics Card; Memory Card; Sound Card,Is this genuinely outside the supported 60-product catalogue?,,
 P7_outside|cricket game,cricket game,Activities > sport,Game Controller,Is this genuinely outside the supported 60-product catalogue?,,
 P7_outside|flower playing cards,flower playing cards,Activities > game,Graphics Card; Memory Card; Sound Card,Is this genuinely outside the supported 60-product catalogue?,,
