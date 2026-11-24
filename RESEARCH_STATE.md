@@ -2,8 +2,8 @@
 
 **Checkpoint date:** 24 Nov 2026.
 **Written on branch:** `research/option-a-evaluation`, on top of commit `91b7305`. This file is committed as the next commit; run `git log -1` for its hash.
-**Updated 24 Nov 2026: CURRENT STAGE = PLANNING COMPLETE; IMPLEMENTATION PENDING AUTHOR APPROVAL.** See `IMPLEMENTATION_PLAN.md`.
-- The four P7 exclusions (§8) are **approved but NOT applied**.
+**Updated 24 Nov 2026: CURRENT STAGE = PHASE A IMPLEMENTED AND TESTED; PHASES B–D NOT AUTHORISED.** See `IMPLEMENTATION_PLAN.md` and `research_paper/IMPLEMENTATION_CHANGES.md` §7.
+- The four P7 exclusions (§8) are recorded in the authoritative decisions file `research_paper/experiments/pilot/authorised_review_treatments_v1.csv` and enforced by the builder. They are **NOT yet applied to the committed benchmark files**; that is the Phase D production rebuild, not yet authorised.
 - The eight-item pilot TEST exclusion is approved in principle but **NOT implemented**.
 - The last commit that changed generated benchmark data, generation code or configuration is **`a0129b8`** (verified in git history).
 
@@ -21,7 +21,7 @@
 7. **Never claim capabilities that are not implemented.** No LLM, no generative RAG, no multi-agent autonomy, no valuation-discrepancy detector, no risk scorer, no consensus auditor, no fraud detection, no legal classification.
 8. **Preserve the original baseline and application.** `backend/server.py` and the original datasets must stay byte-identical to `main` (enforced by `backend/tests/test_original_untouched.py`).
 9. **Do not modify `main`.** Do not merge. Do not force-push.
-10. **Do not apply manual review decisions, change benchmark labels, remove examples, or rebuild the benchmark without explicit user authorisation.** Note: `run_all.py --stage build` *would* apply the recorded look-alike decisions (§8), and `--stage pilot` would overwrite `pilot/p7_plain_scan_v4.txt`. Neither may be run until Phase A of `IMPLEMENTATION_PLAN.md` is implemented and authorised.
+10. **Do not apply manual review decisions, change benchmark labels, remove examples, or rebuild the benchmark without explicit user authorisation.** Since Phase A, `run_all.py --stage build` applies exactly the 4 exclusions in `pilot/authorised_review_treatments_v1.csv` and writes `excluded_items.csv`. It is the Phase D production rebuild and must not be run until Phase D is authorised. `--stage pilot` can no longer overwrite any existing review file.
 11. **Do not start experiments** (tune or evaluate) until the benchmark integrity review is complete and the user authorises the next stage.
 12. **All experiments must be reproducible:** fixed seed, pinned dependencies, frozen and hashed data (`MANIFEST.json`), with configurations and raw and processed outputs preserved in `research_paper/experiments/results/`.
 
@@ -213,10 +213,10 @@ Source: `experiments/pilot/p7_lookalike_review_v4.csv`. Reviewer: Author 1. No c
 | Pilot (10 items) | 10 Accept | ≥ 9 Accept → rules accepted | n/a (no data change) | Yes (documentation only) |
 | 8 pilot items in TEST | Inspected | Exclude from every final TEST metric via `evaluation_exclusions_v1.json`; rows preserved (`IMPLEMENTATION_PLAN.md` Phase B) | Approved in principle; **implementation not authorised** | **No** |
 | 13 Outside look-alikes | Outside | Keep as gold DECLINE | **No** | No (they are already in the draft as DECLINE) |
-| 3 Uncertain look-alikes (couch and lamp, toothbrush, video game) | Uncertain | Exclude; full rows kept in an audit file | **Yes: approved by the user on 24 Nov 2026** | **No.** To be applied via `pilot/authorised_review_treatments_v1.csv` (`IMPLEMENTATION_PLAN.md` Phase A). Note: the current builder would already drop them on any `--stage build` |
-| #81 satellite antenna | Flag for review | **Author decision (24 Nov 2026): exclude as Uncertain.** The current code has no mapping for "Flag for review"; Phase A adds one via the decisions file, without editing the scan file | **Yes: approved** | **No** |
+| 3 Uncertain look-alikes (couch and lamp, toothbrush, video game) | Uncertain | Exclude; full rows kept in an audit file | **Yes: approved by the user on 24 Nov 2026** | **Recorded and enforced in code (Phase A); not yet applied to the committed files** (Phase D rebuild) |
+| #81 satellite antenna | Flag for review | **Author decision (24 Nov 2026): exclude as Uncertain.** The current code has no mapping for "Flag for review"; Phase A adds one via the decisions file, without editing the scan file | **Yes: approved** | **Recorded and enforced in code (Phase A); not yet applied to the committed files** (Phase D rebuild). The scan file is not edited |
 | 99 Clear plain names | Clear | Keep as gold DECLINE | No | No change needed |
-| Freeze | — | `run_all.py --stage freeze` refuses unless all look-alikes are decided **and** the scan file says `REVIEWED: yes` | **No** | No |
+| Freeze | — | Since Phase A, `run_all.py --stage freeze` refuses unless the decisions file validates against the review records and the benchmark, `excluded_items.csv` and `build_log.json` reflect exactly that file. The scan file's `REVIEWED` line is not read | **No** | No |
 
 Projected sizes (estimates until the Phase D rebuild verifies them; full table with cluster counts in `IMPLEMENTATION_PLAN.md` §5):
 - P7 total: 116 − 4 authorised exclusions = 112.
@@ -310,7 +310,7 @@ Authors, in exact order (all: Dept. of CSE, Vardhaman College of Engineering, Hy
 - final submission checklist;
 - one comprehensive PR to `main` (to be opened only after stable results; left unmerged).
 
-**Current stage:** planning complete (`IMPLEMENTATION_PLAN.md`); implementation pending explicit author authorisation.
+**Current stage:** Phase A of `IMPLEMENTATION_PLAN.md` implemented and tested (24 Nov 2026). Phases B, C and D (including the production rebuild) await explicit author authorisation.
 
 Author decisions of 24 Nov 2026 on the eight design questions (detail in `IMPLEMENTATION_PLAN.md` §1):
 1. single decisions file;
@@ -332,7 +332,7 @@ Corrected execution order: Phases A, B and C with tests first, then the producti
    - then `--stage build` and `--stage validate`;
    - record the exclusion counts.
 3. Authorise implementing Option A (the pilot TEST exclusion list in `evaluate.py`, its hash in the manifest, plus a unit test) and the cluster sensitivity analysis.
-4. Re-run the unit tests and the clean-environment reproducibility check. **Correction (24 Nov 2026):** `tests/test_systems_and_data.py::test_build_is_deterministic` currently FAILS, because the builder already applies the recorded look-alike decisions. The "79 passing" figure is no longer valid. This is fixed by `IMPLEMENTATION_PLAN.md` Phases A and D.
+4. Re-run the unit tests and the clean-environment reproducibility check. **Correction (24 Nov 2026):** `test_build_is_deterministic` failed because the builder applied recorded look-alike decisions implicitly. **Fixed in Phase A** (cause and fix: `IMPLEMENTATION_CHANGES.md` §7). After Phase A: experiment tests 71/71 pass, backend tests 63/63 pass.
 5. Freeze: `run_all.py --stage freeze --approved-by "<author>"`, after authorisation.
 6. Only then: `--stage tune` (DEV), then `--stage evaluate` (TEST, once).
 7. Literature review and citation verification; conference verification; manuscript (≤ 6 pages, IEEE template); three-reviewer QA.

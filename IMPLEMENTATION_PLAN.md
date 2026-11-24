@@ -1,7 +1,8 @@
 # IMPLEMENTATION_PLAN.md — applying the review decisions and evaluation safeguards
 
-**Status: PLAN ONLY. IMPLEMENTATION HAS NOT BEEN AUTHORISED.**
-- No code, configuration, benchmark row, label, generated file, review record or scan file has been changed by this plan.
+**Status (24 Nov 2026): PHASE A IMPLEMENTED AND TESTED. PHASES B, C AND D NOT AUTHORISED.**
+- Phase A added the decisions file and changed `lexeval/pilot.py`, `lexeval/build_products.py`, `run_all.py` and tests. Details: `research_paper/IMPLEMENTATION_CHANGES.md` §7.
+- No configuration, committed benchmark row, label, generated file, review record or scan file has been changed.
 - Nothing has been rebuilt, frozen, tuned or evaluated.
 - Written 24 Nov 2026 on `research/option-a-evaluation`.
 - Read together with `RESEARCH_STATE.md`. Its integrity rules (§0) apply unchanged.
@@ -16,7 +17,7 @@
   1. `lexeval/build_products.py` already applies recorded look-alike decisions whenever any decision exists (`reviewed = any(decisions.values())`). A fresh build would therefore drop the 3 Uncertain look-alikes. Consequently `tests/test_systems_and_data.py::test_build_is_deterministic` **currently fails** (run on 24 Nov 2026 in a temporary directory; generated files were verified unchanged). The "79 passing" figure in older documents is no longer true.
   2. `lexeval/pilot.py::build_plain_scan_sheet` would **overwrite** `pilot/p7_plain_scan_v4.txt` if `run_all.py --stage pilot` were run, because that file still says `REVIEWED: no`.
   3. `run_all.py::stage_freeze` requires `REVIEWED: yes` in the scan file. It ignores the completed record `pilot/p7_plain_scan_progress_v4.csv`, and "Flag for review" has no meaning in code.
-- **Until Phase A is implemented, do not run `--stage build`, `--stage pilot` or `--stage freeze`.**
+- **Defects 1–3 were fixed in Phase A (24 Nov 2026).** `--stage build` is now the Phase D production rebuild and must not be run before Phase D is authorised. `--stage freeze` refuses until that rebuild exists.
 
 ---
 
@@ -78,7 +79,7 @@ Tests for Phase A:
 - After a temporary-directory build, the 4 IDs are absent from the scored rows and present in `excluded_items.csv`; the 13 + 99 retained items keep gold DECLINE.
 - Original review and scan files are byte-identical before and after a build (hash test).
 - No writer overwrites an existing sheet.
-- Updated `tests/test_systems_and_data.py`: the determinism test compares against the *rebuilt* production files, so it only passes after Phase D.
+- Updated `tests/test_systems_and_data.py`: the determinism test compares against the *rebuilt* production files. **As implemented:** before Phase D it requires the committed draft minus exactly the 4 authorised rows (all other bytes identical); after Phase D, full byte-identity. It passes in both states and fails on partial application.
 
 ### Phase B — Pilot evaluation-time exclusion
 | Action | Files |
@@ -226,4 +227,4 @@ Derived on 24 Nov 2026 from the current benchmark files, the cluster definitions
 
 ---
 
-**Implementation of this plan has NOT been authorised.** Await explicit author authorisation before changing any code, configuration or data.
+**Only Phase A has been authorised and implemented.** Await explicit author authorisation before Phases B, C or D.

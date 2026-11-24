@@ -2,11 +2,13 @@
 """Single entry point for the LEXITAX AUDIT resolution study.
 
 Stages (run in order):
-  build     generate DRAFT benchmarks from reference data (deterministic, seeded)
+  build     generate DRAFT benchmarks from reference data (deterministic, seeded); P7 review treatments are
+            applied ONLY from pilot/authorised_review_treatments_v1.csv; excluded rows -> excluded_items.csv
   validate  provenance / duplicate / conflict / leakage checks -> data/generated/VALIDATION_REPORT.md
-  pilot     10-item human verification sheet -> pilot/pilot_review_sheet.csv
+  pilot     human review sheets (pilot, P7 look-alikes, P7 plain scan); existing sheets are never overwritten
   smoke     sanity checks on the 400 canonical transactions (no benchmark scoring)
-  freeze    hash benchmarks into MANIFEST.json (requires --approved-by, after pilot sign-off)
+  freeze    hash benchmarks into MANIFEST.json (requires --approved-by and a build that applied the validated
+            authoritative review treatments; see freeze_preconditions)
   tune      select S1 parameters on DEV (requires frozen manifest)
   evaluate  score B/S0/S1 + ladder on TEST, statistics, latency, figures (requires frozen manifest)
 """
@@ -20,10 +22,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from lexeval import build_countries, build_malformed, build_products  # noqa: E402
 from lexeval.build_common import write_csv  # noqa: E402
-from lexeval.paths import EXP, GEN, RESULTS, config  # noqa: E402
+from lexeval.paths import EXP, GEN, PILOT, RESULTS, config  # noqa: E402
 
 MANIFEST = os.path.join(GEN, "MANIFEST.json")
 DATA_FILES = ["product_benchmark.csv", "country_benchmark.csv", "malformed_inputs.csv"]
+EXCLUDED_FILE = "excluded_items.csv"  # audit file: full original rows of authorised review exclusions
 
 
 def _sha(path):
@@ -44,15 +47,16 @@ def _require_frozen():
 def stage_build(cfg):
     if os.path.exists(MANIFEST):
         sys.exit("Benchmarks are frozen; refusing to rebuild (log an erratum instead).")
-    log = []
-    prods = build_products.build(cfg, log)
+    log, audit = [], []
+    prods = build_products.build(cfg, log, audit=audit)  # aborts on an invalid decisions file
     ctrs = build_countries.build(cfg, log)
     write_csv(os.path.join(GEN, "product_benchmark.csv"), prods, build_products.FIELDS)
+    write_csv(os.path.join(GEN, EXCLUDED_FILE), audit, build_products.EXCLUDED_FIELDS)
     write_csv(os.path.join(GEN, "country_benchmark.csv"), ctrs, build_countries.FIELDS)
     write_csv(os.path.join(GEN, "malformed_inputs.csv"), build_malformed.build(), build_malformed.FIELDS)
     with open(os.path.join(GEN, "build_log.json"), "w", encoding="utf-8") as fh:
         json.dump(log, fh, indent=1)
-    print(f"built {len(prods)} product items, {len(ctrs)} country items")
+    print(f"built {len(prods)} product items, {len(ctrs)} country items; {len(audit)} review exclusions")
     return log
 
 
@@ -84,14 +88,79 @@ def stage_smoke():
     print(f"smoke: {n} canonical transactions; L0==S0, L5==S1, all systems agree on landed cost")
 
 
+def freeze_preconditions(gen_dir=None, pilot_dir=None):
+    """Return a list of reasons the benchmark may NOT be frozen (empty list = review treatments verified).
+
+    Checks the authoritative decisions file against the review records, and that the generated benchmark,
+    excluded_items.csv and build_log.json all reflect exactly that file. The scan file's REVIEWED line is
+    deliberately not consulted."""
+    from lexeval.build_common import read_csv
+    from lexeval.pilot import (LOOKALIKE_FILE, PLAIN_PROGRESS_FILE, TREATMENTS_FILE, ReviewTreatmentError,
+                               load_treatments, sha256_file)
+    gen_dir, pilot_dir = gen_dir or GEN, pilot_dir or PILOT
+    try:
+        tre = load_treatments(pilot_dir=pilot_dir)
+    except ReviewTreatmentError as e:
+        return [f"decisions file invalid: {e}"]
+    excl = {i for i, t in tre.items() if t["authorised_treatment"] == "exclude"}
+    keep = set(tre) - excl
+    problems = []
+    prod_path, audit_path = os.path.join(gen_dir, "product_benchmark.csv"), os.path.join(gen_dir, EXCLUDED_FILE)
+    log_path = os.path.join(gen_dir, "build_log.json")
+    for p in (prod_path, audit_path, log_path):
+        if not os.path.exists(p):
+            problems.append(f"missing {os.path.basename(p)} (rebuild with the authoritative decisions file)")
+    if problems:
+        return problems
+    prod = read_csv(prod_path)
+    p7 = [r["item_id"] for r in prod if r["subset"] == "P7_outside"]
+    if sorted(p7) != sorted(keep):
+        problems.append(f"benchmark P7 items differ from the 'keep' decisions: still present "
+                        f"{sorted(set(p7) & excl)}, missing {sorted(keep - set(p7))}, "
+                        f"unexpected {sorted(set(p7) - set(tre))}, duplicated {len(p7) - len(set(p7))}")
+    if excl & {r["item_id"] for r in prod}:
+        problems.append("an excluded item is still in product_benchmark.csv")
+    audit = read_csv(audit_path)
+    if sorted(r["item_id"] for r in audit) != sorted(excl):
+        problems.append(f"{EXCLUDED_FILE} must list exactly the authorised exclusions {sorted(excl)}")
+    for r in audit:
+        t = tre.get(r["item_id"])
+        if t is None:
+            continue
+        want = {"exclusion_reason": t["reason"], "decision_source": t["review_file"],
+                "review_item_no": t["review_item_no"], "recorded_decision": t["recorded_decision"],
+                "authorised_by": t["authorised_by"], "authorised_on": t["authorised_on"],
+                "authorisation_record": t["authorisation_record"], "text": t["text"], "split": t["split"],
+                "subset": "P7_outside"}
+        bad = [k for k, v in want.items() if r.get(k) != v]
+        if bad:
+            problems.append(f"{EXCLUDED_FILE}: {r['item_id']} disagrees with the decisions file on {bad}")
+    log = [tuple(e) for e in json.load(open(log_path, encoding="utf-8"))]
+    expected_prov = {
+        ("review_treatments_file", f"{TREATMENTS_FILE} sha256={sha256_file(os.path.join(pilot_dir, TREATMENTS_FILE))}"),
+        ("review_record", f"{LOOKALIKE_FILE} sha256={sha256_file(os.path.join(pilot_dir, LOOKALIKE_FILE))}"),
+        ("review_record", f"{PLAIN_PROGRESS_FILE} sha256={sha256_file(os.path.join(pilot_dir, PLAIN_PROGRESS_FILE))}"),
+    }
+    prov = {e for e in log if e[0] in ("review_treatments_file", "review_record")}
+    if prov != expected_prov:
+        problems.append("build_log.json does not record the current decisions file and review records "
+                        "(the benchmark was built from different review inputs; rebuild)")
+    logged = sorted(e[1].split(" | ", 1)[0] for e in log if e[0] == "review_exclusion")
+    if logged != sorted(excl):
+        problems.append(f"build_log.json review_exclusion entries {logged} != authorised exclusions {sorted(excl)}")
+    return problems
+
+
 def stage_freeze(approved_by):
     if not approved_by:
         sys.exit("--approved-by is required (name of the author who signed off the pilot)")
-    from lexeval.pilot import lookalike_decisions, plain_exceptions
-    dec = lookalike_decisions()
-    if not dec or not all(dec.values()) or plain_exceptions() is None:
-        sys.exit("Freeze refused: the P7 look-alike review and plain-name scan must be completed first.")
-    man = {"approved_by": approved_by, "files": {f: _sha(os.path.join(GEN, f)) for f in DATA_FILES},
+    problems = freeze_preconditions()
+    if problems:
+        sys.exit("Freeze refused:\n- " + "\n- ".join(problems))
+    from lexeval.pilot import TREATMENTS_FILE
+    man = {"approved_by": approved_by,
+           "files": {f: _sha(os.path.join(GEN, f)) for f in DATA_FILES + [EXCLUDED_FILE]},
+           "review_treatments_sha256": _sha(os.path.join(PILOT, TREATMENTS_FILE)),
            "config_sha256": _sha(os.path.join(EXP, "config.json"))}
     with open(MANIFEST, "w", encoding="utf-8") as fh:
         json.dump(man, fh, indent=2)
@@ -138,7 +207,8 @@ def main():
         rows = build_pilot(cfg["seed"])
         la = build_lookalike_sheet()
         pl = build_plain_scan_sheet()
-        print(f"pilot: {len(rows)} items; look-alike review: {len(la)} items; plain-name scan: {len(pl)} names")
+        print(f"pilot: {len(rows)} items; look-alike review: {len(la)} items; plain-name scan: {len(pl)} names "
+              "(existing sheets are never overwritten)")
     elif a.stage == "smoke":
         stage_smoke()
     elif a.stage == "freeze":

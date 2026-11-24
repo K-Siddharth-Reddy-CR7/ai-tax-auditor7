@@ -6,6 +6,7 @@ Compares **B** (original single-step baseline), **S0** (original staged pipeline
 - Benchmarks under `data/generated/` are a **DRAFT v4** build (product 809, country 2,122, malformed 18). They are **not frozen** and **no evaluation has been run**.
 - Design: `dataset_sampling_rationale.md`. Provenance: `data_provenance.md`. Human review: `pilot_review_sheet.md` (10 items) and `p7_review_sheet.md` (P7). Decisions: `../phase7_methodology_decisions.md`.
 - `tune` and `evaluate` refuse to run until the benchmarks are frozen with `--approved-by`. Freezing happens after the authors sign off the 10-item pilot (`pilot/`).
+- P7 review decisions are applied only from `pilot/authorised_review_treatments_v1.csv`, validated against the review records. `build` writes the full rows of excluded items to `data/generated/excluded_items.csv`. `freeze` refuses unless the benchmark, that audit file and `build_log.json` match the decisions file.
 
 ## Reproduce
 ```bash
@@ -16,7 +17,7 @@ export PYTHONDONTWRITEBYTECODE=1
 python run_all.py --stage build      # deterministic (seed in config.json)
 python run_all.py --stage validate   # -> data/generated/VALIDATION_REPORT.md
 python run_all.py --stage smoke      # L0==S0, L5==S1 on 400 canonical transactions
-python run_all.py --stage pilot      # -> pilot/pilot_review_sheet.csv
+python run_all.py --stage pilot      # creates review sheets only if absent; never overwrites
 python -m pytest -q tests ../../backend/tests
 # after pilot sign-off:
 python run_all.py --stage freeze --approved-by "<author name>"

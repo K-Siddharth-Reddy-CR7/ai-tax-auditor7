@@ -41,13 +41,34 @@ def test_ladder_L5_equals_S1_on_dev_inputs():
 
 
 def test_build_is_deterministic(tmp_path):
+    """A temporary-directory build with the authoritative review treatments reproduces the committed files.
+
+    The build is a function of config, reference data and pilot/authorised_review_treatments_v1.csv only.
+    The committed product draft was built at a0129b8, before any review decision existed, so until the
+    Phase D production rebuild it must equal the build output with exactly the authorised exclusion rows
+    added back (every byte of every other row identical). After the rebuild it must be byte-identical.
+    A partially applied state is never accepted. Country file: always byte-identical."""
+    import hashlib
+
+    from _helpers import without_items
+
     from lexeval import build_countries, build_products
     from lexeval.build_common import write_csv
-    from lexeval.paths import config
+    from lexeval.paths import PILOT, config
+    from lexeval.pilot import load_treatments
+    records = sorted(f for f in os.listdir(PILOT) if os.path.isfile(os.path.join(PILOT, f)))
+    sha = lambda p: hashlib.sha256(open(p, "rb").read()).hexdigest()  # noqa: E731
+    before = {f: sha(os.path.join(PILOT, f)) for f in records}
     cfg = config()
     write_csv(tmp_path / "p.csv", build_products.build(cfg, []), build_products.FIELDS)
     write_csv(tmp_path / "c.csv", build_countries.build(cfg, []), build_countries.FIELDS)
-    assert (tmp_path / "p.csv").read_bytes() == open(os.path.join(GEN, "product_benchmark.csv"), "rb").read()
+    assert before == {f: sha(os.path.join(PILOT, f)) for f in records}, "build modified pilot/ files"
+    committed = open(os.path.join(GEN, "product_benchmark.csv"), "rb").read()
+    excl = {i for i, t in load_treatments().items() if t["authorised_treatment"] == "exclude"}
+    present = excl & {r["item_id"] for r in read_csv(os.path.join(GEN, "product_benchmark.csv"))}
+    assert present in (set(), excl), f"committed draft applies the exclusions only partially: {present}"
+    expected = committed if not present else without_items(committed, excl)
+    assert (tmp_path / "p.csv").read_bytes() == expected
     assert (tmp_path / "c.csv").read_bytes() == open(os.path.join(GEN, "country_benchmark.csv"), "rb").read()
 
 

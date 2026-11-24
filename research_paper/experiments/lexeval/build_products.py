@@ -47,6 +47,9 @@ EMOJI_NAME_EXCLUDE = re.compile(r"(o’clock|thirty|face|chart|e-mail|arrow|flag
 # The pattern above was fixed on 15 Nov 2026 by reading emoji NAMES only (no system outputs): it removes
 # names that denote scenes, activities, symbols or abstract things rather than tradeable goods.
 
+EXCLUDED_FIELDS = FIELDS + ["exclusion_reason", "decision_source", "review_item_no", "recorded_decision",
+                            "authorised_by", "authorised_on", "authorisation_record"]
+
 
 def _item(**kw):
     base = dict(expected="", label_hs="", label_base_types="", abstain_reason="", label_source="",
@@ -70,7 +73,13 @@ def _perturb(name, kind, r, forbidden, own_canon, min_len=4):
     return None
 
 
-def build(cfg, log):
+def build(cfg, log, audit=None, pilot_dir=None, treatments_path=None):
+    """Build the product benchmark. P7 review treatments come ONLY from the authoritative decisions file
+    (pilot/authorised_review_treatments_v1.csv), validated against the review records before any generation.
+    Authorised exclusions are removed after finalisation, so every other row is generated exactly as before;
+    the full original rows of excluded items are appended to `audit` (if given)."""
+    from .pilot import apply_review_treatments, load_treatments, provenance_log_entries
+    treatments = load_treatments(path=treatments_path, pilot_dir=pilot_dir)  # aborts on any problem
     seed = cfg["seed"]
     sizes = cfg["product_design"]
     hs6, excluded = load_hs6()
@@ -197,19 +206,10 @@ def build(cfg, log):
     r = rng_for(seed, "P7")
     plain = r.sample(pool_plain, min(sizes["outside_plain"], len(pool_plain)))
     look = r.sample(pool_look, min(sizes["outside_lookalike_max"], len(pool_look)))
-    from .pilot import lookalike_decisions, plain_exceptions  # human review (pre-declared rules)
-    decisions = lookalike_decisions()
-    reviewed = any(decisions.values())
-    exceptions = plain_exceptions()
+    # Review decisions are NOT applied here: see apply_review_treatments() after finalisation.
     for name, group, sub, conf in sorted(plain + look):
         la = bool(conf)
         iid = f"P7_outside|{name}"
-        if la and reviewed and decisions.get(iid, "") != "outside":
-            log.append(("lookalike_removed_after_review", f"{name}: {decisions.get(iid, 'missing')}"))
-            continue
-        if not la and exceptions is not None and canonical(name) in exceptions:
-            log.append(("plain_removed_after_review", name))
-            continue
         items.append(_item(item_id=iid, subset="P7_outside", text=name, expected="ABSTAIN",
                            abstain_reason="outside_catalogue", look_alike=la,
                            label_base_types=";".join(conf),
@@ -237,4 +237,6 @@ def build(cfg, log):
     for code, why in sorted(excluded.items()):
         log.append(("hs_code_excluded", f"{code}: {why}"))
     keyed = [dict(it, label_key=it["expected"] + ":" + it["label_hs"]) for it in items]
-    return finalize(keyed, "label_key", seed, cfg["dev_fraction"], log)
+    rows = finalize(keyed, "label_key", seed, cfg["dev_fraction"], log)
+    log.extend(provenance_log_entries(pilot_dir=pilot_dir, path=treatments_path))
+    return apply_review_treatments(rows, treatments, log, audit)
