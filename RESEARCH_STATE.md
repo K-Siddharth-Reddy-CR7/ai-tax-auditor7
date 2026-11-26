@@ -2,9 +2,10 @@
 
 **Checkpoint date:** 24 Nov 2026.
 **Written on branch:** `research/option-a-evaluation`, on top of commit `91b7305`. This file is committed as the next commit; run `git log -1` for its hash.
-**Updated 24 Nov 2026: CURRENT STAGE = PHASE A IMPLEMENTED AND TESTED; PHASES B–D NOT AUTHORISED.** See `IMPLEMENTATION_PLAN.md` and `research_paper/IMPLEMENTATION_CHANGES.md` §7.
+**Updated 26 Nov 2026: CURRENT STAGE = PHASE A ACCEPTED; PHASE B IMPLEMENTED AND TESTED; PHASES C–D NOT AUTHORISED.** See `IMPLEMENTATION_PLAN.md` (§8 overall sequence, §10 manuscript) and `research_paper/IMPLEMENTATION_CHANGES.md` §7–§8.
+- The eight-item pilot TEST exclusion is **implemented** (`research_paper/experiments/evaluation_exclusions_v1.json`, choke point `lexeval/eval_exclusions.py`). No evaluation has been run.
+- The four P7 exclusions were authorised by the user and subsequently reviewed and approved by all four authors (user statement, 26 Nov 2026).
 - The four P7 exclusions (§8) are recorded in the authoritative decisions file `research_paper/experiments/pilot/authorised_review_treatments_v1.csv` and enforced by the builder. They are **NOT yet applied to the committed benchmark files**; that is the Phase D production rebuild, not yet authorised.
-- The eight-item pilot TEST exclusion is approved in principle but **NOT implemented**.
 - The last commit that changed generated benchmark data, generation code or configuration is **`a0129b8`** (verified in git history).
 
 **Purpose:** a self-contained handoff so a fresh session can continue the research without this conversation. Every number below was verified against repository files at the time of writing, unless it is marked **[UNVERIFIED]**.
@@ -14,7 +15,7 @@
 ## ⚠️ 0. NON-NEGOTIABLE RESEARCH INTEGRITY RULES (read first)
 1. **Never tune on the TEST split.** S1 parameter selection uses DEV only (`lexeval/tuning.py` filters `split == "dev"`).
 2. **Never use TEST results for any development, design or model-selection decision.** TEST is used once, after the freeze, for the final evaluation.
-3. **The 8 pilot-reviewed TEST items must be excluded from final TEST metrics** (§5). As of this checkpoint the exclusion is **proposed but NOT implemented in code**. It must be implemented before any TEST evaluation.
+3. **The 8 pilot-reviewed TEST items must be excluded from final TEST metrics** (§5). **Implemented in Phase B:** TEST rows are obtained only through `lexeval/eval_exclusions.load_test_items()`, which requires the exclusion-file hash from the freeze manifest. Every metric function also rejects rows with an excluded ID.
 4. **Every exclusion must be documented with its reason and count**, and reported in the paper.
 5. **Uncertain items must never be silently treated as accepted examples.** The 3 look-alikes marked Uncertain and the 1 plain name marked "Flag for review" (§6–§8) may not be kept as gold DECLINE items without explicit author authorisation.
 6. **Never invent results, metrics, statistical significance or experimental outcomes.** No experiment has been run (§13).
@@ -176,7 +177,7 @@ P8 splits by kind:
 
 **Status of the exclusion:**
 - Proposed method ("Option A", `phase8_pilot_record_and_integrity.md`): an evaluation-time exclusion list read from `pilot_reviewed_items.json`. Labels and splits are unchanged; the list is hashed in the freeze manifest; the inspected items are reported separately; a cluster-level sensitivity analysis is added.
-- **Not implemented:** `lexeval/evaluate.py` does not read `pilot_reviewed_items.json` yet.
+- **Implemented (Phase B, 26 Nov 2026):** `evaluation_exclusions_v1.json` lists the 8 items, validated against `pilot_reviewed_items.json`, `pilot_review_sheet_v4.csv` and the benchmark. Its SHA-256 goes into the freeze manifest. The sibling clusters for the sensitivity analysis are fixed in the same file.
 
 ## 6. P7 look-alike review (completed): 16 decisions
 Source: `experiments/pilot/p7_lookalike_review_v4.csv`. Reviewer: Author 1. No comments on any item.
@@ -211,7 +212,7 @@ Source: `experiments/pilot/p7_lookalike_review_v4.csv`. Reviewer: Author 1. No c
 | Matter | Recorded decision | Pre-declared rule | Authorised to apply? | Applied? |
 |---|---|---|---|---|
 | Pilot (10 items) | 10 Accept | ≥ 9 Accept → rules accepted | n/a (no data change) | Yes (documentation only) |
-| 8 pilot items in TEST | Inspected | Exclude from every final TEST metric via `evaluation_exclusions_v1.json`; rows preserved (`IMPLEMENTATION_PLAN.md` Phase B) | Approved in principle; **implementation not authorised** | **No** |
+| 8 pilot items in TEST | Inspected | Exclude from every final TEST metric via `evaluation_exclusions_v1.json`; rows preserved (`IMPLEMENTATION_PLAN.md` Phase B) | **Yes** (Phase B authorised 26 Nov 2026) | **Implemented in code**; applied at evaluation time (no evaluation run yet) |
 | 13 Outside look-alikes | Outside | Keep as gold DECLINE | **No** | No (they are already in the draft as DECLINE) |
 | 3 Uncertain look-alikes (couch and lamp, toothbrush, video game) | Uncertain | Exclude; full rows kept in an audit file | **Yes: approved by the user on 24 Nov 2026** | **Recorded and enforced in code (Phase A); not yet applied to the committed files** (Phase D rebuild) |
 | #81 satellite antenna | Flag for review | **Author decision (24 Nov 2026): exclude as Uncertain.** The current code has no mapping for "Flag for review"; Phase A adds one via the decisions file, without editing the scan file | **Yes: approved** | **Recorded and enforced in code (Phase A); not yet applied to the committed files** (Phase D rebuild). The scan file is not edited |
@@ -310,7 +311,7 @@ Authors, in exact order (all: Dept. of CSE, Vardhaman College of Engineering, Hy
 - final submission checklist;
 - one comprehensive PR to `main` (to be opened only after stable results; left unmerged).
 
-**Current stage:** Phase A of `IMPLEMENTATION_PLAN.md` implemented and tested (24 Nov 2026). Phases B, C and D (including the production rebuild) await explicit author authorisation.
+**Current stage (26 Nov 2026):** Phase A accepted; Phase B implemented and tested. Phases C and D (including the production rebuild), the freeze, tuning, TEST evaluation and manuscript drafting each await explicit authorisation (`IMPLEMENTATION_PLAN.md` §8). The final deliverable includes a complete IEEE manuscript (`IMPLEMENTATION_PLAN.md` §10; workspace `research_paper/manuscript/`). After Phase B: experiment tests 114/114 pass, backend tests 63/63 pass.
 
 Author decisions of 24 Nov 2026 on the eight design questions (detail in `IMPLEMENTATION_PLAN.md` §1):
 1. single decisions file;

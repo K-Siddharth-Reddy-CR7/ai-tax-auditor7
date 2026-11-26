@@ -1,7 +1,9 @@
 # IMPLEMENTATION_PLAN.md — applying the review decisions and evaluation safeguards
 
-**Status (24 Nov 2026): PHASE A IMPLEMENTED AND TESTED. PHASES B, C AND D NOT AUTHORISED.**
+**Status (26 Nov 2026): PHASE A ACCEPTED (audit of `ead53a4`). PHASE B IMPLEMENTED AND TESTED. PHASES C AND D NOT AUTHORISED.**
 - Phase A added the decisions file and changed `lexeval/pilot.py`, `lexeval/build_products.py`, `run_all.py` and tests. Details: `research_paper/IMPLEMENTATION_CHANGES.md` §7.
+- Phase B added `evaluation_exclusions_v1.json` and the TEST choke point `lexeval/eval_exclusions.py`, and changed `lexeval/evaluate.py`, `lexeval/validate.py`, `run_all.py` and tests. Details: `IMPLEMENTATION_CHANGES.md` §8.
+- The final deliverable now includes a complete IEEE conference manuscript (§10).
 - No configuration, committed benchmark row, label, generated file, review record or scan file has been changed.
 - Nothing has been rebuilt, frozen, tuned or evaluated.
 - Written 24 Nov 2026 on `research/option-a-evaluation`.
@@ -45,7 +47,7 @@ Retained:
 - the 13 Outside look-alikes (gold DECLINE);
 - the 99 Clear plain names (gold DECLINE).
 
-## 3. Separate pilot evaluation exclusion (approved in principle; NOT yet implemented)
+## 3. Separate pilot evaluation exclusion (implemented in Phase B, 26 Nov 2026)
 These eight TEST items were inspected during the labelling-rule pilot. Their rows and labels stay in the benchmark, but they are excluded from **every** final TEST metric. IDs and splits were verified against `pilot/pilot_reviewed_items.json` and the benchmark files.
 
 | Pilot | Item ID | Benchmark | Category |
@@ -81,7 +83,15 @@ Tests for Phase A:
 - No writer overwrites an existing sheet.
 - Updated `tests/test_systems_and_data.py`: the determinism test compares against the *rebuilt* production files. **As implemented:** before Phase D it requires the committed draft minus exactly the 4 authorised rows (all other bytes identical); after Phase D, full byte-identity. It passes in both states and fails on partial application.
 
-### Phase B — Pilot evaluation-time exclusion
+### Phase B — Pilot evaluation-time exclusion (IMPLEMENTED 26 Nov 2026)
+**As implemented:**
+- The exclusions file is `research_paper/experiments/evaluation_exclusions_v1.json`.
+- The choke point is `lexeval/eval_exclusions.py::load_test_items`. It requires the manifest hash, validates, removes the 8 IDs, and returns an audit list.
+- A second, independent guard (`assert_no_excluded`) runs inside every metric function and on the item-level rows.
+- Sibling sensitivity outputs are written separately by `evaluate()` for the primary TEST evaluation.
+- The audit file is `<tag>_test_excluded_from_metrics.csv` in `results/processed/` (the per-run directory comes with the Phase C TEST lock).
+- Tests: 43 in `tests/test_eval_exclusions.py`.
+
 | Action | Files |
 |---|---|
 | **New** exclusions file. For each of the 8 items: ID, benchmark, split (`test`), category, reason ("inspected during labelling-rule pilot, 23 Nov 2026"), source `pilot/pilot_reviewed_items.json`. A separate `sensitivity_sibling_clusters` block is fixed *now*, before any TEST result (§6) | `research_paper/experiments/evaluation_exclusions_v1.json` |
@@ -119,6 +129,16 @@ Lock tests use temporary directories.
 
 ### Phase D — Production rebuild and validation
 These steps run only after Phases A–C pass their tests.
+0. **Correction carried over from the Phase A audit (required before step 2).**
+   - **Problem:** six Phase A tests in `tests/test_review_treatments.py` read the live `data/generated/product_benchmark.csv` as "the original pre-review draft":
+     - `test_decisions_match_every_review_record_and_draft_item`
+     - `test_build_equals_draft_minus_exactly_four_rows`
+     - `test_audit_file_holds_full_original_rows_and_reasons`
+     - `test_freeze_guard_refuses_current_pre_phase_d_draft`
+     - `test_freeze_guard_refuses_draft_still_containing_exclusions`
+     - `test_stage_freeze_refuses_without_writing_manifest`
+   - **Fix:** pin the original draft from git history at `a0129b8` (`git show a0129b8:research_paper/experiments/data/generated/product_benchmark.csv`). Verify its SHA-256 `4b69c5bb24ed519831490118e4d86ca2dfb38575cde4db5479c4e3feda1b5351` and make those tests use this immutable copy. Test both the pre-rebuild and post-rebuild states strictly.
+   - **Optional, also from the audit:** a header check on `excluded_items.csv` in the freeze guard; and a post-rebuild byte comparison of the production `excluded_items.csv` in the determinism test.
 1. Record the pre-rebuild hashes (above).
 2. `run_all.py --stage build`.
 3. **Exact-difference check** (script):
@@ -203,15 +223,20 @@ Derived on 24 Nov 2026 from the current benchmark files, the cluster definitions
 - The estimates in §5 assume the rebuild changes nothing except the 4 exclusions. This must be confirmed by the exact-difference check.
 - The new latency workload definition requires a `config.json` change, part of Phase C. It is approved in principle but not yet made.
 
-## 8. Corrected execution order
-1. **Phase A** code and tests (temporary-directory builds only).
-2. **Phase B** code and tests (synthetic fixtures only).
-3. **Phase C** code and tests.
-4. Full unit-test run. **No production rebuild before steps 1–3 pass.**
-5. **Phase D:** production rebuild, exact-difference check, validation, reproducibility checks, documentation.
-6. Present the freeze checklist and wait for author approval.
+## 8. Overall project sequence (updated 26 Nov 2026)
+Each step needs its own explicit authorisation.
+1. **Phase A:** review treatments. **Completed and accepted** (`ead53a4`).
+2. **Phase B:** evaluation exclusions. **Implemented and tested**; awaiting acceptance.
+3. **Phase C:** DEV-only latency, DEV-only tuning assertion, TEST lock with immutable run IDs.
+4. **Phase D:** the Phase A audit correction (step 0), production rebuild, exact-difference check, validation, reproducibility, documentation, freeze checklist. **No production rebuild before Phases A–C pass all tests.**
+5. **Benchmark freeze:** separate authorisation.
+6. **DEV tuning, then one TEST evaluation:** separate authorisation.
+7. **Experimental analysis and results audit.**
+8. **Complete manuscript (§10, Stage 2) and final author review.**
 
-**No TEST-set evaluation at any point in this plan.**
+The manuscript's Stage 1 (evidence-supported, results-independent sections, §10) may be prepared alongside steps 2–6 when authorised, without changing the engineering scope.
+
+**No TEST-set evaluation before step 6.**
 
 ## 9. Conditions required before freezing
 - [ ] Phases A–C implemented; all tests pass.
@@ -227,4 +252,44 @@ Derived on 24 Nov 2026 from the current benchmark files, the cluster definitions
 
 ---
 
-**Only Phase A has been authorised and implemented.** Await explicit author authorisation before Phases B, C or D.
+## 10. Final deliverable: IEEE conference manuscript (added 26 Nov 2026)
+The required final deliverable is a complete, academically defensible IEEE conference paper. It is prepared progressively from verified project evidence and verified literature, so that the authors can check it and rewrite it in their own voice. The workspace is `research_paper/manuscript/`; see its `README.md` and `outline.md`.
+
+**Working title:** "Silent Errors versus Safe Abstention in Staged Customs Pre-Assessment: An Empirical Study of Product and Jurisdiction Resolution". A more precise title may be proposed only once results exist. The research question is not to change.
+
+**Stage 1: evidence-supported draft (may proceed during Phases B–D when authorised).**
+- Sections: introduction and motivation, related work, research questions, system architecture, methodology, dataset construction, annotation protocol, evaluation design and metrics, limitations and threats to validity.
+- Sources: committed code, configuration, schemas and documents, plus verified references only.
+- Results-dependent statements are marked placeholders; unknown facts are marked for author confirmation.
+
+**Stage 2: complete manuscript (only after the freeze and the separately authorised experiments have been completed and audited).**
+- Populate results; generate tables and figures from the result files; report the specified statistics, the error-propagation analysis, the separate sibling sensitivity analysis, and latency with run-to-run variability.
+- Write the abstract and conclusion from actual findings, and report negative or inconclusive results.
+
+**Deliverables:**
+1. LaTeX source using the selected IEEE conference template;
+2. `.bib` bibliography;
+3. publication-quality figures;
+4. tables generated from result files;
+5. literature evidence and verification table;
+6. results-to-evidence traceability sheet;
+7. author verification checklist;
+8. unresolved methodological questions;
+9. AI-use disclosure draft;
+10. final PDF after the results are populated and formatting is checked.
+
+**Rules:**
+- **Accuracy:**
+  - real, verified references only;
+  - no invented results or capabilities; S1 is not to be described as better before the results show it;
+  - the system is a fixed sequential six-stage Python pipeline with no LLM, and TF-IDF retrieval is a prototype, not generative RAG;
+  - synthetic and prototype data, unofficial HS source, and no legal classification or compliance claims.
+- **Authorship:** author order as in `RESEARCH_STATE.md` §12; no invented contributions or approvals; all authors approve the final version.
+- **Venue:** the target conference, template and deadline are verified separately and must not be assumed.
+- **AI disclosure:** it must accurately cover research planning, literature research, code, evaluation design, statistical-analysis assistance and manuscript drafting.
+
+**Known constraint:** Crossref, OpenAlex, arXiv, DBLP and IEEE Xplore APIs were blocked by this environment's network policy (`literature_review.md` §1). Reference verification may need an allowlisted metadata host or author-exported BibTeX.
+
+---
+
+**Authorised so far: Phase A (accepted) and Phase B (implemented).** Await explicit authorisation before Phase C, Phase D, manuscript Stage 1 drafting, or any other step in §8.

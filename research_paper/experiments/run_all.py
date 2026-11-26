@@ -10,7 +10,8 @@ Stages (run in order):
   freeze    hash benchmarks into MANIFEST.json (requires --approved-by and a build that applied the validated
             authoritative review treatments; see freeze_preconditions)
   tune      select S1 parameters on DEV (requires frozen manifest)
-  evaluate  score B/S0/S1 + ladder on TEST, statistics, latency, figures (requires frozen manifest)
+  evaluate  score B/S0/S1 + ladder on TEST, statistics, latency, figures (requires frozen manifest); TEST rows
+            come only from lexeval.eval_exclusions.load_test_items (pilot-inspected items removed)
 """
 import argparse
 import hashlib
@@ -88,7 +89,7 @@ def stage_smoke():
     print(f"smoke: {n} canonical transactions; L0==S0, L5==S1, all systems agree on landed cost")
 
 
-def freeze_preconditions(gen_dir=None, pilot_dir=None):
+def freeze_preconditions(gen_dir=None, pilot_dir=None, exclusions_path=None):
     """Return a list of reasons the benchmark may NOT be frozen (empty list = review treatments verified).
 
     Checks the authoritative decisions file against the review records, and that the generated benchmark,
@@ -97,11 +98,16 @@ def freeze_preconditions(gen_dir=None, pilot_dir=None):
     from lexeval.build_common import read_csv
     from lexeval.pilot import (LOOKALIKE_FILE, PLAIN_PROGRESS_FILE, TREATMENTS_FILE, ReviewTreatmentError,
                                load_treatments, sha256_file)
+    from lexeval.eval_exclusions import EvaluationExclusionError, load_exclusions
     gen_dir, pilot_dir = gen_dir or GEN, pilot_dir or PILOT
     try:
         tre = load_treatments(pilot_dir=pilot_dir)
     except ReviewTreatmentError as e:
         return [f"decisions file invalid: {e}"]
+    try:  # Phase B: the TEST evaluation exclusions must be valid against this benchmark
+        load_exclusions(exclusions_path, gen_dir=gen_dir, pilot_dir=pilot_dir)
+    except (EvaluationExclusionError, FileNotFoundError) as e:
+        return [f"evaluation exclusions invalid: {e}"]
     excl = {i for i, t in tre.items() if t["authorised_treatment"] == "exclude"}
     keep = set(tre) - excl
     problems = []
@@ -157,10 +163,12 @@ def stage_freeze(approved_by):
     problems = freeze_preconditions()
     if problems:
         sys.exit("Freeze refused:\n- " + "\n- ".join(problems))
+    from lexeval.eval_exclusions import exclusions_sha256
     from lexeval.pilot import TREATMENTS_FILE
     man = {"approved_by": approved_by,
            "files": {f: _sha(os.path.join(GEN, f)) for f in DATA_FILES + [EXCLUDED_FILE]},
            "review_treatments_sha256": _sha(os.path.join(PILOT, TREATMENTS_FILE)),
+           "evaluation_exclusions_sha256": exclusions_sha256(),
            "config_sha256": _sha(os.path.join(EXP, "config.json"))}
     with open(MANIFEST, "w", encoding="utf-8") as fh:
         json.dump(man, fh, indent=2)
@@ -175,16 +183,20 @@ def stage_tune(cfg):
 
 
 def stage_evaluate(cfg):
-    _require_frozen()
+    man = _require_frozen()
+    ex_sha = man.get("evaluation_exclusions_sha256")
+    if not ex_sha:
+        sys.exit("Evaluation refused: the freeze manifest does not record the evaluation exclusions hash.")
     from lexeval import evaluate, figures, latency
     from lexeval.systems import ladder_systems, primary_systems
     from lexeval.tuning import load_tuned
     s1c = load_tuned()
-    evaluate.evaluate(primary_systems(s1c), "test", "primary")
+    evaluate.evaluate(primary_systems(s1c), "test", "primary", exclusions_sha256=ex_sha)
     ladder = ladder_systems(s1c)
     evaluate.evaluate(ladder, "test", "ladder",
                       pairs=[(a, b) for (a, _), (b, _) in zip(
-                          [(k, None) for k in list(ladder)[:6]], [(k, None) for k in list(ladder)[1:6]])])
+                          [(k, None) for k in list(ladder)[:6]], [(k, None) for k in list(ladder)[1:6]])],
+                      exclusions_sha256=ex_sha)
     latency.measure(latency.raw_systems(s1c), cfg)
     figures.ensure_dir()
     print("evaluation complete; see results/processed and results/latency.json")

@@ -14,8 +14,9 @@ The manuscript has not been drafted. Nothing is submission-ready.
 - [x] C1 approved and implemented; C2 deferred; C3 approved and implemented
 - [x] Canonical repository URL confirmed by the authors: `https://github.com/K-Siddharth-Reddy-CR7/ai-tax-auditor7`
 - [x] **Pilot (Author 1, sole reviewer):** 10/10 Accept, no comments (reported 23 Nov 2026); see `phase8_pilot_record_and_integrity.md`
-- [ ] Approve Option A: exclude the 8 inspected TEST items from final metrics (proposed, not implemented)
-- [ ] **P7 review (Author 1):** 16 look-alikes (`pilot/p7_lookalike_review_v4.csv`) + 100-name scan (`pilot/p7_plain_scan_v4.txt`) (≈ 10–15 min)
+- [x] Option A: exclude the 8 inspected TEST items from final metrics. Approved in principle 24 Nov; implemented in Phase B on 26 Nov 2026 (`experiments/evaluation_exclusions_v1.json`)
+- [ ] Authors confirm the Phase B exclusion list and wording (the file records the user's authorisation; author confirmation is to be recorded here)
+- [x] **P7 review (Author 1):** 16 look-alikes and the 100-name scan, completed. The 4 exclusions were authorised by the user and then reviewed and approved by all four authors (user statement, 26 Nov 2026); recorded in `experiments/pilot/authorised_review_treatments_v1.csv`
 - [x] Tuning constraint: strict "SER ≤ SER(B) on DEV" retained; not to be relaxed after results
 - [x] External fuzzy-matching baseline: deferred until initial results
 - [x] Open Products Facts: licence not established, so withdrawn; replaced by Unicode emoji names (Unicode License v3)

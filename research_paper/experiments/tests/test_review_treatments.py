@@ -71,6 +71,9 @@ def built(tmp_path_factory):
     write_csv(str(out / run_all.EXCLUDED_FILE), audit, build_products.EXCLUDED_FIELDS)
     with open(out / "build_log.json", "w", encoding="utf-8") as fh:
         json.dump(log, fh, indent=1)
+    # Phase B: the freeze guard also validates the TEST evaluation exclusions, which need the country benchmark
+    # (unchanged by Phase A, so a byte copy of the committed file).
+    shutil.copy(os.path.join(GEN, "country_benchmark.csv"), out / "country_benchmark.csv")
     return {"items": items, "audit": audit, "log": log, "gen": out, "pilot": pdir}
 
 

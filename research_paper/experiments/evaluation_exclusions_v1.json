@@ -1,0 +1,146 @@
+{
+  "schema": "lexitax-evaluation-exclusions/1",
+  "purpose": "Items inspected during the labelling-rule pilot are excluded from every final TEST metric. Evaluation-time exclusion only: benchmark rows, labels and splits are not changed.",
+  "authorisation": {
+    "approved_in_principle": "2026-11-24 (author decision 3, IMPLEMENTATION_PLAN.md s1 and s3)",
+    "implementation_authorised": "2026-11-26 (Phase B authorised by the user in the research session)",
+    "authorised_by": "User (research session instruction); author confirmation to be recorded in author_review_checklist.md"
+  },
+  "source_records": {
+    "pilot/pilot_reviewed_items.json": "ce958c65996b1b7312ca621a55aaddc5e6d956e2916507c6902480e7ba4b384e",
+    "pilot/pilot_review_sheet_v4.csv": "ec8e11edff4fbec412d771822e85e7e2039a165110a1bd6549ee36fd4d00356c"
+  },
+  "pilot": {
+    "reviewer": "Author 1 (Syeda Sayeeda Farhath), sole reviewer",
+    "decisions_reported": "2026-11-23"
+  },
+  "exclusions": [
+    {
+      "pilot_id": "P01",
+      "item_id": "P2_format|Scanner|ws_punct",
+      "benchmark": "product",
+      "split": "test",
+      "category": "P2_format",
+      "text": "Scanner ",
+      "cluster": "base:Scanner",
+      "pilot_decision": "Accept",
+      "reason": "Inspected by a human reviewer (Author 1) during the 10-item labelling-rule pilot; decisions reported 23 Nov 2026. The item text and gold label were seen before evaluation (no system output was shown), so the item is excluded from every reported TEST metric. Its benchmark row and label are unchanged.",
+      "source_record": "pilot/pilot_reviewed_items.json"
+    },
+    {
+      "pilot_id": "P02",
+      "item_id": "P3_typo|Graphics Card|typo|0",
+      "benchmark": "product",
+      "split": "test",
+      "category": "P3_typo",
+      "text": "Graphics Chrd",
+      "cluster": "base:Graphics Card",
+      "pilot_decision": "Accept",
+      "reason": "Inspected by a human reviewer (Author 1) during the 10-item labelling-rule pilot; decisions reported 23 Nov 2026. The item text and gold label were seen before evaluation (no system output was shown), so the item is excluded from every reported TEST metric. Its benchmark row and label are unchanged.",
+      "source_record": "pilot/pilot_reviewed_items.json"
+    },
+    {
+      "pilot_id": "P03",
+      "item_id": "P4_short|WiFi Adapter|head_noun",
+      "benchmark": "product",
+      "split": "test",
+      "category": "P4_short",
+      "text": "Adapter",
+      "cluster": "base:WiFi Adapter",
+      "pilot_decision": "Accept",
+      "reason": "Inspected by a human reviewer (Author 1) during the 10-item labelling-rule pilot; decisions reported 23 Nov 2026. The item text and gold label were seen before evaluation (no system output was shown), so the item is excluded from every reported TEST metric. Its benchmark row and label are unchanged.",
+      "source_record": "pilot/pilot_reviewed_items.json"
+    },
+    {
+      "pilot_id": "P05",
+      "item_id": "P6_ambiguous|word|computer",
+      "benchmark": "product",
+      "split": "test",
+      "category": "P6_ambiguous",
+      "text": "Computer",
+      "cluster": "P6_ambiguous|word|computer",
+      "pilot_decision": "Accept",
+      "reason": "Inspected by a human reviewer (Author 1) during the 10-item labelling-rule pilot; decisions reported 23 Nov 2026. The item text and gold label were seen before evaluation (no system output was shown), so the item is excluded from every reported TEST metric. Its benchmark row and label are unchanged.",
+      "source_record": "pilot/pilot_reviewed_items.json"
+    },
+    {
+      "pilot_id": "P06",
+      "item_id": "P7_outside|card index",
+      "benchmark": "product",
+      "split": "test",
+      "category": "P7_outside",
+      "text": "card index",
+      "cluster": "P7_outside|card index",
+      "pilot_decision": "Accept",
+      "reason": "Inspected by a human reviewer (Author 1) during the 10-item labelling-rule pilot; decisions reported 23 Nov 2026. The item text and gold label were seen before evaluation (no system output was shown), so the item is excluded from every reported TEST metric. Its benchmark row and label are unchanged.",
+      "source_record": "pilot/pilot_reviewed_items.json"
+    },
+    {
+      "pilot_id": "P07",
+      "item_id": "P8_hs|other_chapter|080122",
+      "benchmark": "product",
+      "split": "test",
+      "category": "P8_hs_formal",
+      "text": "Nuts, edible; brazil nuts, fresh or dried, shelled",
+      "cluster": "P8_hs|other_chapter|080122",
+      "pilot_decision": "Accept",
+      "reason": "Inspected by a human reviewer (Author 1) during the 10-item labelling-rule pilot; decisions reported 23 Nov 2026. The item text and gold label were seen before evaluation (no system output was shown), so the item is excluded from every reported TEST metric. Its benchmark row and label are unchanged.",
+      "source_record": "pilot/pilot_reviewed_items.json"
+    },
+    {
+      "pilot_id": "P09",
+      "item_id": "CB|DZ|official_name",
+      "benchmark": "country",
+      "split": "test",
+      "category": "J3_iso_name",
+      "text": "People's Democratic Republic of Algeria",
+      "cluster": "DZ",
+      "pilot_decision": "Accept",
+      "reason": "Inspected by a human reviewer (Author 1) during the 10-item labelling-rule pilot; decisions reported 23 Nov 2026. The item text and gold label were seen before evaluation (no system output was shown), so the item is excluded from every reported TEST metric. Its benchmark row and label are unchanged.",
+      "source_record": "pilot/pilot_reviewed_items.json"
+    },
+    {
+      "pilot_id": "P10",
+      "item_id": "CE|sint",
+      "benchmark": "country",
+      "split": "test",
+      "category": "J6_ambiguous",
+      "text": "Sint",
+      "cluster": "CE|sint",
+      "pilot_decision": "Accept",
+      "reason": "Inspected by a human reviewer (Author 1) during the 10-item labelling-rule pilot; decisions reported 23 Nov 2026. The item text and gold label were seen before evaluation (no system output was shown), so the item is excluded from every reported TEST metric. Its benchmark row and label are unchanged.",
+      "source_record": "pilot/pilot_reviewed_items.json"
+    }
+  ],
+  "dev_pilot_items_not_excluded": [
+    {
+      "pilot_id": "P04",
+      "item_id": "P5_confusable|Memory Card|typo_distinguishing_word",
+      "benchmark": "product",
+      "split": "dev",
+      "treatment": "not excluded: DEV items never enter TEST metrics (author decision 4, 24 Nov 2026)"
+    },
+    {
+      "pilot_id": "P08",
+      "item_id": "CD|NZ|es",
+      "benchmark": "country",
+      "split": "dev",
+      "treatment": "not excluded: DEV items never enter TEST metrics (author decision 4, 24 Nov 2026)"
+    }
+  ],
+  "sensitivity_sibling_clusters": {
+    "definition": "Secondary sensitivity analysis only (fixed 24 Nov 2026, before any TEST result). A sibling is a TEST item in the same benchmark sharing the cluster value of an excluded item. The analysis removes these clusters entirely and is reported separately; it never replaces the primary results.",
+    "product": [
+      "P6_ambiguous|word|computer",
+      "P7_outside|card index",
+      "P8_hs|other_chapter|080122",
+      "base:Graphics Card",
+      "base:Scanner",
+      "base:WiFi Adapter"
+    ],
+    "country": [
+      "CE|sint",
+      "DZ"
+    ]
+  }
+}

@@ -58,6 +58,16 @@ def validate():
             if len(tt) <= 12 and any(_jaccard(tt, dt) >= 0.9 for _, dt in dev_short):
                 near += 1
         st["test_items_with_near_duplicate_in_dev(jaccard>=0.9,<=12 tokens)"] = near
+    # Phase B: the TEST evaluation exclusions must be valid against these benchmark files
+    from .eval_exclusions import EXCLUSIONS_FILE, EvaluationExclusionError, load_exclusions
+    try:
+        spec, sha = load_exclusions(EXCLUSIONS_FILE)
+        report["stats"]["evaluation_exclusions"] = {
+            "file": os.path.basename(EXCLUSIONS_FILE),
+            "sha256": sha, "n_excluded": len(spec["exclusions"]),
+            "by_benchmark": dict(Counter(it["benchmark"] for it in spec["exclusions"]))}
+    except EvaluationExclusionError as e:
+        report["errors"].append(f"evaluation exclusions invalid: {e}")
     return report
 
 
