@@ -610,7 +610,7 @@ def test_real_repository_run_state_is_consistent():
                                                   "latency_dev.json", "dev")]
     if not os.path.exists(real.manifest):
         assert not [p for p in outputs if os.path.exists(p)], "outputs exist although nothing is frozen"
-        assert run_control.reconcile(real) == {"previous": [], "status": {}}
+        assert run_control.reconcile(real) == {"previous": [], "status": {}, "interrupted": []}
     else:
         run_control.verify_manifest(real)
         run_control.reconcile(real)

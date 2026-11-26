@@ -80,7 +80,7 @@ def _refused(paths, match):
 
 # ========================================================================== R1: reconciliation
 def test_valid_first_run_with_no_evidence(paths):
-    assert reconcile(paths) == {"previous": [], "status": {}}
+    assert reconcile(paths) == {"previous": [], "status": {}, "interrupted": []}
     run = open_run(paths, "synthetic test", now=_at(0))
     close_run(run)
     assert reconcile(paths)["status"] == {run.run_id: "completed"}
@@ -224,9 +224,15 @@ def test_documented_limit_consistent_rewrite_of_all_evidence(paths):
 
 
 def test_interrupted_run_is_a_documented_state_and_counts_as_previous(paths):
+    """Phase C.2 (D4) makes this stricter: an interrupted run reconciles, but no new TEST run is allowed until a
+    recovery has acknowledged it (the protection point of its outputs). It still counts as an earlier run."""
     run = open_run(paths, "synthetic test", now=_at(0))   # never closed (e.g. the process was killed)
     run_control._OPEN_RUNS.pop(run.run_id)
     assert reconcile(paths)["status"] == {run.run_id: "started"}
+    assert reconcile(paths)["interrupted"] == [run.run_id]
+    with pytest.raises(RunControlError, match="must be acknowledged"):
+        open_run(paths, "synthetic test", rerun_reason="after interrupted run", now=_at(1))
+    recover(paths, "author one", "acknowledge interrupted run")
     with pytest.raises(RunControlError, match="rerun-reason"):
         open_run(paths, "synthetic test", now=_at(1))
     nxt = open_run(paths, "synthetic test", rerun_reason="after interrupted run", now=_at(1))

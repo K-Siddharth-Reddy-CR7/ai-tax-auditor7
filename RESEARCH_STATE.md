@@ -2,7 +2,11 @@
 
 **Checkpoint date:** 24 Nov 2026.
 **Written on branch:** `research/option-a-evaluation`, on top of commit `91b7305`. This file is committed as the next commit; run `git log -1` for its hash.
-**Updated 26 Nov 2026: CURRENT STAGE = PHASES A AND B ACCEPTED; PHASE C CONDITIONALLY ACCEPTED; PHASE C.1 (CORRECTIONS) IMPLEMENTED AND TESTED; PHASE D NOT AUTHORISED.** See `IMPLEMENTATION_PLAN.md` (§8 overall sequence, §10 manuscript) and `research_paper/IMPLEMENTATION_CHANGES.md` §7–§10.
+**Updated 26 Nov 2026: CURRENT STAGE = PHASES A AND B ACCEPTED; PHASES C AND C.1 CONDITIONALLY ACCEPTED; PHASE C.2 (PRE-FREEZE CORRECTIONS D2–D5) IMPLEMENTED AND TESTED; PHASE D NOT AUTHORISED.**
+- **Phase C.2, D2 (recovery protocol v2):** recovery records form a sequence-numbered chain. Each recovery snapshots all surviving evidence and acknowledges every earlier record as present-verified, present-unverifiable or missing, so repeated loss of the log or of recovery entries stays recoverable. Recovery fails closed, writing nothing, on contradictory evidence: unreadable records, duplicate sequence numbers, a record whose bytes contradict a recorded hash, or unevidenced sequence gaps. No history is ever reconstructed.
+- **Phase C.2, D3 (close-time failures):** any exception during the close-time manifest check closes the run as aborted, preserving the original exception. `stage_evaluate` keeps the evaluation error and adds the close failure as a note.
+- **Phase C.2, D4 (interrupted runs):** a recovery acknowledges an interrupted run with a SHA-256 inventory of every file present; later changes are detected. A new TEST run is refused while an interrupted run is unacknowledged. The hashes do not establish integrity before the recovery.
+- **Phase C.2, D5 (nested modules):** code identity now includes nested Python modules (`lexeval/**/*.py`, `backend/lexitax_v2/**/*.py`), using the same expansion for hashing and for the commit-diff check. See `IMPLEMENTATION_PLAN.md` (§8 overall sequence, §10 manuscript) and `research_paper/IMPLEMENTATION_CHANGES.md` §7–§10.
 - **Phase C.1, run history (R1):** the TEST run log is reconciled against the run directories and recovery records before every TEST run. Inconsistencies block new runs until an authorised, evidence-preserving recovery (`--stage recover-runs`).
 - **Phase C.1, code identity (R2):** the freeze pins a code identity hash and the git commit, and requires a clean working tree. A TEST run refuses changed code or a dirty tree.
 - **Phase C.1, provenance (R3):** the tuning record is re-checked when loaded, and the manifest when a run closes; `run.json` records the Python and package versions.
@@ -328,7 +332,14 @@ Authors, in exact order (all: Dept. of CSE, Vardhaman College of Engineering, Hy
 - final submission checklist;
 - one comprehensive PR to `main` (to be opened only after stable results; left unmerged).
 
-**Current stage (26 Nov 2026):** Phases A and B accepted; Phase C conditionally accepted; Phase C.1 implemented and tested (experiment tests 232/232, backend 63/63). Phase D (including the production rebuild), the freeze, tuning, latency measurement, TEST evaluation and manuscript drafting each await explicit authorisation (`IMPLEMENTATION_PLAN.md` §8). The final deliverable includes a complete IEEE manuscript (`IMPLEMENTATION_PLAN.md` §10; workspace `research_paper/manuscript/`).
+**Current stage (26 Nov 2026):** Phases A and B accepted; Phases C and C.1 conditionally accepted; Phase C.2 implemented and tested (experiment tests 271/271, backend 63/63). Phase D (including the production rebuild), the freeze, tuning, latency measurement, TEST evaluation and manuscript drafting each await explicit authorisation (`IMPLEMENTATION_PLAN.md` §8). The final deliverable includes a complete IEEE manuscript (`IMPLEMENTATION_PLAN.md` §10; workspace `research_paper/manuscript/`).
+
+**Meaning of acknowledged history (Phase C.2):** a recovery record acknowledges evidence as found. It:
+- distinguishes runs whose log entries survive from runs whose entries are missing;
+- lists runs known only from the log or from earlier records;
+- marks earlier records as present-verified (an independent hash agrees), present-unverifiable (no surviving independent hash) or missing.
+
+It never restores missing entries, and it never vouches for content that can no longer be checked.
 
 **TEST run-log limits (stated honestly):**
 - The hash chain has no secret key. Anyone who can rewrite all local evidence consistently (log, run directories, recovery records) can produce an undetectable history, and deleting all evidence is undetectable locally.

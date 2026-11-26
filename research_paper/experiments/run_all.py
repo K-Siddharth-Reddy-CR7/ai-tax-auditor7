@@ -236,9 +236,11 @@ def stage_evaluate(cfg, split="", authorised_by="", rerun_reason="", paths=None)
         figures.figures_for_test_run(run)
     except BaseException as e:
         try:
-            close_run(run, "aborted", error=repr(e))
-        except RunControlError:
-            pass  # closed as aborted; the original error is re-raised below
+            close_run(run, "aborted", error=f"evaluation failed: {type(e).__name__}: {e}")
+        except RunControlError as ce:
+            # The run is recorded as aborted with both errors in close.json; the original evaluation error is
+            # re-raised and keeps the close-time failure as a note (neither error hides the other).
+            e.add_note(f"additionally, the close-time integrity check failed: {ce}")
         raise
     try:
         close_run(run, "completed")

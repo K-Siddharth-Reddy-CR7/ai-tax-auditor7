@@ -24,7 +24,7 @@ def make_code_repo(dest):
     dest = str(dest)
     os.makedirs(dest, exist_ok=True)
     for pat in CODE_IDENTITY_PATTERNS:
-        for p in glob.glob(os.path.join(REPO, pat)):
+        for p in glob.glob(os.path.join(REPO, pat), recursive=True):  # same expansion as code_identity
             rel = os.path.relpath(p, REPO)
             os.makedirs(os.path.dirname(os.path.join(dest, rel)), exist_ok=True)
             shutil.copy2(p, os.path.join(dest, rel))

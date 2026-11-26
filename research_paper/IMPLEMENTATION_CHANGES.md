@@ -122,3 +122,22 @@ No tuning, latency measurement, freeze, manifest or TEST evaluation was performe
 **Limits:**
 - Local hash chains are not cryptographic proof against an actor who consistently rewrites all local evidence; a test documents this.
 - Exact git-commit equality at TEST time is replaced by "frozen commit or a descendant with no changes to identity paths", because `MANIFEST.json` must be committed after the freeze.
+
+## 11. Phase C.2 changes (26 Nov 2026): pre-freeze corrections D2–D5 from the Phase C.1 audit
+No production build, rebuild, freeze, manifest, tuning, latency measurement or TEST evaluation. Benchmark files, review records, pilot decisions, exclusions, configuration, research design and selection rule are unchanged.
+| File | Change | Finding |
+|---|---|---|
+| `experiments/lexeval/run_control.py` | **Recovery protocol v2.** `_recovery_plan` collects every independent claim about earlier recovery records (log entries, other records) and refuses, writing nothing, on unreadable records, duplicate sequence numbers, hash contradictions or unevidenced sequence gaps. `recover` writes one sequence-numbered record: exact log bytes, full file inventory per run directory, earlier records as present-verified, present-unverifiable or missing, runs known only from the log or earlier records, each run's log-entry status, problems, and a statement of what it does not establish. It appends one entry and must leave a reconciling state. `reconcile` binds the latest record to the last log recovery entry, checks the list of earlier records, checks present earlier records against listed hashes, and checks every acknowledged run against its inventory; it now also reports interrupted runs | D2, D4 |
+| `experiments/lexeval/run_control.py` | `open_run` refuses while an interrupted run is unacknowledged. `recover` is allowed when an interrupted run needs acknowledgement | D4 |
+| `experiments/lexeval/run_control.py` | `close_run`: any exception from `verify_manifest` closes the run as aborted and is chained as the cause; errors outside that boundary propagate. `verify_manifest` raises `RunControlError` for an unreadable or non-object manifest, chaining the original error | D3 |
+| `experiments/lexeval/run_control.py` | `CODE_IDENTITY_PATTERNS` use `**/` for `lexeval` and `lexitax_v2`; hashing uses `glob(recursive=True)` and the commit-diff check uses an equivalent regex (`_pattern_regex`); `fnmatch` removed | D5 |
+| `experiments/run_all.py` | `stage_evaluate`: the close record holds the evaluation error and any close-time failure; the original exception is re-raised with the close failure as a note | D3 |
+| `experiments/tests/test_phase_c2.py` | **New**, 39 tests (D2 recovery sequences and fail-closed cases, D3 close failures, D4 interrupted outputs, D5 nested modules). Six were added after mutation runs exposed untested checks: a substituted missing record, an omitted earlier recovery, a non-`RunControlError` at close, and three edits to the preserved prefix or the recovery entry | D2–D5 |
+| `experiments/tests/_runfix.py` | Copies identity files with `glob(recursive=True)`, the same expansion as `code_identity` | D5 |
+| `experiments/tests/test_phase_c1.py`, `test_phase_c.py` | Exact `reconcile()` results include the new `interrupted` field. `test_interrupted_run_is_a_documented_state_and_counts_as_previous` is now stricter: a new run is refused until the interrupted run is acknowledged | D4 |
+
+**What a recovery establishes and what it does not:**
+- **Establishes:** the surviving evidence is fixed by hash from the recovery onward.
+- **Does not establish:** what missing entries or records contained, or the integrity of any file before the recovery. A record with no surviving independent hash is marked present-unverifiable.
+
+**Trust boundary:** all checks rely on local evidence. A consistent rewrite of all local evidence, or deletion of all of it, is undetectable locally. Committing runs, the log and recovery records to git is the external check.

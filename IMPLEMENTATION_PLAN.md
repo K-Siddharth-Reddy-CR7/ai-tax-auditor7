@@ -1,6 +1,7 @@
 # IMPLEMENTATION_PLAN.md — applying the review decisions and evaluation safeguards
 
-**Status (26 Nov 2026): PHASES A AND B ACCEPTED (audits of `ead53a4` and `f354cd7`). PHASE C CONDITIONALLY ACCEPTED (audit of `d6c683e`). PHASE C.1 IMPLEMENTED AND TESTED. PHASE D NOT AUTHORISED.**
+**Status (26 Nov 2026): PHASES A AND B ACCEPTED (audits of `ead53a4` and `f354cd7`). PHASES C AND C.1 CONDITIONALLY ACCEPTED (audits of `d6c683e` and `c103cac`). PHASE C.2 IMPLEMENTED AND TESTED. PHASE D NOT AUTHORISED.**
+- Phase C.2 (pre-freeze corrections D2–D5 from the C.1 audit) changed `lexeval/run_control.py`, `run_all.py` and the tests. Details: `IMPLEMENTATION_CHANGES.md` §11.
 - Phase C.1 (corrections from the Phase C audit) changed `lexeval/run_control.py`, `tuning.py`, `figures.py`, `run_all.py` and the tests. Details: `IMPLEMENTATION_CHANGES.md` §10.
 - Phase C added `lexeval/run_control.py` and changed `evaluate.py`, `tuning.py`, `latency.py`, `figures.py`, `eval_exclusions.py`, `run_all.py`, `config.json` (latency block) and tests. Details: `IMPLEMENTATION_CHANGES.md` §9.
 - Phase A added the decisions file and changed `lexeval/pilot.py`, `lexeval/build_products.py`, `run_all.py` and tests. Details: `research_paper/IMPLEMENTATION_CHANGES.md` §7.
@@ -157,6 +158,26 @@ Lock tests use temporary directories.
 - **Tie-breaks:** documented as described in `RESEARCH_STATE.md` §9 and recorded in the tuning record.
 - **Phase C tests:** now state-aware, comparing before and after a test instead of requiring that no manifest exists.
 
+### Phase C.2 — Pre-freeze corrections from the Phase C.1 audit (IMPLEMENTED 26 Nov 2026)
+**D2, recovery protocol v2** (`run_control.recover`, `_recovery_plan`, `reconcile`):
+- **Records:** every recovery writes one new, sequence-numbered record (schema `lexitax-run-recovery/2`) and appends one log entry. The record snapshots:
+  - the exact log bytes;
+  - a full file inventory with hashes for every run directory;
+  - every earlier recovery record (present-verified, present-unverifiable or missing, with its hash and the sources of that hash);
+  - runs known only from the log or from earlier records;
+  - each run's log-entry status;
+  - the problems found.
+- **Reconciliation** binds the latest record to the last recovery entry in the log, and requires the latest record to list every earlier sequence number. It checks every present earlier record against its listed hash and every acknowledged run against its inventory.
+- **Repeated loss of the log or of recovery entries is recoverable**, because the next record acknowledges the surviving earlier records.
+- **Fails closed (writes nothing)** on unreadable records, duplicate sequence numbers, a record contradicted by a recorded hash, or unevidenced sequence gaps. The remedy is to restore the record from version control.
+- **Never reconstructed:** no 'started' or 'completed' history is ever recreated.
+
+**D3, close-time failures:** `close_run` treats any exception from the manifest check as a close-integrity failure (closed as aborted, evidence kept, original exception chained). `verify_manifest` reports an unreadable manifest as a `RunControlError`. `stage_evaluate` re-raises the original evaluation error with the close failure added as a note, and the close record holds both errors. Errors outside the verification boundary are not caught.
+
+**D4, interrupted runs:** a recovery is also allowed (and required before any new TEST run) when an interrupted run is unacknowledged. The record keeps a SHA-256 inventory of every file present then; later modified, deleted or added files are detected. A repeated recovery records any change since the previous acknowledgement instead of hiding it. Recovery-time hashes do not establish integrity before the recovery.
+
+**D5, nested modules:** the identity patterns are `lexeval/**/*.py` and `backend/lexitax_v2/**/*.py`. The same expansion is used for hashing (`glob(recursive=True)`) and for the commit-diff check (regex translation). Today's inventory is unchanged at 38 files.
+
 ### Phase D — Production rebuild and validation
 These steps run only after Phases A–C pass their tests.
 0. **Correction carried over from the Phase A audit (required before step 2).**
@@ -259,7 +280,8 @@ Each step needs its own explicit authorisation.
 1. **Phase A:** review treatments. **Completed and accepted** (`ead53a4`).
 2. **Phase B:** evaluation exclusions. **Completed and accepted** (`f354cd7`).
 3. **Phase C:** DEV-only latency and tuning, the single TEST route with permanent run controls, figure paths (DEV-only risk–coverage), ladder tests. **Conditionally accepted** (`d6c683e`).
-3a. **Phase C.1:** run-log reconciliation and recovery, code identity at freeze, provenance re-checks, full-pipeline DEV grid, tie-break documentation, state-aware tests. **Implemented and tested**; awaiting acceptance.
+3a. **Phase C.1:** run-log reconciliation and recovery, code identity at freeze, provenance re-checks, full-pipeline DEV grid, tie-break documentation, state-aware tests. **Conditionally accepted** (`c103cac`).
+3b. **Phase C.2:** recovery protocol v2 (D2), close-time failure handling (D3), interrupted-run output protection (D4), nested-module code identity (D5). **Implemented and tested**; awaiting acceptance.
 4. **Phase D:** the Phase A audit correction (step 0), production rebuild, exact-difference check, validation, reproducibility, documentation, freeze checklist. **No production rebuild before Phases A–C pass all tests.**
 5. **Benchmark freeze:** separate authorisation.
 6. **DEV tuning, then one TEST evaluation:** separate authorisation.
@@ -324,4 +346,4 @@ The required final deliverable is a complete, academically defensible IEEE confe
 
 ---
 
-**Authorised so far: Phases A and B (accepted), Phase C (conditionally accepted) and Phase C.1 (implemented).** Await explicit authorisation before Phase D, manuscript Stage 1 drafting, or any other step in §8.
+**Authorised so far: Phases A and B (accepted), Phases C and C.1 (conditionally accepted) and Phase C.2 (implemented).** Await explicit authorisation before Phase D, manuscript Stage 1 drafting, or any other step in §8.

@@ -29,7 +29,9 @@ python run_all.py --stage evaluate --split test --authorised-by "<name>"   # the
 #   -> results/runs/<run_id>/ (permanent, read-only), logged in results/test_runs.jsonl
 #   a further TEST run additionally needs --rerun-reason "<why>"
 python run_all.py --stage recover-runs --authorised-by "<name>" --recovery-reason "<why>"
-#   only if the run history fails reconciliation; evidence-preserving (nothing deleted or rewritten)
+#   only if the run history fails reconciliation or an interrupted run must be acknowledged (required before
+#   any new TEST run). Evidence-preserving and append-only: one new sequence-numbered record per recovery,
+#   nothing deleted, rewritten or reconstructed; refuses (fail closed) on contradictory recovery records
 ```
 
 ## Layout
