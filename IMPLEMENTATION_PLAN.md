@@ -1,6 +1,7 @@
 # IMPLEMENTATION_PLAN.md — applying the review decisions and evaluation safeguards
 
-**Status (26 Nov 2026): PHASE A ACCEPTED (audit of `ead53a4`). PHASE B IMPLEMENTED AND TESTED. PHASES C AND D NOT AUTHORISED.**
+**Status (26 Nov 2026): PHASES A AND B ACCEPTED (audits of `ead53a4` and `f354cd7`). PHASE C IMPLEMENTED AND TESTED. PHASE D NOT AUTHORISED.**
+- Phase C added `lexeval/run_control.py` and changed `evaluate.py`, `tuning.py`, `latency.py`, `figures.py`, `eval_exclusions.py`, `run_all.py`, `config.json` (latency block) and tests. Details: `IMPLEMENTATION_CHANGES.md` §9.
 - Phase A added the decisions file and changed `lexeval/pilot.py`, `lexeval/build_products.py`, `run_all.py` and tests. Details: `research_paper/IMPLEMENTATION_CHANGES.md` §7.
 - Phase B added `evaluation_exclusions_v1.json` and the TEST choke point `lexeval/eval_exclusions.py`, and changed `lexeval/evaluate.py`, `lexeval/validate.py`, `run_all.py` and tests. Details: `IMPLEMENTATION_CHANGES.md` §8.
 - The final deliverable now includes a complete IEEE conference manuscript (§10).
@@ -105,7 +106,17 @@ Tests for Phase B (**new** `tests/test_eval_exclusions.py`, synthetic fixtures o
 - a stale or non-TEST exclusion ID aborts evaluation;
 - a manifest hash mismatch aborts evaluation.
 
-### Phase C — Evaluation and latency safeguards
+### Phase C — Evaluation and latency safeguards (IMPLEMENTED 26 Nov 2026)
+**As implemented** (details in `IMPLEMENTATION_CHANGES.md` §9):
+- **Single TEST route:** `run_all.py --stage evaluate --split test --authorised-by NAME [--rerun-reason TEXT]`. `evaluate()` and `load()` take no hash and accept TEST only with an open run from `run_control.open_run`, which verifies every manifest hash.
+- **Per-item guards:** `run_product_task` and `run_country_task` refuse excluded IDs always, refuse rows without split `dev`/`test`, and refuse TEST rows outside an open run.
+- **Tuning:** DEV-only checks; the record is never overwritten. The selection rule is unchanged.
+- **Latency:** DEV-only, with separate product and country workloads, run-to-run variability and no TEST fallback; it is a separate `--stage latency`.
+- **Risk–coverage figure:** DEV only (author decision, 26 Nov 2026), drawn from the DEV tuning grid and the B/S0/S1 DEV evaluation by `--stage tune`. The TEST-grid version was removed.
+- **TEST figures:** drawn inside the run from its own outputs, after split and exclusion checks.
+- **Ladder:** the pairs helper `evaluate.ladder_pairs`, tested with and without sensitivity outputs.
+- **Run controls:** permanent run IDs, `results/runs/<run_id>/`, a hash-chained append-only `results/test_runs.jsonl`, exclusive-create outputs made read-only at close, and logged aborted runs.
+
 | Action | Files |
 |---|---|
 | **Latency:** the default and only permitted split is `dev`. Requesting `test` raises an error. Product workload = all DEV product items (estimate: 270 after Phase A), each with a canonical table country. Country workload = all DEV country items (655), each with a canonical product. Each workload is timed **separately**: 200 warm-up calls, then 30 repetitions over the whole workload. Report per workload and system: median, p95, p99, mean, SD, throughput, and **run-to-run variability** (spread and 95 % bootstrap interval of the 30 repetition medians). Record the environment (CPU model, cores, memory, OS, Python and package versions) | `lexeval/latency.py`, `run_all.py`, `config.json` (`latency` block: replace `workload_items: 1000` with per-workload definitions) |
@@ -137,6 +148,7 @@ These steps run only after Phases A–C pass their tests.
      - `test_freeze_guard_refuses_current_pre_phase_d_draft`
      - `test_freeze_guard_refuses_draft_still_containing_exclusions`
      - `test_stage_freeze_refuses_without_writing_manifest`
+     - plus, from the Phase B audit: `tests/test_eval_exclusions.py::test_protected_files_unchanged`, which pins the product benchmark hash `4b69c5bb…` that the rebuild changes on purpose
    - **Fix:** pin the original draft from git history at `a0129b8` (`git show a0129b8:research_paper/experiments/data/generated/product_benchmark.csv`). Verify its SHA-256 `4b69c5bb24ed519831490118e4d86ca2dfb38575cde4db5479c4e3feda1b5351` and make those tests use this immutable copy. Test both the pre-rebuild and post-rebuild states strictly.
    - **Optional, also from the audit:** a header check on `excluded_items.csv` in the freeze guard; and a post-rebuild byte comparison of the production `excluded_items.csv` in the determinism test.
 1. Record the pre-rebuild hashes (above).
@@ -226,8 +238,8 @@ Derived on 24 Nov 2026 from the current benchmark files, the cluster definitions
 ## 8. Overall project sequence (updated 26 Nov 2026)
 Each step needs its own explicit authorisation.
 1. **Phase A:** review treatments. **Completed and accepted** (`ead53a4`).
-2. **Phase B:** evaluation exclusions. **Implemented and tested**; awaiting acceptance.
-3. **Phase C:** DEV-only latency, DEV-only tuning assertion, TEST lock with immutable run IDs.
+2. **Phase B:** evaluation exclusions. **Completed and accepted** (`f354cd7`).
+3. **Phase C:** DEV-only latency and tuning, the single TEST route with permanent run controls, figure paths (DEV-only risk–coverage), ladder tests. **Implemented and tested**; awaiting acceptance.
 4. **Phase D:** the Phase A audit correction (step 0), production rebuild, exact-difference check, validation, reproducibility, documentation, freeze checklist. **No production rebuild before Phases A–C pass all tests.**
 5. **Benchmark freeze:** separate authorisation.
 6. **DEV tuning, then one TEST evaluation:** separate authorisation.
@@ -292,4 +304,4 @@ The required final deliverable is a complete, academically defensible IEEE confe
 
 ---
 
-**Authorised so far: Phase A (accepted) and Phase B (implemented).** Await explicit authorisation before Phase C, Phase D, manuscript Stage 1 drafting, or any other step in §8.
+**Authorised so far: Phases A and B (accepted) and Phase C (implemented).** Await explicit authorisation before Phase D, manuscript Stage 1 drafting, or any other step in §8.

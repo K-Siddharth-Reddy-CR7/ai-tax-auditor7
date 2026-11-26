@@ -40,9 +40,13 @@
   },
   "tuning_rule": "STRICT (author decision 15 Nov 2026, not to be relaxed after observing results): maximise dev macro decision-accuracy over product categories P2-P7 subject to dev macro silent-error rate <= that of baseline B on dev; if no setting satisfies the constraint, report this honestly and select the setting with minimum dev macro silent-error rate; ties -> larger coverage threshold, fewer typo edits, longer min length",
   "latency": {
+    "split": "dev",
     "warmup_calls": 200,
     "repetitions": 30,
-    "workload_items": 1000
+    "workloads": {
+      "product": "all DEV product items, each with a canonical table country (rotating)",
+      "country": "all DEV country items, each with a canonical catalogue product (rotating)"
+    }
   },
   "bootstrap_resamples": 10000,
   "product_design": {

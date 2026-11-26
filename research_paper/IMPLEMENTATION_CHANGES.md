@@ -83,3 +83,23 @@ No evaluation, tuning, latency run, freeze or production rebuild was performed. 
 **Not covered here (later phases):**
 - `lexeval/latency.py::measure` still defaults to TEST inputs (timing only, no metrics). It is reachable only through the freeze-gated evaluate stage, and Phase C makes latency DEV-only.
 - `figures.risk_coverage` expects a TEST sensitivity grid file that no code produces yet. Any future producer must obtain rows through `load_test_items`.
+
+## 9. Phase C changes (26 Nov 2026): TEST route, DEV-only tuning and latency, figures, run controls (IMPLEMENTATION_PLAN.md Phase C)
+No tuning, latency measurement, freeze, manifest or TEST evaluation was performed. Benchmark files and review records are unchanged.
+| File | Change | Reason |
+|---|---|---|
+| `experiments/lexeval/run_control.py` | **New.** `verify_manifest`: every frozen hash (benchmarks, `excluded_items.csv`, config, decisions file, exclusions file, `approved_by`). `open_run`: requires the manifest, the DEV tuning record and `--authorised-by`, plus `--rerun-reason` after any earlier run; creates `results/runs/<UTC-timestamp>-<hash8>/` (never reused); writes `run.json` with all input and code hashes; appends to a hash-chained `results/test_runs.jsonl`. `close_run`: hashes all outputs, makes them read-only, logs completed or aborted. `require_run` rejects missing, forged or closed handles | Permanent TEST run controls; single TEST route |
+| `experiments/lexeval/evaluate.py` | `evaluate()` and `load()` no longer accept an exclusion hash: TEST requires an open run, and the hash comes from its verified manifest. `run_product_task` and `run_country_task` call `check_items`: excluded IDs are always refused, split must be dev or test, and TEST rows need an open run. Item rows carry `split`. TEST outputs go to the run directory with exclusive create. A provenance file is written per evaluation, and `ladder_pairs()` is added. DEV outputs default to `results/dev` | Phase B audit routes 2 and 3 |
+| `experiments/lexeval/eval_exclusions.py` | `write_audit(..., exclusive)` | Never overwrite TEST outputs |
+| `experiments/lexeval/tuning.py` | `assert_dev_only` on every input path (file or caller-supplied rows; missing, empty, `test`, mixed and wrong-case splits rejected); `select()` factored out with the rule unchanged; the record states split `dev`, the input hash and the DEV item-ID hash, and is created exclusively. DEV P1–P7 grid metrics are stored for the figure only (not used in selection); `load_tuned` refuses non-DEV records | DEV-only tuning |
+| `experiments/lexeval/latency.py` | DEV-only `workloads()` and `measure()`: TEST is refused and there is no fallback. Product and country workloads are timed separately, with per-call median, p95, p99, mean and SD, throughput and run-to-run variability. An interpretation note is recorded; `results/latency_dev.json` is created exclusively | DEV-only latency |
+| `experiments/lexeval/figures.py` | `risk_coverage` (TEST grid, no producer) replaced by `risk_coverage_dev` (DEV inputs only). `dev_figures()` and `figures_for_test_run()` check split and excluded IDs in item outputs before plotting, and record input hashes. `outcome_bars` handles one subset | Phase B audit route 4; author decision on the DEV-only figure |
+| `experiments/run_all.py` | `_require_frozen` verifies every manifest hash. `tune` adds the DEV evaluation and DEV figure; new `latency` stage; `evaluate` needs `--split test --authorised-by` (and `--rerun-reason` for reruns) and runs primary, ladder and TEST figures inside one logged run | Single TEST route |
+| `experiments/config.json` | `latency` block: `workload_items: 1000` replaced by `split: dev` and separate product and country workload definitions | Approved latency design |
+| `experiments/tests/test_phase_c.py`, `tests/_runfix.py` | **New**, 59 tests on synthetic benchmarks and manifests in temporary directories | Phase C acceptance tests |
+| `experiments/tests/test_eval_exclusions.py` | The TEST fixture now opens an authorised run instead of passing a hash; two tests were rewritten for the new API (refusal without an authorised run; manifest lacking the exclusion hash). Leak checks extended to the run records | Required by the API change; assertions kept |
+| `experiments/tests/test_pipeline_dryrun.py` | `test_latency_code_path` uses the new DEV-only result structure (both workloads checked) | Required by the API change |
+
+**Limits:**
+- Python cannot prevent deliberately written code from re-implementing the evaluation. The controls make the sanctioned route the only one this code accepts, and make any extra TEST run visible in the log.
+- The tests run as root, so read-only file modes are checked by their mode bits.

@@ -11,12 +11,14 @@ import json
 import os
 
 import pytest
+from _runfix import make_paths
 
 import run_all
 from lexeval import build_countries, build_products, eval_exclusions, evaluate, figures
 from lexeval.build_common import read_csv, write_csv
 from lexeval.eval_exclusions import EvaluationExclusionError
 from lexeval.paths import EXP, GEN, PILOT
+from lexeval.run_control import AuthorisedTestRun, RunControlError, close_run, open_run
 from lexeval.systems import primary_systems
 
 AUTHORISED = {  # item_id -> (pilot_id, benchmark, category)
@@ -371,11 +373,14 @@ def test_choke_point_stops_on_invalid_file(syn):
 # ------------------------------------------------------------------------- end-to-end on the synthetic benchmark
 @pytest.fixture
 def evaluated(syn, tmp_path, monkeypatch):
-    res = tmp_path / "results"
-    monkeypatch.setattr(evaluate, "RESULTS", str(res))
-    prows, crows, _ = evaluate.evaluate(primary_systems(), "test", "primary", exclusions_sha256=syn["sha"],
-                                        gen_dir=syn["gen"], exclusions_path=syn["path"], pilot_dir=syn["pilot"])
-    return {"res": res, "prows": prows, "crows": crows, **syn}
+    # Phase C: TEST evaluation runs only inside an authorised run opened from a verified (synthetic) manifest.
+    monkeypatch.setattr(evaluate, "RESULTS", str(tmp_path / "unused_results"))
+    paths = make_paths(tmp_path, syn["gen"], syn["path"], syn["pilot"])
+    run = open_run(paths, "synthetic test")
+    prows, crows, _ = evaluate.evaluate(primary_systems(), "test", "primary", run=run)
+    close_run(run)
+    from pathlib import Path
+    return {"res": Path(run.run_dir), "prows": prows, "crows": crows, "run": run, **syn}
 
 
 def _all_outputs(res):
@@ -390,6 +395,7 @@ def test_no_excluded_item_reaches_any_output(evaluated):
     # The audit file lists the excluded items; the sensitivity info file lists the pre-declared cluster NAMES
     # (for singleton clusters a name equals an item ID). Neither holds metric values; both are checked below.
     metadata = {"primary_test_excluded_from_metrics.csv", "primary_test_sensitivity_siblings_info.json"}
+    # Phase C run records (no item IDs): run.json, output hashes and the provenance file are leak-checked too.
     info = json.load(open(evaluated["res"] / "processed" / "primary_test_sensitivity_siblings_info.json"))
     assert set(info) == {"definition", "exclusions_sha256", "product_clusters", "country_clusters",
                          "product_sibling_items_removed", "country_sibling_items_removed"}
@@ -402,7 +408,8 @@ def test_no_excluded_item_reaches_any_output(evaluated):
             assert needle not in text, f"{needle!r} leaked into {os.path.relpath(path, evaluated['res'])}"
         checked.add(os.path.basename(path))
     sens = "primary_sensitivity_siblings_removed_test"
-    assert checked == {"primary_test_outputs.jsonl", "primary_test_product_items.csv", "primary_test_country_items.csv",
+    assert checked == {"run.json", "outputs_sha256.json", "primary_test_provenance.json",
+                       "primary_test_outputs.jsonl", "primary_test_product_items.csv", "primary_test_country_items.csv",
                        "primary_test_malformed_items.csv", "primary_test_product_summary.csv",
                        "primary_test_identification_summary.csv", "primary_test_tax_behaviour_summary.csv",
                        "primary_test_paired_tests.csv", f"{sens}_product_summary.csv",
@@ -475,14 +482,24 @@ def test_every_metric_function_rejects_excluded_rows():
     eval_exclusions.assert_no_excluded([ok], "any")
 
 
-def test_evaluate_test_refuses_without_hash_and_writes_nothing(syn, tmp_path, monkeypatch):
-    res = tmp_path / "results"
+def test_evaluate_test_refuses_without_authorised_run_and_writes_nothing(syn, tmp_path, monkeypatch):
+    """Phase C replaces the caller-supplied hash: TEST needs an open run whose manifest verifies."""
+    res = tmp_path / "evaluate_results"  # distinct from make_paths' results dir
     monkeypatch.setattr(evaluate, "RESULTS", str(res))
-    for sha in (None, "f" * 64):
-        with pytest.raises(EvaluationExclusionError):
-            evaluate.evaluate(primary_systems(), "test", "primary", exclusions_sha256=sha, gen_dir=syn["gen"],
-                              exclusions_path=syn["path"], pilot_dir=syn["pilot"])
-    assert not res.exists()
+    with pytest.raises(RunControlError):
+        evaluate.evaluate(primary_systems(), "test", "primary")
+    forged = AuthorisedTestRun("forged", str(tmp_path / "forged"), None,
+                               {"evaluation_exclusions_sha256": syn["sha"]}, {})
+    with pytest.raises(RunControlError):
+        evaluate.evaluate(primary_systems(), "test", "primary", run=forged)
+    # a manifest recording a different exclusion hash cannot be opened
+    paths = make_paths(tmp_path, syn["gen"], syn["path"], syn["pilot"])
+    man = json.load(open(paths.manifest))
+    man["evaluation_exclusions_sha256"] = "f" * 64
+    json.dump(man, open(paths.manifest, "w"))
+    with pytest.raises(RunControlError, match="evaluation_exclusions"):
+        open_run(paths, "synthetic test")
+    assert not res.exists() and not os.path.exists(paths.runs)
 
 
 def test_unknown_split_refused():
@@ -506,10 +523,11 @@ def test_benchmark_rows_unchanged_by_evaluation(evaluated):
 
 
 # ---------------------------------------------------------------------------------------- freeze / evaluate stage
-def test_stage_evaluate_refuses_manifest_without_exclusions_hash(monkeypatch):
-    monkeypatch.setattr(run_all, "_require_frozen", lambda: {"files": {}})
-    with pytest.raises(SystemExit, match="exclusions hash"):
-        run_all.stage_evaluate({})
+def test_stage_evaluate_refuses_manifest_without_exclusions_hash(syn, tmp_path):
+    paths = make_paths(tmp_path, syn["gen"], syn["path"], syn["pilot"], omit="evaluation_exclusions_sha256")
+    with pytest.raises(SystemExit, match="evaluation_exclusions_sha256"):
+        run_all.stage_evaluate({}, "test", "synthetic test", paths=paths)
+    assert not os.path.exists(paths.runs) and not os.path.exists(paths.log)
 
 
 def test_freeze_guard_checks_exclusions_before_build_state(tmp_path):

@@ -22,8 +22,11 @@ python run_all.py --stage pilot      # creates review sheets only if absent; nev
 python -m pytest -q tests ../../backend/tests
 # after pilot sign-off:
 python run_all.py --stage freeze --approved-by "<author name>"
-python run_all.py --stage tune       # DEV split only -> results/tuning_dev.json
-python run_all.py --stage evaluate   # TEST split -> results/processed/*.csv, latency.json
+python run_all.py --stage tune       # DEV only -> results/tuning_dev.json, results/dev/ (DEV risk-coverage figure)
+python run_all.py --stage latency    # DEV only -> results/latency_dev.json (product and country workloads)
+python run_all.py --stage evaluate --split test --authorised-by "<name>"   # the only TEST route
+#   -> results/runs/<run_id>/ (permanent, read-only), logged in results/test_runs.jsonl
+#   a further TEST run additionally needs --rerun-reason "<why>"
 ```
 
 ## Layout

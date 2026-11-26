@@ -1,5 +1,10 @@
-"""Latency/throughput measurement (in-process, repeated, warm-up, environment recorded)."""
+"""Latency/throughput measurement on DEV inputs only (in-process, repeated, warm-up, environment recorded).
+
+Phase C: TEST inputs are refused; product and country workloads are timed and reported separately.
+"""
+import hashlib
 import json
+import math
 import os
 import platform
 import statistics
@@ -48,36 +53,99 @@ def raw_systems(s1_config):
     }
 
 
-def measure(systems, cfg, split="test"):
-    lat = cfg["latency"]
-    items = [r for r in read_csv(os.path.join(GEN, "product_benchmark.csv")) if r["split"] == split]
-    items = sorted(items, key=lambda r: r["item_id"])[: lat["workload_items"]]
+class LatencySplitError(ValueError):
+    """Latency may only be measured on DEV inputs."""
+
+
+INTERPRETATION = ("Repeated timings of the same DEV inputs are not independent research examples. Intervals describe "
+                  "measurement variability on the recorded machine and workload only, not general performance; "
+                  "results are indicative (shared cloud VM).")
+
+
+def _dev_rows(rows, where):
+    if not rows:
+        raise LatencySplitError(f"{where}: no DEV rows (there is no fallback to another split)")
+    bad = sorted({repr(r.get("split")) for r in rows if r.get("split") != "dev"})
+    if bad:
+        raise LatencySplitError(f"{where}: only split 'dev' rows may be timed; found {bad}")
+    return rows
+
+
+def workloads(gen_dir=None, split="dev", max_items=None):
+    """DEV workloads: every DEV product item (with a canonical table country) and every DEV country item
+    (with a canonical catalogue product). TEST is refused; there is no fallback."""
+    if split != "dev":
+        raise LatencySplitError(f"latency is DEV-only; split {split!r} refused")
+    from lexitax_v2.reference import catalogue
+    gen_dir = gen_dir or GEN
+    prod = _dev_rows(sorted((r for r in read_csv(os.path.join(gen_dir, "product_benchmark.csv"))
+                             if r.get("split") == "dev"), key=lambda r: r["item_id"]), "product workload")
+    ctry = _dev_rows(sorted((r for r in read_csv(os.path.join(gen_dir, "country_benchmark.csv"))
+                             if r.get("split") == "dev"), key=lambda r: r["item_id"]), "country workload")
+    if max_items:  # testing only; recorded in the output and refused by run_all
+        prod, ctry = prod[:max_items], ctry[:max_items]
     countries = sorted(ISO_TO_TABLE.values())
-    work = [(it["text"], countries[i % len(countries)], 100.0, 2, 10.0) for i, it in enumerate(items)]
-    out = {"environment": environment(), "workload_items": len(work), "repetitions": lat["repetitions"],
-           "warmup_calls": lat["warmup_calls"], "systems": {}}
-    for name, fn in systems.items():
-        for i in range(lat["warmup_calls"]):
-            fn(*work[i % len(work)])
-        samples, rep_medians = [], []
-        t_start = time.perf_counter()
-        for _ in range(lat["repetitions"]):
-            rep = []
-            for args in work:
-                t0 = time.perf_counter_ns()
-                fn(*args)
-                rep.append((time.perf_counter_ns() - t0) / 1e6)
-            samples.extend(rep)
-            rep_medians.append(statistics.median(rep))
-        wall = time.perf_counter() - t_start
-        s = sorted(samples)
-        # CI of the median across repetitions (run-to-run variability)
-        lo, hi = bootstrap_ci(rep_medians, statistics.median, cfg["bootstrap_resamples"], cfg["seed"])
-        out["systems"][name] = {
-            "calls": len(samples), "mean_ms": statistics.fmean(samples), "sd_ms": statistics.pstdev(samples),
-            "median_ms": statistics.median(samples), "median_ci95_ms": [lo, hi],
-            "p95_ms": s[int(0.95 * len(s)) - 1], "p99_ms": s[int(0.99 * len(s)) - 1],
-            "throughput_calls_per_s": len(samples) / wall}
-    with open(os.path.join(RESULTS, "latency.json"), "w", encoding="utf-8") as fh:
+    products = sorted(catalogue()[1])
+    return {"product": [(r["item_id"], (r["text"], countries[i % len(countries)], 100.0, 2, 10.0))
+                        for i, r in enumerate(prod)],
+            "country": [(r["item_id"], (products[i % len(products)], r["text"], 100.0, 2, 10.0))
+                        for i, r in enumerate(ctry)]}
+
+
+def _pct(sorted_vals, q):
+    """Nearest-rank percentile."""
+    return sorted_vals[max(0, math.ceil(q * len(sorted_vals)) - 1)]
+
+
+def _time_workload(fn, work, warmup, reps, cfg):
+    for i in range(warmup):
+        fn(*work[i % len(work)])
+    samples, rep_medians, rep_walls = [], [], []
+    t_start = time.perf_counter()
+    for _ in range(reps):
+        rep, r0 = [], time.perf_counter()
+        for args in work:
+            t0 = time.perf_counter_ns()
+            fn(*args)
+            rep.append((time.perf_counter_ns() - t0) / 1e6)
+        rep_walls.append(time.perf_counter() - r0)
+        samples.extend(rep)
+        rep_medians.append(statistics.median(rep))
+    wall = time.perf_counter() - t_start
+    s, m = sorted(samples), sorted(rep_medians)
+    lo, hi = bootstrap_ci(rep_medians, statistics.median, cfg["bootstrap_resamples"], cfg["seed"])
+    return {"calls": len(samples), "per_call_ms": {
+                "median": statistics.median(s), "p95": _pct(s, 0.95), "p99": _pct(s, 0.99),
+                "mean": statistics.fmean(s), "sd": statistics.pstdev(s)},
+            "throughput_calls_per_s": len(samples) / wall,
+            "run_to_run": {"repetition_medians_ms": rep_medians, "repetition_wall_s": rep_walls,
+                           "median_of_repetition_medians_ms": statistics.median(m),
+                           "min_ms": m[0], "max_ms": m[-1], "iqr_ms": _pct(m, 0.75) - _pct(m, 0.25),
+                           "bootstrap_ci95_of_median_ms": [lo, hi]}}
+
+
+def measure(systems, cfg, split="dev", gen_dir=None, out_path=None):
+    """Time each system separately on the DEV product workload and the DEV country workload.
+    Writes results/latency_dev.json (exclusive-create) unless out_path is given."""
+    if split != "dev":
+        raise LatencySplitError(f"latency is DEV-only; split {split!r} refused")
+    lat = cfg["latency"]
+    limit = lat.get("max_items_per_workload")
+    work = workloads(gen_dir, "dev", limit)
+    out = {"split": "dev", "environment": environment(), "interpretation": INTERPRETATION,
+           "method": {"warmup_calls": lat["warmup_calls"], "repetitions": lat["repetitions"],
+                      "timer": "time.perf_counter_ns per call; whole workload per repetition",
+                      "workload_limited_for_testing": bool(limit)},
+           "workloads": {}}
+    for wname, items in work.items():
+        args = [a for _, a in items]
+        ids = "\n".join(i for i, _ in items)
+        out["workloads"][wname] = {
+            "n_items": len(items), "item_ids_sha256": hashlib.sha256(ids.encode()).hexdigest(),
+            "systems": {name: _time_workload(fn, args, lat["warmup_calls"], lat["repetitions"], cfg)
+                        for name, fn in systems.items()}}
+    out_path = out_path or os.path.join(RESULTS, "latency_dev.json")
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, "x", encoding="utf-8") as fh:
         json.dump(out, fh, indent=2)
     return out

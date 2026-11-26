@@ -34,8 +34,12 @@ def test_evaluation_code_path(tmp_path, monkeypatch):
 
 
 def test_latency_code_path(tmp_path, monkeypatch):
+    # Phase C: DEV-only harness with separate product and country workloads (workload_items was replaced by
+    # per-workload definitions; max_items_per_workload limits the workload for this test only).
     monkeypatch.setattr(latency, "RESULTS", str(tmp_path))
     cfg = {"seed": 1, "bootstrap_resamples": 100,
-           "latency": {"warmup_calls": 2, "repetitions": 2, "workload_items": 5}}
+           "latency": {"warmup_calls": 2, "repetitions": 2, "max_items_per_workload": 5}}
     res = latency.measure({"S1": primary_systems()["S1"]}, cfg, split="dev")
-    assert res["systems"]["S1"]["calls"] == 10 and "cpu_count" in res["environment"]
+    for w in ("product", "country"):
+        assert res["workloads"][w]["systems"]["S1"]["calls"] == 10
+    assert "cpu_count" in res["environment"] and res["split"] == "dev"

@@ -223,9 +223,9 @@ def without_sibling_clusters(rows, clusters):
     return [r for r in rows if r["cluster"] not in clusters]
 
 
-def write_audit(path, excluded):
+def write_audit(path, excluded, exclusive=False):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8", newline="") as fh:
+    with open(path, "x" if exclusive else "w", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=AUDIT_FIELDS)
         w.writeheader()
         w.writerows(excluded)

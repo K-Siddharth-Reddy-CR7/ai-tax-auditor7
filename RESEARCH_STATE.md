@@ -2,7 +2,8 @@
 
 **Checkpoint date:** 24 Nov 2026.
 **Written on branch:** `research/option-a-evaluation`, on top of commit `91b7305`. This file is committed as the next commit; run `git log -1` for its hash.
-**Updated 26 Nov 2026: CURRENT STAGE = PHASE A ACCEPTED; PHASE B IMPLEMENTED AND TESTED; PHASES C–D NOT AUTHORISED.** See `IMPLEMENTATION_PLAN.md` (§8 overall sequence, §10 manuscript) and `research_paper/IMPLEMENTATION_CHANGES.md` §7–§8.
+**Updated 26 Nov 2026: CURRENT STAGE = PHASES A AND B ACCEPTED; PHASE C IMPLEMENTED AND TESTED; PHASE D NOT AUTHORISED.** See `IMPLEMENTATION_PLAN.md` (§8 overall sequence, §10 manuscript) and `research_paper/IMPLEMENTATION_CHANGES.md` §7–§9.
+- Phase C: TEST evaluation runs only through `run_all.py --stage evaluate --split test --authorised-by NAME` inside a permanent, logged run (`lexeval/run_control.py`). Tuning and latency are DEV-only. The risk–coverage figure is DEV-only (author decision, 26 Nov 2026). No tuning, latency run, freeze or TEST evaluation has been performed.
 - The eight-item pilot TEST exclusion is **implemented** (`research_paper/experiments/evaluation_exclusions_v1.json`, choke point `lexeval/eval_exclusions.py`). No evaluation has been run.
 - The four P7 exclusions were authorised by the user and subsequently reviewed and approved by all four authors (user statement, 26 Nov 2026).
 - The four P7 exclusions (§8) are recorded in the authoritative decisions file `research_paper/experiments/pilot/authorised_review_treatments_v1.csv` and enforced by the builder. They are **NOT yet applied to the committed benchmark files**; that is the Phase D production rebuild, not yet authorised.
@@ -242,8 +243,11 @@ Projected sizes (estimates until the Phase D rebuild verifies them; full table w
   - ties go to the larger coverage threshold, fewer typo edits, longer minimum length.
 - Grid: coverage {0, .25, .34, .5, .67, .75, 1} × typo edits {0, 1, 2} × minimum length {4, 5, 6}.
 - **No system has been run on TEST benchmark items.** Runs so far: the 400 canonical transactions (smoke), unit-test examples, and DEV-only dry runs in tests.
-- `tune` and `evaluate` are blocked until `data/generated/MANIFEST.json` exists with `--approved-by`.
-- **Caution:** `lexeval/latency.py::measure` defaults to `split="test"`, timing systems on TEST inputs without scoring them. It is only invoked from `--stage evaluate`, which is freeze-gated. Do not call it before the freeze.
+- `tune`, `latency` and `evaluate` are blocked until `data/generated/MANIFEST.json` exists and every hash in it verifies.
+- **Phase C (26 Nov 2026):**
+  - `tune()` accepts only rows with split `dev`; anything else raises `TuningSplitError`. The tuning record (`results/tuning_dev.json`, split `dev`) is never overwritten.
+  - `latency.measure` is DEV-only, refuses `test`, and has no fallback.
+  - TEST rows can be scored only inside an authorised run.
 - Fuzzy-matching baseline: **deferred** until initial results (author decision).
 
 ## 10. Statistical requirements (`config.json` → `statistics`; `lexeval/stats.py`, `evaluate.py`)
@@ -251,7 +255,12 @@ Projected sizes (estimates until the Phase D rebuild verifies them; full table w
 - **Primary paired tests:** cluster-level two-sided sign-flip permutation test (10,000 permutations; exact if ≤ 16 non-zero clusters) with a cluster-bootstrap CI for the difference. **Holm** correction across the primary family of 18 tests: (B–S0, S0–S1, B–S1) × (decision-correct, silent-error) × (product, identification, tax behaviour).
 - **Secondary:** exact McNemar (item-level). Ladder comparisons form a separate, exploratory family.
 - **Small categories** (P4, P5, P6, J6, J7) are reported descriptively; no per-category significance claims.
-- **Latency:** time the systems' own entry points (`latency.raw_systems`), not the evaluation adapters. 200 warm-up calls, 30 repetitions over 1,000 workload items, `perf_counter_ns`. Report mean, SD, median (bootstrap CI over repetition medians), p95, p99 and throughput, with the environment recorded. Results are indicative for a shared VM.
+- **Latency (Phase C, `--stage latency`):** DEV only, never TEST.
+  - **What is timed:** the systems' own entry points (`latency.raw_systems`), not the evaluation adapters.
+  - **Workloads:** all DEV product items (about 270 after the rebuild) and all DEV country items (655), timed separately.
+  - **Method:** 200 warm-up calls, then 30 repetitions of each whole workload, timed with `perf_counter_ns`.
+  - **Reported per workload and system:** median, p95, p99, mean, SD, throughput, and run-to-run variability (repetition medians, min/max, IQR, and a bootstrap interval of their median), with the environment recorded.
+  - **Interpretation:** repetitions are not independent examples. Results are indicative for a shared VM.
 - No significance claims beyond these tests.
 
 ## 11. Data-source and claim limitations
@@ -311,7 +320,7 @@ Authors, in exact order (all: Dept. of CSE, Vardhaman College of Engineering, Hy
 - final submission checklist;
 - one comprehensive PR to `main` (to be opened only after stable results; left unmerged).
 
-**Current stage (26 Nov 2026):** Phase A accepted; Phase B implemented and tested. Phases C and D (including the production rebuild), the freeze, tuning, TEST evaluation and manuscript drafting each await explicit authorisation (`IMPLEMENTATION_PLAN.md` §8). The final deliverable includes a complete IEEE manuscript (`IMPLEMENTATION_PLAN.md` §10; workspace `research_paper/manuscript/`). After Phase B: experiment tests 114/114 pass, backend tests 63/63 pass.
+**Current stage (26 Nov 2026):** Phases A and B accepted; Phase C implemented and tested. Phase D (including the production rebuild), the freeze, tuning, latency measurement, TEST evaluation and manuscript drafting each await explicit authorisation (`IMPLEMENTATION_PLAN.md` §8). The final deliverable includes a complete IEEE manuscript (`IMPLEMENTATION_PLAN.md` §10; workspace `research_paper/manuscript/`). After Phase C: experiment tests 173/173 pass, backend tests 63/63 pass.
 
 Author decisions of 24 Nov 2026 on the eight design questions (detail in `IMPLEMENTATION_PLAN.md` §1):
 1. single decisions file;
@@ -353,7 +362,7 @@ Corrected execution order: Phases A, B and C with tests first, then the producti
 | `research_paper/` | All research documents (see §3 for precedence); `IMPLEMENTATION_CHANGES.md` (change log); `author_review_checklist.md` |
 | `research_paper/experiments/run_all.py` | Stages: build, validate, pilot, smoke, freeze, tune, evaluate |
 | `research_paper/experiments/config.json` | Seed, split, tuning grid and rule, statistics, sources |
-| `research_paper/experiments/lexeval/` | Builders, `systems.py` (adapters and ladder), `scoring.py`, `stats.py`, `evaluate.py`, `tuning.py`, `latency.py`, `figures.py`, `pilot.py` |
+| `research_paper/experiments/lexeval/` | Builders, `systems.py` (adapters and ladder), `scoring.py`, `stats.py`, `evaluate.py`, `tuning.py`, `latency.py`, `figures.py`, `pilot.py`, `eval_exclusions.py` (Phase B), `run_control.py` (Phase C) |
 | `research_paper/experiments/data/external/` | HS mirror CSV, PROVENANCE (superseded), Unicode licence. The Unicode emoji file is a git-ignored, hash-checked cache |
 | `research_paper/experiments/data/generated/` | Draft benchmarks plus `VALIDATION_REPORT.md`, `build_log.json` (no `MANIFEST.json` yet = not frozen) |
 | `research_paper/experiments/pilot/` | Review sheets and records (§5–§7); `superseded/` holds blank v3 sheets |

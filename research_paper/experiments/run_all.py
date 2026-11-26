@@ -9,9 +9,13 @@ Stages (run in order):
   smoke     sanity checks on the 400 canonical transactions (no benchmark scoring)
   freeze    hash benchmarks into MANIFEST.json (requires --approved-by and a build that applied the validated
             authoritative review treatments; see freeze_preconditions)
-  tune      select S1 parameters on DEV (requires frozen manifest)
-  evaluate  score B/S0/S1 + ladder on TEST, statistics, latency, figures (requires frozen manifest); TEST rows
-            come only from lexeval.eval_exclusions.load_test_items (pilot-inspected items removed)
+  tune      select S1 parameters on DEV only, then evaluate B/S0/S1 on DEV and draw the DEV risk-coverage
+            figure (requires frozen manifest; writes results/tuning_dev.json and results/dev/, never overwritten)
+  latency   time B/S0/S1 on the DEV product and DEV country workloads separately (requires frozen manifest
+            and tuning record; writes results/latency_dev.json, never overwritten). TEST is never timed
+  evaluate  the ONLY TEST route: --split test --authorised-by NAME [--rerun-reason TEXT]. Verifies the
+            manifest, opens a permanent run results/runs/<run_id>/ logged in results/test_runs.jsonl, scores
+            B/S0/S1 and the ladder on exclusion-filtered TEST rows, and draws the TEST figures in the run
 """
 import argparse
 import hashlib
@@ -36,13 +40,12 @@ def _sha(path):
 
 
 def _require_frozen():
-    if not os.path.exists(MANIFEST):
-        sys.exit("Benchmarks are not frozen. Complete the pilot review and run --stage freeze --approved-by NAME.")
-    man = json.load(open(MANIFEST, encoding="utf-8"))
-    for f, h in man["files"].items():
-        if _sha(os.path.join(GEN, f)) != h:
-            sys.exit(f"Frozen file changed after freezing: {f}")
-    return man
+    """Verify every hash in the freeze manifest (benchmarks, audit file, config, decisions, exclusions)."""
+    from lexeval.run_control import RunControlError, RunPaths, verify_manifest
+    try:
+        return verify_manifest(RunPaths(gen=GEN, manifest=MANIFEST))
+    except RunControlError as e:
+        sys.exit(f"Refused: {e}")
 
 
 def stage_build(cfg):
@@ -176,37 +179,67 @@ def stage_freeze(approved_by):
 
 
 def stage_tune(cfg):
+    """DEV only: select S1's parameters, evaluate B/S0/S1 on DEV, draw the DEV risk-coverage figure."""
     _require_frozen()
+    from lexeval import evaluate, figures
+    from lexeval.systems import primary_systems
     from lexeval.tuning import tune
-    c, rec = tune(cfg)
+    tuning_json, dev_dir = os.path.join(RESULTS, "tuning_dev.json"), os.path.join(RESULTS, "dev")
+    if os.path.exists(tuning_json) or os.path.exists(dev_dir):
+        sys.exit("Refused: DEV tuning outputs already exist; they are never overwritten.")
+    s1c, rec = tune(cfg, out_path=tuning_json)
+    evaluate.evaluate(primary_systems(s1c), "dev", "primary", out_dir=dev_dir)
+    figures.dev_figures(dev_dir, tuning_json)
     print("chosen:", rec["chosen"], rec["rule_applied"])
 
 
-def stage_evaluate(cfg):
-    man = _require_frozen()
-    ex_sha = man.get("evaluation_exclusions_sha256")
-    if not ex_sha:
-        sys.exit("Evaluation refused: the freeze manifest does not record the evaluation exclusions hash.")
-    from lexeval import evaluate, figures, latency
+def stage_latency(cfg):
+    """DEV only: product and country workloads timed separately for the raw B, S0 and tuned S1 entry points."""
+    _require_frozen()
+    from lexeval import latency
+    from lexeval.tuning import load_tuned
+    if cfg["latency"].get("max_items_per_workload"):
+        sys.exit("Refused: max_items_per_workload is for automated tests only.")
+    res = latency.measure(latency.raw_systems(load_tuned()), cfg)
+    print("latency (DEV):", {k: v["n_items"] for k, v in res["workloads"].items()})
+
+
+def stage_evaluate(cfg, split="", authorised_by="", rerun_reason="", paths=None):
+    """The only authorised TEST route. Every hash is verified from the frozen manifest by open_run; nothing is
+    taken from the caller. Outputs go to a new permanent run directory; the run log is append-only."""
+    if split != "test":
+        sys.exit("Refused: TEST evaluation requires an explicit --split test.")
+    from lexeval import evaluate, figures
+    from lexeval.run_control import RunControlError, RunPaths, close_run, open_run
     from lexeval.systems import ladder_systems, primary_systems
     from lexeval.tuning import load_tuned
-    s1c = load_tuned()
-    evaluate.evaluate(primary_systems(s1c), "test", "primary", exclusions_sha256=ex_sha)
-    ladder = ladder_systems(s1c)
-    evaluate.evaluate(ladder, "test", "ladder",
-                      pairs=[(a, b) for (a, _), (b, _) in zip(
-                          [(k, None) for k in list(ladder)[:6]], [(k, None) for k in list(ladder)[1:6]])],
-                      exclusions_sha256=ex_sha)
-    latency.measure(latency.raw_systems(s1c), cfg)
-    figures.ensure_dir()
-    print("evaluation complete; see results/processed and results/latency.json")
+    paths = paths or RunPaths(gen=GEN, manifest=MANIFEST)
+    try:
+        run = open_run(paths, authorised_by, rerun_reason)
+    except RunControlError as e:
+        sys.exit(f"Refused: {e}")
+    try:
+        s1c = load_tuned(paths.tuning)
+        evaluate.evaluate(primary_systems(s1c), "test", "primary", run=run)
+        ladder = ladder_systems(s1c)
+        evaluate.evaluate(ladder, "test", "ladder", pairs=evaluate.ladder_pairs(ladder), run=run)
+        figures.figures_for_test_run(run)
+    except BaseException as e:
+        close_run(run, "aborted", error=repr(e))
+        raise
+    close_run(run, "completed")
+    print(f"TEST run {run.run_id} complete: {run.run_dir}")
+    return run
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--stage", required=True,
-                    choices=["build", "validate", "pilot", "smoke", "freeze", "tune", "evaluate"])
-    ap.add_argument("--approved-by", default="")
+                    choices=["build", "validate", "pilot", "smoke", "freeze", "tune", "latency", "evaluate"])
+    ap.add_argument("--approved-by", default="", help="freeze: author who approved the freeze")
+    ap.add_argument("--split", default="", help="evaluate: must be 'test'")
+    ap.add_argument("--authorised-by", default="", help="evaluate: who authorised this TEST run")
+    ap.add_argument("--rerun-reason", default="", help="evaluate: required for any TEST run after the first")
     a = ap.parse_args()
     cfg = config()
     os.makedirs(RESULTS, exist_ok=True)
@@ -227,8 +260,10 @@ def main():
         stage_freeze(a.approved_by)
     elif a.stage == "tune":
         stage_tune(cfg)
+    elif a.stage == "latency":
+        stage_latency(cfg)
     elif a.stage == "evaluate":
-        stage_evaluate(cfg)
+        stage_evaluate(cfg, a.split, a.authorised_by, a.rerun_reason)
 
 
 if __name__ == "__main__":

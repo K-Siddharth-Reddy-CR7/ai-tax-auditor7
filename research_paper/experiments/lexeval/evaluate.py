@@ -3,6 +3,11 @@
 TEST rows are obtained ONLY through eval_exclusions.load_test_items() (the Phase B choke point), which
 removes the pilot-inspected items listed in evaluation_exclusions_v1.json. Every metric function below also
 calls eval_exclusions.assert_no_excluded(), so an excluded item cannot reach a TEST metric by another path.
+
+Phase C: TEST evaluation requires an authorised run handle from run_control.open_run() (created only by
+`run_all.py --stage evaluate`). The exclusion hash comes from the verified freeze manifest, never from the
+caller. The per-item scoring functions refuse TEST rows outside such a run and refuse excluded IDs always.
+TEST outputs go to the run's own directory and are written with exclusive-create (never overwritten).
 """
 import csv
 import json
@@ -11,7 +16,7 @@ from collections import defaultdict
 
 from lexitax_v2.reference import ISO_TO_TABLE, catalogue, tax_rows_by_iso
 
-from . import build_malformed, eval_exclusions, scoring
+from . import build_malformed, eval_exclusions, run_control, scoring
 from .build_common import read_csv
 from .paths import GEN, RESULTS
 from .stats import cluster_bootstrap_ci, cluster_paired_test, holm, mcnemar_exact, wilson
@@ -40,22 +45,36 @@ def _reference_policy(table_country, category):
     return rp[0].get("Policy_ID") if rp else None
 
 
-def load(split, exclusions_sha256=None, gen_dir=None, exclusions_path=None, pilot_dir=None):
+def load(split, run=None, gen_dir=None):
     """Return (product rows, country rows, malformed items, TestItems or None).
 
-    TEST rows come only from the exclusion choke point; DEV rows are read directly (no exclusions apply:
-    every excluded item is a TEST item, and the exclusion file is validated to guarantee it)."""
+    TEST rows come only from the exclusion choke point inside an authorised run (exclusion hash taken from
+    the verified manifest). DEV rows are read directly; every excluded item is a TEST item."""
     m = build_malformed.build()  # in-memory: preserves Python types (str vs float) of malformed values
     if split == "test":
-        ts = eval_exclusions.load_test_items(exclusions_sha256, gen_dir=gen_dir, path=exclusions_path,
-                                             pilot_dir=pilot_dir)
+        run = run_control.require_run(run)
+        ts = eval_exclusions.load_test_items(run.exclusions_sha256, gen_dir=run.paths.gen,
+                                             path=run.paths.exclusions, pilot_dir=run.paths.pilot)
         return ts.product, ts.country, m, ts
     if split != "dev":
         raise ValueError(f"unknown split {split!r}")
+    if run is not None:
+        raise run_control.RunControlError("a TEST run handle must not be used for DEV evaluation")
     gen_dir = gen_dir or GEN
     p = [r for r in read_csv(os.path.join(gen_dir, "product_benchmark.csv")) if r["split"] == split]
     c = [r for r in read_csv(os.path.join(gen_dir, "country_benchmark.csv")) if r["split"] == split]
     return p, c, m, None
+
+
+def check_items(items, where, run=None, exclusions_path=None):
+    """Guard for every per-item scoring function: no excluded ID ever; every row must carry split dev or
+    test; TEST rows only inside a verified authorised run."""
+    eval_exclusions.assert_no_excluded(items, where, exclusions_path)
+    splits = {str(it.get("split", "")) for it in items}
+    if not splits <= {"dev", "test"}:
+        raise ValueError(f"{where}: every benchmark row must carry split 'dev' or 'test' (got {sorted(splits)})")
+    if "test" in splits:
+        run_control.require_run(run)
 
 
 def _classify_propagation(ref, out, id_wrong):
@@ -75,7 +94,8 @@ def _classify_propagation(ref, out, id_wrong):
     return "NO_ERROR", flagged, 0.0
 
 
-def run_product_task(items, systems, raw_fh=None):
+def run_product_task(items, systems, raw_fh=None, run=None, exclusions_path=None):
+    check_items(items, "run_product_task", run, exclusions_path)
     _, bases = catalogue()
     hs_to_cats = defaultdict(set)
     for b in bases.values():
@@ -99,7 +119,8 @@ def run_product_task(items, systems, raw_fh=None):
             prop, flagged, rel = _classify_propagation(ref, out, id_wrong)
             policy_wrong = (ref is not None and ref["policy_id"] is not None and out["policy_id"] is not None
                             and out["policy_id"] != ref["policy_id"])
-            row = dict(task="product", item_id=it["item_id"], subset=it["subset"], cluster=it["cluster"],
+            row = dict(task="product", item_id=it["item_id"], split=it["split"], subset=it["subset"],
+                       cluster=it["cluster"],
                        look_alike=it.get("look_alike", ""), system=name,
                        outcome=outcome, fabricated=out["prod_fabricated"], prod_hs=out["prod_hs"],
                        label_hs=it["label_hs"], expected=it["expected"], propagation=prop,
@@ -110,7 +131,8 @@ def run_product_task(items, systems, raw_fh=None):
     return rows
 
 
-def run_country_task(items, systems, raw_fh=None):
+def run_country_task(items, systems, raw_fh=None, run=None, exclusions_path=None):
+    check_items(items, "run_country_task", run, exclusions_path)
     _, bases = catalogue()
     base_names = sorted(bases)
     rows = []
@@ -129,7 +151,8 @@ def run_country_task(items, systems, raw_fh=None):
             ident = scoring.identification_outcome(it, out)
             beh, sub = scoring.tax_behaviour_outcome(it, out, rates)
             prop, flagged, rel = _classify_propagation(ref, out, out["country_iso"] != iso)
-            row = dict(task="country", item_id=it["item_id"], subset=it["subset"], cluster=it["cluster"],
+            row = dict(task="country", item_id=it["item_id"], split=it["split"], subset=it["subset"],
+                       cluster=it["cluster"],
                        s1_builtin=it["s1_builtin"], system=name,
                        identification=ident, tax_behaviour=beh, tax_subtype=sub,
                        gold_iso=it["gold_iso"], gold_tax_action=it["gold_tax_action"],
@@ -214,60 +237,80 @@ def paired_tests(rows, key_outcome, pairs, task, row_filter=None, exclusions_pat
     return tests
 
 
-def write_rows(path, rows):
+def write_rows(path, rows, exclusive=False):
+    """Write rows as CSV. exclusive=True (all TEST outputs) refuses to replace an existing file."""
     os.makedirs(os.path.dirname(path), exist_ok=True)
     if not rows:
         return
     fields = list(rows[0].keys())
-    with open(path, "w", encoding="utf-8", newline="") as fh:
+    with open(path, "x" if exclusive else "w", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields)
         w.writeheader()
         w.writerows(rows)
 
 
-def _metrics(prows, crows, tag, split, pairs, proc, exclusions_path):
+def ladder_pairs(ladder):
+    """Adjacent attribution-ladder comparisons L0-L1, ..., L4-L5 (the first six ladder systems)."""
+    names = list(ladder)[:6]
+    return list(zip(names[:-1], names[1:]))
+
+
+def _metrics(prows, crows, tag, split, pairs, proc, exclusions_path, exclusive):
     """All summary metrics and paired tests for one row set (primary or sensitivity)."""
     realistic = lambda r: r["subset"] != "P8_hs_formal"  # noqa: E731  (formal HS texts reported separately)
     held_out = lambda r: str(r["s1_builtin"]) != "True"  # noqa: E731  (S1-built-in forms excluded from pooled claims)
     ex = exclusions_path
     write_rows(os.path.join(proc, f"{tag}_{split}_product_summary.csv"),
-               summarise_by(prows, "outcome", pooled_filter=realistic, exclusions_path=ex))
+               summarise_by(prows, "outcome", pooled_filter=realistic, exclusions_path=ex), exclusive)
     write_rows(os.path.join(proc, f"{tag}_{split}_identification_summary.csv"),
-               summarise_by(crows, "identification", pooled_filter=held_out, exclusions_path=ex))
+               summarise_by(crows, "identification", pooled_filter=held_out, exclusions_path=ex), exclusive)
     write_rows(os.path.join(proc, f"{tag}_{split}_tax_behaviour_summary.csv"),
-               summarise_by(crows, "tax_behaviour", pooled_filter=held_out, exclusions_path=ex))
+               summarise_by(crows, "tax_behaviour", pooled_filter=held_out, exclusions_path=ex), exclusive)
     if pairs:
         tests = (paired_tests(prows, "outcome", pairs, "product", realistic, ex)
                  + paired_tests(crows, "identification", pairs, "identification", held_out, ex)
                  + paired_tests(crows, "tax_behaviour", pairs, "tax_behaviour", held_out, ex))
         for t, adj in zip(tests, holm([t["p_value"] for t in tests])):
             t["p_holm"] = adj  # Holm over the cluster-level permutation p-values (within this family)
-        write_rows(os.path.join(proc, f"{tag}_{split}_paired_tests.csv"), tests)
+        write_rows(os.path.join(proc, f"{tag}_{split}_paired_tests.csv"), tests, exclusive)
+
+
+def _write_json(path, obj, exclusive):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "x" if exclusive else "w", encoding="utf-8") as fh:
+        json.dump(obj, fh, indent=2, sort_keys=True)
 
 
 def evaluate(systems, split="test", tag="primary", pairs=(("B", "S0"), ("S0", "S1"), ("B", "S1")),
-             exclusions_sha256=None, gen_dir=None, exclusions_path=None, pilot_dir=None, sensitivity=None):
-    """Score `systems` on `split`. For TEST, `exclusions_sha256` (from the freeze manifest) is required and
-    the pilot-inspected items are removed before anything is run or scored. With `sensitivity` (default: on
-    for the primary TEST evaluation) the sibling-cluster sensitivity outputs are written separately."""
-    p_items, c_items, m_items, ts = load(split, exclusions_sha256, gen_dir, exclusions_path, pilot_dir)
+             run=None, gen_dir=None, out_dir=None, sensitivity=None):
+    """Score `systems` on `split`.
+
+    TEST: `run` must be an open authorised run (run_control.open_run, i.e. run_all.py --stage evaluate). The
+    exclusion hash comes from its verified manifest; outputs go to the run directory, exclusive-create only.
+    With `sensitivity` (default: on for tag 'primary') the sibling-cluster sensitivity outputs are written
+    separately. DEV: no run; outputs go to `out_dir` (default results/dev)."""
+    p_items, c_items, m_items, ts = load(split, run, gen_dir)
     if ts is not None:
+        exclusions_path, out, exclusive = run.paths.exclusions, run.run_dir, True
         eval_exclusions.assert_no_excluded(p_items + c_items, "evaluate(test) inputs", exclusions_path)
-    raw_dir = os.path.join(RESULTS, "raw")
+    else:
+        exclusions_path, out, exclusive = None, out_dir or os.path.join(RESULTS, "dev"), False
+    raw_dir, proc = os.path.join(out, "raw"), os.path.join(out, "processed")
     os.makedirs(raw_dir, exist_ok=True)
-    with open(os.path.join(raw_dir, f"{tag}_{split}_outputs.jsonl"), "w", encoding="utf-8") as fh:
-        prows = run_product_task(p_items, systems, fh)
-        crows = run_country_task(c_items, systems, fh)
+    with open(os.path.join(raw_dir, f"{tag}_{split}_outputs.jsonl"), "x" if exclusive else "w", encoding="utf-8") as fh:
+        prows = run_product_task(p_items, systems, fh, run, exclusions_path)
+        crows = run_country_task(c_items, systems, fh, run, exclusions_path)
     mrows = run_malformed(m_items, systems)
-    proc = os.path.join(RESULTS, "processed")
     if ts is not None:
         eval_exclusions.assert_no_excluded(prows + crows, "evaluate(test) item rows", exclusions_path)
-        eval_exclusions.write_audit(os.path.join(proc, f"{tag}_{split}_excluded_from_metrics.csv"), ts.excluded)
-    write_rows(os.path.join(proc, f"{tag}_{split}_product_items.csv"), prows)
-    write_rows(os.path.join(proc, f"{tag}_{split}_country_items.csv"), crows)
-    write_rows(os.path.join(proc, f"{tag}_{split}_malformed_items.csv"), mrows)
-    _metrics(prows, crows, tag, split, pairs, proc, exclusions_path)
-    if ts is not None and (tag == "primary" if sensitivity is None else sensitivity):
+        eval_exclusions.write_audit(os.path.join(proc, f"{tag}_{split}_excluded_from_metrics.csv"), ts.excluded,
+                                    exclusive=True)
+    write_rows(os.path.join(proc, f"{tag}_{split}_product_items.csv"), prows, exclusive)
+    write_rows(os.path.join(proc, f"{tag}_{split}_country_items.csv"), crows, exclusive)
+    write_rows(os.path.join(proc, f"{tag}_{split}_malformed_items.csv"), mrows, exclusive)
+    _metrics(prows, crows, tag, split, pairs, proc, exclusions_path, exclusive)
+    sens = ts is not None and (tag == "primary" if sensitivity is None else sensitivity)
+    if sens:
         # Secondary sensitivity analysis: additionally drop the pre-declared sibling clusters.
         sp = eval_exclusions.without_sibling_clusters(prows, ts.sibling_clusters("product"))
         sc = eval_exclusions.without_sibling_clusters(crows, ts.sibling_clusters("country"))
@@ -278,8 +321,13 @@ def evaluate(systems, split="test", tag="primary", pairs=(("B", "S0"), ("S0", "S
                 "country_clusters": sorted(ts.sibling_clusters("country")),
                 "product_sibling_items_removed": (len(prows) - len(sp)) // n_sys,
                 "country_sibling_items_removed": (len(crows) - len(sc)) // n_sys}
-        os.makedirs(proc, exist_ok=True)
-        with open(os.path.join(proc, f"{tag}_{split}_sensitivity_siblings_info.json"), "w", encoding="utf-8") as fh:
-            json.dump(info, fh, indent=2)
-        _metrics(sp, sc, f"{tag}_sensitivity_siblings_removed", split, pairs, proc, exclusions_path)
+        _write_json(os.path.join(proc, f"{tag}_{split}_sensitivity_siblings_info.json"), info, exclusive)
+        _metrics(sp, sc, f"{tag}_sensitivity_siblings_removed", split, pairs, proc, exclusions_path, exclusive)
+    _write_json(os.path.join(proc, f"{tag}_{split}_provenance.json"), {
+        "split": split, "tag": tag, "systems": list(systems), "pairs": [list(p) for p in pairs or []],
+        "n_product_items": len(p_items), "n_country_items": len(c_items), "sensitivity_outputs": bool(sens),
+        "run_id": run.run_id if ts is not None else None,
+        "exclusions_sha256": ts.sha256 if ts is not None else None,
+        "benchmark_sha256": {f: run_control.sha256_file(os.path.join(run.paths.gen if ts is not None else (gen_dir or GEN), f))
+                             for f in ("product_benchmark.csv", "country_benchmark.csv")}}, exclusive)
     return prows, crows, mrows
