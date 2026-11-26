@@ -1,6 +1,7 @@
 # IMPLEMENTATION_PLAN.md — applying the review decisions and evaluation safeguards
 
-**Status (26 Nov 2026): PHASES A AND B ACCEPTED (audits of `ead53a4` and `f354cd7`). PHASE C IMPLEMENTED AND TESTED. PHASE D NOT AUTHORISED.**
+**Status (26 Nov 2026): PHASES A AND B ACCEPTED (audits of `ead53a4` and `f354cd7`). PHASE C CONDITIONALLY ACCEPTED (audit of `d6c683e`). PHASE C.1 IMPLEMENTED AND TESTED. PHASE D NOT AUTHORISED.**
+- Phase C.1 (corrections from the Phase C audit) changed `lexeval/run_control.py`, `tuning.py`, `figures.py`, `run_all.py` and the tests. Details: `IMPLEMENTATION_CHANGES.md` §10.
 - Phase C added `lexeval/run_control.py` and changed `evaluate.py`, `tuning.py`, `latency.py`, `figures.py`, `eval_exclusions.py`, `run_all.py`, `config.json` (latency block) and tests. Details: `IMPLEMENTATION_CHANGES.md` §9.
 - Phase A added the decisions file and changed `lexeval/pilot.py`, `lexeval/build_products.py`, `run_all.py` and tests. Details: `research_paper/IMPLEMENTATION_CHANGES.md` §7.
 - Phase B added `evaluation_exclusions_v1.json` and the TEST choke point `lexeval/eval_exclusions.py`, and changed `lexeval/evaluate.py`, `lexeval/validate.py`, `run_all.py` and tests. Details: `IMPLEMENTATION_CHANGES.md` §8.
@@ -138,6 +139,24 @@ Lock tests use temporary directories.
 - Intervals describe **measurement variability on the specified machine and workload only**, not general performance uncertainty.
 - Results are indicative (shared cloud VM).
 
+### Phase C.1 — Corrections from the Phase C audit (IMPLEMENTED 26 Nov 2026)
+- **R1, reconciliation:** `run_control.reconcile` checks the log against `results/runs/` and `results/run_recoveries/` before every TEST run, and any inconsistency refuses the run.
+  - **Recovery:** `--stage recover-runs --authorised-by NAME --recovery-reason TEXT` is allowed only when reconciliation fails. It deletes and rewrites nothing. It writes a recovery record (problems, current log hash and line count, digest of every run directory) and appends a `recovery` entry. A missing log is never regenerated; a new log starts with the recovery entry and the record states `log_missing: true`. Afterwards the acknowledged evidence must stay byte-identical, and the acknowledged runs count as earlier runs.
+  - **Documented state:** an interrupted run (started, never closed) is allowed and counts as an earlier run.
+- **R2, code identity:** `CODE_IDENTITY_PATTERNS` in `run_control.py` is the exact list:
+  - the evaluation code (`run_all.py`, `lexeval/*.py`);
+  - the system code (`backend/server.py`, `backend/lexitax_v2/*.py`);
+  - the three requirements files;
+  - the four original tables the systems read.
+
+  Tests, documentation, results, `config.json` and `data/generated` (both hashed separately) and the frontend are excluded.
+  - **At freeze:** a clean tree is required and the identity and commit are recorded.
+  - **At TEST:** the identity must match, the tree must be clean, and HEAD must be the frozen commit or a descendant that changes no identity path. Exact commit equality is impossible, because `MANIFEST.json` itself must be committed after the freeze.
+- **R3, provenance:** the tuning record is re-checked at load; the manifest is re-checked at close (a failure closes the run as aborted and raises); `run.json` records the Python and package versions.
+- **Risk–coverage:** `tuning.full_pipeline_grid` runs all 49 grid settings through the full S1 pipeline on the DEV product inputs used by the DEV system evaluation. It records resolver-level scores, full-pipeline scores and their differences, plus the selected setting and its full-pipeline point. Selection is unchanged. The figure is titled "S1 full-pipeline risk–coverage across the tuning grid (DEV)".
+- **Tie-breaks:** documented as described in `RESEARCH_STATE.md` §9 and recorded in the tuning record.
+- **Phase C tests:** now state-aware, comparing before and after a test instead of requiring that no manifest exists.
+
 ### Phase D — Production rebuild and validation
 These steps run only after Phases A–C pass their tests.
 0. **Correction carried over from the Phase A audit (required before step 2).**
@@ -239,7 +258,8 @@ Derived on 24 Nov 2026 from the current benchmark files, the cluster definitions
 Each step needs its own explicit authorisation.
 1. **Phase A:** review treatments. **Completed and accepted** (`ead53a4`).
 2. **Phase B:** evaluation exclusions. **Completed and accepted** (`f354cd7`).
-3. **Phase C:** DEV-only latency and tuning, the single TEST route with permanent run controls, figure paths (DEV-only risk–coverage), ladder tests. **Implemented and tested**; awaiting acceptance.
+3. **Phase C:** DEV-only latency and tuning, the single TEST route with permanent run controls, figure paths (DEV-only risk–coverage), ladder tests. **Conditionally accepted** (`d6c683e`).
+3a. **Phase C.1:** run-log reconciliation and recovery, code identity at freeze, provenance re-checks, full-pipeline DEV grid, tie-break documentation, state-aware tests. **Implemented and tested**; awaiting acceptance.
 4. **Phase D:** the Phase A audit correction (step 0), production rebuild, exact-difference check, validation, reproducibility, documentation, freeze checklist. **No production rebuild before Phases A–C pass all tests.**
 5. **Benchmark freeze:** separate authorisation.
 6. **DEV tuning, then one TEST evaluation:** separate authorisation.
@@ -304,4 +324,4 @@ The required final deliverable is a complete, academically defensible IEEE confe
 
 ---
 
-**Authorised so far: Phases A and B (accepted) and Phase C (implemented).** Await explicit authorisation before Phase D, manuscript Stage 1 drafting, or any other step in §8.
+**Authorised so far: Phases A and B (accepted), Phase C (conditionally accepted) and Phase C.1 (implemented).** Await explicit authorisation before Phase D, manuscript Stage 1 drafting, or any other step in §8.

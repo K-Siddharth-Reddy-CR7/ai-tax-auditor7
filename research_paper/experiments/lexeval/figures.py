@@ -3,8 +3,8 @@
 Phase C figure paths (the plotting functions never load benchmark rows themselves):
 - figures_for_test_run(run): TEST figures inside an open authorised run, from that run's own outputs. Before
   plotting, every item-level output of the run is checked: split 'test' only and no excluded ID.
-- dev_figures(dev_dir, tuning_json): DEV figures, including the DEV risk-coverage figure (tuning grid on DEV
-  plus the B/S0/S1 DEV operating points). Every input must declare split 'dev'.
+- dev_figures(dev_dir, tuning_json, grid_json): DEV figures, i.e. the S1 full-pipeline risk-coverage figure across
+  the tuning grid on DEV plus the B/S0/S1 DEV operating points. Every input must declare split 'dev'.
 
 Palette: validated categorical slots 1-4 of the reference palette (fixed order),
 plus hatching so identity survives grayscale printing.
@@ -67,34 +67,56 @@ class FigureInputError(ValueError):
     """A figure input has the wrong split, an excluded ID, or missing provenance."""
 
 
-def risk_coverage_dev(tuning_json, dev_summary_csv, dev_provenance_json, out_pdf):
+RISK_COVERAGE_TITLE = "S1 full-pipeline risk\u2013coverage across the tuning grid (DEV)"
+
+
+def _point(cov, risk):
+    return {"coverage": cov, "selective_risk": risk}
+
+
+def risk_coverage_dev(grid_json, dev_summary_csv, dev_provenance_json, out_pdf):
     """DEV-only risk-coverage figure (development analysis, NOT TEST evidence).
 
-    Grey points: the pre-declared S1 tuning grid on DEV P1-P7 (`dev_pooled_P1_P7` in the tuning record).
-    Coloured points: B, S0 and S1 (tuned) on DEV, from the pooled 'ALL' row of the DEV product summary (same
-    pooled scope P1-P7). Coverage = answered / all; selective risk = silent errors / answered (the primary
-    evaluation's definitions)."""
-    tune = json.load(open(tuning_json, encoding="utf-8"))
+    Grey points: every tuning-grid setting run through the FULL S1 pipeline on DEV P1-P7
+    (tuning.full_pipeline_grid). Ringed: the selected setting. Coloured: B, S0 and S1 (tuned) on DEV from the
+    pooled 'ALL' row of the DEV product summary (same inputs, adapter, scope and definitions). Selection itself
+    used resolver-level DEV scores over P2-P7 and is not shown as such. Returns the S1 system point, the
+    selected grid point and their difference (preserved as computed)."""
+    grid = json.load(open(grid_json, encoding="utf-8"))
     prov = json.load(open(dev_provenance_json, encoding="utf-8"))
-    if tune.get("split") != "dev" or prov.get("split") != "dev":
+    if grid.get("split") != "dev" or prov.get("split") != "dev":
         raise FigureInputError("risk-coverage figure accepts DEV inputs only")
     rows = list(csv.DictReader(open(dev_summary_csv, encoding="utf-8")))
-    fig, ax = plt.subplots(figsize=(3.4, 2.3))
-    pts = [g["dev_pooled_P1_P7"] for g in tune["grid"] if g["dev_pooled_P1_P7"]["selective_risk"] is not None]
+    fig, ax = plt.subplots(figsize=(3.4, 2.5))
+    pts = [g["full_pipeline"]["dev_pooled_P1_P7"] for g in grid["grid"]]
+    pts = [p for p in pts if p["selective_risk"] is not None]
     ax.scatter([p["coverage"] for p in pts], [p["selective_risk"] for p in pts], s=10, color="#9b9a95",
-               label="S1 tuning grid (DEV)", zorder=2)
+               label="S1 full pipeline, each grid setting", zorder=2)
+    sel = grid["selected_full_pipeline_point"]["dev_pooled_P1_P7"]
+    if sel["selective_risk"] is not None:
+        ax.scatter([sel["coverage"]], [sel["selective_risk"]], s=70, facecolors="none", edgecolors=INK,
+                   linewidth=1.0, label="selected setting (resolver-level rule)", zorder=4)
+    sys_pts = {}
     for s in ("B", "S0", "S1"):
         r = next(r for r in rows if r["system"] == s and r["subset"] == "ALL")
-        risk = int(r["SILENT_ERROR"]) / max(int(r["answered"]), 1)
-        ax.scatter([float(r["coverage"])], [risk], s=40, marker=SYSTEM_MARKERS[s], color=SYSTEM_COLORS[s],
-                   edgecolor="white", linewidth=1.5, label=f"{s} (DEV)", zorder=3)
-    ax.set_xlabel("coverage (answered / all)", fontsize=7, color=INK)
+        risk = int(r["SILENT_ERROR"]) / int(r["answered"]) if int(r["answered"]) else None
+        sys_pts[s] = _point(float(r["coverage"]), risk)
+        if risk is not None:
+            ax.scatter([float(r["coverage"])], [risk], s=40, marker=SYSTEM_MARKERS[s], color=SYSTEM_COLORS[s],
+                       edgecolor="white", linewidth=1.5, label=f"{s} (DEV system evaluation)", zorder=3)
+    ax.set_xlabel("coverage (answered / all), DEV products P1-P7", fontsize=7, color=INK)
     ax.set_ylabel("selective risk (silent errors / answered)", fontsize=7, color=INK)
-    ax.set_title("DEV split, products P1-P7: development analysis (not TEST evidence)", fontsize=7, color=INK)
+    ax.set_title(RISK_COVERAGE_TITLE, fontsize=7, color=INK)
+    fig.text(0.01, -0.06, "Development analysis, not TEST evidence. Selection used resolver-level DEV scores over "
+             "P2-P7 (pre-declared rule).", fontsize=5, color=MUTED)
     _style(ax)
-    ax.legend(fontsize=6, frameon=False)
+    ax.legend(fontsize=5, frameon=False)
     fig.savefig(out_pdf, bbox_inches="tight")
     plt.close(fig)
+    selp = _point(sel["coverage"], sel["selective_risk"])
+    diff = {k: (None if sys_pts["S1"][k] is None or selp[k] is None else sys_pts["S1"][k] - selp[k])
+            for k in ("coverage", "selective_risk")}
+    return {"s1_system_point": sys_pts["S1"], "selected_grid_point": selp, "difference_system_minus_grid": diff}
 
 
 def _check_item_outputs(proc_dir, split, exclusions_path=None):
@@ -156,18 +178,24 @@ def figures_for_test_run(run, tag="primary"):
 
 
 
-def dev_figures(dev_dir, tuning_json, tag="primary"):
-    """DEV figures (development analysis): risk-coverage and outcome bars, from DEV outputs only."""
+def dev_figures(dev_dir, tuning_json, grid_json, tag="primary"):
+    """DEV figures (development analysis): the full-pipeline risk-coverage figure, from DEV outputs only."""
     proc, fig_dir = os.path.join(dev_dir, "processed"), os.path.join(dev_dir, "figures")
     _check_item_outputs(proc, "dev")
+    tune = json.load(open(tuning_json, encoding="utf-8"))
+    grid = json.load(open(grid_json, encoding="utf-8"))
+    if tune.get("split") != "dev" or grid.get("selected_setting") != tune.get("chosen"):
+        raise FigureInputError("full-pipeline grid does not belong to this DEV tuning record")
     prov = os.path.join(proc, f"{tag}_dev_provenance.json")
     summary = os.path.join(proc, f"{tag}_dev_product_summary.csv")
     os.makedirs(fig_dir, exist_ok=True)
     out = os.path.join(fig_dir, "dev_risk_coverage.pdf")
-    risk_coverage_dev(tuning_json, summary, prov, out)
-    made = {os.path.basename(out): {"split": "dev", "inputs": {
-        os.path.basename(tuning_json): _sha(tuning_json), os.path.basename(summary): _sha(summary),
-        os.path.basename(prov): _sha(prov)}, "note": "development analysis, not TEST evidence"}}
+    comparison = risk_coverage_dev(grid_json, summary, prov, out)
+    made = {os.path.basename(out): {
+        "split": "dev", "title": RISK_COVERAGE_TITLE, "note": "development analysis, not TEST evidence",
+        "selection_basis": grid["selection_basis"], "selected_setting": grid["selected_setting"],
+        "s1_operating_point_vs_grid": comparison,
+        "inputs": {os.path.basename(p): _sha(p) for p in (tuning_json, grid_json, summary, prov)}}}
     _record(fig_dir, made, exclusive=False)
     return made
 

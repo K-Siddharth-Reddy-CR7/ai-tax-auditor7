@@ -21,12 +21,15 @@ python run_all.py --stage smoke      # L0==S0, L5==S1 on 400 canonical transacti
 python run_all.py --stage pilot      # creates review sheets only if absent; never overwrites
 python -m pytest -q tests ../../backend/tests
 # after pilot sign-off:
-python run_all.py --stage freeze --approved-by "<author name>"
+python run_all.py --stage freeze --approved-by "<author name>"   # clean git tree required; pins code identity + commit
+#   then commit MANIFEST.json (and later the DEV outputs) so the tree is clean for the TEST run
 python run_all.py --stage tune       # DEV only -> results/tuning_dev.json, results/dev/ (DEV risk-coverage figure)
 python run_all.py --stage latency    # DEV only -> results/latency_dev.json (product and country workloads)
 python run_all.py --stage evaluate --split test --authorised-by "<name>"   # the only TEST route
 #   -> results/runs/<run_id>/ (permanent, read-only), logged in results/test_runs.jsonl
 #   a further TEST run additionally needs --rerun-reason "<why>"
+python run_all.py --stage recover-runs --authorised-by "<name>" --recovery-reason "<why>"
+#   only if the run history fails reconciliation; evidence-preserving (nothing deleted or rewritten)
 ```
 
 ## Layout

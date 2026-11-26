@@ -408,7 +408,7 @@ def test_no_excluded_item_reaches_any_output(evaluated):
             assert needle not in text, f"{needle!r} leaked into {os.path.relpath(path, evaluated['res'])}"
         checked.add(os.path.basename(path))
     sens = "primary_sensitivity_siblings_removed_test"
-    assert checked == {"run.json", "outputs_sha256.json", "primary_test_provenance.json",
+    assert checked == {"run.json", "outputs_sha256.json", "close.json", "primary_test_provenance.json",
                        "primary_test_outputs.jsonl", "primary_test_product_items.csv", "primary_test_country_items.csv",
                        "primary_test_malformed_items.csv", "primary_test_product_summary.csv",
                        "primary_test_identification_summary.csv", "primary_test_tax_behaviour_summary.csv",

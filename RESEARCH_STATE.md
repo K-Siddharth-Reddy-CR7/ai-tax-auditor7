@@ -2,7 +2,11 @@
 
 **Checkpoint date:** 24 Nov 2026.
 **Written on branch:** `research/option-a-evaluation`, on top of commit `91b7305`. This file is committed as the next commit; run `git log -1` for its hash.
-**Updated 26 Nov 2026: CURRENT STAGE = PHASES A AND B ACCEPTED; PHASE C IMPLEMENTED AND TESTED; PHASE D NOT AUTHORISED.** See `IMPLEMENTATION_PLAN.md` (§8 overall sequence, §10 manuscript) and `research_paper/IMPLEMENTATION_CHANGES.md` §7–§9.
+**Updated 26 Nov 2026: CURRENT STAGE = PHASES A AND B ACCEPTED; PHASE C CONDITIONALLY ACCEPTED; PHASE C.1 (CORRECTIONS) IMPLEMENTED AND TESTED; PHASE D NOT AUTHORISED.** See `IMPLEMENTATION_PLAN.md` (§8 overall sequence, §10 manuscript) and `research_paper/IMPLEMENTATION_CHANGES.md` §7–§10.
+- **Phase C.1, run history (R1):** the TEST run log is reconciled against the run directories and recovery records before every TEST run. Inconsistencies block new runs until an authorised, evidence-preserving recovery (`--stage recover-runs`).
+- **Phase C.1, code identity (R2):** the freeze pins a code identity hash and the git commit, and requires a clean working tree. A TEST run refuses changed code or a dirty tree.
+- **Phase C.1, provenance (R3):** the tuning record is re-checked when loaded, and the manifest when a run closes; `run.json` records the Python and package versions.
+- **Phase C.1, risk–coverage figure:** now drawn from a full-pipeline DEV grid. Selection is unchanged and resolver-level.
 - Phase C: TEST evaluation runs only through `run_all.py --stage evaluate --split test --authorised-by NAME` inside a permanent, logged run (`lexeval/run_control.py`). Tuning and latency are DEV-only. The risk–coverage figure is DEV-only (author decision, 26 Nov 2026). No tuning, latency run, freeze or TEST evaluation has been performed.
 - The eight-item pilot TEST exclusion is **implemented** (`research_paper/experiments/evaluation_exclusions_v1.json`, choke point `lexeval/eval_exclusions.py`). No evaluation has been run.
 - The four P7 exclusions were authorised by the user and subsequently reviewed and approved by all four authors (user statement, 26 Nov 2026).
@@ -244,6 +248,10 @@ Projected sizes (estimates until the Phase D rebuild verifies them; full table w
 - Grid: coverage {0, .25, .34, .5, .67, .75, 1} × typo edits {0, 1, 2} × minimum length {4, 5, 6}.
 - **No system has been run on TEST benchmark items.** Runs so far: the 400 canonical transactions (smoke), unit-test examples, and DEV-only dry runs in tests.
 - `tune`, `latency` and `evaluate` are blocked until `data/generated/MANIFEST.json` exists and every hash in it verifies.
+- **Tie-breaks (clarified in Phase C.1; the existing deterministic behaviour, not a rule change):**
+  - feasible case: highest DEV macro decision accuracy, then larger coverage threshold, fewer typo edits, longer minimum length;
+  - no feasible setting: lowest DEV macro silent-error rate; if tied, higher DEV macro decision accuracy; then the same three tie-breaks.
+- **Grid size:** the configured grid has **49** settings, 7 × (1 + 2 × 3), because minimum length is irrelevant without typo edits. The Phase C audit report's "61" was a miscount.
 - **Phase C (26 Nov 2026):**
   - `tune()` accepts only rows with split `dev`; anything else raises `TuningSplitError`. The tuning record (`results/tuning_dev.json`, split `dev`) is never overwritten.
   - `latency.measure` is DEV-only, refuses `test`, and has no fallback.
@@ -320,7 +328,16 @@ Authors, in exact order (all: Dept. of CSE, Vardhaman College of Engineering, Hy
 - final submission checklist;
 - one comprehensive PR to `main` (to be opened only after stable results; left unmerged).
 
-**Current stage (26 Nov 2026):** Phases A and B accepted; Phase C implemented and tested. Phase D (including the production rebuild), the freeze, tuning, latency measurement, TEST evaluation and manuscript drafting each await explicit authorisation (`IMPLEMENTATION_PLAN.md` §8). The final deliverable includes a complete IEEE manuscript (`IMPLEMENTATION_PLAN.md` §10; workspace `research_paper/manuscript/`). After Phase C: experiment tests 173/173 pass, backend tests 63/63 pass.
+**Current stage (26 Nov 2026):** Phases A and B accepted; Phase C conditionally accepted; Phase C.1 implemented and tested (experiment tests 232/232, backend 63/63). Phase D (including the production rebuild), the freeze, tuning, latency measurement, TEST evaluation and manuscript drafting each await explicit authorisation (`IMPLEMENTATION_PLAN.md` §8). The final deliverable includes a complete IEEE manuscript (`IMPLEMENTATION_PLAN.md` §10; workspace `research_paper/manuscript/`).
+
+**TEST run-log limits (stated honestly):**
+- The hash chain has no secret key. Anyone who can rewrite all local evidence consistently (log, run directories, recovery records) can produce an undetectable history, and deleting all evidence is undetectable locally.
+- The controls detect accidental and casual changes; they are not cryptographic proof. Git history and the authors' records are the external check.
+
+**Post-freeze workflow implied by R2:**
+1. Freeze on a clean, committed tree.
+2. Commit `MANIFEST.json`, and later the DEV tuning, figure and latency outputs, before the TEST run. The tree must be clean, and later commits may not touch code-identity paths.
+3. After a TEST run, commit its outputs before any authorised rerun.
 
 Author decisions of 24 Nov 2026 on the eight design questions (detail in `IMPLEMENTATION_PLAN.md` §1):
 1. single decisions file;

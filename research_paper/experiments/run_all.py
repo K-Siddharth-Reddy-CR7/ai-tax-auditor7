@@ -7,12 +7,14 @@ Stages (run in order):
   validate  provenance / duplicate / conflict / leakage checks -> data/generated/VALIDATION_REPORT.md
   pilot     human review sheets (pilot, P7 look-alikes, P7 plain scan); existing sheets are never overwritten
   smoke     sanity checks on the 400 canonical transactions (no benchmark scoring)
-  freeze    hash benchmarks into MANIFEST.json (requires --approved-by and a build that applied the validated
-            authoritative review treatments; see freeze_preconditions)
+  freeze    hash benchmarks into MANIFEST.json (requires --approved-by, a build that applied the validated
+            authoritative review treatments, and a clean git tree; pins the code identity and git commit)
   tune      select S1 parameters on DEV only, then evaluate B/S0/S1 on DEV and draw the DEV risk-coverage
             figure (requires frozen manifest; writes results/tuning_dev.json and results/dev/, never overwritten)
   latency   time B/S0/S1 on the DEV product and DEV country workloads separately (requires frozen manifest
             and tuning record; writes results/latency_dev.json, never overwritten). TEST is never timed
+  recover-runs  only if the TEST run history fails reconciliation: --authorised-by NAME --recovery-reason TEXT;
+            records an evidence-preserving recovery (nothing is deleted or rewritten)
   evaluate  the ONLY TEST route: --split test --authorised-by NAME [--rerun-reason TEXT]. Verifies the
             manifest, opens a permanent run results/runs/<run_id>/ logged in results/test_runs.jsonl, scores
             B/S0/S1 and the ladder on exclusion-filtered TEST rows, and draws the TEST figures in the run
@@ -160,22 +162,27 @@ def freeze_preconditions(gen_dir=None, pilot_dir=None, exclusions_path=None):
     return problems
 
 
-def stage_freeze(approved_by):
+def stage_freeze(approved_by, paths=None):
+    """Write MANIFEST.json: benchmark, audit, config, decisions and exclusion hashes plus the code identity and
+    git commit (clean working tree required). Never overwrites an existing manifest."""
     if not approved_by:
         sys.exit("--approved-by is required (name of the author who signed off the pilot)")
     problems = freeze_preconditions()
     if problems:
         sys.exit("Freeze refused:\n- " + "\n- ".join(problems))
-    from lexeval.eval_exclusions import exclusions_sha256
-    from lexeval.pilot import TREATMENTS_FILE
-    man = {"approved_by": approved_by,
-           "files": {f: _sha(os.path.join(GEN, f)) for f in DATA_FILES + [EXCLUDED_FILE]},
-           "review_treatments_sha256": _sha(os.path.join(PILOT, TREATMENTS_FILE)),
-           "evaluation_exclusions_sha256": exclusions_sha256(),
-           "config_sha256": _sha(os.path.join(EXP, "config.json"))}
-    with open(MANIFEST, "w", encoding="utf-8") as fh:
-        json.dump(man, fh, indent=2)
-    print("frozen:", man)
+    from lexeval.run_control import RunControlError, RunPaths, manifest_record
+    paths = paths or RunPaths(gen=GEN, manifest=MANIFEST)
+    try:
+        man = manifest_record(paths, approved_by)
+    except RunControlError as e:
+        sys.exit(f"Freeze refused: {e}")
+    try:
+        with open(paths.manifest, "x", encoding="utf-8") as fh:
+            json.dump(man, fh, indent=2, sort_keys=True)
+    except FileExistsError:
+        sys.exit("Freeze refused: MANIFEST.json already exists (a freeze is never overwritten).")
+    print("frozen:", {k: v for k, v in man.items() if k != "code_identity"},
+          "code", man["code_identity"]["sha256"][:12], "commit", man["code_identity"]["git_commit"][:12])
 
 
 def stage_tune(cfg):
@@ -189,7 +196,10 @@ def stage_tune(cfg):
         sys.exit("Refused: DEV tuning outputs already exist; they are never overwritten.")
     s1c, rec = tune(cfg, out_path=tuning_json)
     evaluate.evaluate(primary_systems(s1c), "dev", "primary", out_dir=dev_dir)
-    figures.dev_figures(dev_dir, tuning_json)
+    grid_json = os.path.join(dev_dir, "grid_full_pipeline_dev.json")
+    from lexeval.tuning import full_pipeline_grid
+    full_pipeline_grid(cfg, rec, out_path=grid_json)  # figure/sensitivity only; selection is unchanged
+    figures.dev_figures(dev_dir, tuning_json, grid_json)
     print("chosen:", rec["chosen"], rec["rule_applied"])
 
 
@@ -219,27 +229,46 @@ def stage_evaluate(cfg, split="", authorised_by="", rerun_reason="", paths=None)
     except RunControlError as e:
         sys.exit(f"Refused: {e}")
     try:
-        s1c = load_tuned(paths.tuning)
+        s1c = load_tuned(paths.tuning, expected_sha256=run.start_record["hashes"]["tuning_record_sha256"])
         evaluate.evaluate(primary_systems(s1c), "test", "primary", run=run)
         ladder = ladder_systems(s1c)
         evaluate.evaluate(ladder, "test", "ladder", pairs=evaluate.ladder_pairs(ladder), run=run)
         figures.figures_for_test_run(run)
     except BaseException as e:
-        close_run(run, "aborted", error=repr(e))
+        try:
+            close_run(run, "aborted", error=repr(e))
+        except RunControlError:
+            pass  # closed as aborted; the original error is re-raised below
         raise
-    close_run(run, "completed")
+    try:
+        close_run(run, "completed")
+    except RunControlError as e:
+        sys.exit(f"TEST run closed as aborted: {e}")
     print(f"TEST run {run.run_id} complete: {run.run_dir}")
     return run
+
+
+def stage_recover_runs(authorised_by="", reason="", paths=None):
+    """Authorised, evidence-preserving acknowledgement of an inconsistent TEST run history."""
+    from lexeval.run_control import RunControlError, RunPaths, recover
+    try:
+        rec = recover(paths or RunPaths(gen=GEN, manifest=MANIFEST), authorised_by, reason)
+    except RunControlError as e:
+        sys.exit(f"Recovery refused: {e}")
+    print(f"recovery {rec['recovery_id']} recorded; {len(rec['problems'])} problem(s) acknowledged")
+    return rec
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--stage", required=True,
-                    choices=["build", "validate", "pilot", "smoke", "freeze", "tune", "latency", "evaluate"])
+                    choices=["build", "validate", "pilot", "smoke", "freeze", "tune", "latency", "evaluate",
+                             "recover-runs"])
     ap.add_argument("--approved-by", default="", help="freeze: author who approved the freeze")
     ap.add_argument("--split", default="", help="evaluate: must be 'test'")
     ap.add_argument("--authorised-by", default="", help="evaluate: who authorised this TEST run")
     ap.add_argument("--rerun-reason", default="", help="evaluate: required for any TEST run after the first")
+    ap.add_argument("--recovery-reason", default="", help="recover-runs: why the inconsistent history is acknowledged")
     a = ap.parse_args()
     cfg = config()
     os.makedirs(RESULTS, exist_ok=True)
@@ -264,6 +293,8 @@ def main():
         stage_latency(cfg)
     elif a.stage == "evaluate":
         stage_evaluate(cfg, a.split, a.authorised_by, a.rerun_reason)
+    elif a.stage == "recover-runs":
+        stage_recover_runs(a.authorised_by, a.recovery_reason)
 
 
 if __name__ == "__main__":

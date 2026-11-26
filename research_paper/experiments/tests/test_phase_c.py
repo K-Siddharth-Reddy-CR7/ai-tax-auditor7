@@ -32,14 +32,20 @@ DEV_P = [r for r in SYN_PRODUCT if r["split"] == "dev"]
 DEV_C = [r for r in SYN_COUNTRY if r["split"] == "dev"]
 
 
+def _real_state():
+    """Every file under the real results/ directory and the real MANIFEST.json, with hashes (None if absent)."""
+    tree = _files(RESULTS) if os.path.exists(RESULTS) else None
+    man = os.path.join(GEN, "MANIFEST.json")
+    return tree, (_sha(man) if os.path.exists(man) else None)
+
+
 @pytest.fixture(autouse=True)
 def _real_results_untouched():
-    """No Phase C test may create or change anything in the real results/ directory or create MANIFEST.json."""
-    before = sorted(os.listdir(RESULTS)) if os.path.exists(RESULTS) else None
+    """No Phase C test may create, change or delete anything in the real results/ directory or the real
+    MANIFEST.json. State-aware (Phase C.1): valid before and after the production freeze."""
+    before = _real_state()
     yield
-    after = sorted(os.listdir(RESULTS)) if os.path.exists(RESULTS) else None
-    assert before == after, "a test wrote to the real results/ directory"
-    assert not os.path.exists(os.path.join(GEN, "MANIFEST.json"))
+    assert _real_state() == before, "a test changed the real results/ directory or MANIFEST.json"
 
 
 @pytest.fixture
@@ -212,7 +218,7 @@ def test_stage_evaluate_full_route_in_temporary_directories(paths):
     events = [(e["event"], e["run_id"]) for e in read_log(paths.log)]
     assert events == [("started", run.run_id), ("completed", run.run_id)]
     recorded = json.load(open(os.path.join(run.run_dir, "outputs_sha256.json")))
-    assert all(recorded[k] == v for k, v in files.items() if k != "outputs_sha256.json")
+    assert all(recorded[k] == v for k, v in files.items() if k not in ("outputs_sha256.json", "close.json"))
 
 
 def test_stage_evaluate_logs_aborted_runs_and_keeps_them(paths, monkeypatch):
@@ -372,8 +378,10 @@ def test_latency_times_only_dev_inputs_with_separate_workloads(syn, tmp_path):
         latency.measure(_recorder([]), LCFG, gen_dir=syn["gen"], out_path=str(tmp_path / "l.json"))
 
 
-def test_stage_latency_refuses_test_limits_and_unfrozen(monkeypatch):
-    with pytest.raises(SystemExit):  # real benchmark is not frozen
+def test_stage_latency_refuses_test_limits_and_unfrozen(monkeypatch, tmp_path):
+    # State-aware (Phase C.1): "unfrozen" is supplied explicitly instead of assuming the real repository state.
+    monkeypatch.setattr(run_all, "MANIFEST", str(tmp_path / "no_manifest_here.json"))
+    with pytest.raises(SystemExit, match="not frozen"):
         run_all.stage_latency({"latency": {}})
     monkeypatch.setattr(run_all, "_require_frozen", lambda: {})
     with pytest.raises(SystemExit, match="automated tests only"):
@@ -392,30 +400,36 @@ def test_production_latency_config_is_dev_workloads():
 @pytest.fixture
 def dev_outputs(syn, tmp_path):
     tj = tmp_path / "tuning_dev.json"
-    s1c, _ = tuning.tune(CFG, gen_dir=syn["gen"], out_path=str(tj))
+    s1c, rec = tuning.tune(CFG, gen_dir=syn["gen"], out_path=str(tj))
     dev_dir = tmp_path / "dev"
     evaluate.evaluate(primary_systems(s1c), "dev", "primary", gen_dir=syn["gen"], out_dir=str(dev_dir))
-    return dev_dir, tj
+    grid = dev_dir / "grid_full_pipeline_dev.json"
+    tuning.full_pipeline_grid(CFG, rec, gen_dir=syn["gen"], out_path=str(grid))  # Phase C.1
+    return dev_dir, tj, grid
 
 
 def test_dev_risk_coverage_figure_from_dev_outputs(dev_outputs):
-    dev_dir, tj = dev_outputs
-    made = figures.dev_figures(str(dev_dir), str(tj))
+    dev_dir, tj, grid = dev_outputs
+    made = figures.dev_figures(str(dev_dir), str(tj), str(grid))
     pdf = dev_dir / "figures" / "dev_risk_coverage.pdf"
     assert pdf.stat().st_size > 0 and made["dev_risk_coverage.pdf"]["split"] == "dev"
     prov = json.load(open(dev_dir / "figures" / "figures_provenance.json"))
     for name, sha in prov["dev_risk_coverage.pdf"]["inputs"].items():
-        src = tj if name == "tuning_dev.json" else dev_dir / "processed" / name
+        src = {"tuning_dev.json": tj, "grid_full_pipeline_dev.json": grid}.get(name, dev_dir / "processed" / name)
         assert _sha(src) == sha   # reproducible from the recorded inputs
     assert not hasattr(figures, "risk_coverage")  # the TEST-grid version is gone
 
 
 def test_dev_figure_refuses_non_dev_inputs(dev_outputs, tmp_path):
-    dev_dir, tj = dev_outputs
+    dev_dir, tj, grid = dev_outputs
     bad = tmp_path / "bad.json"
     bad.write_text(json.dumps(dict(json.load(open(tj)), split="test")))
     with pytest.raises(FigureInputError):
-        figures.dev_figures(str(dev_dir), str(bad))
+        figures.dev_figures(str(dev_dir), str(bad), str(grid))
+    badg = tmp_path / "badg.json"
+    badg.write_text(json.dumps(dict(json.load(open(grid)), split="test")))
+    with pytest.raises(FigureInputError):
+        figures.dev_figures(str(dev_dir), str(tj), str(badg))
     items = dev_dir / "processed" / "primary_dev_product_items.csv"
     rows = read_csv(str(items))
     rows[0]["split"] = "test"
@@ -424,7 +438,7 @@ def test_dev_figure_refuses_non_dev_inputs(dev_outputs, tmp_path):
         w.writeheader()
         w.writerows(rows)
     with pytest.raises(FigureInputError, match="split"):
-        figures.dev_figures(str(dev_dir), str(tj))
+        figures.dev_figures(str(dev_dir), str(tj), str(grid))
 
 
 def test_test_figures_inside_run_and_excluded_id_detection(paths):
@@ -586,12 +600,22 @@ def test_tampered_log_blocks_new_runs(paths, tamper):
         open_run(paths, "synthetic test", rerun_reason="after tamper")
 
 
-def test_real_repository_has_no_runs_or_manifest():
-    assert not os.path.exists(os.path.join(GEN, "MANIFEST.json"))
-    assert not os.path.exists(os.path.join(RESULTS, "runs")) and not os.path.exists(os.path.join(RESULTS, "test_runs.jsonl"))
-    assert not os.path.exists(os.path.join(RESULTS, "tuning_dev.json"))
-    assert not os.path.exists(os.path.join(RESULTS, "latency_dev.json"))
+def test_real_repository_run_state_is_consistent():
+    """State-aware (Phase C.1; was test_real_repository_has_no_runs_or_manifest).
+    Before the freeze: no DEV or TEST output of any kind may exist. After the freeze: the manifest must verify,
+    the TEST run history must reconcile, and any tuning record must be DEV-only."""
+    real = run_control.RunPaths()
     assert EXP in RESULTS
+    outputs = [os.path.join(RESULTS, n) for n in ("runs", "test_runs.jsonl", "run_recoveries", "tuning_dev.json",
+                                                  "latency_dev.json", "dev")]
+    if not os.path.exists(real.manifest):
+        assert not [p for p in outputs if os.path.exists(p)], "outputs exist although nothing is frozen"
+        assert run_control.reconcile(real) == {"previous": [], "status": {}}
+    else:
+        run_control.verify_manifest(real)
+        run_control.reconcile(real)
+        if os.path.exists(real.tuning):
+            assert json.load(open(real.tuning))["split"] == "dev"
 
 
 def test_existing_summary_in_run_is_never_replaced(paths):

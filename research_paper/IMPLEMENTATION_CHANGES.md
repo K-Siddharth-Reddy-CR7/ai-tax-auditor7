@@ -103,3 +103,22 @@ No tuning, latency measurement, freeze, manifest or TEST evaluation was performe
 **Limits:**
 - Python cannot prevent deliberately written code from re-implementing the evaluation. The controls make the sanctioned route the only one this code accepts, and make any extra TEST run visible in the log.
 - The tests run as root, so read-only file modes are checked by their mode bits.
+
+## 10. Phase C.1 changes (26 Nov 2026): corrections from the Phase C audit
+No tuning, latency measurement, freeze, manifest or TEST evaluation was performed. Benchmark files, review records and the selection rule are unchanged.
+| File | Change | Reason |
+|---|---|---|
+| `experiments/lexeval/run_control.py` | **`reconcile()`** before every TEST run. It detects: a missing log while evidence exists; a broken chain (edited, removed, duplicated or reordered lines); a truncated last line; whole tail entries removed (orphaned run directory, or close.json without an end entry); a log entry without a directory; missing, corrupt or modified run.json/close.json/outputs; files added after closing; duplicate or out-of-order events; wrong previous-run references; malformed run IDs; unmatched recovery records. **`recover()`**: authorised, evidence-preserving acknowledgement (recovery record plus appended entry; a missing log is never regenerated). **Code identity** (`CODE_IDENTITY_PATTERNS`, `code_identity`, `verify_code`, `manifest_record`): clean tree required at freeze; at TEST, identity equal, tree clean, and HEAD equal to the frozen commit or a descendant that changes no identity path. `close_run` re-verifies the manifest (on failure: closed as aborted, then raises) and writes `close.json`. `run.json` adds `environment` (Python and all installed package versions) and `frozen_git_commit` | R1, R2, R3 |
+| `experiments/lexeval/tuning.py` | `load_tuned(expected_sha256=...)` hashes the exact bytes it parses. `full_pipeline_grid()` (figure and sensitivity only) records resolver-level and full-pipeline scores, their differences, the selected setting and its full-pipeline point; differences are preserved. Tie-break order documented (`FEASIBLE_ORDER`, `INFEASIBLE_ORDER`) and recorded in the tuning record; selection logic unchanged | R3; risk–coverage correction; tie-break clarification |
+| `experiments/lexeval/figures.py` | `risk_coverage_dev` draws the full-pipeline grid, rings the selected setting, shows the B/S0/S1 DEV points, and carries the title "S1 full-pipeline risk–coverage across the tuning grid (DEV)" with a note that selection was resolver-level. `dev_figures` records the S1 operating point against its grid point and refuses a grid from another tuning record | Risk–coverage correction |
+| `experiments/run_all.py` | `freeze` uses `manifest_record` (clean tree, code identity, commit; never overwrites a manifest). `tune` adds the full-pipeline grid. `evaluate` loads the tuning record with the hash recorded at open. New `recover-runs` stage (`--recovery-reason`) | R1–R3 |
+| `experiments/tests/test_phase_c1.py` | **New**, 59 tests (reconciliation and tampering, recovery, code identity with temporary git repositories, provenance re-checks, full-pipeline grid, tie-breaks) | Phase C.1 acceptance tests |
+| `experiments/tests/_runfix.py` | Synthetic manifests now come from `manifest_record` with a temporary git repository holding copies of the code-identity files | Tests independent of the real working tree |
+| `experiments/tests/test_phase_c.py` | State-aware: the setup check compares the real results/ tree and MANIFEST.json before and after each test. `test_real_repository_has_no_runs_or_manifest` became `test_real_repository_run_state_is_consistent` (strict "no outputs" before the freeze; verify and reconcile after). The latency refusal test supplies the unfrozen state explicitly. Figure tests updated for the grid input; `close.json` expected in run outputs | Item 6; API changes |
+| `experiments/tests/test_eval_exclusions.py` | Leak-check file list includes `close.json` | New run file |
+
+**Correction:** the configured tuning grid has 49 settings, not the 61 stated in the Phase C audit report.
+
+**Limits:**
+- Local hash chains are not cryptographic proof against an actor who consistently rewrites all local evidence; a test documents this.
+- Exact git-commit equality at TEST time is replaced by "frozen commit or a descendant with no changes to identity paths", because `MANIFEST.json` must be committed after the freeze.
