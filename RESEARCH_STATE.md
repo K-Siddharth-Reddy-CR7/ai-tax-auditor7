@@ -2,7 +2,8 @@
 
 **Checkpoint date:** 24 Nov 2026.
 **Written on branch:** `research/option-a-evaluation`, on top of commit `91b7305`. This file is committed as the next commit; run `git log -1` for its hash.
-**Updated 27 Nov 2026: CURRENT STAGE = PHASE D COMPLETE (production rebuild, validation, reproducibility) AND AWAITING REVIEW. NOT FROZEN.** Phases A and B are accepted; Phases C, C.1 and C.2 are accepted with conditions (C.2 audit of `daffba1`). The freeze, tuning, latency measurement and DEV/TEST evaluation each need separate authorisation.
+**Updated 27 Nov 2026: CURRENT STAGE = FROZEN (joint author approval recorded; `MANIFEST.json` committed). NO TUNING, LATENCY MEASUREMENT, DEV EVALUATION OR TEST EVALUATION HAS BEEN RUN.** Phases A and B are accepted; Phases C, C.1 and C.2 are accepted with conditions (C.2 audit of `daffba1`); Phase D is complete. DEV tuning and evaluation, latency measurement and the TEST evaluation each need separate authorisation.
+- **Freeze (27 Nov 2026):** joint author approval by Author 1 (Syeda Sayeeda Farhath, corresponding author) and Author 2 (Siddharth Karanam), each given independently on 27 Nov 2026 for the package at `0e5a831` (`research_paper/freeze_approval_record.md`, committed in `693cb28`). `run_all.py --stage freeze` was executed at the documentation-only commit `693cb28` (`frozen_utc` 2026-11-27T09:35:27.652615+00:00). `MANIFEST.json` (SHA-256 `0d7bddd9c5c8a2855e79d8bfdaff1f81bcc272c2c7744d1c361ce3714ef0b19b`) was committed in `453fc55`. It pins code identity `1930a0b2b99eb6587879b9b330af93a7eb3d2a3df447dcc1e1c09b22fd44efb6` (38 files, git commit `693cb28`) and the seven approved hashes (§4; config `ba8b5ef7…`, review treatments `cc5f593f…`, evaluation exclusions `2ecacabe…`). `verify_manifest` passes. From now on any change to a pinned file or code-identity path invalidates the TEST evaluation.
 - **Phase D:** the benchmark was rebuilt with exactly the four authorised P7 exclusions; validation shows 0 errors and 0 warnings; four isolated rebuilds are byte-identical. See §4 and `research_paper/IMPLEMENTATION_CHANGES.md` §12.
 - **Original benchmark:** the pre-review product benchmark is preserved in git at `a0129b8` (SHA-256 `4b69c5bb24ed519831490118e4d86ca2dfb38575cde4db5479c4e3feda1b5351`, git blob `76a8e81c`). Tests read it only from there (`tests/_original.py`).
 - **Phase C.2, D2 (recovery protocol v2):** recovery records form a sequence-numbered chain. Each recovery snapshots all surviving evidence and acknowledges every earlier record as present-verified, present-unverifiable or missing, so repeated loss of the log or of recovery entries stays recoverable. Recovery fails closed, writing nothing, on contradictory evidence: unreadable records, duplicate sequence numbers, a record whose bytes contradict a recorded hash, or unevidenced sequence gaps. No history is ever reconstructed.
@@ -125,7 +126,7 @@ Design:
   - pooled product claims use P1–P7 (P8 is reported separately);
   - pooled country claims use held-out forms J4–J7 only (J1–J3 are in S1's own table, so solved by construction).
 
-## 4. Benchmark: composition and splits (REBUILT 27 Nov 2026; not frozen)
+## 4. Benchmark: composition and splits (REBUILT and FROZEN 27 Nov 2026)
 Files are in `research_paper/experiments/data/generated/`. They are deterministic (seed 20261114). The Phase D rebuild was reproduced byte-identically in four isolated builds: two virtual environments (one freshly created from `requirements.txt`) and `PYTHONHASHSEED` values 0, 4242 and 987654.
 
 | File | SHA-256 (after the Phase D rebuild) |
@@ -233,7 +234,7 @@ Source: `experiments/pilot/p7_lookalike_review_v4.csv`. Reviewer: Author 1. No c
 | 3 Uncertain look-alikes (couch and lamp, toothbrush, video game) | Uncertain | Exclude; full rows kept in an audit file | **Yes: approved by the user on 24 Nov 2026** | **Applied** in the Phase D rebuild (27 Nov 2026); full rows in `excluded_items.csv` |
 | #81 satellite antenna | Flag for review | **Author decision (24 Nov 2026): exclude as Uncertain.** The current code has no mapping for "Flag for review"; Phase A adds one via the decisions file, without editing the scan file | **Yes: approved** | **Applied** in the Phase D rebuild; full row in `excluded_items.csv`. The scan file is not edited |
 | 99 Clear plain names | Clear | Keep as gold DECLINE | No | No change needed |
-| Freeze | — | Since Phase A, `run_all.py --stage freeze` refuses unless the decisions file validates against the review records and the benchmark, `excluded_items.csv` and `build_log.json` reflect exactly that file. The scan file's `REVIEWED` line is not read | **No** | No |
+| Freeze | Joint approval, Authors 1 and 2 (27 Nov 2026; `freeze_approval_record.md`) | Since Phase A, `run_all.py --stage freeze` refuses unless the decisions file validates against the review records and the benchmark, `excluded_items.csv` and `build_log.json` reflect exactly that file. The scan file's `REVIEWED` line is not read | **Yes** (27 Nov 2026) | **Yes**: executed at `693cb28`; `MANIFEST.json` committed in `453fc55` |
 
 Projected sizes (estimates until the Phase D rebuild verifies them; full table with cluster counts in `IMPLEMENTATION_PLAN.md` §5):
 - P7 total: 116 − 4 authorised exclusions = 112.
@@ -258,7 +259,7 @@ Projected sizes (estimates until the Phase D rebuild verifies them; full table w
   - ties go to the larger coverage threshold, fewer typo edits, longer minimum length.
 - Grid: coverage {0, .25, .34, .5, .67, .75, 1} × typo edits {0, 1, 2} × minimum length {4, 5, 6}.
 - **No system has been run on TEST benchmark items.** Runs so far: the 400 canonical transactions (smoke), unit-test examples, and DEV-only dry runs in tests.
-- `tune`, `latency` and `evaluate` are blocked until `data/generated/MANIFEST.json` exists and every hash in it verifies.
+- `tune`, `latency` and `evaluate` are blocked until `data/generated/MANIFEST.json` exists and every hash in it verifies. The manifest exists since the freeze of 27 Nov 2026 and verifies; each stage still needs its own authorisation.
 - **Tie-breaks (clarified in Phase C.1; the existing deterministic behaviour, not a rule change):**
   - feasible case: highest DEV macro decision accuracy, then larger coverage threshold, fewer typo edits, longer minimum length;
   - no feasible setting: lowest DEV macro silent-error rate; if tied, higher DEV macro decision accuracy; then the same three tie-breaks.
@@ -333,13 +334,13 @@ Authors, in exact order (all: Dept. of CSE, Vardhaman College of Engineering, Hy
 **Not done:**
 - literature review (strategy only, `literature_review.md`; no reference verified);
 - conference shortlist (unverified leads only, `conference_shortlist.md`);
-- freeze, tuning and evaluation;
+- tuning, latency measurement and evaluation (the freeze was completed on 27 Nov 2026);
 - figures and results;
 - manuscript (no draft exists);
 - final submission checklist;
 - one comprehensive PR to `main` (to be opened only after stable results; left unmerged).
 
-**Current stage (27 Nov 2026):** Phase D complete and awaiting review (experiment tests 276/276, backend 63/63). The freeze, tuning, latency measurement, DEV/TEST evaluation and manuscript drafting each await explicit authorisation (`IMPLEMENTATION_PLAN.md` §8).
+**Current stage (27 Nov 2026):** frozen (`MANIFEST.json` committed in `453fc55`; experiment tests 276/276 and backend 63/63 pass with the manifest present). DEV tuning and evaluation, latency measurement, the TEST evaluation and manuscript drafting each await explicit authorisation (`IMPLEMENTATION_PLAN.md` §8).
 
 **Clarifications from the Phase C.2 audit (limits of the recovery evidence; no code was changed in Phase D):**
 - **Acknowledged is not verified.** A recovery record acknowledges evidence as found; it does not verify it.
@@ -398,7 +399,7 @@ Corrected execution order: Phases A, B and C with tests first, then the producti
 - **Branch:** `research/option-a-evaluation` (pushed; level with `origin`).
 - **Head before this checkpoint:** `91b7305`. The working tree was clean before this file was added. Checkpoint commit: `063c8db`. Last benchmark-changing commit: `a0129b8`.
 - **`IMPLEMENTATION_PLAN.md`** (repository root): the approved-in-principle plan for applying the decisions and safeguards.
-- **`main` @ `01dde8b`:** untouched. Original application and datasets (and README) are identical to `main`.
+- **`main`:** was `01dde8b` until 27 Nov 2026, when PR #1 merged `research/option-a-evaluation` at `0e5a831` into `main` (merge commit `0383ff7`, tree identical to `0e5a831`; not part of the research branch). Later research-branch commits (approval record, manifest) are not on `main`. `main` must not be merged back into the research branch before the TEST evaluation.
 
 | Path | Content |
 |---|---|
@@ -411,7 +412,7 @@ Corrected execution order: Phases A, B and C with tests first, then the producti
 | `research_paper/experiments/config.json` | Seed, split, tuning grid and rule, statistics, sources |
 | `research_paper/experiments/lexeval/` | Builders, `systems.py` (adapters and ladder), `scoring.py`, `stats.py`, `evaluate.py`, `tuning.py`, `latency.py`, `figures.py`, `pilot.py`, `eval_exclusions.py` (Phase B), `run_control.py` (Phase C) |
 | `research_paper/experiments/data/external/` | HS mirror CSV, PROVENANCE (superseded), Unicode licence. The Unicode emoji file is a git-ignored, hash-checked cache |
-| `research_paper/experiments/data/generated/` | Draft benchmarks plus `VALIDATION_REPORT.md`, `build_log.json` (no `MANIFEST.json` yet = not frozen) |
+| `research_paper/experiments/data/generated/` | Frozen benchmarks plus `VALIDATION_REPORT.md`, `build_log.json` and `MANIFEST.json` (frozen 27 Nov 2026) |
 | `research_paper/experiments/pilot/` | Review sheets and records (§5–§7); `superseded/` holds blank v3 sheets |
 | `research_paper/experiments/results/`, `figures/` | Empty (no results exist) |
 

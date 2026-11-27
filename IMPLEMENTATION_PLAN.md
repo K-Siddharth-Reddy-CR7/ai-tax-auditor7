@@ -1,6 +1,6 @@
 # IMPLEMENTATION_PLAN.md — applying the review decisions and evaluation safeguards
 
-**Status (27 Nov 2026): PHASE D COMPLETE, AWAITING REVIEW. NOT FROZEN.** Phases A and B are accepted (audits of `ead53a4` and `f354cd7`). Phases C, C.1 and C.2 are accepted with conditions (audits of `d6c683e`, `c103cac` and `daffba1`; the C.2 conditions are documentation, recorded in `RESEARCH_STATE.md`).
+**Status (27 Nov 2026): FROZEN. Author approval and the freeze are complete; no tuning, latency measurement, DEV evaluation or TEST evaluation has been run.** Joint approval by Authors 1 and 2 (`research_paper/freeze_approval_record.md`); freeze executed at `693cb28`; `MANIFEST.json` committed in `453fc55` (code identity `1930a0b2…`, 38 files). Phases A and B are accepted (audits of `ead53a4` and `f354cd7`). Phases C, C.1 and C.2 are accepted with conditions (audits of `d6c683e`, `c103cac` and `daffba1`; the C.2 conditions are documentation, recorded in `RESEARCH_STATE.md`).
 - Phase D:
   - step 0 test correction (immutable original from `a0129b8`);
   - production rebuild (exactly 4 authorised exclusions);
@@ -15,7 +15,7 @@
 - Phase B added `evaluation_exclusions_v1.json` and the TEST choke point `lexeval/eval_exclusions.py`, and changed `lexeval/evaluate.py`, `lexeval/validate.py`, `run_all.py` and tests. Details: `IMPLEMENTATION_CHANGES.md` §8.
 - The final deliverable now includes a complete IEEE conference manuscript (§10).
 - No configuration, committed benchmark row, label, generated file, review record or scan file has been changed.
-- Nothing has been rebuilt, frozen, tuned or evaluated.
+- Phase D rebuilt the benchmark (27 Nov 2026); the freeze followed on 27 Nov 2026. Nothing has been tuned or evaluated.
 - Written 24 Nov 2026 on `research/option-a-evaluation`.
 - Read together with `RESEARCH_STATE.md`. Its integrity rules (§0) apply unchanged.
 
@@ -289,8 +289,8 @@ Each step needs its own explicit authorisation.
 3. **Phase C:** DEV-only latency and tuning, the single TEST route with permanent run controls, figure paths (DEV-only risk–coverage), ladder tests. **Conditionally accepted** (`d6c683e`).
 3a. **Phase C.1:** run-log reconciliation and recovery, code identity at freeze, provenance re-checks, full-pipeline DEV grid, tie-break documentation, state-aware tests. **Conditionally accepted** (`c103cac`).
 3b. **Phase C.2:** recovery protocol v2 (D2), close-time failure handling (D3), interrupted-run output protection (D4), nested-module code identity (D5). **Implemented and tested**; awaiting acceptance.
-4. **Phase D:** the Phase A audit correction (step 0), production rebuild, exact-difference check, validation, reproducibility, documentation, freeze checklist. **Completed 27 Nov 2026; awaiting review.**
-5. **Benchmark freeze:** separate authorisation.
+4. **Phase D:** the Phase A audit correction (step 0), production rebuild, exact-difference check, validation, reproducibility, documentation, freeze checklist. **Completed 27 Nov 2026.**
+5. **Benchmark freeze:** **Completed 27 Nov 2026** (joint author approval; executed at `693cb28`; `MANIFEST.json` committed in `453fc55`).
 6. **DEV tuning, then one TEST evaluation:** separate authorisation.
 7. **Experimental analysis and results audit.**
 8. **Complete manuscript (§10, Stage 2) and final author review.**
@@ -310,7 +310,7 @@ Status after Phase D (27 Nov 2026):
 - [x] TEST lock, DEV-only tuning and DEV-only latency safeguards tested.
 - [x] Original review and scan files and the original application unchanged; `main` unchanged.
 - [x] Documentation updated (`RESEARCH_STATE.md`, this plan, `IMPLEMENTATION_CHANGES.md` §12, the experiment README and the dataset rationale/P7 sheet banners).
-- [ ] **Explicit author approval to freeze** (`run_all.py --stage freeze --approved-by NAME` on a clean, committed tree; then commit `MANIFEST.json`).
+- [x] **Explicit author approval to freeze:** joint approval by Author 1 (Syeda Sayeeda Farhath) and Author 2 (Siddharth Karanam), 27 Nov 2026 (`research_paper/freeze_approval_record.md`, `693cb28`). Freeze executed on the clean tree at `693cb28`; `MANIFEST.json` (SHA-256 `0d7bddd9…`) committed in `453fc55` and verified against the approved hashes and code identity.
 
 ---
 
@@ -354,4 +354,4 @@ The required final deliverable is a complete, academically defensible IEEE confe
 
 ---
 
-**Authorised so far: Phases A–D.** Phase D is complete and awaiting review. Await explicit authorisation before the freeze, manuscript Stage 1 drafting, or any other step in §8.
+**Authorised so far: Phases A–D and the freeze (completed 27 Nov 2026).** Await explicit authorisation before DEV tuning and evaluation, latency measurement, the TEST evaluation, manuscript Stage 1 drafting, or any other step in §8.
