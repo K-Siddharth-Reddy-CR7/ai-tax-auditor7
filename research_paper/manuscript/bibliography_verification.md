@@ -1,5 +1,9 @@
 # Bibliography verification table (27 Nov 2026)
 
+**Revision 3:** `references.bib` is unchanged. The same 33 entries are cited, with the same verification status.
+`holm1979` and `iso3166` remain **AUTHOR-CHECK**. The 31 metadata-verified entries have **not** been reviewed at
+the content level (questionnaire Q15–Q16).
+
 How each entry in `references.bib` was checked from the drafting session:
 
 - **Crossref:** `https://api.crossref.org/works/<DOI>` returned a record, and the title, authors, venue, year,

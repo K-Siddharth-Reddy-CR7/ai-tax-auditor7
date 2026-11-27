@@ -5,8 +5,12 @@ AI system and the sections and extent concerned. Each venue may add its own rule
 venue's current policy and confirm or correct the wording below before submission.** Disclosing AI use for language
 editing only would be inaccurate.
 
-## Text used in `main.tex` (Acknowledgment)
-> **Use of AI tools.** An AI assistant (Claude, Anthropic, used through Claude Code) was used extensively in this work:
+## Text used in `main.tex` (Acknowledgment), revision 3
+The editorial placeholder that followed this text in revisions 1–2 was removed in revision 3. The substance is
+unchanged. **All four authors must still review and approve this wording, and it must be checked against the
+selected conference's AI policy** (`author_review_items.md` Q13).
+
+> An AI assistant (Claude, Anthropic, used through Claude Code) was used extensively in this work:
 > analysing the original repository; supporting research planning and the evaluation design; writing the S1 code, the
 > benchmark generators, the evaluation, statistics and run-control code and their tests; executing the authorised
 > build, freeze, tuning, DEV and TEST stages; searching for and verifying literature metadata; and drafting this

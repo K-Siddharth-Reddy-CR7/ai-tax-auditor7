@@ -179,30 +179,63 @@ VALUES["malformed"] = {s: {"rejected": sum(r["rejected"] == "True" for r in mal 
                            "n": sum(r["system"] == s for r in mal),
                            "costs_computed": sorted(r["landing_cost"] for r in mal if r["system"] == s and r["computed"] == "True")}
                        for s in SYS}
-lines = ["\\begin{table}[t]", "\\centering",
-         "\\caption{Error propagation on TEST (counts of per-item classes) and malformed-input handling.}",
-         "\\label{tab:prop}", "\\footnotesize", "\\setlength{\\tabcolsep}{3pt}",
-         "\\begin{tabular}{@{}lrrr@{}}", "\\toprule", "Outcome & B & S0 & S1 \\\\", "\\midrule",
-         "\\multicolumn{4}{@{}l}{\\emph{Product varied, country fixed (P1--P7, $n=359$)}} \\\\"]
+# Mutually exclusive propagation classes (each item has exactly one `propagation` value); flagged and silent are
+# separate rows. "Fallback HS code" is an OVERLAPPING attribute (prod_fabricated: S0 emitted its hard-coded 8471.30),
+# reported separately with its breakdown so that no reader sums it with the classes.
+PROD_ROWS = [("No error", ["NO_ERROR"]),
+             ("Product wrong or unresolved, flagged; cost unchanged", ["MASKED_FLAGGED"]),
+             ("Product wrong, silent; cost unchanged", ["MASKED_SILENT"]),
+             ("Landed-cost error", ["FINANCIAL_ERROR_FLAGGED", "FINANCIAL_ERROR_SILENT"]),
+             ("Should decline, cost computed, flagged", ["COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED"]),
+             ("Should decline, cost computed, silent", ["COMPUTED_WHEN_SHOULD_REFUSE_SILENT"]),
+             ("Correct refusal", ["EXPLICIT_REFUSAL"]),
+             ("Over-refusal", ["OVER_REFUSAL"])]
+CTRY_ROWS = [("No error", ["NO_ERROR"]),
+             ("Landed-cost error, silent", ["FINANCIAL_ERROR_SILENT"]),
+             ("Landed-cost error, flagged", ["FINANCIAL_ERROR_FLAGGED"]),
+             ("Should refuse, cost computed, silent", ["COMPUTED_WHEN_SHOULD_REFUSE_SILENT"]),
+             ("Should refuse, cost computed, flagged", ["COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED"]),
+             ("Masked (wrong country, correct cost)", ["MASKED_SILENT", "MASKED_FLAGGED"]),
+             ("Correct refusal", ["EXPLICIT_REFUSAL"]),
+             ("Over-refusal", ["OVER_REFUSAL"])]
 pc = {s: prop["product_P1_P7"][s]["classes"] for s in SYS}
 cc = {s: prop["country_J4_J7"][s]["classes"] for s in SYS}
-def row(lab, d, keys):
-    return f"{lab} & " + " & ".join(str(sum(d[s].get(k, 0) for k in keys)) for s in SYS) + " \\\\"
-lines += [row("Correct output", pc, ["NO_ERROR"]),
-          row("Product wrong/unresolved, cost unaffected", pc, ["MASKED_FLAGGED", "MASKED_SILENT"]),
-          row("Landed-cost error", pc, ["FINANCIAL_ERROR_FLAGGED", "FINANCIAL_ERROR_SILENT"]),
-          row("Cost computed, should refuse", pc, ["COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED", "COMPUTED_WHEN_SHOULD_REFUSE_SILENT"]),
-          "Refused: correct / over-refusal & " + " & ".join(f"{pc[s].get('EXPLICIT_REFUSAL', 0)} / {pc[s].get('OVER_REFUSAL', 0)}" for s in SYS) + " \\\\",
-          "Fabricated HS code & " + " & ".join(str(prop['product_P1_P7'][s]['fabricated_hs']) for s in SYS) + " \\\\",
-          "\\midrule", "\\multicolumn{4}{@{}l}{\\emph{Country varied, product fixed (J4--J7, $n=769$)}} \\\\",
-          row("Correct output", cc, ["NO_ERROR"]),
-          row("Silent landed-cost error", cc, ["FINANCIAL_ERROR_SILENT"]),
-          row("Cost computed, should refuse", cc, ["COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED", "COMPUTED_WHEN_SHOULD_REFUSE_SILENT"]),
-          "Refused: correct / over-refusal & " + " & ".join(f"{cc[s].get('EXPLICIT_REFUSAL', 0)} / {cc[s].get('OVER_REFUSAL', 0)}" for s in SYS) + " \\\\",
-          "\\midrule", "\\multicolumn{4}{@{}l}{\\emph{Malformed inputs ($n=18$; not held out)}} \\\\",
+for d, rws, n_expected in ((pc, PROD_ROWS, 359), (cc, CTRY_ROWS, 769)):
+    used = {k for _, ks in rws for k in ks}
+    for s in SYS:
+        assert set(d[s]) <= used, (s, set(d[s]) - used)          # every class present is shown
+        assert sum(d[s].values()) == n_expected, (s, d[s])       # classes reconcile to the denominator
+fab = {s: Counter(r["propagation"] for r in pi if r["subset"] != "P8_hs_formal" and r["system"] == s
+                  and r["fabricated"] == "True") for s in SYS}
+VALUES["fallback_hs_breakdown_P1_P7"] = {s: dict(fab[s]) for s in SYS}
+lines = ["\\begin{table}[t]", "\\centering",
+         "\\caption{Error propagation on TEST and malformed-input handling. Within each block the classes are "
+         "mutually exclusive and sum to $n$; classes that are zero for all systems are omitted, except the product landed-cost row. The fallback-code row is an "
+         "overlapping attribute, not a class.}",
+         "\\label{tab:prop}", "\\footnotesize", "\\setlength{\\tabcolsep}{3pt}",
+         "\\begin{tabular}{@{}lrrr@{}}", "\\toprule", "Outcome class & B & S0 & S1 \\\\", "\\midrule"]
+def block(title, d, rws, n, always=()):
+    out = [f"\\multicolumn{{4}}{{@{{}}l}}{{\\emph{{{title}}}}} \\\\"]
+    for lab, ks in rws:
+        vals = [sum(d[s].get(k, 0) for k in ks) for s in SYS]
+        if any(vals) or lab in always:
+            out.append(f"{lab} & " + " & ".join(map(str, vals)) + " \\\\")
+    out.append("Total & " + " & ".join(str(sum(d[s].values())) for s in SYS) + " \\\\")
+    return out
+lines += block("Product varied, country fixed (P1--P7, $n=359$)", pc, PROD_ROWS, 359, always=("Landed-cost error",))
+lines += ["\\quad\\emph{Overlap:} S0 fallback code 8471.30$^\\ast$ & "
+          + " & ".join(str(sum(fab[s].values())) for s in SYS) + " \\\\", "\\midrule"]
+lines += block("Country varied, product fixed (J4--J7, $n=769$)", cc, CTRY_ROWS, 769)
+lines += ["\\midrule", "\\multicolumn{4}{@{}l}{\\emph{Malformed inputs ($n=18$; not held out)}} \\\\",
           "Rejected & " + " & ".join(str(VALUES['malformed'][s]['rejected']) for s in SYS) + " \\\\",
           "Landed cost computed & " + " & ".join(str(len(VALUES['malformed'][s]['costs_computed'])) for s in SYS) + " \\\\",
-          "\\bottomrule", "\\end{tabular}", "\\end{table}", ""]
+          "\\bottomrule", "\\end{tabular}",
+          "\\\\[2pt]\\parbox{\\columnwidth}{\\scriptsize $^\\ast$Items for which S0 output its hard-coded fallback "
+          f"HS code; they fall in three classes above: {fab['S0'].get('COMPUTED_WHEN_SHOULD_REFUSE_SILENT', 0)} "
+          f"\\emph{{should decline, silent}}, {fab['S0'].get('MASKED_SILENT', 0)} \\emph{{product wrong, silent}} and "
+          f"{fab['S0'].get('NO_ERROR', 0)} \\emph{{no error}} (the fallback coincides with the true code of those "
+          "items).}",
+          "\\end{table}", ""]
 write("propagation.tex", "\n".join(lines))
 
 # ---------------------------------------------------------------- Table: exploratory ladder (TEST, separate family)

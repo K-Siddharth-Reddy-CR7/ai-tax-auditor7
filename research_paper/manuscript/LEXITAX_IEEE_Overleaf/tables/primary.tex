@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\caption{Primary held-out TEST results (run \texttt{20261127T104925Z-0f293784}), pooled scopes. Point estimate [95\% cluster-bootstrap interval]. C = correct, SA = safe abstention, OA = over-abstention, SE = silent error; no explicit failures occurred.}
+\label{tab:primary}
+\footnotesize
+\begin{tabular}{@{}llrrrrlll@{}}
+\toprule
+Task (items / clusters) & Sys. & C & SA & OA & SE & Coverage & Decision accuracy & Silent-error rate \\
+\midrule
+Product P1--P7 (359 / 134) & B & 116 & 92 & 132 & 19 & 0.376 [0.334, 0.412] & 0.579 [0.539, 0.633] & 0.053 [0.034, 0.072] \\
+ & S0 & 200 & 0 & 0 & 159 & 1.000 [1.000, 1.000] & 0.557 [0.488, 0.618] & 0.443 [0.382, 0.512] \\
+ & S1 & 247 & 111 & 1 & 0 & 0.688 [0.607, 0.751] & 0.997 [0.991, 1.000] & 0.000 [0.000, 0.000] \\
+\midrule
+Country identification J4--J7 (769 / 207) & B & 0 & 35 & 734 & 0 & 0.000 [0.000, 0.000] & 0.046 [0.030, 0.063] & 0.000 [0.000, 0.000] \\
+ & S0 & 3 & 30 & 724 & 12 & 0.020 [0.008, 0.034] & 0.043 [0.028, 0.059] & 0.016 [0.005, 0.029] \\
+ & S1 & 0 & 35 & 734 & 0 & 0.000 [0.000, 0.000] & 0.046 [0.030, 0.063] & 0.000 [0.000, 0.000] \\
+\midrule
+Tax behaviour J4--J7 (769 / 207) & B & 0 & 0 & 0 & 769 & 1.000 [1.000, 1.000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] \\
+ & S0 & 3 & 0 & 0 & 766 & 1.000 [1.000, 1.000] & 0.004 [0.000, 0.009] & 0.996 [0.991, 1.000] \\
+ & S1 & 0 & 632 & 137 & 0 & 0.000 [0.000, 0.000] & 0.822 [0.755, 0.883] & 0.000 [0.000, 0.000] \\
+\bottomrule
+\end{tabular}
+\end{table*}

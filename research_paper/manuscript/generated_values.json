@@ -52,6 +52,15 @@
    ]
   }
  },
+ "fallback_hs_breakdown_P1_P7": {
+  "B": {},
+  "S0": {
+   "COMPUTED_WHEN_SHOULD_REFUSE_SILENT": 83,
+   "MASKED_SILENT": 33,
+   "NO_ERROR": 4
+  },
+  "S1": {}
+ },
  "identification_categories": {
   "J1_table": {
    "B": [

@@ -1,7 +1,7 @@
 # Manuscript workspace (IEEE conference paper)
 
-**Status (27 Nov 2026): COMPLETE DRAFT FOR AUTHOR REVIEW, revision 2 (author-block layout). Not submission-ready and
-not submitted.** Changes are listed in `CHANGELOG.md`.
+**Status (27 Nov 2026): COMPLETE DRAFT FOR AUTHOR PROOFREADING, revision 3. Not submission-ready and not
+submitted.** Changes are listed in `CHANGELOG.md`.
 - Written after the freeze, the DEV stage and the single TEST run `20261127T104925Z-0f293784`.
 - Results come only from the committed result files.
 - The authors must read, verify, revise and approve the paper (`author_review_items.md`).
@@ -15,7 +15,10 @@ not submitted.** Changes are listed in `CHANGELOG.md`.
 | `bibliography_verification.md` | DOI/URL and verification status of every entry (31 metadata-verified, none content-reviewed; 2 need a manual author check) |
 | `claim_evidence_audit.md` | Each major claim mapped to the exact result file, row or code |
 | `ai_use_disclosure.md` | AI-use disclosure draft and its factual basis |
-| `author_review_items.md` | Author questionnaire: 24 numbered questions, each marked as blocking or not |
+| `author_review_items.md` | Author questionnaire: 26 numbered questions, each marked as blocking or not |
+| `audit_tables.py`, `table_figure_audit.md` | Independent audit of every table and Fig. 1 against the per-item TEST outputs and benchmark files (145 checks, all passed) |
+| `LEXITAX_IEEE_Overleaf/`, `LEXITAX_IEEE_Overleaf.zip` | Self-contained Overleaf project (main.tex, references.bib, tables/, figures/, unmodified IEEEtran.cls/.bst, README.md, main.pdf). It compiles independently from the extracted ZIP |
+| `overleaf_README.md` | Source of the Overleaf project's `README.md` |
 | `CHANGELOG.md` | Manuscript revision history |
 | `make_tables.py` | Generates `tables/*.tex`, `figures/test_outcomes.pdf` and `generated_values.json` from the committed results (read-only) |
 | `tables/`, `figures/`, `generated_values.json` | Generated; do not edit by hand |
@@ -26,6 +29,10 @@ Run from this folder, with Python 3.13 and the pinned `../experiments/requiremen
 
 ```bash
 python make_tables.py
+```
+
+```bash
+python audit_tables.py
 ```
 
 ```bash

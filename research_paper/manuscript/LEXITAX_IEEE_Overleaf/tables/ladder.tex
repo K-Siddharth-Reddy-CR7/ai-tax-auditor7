@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\caption{\emph{Exploratory} attribution ladder and ablations on TEST (pooled scopes): decision accuracy / silent-error rate. Not part of the confirmatory family.}
+\label{tab:ladder}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Variant & Product & Ident. & Tax \\
+\midrule
+L0 = S0 & 0.557 / 0.443 & 0.043 / 0.016 & 0.004 / 0.996 \\
+L1 +validation & 0.557 / 0.443 & 0.043 / 0.016 & 0.004 / 0.996 \\
+L2 +ISO identification & 0.557 / 0.443 & 0.046 / 0.000 & 0.000 / 1.000 \\
+L3 +refuse w/o tax data & 0.557 / 0.443 & 0.046 / 0.000 & 0.822 / 0.000 \\
+L4 +product abstention & 0.777 / 0.120 & 0.046 / 0.000 & 0.822 / 0.000 \\
+L5 +evidence tiers = S1 & 0.997 / 0.000 & 0.046 / 0.000 & 0.822 / 0.000 \\
+\midrule
+S1 $-$typo tier & 0.763 / 0.000 & 0.046 / 0.000 & 0.822 / 0.000 \\
+S1 $-$coverage guard & 0.994 / 0.003 & 0.046 / 0.000 & 0.822 / 0.000 \\
+S1 +country typo & 0.997 / 0.000 & 0.397 / 0.000 & 0.878 / 0.000 \\
+S0 $-$token overlap & 0.343 / 0.657 & 0.043 / 0.016 & 0.004 / 0.996 \\
+S0 $-$partial country & 0.557 / 0.443 & 0.046 / 0.000 & 0.000 / 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

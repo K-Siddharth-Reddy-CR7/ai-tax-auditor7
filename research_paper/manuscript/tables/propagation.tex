@@ -1,30 +1,37 @@
 \begin{table}[t]
 \centering
-\caption{Error propagation on TEST (counts of per-item classes) and malformed-input handling.}
+\caption{Error propagation on TEST and malformed-input handling. Within each block the classes are mutually exclusive and sum to $n$; classes that are zero for all systems are omitted, except the product landed-cost row. The fallback-code row is an overlapping attribute, not a class.}
 \label{tab:prop}
 \footnotesize
 \setlength{\tabcolsep}{3pt}
 \begin{tabular}{@{}lrrr@{}}
 \toprule
-Outcome & B & S0 & S1 \\
+Outcome class & B & S0 & S1 \\
 \midrule
 \multicolumn{4}{@{}l}{\emph{Product varied, country fixed (P1--P7, $n=359$)}} \\
-Correct output & 116 & 200 & 247 \\
-Product wrong/unresolved, cost unaffected & 132 & 48 & 0 \\
+No error & 116 & 200 & 247 \\
+Product wrong or unresolved, flagged; cost unchanged & 132 & 0 & 0 \\
+Product wrong, silent; cost unchanged & 0 & 48 & 0 \\
 Landed-cost error & 0 & 0 & 0 \\
-Cost computed, should refuse & 111 & 111 & 0 \\
-Refused: correct / over-refusal & 0 / 0 & 0 / 0 & 111 / 1 \\
-Fabricated HS code & 0 & 120 & 0 \\
+Should decline, cost computed, flagged & 92 & 0 & 0 \\
+Should decline, cost computed, silent & 19 & 111 & 0 \\
+Correct refusal & 0 & 0 & 111 \\
+Over-refusal & 0 & 0 & 1 \\
+Total & 359 & 359 & 359 \\
+\quad\emph{Overlap:} S0 fallback code 8471.30$^\ast$ & 0 & 120 & 0 \\
 \midrule
 \multicolumn{4}{@{}l}{\emph{Country varied, product fixed (J4--J7, $n=769$)}} \\
-Correct output & 0 & 3 & 0 \\
-Silent landed-cost error & 137 & 134 & 0 \\
-Cost computed, should refuse & 632 & 632 & 0 \\
-Refused: correct / over-refusal & 0 / 0 & 0 / 0 & 632 / 137 \\
+No error & 0 & 3 & 0 \\
+Landed-cost error, silent & 137 & 134 & 0 \\
+Should refuse, cost computed, silent & 632 & 632 & 0 \\
+Correct refusal & 0 & 0 & 632 \\
+Over-refusal & 0 & 0 & 137 \\
+Total & 769 & 769 & 769 \\
 \midrule
 \multicolumn{4}{@{}l}{\emph{Malformed inputs ($n=18$; not held out)}} \\
 Rejected & 5 & 7 & 18 \\
 Landed cost computed & 13 & 11 & 0 \\
 \bottomrule
 \end{tabular}
+\\[2pt]\parbox{\columnwidth}{\scriptsize $^\ast$Items for which S0 output its hard-coded fallback HS code; they fall in three classes above: 83 \emph{should decline, silent}, 33 \emph{product wrong, silent} and 4 \emph{no error} (the fallback coincides with the true code of those items).}
 \end{table}
