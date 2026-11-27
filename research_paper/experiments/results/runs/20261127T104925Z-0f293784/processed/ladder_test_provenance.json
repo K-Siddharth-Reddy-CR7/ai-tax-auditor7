@@ -1,0 +1,48 @@
+{
+  "benchmark_sha256": {
+    "country_benchmark.csv": "1bf3f48940c27b4ba7fad332bc8e0bbc367df1381a251e6345a3a6609444c929",
+    "product_benchmark.csv": "a6a87fc3f7057a74eebd9d5b7809809820b892e4ac3b791fe1f4dc64c5935160"
+  },
+  "exclusions_sha256": "2ecacabef8cffc751fcd894437693bbd2681157a5b8c055504e5fb4252f4e203",
+  "n_country_items": 1465,
+  "n_product_items": 529,
+  "pairs": [
+    [
+      "L0_S0",
+      "L1_+validation"
+    ],
+    [
+      "L1_+validation",
+      "L2_+iso_identification"
+    ],
+    [
+      "L2_+iso_identification",
+      "L3_+tax_availability_refusal"
+    ],
+    [
+      "L3_+tax_availability_refusal",
+      "L4_+product_abstention"
+    ],
+    [
+      "L4_+product_abstention",
+      "L5_+s1_product_tiers(=S1)"
+    ]
+  ],
+  "run_id": "20261127T104925Z-0f293784",
+  "sensitivity_outputs": false,
+  "split": "test",
+  "systems": [
+    "L0_S0",
+    "L1_+validation",
+    "L2_+iso_identification",
+    "L3_+tax_availability_refusal",
+    "L4_+product_abstention",
+    "L5_+s1_product_tiers(=S1)",
+    "S0_-token_overlap",
+    "S0_-partial_country",
+    "S1_-coverage_guard",
+    "S1_-typo_tier",
+    "S1_+country_typo"
+  ],
+  "tag": "ladder"
+}

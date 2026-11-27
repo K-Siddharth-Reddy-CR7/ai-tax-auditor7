@@ -1,0 +1,20 @@
+{
+  "primary_test_identification_summary_outcomes.pdf": {
+    "input": "primary_test_identification_summary.csv",
+    "input_sha256": "b7fa3aab8754ab3199e6e03c7a1853074a1bcad0ae682309f7423a2de3b3cf46",
+    "run_id": "20261127T104925Z-0f293784",
+    "split": "test"
+  },
+  "primary_test_product_summary_outcomes.pdf": {
+    "input": "primary_test_product_summary.csv",
+    "input_sha256": "6e16f43ecd6b7eee4705de8067e7e03ee651acf5578e1c88d5b8f7a68b1316ac",
+    "run_id": "20261127T104925Z-0f293784",
+    "split": "test"
+  },
+  "primary_test_tax_behaviour_summary_outcomes.pdf": {
+    "input": "primary_test_tax_behaviour_summary.csv",
+    "input_sha256": "704fbaeb8653e8d5c0413647051c07ef06d17a3e9aaa750a9f307db1823c4000",
+    "run_id": "20261127T104925Z-0f293784",
+    "split": "test"
+  }
+}

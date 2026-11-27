@@ -1,0 +1,18 @@
+{
+  "country_clusters": [
+    "CE|sint",
+    "DZ"
+  ],
+  "country_sibling_items_removed": 9,
+  "definition": "Secondary sensitivity analysis only (fixed 24 Nov 2026, before any TEST result). A sibling is a TEST item in the same benchmark sharing the cluster value of an excluded item. The analysis removes these clusters entirely and is reported separately; it never replaces the primary results.",
+  "exclusions_sha256": "2ecacabef8cffc751fcd894437693bbd2681157a5b8c055504e5fb4252f4e203",
+  "product_clusters": [
+    "P6_ambiguous|word|computer",
+    "P7_outside|card index",
+    "P8_hs|other_chapter|080122",
+    "base:Graphics Card",
+    "base:Scanner",
+    "base:WiFi Adapter"
+  ],
+  "product_sibling_items_removed": 18
+}

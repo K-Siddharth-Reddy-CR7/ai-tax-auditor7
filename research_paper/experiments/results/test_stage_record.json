@@ -1,0 +1,102 @@
+{
+  "schema": "lexitax-test-stage-record/1",
+  "split": "test",
+  "run_id": "20261127T104925Z-0f293784",
+  "authorisation": "Single planned final TEST evaluation authorised by the user in the research session on 27 Nov 2026; authorised_by string identifies Syeda Sayeeda Farhath (Corresponding Author)",
+  "command": {
+    "cwd": "research_paper/experiments",
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "argv": [
+      "python",
+      "run_all.py",
+      "--stage",
+      "evaluate",
+      "--split",
+      "test",
+      "--authorised-by",
+      "Syeda Sayeeda Farhath (Corresponding Author); reason: first planned final held-out TEST evaluation after frozen DEV tuning"
+    ],
+    "start_utc": "2026-11-27T10:49:16Z",
+    "end_utc": "2026-11-27T10:51:47Z",
+    "exit_code": 0,
+    "console": "results/test_stage_logs/stage_evaluate_test_console.txt"
+  },
+  "reason_note": "The run-control code has no reason field for a first run (--rerun-reason is only for reruns and was not used); the reason is recorded in the authorised_by text.",
+  "run_started_utc": "2026-11-27T10:49:25.194573+00:00",
+  "run_finished_utc": "2026-11-27T10:51:46.797972+00:00",
+  "run_status": "completed",
+  "run_error": null,
+  "git_head_at_run": "0e34002929cb7023addfad10a549d8c111b41bbf",
+  "frozen_git_commit": "693cb286e68c09c7a34fbe056baad83764bcbaa4",
+  "hashes_at_open": {
+    "benchmark_files": {
+      "country_benchmark.csv": "1bf3f48940c27b4ba7fad332bc8e0bbc367df1381a251e6345a3a6609444c929",
+      "excluded_items.csv": "fcdc6789fbb455b78c3f0f5229ba9eacdde111b42dadf61f7283e6b2717f44d1",
+      "malformed_inputs.csv": "bb3af78811f382e8f1bcab7d622cfbe0737177a7a4644e8724b0258ef19655df",
+      "product_benchmark.csv": "a6a87fc3f7057a74eebd9d5b7809809820b892e4ac3b791fe1f4dc64c5935160"
+    },
+    "code_sha256": "1930a0b2b99eb6587879b9b330af93a7eb3d2a3df447dcc1e1c09b22fd44efb6",
+    "config_sha256": "ba8b5ef73626f68f1b18aa33a25df484c4ed130583ff7489295b9e5162640373",
+    "evaluation_exclusions_sha256": "2ecacabef8cffc751fcd894437693bbd2681157a5b8c055504e5fb4252f4e203",
+    "manifest_sha256": "0d7bddd9c5c8a2855e79d8bfdaff1f81bcc272c2c7744d1c361ce3714ef0b19b",
+    "review_treatments_sha256": "cc5f593f172964ff352aa434d682db990d8713e52e7a92dd77a2b99ba38f15ce",
+    "tuning_record_sha256": "c0510c3ae35b72350b4183a92967cbdc9703f2d792b986b8b5815511f986e593"
+  },
+  "tuning_chosen": {
+    "dev_macro_decision_accuracy": 1.0,
+    "dev_macro_silent_error_rate": 0.0,
+    "dev_pooled_P1_P7": {
+      "coverage": 0.7727272727272727,
+      "n": 198,
+      "selective_risk": 0.0,
+      "silent_error_rate": 0.0
+    },
+    "product_min_coverage": 1.0,
+    "product_typo_max_edits": 1,
+    "product_typo_min_len": 4
+  },
+  "previous_runs": [],
+  "rerun": false,
+  "close_outputs_sha256_note": "close.json outputs_sha256 is the canonical-JSON hash of outputs_sha256.json's content (run_control._json_sha), not the hash of its bytes",
+  "known_issues": [
+    "The three TEST outcome figures (frozen figure code) draw the overall title over one panel title; cosmetic only, data unaffected."
+  ],
+  "files_sha256": {
+    "results/runs/20261127T104925Z-0f293784/close.json": "a2cf3b0c57469f0600955ea3a9b29e73e47064ed99502f70a0f18c3790608fcb",
+    "results/runs/20261127T104925Z-0f293784/figures/figures_provenance.json": "3d53a7cf1f53a0b9ce26499a7be9e22016b0f6b4fd07016435d8f31ae713983a",
+    "results/runs/20261127T104925Z-0f293784/figures/primary_test_identification_summary_outcomes.pdf": "d7c2c5f0e12ef77beb7fe4079a64011da5f4839268a16a37055efdfec76d86cf",
+    "results/runs/20261127T104925Z-0f293784/figures/primary_test_product_summary_outcomes.pdf": "03ade2b20cd82377605470e8fec4a1a30865c3b12d87673c5148043fdc59fb6a",
+    "results/runs/20261127T104925Z-0f293784/figures/primary_test_tax_behaviour_summary_outcomes.pdf": "da2f87f0436c08eec7196d7dd1edfe7f68557cdd14e757e7b8c32bde8e163a9c",
+    "results/runs/20261127T104925Z-0f293784/outputs_sha256.json": "e93de33df4f5c10b00c20b3ff90fb383b40a61cbfdef90e9f1eb0dc2db98dcd4",
+    "results/runs/20261127T104925Z-0f293784/processed/ladder_test_country_items.csv": "05ecbee07f38266733616901725082c361a0c974395e0973ae114faffbf8c47f",
+    "results/runs/20261127T104925Z-0f293784/processed/ladder_test_excluded_from_metrics.csv": "0640f08215ecbd6209784ffcd460db8063dab15177b26c5a1d0c0388e23b2ad4",
+    "results/runs/20261127T104925Z-0f293784/processed/ladder_test_identification_summary.csv": "16cc61741e2349b2c3923db07e85a17f9a201e2b49941bf9d93c4eacc1949d41",
+    "results/runs/20261127T104925Z-0f293784/processed/ladder_test_malformed_items.csv": "45428552fe5aea5b4234161841df284f4cca32cc9353555b9adeb35199cd5e3e",
+    "results/runs/20261127T104925Z-0f293784/processed/ladder_test_paired_tests.csv": "6fe58851781dabe5564c5ea58b6f513c7f026899228aa1a95419fb89f87c7ace",
+    "results/runs/20261127T104925Z-0f293784/processed/ladder_test_product_items.csv": "1a5cf8f600853611d0d2ec7d3f15980d1e105b1cf0d665ac109315ee2669a272",
+    "results/runs/20261127T104925Z-0f293784/processed/ladder_test_product_summary.csv": "86c89ff8040f2110b486cd26905347dbb3ab4bec97e97455ea8d376614eecf7a",
+    "results/runs/20261127T104925Z-0f293784/processed/ladder_test_provenance.json": "61d136cf4ec6721e765f173bf7cbbb90cb0f4a9e332a39f47e051091be5f55e2",
+    "results/runs/20261127T104925Z-0f293784/processed/ladder_test_tax_behaviour_summary.csv": "8433324889f9cfb6cfdc80253389448aed891ec96943d4632ab582b46f7cd9ae",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_sensitivity_siblings_removed_test_identification_summary.csv": "c92a9903f26e8edaf40c699aff9fc3c692515d7c4204226d0dd9de96f9249c25",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_sensitivity_siblings_removed_test_paired_tests.csv": "df6d1947d86cb0d81e487bb5ef4cc6e9401baae2e68c36295f3146c3cb86fc82",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_sensitivity_siblings_removed_test_product_summary.csv": "d3a03005e95c9862c6c6c08b112d00616fba78ca51146c132caa86dde2ac7dd6",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_sensitivity_siblings_removed_test_tax_behaviour_summary.csv": "72c04ae87deefb8038529c67f1530f6d741891f8dfbb9f364731a7c2f3088b61",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_test_country_items.csv": "4e8240f9908ff18977faa234437baf526f1f8a4836ded5d826c0f5a34c776841",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_test_excluded_from_metrics.csv": "0640f08215ecbd6209784ffcd460db8063dab15177b26c5a1d0c0388e23b2ad4",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_test_identification_summary.csv": "b7fa3aab8754ab3199e6e03c7a1853074a1bcad0ae682309f7423a2de3b3cf46",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_test_malformed_items.csv": "83ac0666a6b01a4f1f631402bba62f45b8e9236c20cad842cff5a92380c26832",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_test_paired_tests.csv": "441cf362c7b0bced8648663a94aabf67144f135cae79059fb4afdef28d90d2b2",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_test_product_items.csv": "5c0a6ca2b31c028b88b3c77dec1277e885d7754f7132929b9dcea8cba5b5cb7a",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_test_product_summary.csv": "6e16f43ecd6b7eee4705de8067e7e03ee651acf5578e1c88d5b8f7a68b1316ac",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_test_provenance.json": "042f5b31e24e23115d91dc376d0bd508bae0b9bcaede0ca69e6cce4432cc107b",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_test_sensitivity_siblings_info.json": "cd7d752d1473fc3eddacb375af241e7b8d5d04366dda7255fce31ddb14df0427",
+    "results/runs/20261127T104925Z-0f293784/processed/primary_test_tax_behaviour_summary.csv": "704fbaeb8653e8d5c0413647051c07ef06d17a3e9aaa750a9f307db1823c4000",
+    "results/runs/20261127T104925Z-0f293784/raw/ladder_test_outputs.jsonl": "3feef1facc8ef6768ff089ac7ddf71414e131e2da067bef5b3960f9cb648690f",
+    "results/runs/20261127T104925Z-0f293784/raw/primary_test_outputs.jsonl": "bf2b675952c67f8488e03a0fa4fd6501803dbd3c3e3e0ca2faf94b974afe0a44",
+    "results/runs/20261127T104925Z-0f293784/run.json": "fe649be12c658bce6c6e723dc1e00c14c52441f6a225da769febf366ec57f8e5",
+    "results/test_runs.jsonl": "1d0cacc1afa9e1d66de9fec43e319a579800fa8b20774074c3907c13bf080cdd",
+    "results/test_stage_logs/stage_evaluate_test_console.txt": "11b661b7c04b53715d00bdabb8b3bcdccf4933d11a26f224637eac31e797f9f1"
+  }
+}
