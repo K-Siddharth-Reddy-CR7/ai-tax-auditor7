@@ -1,6 +1,7 @@
 # Manuscript workspace (IEEE conference paper)
 
-**Status (27 Nov 2026): COMPLETE DRAFT FOR AUTHOR REVIEW. Not submission-ready and not submitted.**
+**Status (27 Nov 2026): COMPLETE DRAFT FOR AUTHOR REVIEW, revision 2 (author-block layout). Not submission-ready and
+not submitted.** Changes are listed in `CHANGELOG.md`.
 - Written after the freeze, the DEV stage and the single TEST run `20261127T104925Z-0f293784`.
 - Results come only from the committed result files.
 - The authors must read, verify, revise and approve the paper (`author_review_items.md`).
@@ -11,10 +12,11 @@
 | `main.tex` | Manuscript (generic IEEEtran conference template; venue not yet selected) |
 | `main.pdf` | Compiled rendering: 6 pages including references, US Letter |
 | `references.bib` | Bibliography: 33 entries, all cited |
-| `bibliography_verification.md` | DOI/URL and verification status of every entry (31 verified, 2 need an author check) |
+| `bibliography_verification.md` | DOI/URL and verification status of every entry (31 metadata-verified, none content-reviewed; 2 need a manual author check) |
 | `claim_evidence_audit.md` | Each major claim mapped to the exact result file, row or code |
 | `ai_use_disclosure.md` | AI-use disclosure draft and its factual basis |
-| `author_review_items.md` | Everything that needs author input before submission |
+| `author_review_items.md` | Author questionnaire: 24 numbered questions, each marked as blocking or not |
+| `CHANGELOG.md` | Manuscript revision history |
 | `make_tables.py` | Generates `tables/*.tex`, `figures/test_outcomes.pdf` and `generated_values.json` from the committed results (read-only) |
 | `tables/`, `figures/`, `generated_values.json` | Generated; do not edit by hand |
 | `outline.md` | Original section plan (26 Nov 2026), kept for history |

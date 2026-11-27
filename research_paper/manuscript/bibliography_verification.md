@@ -47,6 +47,8 @@ confirm, against the full text, every sentence that cites a work** (`author_revi
 | cldr | Unicode CLDR, version 47 | https://cldr.unicode.org/ | VERIFIED (page fetched); version from the project records | Page title "Unicode CLDR Project"; CLDR 47 is via Babel 2.18.0 (`RESEARCH_STATE.md` §11) | Localised country names (J5) |
 | unicodeemoji | Unicode emoji-test.txt 16.0 | https://www.unicode.org/Public/emoji/16.0/emoji-test.txt | VERIFIED (file fetched) | Downloaded file SHA-256 `24f0c534…` equals the hash pinned in the frozen `config.json` | P7 out-of-catalogue names |
 
-**Summary:** 33 entries. 31 verified (metadata, page or file); 2 need an author check (holm1979, iso3166). For koch2025 and
+**Summary:** 33 entries. 31 metadata-verified (metadata, page or file); **none has had a content-level review**,
+which the authors must do (`author_review_items.md` Q16). 2 need a manual check by an author (holm1979, iso3166;
+Q15). For koch2025 and
 wube2026 only the metadata was verified and no abstract or full text was available, so the paper makes only title-level
 statements about them. Raw Crossref responses were kept in the drafting session's scratchpad and are not committed.

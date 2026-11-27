@@ -2,6 +2,7 @@
 % All numbers come from the committed result files via make_tables.py (tables/) and generated_values.json;
 % see claim_evidence_audit.md. Target venue not yet selected: generic IEEE conference template.
 \documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts % as in the IEEE conference template; enables the first-page \thanks footnote
 \usepackage[T1]{fontenc}
 \usepackage{cite}
 \usepackage{amsmath}
@@ -11,16 +12,44 @@
 \usepackage[hidelinks]{hyperref}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125em X}}
+% Start a new row of author blocks (IEEEtran author alignment environment; no manual spacing).
+\makeatletter
+\newcommand{\linebreakand}{%
+  \end{@IEEEauthorhalign}
+  \hfill\mbox{}\par
+  \mbox{}\hfill\begin{@IEEEauthorhalign}
+}
+\makeatother
 
 \begin{document}
 
 \title{Silent Errors versus Safe Abstention in Staged Customs Pre-Assessment: An Empirical Study of Product and Jurisdiction Resolution}
 
+% Two-column, two-row author layout: \and separates blocks in a row; \linebreakand starts a new row.
 \author{
-\IEEEauthorblockN{Syeda Sayeeda Farhath\IEEEauthorrefmark{1}, Siddharth Karanam, P.\ Naga Bhargav Reddy, and Baalne Anjali}
-\IEEEauthorblockA{Department of Computer Science and Engineering, Vardhaman College of Engineering, Hyderabad, India\\
-syedasayeedafarhath@ieee.org, siddharthreddy1908@gmail.com,\\ nagabhargavreddy175@gmail.com, anjali1820@vardhaman.org}
-\IEEEauthorblockA{\IEEEauthorrefmark{1}Corresponding author}
+\IEEEauthorblockN{Syeda Sayeeda Farhath\IEEEauthorrefmark{1}\thanks{\IEEEauthorrefmark{1}Corresponding author.}}
+\IEEEauthorblockA{Department of Computer Science and Engineering\\
+Vardhaman College of Engineering\\
+Hyderabad, India\\
+syedasayeedafarhath@ieee.org}
+\and
+\IEEEauthorblockN{Siddharth Karanam}
+\IEEEauthorblockA{Department of Computer Science and Engineering\\
+Vardhaman College of Engineering\\
+Hyderabad, India\\
+siddharthreddy1908@gmail.com}
+\linebreakand
+\IEEEauthorblockN{P.\ Naga Bhargav Reddy}
+\IEEEauthorblockA{Department of Computer Science and Engineering\\
+Vardhaman College of Engineering\\
+Hyderabad, India\\
+nagabhargavreddy175@gmail.com}
+\and
+\IEEEauthorblockN{Baalne Anjali}
+\IEEEauthorblockA{Department of Computer Science and Engineering\\
+Vardhaman College of Engineering\\
+Hyderabad, India\\
+anjali1820@vardhaman.org}
 }
 
 \maketitle
