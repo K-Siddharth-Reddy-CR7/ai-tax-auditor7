@@ -1,6 +1,6 @@
 # IMPLEMENTATION_PLAN.md — applying the review decisions and evaluation safeguards
 
-**Status (27 Nov 2026): FROZEN; DEV STAGE COMPLETE. No TEST evaluation has been run.** DEV stage (S1 tuning, DEV evaluation of B/S0/S1, DEV figure, DEV latency): outputs committed in `b0248b7`, report `research_paper/dev_results_report.md`; selected S1 setting coverage 1.0, typo edits 1, minimum length 4. Joint approval by Authors 1 and 2 (`research_paper/freeze_approval_record.md`); freeze executed at `693cb28`; `MANIFEST.json` committed in `453fc55` (code identity `1930a0b2…`, 38 files). Phases A and B are accepted (audits of `ead53a4` and `f354cd7`). Phases C, C.1 and C.2 are accepted with conditions (audits of `d6c683e`, `c103cac` and `daffba1`; the C.2 conditions are documentation, recorded in `RESEARCH_STATE.md`).
+**Status (27 Nov 2026): FROZEN; DEV STAGE AND THE SINGLE TEST EVALUATION COMPLETE.** TEST run `20261127T104925Z-0f293784` (completed; outputs `e0bf964`; report `research_paper/test_results_report.md`). DEV stage (S1 tuning, DEV evaluation of B/S0/S1, DEV figure, DEV latency): outputs committed in `b0248b7`, report `research_paper/dev_results_report.md`; selected S1 setting coverage 1.0, typo edits 1, minimum length 4. Joint approval by Authors 1 and 2 (`research_paper/freeze_approval_record.md`); freeze executed at `693cb28`; `MANIFEST.json` committed in `453fc55` (code identity `1930a0b2…`, 38 files). Phases A and B are accepted (audits of `ead53a4` and `f354cd7`). Phases C, C.1 and C.2 are accepted with conditions (audits of `d6c683e`, `c103cac` and `daffba1`; the C.2 conditions are documentation, recorded in `RESEARCH_STATE.md`).
 - Phase D:
   - step 0 test correction (immutable original from `a0129b8`);
   - production rebuild (exactly 4 authorised exclusions);
@@ -15,7 +15,7 @@
 - Phase B added `evaluation_exclusions_v1.json` and the TEST choke point `lexeval/eval_exclusions.py`, and changed `lexeval/evaluate.py`, `lexeval/validate.py`, `run_all.py` and tests. Details: `IMPLEMENTATION_CHANGES.md` §8.
 - The final deliverable now includes a complete IEEE conference manuscript (§10).
 - No configuration, committed benchmark row, label, generated file, review record or scan file has been changed.
-- Phase D rebuilt the benchmark (27 Nov 2026); the freeze and the DEV stage followed on 27 Nov 2026. Nothing has been evaluated on TEST.
+- Phase D rebuilt the benchmark (27 Nov 2026); the freeze, the DEV stage and the single TEST run followed on 27 Nov 2026.
 - Written 24 Nov 2026 on `research/option-a-evaluation`.
 - Read together with `RESEARCH_STATE.md`. Its integrity rules (§0) apply unchanged.
 
@@ -291,7 +291,7 @@ Each step needs its own explicit authorisation.
 3b. **Phase C.2:** recovery protocol v2 (D2), close-time failure handling (D3), interrupted-run output protection (D4), nested-module code identity (D5). **Implemented and tested**; awaiting acceptance.
 4. **Phase D:** the Phase A audit correction (step 0), production rebuild, exact-difference check, validation, reproducibility, documentation, freeze checklist. **Completed 27 Nov 2026.**
 5. **Benchmark freeze:** **Completed 27 Nov 2026** (joint author approval; executed at `693cb28`; `MANIFEST.json` committed in `453fc55`).
-6. **DEV tuning, then one TEST evaluation:** separate authorisations. **DEV stage completed 27 Nov 2026** (`b0248b7`; `research_paper/dev_results_report.md`). The TEST evaluation awaits authorisation.
+6. **DEV tuning, then one TEST evaluation:** separate authorisations. **DEV stage completed 27 Nov 2026** (`b0248b7`; `research_paper/dev_results_report.md`). **TEST evaluation completed 27 Nov 2026**: single run `20261127T104925Z-0f293784` (`e0bf964`; `research_paper/test_results_report.md`).
 7. **Experimental analysis and results audit.**
 8. **Complete manuscript (§10, Stage 2) and final author review.**
 
@@ -354,4 +354,4 @@ The required final deliverable is a complete, academically defensible IEEE confe
 
 ---
 
-**Authorised so far: Phases A–D, the freeze and the DEV stage (all completed 27 Nov 2026).** Await explicit authorisation before the TEST evaluation, manuscript Stage 1 drafting, or any other step in §8.
+**Authorised so far: Phases A–D, the freeze, the DEV stage and the single TEST evaluation (all completed 27 Nov 2026).** Await explicit authorisation before the results audit, manuscript drafting, or any other step in §8.

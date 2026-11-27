@@ -2,8 +2,9 @@
 
 **Checkpoint date:** 24 Nov 2026.
 **Written on branch:** `research/option-a-evaluation`, on top of commit `91b7305`. This file is committed as the next commit; run `git log -1` for its hash.
-**Updated 27 Nov 2026: CURRENT STAGE = FROZEN; DEV STAGE COMPLETE (S1 tuning, DEV evaluation of B/S0/S1, DEV figure, DEV latency). NO TEST EVALUATION HAS BEEN RUN.** Phases A and B are accepted; Phases C, C.1 and C.2 are accepted with conditions (C.2 audit of `daffba1`); Phase D is complete. The TEST evaluation needs separate authorisation.
-- **DEV stage (27 Nov 2026, authorised separately):** `run_all.py --stage tune` and `--stage latency` run once each at `ce6f98f` against the verified manifest; outputs committed unedited in `b0248b7`; report in `research_paper/dev_results_report.md`. Selected S1 setting (strict rule, feasible branch; all 49 settings feasible): `product_min_coverage=1.0`, `product_typo_max_edits=1`, `product_typo_min_len=4` (7 settings tied at DEV macro accuracy 1.000; chosen by the coverage tie-break; the coverage threshold had no effect on DEV). DEV results are in-sample for S1 and are not study results. **No TEST item has been loaded, scored or timed.**
+**Updated 27 Nov 2026: CURRENT STAGE = FROZEN; DEV STAGE AND THE SINGLE PLANNED TEST EVALUATION COMPLETE.** Phases A and B are accepted; Phases C, C.1 and C.2 are accepted with conditions (C.2 audit of `daffba1`); Phase D is complete. The results audit and manuscript each need separate authorisation. No further TEST run is planned; any rerun would need `--rerun-reason` and separate authorisation.
+- **DEV stage (27 Nov 2026, authorised separately):** `run_all.py --stage tune` and `--stage latency` run once each at `ce6f98f` against the verified manifest; outputs committed unedited in `b0248b7`; report in `research_paper/dev_results_report.md`. Selected S1 setting (strict rule, feasible branch; all 49 settings feasible): `product_min_coverage=1.0`, `product_typo_max_edits=1`, `product_typo_min_len=4` (7 settings tied at DEV macro accuracy 1.000; chosen by the coverage tie-break; the coverage threshold had no effect on DEV). DEV results are in-sample for S1 and are not study results. No TEST item was loaded, scored or timed during the DEV stage.
+- **TEST stage (27 Nov 2026, authorised separately):** single planned TEST run `20261127T104925Z-0f293784` (status completed; first and only run) through the authorised route at `0e34002`; outputs committed unedited in `e0bf964`; report `research_paper/test_results_report.md`. Primary (pooled) results: product P1–P7 S1 silent-error rate 0.000 (coverage 0.688, decision accuracy 0.997) vs S0 0.443 and B 0.053; held-out country identification J4–J7: no system identifies held-out forms (S1 and B abstain; S0 silent-error rate 0.016; no Holm-significant difference); tax behaviour J4–J7: B/S0 silent-error rates 1.000/0.996, S1 0.000 by refusal (137 over-refusals). 9 of 18 primary tests Holm-significant. No retuning or rerun.
 - **Freeze (27 Nov 2026):** joint author approval by Author 1 (Syeda Sayeeda Farhath, corresponding author) and Author 2 (Siddharth Karanam), each given independently on 27 Nov 2026 for the package at `0e5a831` (`research_paper/freeze_approval_record.md`, committed in `693cb28`). `run_all.py --stage freeze` was executed at the documentation-only commit `693cb28` (`frozen_utc` 2026-11-27T09:35:27.652615+00:00). `MANIFEST.json` (SHA-256 `0d7bddd9c5c8a2855e79d8bfdaff1f81bcc272c2c7744d1c361ce3714ef0b19b`) was committed in `453fc55`. It pins code identity `1930a0b2b99eb6587879b9b330af93a7eb3d2a3df447dcc1e1c09b22fd44efb6` (38 files, git commit `693cb28`) and the seven approved hashes (§4; config `ba8b5ef7…`, review treatments `cc5f593f…`, evaluation exclusions `2ecacabe…`). `verify_manifest` passes. From now on any change to a pinned file or code-identity path invalidates the TEST evaluation.
 - **Phase D:** the benchmark was rebuilt with exactly the four authorised P7 exclusions; validation shows 0 errors and 0 warnings; four isolated rebuilds are byte-identical. See §4 and `research_paper/IMPLEMENTATION_CHANGES.md` §12.
 - **Original benchmark:** the pre-review product benchmark is preserved in git at `a0129b8` (SHA-256 `4b69c5bb24ed519831490118e4d86ca2dfb38575cde4db5479c4e3feda1b5351`, git blob `76a8e81c`). Tests read it only from there (`tests/_original.py`).
@@ -335,13 +336,13 @@ Authors, in exact order (all: Dept. of CSE, Vardhaman College of Engineering, Hy
 **Not done:**
 - literature review (strategy only, `literature_review.md`; no reference verified);
 - conference shortlist (unverified leads only, `conference_shortlist.md`);
-- TEST evaluation (the freeze and the DEV stage were completed on 27 Nov 2026);
+- results audit (the freeze, the DEV stage and the single TEST run were completed on 27 Nov 2026);
 - figures and results;
 - manuscript (no draft exists);
 - final submission checklist;
 - one comprehensive PR to `main` (to be opened only after stable results; left unmerged).
 
-**Current stage (27 Nov 2026):** frozen (`MANIFEST.json` committed in `453fc55`); DEV stage complete (outputs in `b0248b7`, report `research_paper/dev_results_report.md`; experiment tests 276/276 and backend 63/63 pass with the outputs present). The TEST evaluation and manuscript drafting each await explicit authorisation (`IMPLEMENTATION_PLAN.md` §8).
+**Current stage (27 Nov 2026):** frozen (`MANIFEST.json` committed in `453fc55`); DEV stage complete (`b0248b7`, `research_paper/dev_results_report.md`); single TEST run `20261127T104925Z-0f293784` complete (`e0bf964`, `research_paper/test_results_report.md`; experiment tests 276/276 and backend 63/63 pass with all outputs present). The results audit and manuscript drafting each await explicit authorisation (`IMPLEMENTATION_PLAN.md` §8).
 
 **Clarifications from the Phase C.2 audit (limits of the recovery evidence; no code was changed in Phase D):**
 - **Acknowledged is not verified.** A recovery record acknowledges evidence as found; it does not verify it.
@@ -415,7 +416,7 @@ Corrected execution order: Phases A, B and C with tests first, then the producti
 | `research_paper/experiments/data/external/` | HS mirror CSV, PROVENANCE (superseded), Unicode licence. The Unicode emoji file is a git-ignored, hash-checked cache |
 | `research_paper/experiments/data/generated/` | Frozen benchmarks plus `VALIDATION_REPORT.md`, `build_log.json` and `MANIFEST.json` (frozen 27 Nov 2026) |
 | `research_paper/experiments/pilot/` | Review sheets and records (§5–§7); `superseded/` holds blank v3 sheets |
-| `research_paper/experiments/results/` | DEV outputs only (27 Nov 2026): `tuning_dev.json`, `latency_dev.json`, `dev/` (evaluation, full-pipeline grid, figure), `dev_stage_record.json`, `dev_stage_logs/`. No TEST run. `figures/` is empty |
+| `research_paper/experiments/results/` | DEV outputs (`tuning_dev.json`, `latency_dev.json`, `dev/`, `dev_stage_record.json`, `dev_stage_logs/`) and the single TEST run (`runs/20261127T104925Z-0f293784/`, `test_runs.jsonl`, `test_stage_record.json`, `test_stage_logs/`), all 27 Nov 2026. `figures/` is empty |
 
 ## 15. Known documentation inconsistencies (stale text in older documents)
 Newer documents take precedence; these older passages should be read as superseded:
