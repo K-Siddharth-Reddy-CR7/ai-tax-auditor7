@@ -1,0 +1,33 @@
+\begin{table}[t]
+\centering
+\caption{Benchmark items scored per category (DEV / TEST, TEST after the eight pilot exclusions) and TEST clusters.}
+\label{tab:bench}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrrl@{}}
+\toprule
+Category & DEV & TEST & Cl. & Gold \\
+\midrule
+P1 exact catalogue name & 44 & 76 & 38 & answer \\
+P2 formatting variant & 44 & 75 & 38 & answer \\
+P3 typo & 44 & 75 & 38 & answer \\
+P4 under-specified short form & 14 & 15 & 15 & decline \\
+P5 confusable neighbour & 21 & 22 & 12 & answer \\
+P6 ambiguous word & 6 & 10 & 10 & decline \\
+P7 outside catalogue & 25 & 86 & 86 & decline \\
+P8 formal HS text$^\dagger$ & 72 & 170 & 170 & mixed \\
+\midrule
+J1 table name + noise$^\ddagger$ & 39 & 81 & 27 & ISO / none \\
+J2 ISO alpha-2/3 code$^\ddagger$ & 154 & 344 & 172 & ISO / none \\
+J3 ISO name$^\ddagger$ & 114 & 271 & 168 & ISO / none \\
+J4 typo & 77 & 170 & 170 & ISO / none \\
+J5 CLDR localised name & 257 & 564 & 147 & ISO / none \\
+J6 ambiguous word (no country) & 6 & 9 & 9 & ISO / none \\
+J7 region name (no country) & 8 & 26 & 26 & ISO / none \\
+\midrule
+Pooled product P1--P7 & 198 & 359 & 134 & \\
+Pooled country J4--J7 & 348 & 769 & 207 & \\
+\bottomrule
+\end{tabular}
+\\[2pt]\parbox{\columnwidth}{\scriptsize $^\dagger$P8 is reported separately (in-catalogue HS codes: answer; others: decline). $^\ddagger$Forms contained in S1's own alias table; descriptive only. Malformed inputs (18) are not split. Cl.\ = TEST clusters.}
+\end{table}

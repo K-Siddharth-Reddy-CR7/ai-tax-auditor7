@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\caption{Error propagation on TEST (counts of per-item classes) and malformed-input handling.}
+\label{tab:prop}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Outcome & B & S0 & S1 \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Product varied, country fixed (P1--P7, $n=359$)}} \\
+Correct output & 116 & 200 & 247 \\
+Product wrong/unresolved, cost unaffected & 132 & 48 & 0 \\
+Landed-cost error & 0 & 0 & 0 \\
+Cost computed, should refuse & 111 & 111 & 0 \\
+Refused: correct / over-refusal & 0 / 0 & 0 / 0 & 111 / 1 \\
+Fabricated HS code & 0 & 120 & 0 \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Country varied, product fixed (J4--J7, $n=769$)}} \\
+Correct output & 0 & 3 & 0 \\
+Silent landed-cost error & 137 & 134 & 0 \\
+Cost computed, should refuse & 632 & 632 & 0 \\
+Refused: correct / over-refusal & 0 / 0 & 0 / 0 & 632 / 137 \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Malformed inputs ($n=18$; not held out)}} \\
+Rejected & 5 & 7 & 18 \\
+Landed cost computed & 13 & 11 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
