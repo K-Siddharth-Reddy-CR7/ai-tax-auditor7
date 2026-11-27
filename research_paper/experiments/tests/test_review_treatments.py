@@ -518,7 +518,15 @@ def test_freeze_guard_refuses_missing_log_entry(ready):
     assert any("review_exclusion" in p for p in run_all.freeze_preconditions(str(gen), pdir))
 
 
+def _real_manifest_state():
+    """SHA-256 of the real repository MANIFEST.json, or None if it is absent (state-aware: valid before and after
+    the production freeze, following the Phase C before/after integrity check)."""
+    real = os.path.join(GEN, "MANIFEST.json")
+    return hashlib.sha256(open(real, "rb").read()).hexdigest() if os.path.exists(real) else None
+
+
 def test_stage_freeze_refuses_without_writing_manifest(ready, tmp_path, monkeypatch):
+    real_before = _real_manifest_state()
     gen, pdir = ready
     (gen / "product_benchmark.csv").write_bytes(original_product_bytes())  # invalid state: original draft
     manifest = gen / "MANIFEST.json"
@@ -530,4 +538,4 @@ def test_stage_freeze_refuses_without_writing_manifest(ready, tmp_path, monkeypa
     with pytest.raises(SystemExit, match="approved-by"):
         run_all.stage_freeze("")
     assert not manifest.exists()
-    assert not os.path.exists(os.path.join(GEN, "MANIFEST.json"))
+    assert _real_manifest_state() == real_before, "the refused freeze changed the real repository MANIFEST.json"
