@@ -1,6 +1,6 @@
 # P7 "Outside the Catalogue": Human Review Sheet — v4 (15 Nov 2026)
 
-**Reviewer:** Author 1. **Status: Part A COMPLETE; Part B COMPLETE (decisions recorded, NOT yet applied to the benchmark).**
+**Reviewer:** Author 1. **Status: Part A COMPLETE; Part B COMPLETE. Decisions APPLIED in the Phase D rebuild (27 Nov 2026)** through `pilot/authorised_review_treatments_v1.csv`. The 3 Uncertain look-alikes and #81 were excluded (full rows in `data/generated/excluded_items.csv`); 13 Outside + 99 Clear retained (P7 = 112). The review records and the scan file are unchanged. The notes below are the historical pre-rebuild status.
 - Part A (look-alikes) complete: all 16 items decided. 13 Outside, 0 Potentially in catalogue, 3 Uncertain (#4 couch and lamp, #14 toothbrush, #15 video game). No comments. Recorded in `pilot/p7_lookalike_review_v4.csv`; decisions not yet applied to the benchmark.
 - Part B (100-name plain scan) complete: all 100 names reviewed. 99 Clear, 1 Flag for review (#81 satellite antenna), no comments. Recorded in `pilot/p7_plain_scan_progress_v4.csv`. The scan file `pilot/p7_plain_scan_v4.txt` (its EXCEPTIONS/REVIEWED fields) is unchanged; applying decisions requires separate explicit authorisation.
 - **Do not run `--stage build` until the authors explicitly authorise applying the decisions.** A build now would apply Part A, removing the 3 Uncertain items; Part B is still pending.

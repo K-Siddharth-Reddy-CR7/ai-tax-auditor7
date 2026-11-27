@@ -2,7 +2,9 @@
 
 **Checkpoint date:** 24 Nov 2026.
 **Written on branch:** `research/option-a-evaluation`, on top of commit `91b7305`. This file is committed as the next commit; run `git log -1` for its hash.
-**Updated 26 Nov 2026: CURRENT STAGE = PHASES A AND B ACCEPTED; PHASES C AND C.1 CONDITIONALLY ACCEPTED; PHASE C.2 (PRE-FREEZE CORRECTIONS D2–D5) IMPLEMENTED AND TESTED; PHASE D NOT AUTHORISED.**
+**Updated 27 Nov 2026: CURRENT STAGE = PHASE D COMPLETE (production rebuild, validation, reproducibility) AND AWAITING REVIEW. NOT FROZEN.** Phases A and B are accepted; Phases C, C.1 and C.2 are accepted with conditions (C.2 audit of `daffba1`). The freeze, tuning, latency measurement and DEV/TEST evaluation each need separate authorisation.
+- **Phase D:** the benchmark was rebuilt with exactly the four authorised P7 exclusions; validation shows 0 errors and 0 warnings; four isolated rebuilds are byte-identical. See §4 and `research_paper/IMPLEMENTATION_CHANGES.md` §12.
+- **Original benchmark:** the pre-review product benchmark is preserved in git at `a0129b8` (SHA-256 `4b69c5bb24ed519831490118e4d86ca2dfb38575cde4db5479c4e3feda1b5351`, git blob `76a8e81c`). Tests read it only from there (`tests/_original.py`).
 - **Phase C.2, D2 (recovery protocol v2):** recovery records form a sequence-numbered chain. Each recovery snapshots all surviving evidence and acknowledges every earlier record as present-verified, present-unverifiable or missing, so repeated loss of the log or of recovery entries stays recoverable. Recovery fails closed, writing nothing, on contradictory evidence: unreadable records, duplicate sequence numbers, a record whose bytes contradict a recorded hash, or unevidenced sequence gaps. No history is ever reconstructed.
 - **Phase C.2, D3 (close-time failures):** any exception during the close-time manifest check closes the run as aborted, preserving the original exception. `stage_evaluate` keeps the evaluation error and adds the close failure as a note.
 - **Phase C.2, D4 (interrupted runs):** a recovery acknowledges an interrupted run with a SHA-256 inventory of every file present; later changes are detected. A new TEST run is refused while an interrupted run is unacknowledged. The hashes do not establish integrity before the recovery.
@@ -123,19 +125,24 @@ Design:
   - pooled product claims use P1–P7 (P8 is reported separately);
   - pooled country claims use held-out forms J4–J7 only (J1–J3 are in S1's own table, so solved by construction).
 
-## 4. Benchmark: composition and splits (DRAFT, not frozen)
-Files are in `research_paper/experiments/data/generated/`. They are deterministic (seed 20261114), reproduced byte-identically in a clean venv and across `PYTHONHASHSEED` values in Phase 6/7.
+## 4. Benchmark: composition and splits (REBUILT 27 Nov 2026; not frozen)
+Files are in `research_paper/experiments/data/generated/`. They are deterministic (seed 20261114). The Phase D rebuild was reproduced byte-identically in four isolated builds: two virtual environments (one freshly created from `requirements.txt`) and `PYTHONHASHSEED` values 0, 4242 and 987654.
 
-| File | SHA-256 |
+| File | SHA-256 (after the Phase D rebuild) |
 |---|---|
-| `product_benchmark.csv` | `4b69c5bb24ed519831490118e4d86ca2dfb38575cde4db5479c4e3feda1b5351` |
-| `country_benchmark.csv` | `1bf3f48940c27b4ba7fad332bc8e0bbc367df1381a251e6345a3a6609444c929` |
-| `malformed_inputs.csv` | `bb3af78811f382e8f1bcab7d622cfbe0737177a7a4644e8724b0258ef19655df` |
+| `product_benchmark.csv` | `a6a87fc3f7057a74eebd9d5b7809809820b892e4ac3b791fe1f4dc64c5935160` (the original `4b69c5bb…` minus exactly the 4 authorised rows) |
+| `country_benchmark.csv` | `1bf3f48940c27b4ba7fad332bc8e0bbc367df1381a251e6345a3a6609444c929` (unchanged) |
+| `malformed_inputs.csv` | `bb3af78811f382e8f1bcab7d622cfbe0737177a7a4644e8724b0258ef19655df` (unchanged) |
+| `excluded_items.csv` | `fcdc6789fbb455b78c3f0f5229ba9eacdde111b42dadf61f7283e6b2717f44d1` (new: the 4 full original rows plus reasons) |
+| `build_log.json` | `ac17b5fcc9ed11238d2322d0fc4e12caff8644edfd4d7aeed3a72f02870877bb` |
+| `VALIDATION_REPORT.md` | `bb2abb9bccc00f7e3f9e099e2b42ce9322b08b64af38c0ad0259ef37e5a24155` |
+
+**After the rebuild:** product **805 rows (DEV 270 / TEST 535)**; P7 **112** (DEV 25 = 21 plain + 4 look-alikes; TEST 87 = 78 + 9). The P7 rows in the tables below are the pre-rebuild values; the scored TEST counts are in `IMPLEMENTATION_PLAN.md` §5, now verified.
 
 - `VALIDATION_REPORT.md`: 0 errors, 0 warnings.
 - Split: group-level hash, **DEV 30 % / TEST 70 %**. Groups never straddle splits. DEV is used only for tuning. There is **no separate training split**: nothing is trained.
 
-**Products: 809 items (DEV 272 / TEST 537)**
+**Products (pre-rebuild original, 809 items, DEV 272 / TEST 537; after the rebuild 805, DEV 270 / TEST 535)**
 | Category | Total | DEV | TEST | TEST clusters | Gold |
 |---|---|---|---|---|---|
 | P1 exact catalogue names | 120 | 44 | 76 | 38 | ANSWER |
@@ -223,8 +230,8 @@ Source: `experiments/pilot/p7_lookalike_review_v4.csv`. Reviewer: Author 1. No c
 | Pilot (10 items) | 10 Accept | ≥ 9 Accept → rules accepted | n/a (no data change) | Yes (documentation only) |
 | 8 pilot items in TEST | Inspected | Exclude from every final TEST metric via `evaluation_exclusions_v1.json`; rows preserved (`IMPLEMENTATION_PLAN.md` Phase B) | **Yes** (Phase B authorised 26 Nov 2026) | **Implemented in code**; applied at evaluation time (no evaluation run yet) |
 | 13 Outside look-alikes | Outside | Keep as gold DECLINE | **No** | No (they are already in the draft as DECLINE) |
-| 3 Uncertain look-alikes (couch and lamp, toothbrush, video game) | Uncertain | Exclude; full rows kept in an audit file | **Yes: approved by the user on 24 Nov 2026** | **Recorded and enforced in code (Phase A); not yet applied to the committed files** (Phase D rebuild) |
-| #81 satellite antenna | Flag for review | **Author decision (24 Nov 2026): exclude as Uncertain.** The current code has no mapping for "Flag for review"; Phase A adds one via the decisions file, without editing the scan file | **Yes: approved** | **Recorded and enforced in code (Phase A); not yet applied to the committed files** (Phase D rebuild). The scan file is not edited |
+| 3 Uncertain look-alikes (couch and lamp, toothbrush, video game) | Uncertain | Exclude; full rows kept in an audit file | **Yes: approved by the user on 24 Nov 2026** | **Applied** in the Phase D rebuild (27 Nov 2026); full rows in `excluded_items.csv` |
+| #81 satellite antenna | Flag for review | **Author decision (24 Nov 2026): exclude as Uncertain.** The current code has no mapping for "Flag for review"; Phase A adds one via the decisions file, without editing the scan file | **Yes: approved** | **Applied** in the Phase D rebuild; full row in `excluded_items.csv`. The scan file is not edited |
 | 99 Clear plain names | Clear | Keep as gold DECLINE | No | No change needed |
 | Freeze | — | Since Phase A, `run_all.py --stage freeze` refuses unless the decisions file validates against the review records and the benchmark, `excluded_items.csv` and `build_log.json` reflect exactly that file. The scan file's `REVIEWED` line is not read | **No** | No |
 
@@ -332,7 +339,19 @@ Authors, in exact order (all: Dept. of CSE, Vardhaman College of Engineering, Hy
 - final submission checklist;
 - one comprehensive PR to `main` (to be opened only after stable results; left unmerged).
 
-**Current stage (26 Nov 2026):** Phases A and B accepted; Phases C and C.1 conditionally accepted; Phase C.2 implemented and tested (experiment tests 271/271, backend 63/63). Phase D (including the production rebuild), the freeze, tuning, latency measurement, TEST evaluation and manuscript drafting each await explicit authorisation (`IMPLEMENTATION_PLAN.md` §8). The final deliverable includes a complete IEEE manuscript (`IMPLEMENTATION_PLAN.md` §10; workspace `research_paper/manuscript/`).
+**Current stage (27 Nov 2026):** Phase D complete and awaiting review (experiment tests 276/276, backend 63/63). The freeze, tuning, latency measurement, DEV/TEST evaluation and manuscript drafting each await explicit authorisation (`IMPLEMENTATION_PLAN.md` §8).
+
+**Clarifications from the Phase C.2 audit (limits of the recovery evidence; no code was changed in Phase D):**
+- **Acknowledged is not verified.** A recovery record acknowledges evidence as found; it does not verify it.
+  - "present_verified" means only that the record's bytes match a hash recorded by another surviving record or a log line.
+  - When the only such source is itself unconfirmable (for example after a log loss, the newest record has no surviving log line), the whole chain rests on unconfirmable evidence, even where earlier records are labelled verified. `hash_sources` names the source.
+- **Unverified log lines prove nothing.** A run ID found only in an unverified part of the log (for example a line after a broken hash link) is recorded by a recovery as "evidence: log 'started' entry" and stays in the run history. It is not independently verified, and must not be described as a verified run.
+- **Conflicts are not attributions.** When recovery hashes conflict, the current refusal message says the earlier record "was modified". Either the earlier record or the record that claims its hash may have been altered; treat it as a conflict between the named sources. A wording change needs a separately authorised code change.
+- **No concurrency.** Concurrent TEST runs and recovery operations are not permitted. There is no inter-process lock, and a recovery run while another process has a TEST run open would acknowledge that run mid-way.
+- **Interrupted runs:** their outputs are protected only from the recovery-time inventory onward; nothing establishes their integrity before that.
+- **Closing failures:** if `close_run` fails outside its verification step (an internal error), `close.json` may exist without a closing log line. That state is refused until a recovery.
+- **Dot-folders:** a module inside a dot-folder under `lexeval/` or `lexitax_v2/` is matched by the commit check but not by the content hash. Such folders cannot be imported as packages.
+- **Local evidence only:** local hash chains give no protection against a determined rewrite of all local evidence; git commits and the authors' records are the external check. The final deliverable includes a complete IEEE manuscript (`IMPLEMENTATION_PLAN.md` §10; workspace `research_paper/manuscript/`).
 
 **Meaning of acknowledged history (Phase C.2):** a recovery record acknowledges evidence as found. It:
 - distinguishes runs whose log entries survive from runs whose entries are missing;

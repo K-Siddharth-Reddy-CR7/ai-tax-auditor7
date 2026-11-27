@@ -1,6 +1,13 @@
 # IMPLEMENTATION_PLAN.md — applying the review decisions and evaluation safeguards
 
-**Status (26 Nov 2026): PHASES A AND B ACCEPTED (audits of `ead53a4` and `f354cd7`). PHASES C AND C.1 CONDITIONALLY ACCEPTED (audits of `d6c683e` and `c103cac`). PHASE C.2 IMPLEMENTED AND TESTED. PHASE D NOT AUTHORISED.**
+**Status (27 Nov 2026): PHASE D COMPLETE, AWAITING REVIEW. NOT FROZEN.** Phases A and B are accepted (audits of `ead53a4` and `f354cd7`). Phases C, C.1 and C.2 are accepted with conditions (audits of `d6c683e`, `c103cac` and `daffba1`; the C.2 conditions are documentation, recorded in `RESEARCH_STATE.md`).
+- Phase D:
+  - step 0 test correction (immutable original from `a0129b8`);
+  - production rebuild (exactly 4 authorised exclusions);
+  - validation (0 errors, 0 warnings; every count in §5 verified);
+  - four byte-identical reproducibility builds.
+
+  Details: `IMPLEMENTATION_CHANGES.md` §12.
 - Phase C.2 (pre-freeze corrections D2–D5 from the C.1 audit) changed `lexeval/run_control.py`, `run_all.py` and the tests. Details: `IMPLEMENTATION_CHANGES.md` §11.
 - Phase C.1 (corrections from the Phase C audit) changed `lexeval/run_control.py`, `tuning.py`, `figures.py`, `run_all.py` and the tests. Details: `IMPLEMENTATION_CHANGES.md` §10.
 - Phase C added `lexeval/run_control.py` and changed `evaluate.py`, `tuning.py`, `latency.py`, `figures.py`, `eval_exclusions.py`, `run_all.py`, `config.json` (latency block) and tests. Details: `IMPLEMENTATION_CHANGES.md` §9.
@@ -210,8 +217,8 @@ These steps run only after Phases A–C pass their tests.
    - `research_paper/experiments/p7_review_sheet.md` (status only).
 8. Present the freeze checklist (§9) for author approval. **No freeze without that approval.**
 
-## 5. Expected counts (ESTIMATES until verified by the Phase D rebuild)
-Derived on 24 Nov 2026 from the current benchmark files, the cluster definitions (`cluster` column) and the decisions above. These are not measured results.
+## 5. Expected counts (VERIFIED by the Phase D rebuild, 27 Nov 2026)
+Derived on 24 Nov 2026 from the benchmark files, the cluster definitions (`cluster` column) and the decisions above. On 27 Nov 2026 every figure below was checked against the rebuilt files: all row, split, category, cluster, pooled, sibling and latency-workload counts match exactly. These are benchmark counts, not measured results.
 
 **Benchmark after Phase A (rows):**
 - product 809 → **805** (DEV 272 → 270, TEST 537 → 535);
@@ -282,7 +289,7 @@ Each step needs its own explicit authorisation.
 3. **Phase C:** DEV-only latency and tuning, the single TEST route with permanent run controls, figure paths (DEV-only risk–coverage), ladder tests. **Conditionally accepted** (`d6c683e`).
 3a. **Phase C.1:** run-log reconciliation and recovery, code identity at freeze, provenance re-checks, full-pipeline DEV grid, tie-break documentation, state-aware tests. **Conditionally accepted** (`c103cac`).
 3b. **Phase C.2:** recovery protocol v2 (D2), close-time failure handling (D3), interrupted-run output protection (D4), nested-module code identity (D5). **Implemented and tested**; awaiting acceptance.
-4. **Phase D:** the Phase A audit correction (step 0), production rebuild, exact-difference check, validation, reproducibility, documentation, freeze checklist. **No production rebuild before Phases A–C pass all tests.**
+4. **Phase D:** the Phase A audit correction (step 0), production rebuild, exact-difference check, validation, reproducibility, documentation, freeze checklist. **Completed 27 Nov 2026; awaiting review.**
 5. **Benchmark freeze:** separate authorisation.
 6. **DEV tuning, then one TEST evaluation:** separate authorisation.
 7. **Experimental analysis and results audit.**
@@ -293,16 +300,17 @@ The manuscript's Stage 1 (evidence-supported, results-independent sections, §10
 **No TEST-set evaluation before step 6.**
 
 ## 9. Conditions required before freezing
-- [ ] Phases A–C implemented; all tests pass.
-- [ ] Production rebuild done; exact-difference check passed (exactly 4 rows removed, all else identical).
-- [ ] `excluded_items.csv` complete, with reasons.
-- [ ] Validation 0 errors; counts reconciled with §5.
-- [ ] `evaluation_exclusions_v1.json` complete (8 IDs + sibling clusters); IDs verified in TEST.
-- [ ] Reproducibility (hash seeds + clean venv) passed.
-- [ ] TEST lock, DEV-only tuning and DEV-only latency safeguards tested.
-- [ ] Original review/scan files, original application and `main` unchanged.
-- [ ] Documentation updated and consistent.
-- [ ] **Explicit author approval to freeze.**
+Status after Phase D (27 Nov 2026):
+- [x] Phases A–C (with C.1 and C.2) implemented; all tests pass (276 experiment, 63 backend).
+- [x] Production rebuild done; exact-difference check passed: exactly 4 rows removed, every other byte identical to the original from `a0129b8`, and country and malformed unchanged.
+- [x] `excluded_items.csv` complete: the 4 full original rows, with reasons, decisions and authorisation.
+- [x] Validation: 0 errors, 0 warnings; counts reconciled with §5.
+- [x] `evaluation_exclusions_v1.json` valid against the rebuilt benchmark: 8 IDs, all in TEST, disjoint from the 4 review exclusions; sibling clusters fixed (18 product / 9 country items).
+- [x] Reproducibility: four isolated builds (two environments, one fresh; `PYTHONHASHSEED` 0, 4242, 987654) byte-identical to production.
+- [x] TEST lock, DEV-only tuning and DEV-only latency safeguards tested.
+- [x] Original review and scan files and the original application unchanged; `main` unchanged.
+- [x] Documentation updated (`RESEARCH_STATE.md`, this plan, `IMPLEMENTATION_CHANGES.md` §12, the experiment README and the dataset rationale/P7 sheet banners).
+- [ ] **Explicit author approval to freeze** (`run_all.py --stage freeze --approved-by NAME` on a clean, committed tree; then commit `MANIFEST.json`).
 
 ---
 
@@ -346,4 +354,4 @@ The required final deliverable is a complete, academically defensible IEEE confe
 
 ---
 
-**Authorised so far: Phases A and B (accepted), Phases C and C.1 (conditionally accepted) and Phase C.2 (implemented).** Await explicit authorisation before Phase D, manuscript Stage 1 drafting, or any other step in §8.
+**Authorised so far: Phases A–D.** Phase D is complete and awaiting review. Await explicit authorisation before the freeze, manuscript Stage 1 drafting, or any other step in §8.

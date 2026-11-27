@@ -12,6 +12,8 @@ import shutil
 
 import pytest
 from _helpers import csv_rows, without_items
+from _original import (AUTHORISED_P7_EXCLUSIONS, ORIGINAL_COMMIT, assert_expected_live_state, original_product_bytes,
+                       original_product_rows)
 
 import run_all
 from lexeval import build_products, pilot
@@ -34,7 +36,8 @@ ORIGINAL_RECORDS = {
     "pilot_reviewed_items.json": "ce958c65996b1b7312ca621a55aaddc5e6d956e2916507c6902480e7ba4b384e",
     "catalogue_base_types.csv": "2e750410055aa9a7b1b35cb1c21514ca660657b28c80f0907a44fc62f6c597e2",
 }
-DRAFT_PRODUCT = os.path.join(GEN, "product_benchmark.csv")
+# Phase D step 0: "the original draft" is the immutable benchmark from git commit a0129b8 (tests/_original.py),
+# never the live data/generated/product_benchmark.csv, which the production rebuild replaces.
 
 
 def _sha(path):
@@ -108,10 +111,10 @@ def test_exact_treatments_for_all_116_items():
 
 
 def test_decisions_match_every_review_record_and_draft_item():
-    """Each decision row agrees with its review record and with the committed draft P7 row."""
+    """Each decision row agrees with its review record and with the ORIGINAL draft P7 row (from a0129b8)."""
     _, rows = _treatment_rows()
     recs = pilot.review_records()
-    draft = {r["item_id"]: r for r in read_csv(DRAFT_PRODUCT) if r["subset"] == "P7_outside"}
+    draft = {r["item_id"]: r for r in original_product_rows() if r["subset"] == "P7_outside"}
     assert set(draft) == {r["item_id"] for r in rows}
     for r in rows:
         rec, d = recs[r["item_id"]], draft[r["item_id"]]
@@ -235,13 +238,15 @@ def test_all_retained_items_present_with_gold_decline(built):
 
 
 def test_build_equals_draft_minus_exactly_four_rows(built):
-    """Exact-difference check in a temporary directory: every other row is byte-identical to the committed draft."""
+    """Exact-difference check in a temporary directory: every other row is byte-identical to the ORIGINAL draft
+    (from a0129b8), whatever state the live benchmark is in."""
     got = (built["gen"] / "product_benchmark.csv").read_bytes()
-    assert got == without_items(open(DRAFT_PRODUCT, "rb").read(), AUTHORISED_EXCLUSIONS)
+    assert set(AUTHORISED_EXCLUSIONS) == AUTHORISED_P7_EXCLUSIONS
+    assert got == without_items(original_product_bytes(), AUTHORISED_EXCLUSIONS)
 
 
 def test_audit_file_holds_full_original_rows_and_reasons(built):
-    draft = {r[0]: r for r in csv_rows(open(DRAFT_PRODUCT, "rb").read())[1:]}
+    draft = {r[0]: r for r in csv_rows(original_product_bytes())[1:]}   # original rows from a0129b8
     audit = csv_rows((built["gen"] / run_all.EXCLUDED_FILE).read_bytes())
     assert audit[0] == build_products.EXCLUDED_FIELDS
     _, rows = _treatment_rows()
@@ -422,15 +427,39 @@ def test_freeze_guard_does_not_use_scan_status_line(ready):
     assert run_all.freeze_preconditions(str(gen), pdir) == []
 
 
-def test_freeze_guard_refuses_current_pre_phase_d_draft():
-    """The committed draft predates the treatments (no excluded_items.csv; excluded items present)."""
-    problems = run_all.freeze_preconditions()
+def _pre_rebuild_gen(dst):
+    """A temporary copy of the PRE-REBUILD generated directory: the original product benchmark and build log from
+    a0129b8, the (unchanged) country and malformed benchmarks, and no excluded_items.csv."""
+    import subprocess
+    from lexeval.paths import REPO
+    dst.mkdir()
+    (dst / "product_benchmark.csv").write_bytes(original_product_bytes())
+    log = subprocess.run(["git", "-C", REPO, "show",
+                          f"{ORIGINAL_COMMIT}:research_paper/experiments/data/generated/build_log.json"],
+                         capture_output=True, check=True).stdout
+    (dst / "build_log.json").write_bytes(log)
+    for f in ("country_benchmark.csv", "malformed_inputs.csv"):
+        shutil.copy(os.path.join(GEN, f), dst / f)
+    return dst
+
+
+def test_freeze_guard_refuses_current_pre_phase_d_draft(tmp_path):
+    """Pre-rebuild state (reconstructed from the immutable original): refused, no excluded_items.csv.
+    Live state (strict two-state check): refused before the rebuild; accepted after it."""
+    pre = _pre_rebuild_gen(tmp_path / "pre")
+    problems = run_all.freeze_preconditions(str(pre), _pilot_copy(tmp_path / "pilot"))
     assert problems and any("excluded_items.csv" in p for p in problems)
+    state = assert_expected_live_state()
+    live = run_all.freeze_preconditions()
+    if state == "pre":
+        assert live and any("excluded_items.csv" in p for p in live)
+    else:
+        assert live == [], live
 
 
 def test_freeze_guard_refuses_draft_still_containing_exclusions(ready):
     gen, pdir = ready
-    shutil.copy(DRAFT_PRODUCT, gen / "product_benchmark.csv")
+    (gen / "product_benchmark.csv").write_bytes(original_product_bytes())   # original still has the 4 items
     problems = run_all.freeze_preconditions(str(gen), pdir)
     assert any("still present" in p for p in problems)
 
@@ -491,7 +520,7 @@ def test_freeze_guard_refuses_missing_log_entry(ready):
 
 def test_stage_freeze_refuses_without_writing_manifest(ready, tmp_path, monkeypatch):
     gen, pdir = ready
-    shutil.copy(DRAFT_PRODUCT, gen / "product_benchmark.csv")  # invalid state
+    (gen / "product_benchmark.csv").write_bytes(original_product_bytes())  # invalid state: original draft
     manifest = gen / "MANIFEST.json"
     monkeypatch.setattr(run_all, "GEN", str(gen))
     monkeypatch.setattr(run_all, "PILOT", pdir)

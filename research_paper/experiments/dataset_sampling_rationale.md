@@ -1,4 +1,6 @@
-# Dataset Composition and Sampling Rationale (v4 — DRAFT, not frozen)
+# Dataset Composition and Sampling Rationale (v4 — rebuilt 27 Nov 2026, not frozen)
+
+> **Phase D (27 Nov 2026):** the four authorised P7 exclusions (couch and lamp, toothbrush and video game, all Uncertain; satellite antenna, Flag for review) were applied by the production rebuild. Product items: **805** (DEV 270 / TEST 535); P7: **112** (DEV 25 / TEST 87). Every other row is byte-identical to the v4 draft (`a0129b8`, 809 items). The figures below describe the v4 draft unless stated otherwise.
 
 > **v4 changes (Phase 7, 15 Nov 2026):**
 > - P4 has one gold label, DECLINE (underspecified short forms; initialisms removed).

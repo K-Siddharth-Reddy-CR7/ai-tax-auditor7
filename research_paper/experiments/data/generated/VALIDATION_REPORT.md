@@ -3,11 +3,11 @@
 Errors: 0; warnings: 0
 
 ## product_benchmark.csv
-- n: 809
-- by_subset_split: {'P1_exact/dev': 44, 'P1_exact/test': 76, 'P2_format/dev': 44, 'P2_format/test': 76, 'P3_typo/dev': 44, 'P3_typo/test': 76, 'P4_short/dev': 14, 'P4_short/test': 16, 'P5_confusable/dev': 21, 'P5_confusable/test': 22, 'P6_ambiguous/test': 11, 'P6_ambiguous/dev': 6, 'P7_outside/dev': 27, 'P7_outside/test': 89, 'P8_hs_formal/test': 171, 'P8_hs_formal/dev': 72}
+- n: 805
+- by_subset_split: {'P1_exact/dev': 44, 'P1_exact/test': 76, 'P2_format/dev': 44, 'P2_format/test': 76, 'P3_typo/dev': 44, 'P3_typo/test': 76, 'P4_short/dev': 14, 'P4_short/test': 16, 'P5_confusable/dev': 21, 'P5_confusable/test': 22, 'P6_ambiguous/test': 11, 'P6_ambiguous/dev': 6, 'P7_outside/dev': 25, 'P7_outside/test': 87, 'P8_hs_formal/test': 171, 'P8_hs_formal/dev': 72}
 - texts_in_both_splits: 0
 - conflicting_label_texts: 0
-- groups: 304
+- groups: 301
 - groups_straddling_splits: 0
 - test_items_with_near_duplicate_in_dev(jaccard>=0.9,<=12 tokens): 0
 
@@ -20,6 +20,12 @@ Errors: 0; warnings: 0
 - groups_straddling_splits: 0
 - test_items_with_near_duplicate_in_dev(jaccard>=0.9,<=12 tokens): 0
 
+## evaluation_exclusions
+- file: evaluation_exclusions_v1.json
+- sha256: 2ecacabef8cffc751fcd894437693bbd2681157a5b8c055504e5fb4252f4e203
+- n_excluded: 8
+- by_benchmark: {'product': 6, 'country': 2}
+
 ## reference
 - hs_edition_markers: {'new_in_2022_present': {'8524': True, '8549': True, '8806': True, '851713': True, '851714': True}, 'deleted_in_2022_absent': {'851712': True, '854810': True}}
 - versions: {'pycountry': '26.2.16', 'babel': '2.18.0', 'cldr': '47'}
@@ -29,4 +35,7 @@ Errors: 0; warnings: 0
 - emoji_pool_sizes: 1
 - hs_code_excluded: 10
 - label_conflict_removed: 3
+- review_exclusion: 4
+- review_record: 2
+- review_treatments_file: 1
 - typo_not_generated: 2

@@ -32,9 +32,10 @@ AUTHORISED = {  # item_id -> (pilot_id, benchmark, category)
     "CE|sint": ("P10", "country", "J6_ambiguous"),
 }
 DEV_PILOT = {"P5_confusable|Memory Card|typo_distinguishing_word": "P04", "CD|NZ|es": "P08"}
-# SHA-256 of committed files that Phase B must not change (verified 26 Nov 2026).
+# SHA-256 of committed files that Phase B must not change (verified 26 Nov 2026). The product benchmark is
+# checked separately (Phase D step 0): it must be the immutable original from a0129b8 or exactly the original
+# minus the four authorised P7 rows, as fixed by tests/_original.EXPECTED_LIVE_STATE.
 PROTECTED = {
-    "data/generated/product_benchmark.csv": "4b69c5bb24ed519831490118e4d86ca2dfb38575cde4db5479c4e3feda1b5351",
     "data/generated/country_benchmark.csv": "1bf3f48940c27b4ba7fad332bc8e0bbc367df1381a251e6345a3a6609444c929",
     "data/generated/malformed_inputs.csv": "bb3af78811f382e8f1bcab7d622cfbe0737177a7a4644e8724b0258ef19655df",
     "pilot/pilot_reviewed_items.json": "ce958c65996b1b7312ca621a55aaddc5e6d956e2916507c6902480e7ba4b384e",
@@ -85,8 +86,13 @@ def test_real_choke_point_removes_exactly_eight_and_nothing_else():
 
 
 def test_protected_files_unchanged():
+    from _original import ORIGINAL_SHA256, assert_expected_live_state, expected_rebuilt_bytes, original_product_bytes
     for rel, sha in PROTECTED.items():
         assert _sha(os.path.join(EXP, rel)) == sha, f"{rel} was modified"
+    assert hashlib.sha256(original_product_bytes()).hexdigest() == ORIGINAL_SHA256
+    state = assert_expected_live_state()
+    live = open(os.path.join(EXP, "data/generated/product_benchmark.csv"), "rb").read()
+    assert live == (original_product_bytes() if state == "pre" else expected_rebuilt_bytes())
 
 
 def test_validation_report_includes_exclusions():

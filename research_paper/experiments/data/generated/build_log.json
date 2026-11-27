@@ -48,6 +48,34 @@
   "P4_short|Video Camera|head_noun"
  ],
  [
+  "review_treatments_file",
+  "authorised_review_treatments_v1.csv sha256=cc5f593f172964ff352aa434d682db990d8713e52e7a92dd77a2b99ba38f15ce"
+ ],
+ [
+  "review_record",
+  "p7_lookalike_review_v4.csv sha256=d89a5ffe189001d34c757d94b78d13ac296cf346150b629cf5939543118fbdf3"
+ ],
+ [
+  "review_record",
+  "p7_plain_scan_progress_v4.csv sha256=185879b047ca1a367c3798e4a768f82679d253018173e48c991896ce0a13a30c"
+ ],
+ [
+  "review_exclusion",
+  "P7_outside|couch and lamp | lookalike_v4 #4 | Uncertain | Look-alike review #4 recorded 'Uncertain' (no reviewer comment), so the gold DECLINE label is not confirmed. Pre-declared rule removes look-alikes not marked Outside; the authors approved excluding it as Uncertain."
+ ],
+ [
+  "review_exclusion",
+  "P7_outside|satellite antenna | plain_scan_v4 #81 | Flag for review | Plain-name scan #81 recorded 'Flag for review' (no reviewer comment), so the gold DECLINE label is not confirmed. The authors decided to exclude it as Uncertain."
+ ],
+ [
+  "review_exclusion",
+  "P7_outside|toothbrush | lookalike_v4 #14 | Uncertain | Look-alike review #14 recorded 'Uncertain' (no reviewer comment), so the gold DECLINE label is not confirmed. Pre-declared rule removes look-alikes not marked Outside; the authors approved excluding it as Uncertain."
+ ],
+ [
+  "review_exclusion",
+  "P7_outside|video game | lookalike_v4 #15 | Uncertain | Look-alike review #15 recorded 'Uncertain' (no reviewer comment), so the gold DECLINE label is not confirmed. Pre-declared rule removes look-alikes not marked Outside; the authors approved excluding it as Uncertain."
+ ],
+ [
   "typo_not_generated",
   "GW"
  ],

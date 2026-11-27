@@ -15,7 +15,7 @@ python3 -m venv .venv && . .venv/bin/activate
 pip install -r research_paper/experiments/requirements.txt
 cd research_paper/experiments
 export PYTHONDONTWRITEBYTECODE=1
-python run_all.py --stage build      # deterministic (seed in config.json)
+python run_all.py --stage build      # deterministic (seed in config.json); rebuilt 27 Nov 2026 (Phase D), not frozen
 python run_all.py --stage validate   # -> data/generated/VALIDATION_REPORT.md
 python run_all.py --stage smoke      # L0==S0, L5==S1 on 400 canonical transactions
 python run_all.py --stage pilot      # creates review sheets only if absent; never overwrites
@@ -47,3 +47,8 @@ python run_all.py --stage recover-runs --authorised-by "<name>" --recovery-reaso
 | `lexeval/latency.py` | Repeated in-process timing with recorded environment |
 | `lexeval/figures.py` | Figures generated only from processed results |
 | `tests/` | Statistics, scoring, ladder equivalence, build determinism, code-path dry run |
+
+**Phase D (27 Nov 2026):**
+- **Current benchmark:** product 805 rows (DEV 270 / TEST 535; SHA-256 `a6a87fc3…`), the original minus exactly the four authorised P7 exclusions. Their full rows and reasons are in `data/generated/excluded_items.csv`.
+- **Original:** the pre-review benchmark (809 rows, `4b69c5bb…`) is preserved in git at `a0129b8`, and tests read it from there (`tests/_original.py`). The tests therefore need the full git history; a shallow clone makes them fail rather than skip.
+- **Not frozen.** No tuning, latency or evaluation run exists.

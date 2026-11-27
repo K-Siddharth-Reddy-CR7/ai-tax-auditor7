@@ -141,3 +141,39 @@ No production build, rebuild, freeze, manifest, tuning, latency measurement or T
 - **Does not establish:** what missing entries or records contained, or the integrity of any file before the recovery. A record with no surviving independent hash is marked present-unverifiable.
 
 **Trust boundary:** all checks rely on local evidence. A consistent rewrite of all local evidence, or deletion of all of it, is undetectable locally. Committing runs, the log and recovery records to git is the external check.
+
+## 12. Phase D (27 Nov 2026): immutable-original test correction, production rebuild, validation, reproducibility
+No manifest, freeze, tuning, latency measurement or DEV/TEST evaluation. Labels, authorised exclusions, research question, evaluation design and tuning rule are unchanged. No production code was changed.
+
+**Step 0, tests:**
+- `tests/_original.py` (new) reads the original product benchmark only from git (`a0129b8`, SHA-256 `4b69c5bb24ed519831490118e4d86ca2dfb38575cde4db5479c4e3feda1b5351`, blob `76a8e81c`). It fails, never skips, if git or the commit is unavailable or the hash differs.
+- It defines the two permitted live states, original ("pre") or original minus exactly the 4 authorised rows ("post"). It pins the post state (`EXPECTED_LIVE_STATE = "post"`) and the rebuilt hash.
+- The six `test_review_treatments.py` tests and `test_eval_exclusions.py::test_protected_files_unchanged` now use the immutable original. The live-state freeze-guard test refuses the reconstructed pre-rebuild state and requires the live state to pass.
+- `tests/test_original_benchmark.py` (new, 5 tests) checks the original's availability and hash, its git blob, its composition (809 rows, 116 P7), the exact four-row difference, and the rebuilt composition and pin.
+- Before the rebuild: 275/275 experiment tests and 63/63 backend tests passed (state "pre").
+
+**Step 1, rebuild:** `run_all.py --stage build` produced 805 product items with 4 review exclusions.
+- **Exact difference:** the product file equals the original with exactly the 4 authorised rows removed; every other byte is identical.
+- **Audit file:** `excluded_items.csv` holds the 4 full original rows plus reason, decision source, item number, recorded decision, authoriser, date and authorisation record.
+- **Build log:** gained only 4 `review_exclusion` entries and 3 provenance entries (the decisions file and both review records, with hashes).
+- **Unchanged:** the country (2,122) and malformed (18) benchmarks are byte-identical.
+
+**Step 2, validation:** `--stage validate` reported 0 errors and 0 warnings.
+- **Leakage:** no group straddles DEV/TEST (product 301 groups, country 298), there are no identical texts across splits, and no TEST item has a near-duplicate in DEV.
+- **Counts:** every count in `IMPLEMENTATION_PLAN.md` §5 matches exactly:
+  - per-category scored TEST items and clusters;
+  - pooled 359/134 and 769/207; totals 529 and 1,465;
+  - siblings 18 and 9;
+  - DEV workloads 270 and 655.
+- **Exclusion sets:** the 8 pilot evaluation exclusions are valid against the rebuilt benchmark, all in TEST, and disjoint from the 4 review exclusions.
+
+**Step 3, reproducibility:** four isolated builds into separate scratch directories (each with its own record), all byte-identical to production for every file (product, country, malformed, `excluded_items.csv`, `build_log.json`, `VALIDATION_REPORT.md`):
+- the existing pinned environment, `PYTHONHASHSEED` 0 and 4242;
+- a fresh environment from `requirements.txt`, `PYTHONHASHSEED` 0 and 987654.
+
+Both environments ran Python 3.13.18 with babel 2.18.0, matplotlib 3.11.2, numpy 2.5.4, pycountry 26.2.16 and scipy 1.18.1. Two unpinned transitive dependencies differed between them (`fonttools`, `packaging`) without affecting any output.
+
+**Committed files:**
+- data: `data/generated/product_benchmark.csv`, `excluded_items.csv` (new), `build_log.json`, `VALIDATION_REPORT.md`;
+- tests: `tests/_original.py` (new), `tests/test_original_benchmark.py` (new), `tests/test_review_treatments.py`, `tests/test_eval_exclusions.py`;
+- documentation.
