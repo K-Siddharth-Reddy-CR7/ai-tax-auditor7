@@ -1,0 +1,67 @@
+{
+  "seed": 20261114,
+  "dev_fraction": 0.3,
+  "hs_file": "data/external/hs2022_datasets-harmonized-system.csv",
+  "hs_file_sha256": "e77ee9e1cfd15a42d1fadeb2c0618d10f6b9ed9aec0e5d66826dc7ef9d3126a5",
+  "catalogue_chapters": [
+    "84",
+    "85",
+    "94",
+    "95"
+  ],
+  "cldr_locales": [
+    "de",
+    "fr",
+    "es",
+    "it",
+    "nl",
+    "pt"
+  ],
+  "tuning_grid": {
+    "product_min_coverage": [
+      0.0,
+      0.25,
+      0.34,
+      0.5,
+      0.67,
+      0.75,
+      1.0
+    ],
+    "product_typo_max_edits": [
+      0,
+      1,
+      2
+    ],
+    "product_typo_min_len": [
+      4,
+      5,
+      6
+    ]
+  },
+  "tuning_rule": "STRICT (author decision 15 Nov 2026, not to be relaxed after observing results): maximise dev macro decision-accuracy over product categories P2-P7 subject to dev macro silent-error rate <= that of baseline B on dev; if no setting satisfies the constraint, report this honestly and select the setting with minimum dev macro silent-error rate; ties -> larger coverage threshold, fewer typo edits, longer min length",
+  "latency": {
+    "split": "dev",
+    "warmup_calls": 200,
+    "repetitions": 30,
+    "workloads": {
+      "product": "all DEV product items, each with a canonical table country (rotating)",
+      "country": "all DEV country items, each with a canonical catalogue product (rotating)"
+    }
+  },
+  "bootstrap_resamples": 10000,
+  "product_design": {
+    "typos_per_type": 2,
+    "outside_plain": 100,
+    "outside_lookalike_max": 60,
+    "hs_near": 100,
+    "hs_far": 100
+  },
+  "statistics": {
+    "ci": "cluster bootstrap (resample clusters) 95% percentile + item-level Wilson",
+    "paired_test": "cluster-level sign-flip permutation (two-sided) on per-cluster differences, Holm across the primary family; exact McNemar reported as item-level secondary",
+    "permutations": 10000
+  },
+  "unicode_emoji_file": "data/external/unicode_emoji-test_16.0.txt",
+  "unicode_emoji_url": "https://raw.githubusercontent.com/unicode-org/unicodetools/ccc86e576dcadf94ef9f86969e7b5cb51e432ddc/unicodetools/data/emoji/16.0/emoji-test.txt",
+  "unicode_emoji_sha256": "24f0c534e86cf142e2496953e8f0e46a3e702392911eddcd29c6cced85139697"
+}

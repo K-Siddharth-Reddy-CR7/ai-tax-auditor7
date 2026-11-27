@@ -1,0 +1,106 @@
+# P7 plain names (Unicode emoji short names). Question for each: could this be one of the 60
+# catalogue product types (see catalogue_base_types.csv)? Write any such names, one per line,
+# BELOW the line 'EXCEPTIONS:'. Then replace 'REVIEWED: no' with 'REVIEWED: yes <name> <date>'.
+#
+#   1st place medal
+#   accordion
+#   adhesive bandage
+#   alembic
+#   ambulance
+#   american football
+#   anchor
+#   artist palette
+#   automobile
+#   balance scale
+#   banjo
+#   bathtub
+#   bell pepper
+#   bento box
+#   bicycle
+#   billed cap
+#   books
+#   bowling
+#   boxing glove
+#   broom
+#   bucket
+#   bullet train
+#   butter
+#   carrot
+#   clinking beer mugs
+#   cooked rice
+#   cookie
+#   croissant
+#   crutch
+#   cup with straw
+#   dagger
+#   egg
+#   falafel
+#   ferry
+#   file cabinet
+#   file folder
+#   fondue
+#   fountain pen
+#   garlic
+#   gem stone
+#   gloves
+#   green salad
+#   helicopter
+#   hot beverage
+#   hot dog
+#   hot pepper
+#   ice hockey
+#   kite
+#   kiwi fruit
+#   knot
+#   ledger
+#   linked paperclips
+#   lipstick
+#   magic wand
+#   metro
+#   money bag
+#   motorcycle
+#   mountain cableway
+#   mountain railway
+#   nut and bolt
+#   oil drum
+#   outbox tray
+#   page facing up
+#   page with curl
+#   paperclip
+#   passenger ship
+#   pea pod
+#   pencil
+#   performing arts
+#   pick
+#   ping pong
+#   pool 8 ball
+#   pot of food
+#   poultry leg
+#   pretzel
+#   purse
+#   roll of paper
+#   round pushpin
+#   rugby football
+#   sandwich
+#   satellite antenna
+#   small airplane
+#   soft ice cream
+#   spaghetti
+#   sponge
+#   sport utility vehicle
+#   stethoscope
+#   teddy bear
+#   thong sandal
+#   toilet
+#   top hat
+#   tractor
+#   train
+#   triangular ruler
+#   trophy
+#   wastebasket
+#   watermelon
+#   window
+#   yen banknote
+#   yo-yo
+REVIEWED: no
+EXCEPTIONS:

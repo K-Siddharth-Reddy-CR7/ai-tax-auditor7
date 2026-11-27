@@ -1,0 +1,3 @@
+# Additional runtime dependency of the research implementation backend/lexitax_v2 (S1).
+# The original application (backend/server.py) needs only requirements.txt.
+pycountry==26.2.16

@@ -1,0 +1,80 @@
+{
+  "review": "10-item pilot v4",
+  "reviewer": "Author 1 (Syeda Sayeeda Farhath), sole reviewer",
+  "decisions_reported_to_assistant": "2026-11-23",
+  "comments": "none",
+  "minutes_spent": "not reported",
+  "transcription": "Decisions transcribed into pilot_review_sheet_v4.csv by the AI assistant from Author 1's message; Author 1 did not edit the CSV directly.",
+  "items": [
+    {
+      "pilot_id": "P01",
+      "item_id": "P2_format|Scanner|ws_punct",
+      "benchmark": "product",
+      "split": "test",
+      "decision": "Accept"
+    },
+    {
+      "pilot_id": "P02",
+      "item_id": "P3_typo|Graphics Card|typo|0",
+      "benchmark": "product",
+      "split": "test",
+      "decision": "Accept"
+    },
+    {
+      "pilot_id": "P03",
+      "item_id": "P4_short|WiFi Adapter|head_noun",
+      "benchmark": "product",
+      "split": "test",
+      "decision": "Accept"
+    },
+    {
+      "pilot_id": "P04",
+      "item_id": "P5_confusable|Memory Card|typo_distinguishing_word",
+      "benchmark": "product",
+      "split": "dev",
+      "decision": "Accept"
+    },
+    {
+      "pilot_id": "P05",
+      "item_id": "P6_ambiguous|word|computer",
+      "benchmark": "product",
+      "split": "test",
+      "decision": "Accept"
+    },
+    {
+      "pilot_id": "P06",
+      "item_id": "P7_outside|card index",
+      "benchmark": "product",
+      "split": "test",
+      "decision": "Accept"
+    },
+    {
+      "pilot_id": "P07",
+      "item_id": "P8_hs|other_chapter|080122",
+      "benchmark": "product",
+      "split": "test",
+      "decision": "Accept"
+    },
+    {
+      "pilot_id": "P08",
+      "item_id": "CD|NZ|es",
+      "benchmark": "country",
+      "split": "dev",
+      "decision": "Accept"
+    },
+    {
+      "pilot_id": "P09",
+      "item_id": "CB|DZ|official_name",
+      "benchmark": "country",
+      "split": "test",
+      "decision": "Accept"
+    },
+    {
+      "pilot_id": "P10",
+      "item_id": "CE|sint",
+      "benchmark": "country",
+      "split": "test",
+      "decision": "Accept"
+    }
+  ]
+}

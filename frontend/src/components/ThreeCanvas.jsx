@@ -71,7 +71,7 @@ const AGENT_SPECIFICATIONS = [
     id: 'rag',
     name: '3. RAG POLICY AGENT',
     tag: 'Vector Regulatory Search',
-    desc: 'Executes dense TF-IDF vector retrieval over 240 compliance rules, flagging BIS, CE, and FDA permits.',
+    desc: 'Executes lexical TF-IDF retrieval over 240 prototype policy records and applies a keyword permit/prohibition flag.',
     color: '#f59e0b'
   },
   {
@@ -95,7 +95,7 @@ const AGENT_SPECIFICATIONS = [
     id: 'report',
     name: '6. REPORT AGENT',
     tag: 'Provenance & Verdict',
-    desc: 'Compiles full audit provenance trace, assigns cryptographic audit ID, and outputs compliance verdict.',
+    desc: 'Compiles the per-stage execution trace and assigns a timestamp-based audit ID.',
     color: '#34d399'
   }
 ];
