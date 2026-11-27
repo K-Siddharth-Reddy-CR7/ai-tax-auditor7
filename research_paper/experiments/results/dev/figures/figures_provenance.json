@@ -1,0 +1,41 @@
+{
+  "dev_risk_coverage.pdf": {
+    "inputs": {
+      "grid_full_pipeline_dev.json": "d720ee0f497cd5bd95f91322f47410498de3d946f103db1316afd1b4523f5a45",
+      "primary_dev_product_summary.csv": "a8bf61099b5ba5504eacd6e6305abca3860d10f71f09fb80a608c13fc89cbbdd",
+      "primary_dev_provenance.json": "d168591ff59338c45c1e9be71c50d253c8d493e362bb3654b04d272e137c161d",
+      "tuning_dev.json": "c0510c3ae35b72350b4183a92967cbdc9703f2d792b986b8b5815511f986e593"
+    },
+    "note": "development analysis, not TEST evidence",
+    "s1_operating_point_vs_grid": {
+      "difference_system_minus_grid": {
+        "coverage": 0.0,
+        "selective_risk": 0.0
+      },
+      "s1_system_point": {
+        "coverage": 0.7727272727272727,
+        "selective_risk": 0.0
+      },
+      "selected_grid_point": {
+        "coverage": 0.7727272727272727,
+        "selective_risk": 0.0
+      }
+    },
+    "selected_setting": {
+      "dev_macro_decision_accuracy": 1.0,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "coverage": 0.7727272727272727,
+        "n": 198,
+        "selective_risk": 0.0,
+        "silent_error_rate": 0.0
+      },
+      "product_min_coverage": 1.0,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 4
+    },
+    "selection_basis": "resolver-level DEV macro scores over P2-P7 (pre-declared rule; unchanged)",
+    "split": "dev",
+    "title": "S1 full-pipeline risk\u2013coverage across the tuning grid (DEV)"
+  }
+}

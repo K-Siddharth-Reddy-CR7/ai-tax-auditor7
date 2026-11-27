@@ -1,0 +1,700 @@
+{
+  "split": "dev",
+  "tuning_rule": "STRICT (author decision 15 Nov 2026, not to be relaxed after observing results): maximise dev macro decision-accuracy over product categories P2-P7 subject to dev macro silent-error rate <= that of baseline B on dev; if no setting satisfies the constraint, report this honestly and select the setting with minimum dev macro silent-error rate; ties -> larger coverage threshold, fewer typo edits, longer min length",
+  "rule_applied": "max dev accuracy s.t. dev SER <= SER(B)",
+  "chosen": {
+    "product_min_coverage": 1.0,
+    "product_typo_max_edits": 1,
+    "product_typo_min_len": 4,
+    "dev_macro_decision_accuracy": 1.0,
+    "dev_macro_silent_error_rate": 0.0,
+    "dev_pooled_P1_P7": {
+      "n": 198,
+      "coverage": 0.7727272727272727,
+      "silent_error_rate": 0.0,
+      "selective_risk": 0.0
+    }
+  },
+  "baseline_B_dev_macro_accuracy": 0.3093434343434343,
+  "baseline_B_dev_macro_ser": 0.27777777777777773,
+  "grid_definition": {
+    "product_min_coverage": [
+      0.0,
+      0.25,
+      0.34,
+      0.5,
+      0.67,
+      0.75,
+      1.0
+    ],
+    "product_typo_max_edits": [
+      0,
+      1,
+      2
+    ],
+    "product_typo_min_len": [
+      4,
+      5,
+      6
+    ]
+  },
+  "grid": [
+    {
+      "product_min_coverage": 0.0,
+      "product_typo_max_edits": 0,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.753968253968254,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.5,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.0,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 1.0,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7727272727272727,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.0,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9579725829725829,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7222222222222222,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.0,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9117965367965368,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.0,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.9776406926406928,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7777777777777778,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.012987012987012988
+      }
+    },
+    {
+      "product_min_coverage": 0.0,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9356132756132757,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7272727272727273,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.013888888888888888
+      }
+    },
+    {
+      "product_min_coverage": 0.0,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9013419913419914,
+      "dev_macro_silent_error_rate": 0.006666666666666667,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.005050505050505051,
+        "selective_risk": 0.007518796992481203
+      }
+    },
+    {
+      "product_min_coverage": 0.25,
+      "product_typo_max_edits": 0,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.753968253968254,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.5,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.25,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 1.0,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7727272727272727,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.25,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9579725829725829,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7222222222222222,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.25,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9117965367965368,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.25,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.9776406926406928,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7777777777777778,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.012987012987012988
+      }
+    },
+    {
+      "product_min_coverage": 0.25,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9356132756132757,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7272727272727273,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.013888888888888888
+      }
+    },
+    {
+      "product_min_coverage": 0.25,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9013419913419914,
+      "dev_macro_silent_error_rate": 0.006666666666666667,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.005050505050505051,
+        "selective_risk": 0.007518796992481203
+      }
+    },
+    {
+      "product_min_coverage": 0.34,
+      "product_typo_max_edits": 0,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.753968253968254,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.5,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.34,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 1.0,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7727272727272727,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.34,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9579725829725829,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7222222222222222,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.34,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9117965367965368,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.34,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.9776406926406928,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7777777777777778,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.012987012987012988
+      }
+    },
+    {
+      "product_min_coverage": 0.34,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9356132756132757,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7272727272727273,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.013888888888888888
+      }
+    },
+    {
+      "product_min_coverage": 0.34,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9013419913419914,
+      "dev_macro_silent_error_rate": 0.006666666666666667,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.005050505050505051,
+        "selective_risk": 0.007518796992481203
+      }
+    },
+    {
+      "product_min_coverage": 0.5,
+      "product_typo_max_edits": 0,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.753968253968254,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.5,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.5,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 1.0,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7727272727272727,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.5,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9579725829725829,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7222222222222222,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.5,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9117965367965368,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.5,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.9776406926406928,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7777777777777778,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.012987012987012988
+      }
+    },
+    {
+      "product_min_coverage": 0.5,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9356132756132757,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7272727272727273,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.013888888888888888
+      }
+    },
+    {
+      "product_min_coverage": 0.5,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9013419913419914,
+      "dev_macro_silent_error_rate": 0.006666666666666667,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.005050505050505051,
+        "selective_risk": 0.007518796992481203
+      }
+    },
+    {
+      "product_min_coverage": 0.67,
+      "product_typo_max_edits": 0,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.753968253968254,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.5,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.67,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 1.0,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7727272727272727,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.67,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9579725829725829,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7222222222222222,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.67,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9117965367965368,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.67,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.9776406926406928,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7777777777777778,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.012987012987012988
+      }
+    },
+    {
+      "product_min_coverage": 0.67,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9356132756132757,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7272727272727273,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.013888888888888888
+      }
+    },
+    {
+      "product_min_coverage": 0.67,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9013419913419914,
+      "dev_macro_silent_error_rate": 0.006666666666666667,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.005050505050505051,
+        "selective_risk": 0.007518796992481203
+      }
+    },
+    {
+      "product_min_coverage": 0.75,
+      "product_typo_max_edits": 0,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.753968253968254,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.5,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.75,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 1.0,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7727272727272727,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.75,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9579725829725829,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7222222222222222,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.75,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9117965367965368,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 0.75,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.9776406926406928,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7777777777777778,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.012987012987012988
+      }
+    },
+    {
+      "product_min_coverage": 0.75,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9356132756132757,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7272727272727273,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.013888888888888888
+      }
+    },
+    {
+      "product_min_coverage": 0.75,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9013419913419914,
+      "dev_macro_silent_error_rate": 0.006666666666666667,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.005050505050505051,
+        "selective_risk": 0.007518796992481203
+      }
+    },
+    {
+      "product_min_coverage": 1.0,
+      "product_typo_max_edits": 0,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.753968253968254,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.5,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 1.0,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 1.0,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7727272727272727,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 1.0,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9579725829725829,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7222222222222222,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 1.0,
+      "product_typo_max_edits": 1,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9117965367965368,
+      "dev_macro_silent_error_rate": 0.0,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.0,
+        "selective_risk": 0.0
+      }
+    },
+    {
+      "product_min_coverage": 1.0,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 4,
+      "dev_macro_decision_accuracy": 0.9776406926406928,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7777777777777778,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.012987012987012988
+      }
+    },
+    {
+      "product_min_coverage": 1.0,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 5,
+      "dev_macro_decision_accuracy": 0.9356132756132757,
+      "dev_macro_silent_error_rate": 0.018571428571428572,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.7272727272727273,
+        "silent_error_rate": 0.010101010101010102,
+        "selective_risk": 0.013888888888888888
+      }
+    },
+    {
+      "product_min_coverage": 1.0,
+      "product_typo_max_edits": 2,
+      "product_typo_min_len": 6,
+      "dev_macro_decision_accuracy": 0.9013419913419914,
+      "dev_macro_silent_error_rate": 0.006666666666666667,
+      "dev_pooled_P1_P7": {
+        "n": 198,
+        "coverage": 0.6717171717171717,
+        "silent_error_rate": 0.005050505050505051,
+        "selective_risk": 0.007518796992481203
+      }
+    }
+  ],
+  "n_dev_items_selection_P2_P7": 154,
+  "n_dev_items_pooled_P1_P7": 198,
+  "dev_item_ids_sha256": "6972269c0ebd4f5c64ddda42cad26b3aa84d396052f7d7086b21a748758ac687",
+  "input": "product_benchmark.csv sha256=a6a87fc3f7057a74eebd9d5b7809809820b892e4ac3b791fe1f4dc64c5935160",
+  "tie_breaks": {
+    "feasible": [
+      "highest DEV macro decision accuracy",
+      "larger product_min_coverage",
+      "fewer product_typo_max_edits",
+      "longer product_typo_min_len"
+    ],
+    "infeasible": [
+      "lowest DEV macro silent-error rate",
+      "higher DEV macro decision accuracy",
+      "larger product_min_coverage",
+      "fewer product_typo_max_edits",
+      "longer product_typo_min_len"
+    ]
+  },
+  "note": "Selection uses DEV macro metrics over P2-P7 only. dev_pooled_P1_P7 values are for the DEV risk-coverage figure (development analysis) and play no role in selection."
+}

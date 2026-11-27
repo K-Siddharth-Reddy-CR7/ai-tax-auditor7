@@ -1,0 +1,811 @@
+task,item_id,split,subset,cluster,look_alike,system,outcome,fabricated,prod_hs,label_hs,expected,propagation,flagged,rel_cost_error,policy_wrong
+product,P1_exact|Air Conditioner|base_name,dev,P1_exact,base:Air Conditioner,,B,CORRECT,False,841510,841510,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Air Conditioner|base_name,dev,P1_exact,base:Air Conditioner,,S0,CORRECT,False,841510,841510,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Air Conditioner|base_name,dev,P1_exact,base:Air Conditioner,,S1,CORRECT,False,841510,841510,ANSWER,NO_ERROR,True,0.0,False
+product,P1_exact|Air Conditioner|full_name,dev,P1_exact,base:Air Conditioner,,B,CORRECT,False,841510,841510,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Air Conditioner|full_name,dev,P1_exact,base:Air Conditioner,,S0,CORRECT,False,841510,841510,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Air Conditioner|full_name,dev,P1_exact,base:Air Conditioner,,S1,CORRECT,False,841510,841510,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Battery Charger|base_name,dev,P1_exact,base:Battery Charger,,B,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Battery Charger|base_name,dev,P1_exact,base:Battery Charger,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Battery Charger|base_name,dev,P1_exact,base:Battery Charger,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Battery Charger|full_name,dev,P1_exact,base:Battery Charger,,B,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Battery Charger|full_name,dev,P1_exact,base:Battery Charger,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Battery Charger|full_name,dev,P1_exact,base:Battery Charger,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Bluetooth Speaker|base_name,dev,P1_exact,base:Bluetooth Speaker,,B,CORRECT,False,851821,851821,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Bluetooth Speaker|base_name,dev,P1_exact,base:Bluetooth Speaker,,S0,CORRECT,False,851821,851821,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Bluetooth Speaker|base_name,dev,P1_exact,base:Bluetooth Speaker,,S1,CORRECT,False,851821,851821,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Bluetooth Speaker|full_name,dev,P1_exact,base:Bluetooth Speaker,,B,CORRECT,False,851821,851821,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Bluetooth Speaker|full_name,dev,P1_exact,base:Bluetooth Speaker,,S0,CORRECT,False,851821,851821,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Bluetooth Speaker|full_name,dev,P1_exact,base:Bluetooth Speaker,,S1,CORRECT,False,851821,851821,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Coffee Maker|base_name,dev,P1_exact,base:Coffee Maker,,B,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Coffee Maker|base_name,dev,P1_exact,base:Coffee Maker,,S0,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Coffee Maker|base_name,dev,P1_exact,base:Coffee Maker,,S1,CORRECT,False,851671,851671,ANSWER,NO_ERROR,True,0.0,False
+product,P1_exact|Coffee Maker|full_name,dev,P1_exact,base:Coffee Maker,,B,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Coffee Maker|full_name,dev,P1_exact,base:Coffee Maker,,S0,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Coffee Maker|full_name,dev,P1_exact,base:Coffee Maker,,S1,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Iron|base_name,dev,P1_exact,base:Electric Iron,,B,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Iron|base_name,dev,P1_exact,base:Electric Iron,,S0,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Iron|base_name,dev,P1_exact,base:Electric Iron,,S1,CORRECT,False,851640,851640,ANSWER,NO_ERROR,True,0.0,False
+product,P1_exact|Electric Iron|full_name,dev,P1_exact,base:Electric Iron,,B,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Iron|full_name,dev,P1_exact,base:Electric Iron,,S0,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Iron|full_name,dev,P1_exact,base:Electric Iron,,S1,CORRECT,False,851640,851640,ANSWER,NO_ERROR,True,0.0,False
+product,P1_exact|Electric Kettle|base_name,dev,P1_exact,base:Electric Kettle,,B,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Kettle|base_name,dev,P1_exact,base:Electric Kettle,,S0,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Kettle|base_name,dev,P1_exact,base:Electric Kettle,,S1,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Kettle|full_name,dev,P1_exact,base:Electric Kettle,,B,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Kettle|full_name,dev,P1_exact,base:Electric Kettle,,S0,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Kettle|full_name,dev,P1_exact,base:Electric Kettle,,S1,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Oven|base_name,dev,P1_exact,base:Electric Oven,,B,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Oven|base_name,dev,P1_exact,base:Electric Oven,,S0,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Oven|base_name,dev,P1_exact,base:Electric Oven,,S1,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Oven|full_name,dev,P1_exact,base:Electric Oven,,B,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Oven|full_name,dev,P1_exact,base:Electric Oven,,S0,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Oven|full_name,dev,P1_exact,base:Electric Oven,,S1,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Shaver|base_name,dev,P1_exact,base:Electric Shaver,,B,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Shaver|base_name,dev,P1_exact,base:Electric Shaver,,S0,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Shaver|base_name,dev,P1_exact,base:Electric Shaver,,S1,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Shaver|full_name,dev,P1_exact,base:Electric Shaver,,B,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Shaver|full_name,dev,P1_exact,base:Electric Shaver,,S0,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Electric Shaver|full_name,dev,P1_exact,base:Electric Shaver,,S1,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Hair Clipper|base_name,dev,P1_exact,base:Hair Clipper,,B,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Hair Clipper|base_name,dev,P1_exact,base:Hair Clipper,,S0,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Hair Clipper|base_name,dev,P1_exact,base:Hair Clipper,,S1,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Hair Clipper|full_name,dev,P1_exact,base:Hair Clipper,,B,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Hair Clipper|full_name,dev,P1_exact,base:Hair Clipper,,S0,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Hair Clipper|full_name,dev,P1_exact,base:Hair Clipper,,S1,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Hair Dryer|base_name,dev,P1_exact,base:Hair Dryer,,B,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Hair Dryer|base_name,dev,P1_exact,base:Hair Dryer,,S0,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Hair Dryer|base_name,dev,P1_exact,base:Hair Dryer,,S1,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Hair Dryer|full_name,dev,P1_exact,base:Hair Dryer,,B,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Hair Dryer|full_name,dev,P1_exact,base:Hair Dryer,,S0,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Hair Dryer|full_name,dev,P1_exact,base:Hair Dryer,,S1,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Inverter|base_name,dev,P1_exact,base:Inverter,,B,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Inverter|base_name,dev,P1_exact,base:Inverter,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Inverter|base_name,dev,P1_exact,base:Inverter,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Inverter|full_name,dev,P1_exact,base:Inverter,,B,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Inverter|full_name,dev,P1_exact,base:Inverter,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Inverter|full_name,dev,P1_exact,base:Inverter,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Lithium Battery|base_name,dev,P1_exact,base:Lithium Battery,,B,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Lithium Battery|base_name,dev,P1_exact,base:Lithium Battery,,S0,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Lithium Battery|base_name,dev,P1_exact,base:Lithium Battery,,S1,CORRECT,False,850760,850760,ANSWER,NO_ERROR,True,0.0,False
+product,P1_exact|Lithium Battery|full_name,dev,P1_exact,base:Lithium Battery,,B,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Lithium Battery|full_name,dev,P1_exact,base:Lithium Battery,,S0,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Lithium Battery|full_name,dev,P1_exact,base:Lithium Battery,,S1,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Memory Card|base_name,dev,P1_exact,base:Memory Card,,B,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Memory Card|base_name,dev,P1_exact,base:Memory Card,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Memory Card|base_name,dev,P1_exact,base:Memory Card,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Memory Card|full_name,dev,P1_exact,base:Memory Card,,B,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Memory Card|full_name,dev,P1_exact,base:Memory Card,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Memory Card|full_name,dev,P1_exact,base:Memory Card,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Microphone|base_name,dev,P1_exact,base:Microphone,,B,CORRECT,False,851810,851810,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Microphone|base_name,dev,P1_exact,base:Microphone,,S0,CORRECT,False,851810,851810,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Microphone|base_name,dev,P1_exact,base:Microphone,,S1,CORRECT,False,851810,851810,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Microphone|full_name,dev,P1_exact,base:Microphone,,B,CORRECT,False,851810,851810,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Microphone|full_name,dev,P1_exact,base:Microphone,,S0,CORRECT,False,851810,851810,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Microphone|full_name,dev,P1_exact,base:Microphone,,S1,CORRECT,False,851810,851810,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Microwave Oven|base_name,dev,P1_exact,base:Microwave Oven,,B,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Microwave Oven|base_name,dev,P1_exact,base:Microwave Oven,,S0,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Microwave Oven|base_name,dev,P1_exact,base:Microwave Oven,,S1,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Microwave Oven|full_name,dev,P1_exact,base:Microwave Oven,,B,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Microwave Oven|full_name,dev,P1_exact,base:Microwave Oven,,S0,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Microwave Oven|full_name,dev,P1_exact,base:Microwave Oven,,S1,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Power Supply Unit|base_name,dev,P1_exact,base:Power Supply Unit,,B,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Power Supply Unit|base_name,dev,P1_exact,base:Power Supply Unit,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Power Supply Unit|base_name,dev,P1_exact,base:Power Supply Unit,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Power Supply Unit|full_name,dev,P1_exact,base:Power Supply Unit,,B,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Power Supply Unit|full_name,dev,P1_exact,base:Power Supply Unit,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Power Supply Unit|full_name,dev,P1_exact,base:Power Supply Unit,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Solar Panel|base_name,dev,P1_exact,base:Solar Panel,,B,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Solar Panel|base_name,dev,P1_exact,base:Solar Panel,,S0,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Solar Panel|base_name,dev,P1_exact,base:Solar Panel,,S1,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Solar Panel|full_name,dev,P1_exact,base:Solar Panel,,B,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Solar Panel|full_name,dev,P1_exact,base:Solar Panel,,S0,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Solar Panel|full_name,dev,P1_exact,base:Solar Panel,,S1,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Toaster|base_name,dev,P1_exact,base:Toaster,,B,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Toaster|base_name,dev,P1_exact,base:Toaster,,S0,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Toaster|base_name,dev,P1_exact,base:Toaster,,S1,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Toaster|full_name,dev,P1_exact,base:Toaster,,B,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Toaster|full_name,dev,P1_exact,base:Toaster,,S0,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Toaster|full_name,dev,P1_exact,base:Toaster,,S1,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|USB Flash Drive|base_name,dev,P1_exact,base:USB Flash Drive,,B,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|USB Flash Drive|base_name,dev,P1_exact,base:USB Flash Drive,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|USB Flash Drive|base_name,dev,P1_exact,base:USB Flash Drive,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|USB Flash Drive|full_name,dev,P1_exact,base:USB Flash Drive,,B,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|USB Flash Drive|full_name,dev,P1_exact,base:USB Flash Drive,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|USB Flash Drive|full_name,dev,P1_exact,base:USB Flash Drive,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Washing Machine|base_name,dev,P1_exact,base:Washing Machine,,B,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Washing Machine|base_name,dev,P1_exact,base:Washing Machine,,S0,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Washing Machine|base_name,dev,P1_exact,base:Washing Machine,,S1,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Washing Machine|full_name,dev,P1_exact,base:Washing Machine,,B,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Washing Machine|full_name,dev,P1_exact,base:Washing Machine,,S0,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Washing Machine|full_name,dev,P1_exact,base:Washing Machine,,S1,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Water Heater|base_name,dev,P1_exact,base:Water Heater,,B,CORRECT,False,851610,851610,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Water Heater|base_name,dev,P1_exact,base:Water Heater,,S0,CORRECT,False,851610,851610,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Water Heater|base_name,dev,P1_exact,base:Water Heater,,S1,CORRECT,False,851610,851610,ANSWER,NO_ERROR,True,0.0,False
+product,P1_exact|Water Heater|full_name,dev,P1_exact,base:Water Heater,,B,CORRECT,False,851610,851610,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Water Heater|full_name,dev,P1_exact,base:Water Heater,,S0,CORRECT,False,851610,851610,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Water Heater|full_name,dev,P1_exact,base:Water Heater,,S1,CORRECT,False,851610,851610,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Wireless Headphones|base_name,dev,P1_exact,base:Wireless Headphones,,B,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Wireless Headphones|base_name,dev,P1_exact,base:Wireless Headphones,,S0,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Wireless Headphones|base_name,dev,P1_exact,base:Wireless Headphones,,S1,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Wireless Headphones|full_name,dev,P1_exact,base:Wireless Headphones,,B,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Wireless Headphones|full_name,dev,P1_exact,base:Wireless Headphones,,S0,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P1_exact|Wireless Headphones|full_name,dev,P1_exact,base:Wireless Headphones,,S1,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Air Conditioner|case,dev,P2_format,base:Air Conditioner,,B,CORRECT,False,841510,841510,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Air Conditioner|case,dev,P2_format,base:Air Conditioner,,S0,CORRECT,False,841510,841510,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Air Conditioner|case,dev,P2_format,base:Air Conditioner,,S1,CORRECT,False,841510,841510,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Air Conditioner|ws_punct,dev,P2_format,base:Air Conditioner,,B,OVER_ABSTENTION,False,,841510,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Air Conditioner|ws_punct,dev,P2_format,base:Air Conditioner,,S0,CORRECT,False,841510,841510,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Air Conditioner|ws_punct,dev,P2_format,base:Air Conditioner,,S1,CORRECT,False,841510,841510,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Battery Charger|case,dev,P2_format,base:Battery Charger,,B,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Battery Charger|case,dev,P2_format,base:Battery Charger,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Battery Charger|case,dev,P2_format,base:Battery Charger,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,True,0.0,False
+product,P2_format|Battery Charger|ws_punct,dev,P2_format,base:Battery Charger,,B,OVER_ABSTENTION,False,,850440,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Battery Charger|ws_punct,dev,P2_format,base:Battery Charger,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Battery Charger|ws_punct,dev,P2_format,base:Battery Charger,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Bluetooth Speaker|case,dev,P2_format,base:Bluetooth Speaker,,B,CORRECT,False,851821,851821,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Bluetooth Speaker|case,dev,P2_format,base:Bluetooth Speaker,,S0,CORRECT,False,851821,851821,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Bluetooth Speaker|case,dev,P2_format,base:Bluetooth Speaker,,S1,CORRECT,False,851821,851821,ANSWER,NO_ERROR,True,0.0,False
+product,P2_format|Bluetooth Speaker|ws_punct,dev,P2_format,base:Bluetooth Speaker,,B,OVER_ABSTENTION,False,,851821,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Bluetooth Speaker|ws_punct,dev,P2_format,base:Bluetooth Speaker,,S0,CORRECT,False,851821,851821,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Bluetooth Speaker|ws_punct,dev,P2_format,base:Bluetooth Speaker,,S1,CORRECT,False,851821,851821,ANSWER,NO_ERROR,True,0.0,False
+product,P2_format|Coffee Maker|case,dev,P2_format,base:Coffee Maker,,B,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Coffee Maker|case,dev,P2_format,base:Coffee Maker,,S0,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Coffee Maker|case,dev,P2_format,base:Coffee Maker,,S1,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Coffee Maker|ws_punct,dev,P2_format,base:Coffee Maker,,B,OVER_ABSTENTION,False,,851671,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Coffee Maker|ws_punct,dev,P2_format,base:Coffee Maker,,S0,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Coffee Maker|ws_punct,dev,P2_format,base:Coffee Maker,,S1,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Iron|case,dev,P2_format,base:Electric Iron,,B,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Iron|case,dev,P2_format,base:Electric Iron,,S0,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Iron|case,dev,P2_format,base:Electric Iron,,S1,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Iron|ws_punct,dev,P2_format,base:Electric Iron,,B,OVER_ABSTENTION,False,,851640,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Electric Iron|ws_punct,dev,P2_format,base:Electric Iron,,S0,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Iron|ws_punct,dev,P2_format,base:Electric Iron,,S1,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Kettle|case,dev,P2_format,base:Electric Kettle,,B,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Kettle|case,dev,P2_format,base:Electric Kettle,,S0,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Kettle|case,dev,P2_format,base:Electric Kettle,,S1,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Kettle|ws_punct,dev,P2_format,base:Electric Kettle,,B,OVER_ABSTENTION,False,,851679,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Electric Kettle|ws_punct,dev,P2_format,base:Electric Kettle,,S0,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Kettle|ws_punct,dev,P2_format,base:Electric Kettle,,S1,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Oven|case,dev,P2_format,base:Electric Oven,,B,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Oven|case,dev,P2_format,base:Electric Oven,,S0,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Oven|case,dev,P2_format,base:Electric Oven,,S1,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Oven|ws_punct,dev,P2_format,base:Electric Oven,,B,OVER_ABSTENTION,False,,851660,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Electric Oven|ws_punct,dev,P2_format,base:Electric Oven,,S0,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Oven|ws_punct,dev,P2_format,base:Electric Oven,,S1,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Shaver|case,dev,P2_format,base:Electric Shaver,,B,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Shaver|case,dev,P2_format,base:Electric Shaver,,S0,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Shaver|case,dev,P2_format,base:Electric Shaver,,S1,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Shaver|ws_punct,dev,P2_format,base:Electric Shaver,,B,OVER_ABSTENTION,False,,851010,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Electric Shaver|ws_punct,dev,P2_format,base:Electric Shaver,,S0,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Electric Shaver|ws_punct,dev,P2_format,base:Electric Shaver,,S1,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Hair Clipper|case,dev,P2_format,base:Hair Clipper,,B,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Hair Clipper|case,dev,P2_format,base:Hair Clipper,,S0,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Hair Clipper|case,dev,P2_format,base:Hair Clipper,,S1,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Hair Clipper|ws_punct,dev,P2_format,base:Hair Clipper,,B,OVER_ABSTENTION,False,,851020,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Hair Clipper|ws_punct,dev,P2_format,base:Hair Clipper,,S0,SILENT_ERROR,True,847130,851020,ANSWER,MASKED_SILENT,False,0.0,False
+product,P2_format|Hair Clipper|ws_punct,dev,P2_format,base:Hair Clipper,,S1,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Hair Dryer|case,dev,P2_format,base:Hair Dryer,,B,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Hair Dryer|case,dev,P2_format,base:Hair Dryer,,S0,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Hair Dryer|case,dev,P2_format,base:Hair Dryer,,S1,CORRECT,False,851631,851631,ANSWER,NO_ERROR,True,0.0,False
+product,P2_format|Hair Dryer|ws_punct,dev,P2_format,base:Hair Dryer,,B,OVER_ABSTENTION,False,,851631,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Hair Dryer|ws_punct,dev,P2_format,base:Hair Dryer,,S0,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Hair Dryer|ws_punct,dev,P2_format,base:Hair Dryer,,S1,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Inverter|case,dev,P2_format,base:Inverter,,B,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Inverter|case,dev,P2_format,base:Inverter,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Inverter|case,dev,P2_format,base:Inverter,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Inverter|ws_punct,dev,P2_format,base:Inverter,,B,OVER_ABSTENTION,False,,850440,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Inverter|ws_punct,dev,P2_format,base:Inverter,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Inverter|ws_punct,dev,P2_format,base:Inverter,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Lithium Battery|case,dev,P2_format,base:Lithium Battery,,B,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Lithium Battery|case,dev,P2_format,base:Lithium Battery,,S0,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Lithium Battery|case,dev,P2_format,base:Lithium Battery,,S1,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Lithium Battery|ws_punct,dev,P2_format,base:Lithium Battery,,B,OVER_ABSTENTION,False,,850760,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Lithium Battery|ws_punct,dev,P2_format,base:Lithium Battery,,S0,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Lithium Battery|ws_punct,dev,P2_format,base:Lithium Battery,,S1,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Memory Card|case,dev,P2_format,base:Memory Card,,B,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Memory Card|case,dev,P2_format,base:Memory Card,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Memory Card|case,dev,P2_format,base:Memory Card,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Memory Card|ws_punct,dev,P2_format,base:Memory Card,,B,OVER_ABSTENTION,False,,852351,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Memory Card|ws_punct,dev,P2_format,base:Memory Card,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Memory Card|ws_punct,dev,P2_format,base:Memory Card,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Microphone|case,dev,P2_format,base:Microphone,,B,CORRECT,False,851810,851810,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Microphone|case,dev,P2_format,base:Microphone,,S0,CORRECT,False,851810,851810,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Microphone|case,dev,P2_format,base:Microphone,,S1,CORRECT,False,851810,851810,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Microphone|ws_punct,dev,P2_format,base:Microphone,,B,OVER_ABSTENTION,False,,851810,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Microphone|ws_punct,dev,P2_format,base:Microphone,,S0,CORRECT,False,851810,851810,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Microphone|ws_punct,dev,P2_format,base:Microphone,,S1,CORRECT,False,851810,851810,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Microwave Oven|case,dev,P2_format,base:Microwave Oven,,B,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Microwave Oven|case,dev,P2_format,base:Microwave Oven,,S0,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Microwave Oven|case,dev,P2_format,base:Microwave Oven,,S1,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Microwave Oven|ws_punct,dev,P2_format,base:Microwave Oven,,B,OVER_ABSTENTION,False,,851650,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Microwave Oven|ws_punct,dev,P2_format,base:Microwave Oven,,S0,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Microwave Oven|ws_punct,dev,P2_format,base:Microwave Oven,,S1,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Power Supply Unit|case,dev,P2_format,base:Power Supply Unit,,B,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Power Supply Unit|case,dev,P2_format,base:Power Supply Unit,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Power Supply Unit|case,dev,P2_format,base:Power Supply Unit,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Power Supply Unit|ws_punct,dev,P2_format,base:Power Supply Unit,,B,OVER_ABSTENTION,False,,850440,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Power Supply Unit|ws_punct,dev,P2_format,base:Power Supply Unit,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Power Supply Unit|ws_punct,dev,P2_format,base:Power Supply Unit,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Solar Panel|case,dev,P2_format,base:Solar Panel,,B,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Solar Panel|case,dev,P2_format,base:Solar Panel,,S0,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Solar Panel|case,dev,P2_format,base:Solar Panel,,S1,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Solar Panel|ws_punct,dev,P2_format,base:Solar Panel,,B,OVER_ABSTENTION,False,,854143,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Solar Panel|ws_punct,dev,P2_format,base:Solar Panel,,S0,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Solar Panel|ws_punct,dev,P2_format,base:Solar Panel,,S1,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Toaster|case,dev,P2_format,base:Toaster,,B,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Toaster|case,dev,P2_format,base:Toaster,,S0,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Toaster|case,dev,P2_format,base:Toaster,,S1,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Toaster|ws_punct,dev,P2_format,base:Toaster,,B,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Toaster|ws_punct,dev,P2_format,base:Toaster,,S0,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Toaster|ws_punct,dev,P2_format,base:Toaster,,S1,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|USB Flash Drive|case,dev,P2_format,base:USB Flash Drive,,B,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|USB Flash Drive|case,dev,P2_format,base:USB Flash Drive,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|USB Flash Drive|case,dev,P2_format,base:USB Flash Drive,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,True,0.0,False
+product,P2_format|USB Flash Drive|ws_punct,dev,P2_format,base:USB Flash Drive,,B,OVER_ABSTENTION,False,,852351,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|USB Flash Drive|ws_punct,dev,P2_format,base:USB Flash Drive,,S0,SILENT_ERROR,True,847130,852351,ANSWER,MASKED_SILENT,False,0.0,True
+product,P2_format|USB Flash Drive|ws_punct,dev,P2_format,base:USB Flash Drive,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Washing Machine|case,dev,P2_format,base:Washing Machine,,B,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Washing Machine|case,dev,P2_format,base:Washing Machine,,S0,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Washing Machine|case,dev,P2_format,base:Washing Machine,,S1,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Washing Machine|ws_punct,dev,P2_format,base:Washing Machine,,B,OVER_ABSTENTION,False,,845011,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Washing Machine|ws_punct,dev,P2_format,base:Washing Machine,,S0,SILENT_ERROR,True,847130,845011,ANSWER,MASKED_SILENT,False,0.0,True
+product,P2_format|Washing Machine|ws_punct,dev,P2_format,base:Washing Machine,,S1,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Water Heater|case,dev,P2_format,base:Water Heater,,B,CORRECT,False,851610,851610,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Water Heater|case,dev,P2_format,base:Water Heater,,S0,CORRECT,False,851610,851610,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Water Heater|case,dev,P2_format,base:Water Heater,,S1,CORRECT,False,851610,851610,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Water Heater|ws_punct,dev,P2_format,base:Water Heater,,B,OVER_ABSTENTION,False,,851610,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Water Heater|ws_punct,dev,P2_format,base:Water Heater,,S0,CORRECT,False,851610,851610,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Water Heater|ws_punct,dev,P2_format,base:Water Heater,,S1,CORRECT,False,851610,851610,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Wireless Headphones|case,dev,P2_format,base:Wireless Headphones,,B,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Wireless Headphones|case,dev,P2_format,base:Wireless Headphones,,S0,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Wireless Headphones|case,dev,P2_format,base:Wireless Headphones,,S1,CORRECT,False,851830,851830,ANSWER,NO_ERROR,True,0.0,False
+product,P2_format|Wireless Headphones|ws_punct,dev,P2_format,base:Wireless Headphones,,B,OVER_ABSTENTION,False,,851830,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P2_format|Wireless Headphones|ws_punct,dev,P2_format,base:Wireless Headphones,,S0,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P2_format|Wireless Headphones|ws_punct,dev,P2_format,base:Wireless Headphones,,S1,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Air Conditioner|typo|0,dev,P3_typo,base:Air Conditioner,,B,OVER_ABSTENTION,False,,841510,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Air Conditioner|typo|0,dev,P3_typo,base:Air Conditioner,,S0,CORRECT,False,841510,841510,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Air Conditioner|typo|0,dev,P3_typo,base:Air Conditioner,,S1,CORRECT,False,841510,841510,ANSWER,NO_ERROR,True,0.0,False
+product,P3_typo|Air Conditioner|typo|1,dev,P3_typo,base:Air Conditioner,,B,OVER_ABSTENTION,False,,841510,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Air Conditioner|typo|1,dev,P3_typo,base:Air Conditioner,,S0,CORRECT,False,841510,841510,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Air Conditioner|typo|1,dev,P3_typo,base:Air Conditioner,,S1,CORRECT,False,841510,841510,ANSWER,NO_ERROR,True,0.0,False
+product,P3_typo|Battery Charger|typo|0,dev,P3_typo,base:Battery Charger,,B,OVER_ABSTENTION,False,,850440,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Battery Charger|typo|0,dev,P3_typo,base:Battery Charger,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Battery Charger|typo|0,dev,P3_typo,base:Battery Charger,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Battery Charger|typo|1,dev,P3_typo,base:Battery Charger,,B,OVER_ABSTENTION,False,,850440,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Battery Charger|typo|1,dev,P3_typo,base:Battery Charger,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Battery Charger|typo|1,dev,P3_typo,base:Battery Charger,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Bluetooth Speaker|typo|0,dev,P3_typo,base:Bluetooth Speaker,,B,OVER_ABSTENTION,False,,851821,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Bluetooth Speaker|typo|0,dev,P3_typo,base:Bluetooth Speaker,,S0,CORRECT,False,851821,851821,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Bluetooth Speaker|typo|0,dev,P3_typo,base:Bluetooth Speaker,,S1,CORRECT,False,851821,851821,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Bluetooth Speaker|typo|1,dev,P3_typo,base:Bluetooth Speaker,,B,OVER_ABSTENTION,False,,851821,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Bluetooth Speaker|typo|1,dev,P3_typo,base:Bluetooth Speaker,,S0,CORRECT,False,851821,851821,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Bluetooth Speaker|typo|1,dev,P3_typo,base:Bluetooth Speaker,,S1,CORRECT,False,851821,851821,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Coffee Maker|typo|0,dev,P3_typo,base:Coffee Maker,,B,OVER_ABSTENTION,False,,851671,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Coffee Maker|typo|0,dev,P3_typo,base:Coffee Maker,,S0,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Coffee Maker|typo|0,dev,P3_typo,base:Coffee Maker,,S1,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Coffee Maker|typo|1,dev,P3_typo,base:Coffee Maker,,B,OVER_ABSTENTION,False,,851671,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Coffee Maker|typo|1,dev,P3_typo,base:Coffee Maker,,S0,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Coffee Maker|typo|1,dev,P3_typo,base:Coffee Maker,,S1,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Electric Iron|typo|0,dev,P3_typo,base:Electric Iron,,B,OVER_ABSTENTION,False,,851640,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Electric Iron|typo|0,dev,P3_typo,base:Electric Iron,,S0,SILENT_ERROR,False,851660,851640,ANSWER,MASKED_SILENT,False,0.0,False
+product,P3_typo|Electric Iron|typo|0,dev,P3_typo,base:Electric Iron,,S1,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Electric Iron|typo|1,dev,P3_typo,base:Electric Iron,,B,OVER_ABSTENTION,False,,851640,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Electric Iron|typo|1,dev,P3_typo,base:Electric Iron,,S0,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Electric Iron|typo|1,dev,P3_typo,base:Electric Iron,,S1,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Electric Kettle|typo|0,dev,P3_typo,base:Electric Kettle,,B,OVER_ABSTENTION,False,,851679,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Electric Kettle|typo|0,dev,P3_typo,base:Electric Kettle,,S0,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Electric Kettle|typo|0,dev,P3_typo,base:Electric Kettle,,S1,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Electric Kettle|typo|1,dev,P3_typo,base:Electric Kettle,,B,OVER_ABSTENTION,False,,851679,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Electric Kettle|typo|1,dev,P3_typo,base:Electric Kettle,,S0,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Electric Kettle|typo|1,dev,P3_typo,base:Electric Kettle,,S1,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Electric Oven|typo|0,dev,P3_typo,base:Electric Oven,,B,OVER_ABSTENTION,False,,851660,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Electric Oven|typo|0,dev,P3_typo,base:Electric Oven,,S0,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Electric Oven|typo|0,dev,P3_typo,base:Electric Oven,,S1,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Electric Oven|typo|1,dev,P3_typo,base:Electric Oven,,B,OVER_ABSTENTION,False,,851660,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Electric Oven|typo|1,dev,P3_typo,base:Electric Oven,,S0,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Electric Oven|typo|1,dev,P3_typo,base:Electric Oven,,S1,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Electric Shaver|typo|0,dev,P3_typo,base:Electric Shaver,,B,OVER_ABSTENTION,False,,851010,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Electric Shaver|typo|0,dev,P3_typo,base:Electric Shaver,,S0,SILENT_ERROR,False,851660,851010,ANSWER,MASKED_SILENT,False,0.0,True
+product,P3_typo|Electric Shaver|typo|0,dev,P3_typo,base:Electric Shaver,,S1,CORRECT,False,851010,851010,ANSWER,NO_ERROR,True,0.0,False
+product,P3_typo|Electric Shaver|typo|1,dev,P3_typo,base:Electric Shaver,,B,OVER_ABSTENTION,False,,851010,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Electric Shaver|typo|1,dev,P3_typo,base:Electric Shaver,,S0,SILENT_ERROR,False,851660,851010,ANSWER,MASKED_SILENT,False,0.0,True
+product,P3_typo|Electric Shaver|typo|1,dev,P3_typo,base:Electric Shaver,,S1,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Hair Clipper|typo|0,dev,P3_typo,base:Hair Clipper,,B,OVER_ABSTENTION,False,,851020,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Hair Clipper|typo|0,dev,P3_typo,base:Hair Clipper,,S0,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Hair Clipper|typo|0,dev,P3_typo,base:Hair Clipper,,S1,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Hair Clipper|typo|1,dev,P3_typo,base:Hair Clipper,,B,OVER_ABSTENTION,False,,851020,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Hair Clipper|typo|1,dev,P3_typo,base:Hair Clipper,,S0,SILENT_ERROR,False,851631,851020,ANSWER,MASKED_SILENT,False,0.0,False
+product,P3_typo|Hair Clipper|typo|1,dev,P3_typo,base:Hair Clipper,,S1,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Hair Dryer|typo|0,dev,P3_typo,base:Hair Dryer,,B,OVER_ABSTENTION,False,,851631,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Hair Dryer|typo|0,dev,P3_typo,base:Hair Dryer,,S0,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Hair Dryer|typo|0,dev,P3_typo,base:Hair Dryer,,S1,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Hair Dryer|typo|1,dev,P3_typo,base:Hair Dryer,,B,OVER_ABSTENTION,False,,851631,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Hair Dryer|typo|1,dev,P3_typo,base:Hair Dryer,,S0,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Hair Dryer|typo|1,dev,P3_typo,base:Hair Dryer,,S1,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Inverter|typo|0,dev,P3_typo,base:Inverter,,B,OVER_ABSTENTION,False,,850440,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Inverter|typo|0,dev,P3_typo,base:Inverter,,S0,SILENT_ERROR,True,847130,850440,ANSWER,MASKED_SILENT,False,0.0,False
+product,P3_typo|Inverter|typo|0,dev,P3_typo,base:Inverter,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Inverter|typo|1,dev,P3_typo,base:Inverter,,B,OVER_ABSTENTION,False,,850440,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Inverter|typo|1,dev,P3_typo,base:Inverter,,S0,SILENT_ERROR,True,847130,850440,ANSWER,MASKED_SILENT,False,0.0,False
+product,P3_typo|Inverter|typo|1,dev,P3_typo,base:Inverter,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Lithium Battery|typo|0,dev,P3_typo,base:Lithium Battery,,B,OVER_ABSTENTION,False,,850760,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Lithium Battery|typo|0,dev,P3_typo,base:Lithium Battery,,S0,SILENT_ERROR,False,850440,850760,ANSWER,MASKED_SILENT,False,0.0,False
+product,P3_typo|Lithium Battery|typo|0,dev,P3_typo,base:Lithium Battery,,S1,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Lithium Battery|typo|1,dev,P3_typo,base:Lithium Battery,,B,OVER_ABSTENTION,False,,850760,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Lithium Battery|typo|1,dev,P3_typo,base:Lithium Battery,,S0,SILENT_ERROR,False,850440,850760,ANSWER,MASKED_SILENT,False,0.0,False
+product,P3_typo|Lithium Battery|typo|1,dev,P3_typo,base:Lithium Battery,,S1,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Memory Card|typo|0,dev,P3_typo,base:Memory Card,,B,OVER_ABSTENTION,False,,852351,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Memory Card|typo|0,dev,P3_typo,base:Memory Card,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Memory Card|typo|0,dev,P3_typo,base:Memory Card,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Memory Card|typo|1,dev,P3_typo,base:Memory Card,,B,OVER_ABSTENTION,False,,852351,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Memory Card|typo|1,dev,P3_typo,base:Memory Card,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Memory Card|typo|1,dev,P3_typo,base:Memory Card,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Microphone|typo|0,dev,P3_typo,base:Microphone,,B,OVER_ABSTENTION,False,,851810,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Microphone|typo|0,dev,P3_typo,base:Microphone,,S0,SILENT_ERROR,True,847130,851810,ANSWER,MASKED_SILENT,False,0.0,False
+product,P3_typo|Microphone|typo|0,dev,P3_typo,base:Microphone,,S1,CORRECT,False,851810,851810,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Microphone|typo|1,dev,P3_typo,base:Microphone,,B,OVER_ABSTENTION,False,,851810,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Microphone|typo|1,dev,P3_typo,base:Microphone,,S0,SILENT_ERROR,True,847130,851810,ANSWER,MASKED_SILENT,False,0.0,False
+product,P3_typo|Microphone|typo|1,dev,P3_typo,base:Microphone,,S1,CORRECT,False,851810,851810,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Microwave Oven|typo|0,dev,P3_typo,base:Microwave Oven,,B,OVER_ABSTENTION,False,,851650,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Microwave Oven|typo|0,dev,P3_typo,base:Microwave Oven,,S0,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Microwave Oven|typo|0,dev,P3_typo,base:Microwave Oven,,S1,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Microwave Oven|typo|1,dev,P3_typo,base:Microwave Oven,,B,OVER_ABSTENTION,False,,851650,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Microwave Oven|typo|1,dev,P3_typo,base:Microwave Oven,,S0,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Microwave Oven|typo|1,dev,P3_typo,base:Microwave Oven,,S1,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Power Supply Unit|typo|0,dev,P3_typo,base:Power Supply Unit,,B,OVER_ABSTENTION,False,,850440,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Power Supply Unit|typo|0,dev,P3_typo,base:Power Supply Unit,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Power Supply Unit|typo|0,dev,P3_typo,base:Power Supply Unit,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Power Supply Unit|typo|1,dev,P3_typo,base:Power Supply Unit,,B,OVER_ABSTENTION,False,,850440,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Power Supply Unit|typo|1,dev,P3_typo,base:Power Supply Unit,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Power Supply Unit|typo|1,dev,P3_typo,base:Power Supply Unit,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Solar Panel|typo|0,dev,P3_typo,base:Solar Panel,,B,OVER_ABSTENTION,False,,854143,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Solar Panel|typo|0,dev,P3_typo,base:Solar Panel,,S0,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Solar Panel|typo|0,dev,P3_typo,base:Solar Panel,,S1,CORRECT,False,854143,854143,ANSWER,NO_ERROR,True,0.0,False
+product,P3_typo|Solar Panel|typo|1,dev,P3_typo,base:Solar Panel,,B,OVER_ABSTENTION,False,,854143,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Solar Panel|typo|1,dev,P3_typo,base:Solar Panel,,S0,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Solar Panel|typo|1,dev,P3_typo,base:Solar Panel,,S1,CORRECT,False,854143,854143,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Toaster|typo|0,dev,P3_typo,base:Toaster,,B,OVER_ABSTENTION,False,,851672,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Toaster|typo|0,dev,P3_typo,base:Toaster,,S0,SILENT_ERROR,True,847130,851672,ANSWER,MASKED_SILENT,False,0.0,True
+product,P3_typo|Toaster|typo|0,dev,P3_typo,base:Toaster,,S1,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Toaster|typo|1,dev,P3_typo,base:Toaster,,B,OVER_ABSTENTION,False,,851672,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Toaster|typo|1,dev,P3_typo,base:Toaster,,S0,SILENT_ERROR,True,847130,851672,ANSWER,MASKED_SILENT,False,0.0,True
+product,P3_typo|Toaster|typo|1,dev,P3_typo,base:Toaster,,S1,CORRECT,False,851672,851672,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|USB Flash Drive|typo|0,dev,P3_typo,base:USB Flash Drive,,B,OVER_ABSTENTION,False,,852351,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|USB Flash Drive|typo|0,dev,P3_typo,base:USB Flash Drive,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|USB Flash Drive|typo|0,dev,P3_typo,base:USB Flash Drive,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|USB Flash Drive|typo|1,dev,P3_typo,base:USB Flash Drive,,B,OVER_ABSTENTION,False,,852351,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|USB Flash Drive|typo|1,dev,P3_typo,base:USB Flash Drive,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|USB Flash Drive|typo|1,dev,P3_typo,base:USB Flash Drive,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Washing Machine|typo|0,dev,P3_typo,base:Washing Machine,,B,OVER_ABSTENTION,False,,845011,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Washing Machine|typo|0,dev,P3_typo,base:Washing Machine,,S0,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Washing Machine|typo|0,dev,P3_typo,base:Washing Machine,,S1,CORRECT,False,845011,845011,ANSWER,NO_ERROR,True,0.0,False
+product,P3_typo|Washing Machine|typo|1,dev,P3_typo,base:Washing Machine,,B,OVER_ABSTENTION,False,,845011,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Washing Machine|typo|1,dev,P3_typo,base:Washing Machine,,S0,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Washing Machine|typo|1,dev,P3_typo,base:Washing Machine,,S1,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Water Heater|typo|0,dev,P3_typo,base:Water Heater,,B,OVER_ABSTENTION,False,,851610,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Water Heater|typo|0,dev,P3_typo,base:Water Heater,,S0,CORRECT,False,851610,851610,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Water Heater|typo|0,dev,P3_typo,base:Water Heater,,S1,CORRECT,False,851610,851610,ANSWER,NO_ERROR,True,0.0,False
+product,P3_typo|Water Heater|typo|1,dev,P3_typo,base:Water Heater,,B,OVER_ABSTENTION,False,,851610,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Water Heater|typo|1,dev,P3_typo,base:Water Heater,,S0,CORRECT,False,851610,851610,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Water Heater|typo|1,dev,P3_typo,base:Water Heater,,S1,CORRECT,False,851610,851610,ANSWER,NO_ERROR,True,0.0,False
+product,P3_typo|Wireless Headphones|typo|0,dev,P3_typo,base:Wireless Headphones,,B,OVER_ABSTENTION,False,,851830,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Wireless Headphones|typo|0,dev,P3_typo,base:Wireless Headphones,,S0,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Wireless Headphones|typo|0,dev,P3_typo,base:Wireless Headphones,,S1,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Wireless Headphones|typo|1,dev,P3_typo,base:Wireless Headphones,,B,OVER_ABSTENTION,False,,851830,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P3_typo|Wireless Headphones|typo|1,dev,P3_typo,base:Wireless Headphones,,S0,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P3_typo|Wireless Headphones|typo|1,dev,P3_typo,base:Wireless Headphones,,S1,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P4_short|Air Conditioner|head_noun,dev,P4_short,base:Air Conditioner,,B,SILENT_ERROR,False,841510,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Air Conditioner|head_noun,dev,P4_short,base:Air Conditioner,,S0,SILENT_ERROR,False,841510,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Air Conditioner|head_noun,dev,P4_short,base:Air Conditioner,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P4_short|Battery Charger|head_noun,dev,P4_short,base:Battery Charger,,B,SILENT_ERROR,False,850440,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Battery Charger|head_noun,dev,P4_short,base:Battery Charger,,S0,SILENT_ERROR,False,850440,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Battery Charger|head_noun,dev,P4_short,base:Battery Charger,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P4_short|Bluetooth Speaker|head_noun,dev,P4_short,base:Bluetooth Speaker,,B,SILENT_ERROR,False,851821,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Bluetooth Speaker|head_noun,dev,P4_short,base:Bluetooth Speaker,,S0,SILENT_ERROR,False,851821,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Bluetooth Speaker|head_noun,dev,P4_short,base:Bluetooth Speaker,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P4_short|Coffee Maker|head_noun,dev,P4_short,base:Coffee Maker,,B,SILENT_ERROR,False,851671,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Coffee Maker|head_noun,dev,P4_short,base:Coffee Maker,,S0,SILENT_ERROR,False,851671,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Coffee Maker|head_noun,dev,P4_short,base:Coffee Maker,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P4_short|Electric Iron|head_noun,dev,P4_short,base:Electric Iron,,B,SILENT_ERROR,False,851640,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Electric Iron|head_noun,dev,P4_short,base:Electric Iron,,S0,SILENT_ERROR,False,851640,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Electric Iron|head_noun,dev,P4_short,base:Electric Iron,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P4_short|Electric Kettle|head_noun,dev,P4_short,base:Electric Kettle,,B,SILENT_ERROR,False,851679,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Electric Kettle|head_noun,dev,P4_short,base:Electric Kettle,,S0,SILENT_ERROR,False,851679,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Electric Kettle|head_noun,dev,P4_short,base:Electric Kettle,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P4_short|Electric Shaver|head_noun,dev,P4_short,base:Electric Shaver,,B,SILENT_ERROR,False,851010,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Electric Shaver|head_noun,dev,P4_short,base:Electric Shaver,,S0,SILENT_ERROR,False,851010,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Electric Shaver|head_noun,dev,P4_short,base:Electric Shaver,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P4_short|Hair Clipper|head_noun,dev,P4_short,base:Hair Clipper,,B,SILENT_ERROR,False,851020,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Hair Clipper|head_noun,dev,P4_short,base:Hair Clipper,,S0,SILENT_ERROR,False,851020,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Hair Clipper|head_noun,dev,P4_short,base:Hair Clipper,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P4_short|Hair Dryer|head_noun,dev,P4_short,base:Hair Dryer,,B,SILENT_ERROR,False,851631,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Hair Dryer|head_noun,dev,P4_short,base:Hair Dryer,,S0,SILENT_ERROR,False,851631,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Hair Dryer|head_noun,dev,P4_short,base:Hair Dryer,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P4_short|Power Supply Unit|head_noun,dev,P4_short,base:Power Supply Unit,,B,SILENT_ERROR,False,850440,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Power Supply Unit|head_noun,dev,P4_short,base:Power Supply Unit,,S0,SILENT_ERROR,False,850440,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Power Supply Unit|head_noun,dev,P4_short,base:Power Supply Unit,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P4_short|Solar Panel|head_noun,dev,P4_short,base:Solar Panel,,B,SILENT_ERROR,False,854143,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Solar Panel|head_noun,dev,P4_short,base:Solar Panel,,S0,SILENT_ERROR,False,854143,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Solar Panel|head_noun,dev,P4_short,base:Solar Panel,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P4_short|Washing Machine|head_noun,dev,P4_short,base:Washing Machine,,B,SILENT_ERROR,False,845011,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Washing Machine|head_noun,dev,P4_short,base:Washing Machine,,S0,SILENT_ERROR,False,845011,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Washing Machine|head_noun,dev,P4_short,base:Washing Machine,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P4_short|Water Heater|head_noun,dev,P4_short,base:Water Heater,,B,SILENT_ERROR,False,851610,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Water Heater|head_noun,dev,P4_short,base:Water Heater,,S0,SILENT_ERROR,False,851610,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Water Heater|head_noun,dev,P4_short,base:Water Heater,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P4_short|Wireless Headphones|head_noun,dev,P4_short,base:Wireless Headphones,,B,SILENT_ERROR,False,851830,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Wireless Headphones|head_noun,dev,P4_short,base:Wireless Headphones,,S0,SILENT_ERROR,False,851830,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P4_short|Wireless Headphones|head_noun,dev,P4_short,base:Wireless Headphones,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P5_confusable|Battery Charger|reorder,dev,P5_confusable,base:Battery Charger,,B,OVER_ABSTENTION,False,,850440,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Battery Charger|reorder,dev,P5_confusable,base:Battery Charger,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Battery Charger|reorder,dev,P5_confusable,base:Battery Charger,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Battery Charger|typo_distinguishing_word,dev,P5_confusable,base:Battery Charger,,B,OVER_ABSTENTION,False,,850440,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Battery Charger|typo_distinguishing_word,dev,P5_confusable,base:Battery Charger,,S0,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Battery Charger|typo_distinguishing_word,dev,P5_confusable,base:Battery Charger,,S1,CORRECT,False,850440,850440,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Electric Iron|reorder,dev,P5_confusable,base:Electric Iron,,B,OVER_ABSTENTION,False,,851640,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Electric Iron|reorder,dev,P5_confusable,base:Electric Iron,,S0,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Electric Iron|reorder,dev,P5_confusable,base:Electric Iron,,S1,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Electric Iron|typo_distinguishing_word,dev,P5_confusable,base:Electric Iron,,B,OVER_ABSTENTION,False,,851640,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Electric Iron|typo_distinguishing_word,dev,P5_confusable,base:Electric Iron,,S0,SILENT_ERROR,False,851660,851640,ANSWER,MASKED_SILENT,False,0.0,False
+product,P5_confusable|Electric Iron|typo_distinguishing_word,dev,P5_confusable,base:Electric Iron,,S1,CORRECT,False,851640,851640,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Electric Kettle|reorder,dev,P5_confusable,base:Electric Kettle,,B,OVER_ABSTENTION,False,,851679,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Electric Kettle|reorder,dev,P5_confusable,base:Electric Kettle,,S0,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Electric Kettle|reorder,dev,P5_confusable,base:Electric Kettle,,S1,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Electric Kettle|typo_distinguishing_word,dev,P5_confusable,base:Electric Kettle,,B,OVER_ABSTENTION,False,,851679,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Electric Kettle|typo_distinguishing_word,dev,P5_confusable,base:Electric Kettle,,S0,SILENT_ERROR,False,851660,851679,ANSWER,MASKED_SILENT,False,0.0,False
+product,P5_confusable|Electric Kettle|typo_distinguishing_word,dev,P5_confusable,base:Electric Kettle,,S1,CORRECT,False,851679,851679,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Electric Oven|reorder,dev,P5_confusable,base:Electric Oven,,B,OVER_ABSTENTION,False,,851660,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Electric Oven|reorder,dev,P5_confusable,base:Electric Oven,,S0,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Electric Oven|reorder,dev,P5_confusable,base:Electric Oven,,S1,CORRECT,False,851660,851660,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Electric Shaver|reorder,dev,P5_confusable,base:Electric Shaver,,B,OVER_ABSTENTION,False,,851010,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Electric Shaver|reorder,dev,P5_confusable,base:Electric Shaver,,S0,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Electric Shaver|reorder,dev,P5_confusable,base:Electric Shaver,,S1,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Electric Shaver|typo_distinguishing_word,dev,P5_confusable,base:Electric Shaver,,B,OVER_ABSTENTION,False,,851010,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Electric Shaver|typo_distinguishing_word,dev,P5_confusable,base:Electric Shaver,,S0,SILENT_ERROR,False,851660,851010,ANSWER,MASKED_SILENT,False,0.0,True
+product,P5_confusable|Electric Shaver|typo_distinguishing_word,dev,P5_confusable,base:Electric Shaver,,S1,CORRECT,False,851010,851010,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Hair Clipper|reorder,dev,P5_confusable,base:Hair Clipper,,B,OVER_ABSTENTION,False,,851020,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Hair Clipper|reorder,dev,P5_confusable,base:Hair Clipper,,S0,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Hair Clipper|reorder,dev,P5_confusable,base:Hair Clipper,,S1,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Hair Clipper|typo_distinguishing_word,dev,P5_confusable,base:Hair Clipper,,B,OVER_ABSTENTION,False,,851020,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Hair Clipper|typo_distinguishing_word,dev,P5_confusable,base:Hair Clipper,,S0,SILENT_ERROR,False,851631,851020,ANSWER,MASKED_SILENT,False,0.0,False
+product,P5_confusable|Hair Clipper|typo_distinguishing_word,dev,P5_confusable,base:Hair Clipper,,S1,CORRECT,False,851020,851020,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Hair Dryer|reorder,dev,P5_confusable,base:Hair Dryer,,B,OVER_ABSTENTION,False,,851631,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Hair Dryer|reorder,dev,P5_confusable,base:Hair Dryer,,S0,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Hair Dryer|reorder,dev,P5_confusable,base:Hair Dryer,,S1,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Hair Dryer|typo_distinguishing_word,dev,P5_confusable,base:Hair Dryer,,B,OVER_ABSTENTION,False,,851631,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Hair Dryer|typo_distinguishing_word,dev,P5_confusable,base:Hair Dryer,,S0,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Hair Dryer|typo_distinguishing_word,dev,P5_confusable,base:Hair Dryer,,S1,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Lithium Battery|reorder,dev,P5_confusable,base:Lithium Battery,,B,OVER_ABSTENTION,False,,850760,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Lithium Battery|reorder,dev,P5_confusable,base:Lithium Battery,,S0,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Lithium Battery|reorder,dev,P5_confusable,base:Lithium Battery,,S1,CORRECT,False,850760,850760,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Lithium Battery|typo_distinguishing_word,dev,P5_confusable,base:Lithium Battery,,B,OVER_ABSTENTION,False,,850760,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Lithium Battery|typo_distinguishing_word,dev,P5_confusable,base:Lithium Battery,,S0,SILENT_ERROR,False,850440,850760,ANSWER,MASKED_SILENT,False,0.0,False
+product,P5_confusable|Lithium Battery|typo_distinguishing_word,dev,P5_confusable,base:Lithium Battery,,S1,CORRECT,False,850760,850760,ANSWER,NO_ERROR,True,0.0,False
+product,P5_confusable|Memory Card|reorder,dev,P5_confusable,base:Memory Card,,B,OVER_ABSTENTION,False,,852351,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Memory Card|reorder,dev,P5_confusable,base:Memory Card,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Memory Card|reorder,dev,P5_confusable,base:Memory Card,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Memory Card|typo_distinguishing_word,dev,P5_confusable,base:Memory Card,,B,OVER_ABSTENTION,False,,852351,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Memory Card|typo_distinguishing_word,dev,P5_confusable,base:Memory Card,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Memory Card|typo_distinguishing_word,dev,P5_confusable,base:Memory Card,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Microwave Oven|reorder,dev,P5_confusable,base:Microwave Oven,,B,OVER_ABSTENTION,False,,851650,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Microwave Oven|reorder,dev,P5_confusable,base:Microwave Oven,,S0,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Microwave Oven|reorder,dev,P5_confusable,base:Microwave Oven,,S1,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Microwave Oven|typo_distinguishing_word,dev,P5_confusable,base:Microwave Oven,,B,OVER_ABSTENTION,False,,851650,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|Microwave Oven|typo_distinguishing_word,dev,P5_confusable,base:Microwave Oven,,S0,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|Microwave Oven|typo_distinguishing_word,dev,P5_confusable,base:Microwave Oven,,S1,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|USB Flash Drive|reorder,dev,P5_confusable,base:USB Flash Drive,,B,OVER_ABSTENTION,False,,852351,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|USB Flash Drive|reorder,dev,P5_confusable,base:USB Flash Drive,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|USB Flash Drive|reorder,dev,P5_confusable,base:USB Flash Drive,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|USB Flash Drive|typo_distinguishing_word,dev,P5_confusable,base:USB Flash Drive,,B,OVER_ABSTENTION,False,,852351,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P5_confusable|USB Flash Drive|typo_distinguishing_word,dev,P5_confusable,base:USB Flash Drive,,S0,CORRECT,False,852351,852351,ANSWER,NO_ERROR,False,0.0,False
+product,P5_confusable|USB Flash Drive|typo_distinguishing_word,dev,P5_confusable,base:USB Flash Drive,,S1,CORRECT,False,852351,852351,ANSWER,NO_ERROR,True,0.0,False
+product,P6_ambiguous|category|Lighting,dev,P6_ambiguous,P6_ambiguous|category|Lighting,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P6_ambiguous|category|Lighting,dev,P6_ambiguous,P6_ambiguous|category|Lighting,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P6_ambiguous|category|Lighting,dev,P6_ambiguous,P6_ambiguous|category|Lighting,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P6_ambiguous|category|Office Equipment,dev,P6_ambiguous,P6_ambiguous|category|Office Equipment,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P6_ambiguous|category|Office Equipment,dev,P6_ambiguous,P6_ambiguous|category|Office Equipment,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P6_ambiguous|category|Office Equipment,dev,P6_ambiguous,P6_ambiguous|category|Office Equipment,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P6_ambiguous|word|battery,dev,P6_ambiguous,P6_ambiguous|word|battery,,B,SILENT_ERROR,False,850440,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P6_ambiguous|word|battery,dev,P6_ambiguous,P6_ambiguous|word|battery,,S0,SILENT_ERROR,False,850440,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P6_ambiguous|word|battery,dev,P6_ambiguous,P6_ambiguous|word|battery,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P6_ambiguous|word|card,dev,P6_ambiguous,P6_ambiguous|word|card,,B,SILENT_ERROR,False,852351,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P6_ambiguous|word|card,dev,P6_ambiguous,P6_ambiguous|word|card,,S0,SILENT_ERROR,False,852351,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P6_ambiguous|word|card,dev,P6_ambiguous,P6_ambiguous|word|card,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P6_ambiguous|word|drive,dev,P6_ambiguous,P6_ambiguous|word|drive,,B,SILENT_ERROR,False,847170,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P6_ambiguous|word|drive,dev,P6_ambiguous,P6_ambiguous|word|drive,,S0,SILENT_ERROR,False,847170,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P6_ambiguous|word|drive,dev,P6_ambiguous,P6_ambiguous|word|drive,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P6_ambiguous|word|electric,dev,P6_ambiguous,P6_ambiguous|word|electric,,B,SILENT_ERROR,False,851660,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P6_ambiguous|word|electric,dev,P6_ambiguous,P6_ambiguous|word|electric,,S0,SILENT_ERROR,False,851660,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P6_ambiguous|word|electric,dev,P6_ambiguous,P6_ambiguous|word|electric,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|1st place medal,dev,P7_outside,P7_outside|1st place medal,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|1st place medal,dev,P7_outside,P7_outside|1st place medal,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|1st place medal,dev,P7_outside,P7_outside|1st place medal,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|accordion,dev,P7_outside,P7_outside|accordion,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|accordion,dev,P7_outside,P7_outside|accordion,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|accordion,dev,P7_outside,P7_outside|accordion,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|anchor,dev,P7_outside,P7_outside|anchor,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|anchor,dev,P7_outside,P7_outside|anchor,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|anchor,dev,P7_outside,P7_outside|anchor,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|billed cap,dev,P7_outside,P7_outside|billed cap,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|billed cap,dev,P7_outside,P7_outside|billed cap,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|billed cap,dev,P7_outside,P7_outside|billed cap,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|bucket,dev,P7_outside,P7_outside|bucket,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|bucket,dev,P7_outside,P7_outside|bucket,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|bucket,dev,P7_outside,P7_outside|bucket,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|cricket game,dev,P7_outside,P7_outside|cricket game,True,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|cricket game,dev,P7_outside,P7_outside|cricket game,True,S0,SILENT_ERROR,False,950490,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|cricket game,dev,P7_outside,P7_outside|cricket game,True,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|egg,dev,P7_outside,P7_outside|egg,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|egg,dev,P7_outside,P7_outside|egg,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|egg,dev,P7_outside,P7_outside|egg,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|file cabinet,dev,P7_outside,P7_outside|file cabinet,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|file cabinet,dev,P7_outside,P7_outside|file cabinet,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|file cabinet,dev,P7_outside,P7_outside|file cabinet,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|hair pick,dev,P7_outside,P7_outside|hair pick,True,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|hair pick,dev,P7_outside,P7_outside|hair pick,True,S0,SILENT_ERROR,False,851631,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|hair pick,dev,P7_outside,P7_outside|hair pick,True,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|knot,dev,P7_outside,P7_outside|knot,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|knot,dev,P7_outside,P7_outside|knot,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|knot,dev,P7_outside,P7_outside|knot,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|ledger,dev,P7_outside,P7_outside|ledger,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|ledger,dev,P7_outside,P7_outside|ledger,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|ledger,dev,P7_outside,P7_outside|ledger,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|lipstick,dev,P7_outside,P7_outside|lipstick,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|lipstick,dev,P7_outside,P7_outside|lipstick,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|lipstick,dev,P7_outside,P7_outside|lipstick,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|outbox tray,dev,P7_outside,P7_outside|outbox tray,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|outbox tray,dev,P7_outside,P7_outside|outbox tray,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|outbox tray,dev,P7_outside,P7_outside|outbox tray,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|pea pod,dev,P7_outside,P7_outside|pea pod,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|pea pod,dev,P7_outside,P7_outside|pea pod,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|pea pod,dev,P7_outside,P7_outside|pea pod,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|pick,dev,P7_outside,P7_outside|pick,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|pick,dev,P7_outside,P7_outside|pick,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|pick,dev,P7_outside,P7_outside|pick,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|pretzel,dev,P7_outside,P7_outside|pretzel,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|pretzel,dev,P7_outside,P7_outside|pretzel,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|pretzel,dev,P7_outside,P7_outside|pretzel,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|slot machine,dev,P7_outside,P7_outside|slot machine,True,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|slot machine,dev,P7_outside,P7_outside|slot machine,True,S0,SILENT_ERROR,False,845011,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|slot machine,dev,P7_outside,P7_outside|slot machine,True,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|small airplane,dev,P7_outside,P7_outside|small airplane,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|small airplane,dev,P7_outside,P7_outside|small airplane,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|small airplane,dev,P7_outside,P7_outside|small airplane,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|soft ice cream,dev,P7_outside,P7_outside|soft ice cream,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|soft ice cream,dev,P7_outside,P7_outside|soft ice cream,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|soft ice cream,dev,P7_outside,P7_outside|soft ice cream,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|spaghetti,dev,P7_outside,P7_outside|spaghetti,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|spaghetti,dev,P7_outside,P7_outside|spaghetti,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|spaghetti,dev,P7_outside,P7_outside|spaghetti,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|top hat,dev,P7_outside,P7_outside|top hat,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|top hat,dev,P7_outside,P7_outside|top hat,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|top hat,dev,P7_outside,P7_outside|top hat,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|trophy,dev,P7_outside,P7_outside|trophy,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|trophy,dev,P7_outside,P7_outside|trophy,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|trophy,dev,P7_outside,P7_outside|trophy,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|wastebasket,dev,P7_outside,P7_outside|wastebasket,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|wastebasket,dev,P7_outside,P7_outside|wastebasket,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|wastebasket,dev,P7_outside,P7_outside|wastebasket,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|water pistol,dev,P7_outside,P7_outside|water pistol,True,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|water pistol,dev,P7_outside,P7_outside|water pistol,True,S0,SILENT_ERROR,False,851610,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|water pistol,dev,P7_outside,P7_outside|water pistol,True,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P7_outside|yen banknote,dev,P7_outside,P7_outside|yen banknote,False,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P7_outside|yen banknote,dev,P7_outside,P7_outside|yen banknote,False,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P7_outside|yen banknote,dev,P7_outside,P7_outside|yen banknote,False,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|in_catalogue|841510,dev,P8_hs_formal,P8_hs|in_catalogue|841510,,B,OVER_ABSTENTION,False,,841510,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|841510,dev,P8_hs_formal,P8_hs|in_catalogue|841510,,S0,CORRECT,False,841510,841510,ANSWER,NO_ERROR,False,0.0,False
+product,P8_hs|in_catalogue|841510,dev,P8_hs_formal,P8_hs|in_catalogue|841510,,S1,OVER_ABSTENTION,False,,841510,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|845011,dev,P8_hs_formal,P8_hs|in_catalogue|845011,,B,OVER_ABSTENTION,False,,845011,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|845011,dev,P8_hs_formal,P8_hs|in_catalogue|845011,,S0,CORRECT,False,845011,845011,ANSWER,NO_ERROR,False,0.0,False
+product,P8_hs|in_catalogue|845011,dev,P8_hs_formal,P8_hs|in_catalogue|845011,,S1,OVER_ABSTENTION,False,,845011,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|850440,dev,P8_hs_formal,P8_hs|in_catalogue|850440,,B,OVER_ABSTENTION,False,,850440,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|850440,dev,P8_hs_formal,P8_hs|in_catalogue|850440,,S0,SILENT_ERROR,True,847130,850440,ANSWER,MASKED_SILENT,False,0.0,False
+product,P8_hs|in_catalogue|850440,dev,P8_hs_formal,P8_hs|in_catalogue|850440,,S1,OVER_ABSTENTION,False,,850440,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|850760,dev,P8_hs_formal,P8_hs|in_catalogue|850760,,B,OVER_ABSTENTION,False,,850760,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|850760,dev,P8_hs_formal,P8_hs|in_catalogue|850760,,S0,SILENT_ERROR,False,851660,850760,ANSWER,MASKED_SILENT,False,0.0,True
+product,P8_hs|in_catalogue|850760,dev,P8_hs_formal,P8_hs|in_catalogue|850760,,S1,OVER_ABSTENTION,False,,850760,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|851010,dev,P8_hs_formal,P8_hs|in_catalogue|851010,,B,OVER_ABSTENTION,False,,851010,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|851010,dev,P8_hs_formal,P8_hs|in_catalogue|851010,,S0,SILENT_ERROR,False,851660,851010,ANSWER,MASKED_SILENT,False,0.0,True
+product,P8_hs|in_catalogue|851010,dev,P8_hs_formal,P8_hs|in_catalogue|851010,,S1,OVER_ABSTENTION,False,,851010,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|851020,dev,P8_hs_formal,P8_hs|in_catalogue|851020,,B,OVER_ABSTENTION,False,,851020,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|851020,dev,P8_hs_formal,P8_hs|in_catalogue|851020,,S0,SILENT_ERROR,False,851660,851020,ANSWER,MASKED_SILENT,False,0.0,True
+product,P8_hs|in_catalogue|851020,dev,P8_hs_formal,P8_hs|in_catalogue|851020,,S1,OVER_ABSTENTION,False,,851020,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|851610,dev,P8_hs_formal,P8_hs|in_catalogue|851610,,B,OVER_ABSTENTION,False,,851610,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|851610,dev,P8_hs_formal,P8_hs|in_catalogue|851610,,S0,SILENT_ERROR,False,851660,851610,ANSWER,MASKED_SILENT,False,0.0,False
+product,P8_hs|in_catalogue|851610,dev,P8_hs_formal,P8_hs|in_catalogue|851610,,S1,OVER_ABSTENTION,False,,851610,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|851631,dev,P8_hs_formal,P8_hs|in_catalogue|851631,,B,OVER_ABSTENTION,False,,851631,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|851631,dev,P8_hs_formal,P8_hs|in_catalogue|851631,,S0,CORRECT,False,851631,851631,ANSWER,NO_ERROR,False,0.0,False
+product,P8_hs|in_catalogue|851631,dev,P8_hs_formal,P8_hs|in_catalogue|851631,,S1,OVER_ABSTENTION,False,,851631,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|851640,dev,P8_hs_formal,P8_hs|in_catalogue|851640,,B,OVER_ABSTENTION,False,,851640,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|851640,dev,P8_hs_formal,P8_hs|in_catalogue|851640,,S0,SILENT_ERROR,False,851660,851640,ANSWER,MASKED_SILENT,False,0.0,False
+product,P8_hs|in_catalogue|851640,dev,P8_hs_formal,P8_hs|in_catalogue|851640,,S1,OVER_ABSTENTION,False,,851640,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|851650,dev,P8_hs_formal,P8_hs|in_catalogue|851650,,B,OVER_ABSTENTION,False,,851650,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|851650,dev,P8_hs_formal,P8_hs|in_catalogue|851650,,S0,CORRECT,False,851650,851650,ANSWER,NO_ERROR,False,0.0,False
+product,P8_hs|in_catalogue|851650,dev,P8_hs_formal,P8_hs|in_catalogue|851650,,S1,OVER_ABSTENTION,False,,851650,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|851660,dev,P8_hs_formal,P8_hs|in_catalogue|851660,,B,OVER_ABSTENTION,False,,851660,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|851660,dev,P8_hs_formal,P8_hs|in_catalogue|851660,,S0,SILENT_ERROR,False,847130,851660,ANSWER,MASKED_SILENT,False,0.0,True
+product,P8_hs|in_catalogue|851660,dev,P8_hs_formal,P8_hs|in_catalogue|851660,,S1,OVER_ABSTENTION,False,,851660,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|851671,dev,P8_hs_formal,P8_hs|in_catalogue|851671,,B,OVER_ABSTENTION,False,,851671,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|851671,dev,P8_hs_formal,P8_hs|in_catalogue|851671,,S0,CORRECT,False,851671,851671,ANSWER,NO_ERROR,False,0.0,False
+product,P8_hs|in_catalogue|851671,dev,P8_hs_formal,P8_hs|in_catalogue|851671,,S1,OVER_ABSTENTION,False,,851671,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|851672,dev,P8_hs_formal,P8_hs|in_catalogue|851672,,B,OVER_ABSTENTION,False,,851672,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|851672,dev,P8_hs_formal,P8_hs|in_catalogue|851672,,S0,SILENT_ERROR,False,847130,851672,ANSWER,MASKED_SILENT,False,0.0,True
+product,P8_hs|in_catalogue|851672,dev,P8_hs_formal,P8_hs|in_catalogue|851672,,S1,OVER_ABSTENTION,False,,851672,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|851679,dev,P8_hs_formal,P8_hs|in_catalogue|851679,,B,OVER_ABSTENTION,False,,851679,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|851679,dev,P8_hs_formal,P8_hs|in_catalogue|851679,,S0,SILENT_ERROR,False,847130,851679,ANSWER,MASKED_SILENT,False,0.0,True
+product,P8_hs|in_catalogue|851679,dev,P8_hs_formal,P8_hs|in_catalogue|851679,,S1,OVER_ABSTENTION,False,,851679,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|851810,dev,P8_hs_formal,P8_hs|in_catalogue|851810,,B,OVER_ABSTENTION,False,,851810,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|851810,dev,P8_hs_formal,P8_hs|in_catalogue|851810,,S0,SILENT_ERROR,True,847130,851810,ANSWER,MASKED_SILENT,False,0.0,False
+product,P8_hs|in_catalogue|851810,dev,P8_hs_formal,P8_hs|in_catalogue|851810,,S1,OVER_ABSTENTION,False,,851810,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|851821,dev,P8_hs_formal,P8_hs|in_catalogue|851821,,B,OVER_ABSTENTION,False,,851821,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|851821,dev,P8_hs_formal,P8_hs|in_catalogue|851821,,S0,SILENT_ERROR,True,847130,851821,ANSWER,MASKED_SILENT,False,0.0,False
+product,P8_hs|in_catalogue|851821,dev,P8_hs_formal,P8_hs|in_catalogue|851821,,S1,OVER_ABSTENTION,False,,851821,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|851830,dev,P8_hs_formal,P8_hs|in_catalogue|851830,,B,OVER_ABSTENTION,False,,851830,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|851830,dev,P8_hs_formal,P8_hs|in_catalogue|851830,,S0,CORRECT,False,851830,851830,ANSWER,NO_ERROR,False,0.0,False
+product,P8_hs|in_catalogue|851830,dev,P8_hs_formal,P8_hs|in_catalogue|851830,,S1,OVER_ABSTENTION,False,,851830,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|852351,dev,P8_hs_formal,P8_hs|in_catalogue|852351,,B,OVER_ABSTENTION,False,,852351,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|852351,dev,P8_hs_formal,P8_hs|in_catalogue|852351,,S0,SILENT_ERROR,True,847130,852351,ANSWER,MASKED_SILENT,False,0.0,True
+product,P8_hs|in_catalogue|852351,dev,P8_hs_formal,P8_hs|in_catalogue|852351,,S1,OVER_ABSTENTION,False,,852351,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|in_catalogue|854143,dev,P8_hs_formal,P8_hs|in_catalogue|854143,,B,OVER_ABSTENTION,False,,854143,ANSWER,MASKED_FLAGGED,True,0.0,False
+product,P8_hs|in_catalogue|854143,dev,P8_hs_formal,P8_hs|in_catalogue|854143,,S0,SILENT_ERROR,True,847130,854143,ANSWER,MASKED_SILENT,False,0.0,False
+product,P8_hs|in_catalogue|854143,dev,P8_hs_formal,P8_hs|in_catalogue|854143,,S1,OVER_ABSTENTION,False,,854143,ANSWER,OVER_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|840219,dev,P8_hs_formal,P8_hs|near_domain_unsupported|840219,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|840219,dev,P8_hs_formal,P8_hs|near_domain_unsupported|840219,,S0,SILENT_ERROR,False,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|840219,dev,P8_hs_formal,P8_hs|near_domain_unsupported|840219,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|842410,dev,P8_hs_formal,P8_hs|near_domain_unsupported|842410,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|842410,dev,P8_hs_formal,P8_hs|near_domain_unsupported|842410,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|842410,dev,P8_hs_formal,P8_hs|near_domain_unsupported|842410,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|843910,dev,P8_hs_formal,P8_hs|near_domain_unsupported|843910,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|843910,dev,P8_hs_formal,P8_hs|near_domain_unsupported|843910,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|843910,dev,P8_hs_formal,P8_hs|near_domain_unsupported|843910,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|845521,dev,P8_hs_formal,P8_hs|near_domain_unsupported|845521,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|845521,dev,P8_hs_formal,P8_hs|near_domain_unsupported|845521,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|845521,dev,P8_hs_formal,P8_hs|near_domain_unsupported|845521,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|845590,dev,P8_hs_formal,P8_hs|near_domain_unsupported|845590,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|845590,dev,P8_hs_formal,P8_hs|near_domain_unsupported|845590,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|845590,dev,P8_hs_formal,P8_hs|near_domain_unsupported|845590,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|848710,dev,P8_hs_formal,P8_hs|near_domain_unsupported|848710,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|848710,dev,P8_hs_formal,P8_hs|near_domain_unsupported|848710,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|848710,dev,P8_hs_formal,P8_hs|near_domain_unsupported|848710,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|850410,dev,P8_hs_formal,P8_hs|near_domain_unsupported|850410,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|850410,dev,P8_hs_formal,P8_hs|near_domain_unsupported|850410,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|850410,dev,P8_hs_formal,P8_hs|near_domain_unsupported|850410,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|850730,dev,P8_hs_formal,P8_hs|near_domain_unsupported|850730,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|850730,dev,P8_hs_formal,P8_hs|near_domain_unsupported|850730,,S0,SILENT_ERROR,False,851660,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|850730,dev,P8_hs_formal,P8_hs|near_domain_unsupported|850730,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|850780,dev,P8_hs_formal,P8_hs|near_domain_unsupported|850780,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|850780,dev,P8_hs_formal,P8_hs|near_domain_unsupported|850780,,S0,SILENT_ERROR,False,851660,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|850780,dev,P8_hs_formal,P8_hs|near_domain_unsupported|850780,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|851210,dev,P8_hs_formal,P8_hs|near_domain_unsupported|851210,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|851210,dev,P8_hs_formal,P8_hs|near_domain_unsupported|851210,,S0,SILENT_ERROR,False,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|851210,dev,P8_hs_formal,P8_hs|near_domain_unsupported|851210,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|851632,dev,P8_hs_formal,P8_hs|near_domain_unsupported|851632,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|851632,dev,P8_hs_formal,P8_hs|near_domain_unsupported|851632,,S0,SILENT_ERROR,False,851631,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|851632,dev,P8_hs_formal,P8_hs|near_domain_unsupported|851632,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|852349,dev,P8_hs_formal,P8_hs|near_domain_unsupported|852349,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|852349,dev,P8_hs_formal,P8_hs|near_domain_unsupported|852349,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|852349,dev,P8_hs_formal,P8_hs|near_domain_unsupported|852349,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|854149,dev,P8_hs_formal,P8_hs|near_domain_unsupported|854149,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|854149,dev,P8_hs_formal,P8_hs|near_domain_unsupported|854149,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|854149,dev,P8_hs_formal,P8_hs|near_domain_unsupported|854149,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|854690,dev,P8_hs_formal,P8_hs|near_domain_unsupported|854690,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|854690,dev,P8_hs_formal,P8_hs|near_domain_unsupported|854690,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|854690,dev,P8_hs_formal,P8_hs|near_domain_unsupported|854690,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|854921,dev,P8_hs_formal,P8_hs|near_domain_unsupported|854921,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|854921,dev,P8_hs_formal,P8_hs|near_domain_unsupported|854921,,S0,SILENT_ERROR,False,851660,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|854921,dev,P8_hs_formal,P8_hs|near_domain_unsupported|854921,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|940131,dev,P8_hs_formal,P8_hs|near_domain_unsupported|940131,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|940131,dev,P8_hs_formal,P8_hs|near_domain_unsupported|940131,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|940131,dev,P8_hs_formal,P8_hs|near_domain_unsupported|940131,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|940171,dev,P8_hs_formal,P8_hs|near_domain_unsupported|940171,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|940171,dev,P8_hs_formal,P8_hs|near_domain_unsupported|940171,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|940171,dev,P8_hs_formal,P8_hs|near_domain_unsupported|940171,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|950790,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950790,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|950790,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950790,,S0,SILENT_ERROR,False,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|950790,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950790,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|950823,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950823,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|950823,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950823,,S0,SILENT_ERROR,False,851610,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|950823,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950823,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|950826,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950826,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|950826,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950826,,S0,SILENT_ERROR,False,851610,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|950826,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950826,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|950829,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950829,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|950829,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950829,,S0,SILENT_ERROR,False,851610,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|950829,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950829,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|near_domain_unsupported|950830,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950830,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|near_domain_unsupported|950830,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950830,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|near_domain_unsupported|950830,dev,P8_hs_formal,P8_hs|near_domain_unsupported|950830,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|020641,dev,P8_hs_formal,P8_hs|other_chapter|020641,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|020641,dev,P8_hs_formal,P8_hs|other_chapter|020641,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|020641,dev,P8_hs_formal,P8_hs|other_chapter|020641,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|020680,dev,P8_hs_formal,P8_hs|other_chapter|020680,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|020680,dev,P8_hs_formal,P8_hs|other_chapter|020680,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|020680,dev,P8_hs_formal,P8_hs|other_chapter|020680,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|030231,dev,P8_hs_formal,P8_hs|other_chapter|030231,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|030231,dev,P8_hs_formal,P8_hs|other_chapter|030231,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|030231,dev,P8_hs_formal,P8_hs|other_chapter|030231,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|030319,dev,P8_hs_formal,P8_hs|other_chapter|030319,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|030319,dev,P8_hs_formal,P8_hs|other_chapter|030319,,S0,SILENT_ERROR,False,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|030319,dev,P8_hs_formal,P8_hs|other_chapter|030319,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|030382,dev,P8_hs_formal,P8_hs|other_chapter|030382,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|030382,dev,P8_hs_formal,P8_hs|other_chapter|030382,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|030382,dev,P8_hs_formal,P8_hs|other_chapter|030382,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|070992,dev,P8_hs_formal,P8_hs|other_chapter|070992,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|070992,dev,P8_hs_formal,P8_hs|other_chapter|070992,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|070992,dev,P8_hs_formal,P8_hs|other_chapter|070992,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|071080,dev,P8_hs_formal,P8_hs|other_chapter|071080,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|071080,dev,P8_hs_formal,P8_hs|other_chapter|071080,,S0,SILENT_ERROR,False,851610,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|071080,dev,P8_hs_formal,P8_hs|other_chapter|071080,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|080262,dev,P8_hs_formal,P8_hs|other_chapter|080262,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|080262,dev,P8_hs_formal,P8_hs|other_chapter|080262,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|080262,dev,P8_hs_formal,P8_hs|other_chapter|080262,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|150600,dev,P8_hs_formal,P8_hs|other_chapter|150600,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|150600,dev,P8_hs_formal,P8_hs|other_chapter|150600,,S0,SILENT_ERROR,False,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|150600,dev,P8_hs_formal,P8_hs|other_chapter|150600,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|160290,dev,P8_hs_formal,P8_hs|other_chapter|160290,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|160290,dev,P8_hs_formal,P8_hs|other_chapter|160290,,S0,SILENT_ERROR,False,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|160290,dev,P8_hs_formal,P8_hs|other_chapter|160290,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|160416,dev,P8_hs_formal,P8_hs|other_chapter|160416,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|160416,dev,P8_hs_formal,P8_hs|other_chapter|160416,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|160416,dev,P8_hs_formal,P8_hs|other_chapter|160416,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|290243,dev,P8_hs_formal,P8_hs|other_chapter|290243,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|290243,dev,P8_hs_formal,P8_hs|other_chapter|290243,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|290243,dev,P8_hs_formal,P8_hs|other_chapter|290243,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|290729,dev,P8_hs_formal,P8_hs|other_chapter|290729,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|290729,dev,P8_hs_formal,P8_hs|other_chapter|290729,,S0,SILENT_ERROR,False,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|290729,dev,P8_hs_formal,P8_hs|other_chapter|290729,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|293352,dev,P8_hs_formal,P8_hs|other_chapter|293352,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|293352,dev,P8_hs_formal,P8_hs|other_chapter|293352,,S0,SILENT_ERROR,False,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|293352,dev,P8_hs_formal,P8_hs|other_chapter|293352,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|300691,dev,P8_hs_formal,P8_hs|other_chapter|300691,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|300691,dev,P8_hs_formal,P8_hs|other_chapter|300691,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|300691,dev,P8_hs_formal,P8_hs|other_chapter|300691,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|330499,dev,P8_hs_formal,P8_hs|other_chapter|330499,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|330499,dev,P8_hs_formal,P8_hs|other_chapter|330499,,S0,SILENT_ERROR,False,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|330499,dev,P8_hs_formal,P8_hs|other_chapter|330499,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|400932,dev,P8_hs_formal,P8_hs|other_chapter|400932,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|400932,dev,P8_hs_formal,P8_hs|other_chapter|400932,,S0,SILENT_ERROR,False,847170,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|400932,dev,P8_hs_formal,P8_hs|other_chapter|400932,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|401695,dev,P8_hs_formal,P8_hs|other_chapter|401695,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|401695,dev,P8_hs_formal,P8_hs|other_chapter|401695,,S0,SILENT_ERROR,False,847170,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|401695,dev,P8_hs_formal,P8_hs|other_chapter|401695,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|441210,dev,P8_hs_formal,P8_hs|other_chapter|441210,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|441210,dev,P8_hs_formal,P8_hs|other_chapter|441210,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|441210,dev,P8_hs_formal,P8_hs|other_chapter|441210,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|520832,dev,P8_hs_formal,P8_hs|other_chapter|520832,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|520832,dev,P8_hs_formal,P8_hs|other_chapter|520832,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|520832,dev,P8_hs_formal,P8_hs|other_chapter|520832,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|570110,dev,P8_hs_formal,P8_hs|other_chapter|570110,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|570110,dev,P8_hs_formal,P8_hs|other_chapter|570110,,S0,SILENT_ERROR,False,851631,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|570110,dev,P8_hs_formal,P8_hs|other_chapter|570110,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|570220,dev,P8_hs_formal,P8_hs|other_chapter|570220,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|570220,dev,P8_hs_formal,P8_hs|other_chapter|570220,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|570220,dev,P8_hs_formal,P8_hs|other_chapter|570220,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|590110,dev,P8_hs_formal,P8_hs|other_chapter|590110,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|590110,dev,P8_hs_formal,P8_hs|other_chapter|590110,,S0,SILENT_ERROR,False,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|590110,dev,P8_hs_formal,P8_hs|other_chapter|590110,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|680990,dev,P8_hs_formal,P8_hs|other_chapter|680990,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|680990,dev,P8_hs_formal,P8_hs|other_chapter|680990,,S0,SILENT_ERROR,False,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|680990,dev,P8_hs_formal,P8_hs|other_chapter|680990,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|811213,dev,P8_hs_formal,P8_hs|other_chapter|811213,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|811213,dev,P8_hs_formal,P8_hs|other_chapter|811213,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|811213,dev,P8_hs_formal,P8_hs|other_chapter|811213,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|811299,dev,P8_hs_formal,P8_hs|other_chapter|811299,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|811299,dev,P8_hs_formal,P8_hs|other_chapter|811299,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|811299,dev,P8_hs_formal,P8_hs|other_chapter|811299,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|820130,dev,P8_hs_formal,P8_hs|other_chapter|820130,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|820130,dev,P8_hs_formal,P8_hs|other_chapter|820130,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|820130,dev,P8_hs_formal,P8_hs|other_chapter|820130,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|860800,dev,P8_hs_formal,P8_hs|other_chapter|860800,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|860800,dev,P8_hs_formal,P8_hs|other_chapter|860800,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|860800,dev,P8_hs_formal,P8_hs|other_chapter|860800,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|880624,dev,P8_hs_formal,P8_hs|other_chapter|880624,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|880624,dev,P8_hs_formal,P8_hs|other_chapter|880624,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|880624,dev,P8_hs_formal,P8_hs|other_chapter|880624,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|880694,dev,P8_hs_formal,P8_hs|other_chapter|880694,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|880694,dev,P8_hs_formal,P8_hs|other_chapter|880694,,S0,SILENT_ERROR,False,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|880694,dev,P8_hs_formal,P8_hs|other_chapter|880694,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False
+product,P8_hs|other_chapter|890610,dev,P8_hs_formal,P8_hs|other_chapter|890610,,B,SAFE_ABSTENTION,False,,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_FLAGGED,True,,False
+product,P8_hs|other_chapter|890610,dev,P8_hs_formal,P8_hs|other_chapter|890610,,S0,SILENT_ERROR,True,847130,,ABSTAIN,COMPUTED_WHEN_SHOULD_REFUSE_SILENT,False,,False
+product,P8_hs|other_chapter|890610,dev,P8_hs_formal,P8_hs|other_chapter|890610,,S1,SAFE_ABSTENTION,False,,,ABSTAIN,EXPLICIT_REFUSAL,True,,False

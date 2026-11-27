@@ -1,0 +1,6 @@
+latency (DEV): {'product': 270, 'country': 655}
+
+real	0m40.822s
+user	0m40.960s
+sys	0m0.074s
+exit=0

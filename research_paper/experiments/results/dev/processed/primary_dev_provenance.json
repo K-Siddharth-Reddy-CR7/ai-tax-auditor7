@@ -1,0 +1,32 @@
+{
+  "benchmark_sha256": {
+    "country_benchmark.csv": "1bf3f48940c27b4ba7fad332bc8e0bbc367df1381a251e6345a3a6609444c929",
+    "product_benchmark.csv": "a6a87fc3f7057a74eebd9d5b7809809820b892e4ac3b791fe1f4dc64c5935160"
+  },
+  "exclusions_sha256": null,
+  "n_country_items": 655,
+  "n_product_items": 270,
+  "pairs": [
+    [
+      "B",
+      "S0"
+    ],
+    [
+      "S0",
+      "S1"
+    ],
+    [
+      "B",
+      "S1"
+    ]
+  ],
+  "run_id": null,
+  "sensitivity_outputs": false,
+  "split": "dev",
+  "systems": [
+    "B",
+    "S0",
+    "S1"
+  ],
+  "tag": "primary"
+}

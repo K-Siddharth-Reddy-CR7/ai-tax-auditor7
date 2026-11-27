@@ -1,0 +1,6 @@
+chosen: {'product_min_coverage': 1.0, 'product_typo_max_edits': 1, 'product_typo_min_len': 4, 'dev_macro_decision_accuracy': 1.0, 'dev_macro_silent_error_rate': 0.0, 'dev_pooled_P1_P7': {'n': 198, 'coverage': 0.7727272727272727, 'silent_error_rate': 0.0, 'selective_risk': 0.0}} max dev accuracy s.t. dev SER <= SER(B)
+
+real	0m28.941s
+user	0m28.552s
+sys	0m0.270s
+exit=0

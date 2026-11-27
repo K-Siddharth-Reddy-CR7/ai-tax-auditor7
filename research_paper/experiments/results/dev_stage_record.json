@@ -1,0 +1,55 @@
+{
+  "schema": "lexitax-dev-stage-record/1",
+  "split": "dev",
+  "authorisation": "DEV stage authorised by the user in the research session on 27 Nov 2026 (DEV only; no TEST evaluation)",
+  "git_commit_at_run": "ce6f98f08a766ef85ba630f0df38723340c85a91",
+  "manifest_sha256": "0d7bddd9c5c8a2855e79d8bfdaff1f81bcc272c2c7744d1c361ce3714ef0b19b",
+  "frozen_code_identity": "1930a0b2b99eb6587879b9b330af93a7eb3d2a3df447dcc1e1c09b22fd44efb6",
+  "python": "Python 3.13.18 (scratchpad venv from requirements.txt; full package list in dev_stage_logs/pip_freeze.txt)",
+  "commands": [
+    {
+      "cwd": "research_paper/experiments",
+      "command": "python run_all.py --stage tune",
+      "env": {
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "start_utc": "2026-11-27T09:53:00Z",
+      "end_utc": "2026-11-27T09:53:29Z",
+      "exit_code": 0,
+      "console_log": "results/dev_stage_logs/stage_tune_console.txt"
+    },
+    {
+      "cwd": "research_paper/experiments",
+      "command": "python run_all.py --stage latency",
+      "env": {
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "start_utc": "2026-11-27T09:54:30Z",
+      "end_utc": "2026-11-27T09:55:11Z",
+      "exit_code": 0,
+      "console_log": "results/dev_stage_logs/stage_latency_console.txt"
+    }
+  ],
+  "run_ids": "none: run IDs exist only for TEST runs; DEV stages are single, exclusive-create, never-overwritten outputs",
+  "failed_or_repeated_runs": "none: each stage was run exactly once and exited 0",
+  "test_split_accessed": false,
+  "output_sha256": {
+    "results/dev/figures/dev_risk_coverage.pdf": "c048c5a3f5b42a3ca2b9a46577f48f0585a8b4e6af9cc99b5e48f0fa5aca8e57",
+    "results/dev/figures/figures_provenance.json": "fac33b74adf50cb7afbbd03c08fd034f5bff23f2725a7b963fea321b66dd3b27",
+    "results/dev/grid_full_pipeline_dev.json": "d720ee0f497cd5bd95f91322f47410498de3d946f103db1316afd1b4523f5a45",
+    "results/dev/processed/primary_dev_country_items.csv": "0d251722484faedc4d2323f964a69d7d884c6bf70b91de69cf5a61419660e106",
+    "results/dev/processed/primary_dev_identification_summary.csv": "8a005aff8fa500240ebe76e39026edf582e2aaea6eb78657556da94d22fec027",
+    "results/dev/processed/primary_dev_malformed_items.csv": "83ac0666a6b01a4f1f631402bba62f45b8e9236c20cad842cff5a92380c26832",
+    "results/dev/processed/primary_dev_paired_tests.csv": "c793c5f3ac2a6e79f77c7132ade2d974f6074bff8b1e5d73d5a9287f1a0fd472",
+    "results/dev/processed/primary_dev_product_items.csv": "236021bf393d5ecd07cb4537bc5d94ff58dc7c951d88db1438314b75826b2195",
+    "results/dev/processed/primary_dev_product_summary.csv": "a8bf61099b5ba5504eacd6e6305abca3860d10f71f09fb80a608c13fc89cbbdd",
+    "results/dev/processed/primary_dev_provenance.json": "d168591ff59338c45c1e9be71c50d253c8d493e362bb3654b04d272e137c161d",
+    "results/dev/processed/primary_dev_tax_behaviour_summary.csv": "5ad3af5242a95d5415b360397558e4ef8d2dfc0fe9738a2d69ddc78d07aed373",
+    "results/dev/raw/primary_dev_outputs.jsonl": "bb9f3ac6db0359feebfad738d7d83bb96c947df49c34b3e837df5f5e7fc5d20e",
+    "results/dev_stage_logs/pip_freeze.txt": "488568494d6486c546cbf8ddfdd475f747122e65b0533193e9a9f2787c34e28b",
+    "results/dev_stage_logs/stage_latency_console.txt": "8f17fbb8ecb5bec5d2c132ab588821dd69dd7aca8e75ba746dc31b0b6dd2f2f3",
+    "results/dev_stage_logs/stage_tune_console.txt": "1858ed48838414619af49848aef33169fca184572a7102a2dc73da06d12f7ca1",
+    "results/latency_dev.json": "c954169d5dee3cedfdac4672df6295dc0999ce2b314e4979aee854be41516c4c",
+    "results/tuning_dev.json": "c0510c3ae35b72350b4183a92967cbdc9703f2d792b986b8b5815511f986e593"
+  }
+}
